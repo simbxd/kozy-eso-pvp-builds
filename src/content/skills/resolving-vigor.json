@@ -1,6 +1,6 @@
 {
-  "id": "vigor",
-  "name": "Vigor",
+  "id": "resolving-vigor",
+  "name": "Resolving Vigor",
   "base_skill": "Vigor",
   "morph_of": "vigor",
   "morph_sibling": "echoing-vigor",
@@ -9,8 +9,8 @@
   "skill_line": "Assault",
   "type": "Active",
   "resource": "Stamina",
-  "icon": "/assets/skills/vigor.png",
+  "icon": "/assets/skills/resolving-vigor.png",
   "patch_verified": "Gold Road (Q2 2024)",
-  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/vigor",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Vigor"
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/resolving-vigor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Resolving_Vigor"
 }

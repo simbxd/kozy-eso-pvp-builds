@@ -23,7 +23,7 @@ skills:
     - take-flight
   bar2:
     - heart-and-home
-    - vigor
+    - resolving-vigor
     - blood-of-the-elder-dragon
     - igneous-weapons
     - shatterspike-mantle
