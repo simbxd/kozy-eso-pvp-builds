@@ -1,9 +1,9 @@
 {
   "id": "soul-of-flame",
   "name": "Soul of Flame",
-  "base_skill": "Fiery Breath",
-  "morph_of": "fiery-breath",
-  "morph_sibling": "noxious-breath",
+  "base_skill": "Soul of Flame",
+  "morph_of": null,
+  "morph_sibling": null,
   "morph_rationale": "Area denial and sustained flame damage — procs burning and applies pressure in tight engagements.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",

@@ -1,9 +1,9 @@
 {
   "id": "incinerate",
   "name": "Incinerate",
-  "base_skill": "Searing Strike",
-  "morph_of": "searing-strike",
-  "morph_sibling": "burning-embers",
+  "base_skill": "Inferno",
+  "morph_of": "inferno",
+  "morph_sibling": "cauterize",
   "morph_rationale": "Execute morph — deals increased damage below 25% health, ideal for closing out kills.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",

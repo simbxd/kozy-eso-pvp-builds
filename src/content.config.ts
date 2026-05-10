@@ -61,9 +61,9 @@ const skills = defineCollection({
   schema: z.object({
     id: z.string(),
     name: z.string(),
-    base_skill: z.string(),
-    morph_of: z.string(),
-    morph_sibling: z.string(),
+    base_skill: z.string().nullable(),
+    morph_of: z.string().nullable(),
+    morph_sibling: z.string().nullable(),
     morph_rationale: z.string().optional(),
     class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Guild', 'World', 'Alliance War', 'Craft', 'Racial']),
     skill_line: z.string(),

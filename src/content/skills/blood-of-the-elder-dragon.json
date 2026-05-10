@@ -1,9 +1,9 @@
 {
   "id": "blood-of-the-elder-dragon",
   "name": "Blood of the Elder Dragon",
-  "base_skill": "Spiked Armor",
-  "morph_of": "spiked-armor",
-  "morph_sibling": "volatile-armor",
+  "base_skill": "Dragon Blood",
+  "morph_of": "dragon-blood",
+  "morph_sibling": "blood-of-the-green-dragon",
   "morph_rationale": "Grants Major Resolve for sustained Physical and Spell Resistance — core defensive toggle on the back bar.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",

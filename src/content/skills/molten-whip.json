@@ -1,9 +1,9 @@
 {
   "id": "molten-whip",
   "name": "Molten Whip",
-  "base_skill": "Flame Lash",
-  "morph_of": "flame-lash",
-  "morph_sibling": "power-lash",
+  "base_skill": "Lava Whip",
+  "morph_of": "lava-whip",
+  "morph_sibling": "flame-lash",
   "morph_rationale": "Preferred for the stacking Molten Armaments buff — each cast increases Weapon and Spell Damage, rewarding continuous pressure.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",

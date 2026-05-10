@@ -1,9 +1,9 @@
 {
   "id": "disintegrating-dragonfire",
   "name": "Disintegrating Dragonfire",
-  "base_skill": "Dragonfire Scale",
-  "morph_of": "dragonfire-scale",
-  "morph_sibling": "protective-scale",
+  "base_skill": "Dragonfire Breath",
+  "morph_of": "dragonfire-breath",
+  "morph_sibling": "engulfing-dragonfire",
   "morph_rationale": "Offensive morph — applies Major Breach on enemies, reducing their Physical and Spell Resistance.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",

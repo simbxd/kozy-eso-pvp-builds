@@ -1,9 +1,9 @@
 {
   "id": "shatterspike-mantle",
   "name": "Shatterspike Mantle",
-  "base_skill": "Obsidian Shield",
-  "morph_of": "obsidian-shield",
-  "morph_sibling": "fragmented-shield",
+  "base_skill": "Earthspike Mantle",
+  "morph_of": "earthspike-mantle",
+  "morph_sibling": "earthshield-mantle",
   "morph_rationale": "Defensive shield — absorbs incoming damage and provides burst survivability in concentrated pressure scenarios.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
