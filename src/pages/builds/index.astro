@@ -1,0 +1,112 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import BuildCard from '../../components/BuildCard.astro';
+
+const allBuilds = await getCollection('builds');
+const sorted = allBuilds.sort((a, b) => {
+  if (a.data.featured && !b.data.featured) return -1;
+  if (!a.data.featured && b.data.featured) return 1;
+  return a.data.title.localeCompare(b.data.title);
+});
+
+const classes = [...new Set(allBuilds.map(b => b.data.class))].sort();
+---
+
+<Base title="Builds" description="All Kozy ESO PvP builds — Stamina, Magicka, all classes.">
+  <div class="page-wrap">
+    <header class="page-header">
+      <h1 class="page-title">Builds</h1>
+      <p class="page-desc">Optimized PvP builds with gear, skills, and rotation breakdowns.</p>
+    </header>
+
+    {classes.length > 1 && (
+      <nav class="filter-nav" aria-label="Filter builds by class">
+        <span class="filter-label">Filter by class:</span>
+        {classes.map(c => (
+          <a href={`/builds/class/${c.toLowerCase()}`} class="filter-link">{c}</a>
+        ))}
+      </nav>
+    )}
+
+    <div class="builds-grid">
+      {sorted.map(build => (
+        <BuildCard
+          title={build.data.title}
+          slug={build.id}
+          class={build.data.class}
+          role={build.data.role}
+          resource={build.data.resource}
+          gamemode={build.data.gamemode}
+          patch={build.data.patch}
+          difficulty={build.data.difficulty}
+          summary={build.data.summary}
+          featured={build.data.featured}
+        />
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .page-wrap {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .page-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 0.5rem;
+  }
+
+  .page-desc { color: var(--color-text-muted); margin: 0; }
+
+  .filter-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-right: 0.25rem;
+  }
+
+  .filter-link {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .filter-link:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent-dim);
+  }
+
+  .builds-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: 1rem;
+  }
+</style>

@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from 'astro:content';
+import Build from '../../layouts/Build.astro';
+
+export async function getStaticPaths() {
+  const builds = await getCollection('builds');
+  return builds.map(build => ({
+    params: { slug: build.id },
+    props: { build },
+  }));
+}
+
+const { build } = Astro.props;
+const { Content } = await render(build);
+---
+
+<Build
+  title={build.data.title}
+  class={build.data.class}
+  role={build.data.role}
+  resource={build.data.resource}
+  gamemode={build.data.gamemode}
+  patch={build.data.patch}
+  difficulty={build.data.difficulty}
+  summary={build.data.summary}
+  sets={build.data.sets}
+  skills={build.data.skills}
+  og_image={build.data.og_image}
+>
+  <Content />
+</Build>

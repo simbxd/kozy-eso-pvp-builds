@@ -1,0 +1,275 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  class: string;
+  role: string;
+  resource: string;
+  gamemode: string;
+  patch: string;
+  difficulty: string;
+  summary: string;
+  sets: string[];
+  skills: { bar1: string[]; bar2: string[] };
+  og_image?: string;
+}
+
+const {
+  title,
+  class: esClass,
+  role,
+  resource,
+  gamemode,
+  patch,
+  difficulty,
+  summary,
+  sets,
+  skills,
+  og_image,
+} = Astro.props;
+
+const difficultyColor: Record<string, string> = {
+  Beginner: '#4a7a4a',
+  Intermediate: '#b8923a',
+  Advanced: '#8b2020',
+};
+---
+
+<Base title={title} description={summary} ogImage={og_image}>
+  <div class="build-wrap">
+    <header class="build-header">
+      <div class="build-meta">
+        <span class="build-class">{esClass}</span>
+        <span class="build-sep">·</span>
+        <span class="build-role">{role}</span>
+        <span class="build-sep">·</span>
+        <span class="build-gamemode">{gamemode}</span>
+      </div>
+
+      <h1 class="build-title">{title}</h1>
+      <p class="build-summary">{summary}</p>
+
+      <div class="build-tags">
+        <span class="tag">{resource}</span>
+        <span class="tag" style={`color: ${difficultyColor[difficulty]}`}>{difficulty}</span>
+        <span class="tag tag--patch">{patch}</span>
+      </div>
+    </header>
+
+    <!-- Skill bars -->
+    <section class="build-section" aria-label="Skill bars">
+      <h2 class="build-section-title">Skill Bars</h2>
+      <div class="skill-bars">
+        <div class="skill-bar">
+          <span class="skill-bar-label">Front Bar</span>
+          <ul class="skill-list">
+            {skills.bar1.map(id => <li class="skill-slot"><code>{id}</code></li>)}
+          </ul>
+        </div>
+        <div class="skill-bar">
+          <span class="skill-bar-label">Back Bar</span>
+          <ul class="skill-list">
+            {skills.bar2.map(id => <li class="skill-slot"><code>{id}</code></li>)}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sets -->
+    <section class="build-section" aria-label="Gear sets">
+      <h2 class="build-section-title">Sets</h2>
+      <ul class="set-list">
+        {sets.map(id => <li class="set-slot"><code>{id}</code></li>)}
+      </ul>
+    </section>
+
+    <!-- Build body (Markdown content) -->
+    <div class="build-body prose">
+      <slot />
+    </div>
+  </div>
+</Base>
+
+<style>
+  .build-wrap {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+  }
+
+  .build-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .build-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .build-class { color: var(--color-accent); }
+  .build-role  { color: var(--color-text-muted); }
+  .build-gamemode { color: var(--color-text-muted); }
+  .build-sep   { color: var(--color-border); }
+
+  .build-title {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 0.75rem;
+    line-height: 1.15;
+  }
+
+  .build-summary {
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin: 0 0 1.25rem;
+    line-height: 1.7;
+  }
+
+  .build-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+  }
+
+  .tag--patch { color: var(--color-text-muted); }
+
+  /* Build sections */
+  .build-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .build-section-title {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin: 0 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  /* Skill bars */
+  .skill-bars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    .skill-bars { grid-template-columns: 1fr; }
+  }
+
+  .skill-bar {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    padding: 1rem;
+  }
+
+  .skill-bar-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .skill-slot code {
+    font-size: 0.82rem;
+    color: var(--color-text);
+    background: none;
+    padding: 0;
+  }
+
+  /* Set list */
+  .set-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .set-slot code {
+    font-size: 0.82rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    color: var(--color-mono);
+  }
+
+  /* Prose */
+  .build-body { margin-top: 2.5rem; }
+
+  .prose :global(h2) {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .prose :global(h3) {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 2rem 0 0.75rem;
+  }
+
+  .prose :global(p) { margin: 0 0 1.2rem; color: var(--color-text); }
+  .prose :global(strong) { color: var(--color-text); font-weight: 600; }
+
+  .prose :global(code) {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    color: var(--color-mono);
+    background-color: var(--color-surface);
+    padding: 0.15em 0.35em;
+    border-radius: 2px;
+  }
+
+  .prose :global(ul), .prose :global(ol) {
+    padding-left: 1.5rem;
+    margin: 0 0 1.2rem;
+  }
+
+  .prose :global(li) { margin-bottom: 0.4rem; color: var(--color-text); }
+  .prose :global(a) { color: var(--color-accent); }
+</style>

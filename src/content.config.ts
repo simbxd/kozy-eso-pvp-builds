@@ -1,0 +1,79 @@
+import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
+
+const builds = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/builds' }),
+  schema: z.object({
+    title: z.string(),
+    class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist']),
+    role: z.enum(['DPS', 'Healer', 'Tank']),
+    resource: z.enum(['Stamina', 'Magicka', 'Hybrid']),
+    gamemode: z.enum(['PvP', 'PvE', 'Both']),
+    patch: z.string(),
+    difficulty: z.enum(['Beginner', 'Intermediate', 'Advanced']),
+    featured: z.boolean().default(false),
+    og_image: z.string().optional(),
+    sets: z.array(z.string()),
+    skills: z.object({
+      bar1: z.array(z.string()),
+      bar2: z.array(z.string()),
+    }),
+    summary: z.string(),
+  }),
+});
+
+const articles = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
+  schema: z.object({
+    title: z.string(),
+    category: z.string(),
+    tags: z.array(z.string()),
+    published: z.coerce.date(),
+    og_image: z.string().optional(),
+    summary: z.string(),
+  }),
+});
+
+const sets = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/sets' }),
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    type: z.enum(['Light Armor', 'Medium Armor', 'Heavy Armor', 'Jewelry', 'Weapon', 'Mixed']),
+    acquisition: z.enum(['Overland', 'Dungeon', 'Trial', 'PvP', 'Crafted', 'Mythic', 'Monster', 'Arena']),
+    location: z.string(),
+    dlc: z.string(),
+    pieces: z.number(),
+    slots: z.array(z.string()),
+    patch_verified: z.string(),
+    bonuses: z.array(z.object({
+      count: z.number(),
+      stat: z.string(),
+      value: z.union([z.number(), z.string()]),
+    })),
+    uesp_url: z.string().url(),
+    esohub_url: z.string().url(),
+  }),
+});
+
+const skills = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/skills' }),
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    base_skill: z.string(),
+    morph_of: z.string(),
+    morph_sibling: z.string(),
+    morph_rationale: z.string().optional(),
+    class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Guild', 'World', 'Alliance War', 'Craft', 'Racial']),
+    skill_line: z.string(),
+    type: z.enum(['Active', 'Passive', 'Ultimate']),
+    resource: z.string(),
+    icon: z.string(),
+    patch_verified: z.string(),
+    esohub_url: z.string().url(),
+    uesp_url: z.string().url(),
+  }),
+});
+
+export const collections = { builds, articles, sets, skills };

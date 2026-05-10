@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import BuildCard from '../../../components/BuildCard.astro';
+
+export async function getStaticPaths() {
+  const builds = await getCollection('builds');
+  const classes = [...new Set(builds.map(b => b.data.class))];
+
+  return classes.map(esClass => ({
+    params: { class: esClass.toLowerCase() },
+    props: {
+      esClass,
+      builds: builds
+        .filter(b => b.data.class === esClass)
+        .sort((a, b) => {
+          if (a.data.featured && !b.data.featured) return -1;
+          if (!a.data.featured && b.data.featured) return 1;
+          return a.data.title.localeCompare(b.data.title);
+        }),
+    },
+  }));
+}
+
+const { esClass, builds } = Astro.props;
+---
+
+<Base
+  title={`${esClass} Builds`}
+  description={`Kozy ESO PvP builds for the ${esClass} class.`}
+>
+  <div class="page-wrap">
+    <header class="page-header">
+      <a href="/builds" class="breadcrumb">← All Builds</a>
+      <h1 class="page-title">{esClass} <span class="page-title-sub">Builds</span></h1>
+      <p class="page-desc">{builds.length} build{builds.length !== 1 ? 's' : ''} available.</p>
+    </header>
+
+    <div class="builds-grid">
+      {builds.map(build => (
+        <BuildCard
+          title={build.data.title}
+          slug={build.id}
+          class={build.data.class}
+          role={build.data.role}
+          resource={build.data.resource}
+          gamemode={build.data.gamemode}
+          patch={build.data.patch}
+          difficulty={build.data.difficulty}
+          summary={build.data.summary}
+          featured={build.data.featured}
+        />
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .page-wrap {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .breadcrumb {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .breadcrumb:hover { color: var(--color-accent); }
+
+  .page-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-accent);
+    margin: 0 0 0.5rem;
+  }
+
+  .page-title-sub { color: var(--color-text); }
+
+  .page-desc {
+    color: var(--color-text-muted);
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+  }
+
+  .builds-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: 1rem;
+  }
+</style>
