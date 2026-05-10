@@ -135,10 +135,16 @@ Types : `Active | Passive | Ultimate`
 3. Push
 
 ### Après un patch ESO
-1. Vérifier les changements sur les sets/skills des builds publiés
-2. Mettre à jour les JSON concernés
-3. Mettre à jour le champ `patch_verified`
-4. Push
+1. Consulter les patch notes officielles (ESO site) et UESP pour les changements de sets/skills
+2. Pour chaque build affecté :
+   - Mettre à jour les valeurs dans les JSON `src/content/sets/` et `src/content/skills/` concernés
+   - Mettre à jour `patch_verified` sur chaque fichier modifié
+   - Si un skill est renommé : renommer le fichier JSON ET mettre à jour l'ID dans le build `.md`
+3. Pour les skills dont l'icône a changé : relancer `node scripts/fetch-skill-icons.mjs`
+4. Lancer `npm run build` localement pour vérifier qu'aucun ID n'est cassé
+5. Push
+
+> **Note UESP :** UESP est parfois en retard de 1-2 semaines sur les patches récents (ex : Update 49). En cas de doute, faire confiance au jeu plutôt qu'à UESP.
 
 ---
 
@@ -149,19 +155,27 @@ Types : `Active | Passive | Ultimate`
 - **Google Fonts :** le `@import url(...)` doit être placé **avant** `@import "tailwindcss"` dans global.css
 - **Image OG :** SVG source dans `public/assets/og/og-default.svg`, PNG généré via `node -e "require('sharp')..."` avec le script dans ce fichier
 - **Filtre par classe :** pages pré-rendues statiquement via `getStaticPaths()` dans `builds/class/[class].astro` — aucun JS client
+- **Data integrity :** `[slug].astro` appelle `assertIds()` au build time — si un ID dans `sets[]` ou `skills.bar1/bar2` n'a pas de JSON correspondant, le build échoue avec un message explicite
+- **Icônes de skills :** stockées dans `public/assets/skills/{id}.png`, récupérées depuis UESP via `node scripts/fetch-skill-icons.mjs`
 
 ---
 
 ## État du projet
 
 **Dernière session :** 2026-05-10
-**Milestone actuel :** M2 — ESO Data Integration (SetCard, SkillBar)
+**Milestone actuel :** M3 — Polish & Performance
 
 ### Contenu publié
 - 1 build : SUPERSTAR (MagDK PvP)
 - 1 article : Penetration Caps Explained
 - 5 sets : Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee
-- 12 skills : barre offensive + défensive du build SUPERSTAR
+- 12 skills : barre offensive + défensive du build SUPERSTAR (avec icônes PNG)
 
-### Prochaine étape
-Construire `SetCard.astro` et `SkillBar.astro` pour afficher les données JSON visuellement sur les pages de build.
+### M2 — Terminé
+- `SetCard.astro` : affichage des bonus de set, type coloré, acquisition, DLC, liens UESP/ESOHub
+- `SkillBar.astro` : double barre avec icône, skill line, tooltip morph au hover
+- Icônes récupérées automatiquement via `scripts/fetch-skill-icons.mjs` (UESP API)
+- Data integrity check au build time via `assertIds()` dans `[slug].astro`
+
+### Prochaine étape (M3)
+Lighthouse audit, page 404 custom, QA mobile, accessibilité.
