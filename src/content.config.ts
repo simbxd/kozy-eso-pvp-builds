@@ -1,6 +1,8 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
+const cpStar = z.object({ star: z.string(), points: z.number(), priority: z.number() });
+
 const builds = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/builds' }),
   schema: z.object({
@@ -10,6 +12,7 @@ const builds = defineCollection({
     resource: z.enum(['Stamina', 'Magicka', 'Hybrid']),
     gamemode: z.enum(['PvP', 'PvE', 'Both']),
     patch: z.string(),
+    updatedAt: z.string().optional(),
     difficulty: z.enum(['Beginner', 'Intermediate', 'Advanced']),
     featured: z.boolean().default(false),
     og_image: z.string().optional(),
@@ -19,6 +22,20 @@ const builds = defineCollection({
       bar2: z.array(z.string()),
     }),
     summary: z.string(),
+    stats: z.object({
+      health:  z.object({ target: z.number(), note: z.string() }),
+      magicka: z.object({ target: z.number(), note: z.string() }),
+      stamina: z.object({ target: z.number(), note: z.string() }),
+    }).optional(),
+    champion_points: z.object({
+      warfare: z.array(cpStar),
+      fitness: z.array(cpStar),
+    }).optional(),
+    consumables: z.object({
+      food:   z.object({ name: z.string(), stats: z.string(), note: z.string(), alt: z.string() }),
+      potion: z.object({ name: z.string(), ingredients: z.array(z.string()), note: z.string() }),
+      poison: z.object({ name: z.string(), note: z.string() }).optional(),
+    }).optional(),
   }),
 });
 

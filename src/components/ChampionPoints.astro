@@ -1,0 +1,149 @@
+---
+interface CPStar {
+  star: string;
+  points: number;
+  priority: number;
+}
+
+interface Props {
+  champion_points: {
+    warfare: CPStar[];
+    fitness: CPStar[];
+  };
+}
+
+const { champion_points } = Astro.props;
+
+const constellations = [
+  { key: 'warfare', label: 'Warfare',  stars: [...champion_points.warfare].sort((a, b) => a.priority - b.priority) },
+  { key: 'fitness', label: 'Fitness',  stars: [...champion_points.fitness].sort((a, b) => a.priority - b.priority) },
+] as const;
+
+const totalPoints = [
+  ...champion_points.warfare,
+  ...champion_points.fitness,
+].reduce((sum, s) => sum + s.points, 0);
+---
+
+<div class="cp-wrap">
+  <p class="cp-intro">
+    Si tu n'as pas assez de CP, investis dans l'ordre indiqué.
+    <span class="cp-total">Total : {totalPoints} pts</span>
+  </p>
+
+  <div class="cp-grid">
+    {constellations.map(({ label, stars }) => (
+      <div class="cp-constellation">
+        <h3 class="cp-constellation-title">{label}</h3>
+        <ol class="cp-list">
+          {stars.map((star) => (
+            <li class="cp-star">
+              <span class="cp-priority">{star.priority}</span>
+              <span class="cp-star-name">{star.star}</span>
+              <span class="cp-points">{star.points} pts</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .cp-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cp-intro {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .cp-total {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--color-accent);
+    letter-spacing: 0.05em;
+  }
+
+  .cp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    .cp-grid { grid-template-columns: 1fr; }
+  }
+
+  .cp-constellation {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 1rem;
+  }
+
+  .cp-constellation-title {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .cp-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .cp-star {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .cp-priority {
+    flex-shrink: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--color-bg);
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    line-height: 1;
+  }
+
+  .cp-star-name {
+    flex: 1;
+    font-size: 0.85rem;
+    color: var(--color-text);
+    min-width: 0;
+  }
+
+  .cp-points {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+</style>

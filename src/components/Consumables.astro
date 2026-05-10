@@ -1,0 +1,143 @@
+---
+interface Food {
+  name: string;
+  stats: string;
+  note: string;
+  alt: string;
+}
+
+interface Potion {
+  name: string;
+  ingredients: string[];
+  note: string;
+}
+
+interface Poison {
+  name: string;
+  note: string;
+}
+
+interface Props {
+  consumables: {
+    food:    Food;
+    potion:  Potion;
+    poison?: Poison;
+  };
+}
+
+const { consumables } = Astro.props;
+const { food, potion, poison } = consumables;
+---
+
+<div class="consumables-list">
+
+  <div class="consumable-row">
+    <span class="consumable-type">Food</span>
+    <div class="consumable-body">
+      <span class="consumable-name">{food.name}</span>
+      <span class="consumable-stats">{food.stats}</span>
+      <span class="consumable-note">{food.note}</span>
+      <span class="consumable-alt">
+        <span class="consumable-alt-label">Alternative :</span>
+        {food.alt}
+      </span>
+    </div>
+  </div>
+
+  <div class="consumable-row">
+    <span class="consumable-type">Potion</span>
+    <div class="consumable-body">
+      <span class="consumable-name">{potion.name}</span>
+      <span class="consumable-stats">{potion.ingredients.join(' · ')}</span>
+      <span class="consumable-note">{potion.note}</span>
+    </div>
+  </div>
+
+  {poison && (
+    <div class="consumable-row">
+      <span class="consumable-type">Poison</span>
+      <div class="consumable-body">
+        <span class="consumable-name">{poison.name}</span>
+        <span class="consumable-note">{poison.note}</span>
+      </div>
+    </div>
+  )}
+
+</div>
+
+<style>
+  .consumables-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .consumable-row {
+    display: flex;
+    gap: 1rem;
+    padding: 0.9rem 1.1rem;
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+  }
+
+  .consumable-row:last-child {
+    border-bottom: none;
+  }
+
+  .consumable-type {
+    flex-shrink: 0;
+    width: 4.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    padding-top: 0.15rem;
+  }
+
+  .consumable-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+  }
+
+  .consumable-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  .consumable-stats {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.02em;
+  }
+
+  .consumable-note {
+    font-size: 0.82rem;
+    color: var(--color-text);
+    line-height: 1.5;
+    margin-top: 0.1rem;
+  }
+
+  .consumable-alt {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin-top: 0.1rem;
+  }
+
+  .consumable-alt-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-right: 0.35rem;
+  }
+</style>

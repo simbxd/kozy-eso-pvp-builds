@@ -4,7 +4,8 @@ class: Dragonknight
 role: DPS
 resource: Magicka
 gamemode: PvP
-patch: "Gold Road (Q2 2024)"
+patch: "U50"
+updatedAt: "2025-05-11"
 difficulty: Advanced
 featured: true
 sets:
@@ -29,6 +30,40 @@ skills:
     - shatterspike-mantle
     - temporal-guard
 summary: "Magicka Dragonknight build orienté survie et pression soutenue en PvP. Haute résistance, heal intégré, et burst via Molten Whip + Incinerate."
+stats:
+  health:
+    target: 18000
+    note: "minimum viable en Battlegrounds"
+  magicka:
+    target: 40000
+    note: "avec Witchmother's Potent Brew"
+  stamina:
+    target: 12000
+    note: "nécessaire pour break free et roll dodge"
+champion_points:
+  warfare:
+    - { star: "Deadly Aim",       points: 50, priority: 1 }
+    - { star: "Wrathful Strikes", points: 50, priority: 2 }
+    - { star: "Ironclad",         points: 50, priority: 3 }
+    - { star: "Duelist's Rebuff", points: 30, priority: 4 }
+  fitness:
+    - { star: "Boundless Vitality", points: 50, priority: 1 }
+    - { star: "Fortified",          points: 50, priority: 2 }
+    - { star: "Sprinter",           points: 30, priority: 3 }
+    - { star: "PLACEHOLDER",        points: 30, priority: 4 }
+consumables:
+  food:
+    name: "Witchmother's Potent Brew"
+    stats: "Max Magicka + Max Health + Magicka Recovery"
+    note: "Privilégier si la recovery magicka est insuffisante"
+    alt: "Bewitched Sugar Skulls si la recovery est déjà couverte par les sets"
+  potion:
+    name: "Essence of Spell Power"
+    ingredients: ["Cornflower", "Lady's Smock", "Water Hyacinth"]
+    note: "Fournit Major Sorcery + Major Heroism + restore Magicka"
+  poison:
+    name: "Creeping Ravage Health"
+    note: "Optionnel — utile en Cyrodiil pour les engagements prolongés"
 ---
 
 ## Overview

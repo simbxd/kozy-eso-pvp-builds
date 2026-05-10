@@ -1,0 +1,79 @@
+---
+interface Stat {
+  target: number;
+  note: string;
+}
+
+interface Props {
+  stats: {
+    health:  Stat;
+    magicka: Stat;
+    stamina: Stat;
+  };
+}
+
+const { stats } = Astro.props;
+
+const resources = [
+  { key: 'health',  label: 'Health',  value: stats.health,  color: 'var(--color-critical)',  colorDim: '#7f1d1d' },
+  { key: 'magicka', label: 'Magicka', value: stats.magicka, color: 'var(--color-accent)',    colorDim: '#3b0764' },
+  { key: 'stamina', label: 'Stamina', value: stats.stamina, color: '#f59e0b',                colorDim: '#78350f' },
+] as const;
+---
+
+<div class="stat-grid">
+  {resources.map(({ label, value, color, colorDim }) => (
+    <div class="stat-card" style={`--stat-color: ${color}; --stat-color-dim: ${colorDim}`}>
+      <span class="stat-label">{label}</span>
+      <span class="stat-value">{value.target.toLocaleString('fr-FR')}</span>
+      <span class="stat-note">{value.note}</span>
+    </div>
+  ))}
+</div>
+
+<style>
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    .stat-grid { grid-template-columns: 1fr; }
+  }
+
+  .stat-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-top: 2px solid var(--stat-color);
+    border-radius: 4px;
+    padding: 1rem 1.1rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--stat-color);
+  }
+
+  .stat-value {
+    font-family: var(--font-mono);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-text);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .stat-note {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin-top: 0.1rem;
+  }
+</style>

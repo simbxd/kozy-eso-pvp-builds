@@ -45,12 +45,16 @@ const resolvedBar2 = build.data.skills.bar2.map(id => skillsMap[id]!);
   resource={build.data.resource}
   gamemode={build.data.gamemode}
   patch={build.data.patch}
+  updatedAt={build.data.updatedAt}
   difficulty={build.data.difficulty}
   summary={build.data.summary}
   sets={resolvedSets}
   bar1={resolvedBar1}
   bar2={resolvedBar2}
   og_image={build.data.og_image}
+  stats={build.data.stats}
+  champion_points={build.data.champion_points}
+  consumables={build.data.consumables}
 >
   <Content />
 </Build>

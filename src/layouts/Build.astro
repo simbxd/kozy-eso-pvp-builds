@@ -2,6 +2,9 @@
 import Base from './Base.astro';
 import SetCard from '../components/SetCard.astro';
 import SkillBar from '../components/SkillBar.astro';
+import StatBlock from '../components/StatBlock.astro';
+import ChampionPoints from '../components/ChampionPoints.astro';
+import Consumables from '../components/Consumables.astro';
 
 interface Bonus {
   count: number;
@@ -36,6 +39,12 @@ interface SkillData {
   icon?: string;
 }
 
+interface CPStar {
+  star: string;
+  points: number;
+  priority: number;
+}
+
 interface Props {
   title: string;
   class: string;
@@ -43,12 +52,27 @@ interface Props {
   resource: string;
   gamemode: string;
   patch: string;
+  updatedAt?: string;
   difficulty: string;
   summary: string;
   sets: SetData[];
   bar1: SkillData[];
   bar2: SkillData[];
   og_image?: string;
+  stats?: {
+    health:  { target: number; note: string };
+    magicka: { target: number; note: string };
+    stamina: { target: number; note: string };
+  };
+  champion_points?: {
+    warfare: CPStar[];
+    fitness: CPStar[];
+  };
+  consumables?: {
+    food:    { name: string; stats: string; note: string; alt: string };
+    potion:  { name: string; ingredients: string[]; note: string };
+    poison?: { name: string; note: string };
+  };
 }
 
 const {
@@ -58,12 +82,16 @@ const {
   resource,
   gamemode,
   patch,
+  updatedAt,
   difficulty,
   summary,
   sets,
   bar1,
   bar2,
   og_image,
+  stats,
+  champion_points,
+  consumables,
 } = Astro.props;
 
 const difficultyColor: Record<string, string> = {
@@ -71,6 +99,14 @@ const difficultyColor: Record<string, string> = {
   Intermediate: '#b8923a',
   Advanced:     '#8b2020',
 };
+
+const formattedDate = updatedAt
+  ? new Date(updatedAt + 'T00:00:00').toLocaleDateString('fr-FR', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    })
+  : null;
 ---
 
 <Base title={title} description={summary} ogImage={og_image}>
@@ -87,12 +123,27 @@ const difficultyColor: Record<string, string> = {
       <h1 class="build-title">{title}</h1>
       <p class="build-summary">{summary}</p>
 
+      {formattedDate && (
+        <p class="build-updated">
+          Mis à jour pour <span class="build-updated-patch">{patch}</span>
+          <span class="build-sep">·</span>
+          {formattedDate}
+        </p>
+      )}
+
       <div class="build-tags">
         <span class="tag">{resource}</span>
         <span class="tag" style={`color: ${difficultyColor[difficulty]}`}>{difficulty}</span>
-        <span class="tag tag--patch">{patch}</span>
+        {!formattedDate && <span class="tag">{patch}</span>}
       </div>
     </header>
+
+    {stats && (
+      <section class="build-section" aria-label="Stat targets">
+        <h2 class="build-section-title">Stats</h2>
+        <StatBlock stats={stats} />
+      </section>
+    )}
 
     <section class="build-section" aria-label="Skill bars">
       <h2 class="build-section-title">Skill Bars</h2>
@@ -122,6 +173,20 @@ const difficultyColor: Record<string, string> = {
     <div class="build-body prose">
       <slot />
     </div>
+
+    {consumables && (
+      <section class="build-section" aria-label="Consumables">
+        <h2 class="build-section-title">Consumables</h2>
+        <Consumables consumables={consumables} />
+      </section>
+    )}
+
+    {champion_points && (
+      <section class="build-section" aria-label="Champion Points">
+        <h2 class="build-section-title">Champion Points</h2>
+        <ChampionPoints champion_points={champion_points} />
+      </section>
+    )}
   </div>
 </Base>
 
@@ -166,8 +231,20 @@ const difficultyColor: Record<string, string> = {
     font-size: 1.05rem;
     color: var(--color-text-muted);
     font-style: italic;
-    margin: 0 0 1.25rem;
+    margin: 0 0 0.75rem;
     line-height: 1.7;
+  }
+
+  .build-updated {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    margin: 0 0 1rem;
+    letter-spacing: 0.03em;
+  }
+
+  .build-updated-patch {
+    color: var(--color-accent);
   }
 
   .build-tags {
@@ -184,8 +261,6 @@ const difficultyColor: Record<string, string> = {
     padding: 0.15rem 0.5rem;
     border-radius: 2px;
   }
-
-  .tag--patch { color: var(--color-text-muted); }
 
   .build-section {
     margin-bottom: 2.5rem;
@@ -213,7 +288,7 @@ const difficultyColor: Record<string, string> = {
   }
 
   /* Prose */
-  .build-body { margin-top: 2.5rem; }
+  .build-body { margin-bottom: 2.5rem; }
 
   .prose :global(h2) {
     font-family: var(--font-display);
