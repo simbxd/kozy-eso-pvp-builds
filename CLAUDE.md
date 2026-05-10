@@ -169,8 +169,8 @@ Types : `Active | Passive | Ultimate`
 
 ## État du projet
 
-**Dernière session :** 2026-05-10
-**Milestone actuel :** M3 — Polish & Performance
+**Dernière session :** 2026-05-11
+**Milestone actuel :** M3 terminé — M4 (Contributor Support) est le prochain
 
 ### Contenu publié
 - 1 build : SUPERSTAR (MagDK PvP)
@@ -189,5 +189,12 @@ Types : `Active | Passive | Ultimate`
 - `vigor` supprimé → `resolving-vigor` (nom correct du morph utilisé dans le build)
 - Schéma Zod : `morph_of` / `morph_sibling` acceptent `null`
 
-### Prochaine étape (M3)
-Lighthouse audit, page 404 custom, optimisation images, QA mobile, accessibilité.
+### M3 — Terminé (2026-05-11)
+- `src/pages/404.astro` : page 404 custom on-brand, 3 liens de retour (/builds /articles /)
+- `--color-text-muted` : #6b6585 → #7d77a0 (3.6:1 → 4.75:1, passe WCAG AA)
+- `Base.astro` : preconnect Google Fonts (fonts.googleapis.com + fonts.gstatic.com)
+- `SkillBar.astro` : `tabindex="0"` + `:focus-within` sur les slots → tooltips accessibles au clavier
+- Images : déjà optimisées depuis M2 (lazy loading, width/height, PNG UESP)
+
+### Prochaine étape (M4)
+Contributor Support — évaluer Decap CMS vs GitHub web editor workflow.

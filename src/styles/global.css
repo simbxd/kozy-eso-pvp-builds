@@ -1,5 +1,3 @@
-/* Google Fonts must come before all other imports */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -8,7 +6,7 @@
   --color-surface:      #101018;
   --color-border:       #1e1c2e;
   --color-text:         #ede8ff;
-  --color-text-muted:   #6b6585;
+  --color-text-muted:   #7d77a0;
   --color-accent:       #8b5cf6;
   --color-accent-dim:   #6d28d9;
   --color-critical:     #ef4444;

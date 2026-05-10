@@ -1,0 +1,103 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="404 — Not Found" description="This page doesn't exist or was removed from the build.">
+  <section class="not-found">
+    <div class="not-found-code" aria-hidden="true">404</div>
+    <h1 class="not-found-title">Page not found</h1>
+    <p class="not-found-message">
+      This page has been removed from the build — or it never existed.
+      Check the URL, or head back to familiar ground.
+    </p>
+    <nav class="not-found-nav" aria-label="Return to site">
+      <a href="/builds" class="btn btn--primary">Browse Builds</a>
+      <a href="/articles" class="btn btn--secondary">Articles</a>
+      <a href="/" class="btn btn--secondary">Home</a>
+    </nav>
+  </section>
+</Base>
+
+<style>
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    min-height: 60vh;
+  }
+
+  .not-found-code {
+    font-family: var(--font-display);
+    font-size: clamp(5rem, 20vw, 10rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-accent);
+    opacity: 0.2;
+    letter-spacing: -0.02em;
+    user-select: none;
+    margin-bottom: -0.25em;
+  }
+
+  .not-found-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    margin: 0 0 1rem;
+    color: var(--color-text);
+  }
+
+  .not-found-message {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    max-width: 38ch;
+    line-height: 1.7;
+    margin: 0 0 2.5rem;
+  }
+
+  .not-found-nav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: transform 0.12s, opacity 0.12s;
+  }
+
+  .btn:hover {
+    transform: translateY(-1px);
+    color: inherit;
+  }
+
+  .btn--primary {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dim));
+    color: #fff;
+  }
+
+  .btn--primary:hover {
+    opacity: 0.9;
+    color: #fff;
+  }
+
+  .btn--secondary {
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    background: transparent;
+  }
+
+  .btn--secondary:hover {
+    border-color: var(--color-accent-dim);
+    color: var(--color-accent);
+  }
+</style>

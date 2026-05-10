@@ -54,7 +54,7 @@ const typeColor: Record<string, string> = {
           const hasMorph = skill.morph_rationale && skill.morph_rationale.length > 0;
 
           return (
-            <li class:list={['skill-slot', isUltimate && 'skill-slot--ultimate']} data-id={skill.id}>
+            <li class:list={['skill-slot', isUltimate && 'skill-slot--ultimate']} data-id={skill.id} tabindex="0">
               <div class="skill-icon-wrap" style={`--accent: ${accentColor}`}>
                 {skill.icon
                   ? <img src={skill.icon} alt={skill.name} width="40" height="40" loading="lazy" />
@@ -143,8 +143,15 @@ const typeColor: Record<string, string> = {
     transition: background-color 0.12s;
   }
 
-  .skill-slot:hover {
+  .skill-slot:hover,
+  .skill-slot:focus-within {
     background-color: color-mix(in srgb, var(--color-accent) 6%, transparent);
+  }
+
+  .skill-slot:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 3px;
   }
 
   .skill-slot--ultimate {
@@ -238,7 +245,8 @@ const typeColor: Record<string, string> = {
     pointer-events: none;
   }
 
-  .skill-slot:hover .skill-tooltip { display: block; }
+  .skill-slot:hover .skill-tooltip,
+  .skill-slot:focus-within .skill-tooltip { display: block; }
 
   /* Flip tooltip to left when near right edge */
   @media (max-width: 900px) {
