@@ -39,7 +39,7 @@ const sets = defineCollection({
   schema: z.object({
     id: z.string(),
     name: z.string(),
-    type: z.enum(['Light Armor', 'Medium Armor', 'Heavy Armor', 'Jewelry', 'Weapon', 'Mixed']),
+    type: z.enum(['Light Armor', 'Medium Armor', 'Heavy Armor', 'Jewelry', 'Weapon', 'Mixed', 'Monster', 'Mythic']),
     acquisition: z.enum(['Overland', 'Dungeon', 'Trial', 'PvP', 'Crafted', 'Mythic', 'Monster', 'Arena']),
     location: z.string(),
     dlc: z.string(),

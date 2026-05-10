@@ -1,0 +1,16 @@
+{
+  "id": "temporal-guard",
+  "name": "Temporal Guard",
+  "base_skill": "Time Stop",
+  "morph_of": "time-stop",
+  "morph_sibling": "borrowed-time",
+  "morph_rationale": "Defensive ultimate — freezes nearby enemies in time, creating a window to heal, reposition, or disengage.",
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Ultimate",
+  "resource": "Ultimate",
+  "icon": "/assets/skills/temporal-guard.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/temporal-guard",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Temporal_Guard"
+}

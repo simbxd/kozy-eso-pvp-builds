@@ -1,0 +1,16 @@
+{
+  "id": "take-flight",
+  "name": "Take Flight",
+  "base_skill": "Dragon Leap",
+  "morph_of": "dragon-leap",
+  "morph_sibling": "ferocious-leap",
+  "morph_rationale": "Mobility ultimate — gap closer that deals AoE damage on landing and grants a brief CC immunity window.",
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Ultimate",
+  "resource": "Ultimate",
+  "icon": "/assets/skills/take-flight.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/take-flight",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Take_Flight"
+}

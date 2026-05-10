@@ -1,0 +1,16 @@
+{
+  "id": "vigor",
+  "name": "Vigor",
+  "base_skill": "Vigor",
+  "morph_of": "vigor",
+  "morph_sibling": "echoing-vigor",
+  "morph_rationale": "Solo heal-over-time — strong self-sustain in prolonged PvP engagements without requiring group play.",
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/vigor.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/vigor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vigor"
+}

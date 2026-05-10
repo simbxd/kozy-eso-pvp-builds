@@ -1,0 +1,16 @@
+{
+  "id": "heart-and-home",
+  "name": "Heart and Home",
+  "base_skill": "Dragon Blood",
+  "morph_of": "dragon-blood",
+  "morph_sibling": "green-dragon-blood",
+  "morph_rationale": "Defensive self-heal — scales with missing Health, making it most effective at low HP when you need it most.",
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/heart-and-home.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/heart-and-home",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Heart_and_Home"
+}

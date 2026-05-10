@@ -1,0 +1,16 @@
+{
+  "id": "molten-whip",
+  "name": "Molten Whip",
+  "base_skill": "Flame Lash",
+  "morph_of": "flame-lash",
+  "morph_sibling": "power-lash",
+  "morph_rationale": "Preferred for the stacking Molten Armaments buff — each cast increases Weapon and Spell Damage, rewarding continuous pressure.",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/molten-whip.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/molten-whip",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Molten_Whip"
+}

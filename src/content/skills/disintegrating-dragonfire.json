@@ -1,0 +1,16 @@
+{
+  "id": "disintegrating-dragonfire",
+  "name": "Disintegrating Dragonfire",
+  "base_skill": "Dragonfire Scale",
+  "morph_of": "dragonfire-scale",
+  "morph_sibling": "protective-scale",
+  "morph_rationale": "Offensive morph — applies Major Breach on enemies, reducing their Physical and Spell Resistance.",
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/disintegrating-dragonfire.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/disintegrating-dragonfire",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Disintegrating_Dragonfire"
+}

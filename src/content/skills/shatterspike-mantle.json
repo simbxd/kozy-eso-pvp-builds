@@ -1,0 +1,16 @@
+{
+  "id": "shatterspike-mantle",
+  "name": "Shatterspike Mantle",
+  "base_skill": "Coagulating Blood",
+  "morph_of": "coagulating-blood",
+  "morph_sibling": "escalating-coagulation",
+  "morph_rationale": "Defensive shield — absorbs incoming damage and provides burst survivability in concentrated pressure scenarios.",
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/shatterspike-mantle.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/shatterspike-mantle",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shatterspike_Mantle"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "soul-of-flame",
+  "name": "Soul of Flame",
+  "base_skill": "Fiery Breath",
+  "morph_of": "fiery-breath",
+  "morph_sibling": "noxious-breath",
+  "morph_rationale": "Area denial and sustained flame damage — procs burning and applies pressure in tight engagements.",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/soul-of-flame.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/soul-of-flame",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Soul_of_Flame"
+}

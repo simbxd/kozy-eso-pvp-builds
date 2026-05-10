@@ -1,0 +1,16 @@
+{
+  "id": "blood-of-the-elder-dragon",
+  "name": "Blood of the Elder Dragon",
+  "base_skill": "Spiked Armor",
+  "morph_of": "spiked-armor",
+  "morph_sibling": "volatile-armor",
+  "morph_rationale": "Grants Major Resolve for sustained Physical and Spell Resistance — core defensive toggle on the back bar.",
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/blood-of-the-elder-dragon.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/blood-of-the-elder-dragon",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_of_the_Elder_Dragon"
+}

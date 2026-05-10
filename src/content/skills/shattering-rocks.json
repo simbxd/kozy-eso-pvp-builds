@@ -1,0 +1,16 @@
+{
+  "id": "shattering-rocks",
+  "name": "Shattering Rocks",
+  "base_skill": "Stonefist",
+  "morph_of": "stonefist",
+  "morph_sibling": "obsidian-shard",
+  "morph_rationale": "Reduces enemy Physical Resistance on hit — essential for cutting through heavy armor in PvP.",
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/shattering-rocks.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/shattering-rocks",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shattering_Rocks"
+}

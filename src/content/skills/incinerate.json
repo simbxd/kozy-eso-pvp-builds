@@ -1,0 +1,16 @@
+{
+  "id": "incinerate",
+  "name": "Incinerate",
+  "base_skill": "Searing Strike",
+  "morph_of": "searing-strike",
+  "morph_sibling": "burning-embers",
+  "morph_rationale": "Execute morph — deals increased damage below 25% health, ideal for closing out kills.",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/incinerate.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/incinerate",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Incinerate"
+}

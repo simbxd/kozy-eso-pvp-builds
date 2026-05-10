@@ -1,0 +1,19 @@
+{
+  "id": "two-fanged-snake",
+  "name": "Two-Fanged Snake",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Sanctum Ophidia",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": ["head", "shoulders", "chest", "hands", "waist", "legs", "feet", "ring", "necklace", "weapon", "off-hand"],
+  "patch_verified": "Gold Road (Q2 2024)",
+  "bonuses": [
+    { "count": 2, "stat": "Weapon and Spell Damage", "value": 129 },
+    { "count": 3, "stat": "Max Stamina", "value": 1096 },
+    { "count": 4, "stat": "Critical Chance", "value": 657 },
+    { "count": 5, "stat": "Offensive Penetration per stack (up to 10 stacks, 5s duration)", "value": 544 }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Two-Fanged_Snake",
+  "esohub_url": "https://eso-hub.com/en/sets/two-fanged-snake"
+}

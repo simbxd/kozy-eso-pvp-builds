@@ -1,0 +1,19 @@
+{
+  "id": "rallying-cry",
+  "name": "Rallying Cry",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": ["head", "shoulders", "chest", "hands", "waist", "legs", "feet", "ring", "necklace", "weapon", "off-hand"],
+  "patch_verified": "Gold Road (Q2 2024)",
+  "bonuses": [
+    { "count": 2, "stat": "Critical Chance", "value": 657 },
+    { "count": 3, "stat": "Max Magicka", "value": 1096 },
+    { "count": 4, "stat": "Critical Chance", "value": 657 },
+    { "count": 5, "stat": "Healing critical strikes grant nearby group members 1650 Critical Resistance and 300 Weapon & Spell Damage for 20s (max once per 15s)", "value": "" }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rallying_Cry",
+  "esohub_url": "https://eso-hub.com/en/sets/rallying-cry"
+}
