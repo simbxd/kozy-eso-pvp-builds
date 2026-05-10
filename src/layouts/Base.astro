@@ -1,0 +1,87 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  canonicalUrl?: string;
+}
+
+const {
+  title,
+  description = 'Kozy ESO PvP Builds — Optimized PvP builds, rotation guides, and ESO mechanics breakdowns.',
+  ogImage = '/assets/og/og-default.png',
+  canonicalUrl,
+} = Astro.props;
+
+const siteUrl = 'https://kozy-eso-pvp-builds.netlify.app';
+const canonical = canonicalUrl ?? new URL(Astro.url.pathname, siteUrl).href;
+const ogImageAbsolute = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+const fullTitle = title === 'Home' ? 'Kozy ESO PvP Builds' : `${title} — Kozy ESO PvP Builds`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- SEO -->
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageAbsolute} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Kozy ESO PvP Builds" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageAbsolute} />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <Header />
+    <main id="main-content">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    border-radius: 0 0 4px 4px;
+    text-decoration: none;
+    z-index: 100;
+    transition: top 0.1s;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+</style>

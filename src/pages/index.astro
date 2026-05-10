@@ -1,0 +1,131 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Home" description="Kozy ESO PvP Builds — Optimized PvP builds, rotation guides, and ESO mechanics breakdowns.">
+  <div class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">Kozy ESO PvP Builds</h1>
+      <p class="hero-tagline">Optimized builds. Rotation guides. No fluff.</p>
+      <p class="hero-desc">
+        Curated PvP builds and mechanic breakdowns for Elder Scrolls Online — for players who want
+        to understand why a build works, not just copy it.
+      </p>
+      <div class="hero-links">
+        <a href="/builds" class="btn-primary">Browse Builds</a>
+        <a href="/articles" class="btn-secondary">Read Articles</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Coming Soon</h2>
+      <p class="section-body">
+        This site is under active development. The first builds and articles will be published shortly.
+        Content will cover PvP builds, gear optimization, skill morphs, and ESO mechanic deep-dives.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    border-bottom: 1px solid var(--color-border);
+    padding: 5rem 1.25rem 4rem;
+  }
+
+  .hero-inner {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    color: var(--color-accent);
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-tagline {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem;
+  }
+
+  .hero-desc {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    max-width: 40rem;
+    margin: 0 0 2.5rem;
+  }
+
+  .hero-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.15s;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: border-color 0.15s, color 0.15s;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--color-accent);
+    color: var(--color-text);
+  }
+
+  .section {
+    padding: 3rem 1.25rem;
+  }
+
+  .section-inner {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    color: var(--color-text);
+    margin: 0 0 1rem;
+  }
+
+  .section-body {
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    margin: 0;
+  }
+</style>

@@ -1,0 +1,51 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer>
+  <div class="footer-inner">
+    <p class="footer-note">
+      Kozy ESO PvP Builds — Independent content. Not affiliated with ZeniMax or Bethesda.
+    </p>
+    <p class="footer-copy">
+      © {currentYear} · Set data sourced from
+      <a href="https://en.uesp.net/wiki/Online:Online" target="_blank" rel="noopener noreferrer">UESP</a>
+      (CC-BY-SA)
+    </p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid var(--color-border);
+    margin-top: 4rem;
+    padding: 2rem 1.25rem;
+  }
+
+  .footer-inner {
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-note,
+  .footer-copy {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .footer-copy a {
+    color: var(--color-text-muted);
+    text-decoration: underline;
+  }
+
+  .footer-copy a:hover {
+    color: var(--color-accent);
+  }
+</style>

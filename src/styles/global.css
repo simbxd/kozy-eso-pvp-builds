@@ -1,0 +1,77 @@
+/* Google Fonts must come before all other imports */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-bg:           #0e0c0a;
+  --color-surface:      #1a1714;
+  --color-border:       #2e2820;
+  --color-text:         #e8e0d0;
+  --color-text-muted:   #8a7f70;
+  --color-accent:       #b8923a;
+  --color-accent-dim:   #7a5f25;
+  --color-critical:     #8b2020;
+  --color-mono:         #4a9eff;
+
+  /* Fonts */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Crimson Pro', Georgia, serif;
+  --font-mono:    'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Base styles */
+html {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+/* Focus-visible — keyboard navigation ring */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Links */
+a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--color-text);
+}
+
+/* Code / stat values */
+code, .stat-value {
+  font-family: var(--font-mono);
+  color: var(--color-mono);
+  font-size: 0.9em;
+}
+
+/* Horizontal rule */
+hr {
+  border-color: var(--color-border);
+}
