@@ -1,14 +1,14 @@
 ---
 title: "Critical Resistance & Critical Damage in PvP — The Math Nobody Explains"
 category: Mechanics
-tags: [critical, crit-res, crit-damage, PvP, math]
+tags: [critical, crit-res, crit-damage, PvP, math, arms-race]
 published: 2025-05-11
-summary: "Why stacking Crit Damage into a tanky opponent is a waste of stat budget — and how to calculate the actual value of your critical strikes in PvP."
+summary: "Pourquoi il n'existe pas de cap universel de Crit Resistance en PvP — et comment la course entre Crit Res et Crit Damage change la valeur de chaque stat selon l'adversaire."
 ---
 
 ## The Short Version
 
-Critical strikes deal a base **+50% bonus damage**. Critical Resistance reduces that bonus. At **3300 Crit Resistance**, the bonus reaches zero — crits deal exactly the same as normal hits. Stacking Crit Damage against a player at that threshold does nothing.
+Critical strikes deal a base **+50% bonus damage**. Critical Resistance reduces that bonus. At **3300 Crit Resistance**, the bonus from an attacker with *no Crit Damage investment* reaches zero. But if the attacker has Crit Damage Rating that pushes their bonus above 50%, you need more than 3300 to achieve immunity. There is no universal cap — it depends on the attacker's build.
 
 ## How Critical Damage Works
 
@@ -18,53 +18,85 @@ Every critical hit applies a multiplier on top of your base damage:
 crit_hit = base_damage × (1 + crit_bonus)
 ```
 
-The base crit bonus is **50%** (so a 10,000 hit crits for 15,000). Crit Damage Rating increases this above 50%. Every 660 points of Crit Damage Rating adds roughly 1% to the bonus.
+The base crit bonus is **50%** (so a 10,000 hit crits for 15,000). Crit Damage Rating increases this above 50%.
+
+> **Note on the ratio:** Based on community observations, approximately 660 points of Crit Damage Rating add ~1% to the bonus — but this ratio has not been confirmed by official patch notes or reliable datamining. Treat it as the best available approximation, and verify in-game if precision matters for your build.
 
 ## How Critical Resistance Reduces That
 
-Crit Resistance subtracts directly from the effective crit bonus:
+Crit Resistance subtracts from the effective crit bonus:
 
 ```
-effective_bonus = max(0%, 50% + crit_damage_bonus% − (crit_res / 66))
+effective_bonus = max(0%, (50% + crit_damage_bonus%) − (crit_res / 66))
 ```
 
-At 3300 Crit Resistance: `50% − (3300 / 66) = 50% − 50% = 0%`
+> **Same caveat applies to the `/66` divisor** — it follows directly from the community ratio above. The formula structure is correct; the exact constant may vary slightly.
 
-Your critical strikes now deal **100% damage** instead of 150%. The extra 50% is gone regardless of how much Crit Damage you have stacked.
+At 3300 Crit Resistance against an attacker with 0% Crit Damage bonus:
+`(50% + 0%) − (3300 / 66) = 50% − 50% = 0%`
 
-## The Immunity Cap
+But against an attacker with 20% Crit Damage bonus:
+`(50% + 20%) − (3300 / 66) = 70% − 50% = +20%` — still taking extra damage.
 
-**3300 Crit Resistance = full crit immunity.** Above that value, there is no additional benefit — you cannot make crits deal less than a normal hit.
+## The Relative Cap (Not a Fixed Number)
 
-In PvP, Heavy Armor players routinely reach this cap through a combination of:
-- Heavy Armor traits (Reinforced)
-- CP stars in the Fitness constellation
-- Defensive sets with Crit Resistance bonuses
-- Potions and food with Crit Resistance
+There is no universal Crit Resistance immunity threshold in PvP.
+
+The actual immunity threshold depends on the attacker:
+
+```
+immunity_threshold = (50 + crit_damage_bonus) × 66
+```
+
+| Attacker's Crit Damage bonus | Crit Res needed for immunity |
+|---|---|
+| 0% (base only) | 3 300 |
+| 10% | 3 960 |
+| 20% | 4 620 |
+| 50% | 6 600 |
+
+The practical consequence: a player at 3300 Crit Res is immune to the majority of standard builds, but remains vulnerable to builds that specifically invest in Crit Damage Rating.
+
+## The Arms Race: Crit Res vs Crit Damage
+
+This is a dynamic mechanic, not a fixed threshold.
+
+- An attacker who invests in Crit Damage forces the defender to raise their Crit Res higher to maintain immunity
+- A defender at 3300 Crit Res has covered the base case — but a dedicated Crit Damage build punches through that
+- Knowing the enemy build changes the value of each stat: 3300 Crit Res is strong in a vacuum; it's weak against a build sitting at +30% Crit Damage bonus
+
+This is why PvP build decisions cannot be made in isolation. The same Crit Res value is either sufficient or insufficient depending entirely on what you're facing.
 
 ## The Common Mistake
 
-Many offensive builds invest heavily in Crit Damage (through sets and CP) expecting crits to be their primary damage source. Against a 3300 Crit Res player, **every point of Crit Damage is wasted stat budget.**
+Many offensive builds invest heavily in Crit Damage expecting crits to be their primary damage source, without accounting for the defender's Crit Res. Symmetrically, many defensive players assume 3300 Crit Res makes them crit-immune against everyone.
 
-The better investment against tanky opponents:
-- **Penetration** — reduces their physical/spell resistance, scales all hits
-- **Flat damage** (Weapon/Spell Damage) — increases every hit, crit or not
-- **Major/Minor Breach** — reduces their resistance by a fixed amount
+Both assumptions are wrong in the wrong matchup.
+
+The most universally valuable damage investments remain:
+- **Penetration** — reduces physical/spell resistance, scales all hits regardless of crit
+- **Flat damage** (Weapon/Spell Damage) — scales every hit, crit or not
+- **Major/Minor Breach** — fixed resistance reduction, independent of Crit Res
+
+Crit Damage is high value against opponents with low Crit Res (light/medium armor). It loses value progressively as the defender stacks Crit Res, and becomes worthless at their specific immunity threshold.
 
 ## Practical Implications
 
-- **Against Heavy Armor:** Assume crit immunity. Prioritize penetration and flat damage over crit scaling.
-- **Against Light/Medium Armor:** Crit builds have full value — these players rarely cap Crit Resistance.
-- **As a defensive player:** 3300 Crit Res is the hard target. Below that, you still take partial crit bonus damage.
-- **Crit Chance vs Crit Damage:** In PvP, higher Crit Chance is more universally useful than Crit Damage — it increases DPS against *all* targets, while Crit Damage is dead weight against crit-immune opponents.
+- **Against standard Heavy Armor** (no Crit Damage investment): assume 3300 Crit Res covers the base 50% bonus — your crits likely deal the same as normal hits. Prioritize penetration and flat damage.
+- **Against a dedicated Crit Damage build**: 3300 Crit Res is not enough. Either stack higher Crit Res or accept that crits will still hit harder than normal.
+- **Against Light/Medium Armor**: crit builds have near-full value — these players rarely invest in Crit Resistance.
+- **Crit Chance vs Crit Damage in PvP**: higher Crit Chance is more universally useful. It increases damage against all targets. Crit Damage is matchup-dependent — strong against low-Crit-Res targets, dead weight against crit-immune opponents.
 
 ## Quick Reference
 
-| Defender's Crit Res | Effective Crit Bonus (no attacker Crit Dmg) |
-|---|---|
-| 0 | +50% |
-| 660 | +40% |
-| 1320 | +30% |
-| 1980 | +20% |
-| 2640 | +10% |
-| 3300+ | 0% (immune) |
+*Attacker's Crit Damage bonus = extra % above the 50% base. CD = Crit Damage bonus.*
+
+| Defender's Crit Res | Effective crit bonus (CD +0%) | Effective crit bonus (CD +20%) |
+|---|---|---|
+| 0 | +50% | +70% |
+| 1 320 | +30% | +50% |
+| 3 300 | 0% | +20% |
+| 4 620 | 0% | 0% |
+| 6 600 | 0% | 0% |
+
+At 3300 Crit Res, a +20% Crit Damage attacker still deals +20% on crits. Full immunity against that attacker requires 4620 Crit Res.
