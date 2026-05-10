@@ -1,10 +1,17 @@
 ---
-const navLinks = [
-  { href: '/builds', label: 'Builds' },
-  { href: '/articles', label: 'Articles' },
+const classes = [
+  'Dragonknight',
+  'Sorcerer',
+  'Nightblade',
+  'Templar',
+  'Warden',
+  'Necromancer',
+  'Arcanist',
 ];
 
 const currentPath = Astro.url.pathname;
+const buildsActive = currentPath.startsWith('/builds');
+const articlesActive = currentPath.startsWith('/articles');
 ---
 
 <header>
@@ -16,17 +23,52 @@ const currentPath = Astro.url.pathname;
 
     <nav aria-label="Main navigation">
       <ul class="nav-list">
-        {navLinks.map(({ href, label }) => (
-          <li>
-            <a
-              href={href}
-              class:list={['nav-link', { 'nav-link--active': currentPath.startsWith(href) }]}
-              aria-current={currentPath.startsWith(href) ? 'page' : undefined}
-            >
-              {label}
-            </a>
-          </li>
-        ))}
+
+        <!-- Builds — dropdown -->
+        <li class="nav-dropdown-wrap">
+          <a
+            href="/builds"
+            class:list={['nav-link', 'nav-link--has-dropdown', { 'nav-link--active': buildsActive }]}
+            aria-current={buildsActive ? 'page' : undefined}
+            aria-haspopup="true"
+          >
+            Builds <span class="nav-chevron" aria-hidden="true">▾</span>
+          </a>
+
+          <div class="nav-dropdown" role="menu" aria-label="Builds navigation">
+            <div class="nav-dropdown-section">
+              <span class="nav-dropdown-label">Classes</span>
+              {classes.map(cls => (
+                <a
+                  href={`/builds/class/${cls.toLowerCase()}`}
+                  class="nav-dropdown-link"
+                  role="menuitem"
+                >
+                  {cls}
+                </a>
+              ))}
+            </div>
+
+            <div class="nav-dropdown-section nav-dropdown-section--bordered">
+              <span class="nav-dropdown-label">Subclass</span>
+              <a href="/builds/subclass" class="nav-dropdown-link" role="menuitem">
+                All Subclass Builds
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Articles -->
+        <li>
+          <a
+            href="/articles"
+            class:list={['nav-link', { 'nav-link--active': articlesActive }]}
+            aria-current={articlesActive ? 'page' : undefined}
+          >
+            Articles
+          </a>
+        </li>
+
       </ul>
     </nav>
   </div>
@@ -54,6 +96,7 @@ const currentPath = Astro.url.pathname;
     gap: 2rem;
   }
 
+  /* Logo */
   .site-logo {
     text-decoration: none;
     display: flex;
@@ -88,14 +131,17 @@ const currentPath = Astro.url.pathname;
     color: var(--color-accent);
   }
 
+  /* Nav list */
   .nav-list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 0.25rem;
+    align-items: center;
   }
 
+  /* Nav links */
   .nav-link {
     font-family: var(--font-mono);
     font-size: 0.75rem;
@@ -105,6 +151,10 @@ const currentPath = Astro.url.pathname;
     padding: 0.35rem 0.75rem;
     border-radius: 6px;
     transition: color 0.15s, background-color 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    white-space: nowrap;
   }
 
   .nav-link:hover {
@@ -115,5 +165,88 @@ const currentPath = Astro.url.pathname;
   .nav-link--active {
     color: var(--color-accent);
     background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+  }
+
+  .nav-chevron {
+    font-size: 0.6rem;
+    opacity: 0.6;
+    transition: transform 0.15s;
+  }
+
+  /* Dropdown wrapper */
+  .nav-dropdown-wrap {
+    position: relative;
+  }
+
+  /* Show dropdown on hover or keyboard focus */
+  .nav-dropdown-wrap:hover .nav-dropdown,
+  .nav-dropdown-wrap:focus-within .nav-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-dropdown-wrap:hover .nav-chevron,
+  .nav-dropdown-wrap:focus-within .nav-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Dropdown panel */
+  .nav-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    min-width: 13rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    z-index: 60;
+
+    /* Hidden by default — animate in */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-4px);
+    transition: opacity 0.15s, transform 0.15s;
+  }
+
+  /* Dropdown sections */
+  .nav-dropdown-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem 0;
+  }
+
+  .nav-dropdown-section--bordered {
+    border-top: 1px solid var(--color-border);
+    margin-top: 0.25rem;
+    padding-top: 0.5rem;
+  }
+
+  .nav-dropdown-label {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    padding: 0.1rem 0.6rem 0.4rem;
+  }
+
+  /* Dropdown links */
+  .nav-dropdown-link {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0.35rem 0.6rem;
+    border-radius: 4px;
+    transition: color 0.12s, background-color 0.12s;
+  }
+
+  .nav-dropdown-link:hover {
+    color: var(--color-accent);
+    background-color: color-mix(in srgb, var(--color-accent) 8%, transparent);
   }
 </style>
