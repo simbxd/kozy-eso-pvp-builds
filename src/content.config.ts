@@ -39,8 +39,8 @@ const builds = defineCollection({
   }),
 });
 
-const articles = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
+const guides = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
   schema: z.object({
     title: z.string(),
     category: z.string(),
@@ -93,4 +93,4 @@ const skills = defineCollection({
   }),
 });
 
-export const collections = { builds, articles, sets, skills };
+export const collections = { builds, guides, sets, skills };

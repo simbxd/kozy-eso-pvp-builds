@@ -2,37 +2,37 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 
-const allArticles = await getCollection('articles');
-const sorted = allArticles.sort((a, b) =>
+const allGuides = await getCollection('guides');
+const sorted = allGuides.sort((a, b) =>
   b.data.published.getTime() - a.data.published.getTime()
 );
 ---
 
-<Base title="Articles" description="ESO mechanic breakdowns, PvP theory, and deep-dives by Kozy.">
+<Base title="Guides" description="ESO mechanic breakdowns, PvP theory, and deep-dives by Kozy.">
   <div class="page-wrap">
     <header class="page-header">
-      <h1 class="page-title">Articles</h1>
+      <h1 class="page-title">Guides</h1>
       <p class="page-desc">Mechanic breakdowns, theory, and ESO deep-dives.</p>
     </header>
 
     <ol class="article-list">
-      {sorted.map(article => {
-        const date = article.data.published.toLocaleDateString('en-GB', {
+      {sorted.map(guide => {
+        const date = guide.data.published.toLocaleDateString('en-GB', {
           day: 'numeric', month: 'long', year: 'numeric',
         });
         return (
           <li class="article-item">
-            <a href={`/articles/${article.id}`} class="article-link">
+            <a href={`/guides/${guide.id}`} class="article-link">
               <div class="article-meta">
-                <span class="article-category">{article.data.category}</span>
-                <time datetime={article.data.published.toISOString()} class="article-date">
+                <span class="article-category">{guide.data.category}</span>
+                <time datetime={guide.data.published.toISOString()} class="article-date">
                   {date}
                 </time>
               </div>
-              <h2 class="article-title">{article.data.title}</h2>
-              <p class="article-summary">{article.data.summary}</p>
+              <h2 class="article-title">{guide.data.title}</h2>
+              <p class="article-summary">{guide.data.summary}</p>
               <div class="article-tags">
-                {article.data.tags.map(tag => <span class="tag">#{tag}</span>)}
+                {guide.data.tags.map(tag => <span class="tag">#{tag}</span>)}
               </div>
             </a>
           </li>

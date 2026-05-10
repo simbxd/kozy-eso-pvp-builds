@@ -11,7 +11,7 @@ const classes = [
 
 const currentPath = Astro.url.pathname;
 const buildsActive = currentPath.startsWith('/builds');
-const articlesActive = currentPath.startsWith('/articles');
+const articlesActive = currentPath.startsWith('/guides');
 ---
 
 <header>
@@ -58,14 +58,14 @@ const articlesActive = currentPath.startsWith('/articles');
           </div>
         </li>
 
-        <!-- Articles -->
+        <!-- Guides -->
         <li>
           <a
-            href="/articles"
+            href="/guides"
             class:list={['nav-link', { 'nav-link--active': articlesActive }]}
             aria-current={articlesActive ? 'page' : undefined}
           >
-            Articles
+            Guides
           </a>
         </li>
 
