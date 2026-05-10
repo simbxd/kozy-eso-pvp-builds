@@ -12,6 +12,16 @@ export async function getStaticPaths() {
 
 const { build } = Astro.props;
 const { Content } = await render(build);
+
+const allSets   = await getCollection('sets');
+const allSkills = await getCollection('skills');
+
+const setsMap   = Object.fromEntries(allSets.map(s => [s.id, s.data]));
+const skillsMap = Object.fromEntries(allSkills.map(s => [s.id, s.data]));
+
+const resolvedSets    = build.data.sets.map(id => setsMap[id]).filter(Boolean);
+const resolvedBar1    = build.data.skills.bar1.map(id => skillsMap[id]).filter(Boolean);
+const resolvedBar2    = build.data.skills.bar2.map(id => skillsMap[id]).filter(Boolean);
 ---
 
 <Build
@@ -23,8 +33,9 @@ const { Content } = await render(build);
   patch={build.data.patch}
   difficulty={build.data.difficulty}
   summary={build.data.summary}
-  sets={build.data.sets}
-  skills={build.data.skills}
+  sets={resolvedSets}
+  bar1={resolvedBar1}
+  bar2={resolvedBar2}
   og_image={build.data.og_image}
 >
   <Content />

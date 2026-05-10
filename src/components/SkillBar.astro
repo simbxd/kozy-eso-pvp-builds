@@ -1,0 +1,282 @@
+---
+interface Skill {
+  id: string;
+  name: string;
+  base_skill?: string;
+  morph_of?: string;
+  morph_sibling?: string;
+  morph_rationale?: string;
+  class: string;
+  skill_line: string;
+  type: string;
+  resource?: string;
+  icon?: string;
+}
+
+interface Props {
+  bar1Skills: Skill[];
+  bar2Skills: Skill[];
+}
+
+const { bar1Skills, bar2Skills } = Astro.props;
+
+function slotType(skill: Skill, index: number): 'ultimate' | 'active' {
+  return index === 5 ? 'ultimate' : 'active';
+}
+
+const typeColor: Record<string, string> = {
+  Dragonknight:   '#c0392b',
+  Sorcerer:       '#8e44ad',
+  Nightblade:     '#2c3e50',
+  Templar:        '#f39c12',
+  Warden:         '#27ae60',
+  Necromancer:    '#7f8c8d',
+  Arcanist:       '#1abc9c',
+  Guild:          '#6b6585',
+  World:          '#6b6585',
+  'Alliance War': '#3a5a8a',
+  Craft:          '#6b6585',
+  Racial:         '#6b6585',
+};
+---
+
+<div class="skill-bars-wrap">
+  {[
+    { label: 'Front Bar', skills: bar1Skills },
+    { label: 'Back Bar',  skills: bar2Skills },
+  ].map(({ label, skills }) => (
+    <div class="skill-bar-panel">
+      <span class="bar-label">{label}</span>
+      <ol class="skill-slots">
+        {skills.map((skill, i) => {
+          const isUltimate = slotType(skill, i) === 'ultimate';
+          const accentColor = typeColor[skill.class] ?? 'var(--color-text-muted)';
+          const hasMorph = skill.morph_rationale && skill.morph_rationale.length > 0;
+
+          return (
+            <li class:list={['skill-slot', isUltimate && 'skill-slot--ultimate']} data-id={skill.id}>
+              <div class="skill-icon-wrap" style={`--accent: ${accentColor}`}>
+                {skill.icon
+                  ? <img src={skill.icon} alt={skill.name} width="40" height="40" loading="lazy" />
+                  : <span class="skill-icon-placeholder">{skill.name[0]}</span>
+                }
+                {isUltimate && <span class="ultimate-badge">R</span>}
+              </div>
+
+              <div class="skill-info">
+                <span class="skill-name">{skill.name}</span>
+                <span class="skill-line">{skill.skill_line}</span>
+              </div>
+
+              {hasMorph && (
+                <div class="skill-tooltip" role="tooltip">
+                  {skill.base_skill && (
+                    <div class="tooltip-morph-row">
+                      <span class="tooltip-label">Morph of</span>
+                      <span class="tooltip-value">{skill.base_skill}</span>
+                    </div>
+                  )}
+                  {skill.morph_sibling && (
+                    <div class="tooltip-morph-row">
+                      <span class="tooltip-label">Other morph</span>
+                      <span class="tooltip-value">{skill.morph_sibling}</span>
+                    </div>
+                  )}
+                  <p class="tooltip-rationale">{skill.morph_rationale}</p>
+                </div>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  ))}
+</div>
+
+<style>
+  .skill-bars-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    .skill-bars-wrap { grid-template-columns: 1fr; }
+  }
+
+  .skill-bar-panel {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .bar-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .skill-slots {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  /* Each slot row */
+  .skill-slot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.35rem 0.4rem;
+    border-radius: 3px;
+    cursor: default;
+    transition: background-color 0.12s;
+  }
+
+  .skill-slot:hover {
+    background-color: color-mix(in srgb, var(--color-accent) 6%, transparent);
+  }
+
+  .skill-slot--ultimate {
+    margin-top: 0.4rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: 0.6rem;
+  }
+
+  /* Icon */
+  .skill-icon-wrap {
+    position: relative;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid var(--accent, var(--color-border));
+    overflow: hidden;
+    background-color: var(--color-bg);
+  }
+
+  .skill-icon-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .skill-icon-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent, var(--color-text-muted));
+  }
+
+  .ultimate-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    letter-spacing: 0.05em;
+    background-color: var(--color-accent);
+    color: #fff;
+    padding: 0 0.2rem;
+    line-height: 1.4;
+    border-top-left-radius: 2px;
+  }
+
+  /* Text */
+  .skill-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+  }
+
+  .skill-name {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--color-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .skill-line {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.04em;
+  }
+
+  /* Tooltip */
+  .skill-tooltip {
+    display: none;
+    position: absolute;
+    left: calc(100% + 0.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 220px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.75rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    pointer-events: none;
+  }
+
+  .skill-slot:hover .skill-tooltip { display: block; }
+
+  /* Flip tooltip to left when near right edge */
+  @media (max-width: 900px) {
+    .skill-tooltip {
+      left: auto;
+      right: calc(100% + 0.5rem);
+    }
+  }
+
+  .tooltip-morph-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .tooltip-label {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+
+  .tooltip-value {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--color-mono);
+    text-align: right;
+  }
+
+  .tooltip-rationale {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin: 0.5rem 0 0;
+    border-top: 1px solid var(--color-border);
+    padding-top: 0.5rem;
+  }
+</style>

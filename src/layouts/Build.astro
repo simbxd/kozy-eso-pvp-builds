@@ -1,5 +1,40 @@
 ---
 import Base from './Base.astro';
+import SetCard from '../components/SetCard.astro';
+import SkillBar from '../components/SkillBar.astro';
+
+interface Bonus {
+  count: number;
+  stat: string;
+  value: number | string;
+}
+
+interface SetData {
+  id: string;
+  name: string;
+  type: string;
+  acquisition: string;
+  location: string;
+  dlc: string;
+  pieces: number;
+  bonuses: Bonus[];
+  uesp_url: string;
+  esohub_url: string;
+}
+
+interface SkillData {
+  id: string;
+  name: string;
+  base_skill?: string;
+  morph_of?: string;
+  morph_sibling?: string;
+  morph_rationale?: string;
+  class: string;
+  skill_line: string;
+  type: string;
+  resource?: string;
+  icon?: string;
+}
 
 interface Props {
   title: string;
@@ -10,8 +45,9 @@ interface Props {
   patch: string;
   difficulty: string;
   summary: string;
-  sets: string[];
-  skills: { bar1: string[]; bar2: string[] };
+  sets: SetData[];
+  bar1: SkillData[];
+  bar2: SkillData[];
   og_image?: string;
 }
 
@@ -25,14 +61,15 @@ const {
   difficulty,
   summary,
   sets,
-  skills,
+  bar1,
+  bar2,
   og_image,
 } = Astro.props;
 
 const difficultyColor: Record<string, string> = {
-  Beginner: '#4a7a4a',
+  Beginner:     '#4a7a4a',
   Intermediate: '#b8923a',
-  Advanced: '#8b2020',
+  Advanced:     '#8b2020',
 };
 ---
 
@@ -57,34 +94,31 @@ const difficultyColor: Record<string, string> = {
       </div>
     </header>
 
-    <!-- Skill bars -->
     <section class="build-section" aria-label="Skill bars">
       <h2 class="build-section-title">Skill Bars</h2>
-      <div class="skill-bars">
-        <div class="skill-bar">
-          <span class="skill-bar-label">Front Bar</span>
-          <ul class="skill-list">
-            {skills.bar1.map(id => <li class="skill-slot"><code>{id}</code></li>)}
-          </ul>
-        </div>
-        <div class="skill-bar">
-          <span class="skill-bar-label">Back Bar</span>
-          <ul class="skill-list">
-            {skills.bar2.map(id => <li class="skill-slot"><code>{id}</code></li>)}
-          </ul>
-        </div>
+      <SkillBar bar1Skills={bar1} bar2Skills={bar2} />
+    </section>
+
+    <section class="build-section" aria-label="Gear sets">
+      <h2 class="build-section-title">Sets</h2>
+      <div class="sets-grid">
+        {sets.map(set => (
+          <SetCard
+            id={set.id}
+            name={set.name}
+            type={set.type}
+            acquisition={set.acquisition}
+            location={set.location}
+            dlc={set.dlc}
+            pieces={set.pieces}
+            bonuses={set.bonuses}
+            uesp_url={set.uesp_url}
+            esohub_url={set.esohub_url}
+          />
+        ))}
       </div>
     </section>
 
-    <!-- Sets -->
-    <section class="build-section" aria-label="Gear sets">
-      <h2 class="build-section-title">Sets</h2>
-      <ul class="set-list">
-        {sets.map(id => <li class="set-slot"><code>{id}</code></li>)}
-      </ul>
-    </section>
-
-    <!-- Build body (Markdown content) -->
     <div class="build-body prose">
       <slot />
     </div>
@@ -115,10 +149,10 @@ const difficultyColor: Record<string, string> = {
     text-transform: uppercase;
   }
 
-  .build-class { color: var(--color-accent); }
-  .build-role  { color: var(--color-text-muted); }
+  .build-class    { color: var(--color-accent); }
+  .build-role     { color: var(--color-text-muted); }
   .build-gamemode { color: var(--color-text-muted); }
-  .build-sep   { color: var(--color-border); }
+  .build-sep      { color: var(--color-border); }
 
   .build-title {
     font-size: clamp(1.8rem, 4vw, 2.6rem);
@@ -153,7 +187,6 @@ const difficultyColor: Record<string, string> = {
 
   .tag--patch { color: var(--color-text-muted); }
 
-  /* Build sections */
   .build-section {
     margin-bottom: 2.5rem;
   }
@@ -169,67 +202,14 @@ const difficultyColor: Record<string, string> = {
     border-bottom: 1px solid var(--color-border);
   }
 
-  /* Skill bars */
-  .skill-bars {
+  .sets-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
-  @media (max-width: 600px) {
-    .skill-bars { grid-template-columns: 1fr; }
-  }
-
-  .skill-bar {
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 3px;
-    padding: 1rem;
-  }
-
-  .skill-bar-label {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-    display: block;
-    margin-bottom: 0.75rem;
-  }
-
-  .skill-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-  }
-
-  .skill-slot code {
-    font-size: 0.82rem;
-    color: var(--color-text);
-    background: none;
-    padding: 0;
-  }
-
-  /* Set list */
-  .set-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .set-slot code {
-    font-size: 0.82rem;
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    padding: 0.2rem 0.6rem;
-    border-radius: 2px;
-    color: var(--color-mono);
+  @media (max-width: 640px) {
+    .sets-grid { grid-template-columns: 1fr; }
   }
 
   /* Prose */
@@ -253,7 +233,7 @@ const difficultyColor: Record<string, string> = {
     margin: 2rem 0 0.75rem;
   }
 
-  .prose :global(p) { margin: 0 0 1.2rem; color: var(--color-text); }
+  .prose :global(p)      { margin: 0 0 1.2rem; color: var(--color-text); }
   .prose :global(strong) { color: var(--color-text); font-weight: 600; }
 
   .prose :global(code) {
@@ -271,5 +251,5 @@ const difficultyColor: Record<string, string> = {
   }
 
   .prose :global(li) { margin-bottom: 0.4rem; color: var(--color-text); }
-  .prose :global(a) { color: var(--color-accent); }
+  .prose :global(a)  { color: var(--color-accent); }
 </style>

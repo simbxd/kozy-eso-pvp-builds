@@ -1,0 +1,194 @@
+---
+interface Bonus {
+  count: number;
+  stat: string;
+  value: number | string;
+}
+
+interface Props {
+  id: string;
+  name: string;
+  type: string;
+  acquisition: string;
+  location: string;
+  dlc: string;
+  pieces: number;
+  bonuses: Bonus[];
+  uesp_url: string;
+  esohub_url: string;
+}
+
+const { id, name, type, acquisition, location, dlc, pieces, bonuses, uesp_url, esohub_url } = Astro.props;
+
+const typeColor: Record<string, string> = {
+  'Monster':      '#b87333',
+  'Mythic':       '#c4a55a',
+  'Heavy Armor':  '#8b7355',
+  'Medium Armor': '#4a7a4a',
+  'Light Armor':  '#3a5a8a',
+  'Mixed':        '#6b6585',
+  'Jewelry':      '#7a5a9a',
+  'Weapon':       '#7a3a3a',
+};
+
+const acqLabel: Record<string, string> = {
+  Overland: 'Overland',
+  Dungeon:  'Dungeon',
+  Trial:    'Trial',
+  PvP:      'PvP',
+  Crafted:  'Crafted',
+  Mythic:   'Lead Hunt',
+  Monster:  'Dungeon',
+  Arena:    'Arena',
+};
+
+const color = typeColor[type] ?? 'var(--color-text-muted)';
+---
+
+<article class="set-card" data-id={id}>
+  <header class="set-card-header">
+    <div class="set-card-name-row">
+      <span class="set-card-name">{name}</span>
+      <span class="set-card-type" style={`color: ${color}; border-color: ${color}40`}>{type}</span>
+    </div>
+    <div class="set-card-meta">
+      <span>{acqLabel[acquisition] ?? acquisition}</span>
+      <span class="sep">·</span>
+      <span>{location}</span>
+      {dlc !== 'Base Game' && (
+        <>
+          <span class="sep">·</span>
+          <span class="set-card-dlc">{dlc}</span>
+        </>
+      )}
+    </div>
+  </header>
+
+  <ul class="bonus-list">
+    {bonuses.map(b => (
+      <li class="bonus-row">
+        <span class="bonus-count">({b.count})</span>
+        <span class="bonus-stat">{b.stat}</span>
+        <span class="bonus-value">{b.value}</span>
+      </li>
+    ))}
+  </ul>
+
+  <footer class="set-card-links">
+    <a href={uesp_url} target="_blank" rel="noopener noreferrer">UESP ↗</a>
+    <a href={esohub_url} target="_blank" rel="noopener noreferrer">ESOHub ↗</a>
+  </footer>
+</article>
+
+<style>
+  .set-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 1rem 1.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .set-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .set-card-name-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .set-card-name {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  .set-card-type {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid;
+    padding: 0.1rem 0.45rem;
+    border-radius: 2px;
+  }
+
+  .set-card-meta {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--color-text-muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    align-items: center;
+  }
+
+  .sep { color: var(--color-border); }
+
+  .set-card-dlc { color: var(--color-accent); }
+
+  .bonus-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: 0.65rem;
+  }
+
+  .bonus-row {
+    display: grid;
+    grid-template-columns: 2rem 1fr auto;
+    gap: 0.5rem;
+    align-items: baseline;
+    font-size: 0.82rem;
+  }
+
+  .bonus-count {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    text-align: right;
+  }
+
+  .bonus-stat {
+    color: var(--color-text);
+  }
+
+  .bonus-value {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-mono);
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .set-card-links {
+    display: flex;
+    gap: 0.75rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: 0.6rem;
+  }
+
+  .set-card-links a {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .set-card-links a:hover { color: var(--color-accent); }
+</style>
