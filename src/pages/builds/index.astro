@@ -10,7 +10,19 @@ const sorted = allBuilds.sort((a, b) => {
   return a.data.title.localeCompare(b.data.title);
 });
 
-const classes = [...new Set(allBuilds.map(b => b.data.class))].sort();
+const classes = [
+  'Dragonknight',
+  'Sorcerer',
+  'Nightblade',
+  'Templar',
+  'Warden',
+  'Necromancer',
+  'Arcanist',
+];
+
+const buildCountByClass = Object.fromEntries(
+  classes.map(c => [c, allBuilds.filter(b => b.data.class === c).length])
+);
 ---
 
 <Base title="Builds" description="All Kozy ESO PvP builds — Stamina, Magicka, all classes.">
@@ -20,14 +32,24 @@ const classes = [...new Set(allBuilds.map(b => b.data.class))].sort();
       <p class="page-desc">Optimized PvP builds with gear, skills, and rotation breakdowns.</p>
     </header>
 
-    {classes.length > 1 && (
-      <nav class="filter-nav" aria-label="Filter builds by class">
-        <span class="filter-label">Filter by class:</span>
+    <nav class="class-nav" aria-label="Browse builds by class">
+      <div class="class-grid">
         {classes.map(c => (
-          <a href={`/builds/class/${c.toLowerCase()}`} class="filter-link">{c}</a>
+          <a
+            href={`/builds/class/${c.toLowerCase()}`}
+            class="class-pill"
+            aria-label={`${c} builds`}
+          >
+            <span class="class-pill-name">{c}</span>
+            <span class="class-pill-count">{buildCountByClass[c]}</span>
+          </a>
         ))}
-      </nav>
-    )}
+        <a href="/builds/subclass" class="class-pill class-pill--subclass" aria-label="Subclass builds">
+          <span class="class-pill-name">Subclass</span>
+          <span class="class-pill-count class-pill-count--new">New</span>
+        </a>
+      </div>
+    </nav>
 
     <div class="builds-grid">
       {sorted.map(build => (
@@ -70,40 +92,67 @@ const classes = [...new Set(allBuilds.map(b => b.data.class))].sort();
 
   .page-desc { color: var(--color-text-muted); margin: 0; }
 
-  .filter-nav {
+  /* Class nav */
+  .class-nav {
+    margin-bottom: 2.5rem;
+  }
+
+  .class-grid {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 2rem;
   }
 
-  .filter-label {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-    margin-right: 0.25rem;
-  }
-
-  .filter-link {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.04em;
-    color: var(--color-text-muted);
+  .class-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.85rem;
+    background-color: var(--color-surface);
     border: 1px solid var(--color-border);
-    padding: 0.2rem 0.6rem;
-    border-radius: 2px;
+    border-radius: 4px;
     text-decoration: none;
-    transition: color 0.15s, border-color 0.15s;
+    transition: border-color 0.15s, background-color 0.15s;
   }
 
-  .filter-link:hover {
-    color: var(--color-accent);
+  .class-pill:hover {
     border-color: var(--color-accent-dim);
+    background-color: color-mix(in srgb, var(--color-accent) 6%, var(--color-surface));
   }
 
+  .class-pill--subclass {
+    border-style: dashed;
+  }
+
+  .class-pill--subclass:hover {
+    border-style: solid;
+  }
+
+  .class-pill-name {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: var(--color-text);
+  }
+
+  .class-pill-count {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--color-bg);
+    background-color: var(--color-text-muted);
+    padding: 0.05rem 0.35rem;
+    border-radius: 2px;
+    min-width: 1.2rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .class-pill-count--new {
+    background-color: var(--color-accent);
+    letter-spacing: 0.04em;
+  }
+
+  /* Builds grid */
   .builds-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
