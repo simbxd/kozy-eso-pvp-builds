@@ -10,6 +10,7 @@ const currentPath = Astro.url.pathname;
 <header>
   <div class="header-inner">
     <a href="/" class="site-logo" aria-label="Kozy ESO PvP Builds — Home">
+      <span class="logo-mark">K</span>
       <span class="logo-title">Kozy ESO PvP Builds</span>
     </a>
 
@@ -34,7 +35,9 @@ const currentPath = Astro.url.pathname;
 <style>
   header {
     border-bottom: 1px solid var(--color-border);
-    background-color: var(--color-bg);
+    background-color: color-mix(in srgb, var(--color-bg) 80%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
     z-index: 50;
@@ -43,8 +46,8 @@ const currentPath = Astro.url.pathname;
   .header-inner {
     max-width: 72rem;
     margin: 0 auto;
-    padding: 0 1.25rem;
-    height: 4rem;
+    padding: 0 1.5rem;
+    height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,19 +58,34 @@ const currentPath = Astro.url.pathname;
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
+  }
+
+  .logo-mark {
+    width: 1.75rem;
+    height: 1.75rem;
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dim));
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    flex-shrink: 0;
   }
 
   .logo-title {
     font-family: var(--font-display);
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    color: var(--color-accent);
+    color: var(--color-text);
     letter-spacing: 0.01em;
   }
 
-  .logo-title:hover {
-    color: var(--color-text);
+  .site-logo:hover .logo-title {
+    color: var(--color-accent);
   }
 
   .nav-list {
@@ -75,24 +93,27 @@ const currentPath = Astro.url.pathname;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 2rem;
+    gap: 0.25rem;
   }
 
   .nav-link {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
     color: var(--color-text-muted);
     text-decoration: none;
-    padding-bottom: 2px;
-    border-bottom: 1px solid transparent;
-    transition: color 0.15s, border-color 0.15s;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    transition: color 0.15s, background-color 0.15s;
   }
 
-  .nav-link:hover,
-  .nav-link--active {
+  .nav-link:hover {
     color: var(--color-text);
-    border-bottom-color: var(--color-accent);
+    background-color: var(--color-surface);
+  }
+
+  .nav-link--active {
+    color: var(--color-accent);
+    background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
   }
 </style>
