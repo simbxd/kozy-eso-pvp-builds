@@ -70,7 +70,9 @@ src/
 │   ├── Header.astro
 │   ├── Footer.astro
 │   ├── BuildCard.astro  ← Carte pour l'index des builds
-│   └── Callout.astro    ← Annotations (formula/note/warning)
+│   ├── Callout.astro    ← Annotations (formula/note/warning)
+│   ├── SetCard.astro    ← Carte d'un set ESO avec bonus et liens
+│   └── SkillBar.astro   ← Double barre de skills avec icônes et tooltip morph
 ├── layouts/
 │   ├── Base.astro       ← Layout universel (SEO, OG, a11y)
 │   ├── Build.astro      ← Layout page de build
@@ -89,9 +91,13 @@ src/
 │   └── global.css
 └── content.config.ts    ← Schémas Zod pour toutes les collections
 public/
-├── assets/og/           ← og-default.svg + og-default.png
+├── assets/
+│   ├── og/              ← og-default.svg + og-default.png
+│   └── skills/          ← Icônes PNG des skills ({id}.png)
 ├── robots.txt
 └── favicon.svg
+scripts/
+└── fetch-skill-icons.mjs ← Script UESP API pour télécharger les icônes
 ```
 
 ---
@@ -132,7 +138,8 @@ Types : `Active | Passive | Ultimate`
 ### Ajouter un skill
 1. Créer `src/content/skills/nom-du-skill.json`
 2. Ajouter l'ID dans `skills.bar1` ou `skills.bar2` du build
-3. Push
+3. Lancer `node scripts/fetch-skill-icons.mjs` pour télécharger l'icône automatiquement depuis UESP
+4. Push
 
 ### Après un patch ESO
 1. Consulter les patch notes officielles (ESO site) et UESP pour les changements de sets/skills
@@ -169,13 +176,18 @@ Types : `Active | Passive | Ultimate`
 - 1 build : SUPERSTAR (MagDK PvP)
 - 1 article : Penetration Caps Explained
 - 5 sets : Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee
-- 12 skills : barre offensive + défensive du build SUPERSTAR (avec icônes PNG)
+- 12 skills : barre offensive + défensive du build SUPERSTAR (icônes PNG depuis UESP)
 
-### M2 — Terminé
-- `SetCard.astro` : affichage des bonus de set, type coloré, acquisition, DLC, liens UESP/ESOHub
-- `SkillBar.astro` : double barre avec icône, skill line, tooltip morph au hover
-- Icônes récupérées automatiquement via `scripts/fetch-skill-icons.mjs` (UESP API)
-- Data integrity check au build time via `assertIds()` dans `[slug].astro`
+### M2 — Terminé (2026-05-10)
+- `SetCard.astro` : bonus colorés, badge type, acquisition, DLC, liens UESP/ESOHub, grille 2 colonnes
+- `SkillBar.astro` : double barre, icône 36px avec bordure colorée par classe, badge R sur ultimate, tooltip morph au hover
+- `[slug].astro` : résolution des IDs → objets JSON au build time (plus de strings bruts dans le layout)
+- `scripts/fetch-skill-icons.mjs` : script UESP MediaWiki API, télécharge toutes les icônes en une commande
+- `assertIds()` : data integrity check — build échoue avec message explicite si un ID n'a pas de JSON
+- Morphs vérifiés et corrigés pour 7 skills via API UESP (molten-whip, disintegrating-dragonfire, shattering-rocks, incinerate, blood-of-the-elder-dragon, shatterspike-mantle, heart-and-home)
+- `soul-of-flame` : skill U49 non encore documenté sur UESP — morph chain null, pas de tooltip
+- `vigor` supprimé → `resolving-vigor` (nom correct du morph utilisé dans le build)
+- Schéma Zod : `morph_of` / `morph_sibling` acceptent `null`
 
 ### Prochaine étape (M3)
-Lighthouse audit, page 404 custom, QA mobile, accessibilité.
+Lighthouse audit, page 404 custom, optimisation images, QA mobile, accessibilité.
