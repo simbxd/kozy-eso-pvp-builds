@@ -178,6 +178,16 @@ const articlesActive = currentPath.startsWith('/articles');
     position: relative;
   }
 
+  /* Bridge the gap between trigger and panel — keeps hover zone continuous */
+  .nav-dropdown-wrap::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 0.6rem;
+  }
+
   /* Show dropdown on hover or keyboard focus */
   .nav-dropdown-wrap:hover .nav-dropdown,
   .nav-dropdown-wrap:focus-within .nav-dropdown {
