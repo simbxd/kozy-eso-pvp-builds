@@ -61,15 +61,15 @@ stats:
     note: "nécessaire pour break free et roll dodge"
 champion_points:
   warfare:
-    - { star: "Deadly Aim",       points: 50, priority: 1 }
-    - { star: "Wrathful Strikes", points: 50, priority: 2 }
-    - { star: "Ironclad",         points: 50, priority: 3 }
-    - { star: "Duelist's Rebuff", points: 30, priority: 4 }
+    - { star: "Cleansing Revival", points: 50, priority: 1 }
+    - { star: "Master-at-Arms",    points: 50, priority: 2 }
+    - { star: "Ironclad",          points: 50, priority: 3 }
+    - { star: "Fighting Finesse",  points: 50, priority: 4 }
   fitness:
-    - { star: "Boundless Vitality", points: 50, priority: 1 }
-    - { star: "Fortified",          points: 50, priority: 2 }
-    - { star: "Sprinter",           points: 30, priority: 3 }
-    - { star: "PLACEHOLDER",        points: 30, priority: 4 }
+    - { star: "Celerity",      points: 50, priority: 1 }
+    - { star: "Slippery",      points: 50, priority: 2 }
+    - { star: "Fortified",     points: 50, priority: 3 }
+    - { star: "Pain's Refuge", points: 50, priority: 4 }
 consumables:
   food:
     name: "Bewitched Sugar Skulls"
@@ -82,7 +82,7 @@ consumables:
   mundus:
     stone: "The Lady"
     effect: "Increases Physical and Spell Resistance"
-    note: "Max tankiness — recommended default for solo and small-scale PvP"
+    note: "Recommended default for this build"
     alt:
       stone: "The Warrior"
       effect: "Increases Weapon and Spell Damage"
