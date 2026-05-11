@@ -46,28 +46,39 @@ const guidesActive = currentPath.startsWith('/guides');
 </header>
 
 <script>
-  const ESO_API = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://live-services.elderscrollsonline.com/status/realms');
+  const ESO_URL = 'https://live-services.elderscrollsonline.com/status/realms';
+  const PROXY   = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(ESO_URL);
+
+  function setStatus(dot: HTMLElement, label: HTMLElement, state: 'online' | 'offline' | 'unknown') {
+    dot.dataset.state = state;
+    label.textContent = state === 'online' ? 'Online' : state === 'offline' ? 'Offline' : 'N/A';
+  }
 
   async function fetchStatus() {
-    const dot   = document.getElementById('eso-dot');
-    const label = document.getElementById('eso-label');
+    const dot   = document.getElementById('eso-dot') as HTMLElement | null;
+    const label = document.getElementById('eso-label') as HTMLElement | null;
     if (!dot || !label) return;
 
     try {
-      const res  = await fetch(ESO_API, { cache: 'no-store' });
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 8000);
+      const res = await fetch(PROXY, { cache: 'no-store', signal: controller.signal });
+      clearTimeout(timeout);
+
+      if (!res.ok) { setStatus(dot, label, 'unknown'); return; }
+
       const data = await res.json();
 
-      // API returns an array of realm objects; pick PC_EU or first available
-      const realm = data.find((r: any) => r.name?.includes('PC_EU'))
-                 ?? data.find((r: any) => r.name?.includes('PC'))
-                 ?? data[0];
+      // Handle both array and object responses
+      const realms: any[] = Array.isArray(data) ? data : data.realms ?? data.result ?? [];
+      const realm = realms.find(r => r?.name?.includes('PC_EU'))
+                 ?? realms.find(r => r?.name?.includes('PC'))
+                 ?? realms[0];
 
-      const online = realm?.status === 'UP';
-      dot.dataset.state   = online ? 'online' : 'offline';
-      label.textContent   = online ? 'Online' : 'Offline';
+      const up = realm?.status === 'UP' || realm?.status === 'up' || realm?.online === true;
+      setStatus(dot, label, up ? 'online' : 'offline');
     } catch {
-      dot.dataset.state = 'unknown';
-      label.textContent = 'Status N/A';
+      setStatus(dot, label, 'unknown');
     }
   }
 
