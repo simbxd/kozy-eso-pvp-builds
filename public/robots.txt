@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kozy-eso-pvp-builds.netlify.app/sitemap-index.xml
+Sitemap: https://kozy-eso-pvp-builds.simbad14100.workers.dev/sitemap-index.xml

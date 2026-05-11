@@ -127,12 +127,12 @@ Types : `Active | Passive | Ultimate`
 
 ### Publier un guide
 1. Créer `src/content/guides/mon-guide.md` avec le frontmatter : `title`, `category`, `tags`, `published`, `summary`
-2. Push → Netlify déploie, le guide apparaît sur `/guides` et dans le flux RSS
+2. Push → Cloudflare Pages déploie, le guide apparaît sur `/guides` et dans le flux RSS
 
 ### Publier un build
 1. Créer `src/content/builds/mon-build.md` avec le frontmatter complet
 2. S'assurer que tous les IDs dans `sets[]` et `skills.bar1/bar2[]` ont un fichier JSON correspondant
-3. `git add . && git commit -m "..." && git push` → Netlify déploie en ~30s
+3. `git add . && git commit -m "..." && git push` → Cloudflare Pages déploie en ~30s
 
 ### Ajouter un set
 1. Créer `src/content/sets/nom-du-set.json` (référencer UESP pour les bonus)

@@ -45,12 +45,12 @@ L'auteur veut **à la fois** apprendre à travers ce projet **et** livrer un sit
 | Decision | Choice | Rationale |
 |---|---|---|
 | **Framework** | Astro 6 | Static site, zero server, free hosting, excellent for content-heavy sites |
-| **Hosting** | Netlify (free tier) | CD/CI from Git, instant deploys, custom domain support |
+| **Hosting** | Cloudflare Pages (free tier) | CD/CI from Git, instant deploys, custom domain support |
 | **Content format** | Markdown + Astro Content Layer | Simple to write and maintain for non-developers |
 | **Styling** | Tailwind CSS v4 | Utility-first, tokens via `@theme` dans le CSS — pas de config JS |
 | **ESO data strategy** | Manual curation per build, UESP as reference | See Section 3 |
 | **Build index filtering** | Server-side static filtering via Astro (no client JS) | See Section 3 note |
-| **Version control** | Git + GitHub | Required for Netlify CD |
+| **Version control** | Git + GitHub | Required for Cloudflare Pages CD |
 
 ### Why NOT WordPress
 Rejected: free tier includes ads and subdomain, interactive features require paid plugins, long-term technical debt for a non-developer owner.
@@ -333,12 +333,12 @@ consumables:
 ## 6. Roadmap — Milestones
 
 ### ✅ Milestone 0 — Project Setup & Foundation
-**Goal:** Working Astro project on Netlify with design system, SEO, accessibility base, and mobile-first layout.
+**Goal:** Working Astro project on Cloudflare Pages with design system, SEO, accessibility base, and mobile-first layout.
 **Completed:** 2026-05-10
 
 Tasks:
 - [x] Init Astro project with Tailwind CSS
-- [x] Configure GitHub repo (`github.com/simbxd/kozy-eso-pvp-builds`) and Netlify auto-deploy
+- [x] Configure GitHub repo (`github.com/simbxd/kozy-eso-pvp-builds`) and Cloudflare Pages auto-deploy
 - [x] Implement design tokens (CSS variables) — palette noir & violet
 - [x] Set up Google Fonts (Cormorant Garamond, Crimson Pro, JetBrains Mono)
 - [x] Create `Base.astro` layout :
@@ -355,7 +355,7 @@ Tasks:
 - [x] Homepage placeholder
 - [x] Installation Node.js 24.15.0 (absent du système — installé via winget)
 
-Deliverable: `kozy-eso-pvp-builds.netlify.app` live ✅
+Deliverable: `kozy-eso-pvp-builds.pages.dev` live ✅
 
 ---
 
@@ -376,7 +376,7 @@ Tasks:
 - [x] Sitemap (`@astrojs/sitemap`)
 - [x] Flux RSS (`@astrojs/rss`)
 - [x] `robots.txt`
-- [x] Test end-to-end : Markdown → push → page live sur Netlify ✅
+- [x] Test end-to-end : Markdown → push → page live sur Cloudflare Pages ✅
 
 Deliverable: Auteur peut publier builds et articles indépendamment ✅
 
@@ -555,7 +555,7 @@ Décisions prises pendant le développement, hors roadmap initiale.
 | og:image strategy | Global fallback (M0 ✅) → per-article (M1 ✅) → auto-generated per build (post-launch) |
 | SEO / mobile / a11y | All in M0 ✅ — built into Base layout from day one |
 | Morph modeling | Supported in skill schema (`morph_of`, `morph_sibling`, `morph_rationale`), nullable pour U49+ ✅ |
-| Custom domain | Author decides; site fonctionne sur Netlify subdomain |
+| Custom domain | Author decides; site fonctionne sur Cloudflare Pages subdomain |
 | Analytics | Deferred — consider Plausible post-launch |
 | Comment system | Out of scope for launch |
 | Palette couleurs | Noir & violet (décision prise session 1 après visualisation live) |
@@ -586,7 +586,7 @@ Pour chaque décision non triviale, expliquer le *pourquoi*. L'auteur doit compr
 1. Créer `.md` dans `src/content/builds/` ou `src/content/guides/`
 2. Remplir le frontmatter (Section 5)
 3. Écrire le body en Markdown
-4. `git add . && git commit -m "..." && git push` → Netlify déploie en ~30s
+4. `git add . && git commit -m "..." && git push` → Cloudflare Pages déploie en ~30s
 
 **Ajouter un set ou un skill :**
 1. Créer le JSON dans `src/content/sets/` ou `src/content/skills/`
