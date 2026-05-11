@@ -37,9 +37,12 @@ const guidesActive = currentPath.startsWith('/guides');
 
     <div class="meta">
       PATCH U50 &nbsp;·&nbsp;
-      <span class="eso-status" id="eso-status" aria-live="polite">
-        <span class="eso-status__dot" id="eso-dot"></span>
-        <span id="eso-label">—</span>
+      <span class="eso-servers" aria-live="polite">
+        <span class="srv" id="srv-eu"><span class="srv__dot"></span><span class="srv__lbl">EU</span></span>
+        <span class="srv__sep">·</span>
+        <span class="srv" id="srv-na"><span class="srv__dot"></span><span class="srv__lbl">NA</span></span>
+        <span class="srv__sep">·</span>
+        <span class="srv" id="srv-pts"><span class="srv__dot"></span><span class="srv__lbl">PTS</span></span>
       </span>
     </div>
   </div>
@@ -48,32 +51,31 @@ const guidesActive = currentPath.startsWith('/guides');
 <script>
   const PROXY = 'https://eso-status-proxy.simbad14100.workers.dev';
 
-  async function fetchStatus() {
-    const dot   = document.getElementById('eso-dot') as HTMLElement | null;
-    const label = document.getElementById('eso-label') as HTMLElement | null;
-    if (!dot || !label) return;
+  const SERVERS: Record<string, string> = {
+    eu:  'The Elder Scrolls Online (EU)',
+    na:  'The Elder Scrolls Online (NA)',
+    pts: 'The Elder Scrolls Online (PTS)',
+  };
 
+  function applyState(id: string, status: string | undefined) {
+    const el = document.getElementById(`srv-${id}`);
+    if (!el) return;
+    const dot = el.querySelector('.srv__dot') as HTMLElement;
+    if (status === 'UP')        dot.dataset.state = 'online';
+    else if (status === 'DOWN') dot.dataset.state = 'offline';
+    else                        dot.dataset.state = 'unknown';
+  }
+
+  async function fetchStatus() {
     try {
       const controller = new AbortController();
       setTimeout(() => controller.abort(), 8000);
-      const res  = await fetch(PROXY, { cache: 'no-store', signal: controller.signal });
-      const data = await res.json();
-
-      const parsed = data;
-      const servers = parsed?.zos_platform_response?.response ?? {};
-      const eu = servers['The Elder Scrolls Online (EU)'];
-
-      if (eu === undefined) {
-        dot.dataset.state = 'unknown';
-        label.textContent = 'ESO N/A';
-      } else {
-        const up = eu === 'UP';
-        dot.dataset.state = up ? 'online' : 'offline';
-        label.textContent = up ? 'PC EU · Online' : 'PC EU · Offline';
-      }
+      const res     = await fetch(PROXY, { cache: 'no-store', signal: controller.signal });
+      const data    = await res.json();
+      const servers = data?.zos_platform_response?.response ?? {};
+      Object.entries(SERVERS).forEach(([id, key]) => applyState(id, servers[key]));
     } catch {
-      dot.dataset.state = 'unknown';
-      label.textContent = 'ESO N/A';
+      ['eu', 'na', 'pts'].forEach(id => applyState(id, undefined));
     }
   }
 
@@ -152,30 +154,31 @@ const guidesActive = currentPath.startsWith('/guides');
     gap: 6px;
   }
 
-  .eso-status {
+  .eso-servers {
     display: inline-flex;
     align-items: center;
     gap: 6px;
   }
 
-  .eso-status__dot {
-    width: 7px;
-    height: 7px;
+  .srv {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .srv__sep { color: var(--color-border); }
+
+  .srv__dot {
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background: var(--color-text-muted);
     flex-shrink: 0;
     transition: background 400ms, box-shadow 400ms;
   }
 
-  .eso-status__dot[data-state="online"] {
-    background: #4ade80;
-    box-shadow: 0 0 6px rgba(74, 222, 128, 0.6);
-  }
-
-  .eso-status__dot[data-state="offline"] {
-    background: var(--color-critical);
-    box-shadow: 0 0 6px rgba(239, 68, 68, 0.5);
-  }
+  .srv__dot[data-state="online"]  { background: #4ade80; box-shadow: 0 0 5px rgba(74,222,128,0.6); }
+  .srv__dot[data-state="offline"] { background: var(--color-critical); box-shadow: 0 0 5px rgba(239,68,68,0.5); }
 
   @media (max-width: 760px) {
     .rail {
