@@ -59,12 +59,19 @@ const guidesActive = currentPath.startsWith('/guides');
       const res  = await fetch(PROXY, { cache: 'no-store', signal: controller.signal });
       const data = await res.json();
 
-      const servers = data?.zos_platform_response?.response ?? {};
+      // corsproxy.io may wrap body as a string
+      const parsed = typeof data === 'string' ? JSON.parse(data) : data;
+      const servers = parsed?.zos_platform_response?.response ?? {};
       const eu = servers['The Elder Scrolls Online (EU)'];
-      const up = eu === 'UP';
 
-      dot.dataset.state = up ? 'online' : 'offline';
-      label.textContent = up ? 'PC EU · Online' : 'PC EU · Offline';
+      if (eu === undefined) {
+        dot.dataset.state = 'unknown';
+        label.textContent = 'ESO N/A';
+      } else {
+        const up = eu === 'UP';
+        dot.dataset.state = up ? 'online' : 'offline';
+        label.textContent = up ? 'PC EU · Online' : 'PC EU · Offline';
+      }
     } catch {
       dot.dataset.state = 'unknown';
       label.textContent = 'ESO N/A';
