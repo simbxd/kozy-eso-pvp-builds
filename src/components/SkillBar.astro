@@ -341,7 +341,8 @@ function slotIndex(i: number) {
   .tooltip {
     display: none;
     position: absolute;
-    top: calc(100% + 14px);
+    bottom: calc(100% + 14px);
+    top: auto;
     left: 50%;
     transform: translateX(-50%);
     width: 320px;
@@ -359,18 +360,19 @@ function slotIndex(i: number) {
   .tooltip::after {
     content: '';
     position: absolute;
-    top: -7px;
+    bottom: -7px;
+    top: auto;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
     width: 12px;
     height: 12px;
     background: var(--color-surface-2);
-    border-left: 1px solid var(--color-accent);
-    border-top: 1px solid var(--color-accent);
+    border-right: 1px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
   }
 
   @keyframes kz-tooltip-in {
-    from { opacity: 0; transform: translateX(-50%) translateY(4px); }
+    from { opacity: 0; transform: translateX(-50%) translateY(-4px); }
     to   { opacity: 1; transform: translateX(-50%) translateY(0); }
   }
 
@@ -394,7 +396,7 @@ function slotIndex(i: number) {
   }
 
   @keyframes kz-tooltip-in-r {
-    from { opacity: 0; transform: translateY(4px); }
+    from { opacity: 0; transform: translateY(-4px); }
     to   { opacity: 1; transform: translateY(0); }
   }
 
