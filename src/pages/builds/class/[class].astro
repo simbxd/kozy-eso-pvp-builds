@@ -4,10 +4,10 @@ import Base from '../../../layouts/Base.astro';
 import BuildCard from '../../../components/BuildCard.astro';
 
 export async function getStaticPaths() {
+  const ALL_CLASSES = ['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist'] as const;
   const builds = await getCollection('builds');
-  const classes = [...new Set(builds.map(b => b.data.class))];
 
-  return classes.map(esClass => ({
+  return ALL_CLASSES.map(esClass => ({
     params: { class: esClass.toLowerCase() },
     props: {
       esClass,
@@ -23,82 +23,173 @@ export async function getStaticPaths() {
 }
 
 const { esClass, builds } = Astro.props;
+const hasBuilds = builds.length > 0;
 ---
 
 <Base
   title={`${esClass} Builds`}
   description={`Kozy ESO PvP builds for the ${esClass} class.`}
 >
-  <div class="page-wrap">
-    <header class="page-header">
-      <a href="/builds" class="breadcrumb">← All Builds</a>
-      <h1 class="page-title">{esClass} <span class="page-title-sub">Builds</span></h1>
-      <p class="page-desc">{builds.length} build{builds.length !== 1 ? 's' : ''} available.</p>
+  <div class="bc">
+
+    <header class="bc__head">
+      <div class="bc__rail">
+        <a href="/builds" class="bc__back">← ALL BUILDS</a>
+        <span class="bc__count">
+          {hasBuilds
+            ? `${builds.length} BUILD${builds.length !== 1 ? 'S' : ''}`
+            : 'COMING SOON'}
+        </span>
+      </div>
+      <h1 class="bc__title">{esClass}</h1>
+      <p class="bc__dek">
+        {hasBuilds
+          ? `${builds.length} optimized PvP build${builds.length !== 1 ? 's' : ''} for the ${esClass}.`
+          : `No builds published yet for the ${esClass}. Check back after the next patch.`}
+      </p>
     </header>
 
-    <div class="builds-grid">
-      {builds.map(build => (
-        <BuildCard
-          title={build.data.title}
-          slug={build.id}
-          class={build.data.class}
-          role={build.data.role}
-          resource={build.data.resource}
-          gamemode={build.data.gamemode}
-          patch={build.data.patch}
-          difficulty={build.data.difficulty}
-          summary={build.data.summary}
-          featured={build.data.featured}
-        />
-      ))}
-    </div>
+    <div class="bc__rule" aria-hidden="true"></div>
+
+    {hasBuilds ? (
+      <div class="bc__grid">
+        {builds.map((build, i) => (
+          <BuildCard
+            title={build.data.title}
+            slug={build.id}
+            class={build.data.class}
+            role={build.data.role}
+            resource={build.data.resource}
+            gamemode={build.data.gamemode}
+            patch={build.data.patch}
+            difficulty={build.data.difficulty}
+            summary={build.data.summary}
+            featured={build.data.featured}
+            index={i + 1}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="bc__empty">
+        <div class="bc__empty-sigil" aria-hidden="true">
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+            <path d="M28 4 L50 28 L28 52 L6 28 Z" stroke="var(--color-border-2)" stroke-width="1" fill="none"/>
+            <path d="M28 14 L42 28 L28 42 L14 28 Z" stroke="var(--color-border-2)" stroke-width="1" fill="none" opacity="0.5"/>
+          </svg>
+        </div>
+        <p class="bc__empty-msg">No builds published for this class yet.</p>
+        <a href="/builds" class="bc__empty-link">← Browse all builds</a>
+      </div>
+    )}
+
   </div>
 </Base>
 
 <style>
-  .page-wrap {
-    max-width: 72rem;
+  .bc {
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 3rem 1.25rem 5rem;
+    padding: 64px 24px 96px;
   }
 
-  .page-header {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--color-border);
+  /* ── Masthead ── */
+  .bc__head { margin-bottom: 40px; }
+
+  .bc__rail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
   }
 
-  .breadcrumb {
+  .bc__back {
     font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.04em;
+    font-size: 10px;
+    letter-spacing: 0.2em;
     color: var(--color-text-muted);
     text-decoration: none;
-    display: inline-block;
-    margin-bottom: 1rem;
+    transition: color 160ms;
   }
+  .bc__back:hover { color: var(--color-accent); }
 
-  .breadcrumb:hover { color: var(--color-accent); }
-
-  .page-title {
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    font-weight: 700;
+  .bc__count {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
     color: var(--color-accent);
-    margin: 0 0 0.5rem;
   }
 
-  .page-title-sub { color: var(--color-text); }
+  .bc__title {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 8vw, 88px);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 0.95;
+    background: linear-gradient(160deg, #ede8ff 0%, #a78bfa 60%, #6d28d9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 16px;
+  }
 
-  .page-desc {
+  .bc__dek {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-style: italic;
     color: var(--color-text-muted);
     margin: 0;
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
+    line-height: 1.5;
   }
 
-  .builds-grid {
+  .bc__rule {
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-accent), transparent);
+    opacity: 0.3;
+    margin-bottom: 40px;
+  }
+
+  /* ── Grid ── */
+  .bc__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    gap: 12px;
+  }
+
+  /* ── Empty state ── */
+  .bc__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px;
+    gap: 16px;
+    text-align: center;
+    border: 1px solid var(--color-border-2);
+    background: var(--color-surface);
+  }
+
+  .bc__empty-sigil { opacity: 0.4; }
+
+  .bc__empty-msg {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-style: italic;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .bc__empty-link {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--color-accent);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .bc__empty-link:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .bc { padding: 40px 16px 72px; }
   }
 </style>

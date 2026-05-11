@@ -1,75 +1,109 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors — Black & Violet */
   --color-bg:           #09090f;
   --color-surface:      #101018;
+  --color-surface-2:    #15131f;
   --color-border:       #1e1c2e;
+  --color-border-2:     #2a2640;
   --color-text:         #ede8ff;
   --color-text-muted:   #7d77a0;
   --color-accent:       #8b5cf6;
   --color-accent-dim:   #6d28d9;
+  --color-accent-glow:  rgba(139,92,246,0.18);
   --color-critical:     #ef4444;
   --color-mono:         #c4b5fd;
+  --color-mythic:       #d4a44a;
+  --color-mythic-dim:   #6b4f1a;
 
-  /* Fonts */
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Crimson Pro', Georgia, serif;
   --font-mono:    'JetBrains Mono', 'Courier New', monospace;
 }
 
-/* Base styles */
 html {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+body { min-height: 100vh; margin: 0; }
 
-main {
-  flex: 1;
-}
-
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  line-height: 1.2;
+  line-height: 1.1;
   color: var(--color-text);
+  margin: 0;
 }
 
-/* Focus-visible — keyboard navigation ring */
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
   border-radius: 2px;
 }
 
-/* Links */
-a {
-  color: var(--color-accent);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
+a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+a:hover { color: var(--color-text); }
 
-a:hover {
-  color: var(--color-text);
-}
-
-/* Code / stat values */
 code, .stat-value {
   font-family: var(--font-mono);
   color: var(--color-mono);
   font-size: 0.9em;
 }
 
-/* Horizontal rule */
-hr {
-  border-color: var(--color-border);
+hr { border-color: var(--color-border); }
+
+::selection { background: rgba(139,92,246,0.35); color: var(--color-text); }
+
+/* ── page chrome ─────────────────────────────────────────── */
+.kz-page { position: relative; min-height: 100vh; }
+
+.kz-page__vignette {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 40% at 50% 0%, var(--color-accent-glow), transparent 70%),
+    radial-gradient(ellipse 100% 60% at 50% 100%, rgba(109,40,217,0.10), transparent 70%);
 }
+
+.kz-page__inner {
+  position: relative; z-index: 1;
+  max-width: 1240px; margin: 0 auto;
+  padding: 36px 64px 96px;
+}
+
+@media (max-width: 760px) { .kz-page__inner { padding: 24px 24px 80px; } }
+
+/* ── section rules ───────────────────────────────────────── */
+.kz-rule {
+  display: flex; align-items: center; gap: 18px;
+  margin: 72px 0 28px;
+}
+.kz-rule__line {
+  flex: 1; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-border-2), transparent);
+}
+.kz-rule__label {
+  font-family: var(--font-mono);
+  font-size: 11px; letter-spacing: 0.32em;
+  color: var(--color-text-muted); text-transform: uppercase;
+}
+
+/* ── display headline ────────────────────────────────────── */
+.kz-display {
+  font-family: var(--font-display);
+  font-weight: 500; letter-spacing: 0.01em;
+  line-height: 0.92; margin: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #c4b5fd 55%, #6d28d9 110%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  text-shadow: 0 0 80px rgba(139,92,246,0.15);
+}
+.kz-display--xl { font-size: min(clamp(72px, 12.5vw, 192px), calc((100vw - 160px) / 4.6)); }
+.kz-display--l  { font-size: min(clamp(56px, 9vw, 132px),   calc((100vw - 160px) / 5.2)); }
+.kz-display--m  { font-size: min(clamp(44px, 7vw, 96px),    calc((100vw - 160px) / 7)); }
+
+/* ── inline utilities ────────────────────────────────────── */
+.kz-mono   { font-family: var(--font-mono); color: var(--color-mono); font-size: 0.86em; }
+.kz-italic { font-style: italic; font-family: var(--font-display); font-weight: 500; }

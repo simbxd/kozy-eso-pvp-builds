@@ -10,49 +10,49 @@ const sorted = allBuilds.sort((a, b) => {
   return a.data.title.localeCompare(b.data.title);
 });
 
-const classes = [
-  'Dragonknight',
-  'Sorcerer',
-  'Nightblade',
-  'Templar',
-  'Warden',
-  'Necromancer',
-  'Arcanist',
-];
-
-const buildCountByClass = Object.fromEntries(
+const classes = ['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist'];
+const countByClass = Object.fromEntries(
   classes.map(c => [c, allBuilds.filter(b => b.data.class === c).length])
 );
 ---
 
-<Base title="Builds" description="All Kozy ESO PvP builds — Stamina, Magicka, all classes.">
-  <div class="page-wrap">
-    <header class="page-header">
-      <h1 class="page-title">Builds</h1>
-      <p class="page-desc">Optimized PvP builds with gear, skills, and rotation breakdowns.</p>
+<Base title="Builds" description="All Kozy ESO PvP builds — Stamina, Magicka, and Hybrid for every class.">
+  <div class="bi">
+
+    <header class="bi__head">
+      <div class="bi__rail">
+        <span class="bi__eyebrow">KOZY · ESO PvP</span>
+        <span class="bi__count">{allBuilds.length} BUILD{allBuilds.length !== 1 ? 'S' : ''}</span>
+      </div>
+      <h1 class="bi__title">Builds</h1>
+      <p class="bi__dek">Optimized PvP builds with gear, skills, and rotation breakdowns.</p>
     </header>
 
-    <nav class="class-nav" aria-label="Browse builds by class">
-      <div class="class-grid">
-        {classes.map(c => (
-          <a
-            href={`/builds/class/${c.toLowerCase()}`}
-            class="class-pill"
-            aria-label={`${c} builds`}
-          >
-            <span class="class-pill-name">{c}</span>
-            <span class="class-pill-count">{buildCountByClass[c]}</span>
-          </a>
-        ))}
-        <a href="/builds/subclass" class="class-pill class-pill--subclass" aria-label="Subclass builds">
-          <span class="class-pill-name">Subclass</span>
-          <span class="class-pill-count class-pill-count--new">New</span>
+    <div class="bi__rule" aria-hidden="true">
+      <div class="bi__rule-l"></div>
+      <span class="bi__rule-lbl">BROWSE BY CLASS</span>
+      <div class="bi__rule-l"></div>
+    </div>
+
+    <nav class="bi__cls-nav" aria-label="Browse builds by class">
+      <a href="/builds" class="bi__cls-pill bi__cls-pill--all on" aria-current="page">
+        <span class="bi__cls-name">ALL</span>
+        <span class="bi__cls-ct">{allBuilds.length}</span>
+      </a>
+      {classes.map(c => (
+        <a
+          href={`/builds/class/${c.toLowerCase()}`}
+          class="bi__cls-pill"
+          aria-label={`${c} builds (${countByClass[c]})`}
+        >
+          <span class="bi__cls-name">{c}</span>
+          <span class="bi__cls-ct">{countByClass[c]}</span>
         </a>
-      </div>
+      ))}
     </nav>
 
-    <div class="builds-grid">
-      {sorted.map(build => (
+    <div class="bi__grid">
+      {sorted.map((build, i) => (
         <BuildCard
           title={build.data.title}
           slug={build.id}
@@ -64,98 +64,145 @@ const buildCountByClass = Object.fromEntries(
           difficulty={build.data.difficulty}
           summary={build.data.summary}
           featured={build.data.featured}
+          index={i + 1}
         />
       ))}
     </div>
+
   </div>
 </Base>
 
 <style>
-  .page-wrap {
-    max-width: 72rem;
+  .bi {
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 3rem 1.25rem 5rem;
+    padding: 64px 24px 96px;
   }
 
-  .page-header {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--color-border);
-  }
+  /* ── Masthead ── */
+  .bi__head { margin-bottom: 48px; }
 
-  .page-title {
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    font-weight: 700;
-    color: var(--color-text);
-    margin: 0 0 0.5rem;
-  }
-
-  .page-desc { color: var(--color-text-muted); margin: 0; }
-
-  /* Class nav */
-  .class-nav {
-    margin-bottom: 2.5rem;
-  }
-
-  .class-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .class-pill {
+  .bi__rail {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.4rem 0.85rem;
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    text-decoration: none;
-    transition: border-color 0.15s, background-color 0.15s;
+    gap: 20px;
+    margin-bottom: 20px;
   }
 
-  .class-pill:hover {
-    border-color: var(--color-accent-dim);
-    background-color: color-mix(in srgb, var(--color-accent) 6%, var(--color-surface));
-  }
-
-  .class-pill--subclass {
-    border-style: dashed;
-  }
-
-  .class-pill--subclass:hover {
-    border-style: solid;
-  }
-
-  .class-pill-name {
+  .bi__eyebrow,
+  .bi__count {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
-    letter-spacing: 0.04em;
-    color: var(--color-text);
+    font-size: 10px;
+    letter-spacing: 0.26em;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
   }
 
-  .class-pill-count {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--color-bg);
-    background-color: var(--color-text-muted);
-    padding: 0.05rem 0.35rem;
-    border-radius: 2px;
-    min-width: 1.2rem;
-    text-align: center;
+  .bi__count { color: var(--color-accent); }
+
+  .bi__title {
+    font-family: var(--font-display);
+    font-size: clamp(52px, 9vw, 96px);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 0.95;
+    background: linear-gradient(160deg, #ede8ff 0%, #a78bfa 60%, #6d28d9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 16px;
+  }
+
+  .bi__dek {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-style: italic;
+    color: var(--color-text-muted);
+    margin: 0;
     line-height: 1.5;
   }
 
-  .class-pill-count--new {
-    background-color: var(--color-accent);
-    letter-spacing: 0.04em;
+  /* ── Rule ── */
+  .bi__rule {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
   }
 
-  /* Builds grid */
-  .builds-grid {
+  .bi__rule-l {
+    flex: 1;
+    height: 1px;
+    background: var(--color-border-2);
+  }
+
+  .bi__rule-lbl {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.28em;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+
+  /* ── Class nav ── */
+  .bi__cls-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .bi__cls-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+    text-decoration: none;
+    transition: background 160ms, border-color 160ms;
+  }
+
+  .bi__cls-pill:hover {
+    background: var(--color-surface-2);
+    border-color: #3a3358;
+  }
+
+  .bi__cls-pill.on {
+    border-color: rgba(139,92,246,0.5);
+    background: rgba(139,92,246,0.08);
+  }
+
+  .bi__cls-name {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--color-text);
+    text-transform: uppercase;
+  }
+
+  .bi__cls-ct {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--color-bg);
+    background: var(--color-text-muted);
+    padding: 1px 5px;
+    min-width: 16px;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .bi__cls-pill.on .bi__cls-ct { background: var(--color-accent); }
+
+  /* ── Grid ── */
+  .bi__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    gap: 12px;
+  }
+
+  @media (max-width: 640px) {
+    .bi { padding: 40px 16px 72px; }
+    .bi__cls-nav { gap: 6px; }
   }
 </style>

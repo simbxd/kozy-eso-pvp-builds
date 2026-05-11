@@ -17,7 +17,7 @@ const {
   canonicalUrl,
 } = Astro.props;
 
-const siteUrl = 'https://kozy-eso-pvp-builds.netlify.app';
+const siteUrl = 'https://kozy-eso-pvp-builds.simbad14100.workers.dev';
 const canonical = canonicalUrl ?? new URL(Astro.url.pathname, siteUrl).href;
 const ogImageAbsolute = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 const fullTitle = title === 'Home' ? 'Kozy ESO PvP Builds' : `${title} — Kozy ESO PvP Builds`;
@@ -62,11 +62,16 @@ const fullTitle = title === 'Home' ? 'Kozy ESO PvP Builds' : `${title} — Kozy 
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <Header />
-    <main id="main-content">
-      <slot />
-    </main>
-    <Footer />
+    <div class="kz-page">
+      <div class="kz-page__vignette" aria-hidden="true"></div>
+      <Header />
+      <div class="kz-page__inner">
+        <main id="main-content">
+          <slot />
+        </main>
+        <Footer />
+      </div>
+    </div>
   </body>
 </html>
 

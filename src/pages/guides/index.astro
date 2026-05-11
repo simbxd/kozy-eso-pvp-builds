@@ -9,130 +9,220 @@ const sorted = allGuides.sort((a, b) =>
 ---
 
 <Base title="Guides" description="ESO mechanic breakdowns, PvP theory, and deep-dives by Kozy.">
-  <div class="page-wrap">
-    <header class="page-header">
-      <h1 class="page-title">Guides</h1>
-      <p class="page-desc">Mechanic breakdowns, theory, and ESO deep-dives.</p>
+  <div class="gi">
+
+    <header class="gi__head">
+      <div class="gi__rail">
+        <span class="gi__eyebrow">KOZY · ESO PvP</span>
+        <span class="gi__count">{allGuides.length} ARTICLE{allGuides.length !== 1 ? 'S' : ''}</span>
+      </div>
+      <h1 class="gi__title">Guides</h1>
+      <p class="gi__dek">Mechanic breakdowns, theory, and ESO deep-dives.</p>
     </header>
 
-    <ol class="article-list">
-      {sorted.map(guide => {
+    <div class="gi__rule" aria-hidden="true">
+      <div class="gi__rule-l"></div>
+    </div>
+
+    <ol class="gi__list">
+      {sorted.map((guide, i) => {
         const date = guide.data.published.toLocaleDateString('en-GB', {
-          day: 'numeric', month: 'long', year: 'numeric',
+          day: 'numeric', month: 'short', year: 'numeric',
         });
         return (
-          <li class="article-item">
-            <a href={`/guides/${guide.id}`} class="article-link">
-              <div class="article-meta">
-                <span class="article-category">{guide.data.category}</span>
-                <time datetime={guide.data.published.toISOString()} class="article-date">
-                  {date}
-                </time>
+          <li class="gi__item">
+            <a href={`/guides/${guide.id}`} class="gi__link">
+              <div class="gi__meta">
+                <span class="gi__idx">{String(i + 1).padStart(2, '0')}</span>
+                <span class="gi__cat">{guide.data.category.toUpperCase()}</span>
+                <time datetime={guide.data.published.toISOString()} class="gi__date">{date}</time>
+                {guide.data.readTime && <span class="gi__rt">{guide.data.readTime}</span>}
               </div>
-              <h2 class="article-title">{guide.data.title}</h2>
-              <p class="article-summary">{guide.data.summary}</p>
-              <div class="article-tags">
-                {guide.data.tags.map(tag => <span class="tag">#{tag}</span>)}
+              <h2 class="gi__art-title">{guide.data.title}</h2>
+              <p class="gi__sum">{guide.data.summary}</p>
+              <div class="gi__tags">
+                {guide.data.tags.map(tag => <span class="gi__tag">#{tag}</span>)}
               </div>
             </a>
           </li>
         );
       })}
     </ol>
+
   </div>
 </Base>
 
 <style>
-  .page-wrap {
-    max-width: 52rem;
+  .gi {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 3rem 1.25rem 5rem;
+    padding: 64px 24px 96px;
   }
 
-  .page-header {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--color-border);
+  /* ── Masthead ── */
+  .gi__head { margin-bottom: 48px; }
+
+  .gi__rail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
   }
 
-  .page-title {
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    font-weight: 700;
-    color: var(--color-text);
-    margin: 0 0 0.5rem;
+  .gi__eyebrow,
+  .gi__count {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.26em;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
   }
 
-  .page-desc { color: var(--color-text-muted); margin: 0; }
+  .gi__count { color: var(--color-accent); }
 
-  .article-list {
+  .gi__title {
+    font-family: var(--font-display);
+    font-size: clamp(52px, 9vw, 96px);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 0.95;
+    background: linear-gradient(160deg, #ede8ff 0%, #a78bfa 60%, #6d28d9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 16px;
+  }
+
+  .gi__dek {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-style: italic;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  /* ── Rule ── */
+  .gi__rule { margin-bottom: 8px; }
+
+  .gi__rule-l {
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-accent), transparent);
+    opacity: 0.3;
+  }
+
+  /* ── List ── */
+  .gi__list {
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-  .article-item {
+  .gi__item {
     border-bottom: 1px solid var(--color-border);
   }
 
-  .article-link {
+  .gi__item:first-child {
+    border-top: 1px solid var(--color-border-2);
+  }
+
+  .gi__link {
     display: block;
-    padding: 1.5rem 0;
+    padding: 28px 0 28px 0;
     text-decoration: none;
     color: inherit;
-    transition: padding-left 0.15s;
+    position: relative;
+    transition: padding-left 200ms;
   }
 
-  .article-link:hover { padding-left: 0.5rem; }
+  .gi__link::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 0; bottom: 0;
+    width: 2px;
+    background: var(--color-accent);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 240ms cubic-bezier(.2,.8,.2,1);
+  }
 
-  .article-meta {
+  .gi__link:hover { padding-left: 8px; }
+  .gi__link:hover::before { transform: scaleY(1); }
+
+  /* ── Meta row ── */
+  .gi__meta {
     display: flex;
-    gap: 1rem;
     align-items: center;
-    margin-bottom: 0.5rem;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
   }
 
-  .article-category {
+  .gi__idx {
     font-family: var(--font-mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    color: var(--color-border-2);
+    flex-shrink: 0;
+  }
+
+  .gi__cat {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.2em;
     color: var(--color-accent);
+    padding: 2px 7px;
+    border: 1px solid rgba(139,92,246,0.3);
+    background: rgba(139,92,246,0.06);
   }
 
-  .article-date {
+  .gi__date,
+  .gi__rt {
     font-family: var(--font-mono);
-    font-size: 0.68rem;
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
     color: var(--color-text-muted);
+    text-transform: uppercase;
   }
 
-  .article-title {
+  /* ── Article content ── */
+  .gi__art-title {
     font-family: var(--font-display);
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: clamp(20px, 3vw, 28px);
+    font-style: italic;
+    font-weight: 500;
     color: var(--color-text);
-    margin: 0 0 0.5rem;
-    line-height: 1.3;
+    line-height: 1.15;
+    margin: 0 0 10px;
   }
 
-  .article-summary {
-    font-size: 0.9rem;
+  .gi__link:hover .gi__art-title { color: #ede8ff; }
+
+  .gi__sum {
+    font-family: var(--font-body);
+    font-size: 15px;
     color: var(--color-text-muted);
-    margin: 0 0 0.75rem;
     line-height: 1.6;
+    margin: 0 0 14px;
   }
 
-  .article-tags {
+  .gi__tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
+    gap: 6px;
   }
 
-  .tag {
+  .gi__tag {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 9.5px;
+    letter-spacing: 0.06em;
     color: var(--color-text-muted);
     border: 1px solid var(--color-border);
-    padding: 0.1rem 0.4rem;
-    border-radius: 2px;
+    padding: 2px 6px;
+  }
+
+  @media (max-width: 640px) {
+    .gi { padding: 40px 16px 72px; }
+    .gi__link::before { left: -16px; }
   }
 </style>

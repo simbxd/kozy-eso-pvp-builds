@@ -12,6 +12,12 @@ export async function getStaticPaths() {
 
 const { guide } = Astro.props;
 const { Content } = await render(guide);
+
+const allGuides = await getCollection('guides');
+const readNextGuides = allGuides
+  .filter(g => g.id !== guide.id)
+  .sort((a, b) => b.data.published.getTime() - a.data.published.getTime())
+  .slice(0, 2);
 ---
 
 <Guide
@@ -21,6 +27,10 @@ const { Content } = await render(guide);
   published={guide.data.published}
   summary={guide.data.summary}
   og_image={guide.data.og_image}
+  patch={guide.data.patch}
+  readTime={guide.data.readTime}
+  updatedAt={guide.data.updatedAt}
+  readNextGuides={readNextGuides}
 >
   <Content />
 </Guide>

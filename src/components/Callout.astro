@@ -8,7 +8,7 @@ const { type, label } = Astro.props;
 
 const defaults = {
   formula: 'Formula',
-  note: 'Note',
+  note:    'Note',
   warning: 'Warning',
 };
 
@@ -16,54 +16,52 @@ const displayLabel = label ?? defaults[type];
 ---
 
 <aside class:list={['callout', `callout--${type}`]}>
-  <span class="callout-label">{displayLabel}</span>
-  <div class="callout-body">
+  <span class="callout__kicker">{displayLabel}</span>
+  <div class="callout__body">
     <slot />
   </div>
 </aside>
 
 <style>
   .callout {
-    border-left: 3px solid;
-    padding: 0.75rem 1rem;
-    margin: 1.5rem 0;
-    background-color: var(--color-surface);
-    border-radius: 0 2px 2px 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    margin: 24px 0;
+    padding: 18px 22px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
   }
 
-  .callout--formula {
-    border-color: var(--color-mono);
-    background-color: color-mix(in srgb, var(--color-mono) 8%, var(--color-surface));
-  }
+  .callout--note    { border-left: 2px solid var(--color-accent); }
+  .callout--formula { border-left: 2px solid var(--color-mythic); }
+  .callout--warning { border-left: 2px solid var(--color-critical); }
 
-  .callout--note {
-    border-color: var(--color-accent);
-    background-color: color-mix(in srgb, var(--color-accent) 8%, var(--color-surface));
-  }
-
-  .callout--warning {
-    border-color: var(--color-critical);
-    background-color: color-mix(in srgb, var(--color-critical) 8%, var(--color-surface));
-  }
-
-  .callout-label {
+  .callout__kicker {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
+    font-size: 10px;
+    letter-spacing: 0.28em;
     text-transform: uppercase;
-    display: block;
-    margin-bottom: 0.4rem;
+    color: var(--color-text-muted);
+    padding-top: 4px;
+    min-width: 80px;
   }
 
-  .callout--formula .callout-label { color: var(--color-mono); }
-  .callout--note .callout-label    { color: var(--color-accent); }
-  .callout--warning .callout-label { color: var(--color-critical); }
+  .callout--note    .callout__kicker { color: var(--color-accent); }
+  .callout--formula .callout__kicker { color: var(--color-mythic); }
+  .callout--warning .callout__kicker { color: var(--color-critical); }
 
-  .callout-body {
+  .callout__body {
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    line-height: 1.55;
     color: var(--color-text);
-    font-size: 0.95rem;
   }
 
-  .callout-body :global(p) { margin: 0; }
-  .callout-body :global(code) { font-size: 0.85em; }
+  .callout__body :global(p) { margin: 0; }
+  .callout__body :global(code) {
+    font-family: var(--font-mono);
+    font-size: 13.5px;
+    color: var(--color-mono);
+  }
 </style>

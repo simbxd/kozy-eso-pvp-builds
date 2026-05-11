@@ -3,101 +3,159 @@ import Base from '../layouts/Base.astro';
 ---
 
 <Base title="404 — Not Found" description="This page doesn't exist or was removed from the build.">
-  <section class="not-found">
-    <div class="not-found-code" aria-hidden="true">404</div>
-    <h1 class="not-found-title">Page not found</h1>
-    <p class="not-found-message">
-      This page has been removed from the build — or it never existed.
-      Check the URL, or head back to familiar ground.
-    </p>
-    <nav class="not-found-nav" aria-label="Return to site">
-      <a href="/builds" class="btn btn--primary">Browse Builds</a>
-      <a href="/guides" class="btn btn--secondary">Guides</a>
-      <a href="/" class="btn btn--secondary">Home</a>
+  <section class="nf">
+
+    <div class="nf__sigil" aria-hidden="true">
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+        <path d="M60 6 L112 60 L60 114 L8 60 Z" stroke="url(#ng)" stroke-width="1.2" fill="none"/>
+        <path d="M60 22 L98 60 L60 98 L22 60 Z" stroke="#3a3358" stroke-width="1" fill="none"/>
+        <path d="M60 38 L82 60 L60 82 L38 60 Z" stroke="#3a3358" stroke-width="1" fill="none" opacity="0.6"/>
+        <circle cx="60" cy="60" r="5" fill="none" stroke="#6d28d9" stroke-width="1.5"/>
+        <defs>
+          <linearGradient id="ng" x1="0" y1="0" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3a3358"/>
+            <stop offset="1" stop-color="#1a1729"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="nf__num" aria-hidden="true">404</div>
+
+    <h1 class="nf__title">Page not found</h1>
+    <p class="nf__sub">This page is in another castle.</p>
+
+    <nav class="nf__nav" aria-label="Return to site">
+      <a href="/builds" class="nf__link">
+        <span class="nf__link-lbl">BUILDS</span>
+        <span class="nf__link-ct">→</span>
+      </a>
+      <div class="nf__sep" aria-hidden="true"></div>
+      <a href="/guides" class="nf__link">
+        <span class="nf__link-lbl">GUIDES</span>
+        <span class="nf__link-ct">→</span>
+      </a>
+      <div class="nf__sep" aria-hidden="true"></div>
+      <a href="/" class="nf__link">
+        <span class="nf__link-lbl">HOME</span>
+        <span class="nf__link-ct">→</span>
+      </a>
     </nav>
+
   </section>
 </Base>
 
 <style>
-  .not-found {
+  .nf {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 6rem 2rem;
-    min-height: 60vh;
+    padding: 80px 24px 96px;
+    min-height: 65vh;
   }
 
-  .not-found-code {
-    font-family: var(--font-display);
-    font-size: clamp(5rem, 20vw, 10rem);
-    font-weight: 700;
-    line-height: 1;
-    color: var(--color-accent);
-    opacity: 0.2;
-    letter-spacing: -0.02em;
-    user-select: none;
-    margin-bottom: -0.25em;
+  .nf__sigil {
+    margin-bottom: 24px;
+    opacity: 0.5;
   }
 
-  .not-found-title {
+  .nf__num {
     font-family: var(--font-display);
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-size: clamp(80px, 20vw, 160px);
+    font-style: italic;
     font-weight: 600;
-    margin: 0 0 1rem;
+    line-height: 0.85;
+    background: linear-gradient(160deg, #2d2740 0%, #1a1729 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    user-select: none;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .nf__num::after {
+    content: '404';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, #ede8ff 0%, #a78bfa 60%, #6d28d9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.15;
+  }
+
+  .nf__title {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 4vw, 36px);
+    font-style: italic;
+    font-weight: 500;
     color: var(--color-text);
+    margin: 0 0 12px;
   }
 
-  .not-found-message {
-    font-size: 1rem;
+  .nf__sub {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-style: italic;
     color: var(--color-text-muted);
-    max-width: 38ch;
-    line-height: 1.7;
-    margin: 0 0 2.5rem;
+    margin: 0 0 56px;
   }
 
-  .not-found-nav {
+  .nf__nav {
     display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    gap: 0;
+    border: 1px solid var(--color-border-2);
+    background: var(--color-surface);
+    overflow: hidden;
   }
 
-  .btn {
-    display: inline-block;
-    padding: 0.6rem 1.5rem;
-    border-radius: 8px;
-    font-family: var(--font-mono);
-    font-size: 0.82rem;
-    letter-spacing: 0.05em;
+  .nf__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
     text-decoration: none;
-    transition: transform 0.12s, opacity 0.12s;
+    transition: background 160ms;
   }
 
-  .btn:hover {
-    transform: translateY(-1px);
-    color: inherit;
-  }
+  .nf__link:hover { background: var(--color-surface-2); }
 
-  .btn--primary {
-    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dim));
-    color: #fff;
-  }
-
-  .btn--primary:hover {
-    opacity: 0.9;
-    color: #fff;
-  }
-
-  .btn--secondary {
-    border: 1px solid var(--color-border);
+  .nf__link-lbl {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.26em;
     color: var(--color-text-muted);
-    background: transparent;
   }
 
-  .btn--secondary:hover {
-    border-color: var(--color-accent-dim);
+  .nf__link:hover .nf__link-lbl { color: var(--color-text); }
+
+  .nf__link-ct {
+    font-family: var(--font-mono);
+    font-size: 11px;
     color: var(--color-accent);
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 160ms, transform 160ms;
+  }
+
+  .nf__link:hover .nf__link-ct {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .nf__sep {
+    width: 1px;
+    height: 44px;
+    background: var(--color-border-2);
+  }
+
+  @media (max-width: 480px) {
+    .nf__nav { flex-direction: column; }
+    .nf__sep { width: 100%; height: 1px; }
+    .nf__link { width: 100%; justify-content: center; }
   }
 </style>

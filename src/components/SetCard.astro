@@ -7,6 +7,7 @@ interface Bonus {
 
 interface Props {
   id: string;
+  index?: number;
   name: string;
   type: string;
   acquisition: string;
@@ -14,181 +15,266 @@ interface Props {
   dlc: string;
   pieces: number;
   bonuses: Bonus[];
+  activePieces?: number;
+  role?: string;
   uesp_url: string;
   esohub_url: string;
 }
 
-const { id, name, type, acquisition, location, dlc, pieces, bonuses, uesp_url, esohub_url } = Astro.props;
+const {
+  id, index, name, type, acquisition, location, dlc,
+  pieces, bonuses, activePieces = pieces, role,
+  uesp_url, esohub_url,
+} = Astro.props;
 
-const typeColor: Record<string, string> = {
-  'Monster':      '#b87333',
-  'Mythic':       '#c4a55a',
-  'Heavy Armor':  '#8b7355',
-  'Medium Armor': '#4a7a4a',
-  'Light Armor':  '#3a5a8a',
-  'Mixed':        '#6b6585',
-  'Jewelry':      '#7a5a9a',
-  'Weapon':       '#7a3a3a',
-};
+const isMythic  = type === 'Mythic';
+const isMonster = type === 'Monster';
+
+const variantClass = isMythic ? 'set--mythic' : isMonster ? 'set--monster' : '';
+
+const idxLabel = index !== undefined ? String(index).padStart(2, '0') : '––';
 
 const acqLabel: Record<string, string> = {
-  Overland: 'Overland',
-  Dungeon:  'Dungeon',
-  Trial:    'Trial',
-  PvP:      'PvP',
-  Crafted:  'Crafted',
-  Mythic:   'Lead Hunt',
-  Monster:  'Dungeon',
-  Arena:    'Arena',
+  Overland: 'OVERLAND',
+  Dungeon:  'DUNGEON',
+  Trial:    'TRIAL',
+  PvP:      'PVP',
+  Crafted:  'CRAFTED',
+  Mythic:   'LEAD HUNT',
+  Monster:  'DUNGEON',
+  Arena:    'ARENA',
 };
 
-const color = typeColor[type] ?? 'var(--color-text-muted)';
+// 5-pip ladder — always 5 pips regardless of set max pieces
+const MAX_PIPS = 5;
+const pips = Array.from({ length: MAX_PIPS }, (_, i) => i < activePieces);
 ---
 
-<article class="set-card" data-id={id}>
-  <header class="set-card-header">
-    <div class="set-card-name-row">
-      <span class="set-card-name">{name}</span>
-      <span class="set-card-type" style={`color: ${color}; border-color: ${color}40`}>{type}</span>
-    </div>
-    <div class="set-card-meta">
-      <span>{acqLabel[acquisition] ?? acquisition}</span>
-      <span class="sep">·</span>
-      <span>{location}</span>
-      {dlc !== 'Base Game' && (
-        <>
-          <span class="sep">·</span>
-          <span class="set-card-dlc">{dlc}</span>
-        </>
-      )}
-    </div>
-  </header>
+<div class:list={['set', variantClass]} data-id={id}>
+  <div class="set__head">
+    <div class="set__index">{idxLabel}</div>
 
-  <ul class="bonus-list">
+    <div>
+      <div class="set__name">{name}</div>
+      <div class="set__line">
+        <span>{type.toUpperCase()}</span>
+        <span>·</span>
+        <span>{acqLabel[acquisition] ?? acquisition.toUpperCase()}</span>
+        <span>·</span>
+        <span>{location}</span>
+      </div>
+    </div>
+
+    <div class="set__pieces">
+      <div class="set__num">{activePieces}</div>
+      <span class="set__den">/ {pieces} pc</span>
+    </div>
+  </div>
+
+  <div class="ladder__pips">
+    {pips.map(on => (
+      <div class:list={['pip', on ? 'pip--on' : 'pip--off']}></div>
+    ))}
+  </div>
+
+  <ul class="ladder__list">
     {bonuses.map(b => (
-      <li class="bonus-row">
-        <span class="bonus-count">({b.count})</span>
-        <span class="bonus-stat">{b.stat}</span>
-        <span class="bonus-value">{b.value}</span>
+      <li class:list={['bonus', b.count <= activePieces ? 'bonus--on' : '']}>
+        <span class="bonus__n">{b.count}</span>
+        <span class="bonus__stat">{b.stat}</span>
+        <span class="bonus__val">{b.value}</span>
       </li>
     ))}
   </ul>
 
-  <footer class="set-card-links">
+  {role && <p class="set__role">{role}</p>}
+
+  <div class="set__links">
     <a href={uesp_url} target="_blank" rel="noopener noreferrer">UESP ↗</a>
-    <a href={esohub_url} target="_blank" rel="noopener noreferrer">ESOHub ↗</a>
-  </footer>
-</article>
+    <a href={esohub_url} target="_blank" rel="noopener noreferrer">ESO Hub ↗</a>
+  </div>
+</div>
 
 <style>
-  .set-card {
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    padding: 1rem 1.125rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+  .set {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+    padding: 22px 24px;
+    position: relative;
   }
 
-  .set-card-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
+  .set--monster { border-top: 1px solid var(--color-accent); }
+  .set--mythic {
+    border-top: 1px solid var(--color-mythic);
+    background: linear-gradient(180deg, rgba(212,164,74,0.04), var(--color-surface));
   }
 
-  .set-card-name-row {
-    display: flex;
-    align-items: baseline;
-    gap: 0.6rem;
-    flex-wrap: wrap;
+  .set__head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: start;
+    gap: 16px;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--color-border);
   }
 
-  .set-card-name {
+  .set__index {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+    padding-top: 8px;
+  }
+
+  .set__name {
     font-family: var(--font-display);
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.1;
     color: var(--color-text);
   }
+  .set--mythic .set__name { color: var(--color-mythic); }
 
-  .set-card-type {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    border: 1px solid;
-    padding: 0.1rem 0.45rem;
-    border-radius: 2px;
-  }
-
-  .set-card-meta {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    color: var(--color-text-muted);
+  .set__line {
     display: flex;
+    gap: 8px;
     flex-wrap: wrap;
-    gap: 0.3rem;
-    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    margin-top: 6px;
   }
 
-  .sep { color: var(--color-border); }
+  .set__pieces {
+    text-align: right;
+    font-family: var(--font-display);
+    line-height: 1;
+  }
 
-  .set-card-dlc { color: var(--color-accent); }
+  .set__num {
+    font-size: 42px;
+    font-weight: 500;
+    color: var(--color-mono);
+  }
+  .set--mythic .set__num { color: var(--color-mythic); }
 
-  .bonus-list {
+  .set__den {
+    display: block;
+    font-size: 11px;
+    font-family: var(--font-mono);
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+    margin-top: 4px;
+  }
+
+  /* 5-pip ladder */
+  .ladder__pips {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+    margin-bottom: 16px;
+  }
+
+  .pip {
+    height: 4px;
+  }
+
+  .pip--on {
+    background: var(--color-accent);
+    box-shadow: 0 0 12px var(--color-accent-glow);
+  }
+  .set--mythic .pip--on {
+    background: var(--color-mythic);
+    box-shadow: 0 0 12px rgba(212,164,74,0.3);
+  }
+
+  .pip--off {
+    background: transparent;
+    border-bottom: 1px dashed var(--color-border);
+  }
+
+  /* Bonus list */
+  .ladder__list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 16px;
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
-    border-top: 1px solid var(--color-border);
-    padding-top: 0.65rem;
   }
 
-  .bonus-row {
+  .bonus {
     display: grid;
-    grid-template-columns: 2rem 1fr auto;
-    gap: 0.5rem;
+    grid-template-columns: 24px 1fr auto;
     align-items: baseline;
-    font-size: 0.82rem;
+    gap: 14px;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--color-border);
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    line-height: 1.4;
   }
+  .bonus:last-child { border-bottom: none; }
 
-  .bonus-count {
+  .bonus__n {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: 11px;
+    letter-spacing: 0.1em;
     color: var(--color-text-muted);
     text-align: right;
   }
 
-  .bonus-stat {
-    color: var(--color-text);
-  }
+  .bonus__stat { color: var(--color-text-muted); }
 
-  .bonus-value {
+  .bonus__val {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--color-mono);
-    text-align: right;
+    font-size: 12px;
+    color: var(--color-text-muted);
     white-space: nowrap;
   }
 
-  .set-card-links {
-    display: flex;
-    gap: 0.75rem;
+  .bonus--on .bonus__n  { color: var(--color-accent); }
+  .bonus--on .bonus__stat { color: var(--color-text); }
+  .bonus--on .bonus__val  { color: var(--color-mono); }
+
+  .set--mythic .bonus--on .bonus__n,
+  .set--mythic .bonus--on .bonus__val { color: var(--color-mythic); }
+
+  /* Role line */
+  .set__role {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 16.5px;
+    line-height: 1.45;
+    color: #d8d2f0;
+    margin: 0;
     border-top: 1px solid var(--color-border);
-    padding-top: 0.6rem;
+    padding-top: 14px;
+    margin-bottom: 16px;
   }
 
-  .set-card-links a {
+  /* Links */
+  .set__links {
+    display: flex;
+    gap: 14px;
+    border-top: 1px solid var(--color-border);
+    padding-top: 12px;
+  }
+
+  .set__links a {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.06em;
+    font-size: 10px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--color-text-muted);
     text-decoration: none;
-    transition: color 0.15s;
+    border-bottom: 1px solid var(--color-border-2);
+    transition: color 150ms, border-color 150ms;
   }
-
-  .set-card-links a:hover { color: var(--color-accent); }
+  .set__links a:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+  }
 </style>

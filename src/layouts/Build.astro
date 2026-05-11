@@ -2,9 +2,6 @@
 import Base from './Base.astro';
 import SetCard from '../components/SetCard.astro';
 import SkillBar from '../components/SkillBar.astro';
-import StatBlock from '../components/StatBlock.astro';
-import ChampionPoints from '../components/ChampionPoints.astro';
-import Consumables from '../components/Consumables.astro';
 
 interface Bonus {
   count: number;
@@ -28,10 +25,10 @@ interface SetData {
 interface SkillData {
   id: string;
   name: string;
-  base_skill?: string;
-  morph_of?: string;
-  morph_sibling?: string;
-  morph_rationale?: string;
+  base_skill?: string | null;
+  morph_of?: string | null;
+  morph_sibling?: string | null;
+  morph_rationale?: string | null;
   class: string;
   skill_line: string;
   type: string;
@@ -39,10 +36,17 @@ interface SkillData {
   icon?: string;
 }
 
-interface CPStar {
-  star: string;
-  points: number;
-  priority: number;
+interface CPStar { star: string; points: number; priority: number; }
+
+interface GearItem {
+  slot: string;
+  type: string;
+  item: string;
+  setId: string;
+  tier: string;
+  trait: string;
+  enchant: string;
+  barLabel?: string;
 }
 
 interface Props {
@@ -55,10 +59,16 @@ interface Props {
   updatedAt?: string;
   difficulty: string;
   summary: string;
+  pullquote?: string;
   sets: SetData[];
   bar1: SkillData[];
   bar2: SkillData[];
   og_image?: string;
+  gear?: {
+    armor:   GearItem[];
+    jewelry: GearItem[];
+    weapons: GearItem[];
+  };
   stats?: {
     health:  { target: number; note: string };
     magicka: { target: number; note: string };
@@ -76,255 +86,793 @@ interface Props {
 }
 
 const {
-  title,
-  class: esClass,
-  role,
-  resource,
-  gamemode,
-  patch,
-  updatedAt,
-  difficulty,
-  summary,
-  sets,
-  bar1,
-  bar2,
-  og_image,
-  stats,
-  champion_points,
-  consumables,
+  title, class: esClass, role, resource, gamemode,
+  patch, updatedAt, difficulty, summary, pullquote,
+  sets, bar1, bar2, og_image, gear, stats, champion_points, consumables,
 } = Astro.props;
 
-const difficultyColor: Record<string, string> = {
-  Beginner:     '#4a7a4a',
-  Intermediate: '#b8923a',
-  Advanced:     '#8b2020',
-};
+// Compute active pieces per set from gear data
+const activePiecesMap = new Map<string, number>();
+if (gear) {
+  for (const item of [...gear.armor, ...gear.jewelry, ...gear.weapons]) {
+    activePiecesMap.set(item.setId, (activePiecesMap.get(item.setId) ?? 0) + 1);
+  }
+}
 
-const formattedDate = updatedAt
-  ? new Date(updatedAt + 'T00:00:00').toLocaleDateString('fr-FR', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-    })
+// Set name lookup for gear sheet
+const setNameById = Object.fromEntries(sets.map(s => [s.id, s.name]));
+function setLabel(setId: string): string {
+  return setNameById[setId] ?? setId;
+}
+
+const updatedFormatted = updatedAt
+  ? updatedAt.replace(/-/g, '·')
   : null;
+
+const railItems = [
+  `KOZY · ESO PvP`,
+  `PATCH ${patch}`,
+  updatedFormatted ? `UPDATED ${updatedFormatted}` : null,
+  difficulty.toUpperCase(),
+].filter(Boolean);
 ---
 
 <Base title={title} description={summary} ogImage={og_image}>
-  <div class="build-wrap">
-    <header class="build-header">
-      <div class="build-meta">
-        <span class="build-class">{esClass}</span>
-        <span class="build-sep">·</span>
-        <span class="build-role">{role}</span>
-        <span class="build-sep">·</span>
-        <span class="build-gamemode">{gamemode}</span>
-      </div>
-
-      <h1 class="build-title">{title}</h1>
-      <p class="build-summary">{summary}</p>
-
-      {formattedDate && (
-        <p class="build-updated">
-          Mis à jour pour <span class="build-updated-patch">{patch}</span>
-          <span class="build-sep">·</span>
-          {formattedDate}
-        </p>
-      )}
-
-      <div class="build-tags">
-        <span class="tag">{resource}</span>
-        <span class="tag" style={`color: ${difficultyColor[difficulty]}`}>{difficulty}</span>
-        {!formattedDate && <span class="tag">{patch}</span>}
-      </div>
-    </header>
-
-    {stats && (
-      <section class="build-section" aria-label="Stat targets">
-        <h2 class="build-section-title">Stats</h2>
-        <StatBlock stats={stats} />
-      </section>
-    )}
-
-    <section class="build-section" aria-label="Skill bars">
-      <h2 class="build-section-title">Skill Bars</h2>
-      <SkillBar bar1Skills={bar1} bar2Skills={bar2} />
-    </section>
-
-    <section class="build-section" aria-label="Gear sets">
-      <h2 class="build-section-title">Sets</h2>
-      <div class="sets-grid">
-        {sets.map(set => (
-          <SetCard
-            id={set.id}
-            name={set.name}
-            type={set.type}
-            acquisition={set.acquisition}
-            location={set.location}
-            dlc={set.dlc}
-            pieces={set.pieces}
-            bonuses={set.bonuses}
-            uesp_url={set.uesp_url}
-            esohub_url={set.esohub_url}
-          />
-        ))}
-      </div>
-    </section>
-
-    <div class="build-body prose">
-      <slot />
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead__rail">
+      {railItems.map((item, i) => (
+        <>
+          {i > 0 && <span class="masthead__rail-sep" aria-hidden="true">·</span>}
+          <span>{item}</span>
+        </>
+      ))}
     </div>
 
-    {consumables && (
-      <section class="build-section" aria-label="Consumables">
-        <h2 class="build-section-title">Consumables</h2>
-        <Consumables consumables={consumables} />
-      </section>
+    <div class="masthead__title">
+      <div class="masthead__sigil">
+        <svg width="72" height="72" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#c4b5fd" stop-opacity="0.9"/>
+              <stop offset="1" stop-color="#6d28d9" stop-opacity="0.4"/>
+            </linearGradient>
+          </defs>
+          <g fill="none" stroke="url(#sg)" stroke-width="1.2">
+            <rect x="14" y="14" width="36" height="36" transform="rotate(45 32 32)"/>
+            <rect x="20" y="20" width="24" height="24" transform="rotate(45 32 32)"/>
+            <circle cx="32" cy="32" r="3.2" fill="#8b5cf6" stroke="none"/>
+            <line x1="32" y1="6" x2="32" y2="58"/>
+            <line x1="6" y1="32" x2="58" y2="32"/>
+          </g>
+        </svg>
+      </div>
+
+      <h1 class="kz-display kz-display--l">{title}</h1>
+      <div class="masthead__sub">
+        <span class="kz-italic">{resource}</span> {esClass} — {role}
+      </div>
+    </div>
+
+    <div class="masthead__meta masthead__meta--6">
+      <div class="kz-meta"><div class="kz-meta__label">Class</div><div class="kz-meta__value">{esClass}</div></div>
+      <div class="kz-meta"><div class="kz-meta__label">Role</div><div class="kz-meta__value">{role}</div></div>
+      <div class="kz-meta"><div class="kz-meta__label">Resource</div><div class="kz-meta__value">{resource}</div></div>
+      <div class="kz-meta"><div class="kz-meta__label">Gamemode</div><div class="kz-meta__value">{gamemode}</div></div>
+      <div class="kz-meta"><div class="kz-meta__label">Patch</div><div class="kz-meta__value">{patch}</div></div>
+      <div class="kz-meta"><div class="kz-meta__label">Difficulty</div><div class="kz-meta__value kz-meta__value--small">{difficulty}</div></div>
+    </div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <div class="kz-rule" role="separator">
+    <span class="kz-rule__line"></span>
+    <span class="kz-rule__label">Overview</span>
+    <span class="kz-rule__line"></span>
+  </div>
+
+  <div class="briefing__grid">
+    <div class="briefing__lede">
+      <p class="briefing__p">{summary}</p>
+    </div>
+
+    {pullquote && (
+      <aside class="pullquote">
+        <span class="pullquote__mark" aria-hidden="true">"</span>
+        <p>{pullquote}</p>
+      </aside>
     )}
 
-    {champion_points && (
-      <section class="build-section" aria-label="Champion Points">
-        <h2 class="build-section-title">Champion Points</h2>
-        <ChampionPoints champion_points={champion_points} />
-      </section>
+    {stats && (
+      <div class="briefing__stats">
+        <div class="kz-stat">
+          <div class="kz-stat__k">HP</div>
+          <div class="kz-stat__v">{stats.health.target.toLocaleString()}</div>
+          <div class="kz-stat__note">{stats.health.note}</div>
+        </div>
+        <div class="kz-stat">
+          <div class="kz-stat__k">MAG</div>
+          <div class="kz-stat__v">{stats.magicka.target.toLocaleString()}</div>
+          <div class="kz-stat__note">{stats.magicka.note}</div>
+        </div>
+        <div class="kz-stat">
+          <div class="kz-stat__k">STA</div>
+          <div class="kz-stat__v">{stats.stamina.target.toLocaleString()}</div>
+          <div class="kz-stat__note">{stats.stamina.note}</div>
+        </div>
+      </div>
     )}
   </div>
+
+  <!-- SKILL BARS -->
+  <div class="kz-rule" role="separator">
+    <span class="kz-rule__line"></span>
+    <span class="kz-rule__label">Skill Bars</span>
+    <span class="kz-rule__line"></span>
+  </div>
+
+  <SkillBar bar1Skills={bar1} bar2Skills={bar2} />
+
+  <!-- GEAR LOGIC -->
+  <div class="kz-rule" role="separator">
+    <span class="kz-rule__line"></span>
+    <span class="kz-rule__label">Gear Logic</span>
+    <span class="kz-rule__line"></span>
+  </div>
+
+  <div class="sets__grid">
+    {sets.map((set, i) => (
+      <SetCard
+        id={set.id}
+        index={i + 1}
+        name={set.name}
+        type={set.type}
+        acquisition={set.acquisition}
+        location={set.location}
+        dlc={set.dlc}
+        pieces={set.pieces}
+        bonuses={set.bonuses}
+        activePieces={activePiecesMap.get(set.id) ?? set.pieces}
+        uesp_url={set.uesp_url}
+        esohub_url={set.esohub_url}
+      />
+    ))}
+  </div>
+
+  <!-- GEAR SHEET -->
+  {gear && (
+    <>
+      <div class="kz-rule" role="separator">
+        <span class="kz-rule__line"></span>
+        <span class="kz-rule__label">Gear Sheet · Slot Assignments</span>
+        <span class="kz-rule__line"></span>
+      </div>
+
+      <div class="gear__cols">
+        <!-- Armor -->
+        <div class="gear__section">
+          <div class="gear__hd">
+            <span class="gear__hd-title">Armor</span>
+            <span class="gear__hd-count">{gear.armor.length} pieces</span>
+          </div>
+          <table class="gear__tbl">
+            <thead>
+              <tr><th>Slot</th><th>Item</th><th>Trait</th><th>Enchantment</th></tr>
+            </thead>
+            <tbody>
+              {gear.armor.map(row => (
+                <tr class={`gr gr--${row.type}`}>
+                  <td class="gr__slot"><span class="gr__pin" aria-hidden="true"></span>{row.slot}</td>
+                  <td class="gr__item">
+                    <span class="gr__name">{row.item}</span>
+                    <span class="gr__set">{setLabel(row.setId)} <span class="gr__tier">{row.tier}</span></span>
+                  </td>
+                  <td class="gr__trait">{row.trait}</td>
+                  <td class="gr__ench">{row.enchant}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Jewelry -->
+        <div class="gear__section">
+          <div class="gear__hd">
+            <span class="gear__hd-title">Jewelry</span>
+            <span class="gear__hd-count">{gear.jewelry.length} pieces</span>
+          </div>
+          <table class="gear__tbl">
+            <thead>
+              <tr><th>Slot</th><th>Item</th><th>Trait</th><th>Enchantment</th></tr>
+            </thead>
+            <tbody>
+              {gear.jewelry.map(row => (
+                <tr class={`gr gr--${row.type}`}>
+                  <td class="gr__slot"><span class="gr__pin" aria-hidden="true"></span>{row.slot}</td>
+                  <td class="gr__item">
+                    <span class="gr__name">{row.item}</span>
+                    <span class="gr__set">{setLabel(row.setId)} <span class="gr__tier">{row.tier}</span></span>
+                  </td>
+                  <td class="gr__trait">{row.trait}</td>
+                  <td class="gr__ench">{row.enchant}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Weapons -->
+        <div class="gear__section">
+          <div class="gear__hd">
+            <span class="gear__hd-title">Weapons</span>
+            <span class="gear__hd-count">2 bars · {gear.weapons.length} weapons</span>
+          </div>
+          <table class="gear__tbl">
+            <thead>
+              <tr><th>Slot</th><th>Item</th><th>Trait</th><th>Enchantment</th></tr>
+            </thead>
+            <tbody>
+              {gear.weapons.map(row => (
+                <tr class="gr gr--weapon">
+                  <td class="gr__slot">
+                    <span class="gr__pin" aria-hidden="true"></span>
+                    {row.slot}
+                    <span class="gr__bar">{row.barLabel}</span>
+                  </td>
+                  <td class="gr__item">
+                    <span class="gr__name">{row.item}</span>
+                    <span class="gr__set">{setLabel(row.setId)} <span class="gr__tier">{row.tier}</span></span>
+                  </td>
+                  <td class="gr__trait">{row.trait}</td>
+                  <td class="gr__ench">{row.enchant}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </>
+  )}
+
+  <!-- SUPPLIES & CP -->
+  {(consumables || champion_points) && (
+    <>
+      <div class="kz-rule" role="separator">
+        <span class="kz-rule__line"></span>
+        <span class="kz-rule__label">Supplies &amp; Champion Points</span>
+        <span class="kz-rule__line"></span>
+      </div>
+
+      <div class="supplies__grid">
+        {consumables?.food && (
+          <div class="supply-card">
+            <div class="supply-card__kicker">Food</div>
+            <h4 class="supply-card__name">{consumables.food.name}</h4>
+            <p class="supply-card__body">{consumables.food.stats}</p>
+            <p class="supply-card__alt">Alt · {consumables.food.alt}</p>
+          </div>
+        )}
+
+        {consumables?.potion && (
+          <div class="supply-card">
+            <div class="supply-card__kicker">Potion</div>
+            <h4 class="supply-card__name">{consumables.potion.name}</h4>
+            <p class="supply-card__body">{consumables.potion.note}</p>
+            <ul class="supply-card__ingredients">
+              {consumables.potion.ingredients.map(ing => <li>{ing}</li>)}
+            </ul>
+          </div>
+        )}
+
+        {consumables?.poison && (
+          <div class="supply-card">
+            <div class="supply-card__kicker">Poison</div>
+            <h4 class="supply-card__name">{consumables.poison.name}</h4>
+            <p class="supply-card__body">{consumables.poison.note}</p>
+          </div>
+        )}
+
+        {champion_points?.warfare && (
+          <div class="supply-card supply-card--cp">
+            <div class="supply-card__kicker">Champion Points · Warfare</div>
+            <ul class="cp-list">
+              {champion_points.warfare.map(s => (
+                <li>
+                  <span class="cp-list__star">{s.star}</span>
+                  <span class="cp-list__dots" aria-hidden="true"></span>
+                  <span class="cp-list__pts">{s.points}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {champion_points?.fitness && (
+          <div class="supply-card supply-card--cp">
+            <div class="supply-card__kicker">Champion Points · Fitness</div>
+            <ul class="cp-list">
+              {champion_points.fitness.map(s => (
+                <li>
+                  <span class="cp-list__star">{s.star}</span>
+                  <span class="cp-list__dots" aria-hidden="true"></span>
+                  <span class="cp-list__pts">{s.points}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </>
+  )}
 </Base>
 
 <style>
-  .build-wrap {
-    max-width: 52rem;
-    margin: 0 auto;
-    padding: 3rem 1.25rem 5rem;
-  }
+  /* ── masthead ───────────────────────────────────────── */
+  .masthead { text-align: center; margin-bottom: 0; }
 
-  .build-header {
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .build-meta {
+  .masthead__rail {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 0.6rem;
-    margin-bottom: 0.75rem;
+    gap: 12px;
     font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
+    font-size: 10.5px;
+    letter-spacing: 0.28em;
+    color: var(--color-text-muted);
     text-transform: uppercase;
-  }
-
-  .build-class    { color: var(--color-accent); }
-  .build-role     { color: var(--color-text-muted); }
-  .build-gamemode { color: var(--color-text-muted); }
-  .build-sep      { color: var(--color-border); }
-
-  .build-title {
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
-    font-weight: 700;
-    color: var(--color-text);
-    margin: 0 0 0.75rem;
-    line-height: 1.15;
-  }
-
-  .build-summary {
-    font-size: 1.05rem;
-    color: var(--color-text-muted);
-    font-style: italic;
-    margin: 0 0 0.75rem;
-    line-height: 1.7;
-  }
-
-  .build-updated {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--color-text-muted);
-    margin: 0 0 1rem;
-    letter-spacing: 0.03em;
-  }
-
-  .build-updated-patch {
-    color: var(--color-accent);
-  }
-
-  .build-tags {
-    display: flex;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--color-border);
     flex-wrap: wrap;
-    gap: 0.4rem;
   }
 
-  .tag {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
+  .masthead__rail-sep { opacity: 0.4; }
+
+  .masthead__sigil { display: inline-block; margin-bottom: 14px; opacity: 0.85; }
+
+  .masthead__sub {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
     color: var(--color-text-muted);
-    border: 1px solid var(--color-border);
-    padding: 0.15rem 0.5rem;
-    border-radius: 2px;
+    margin-top: 14px;
+    letter-spacing: 0.02em;
   }
 
-  .build-section {
-    margin-bottom: 2.5rem;
+  .masthead__meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 48px;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
   }
+  .masthead__meta--6 { grid-template-columns: repeat(6, 1fr); }
 
-  .build-section-title {
+  .kz-meta {
+    padding: 16px 14px;
+    border-right: 1px solid var(--color-border);
+  }
+  .kz-meta:last-child { border-right: none; }
+
+  .kz-meta__label {
     font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
+    font-size: 10px;
+    letter-spacing: 0.28em;
     text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 6px;
+  }
+
+  .kz-meta__value {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+  .kz-meta__value--small { font-size: 16px; }
+
+  @media (max-width: 760px) {
+    .masthead__meta, .masthead__meta--6 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .kz-meta { border-bottom: 1px solid var(--color-border); }
+    .kz-meta:nth-child(even) { border-right: none; }
+  }
+
+  /* ── briefing / overview ────────────────────────────── */
+  .briefing__grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 64px 56px;
+  }
+
+  .briefing__lede { }
+
+  .briefing__p {
+    font-family: var(--font-body);
+    font-size: 19px;
+    line-height: 1.7;
+    color: #d8d2f0;
+    margin: 0 0 18px;
+  }
+
+  /* Dropcap on first paragraph */
+  .briefing__lede .briefing__p:first-child::first-letter {
+    float: left;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 0.85;
+    margin: 6px 14px 0 0;
     color: var(--color-accent);
-    margin: 0 0 1rem;
-    padding-bottom: 0.5rem;
+    text-shadow: 0 0 24px var(--color-accent-glow);
+  }
+
+  .pullquote {
+    align-self: start;
+    padding: 28px 28px 28px 36px;
+    border-left: 1px solid var(--color-accent);
+    background: linear-gradient(135deg, rgba(139,92,246,0.06), rgba(0,0,0,0));
+    position: relative;
+  }
+
+  .pullquote__mark {
+    position: absolute;
+    top: -14px;
+    left: 18px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 64px;
+    color: var(--color-accent);
+    line-height: 1;
+  }
+
+  .pullquote p {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.35;
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  .pullquote p :global(em) {
+    font-style: normal;
+    color: var(--color-mono);
+  }
+
+  .briefing__stats {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
   }
 
-  .sets-grid {
+  .kz-stat {
+    padding: 22px 20px;
+    border-right: 1px solid var(--color-border);
+  }
+  .kz-stat:last-child { border-right: none; }
+
+  .kz-stat__k {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.3em;
+    color: var(--color-text-muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .kz-stat__v {
+    font-family: var(--font-display);
+    font-size: 38px;
+    font-weight: 500;
+    color: var(--color-mono);
+    line-height: 1;
+    margin-bottom: 10px;
+    letter-spacing: 0.01em;
+  }
+
+  .kz-stat__note {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+    font-style: italic;
+  }
+
+  @media (max-width: 900px) {
+    .briefing__grid { grid-template-columns: 1fr; gap: 32px; }
+    .briefing__stats { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 560px) {
+    .briefing__stats { grid-template-columns: 1fr; }
+    .kz-stat { border-right: none; border-bottom: 1px solid var(--color-border); }
+    .kz-stat:last-child { border-bottom: none; }
+  }
+
+  /* ── sets grid ──────────────────────────────────────── */
+  .sets__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .sets__grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
   }
 
   @media (max-width: 640px) {
-    .sets-grid { grid-template-columns: 1fr; }
+    .sets__grid { grid-template-columns: 1fr; }
+    .sets__grid > :last-child:nth-child(odd) { grid-column: auto; }
   }
 
-  /* Prose */
-  .build-body { margin-bottom: 2.5rem; }
-
-  .prose :global(h2) {
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--color-text);
-    margin: 2.5rem 0 1rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 1px solid var(--color-border);
+  /* ── gear sheet ─────────────────────────────────────── */
+  .gear__cols {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 
-  .prose :global(h3) {
-    font-family: var(--font-display);
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: var(--color-text);
-    margin: 2rem 0 0.75rem;
+  .gear__section { }
+
+  .gear__hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 18px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+    border-bottom: none;
   }
 
-  .prose :global(p)      { margin: 0 0 1.2rem; color: var(--color-text); }
-  .prose :global(strong) { color: var(--color-text); font-weight: 600; }
-
-  .prose :global(code) {
+  .gear__hd-title {
     font-family: var(--font-mono);
-    font-size: 0.85em;
+    font-size: 10.5px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+
+  .gear__hd-count {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .gear__tbl {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+  }
+
+  .gear__tbl thead th {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+    font-weight: 400;
+  }
+
+  .gear__tbl thead th:first-child { padding-left: 18px; }
+
+  .gr {
+    border-bottom: 1px solid var(--color-border);
+    transition: background 180ms;
+  }
+  .gr:hover { background: var(--color-surface-2); }
+  .gr:last-child { border-bottom: none; }
+
+  .gr td { padding: 12px 12px; vertical-align: top; }
+  .gr td:first-child { padding-left: 18px; }
+  .gr td:last-child  { padding-right: 18px; }
+
+  .gr__slot {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    white-space: nowrap;
+  }
+
+  .gr__pin {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    background: var(--color-border-2);
+    margin-right: 10px;
+    vertical-align: 1px;
+  }
+
+  .gr--heavy   .gr__pin { background: var(--color-critical); box-shadow: 0 0 6px rgba(239,68,68,0.5); }
+  .gr--medium  .gr__pin { background: var(--color-mythic); box-shadow: 0 0 6px rgba(212,164,74,0.4); }
+  .gr--light   .gr__pin { background: var(--color-accent); box-shadow: 0 0 6px var(--color-accent-glow); }
+  .gr--jewelry .gr__pin { background: var(--color-mono); }
+  .gr--mythic  .gr__pin { background: var(--color-mythic); box-shadow: 0 0 10px rgba(212,164,74,0.6); }
+  .gr--weapon  .gr__pin { background: var(--color-mono); }
+
+  .gr--heavy   .gr__slot { color: #f0c2c2; }
+  .gr--medium  .gr__slot { color: #d4c8a4; }
+  .gr--light   .gr__slot { color: #c4b5fd; }
+  .gr--mythic  .gr__slot { color: var(--color-mythic); }
+
+  .gr__bar {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+    padding: 2px 6px;
+    border: 1px solid var(--color-border-2);
+  }
+
+  .gr__item { line-height: 1.3; }
+
+  .gr__name {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--color-text);
+    letter-spacing: 0.01em;
+  }
+  .gr--mythic .gr__name { color: var(--color-mythic); }
+
+  .gr__set {
+    display: block;
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--color-text-muted);
+    margin-top: 2px;
+  }
+
+  .gr__tier {
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
     color: var(--color-mono);
-    background-color: var(--color-surface);
-    padding: 0.15em 0.35em;
-    border-radius: 2px;
+    margin-left: 4px;
   }
 
-  .prose :global(ul), .prose :global(ol) {
-    padding-left: 1.5rem;
-    margin: 0 0 1.2rem;
+  .gr__trait {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--color-mono);
+    white-space: nowrap;
   }
 
-  .prose :global(li) { margin-bottom: 0.4rem; color: var(--color-text); }
-  .prose :global(a)  { color: var(--color-accent); }
+  .gr__ench {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 700px) {
+    .gear__tbl thead { display: none; }
+    .gear__tbl, .gear__tbl tbody, .gr, .gr td { display: block; width: 100%; }
+    .gr td { padding: 6px 18px; }
+    .gr td:first-child { padding-top: 12px; }
+    .gr td:last-child  { padding-bottom: 12px; }
+  }
+
+  /* ── supplies & CP ──────────────────────────────────── */
+  .supplies__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 18px;
+  }
+
+  .supply-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+    padding: 22px;
+  }
+
+  .supply-card__kicker {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.24em;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .supply-card__name {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-text);
+    margin: 0 0 10px;
+    line-height: 1.15;
+  }
+
+  .supply-card__body {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: #d8d2f0;
+    margin: 0 0 10px;
+    line-height: 1.5;
+  }
+
+  .supply-card__alt {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 13.5px;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .supply-card__ingredients {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .supply-card__ingredients li {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--color-mono);
+    background: rgba(139,92,246,0.08);
+    border: 1px solid var(--color-border-2);
+    padding: 3px 8px;
+  }
+
+  .cp-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cp-list li {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--color-border);
+  }
+  .cp-list li:last-child { border-bottom: none; }
+
+  .cp-list__star {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  .cp-list__dots {
+    height: 1px;
+    background: repeating-linear-gradient(90deg, var(--color-border) 0 2px, transparent 2px 6px);
+    align-self: center;
+  }
+
+  .cp-list__pts {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--color-mono);
+  }
 </style>

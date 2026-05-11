@@ -22,6 +22,12 @@ const builds = defineCollection({
       bar2: z.array(z.string()),
     }),
     summary: z.string(),
+    pullquote: z.string().optional(),
+    gear: z.object({
+      armor:   z.array(z.object({ slot: z.string(), type: z.enum(['heavy','medium','light']), item: z.string(), setId: z.string(), tier: z.string(), trait: z.string(), enchant: z.string() })),
+      jewelry: z.array(z.object({ slot: z.string(), type: z.enum(['jewelry','mythic']),       item: z.string(), setId: z.string(), tier: z.string(), trait: z.string(), enchant: z.string() })),
+      weapons: z.array(z.object({ slot: z.string(), type: z.literal('weapon'), barLabel: z.string(), item: z.string(), setId: z.string(), tier: z.string(), trait: z.string(), enchant: z.string() })),
+    }).optional(),
     stats: z.object({
       health:  z.object({ target: z.number(), note: z.string() }),
       magicka: z.object({ target: z.number(), note: z.string() }),
@@ -48,6 +54,9 @@ const guides = defineCollection({
     published: z.coerce.date(),
     og_image: z.string().optional(),
     summary: z.string(),
+    patch: z.string().optional(),
+    readTime: z.string().optional(),
+    updatedAt: z.string().optional(),
   }),
 });
 

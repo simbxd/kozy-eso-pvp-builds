@@ -10,147 +10,152 @@ interface Props {
   difficulty: string;
   summary: string;
   featured?: boolean;
+  index?: number;
+  setsLine?: string;
 }
 
-const { title, slug, class: esClass, role, resource, gamemode, patch, difficulty, summary, featured } = Astro.props;
+const {
+  title, slug, class: esClass, role, resource,
+  gamemode, patch, difficulty, summary, featured,
+  index, setsLine,
+} = Astro.props;
 
-const resourceColors: Record<string, string> = {
-  Stamina: '#7c5f2a',
-  Magicka: '#7c3aed',
-  Hybrid: '#6d28d9',
-};
+const meta = `${resource.toUpperCase()} ${esClass.toUpperCase()} · ${gamemode.toUpperCase()}`;
+const idxLabel = index !== undefined ? String(index).padStart(2, '0') : undefined;
 ---
 
-<article class:list={['build-card', { 'build-card--featured': featured }]}>
-  <a href={`/builds/${slug}`} class="build-card-link">
-    <div class="build-card-header">
-      <span class="build-card-class">{esClass}</span>
-      {featured && <span class="build-card-featured-badge">Featured</span>}
-    </div>
+<a
+  href={`/builds/${slug}`}
+  class:list={['bcard', { 'bcard--featured': featured }]}
+  aria-label={`Open build: ${title}`}
+>
+  <div class="bcard__top">
+    {idxLabel && <span class="bcard__idx">{idxLabel}</span>}
+    <span class="bcard__meta">{meta}</span>
+  </div>
 
-    <h2 class="build-card-title">{title}</h2>
-    <p class="build-card-summary">{summary}</p>
+  <div class="bcard__name">{title}</div>
+  <div class="bcard__tag">{summary}</div>
 
-    <div class="build-card-tags">
-      <span class="tag tag--role">{role}</span>
-      <span class="tag tag--resource" style={`--resource-color: ${resourceColors[resource] ?? '#8a7f70'}`}>
-        {resource}
-      </span>
-      <span class="tag">{gamemode}</span>
-      <span class="tag">{difficulty}</span>
-    </div>
+  {setsLine && (
+    <>
+      <div class="bcard__rule"></div>
+      <div class="bcard__sets">{setsLine}</div>
+    </>
+  )}
 
-    <div class="build-card-footer">
-      <span class="build-card-patch">{patch}</span>
-    </div>
-
-  </a>
-</article>
+  <div class="bcard__rule"></div>
+  <div class="bcard__foot">
+    <span><strong>PATCH</strong> {patch}</span>
+    <span><strong>{difficulty.slice(0, 3).toUpperCase()}</strong></span>
+    <span><strong>{role.toUpperCase()}</strong></span>
+  </div>
+</a>
 
 <style>
-  .build-card {
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 3px;
-    transition: border-color 0.15s;
-  }
-
-  .build-card:hover {
-    border-color: var(--color-accent-dim);
-  }
-
-  .build-card--featured {
-    border-color: var(--color-accent-dim);
-  }
-
-  .build-card-link {
-    display: block;
-    padding: 1.25rem 1.5rem;
+  .bcard {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+    padding: 22px 24px;
+    position: relative;
+    overflow: hidden;
     text-decoration: none;
-    color: inherit;
-  }
-
-  .build-card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-  }
-
-  .build-card-class {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--color-accent);
-  }
-
-  .build-card-featured-badge {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--color-bg);
-    background-color: var(--color-accent);
-    padding: 0.15rem 0.5rem;
-    border-radius: 2px;
-  }
-
-  .build-card-title {
-    font-family: var(--font-display);
-    font-size: 1.3rem;
-    font-weight: 600;
     color: var(--color-text);
-    margin: 0 0 0.5rem;
-    line-height: 1.3;
+    transition: background 200ms, transform 200ms, border-color 200ms;
   }
 
-  .build-card-summary {
-    font-size: 0.9rem;
-    color: var(--color-text-muted);
-    margin: 0 0 1rem;
-    line-height: 1.6;
+  .bcard::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--color-accent);
+    box-shadow: 0 0 12px var(--color-accent-glow);
+    transform: translateX(-3px);
+    transition: transform 220ms;
   }
 
-  .build-card-tags {
+  .bcard:hover {
+    background: var(--color-surface-2);
+    border-color: #34304d;
+    transform: translateY(-2px);
+  }
+  .bcard:hover::before { transform: translateX(0); }
+
+  .bcard--featured { border-top: 1px solid var(--color-accent); }
+
+  .bcard__top {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 14px;
   }
 
-  .tag {
+  .bcard__idx { color: var(--color-accent); }
+
+  .bcard__name {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.0;
+    background: linear-gradient(180deg, #ffffff 0%, #c4b5fd 110%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+  }
+
+  .bcard__tag {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 17px;
+    color: #d8d2f0;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+
+  .bcard__rule {
+    height: 1px;
+    background: var(--color-border);
+    margin: 0 -24px 14px;
+  }
+
+  .bcard__sets {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.05em;
-    padding: 0.15rem 0.5rem;
-    border: 1px solid var(--color-border);
-    border-radius: 2px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--color-mono);
+    margin-bottom: 14px;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .bcard__foot {
+    display: flex;
+    gap: 18px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
     color: var(--color-text-muted);
   }
 
-  .tag--resource {
-    border-color: var(--resource-color);
-    color: var(--resource-color);
+  .bcard__foot span {
+    display: inline-flex;
+    gap: 6px;
   }
 
-  .tag--role {
-    border-color: var(--color-accent-dim);
-    color: var(--color-accent);
-  }
-
-  .build-card-footer {
-    border-top: 1px solid var(--color-border);
-    padding-top: 0.75rem;
-  }
-
-  .build-card-patch {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    color: var(--color-text-muted);
-    border: 1px solid var(--color-border);
-    padding: 0.1rem 0.45rem;
-    border-radius: 2px;
-    letter-spacing: 0.04em;
+  .bcard__foot strong {
+    color: var(--color-text);
+    font-weight: 400;
   }
 </style>
