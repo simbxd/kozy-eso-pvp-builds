@@ -36,11 +36,44 @@ const guidesActive = currentPath.startsWith('/guides');
     </nav>
 
     <div class="meta">
-      PATCH U50
+      PATCH U50 &nbsp;·&nbsp;
+      <span class="eso-status" id="eso-status" aria-live="polite">
+        <span class="eso-status__dot" id="eso-dot"></span>
+        <span id="eso-label">—</span>
+      </span>
     </div>
   </div>
 </header>
 
+<script>
+  const PROXY = 'https://corsproxy.io/?https://live-services.elderscrollsonline.com/status/realms';
+
+  async function fetchStatus() {
+    const dot   = document.getElementById('eso-dot') as HTMLElement | null;
+    const label = document.getElementById('eso-label') as HTMLElement | null;
+    if (!dot || !label) return;
+
+    try {
+      const controller = new AbortController();
+      setTimeout(() => controller.abort(), 8000);
+      const res  = await fetch(PROXY, { cache: 'no-store', signal: controller.signal });
+      const data = await res.json();
+
+      const servers = data?.zos_platform_response?.response ?? {};
+      const eu = servers['The Elder Scrolls Online (EU)'];
+      const up = eu === 'UP';
+
+      dot.dataset.state = up ? 'online' : 'offline';
+      label.textContent = up ? 'PC EU · Online' : 'PC EU · Offline';
+    } catch {
+      dot.dataset.state = 'unknown';
+      label.textContent = 'ESO N/A';
+    }
+  }
+
+  fetchStatus();
+  setInterval(fetchStatus, 60_000);
+</script>
 
 <style>
   header {
@@ -106,7 +139,37 @@ const guidesActive = currentPath.startsWith('/guides');
     box-shadow: 0 0 14px var(--color-accent-glow);
   }
 
-  .meta { text-align: right; }
+  .meta {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .eso-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .eso-status__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-text-muted);
+    flex-shrink: 0;
+    transition: background 400ms, box-shadow 400ms;
+  }
+
+  .eso-status__dot[data-state="online"] {
+    background: #4ade80;
+    box-shadow: 0 0 6px rgba(74, 222, 128, 0.6);
+  }
+
+  .eso-status__dot[data-state="offline"] {
+    background: var(--color-critical);
+    box-shadow: 0 0 6px rgba(239, 68, 68, 0.5);
+  }
 
   @media (max-width: 760px) {
     .rail {
