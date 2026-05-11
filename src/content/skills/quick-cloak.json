@@ -11,5 +11,6 @@
   "icon": "/assets/skills/quick-cloak.png",
   "patch_verified": "Gold Road (Q2 2024)",
   "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/quick-cloak",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Quick_Cloak"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Quick_Cloak",
+  "morph_rationale": "Dual Wield morph — provides both mobility and passive damage mitigation while active."
 }

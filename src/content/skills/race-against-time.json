@@ -1,9 +1,9 @@
 {
   "id": "race-against-time",
   "name": "Race Against Time",
-  "base_skill": null,
-  "morph_of": null,
-  "morph_sibling": null,
+  "base_skill": "Accelerate",
+  "morph_of": "accelerate",
+  "morph_sibling": "channeled-acceleration",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",
@@ -11,5 +11,6 @@
   "icon": "/assets/skills/race-against-time.png",
   "patch_verified": "Gold Road (Q2 2024)",
   "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/race-against-time",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Race_Against_Time"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Race_Against_Time",
+  "morph_rationale": "Grants Major Expedition (+30% move speed) and Minor Force (+10% crit damage), plus removes all snares and grants CC immunity for 4 seconds on cast — essential escape and burst window opener."
 }
