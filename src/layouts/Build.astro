@@ -475,9 +475,19 @@ const railItems = [
   @media (max-width: 760px) {
     .masthead__meta, .masthead__meta--6 {
       grid-template-columns: repeat(2, 1fr);
+      margin-top: 32px;
     }
     .kz-meta { border-bottom: 1px solid var(--color-border); }
     .kz-meta:nth-child(even) { border-right: none; }
+
+    .masthead__rail {
+      font-size: 9px;
+      letter-spacing: 0.16em;
+      gap: 8px;
+      padding-bottom: 14px;
+    }
+
+    .masthead__sub { font-size: 18px; }
   }
 
   /* ── briefing / overview ────────────────────────────── */
@@ -585,14 +595,24 @@ const railItems = [
   }
 
   @media (max-width: 900px) {
-    .briefing__grid { grid-template-columns: 1fr; gap: 32px; }
+    .briefing__grid { grid-template-columns: 1fr; gap: 28px; }
     .briefing__stats { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 640px) {
+    .briefing__p { font-size: 17px; }
+    .briefing__lede .briefing__p:first-child::first-letter {
+      font-size: 72px;
+    }
+    .pullquote { padding: 20px 20px 20px 24px; }
+    .pullquote p { font-size: 19px; }
   }
 
   @media (max-width: 560px) {
     .briefing__stats { grid-template-columns: 1fr; }
     .kz-stat { border-right: none; border-bottom: 1px solid var(--color-border); }
     .kz-stat:last-child { border-bottom: none; }
+    .kz-stat__v { font-size: 30px; }
   }
 
   /* ── sets grid ──────────────────────────────────────── */
@@ -771,6 +791,11 @@ const railItems = [
     .gr td { padding: 6px 18px; }
     .gr td:first-child { padding-top: 12px; }
     .gr td:last-child  { padding-bottom: 12px; }
+    .gr__trait, .gr__ench { font-size: 11px; }
+  }
+
+  @media (max-width: 500px) {
+    .supplies__grid { grid-template-columns: 1fr; }
   }
 
   /* ── supplies & CP ──────────────────────────────────── */

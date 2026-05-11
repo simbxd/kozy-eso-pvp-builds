@@ -1,0 +1,219 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="About" description="Kozy ESO PvP — qui fait quoi, pourquoi, et comment le site est construit.">
+  <div class="ab">
+
+    <header class="ab__head">
+      <div class="ab__rail">
+        <span class="ab__eyebrow">KOZY · ESO PvP</span>
+      </div>
+      <h1 class="ab__title">About</h1>
+    </header>
+
+    <div class="ab__rule" aria-hidden="true"></div>
+
+    <div class="ab__body">
+
+      <section class="ab__sec">
+        <h2 class="ab__h2">What this is</h2>
+        <p>
+          A personal ESO PvP reference site. Builds are tested in Cyrodiil and Battlegrounds,
+          guides cover mechanics that are either underdocumented or commonly misunderstood.
+          Everything here reflects how the game actually works at a given patch — not theory, not copy-paste.
+        </p>
+        <p>
+          The focus is solo and small-scale PvP. Large-scale bombing builds and trial parsing guides
+          are out of scope.
+        </p>
+      </section>
+
+      <section class="ab__sec">
+        <h2 class="ab__h2">Who</h2>
+        <p>
+          Kozy — PC EU player, mostly Dragonknight and Nightblade.
+          Not affiliated with ZeniMax or Bethesda.
+        </p>
+      </section>
+
+      <section class="ab__sec">
+        <h2 class="ab__h2">Patch currency</h2>
+        <p>
+          Each build and guide is tagged with the patch it was verified on.
+          ESO patches roughly every 3 months — outdated content gets marked, not silently left.
+        </p>
+        <p>
+          Set and skill data is cross-referenced against
+          <a href="https://en.uesp.net/wiki/Online:Online" target="_blank" rel="noopener">UESP</a>.
+          UESP sometimes lags a few weeks behind new patches — when in doubt, trust the game client.
+        </p>
+      </section>
+
+      <section class="ab__sec">
+        <h2 class="ab__h2">Stack</h2>
+        <div class="ab__stack">
+          <div class="ab__row">
+            <span class="ab__k">Framework</span>
+            <span class="ab__v">Astro 6 — static output, zero client JS except UI micro-interactions</span>
+          </div>
+          <div class="ab__row">
+            <span class="ab__k">Styles</span>
+            <span class="ab__v">Tailwind CSS v4 with a custom dark-fantasy design system</span>
+          </div>
+          <div class="ab__row">
+            <span class="ab__k">Content</span>
+            <span class="ab__v">Markdown + JSON with Zod validation at build time</span>
+          </div>
+          <div class="ab__row">
+            <span class="ab__k">Hosting</span>
+            <span class="ab__v">Cloudflare Pages — CD from GitHub on every push</span>
+          </div>
+          <div class="ab__row">
+            <span class="ab__k">Source</span>
+            <span class="ab__v">
+              <a href="https://github.com/simbxd/kozy-eso-pvp-builds" target="_blank" rel="noopener">
+                github.com/simbxd/kozy-eso-pvp-builds
+              </a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ab__sec">
+        <h2 class="ab__h2">Data attribution</h2>
+        <p>
+          Set bonuses and skill descriptions sourced from
+          <a href="https://en.uesp.net/wiki/Online:Online" target="_blank" rel="noopener">UESP</a>
+          under CC-BY-SA. Skill icons fetched from the UESP MediaWiki API.
+          ESO is a trademark of ZeniMax Media Inc.
+        </p>
+      </section>
+
+    </div>
+  </div>
+</Base>
+
+<style>
+  .ab {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 0 96px;
+  }
+
+  .ab__head { margin-bottom: 40px; }
+
+  .ab__rail {
+    margin-bottom: 20px;
+  }
+
+  .ab__eyebrow {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.26em;
+    color: var(--color-text-muted);
+  }
+
+  .ab__title {
+    font-family: var(--font-display);
+    font-size: clamp(52px, 9vw, 96px);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 0.95;
+    background: linear-gradient(160deg, #ede8ff 0%, #a78bfa 60%, #6d28d9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+  }
+
+  .ab__rule {
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-accent), transparent);
+    opacity: 0.3;
+    margin-bottom: 48px;
+  }
+
+  /* ── Body ── */
+  .ab__body {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .ab__sec { }
+
+  .ab__h2 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--color-text);
+    margin: 0 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-border-2);
+  }
+
+  .ab__sec p {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--color-text);
+    margin: 0 0 14px;
+  }
+
+  .ab__sec p:last-child { margin-bottom: 0; }
+
+  .ab__sec a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-color: rgba(139,92,246,0.35);
+    text-underline-offset: 3px;
+  }
+
+  .ab__sec a:hover {
+    text-decoration-color: var(--color-accent);
+    color: var(--color-text);
+  }
+
+  /* ── Stack table ── */
+  .ab__stack {
+    border: 1px solid var(--color-border-2);
+    background: var(--color-surface);
+  }
+
+  .ab__row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--color-border);
+    align-items: baseline;
+  }
+
+  .ab__row:last-child { border-bottom: none; }
+
+  .ab__k {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .ab__v {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 640px) {
+    .ab { padding: 40px 0 72px; }
+
+    .ab__row {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+  }
+</style>

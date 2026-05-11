@@ -491,23 +491,69 @@ function slotIndex(i: number) {
     margin: 0;
   }
 
-  /* Mobile: single column */
+  /* Mobile: 3-column layout */
   @media (max-width: 640px) {
     .bars__row {
       grid-template-columns: repeat(3, 1fr);
       padding: 20px 16px;
     }
 
+    /* Tooltip max width on small screens */
     .tooltip {
+      width: min(320px, calc(100vw - 48px));
+    }
+
+    /* In 3-col: col positions are 1,2,3 / 4,5,6
+       Left col  (1,4): left-align  — slot 4 needs fix, slot 1 already done
+       Center col (2,5): reset to center — slot 2 was left-aligned for desktop
+       Right col  (3,6): right-align — slot 3 needs fix, slot 6 already done  */
+
+    .slot:nth-child(2) .tooltip {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      animation: kz-tooltip-in 180ms cubic-bezier(.2,.7,.2,1);
+    }
+    .slot:nth-child(2) .tooltip::after {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    .slot:nth-child(3) .tooltip {
+      left: auto;
+      right: 0;
+      transform: none;
+      animation: kz-tooltip-in-r 180ms cubic-bezier(.2,.7,.2,1);
+    }
+    .slot:nth-child(3) .tooltip::after {
+      left: auto;
+      right: 24px;
+      transform: rotate(45deg);
+    }
+
+    .slot:nth-child(4) .tooltip {
       left: 0;
       right: auto;
       transform: none;
+      animation: kz-tooltip-in-l 180ms cubic-bezier(.2,.7,.2,1);
+    }
+    .slot:nth-child(4) .tooltip::after {
+      left: 24px;
+      right: auto;
+      transform: rotate(45deg);
     }
 
-    .slot:nth-child(5) .tooltip,
-    .slot:nth-child(6) .tooltip {
-      left: auto;
-      right: 0;
+    .slot:nth-child(5) .tooltip {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      animation: kz-tooltip-in 180ms cubic-bezier(.2,.7,.2,1);
+    }
+    .slot:nth-child(5) .tooltip::after {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%) rotate(45deg);
     }
   }
 </style>
