@@ -15,6 +15,7 @@
 | v4.0 | Projet renommé "Kozy ESO PvP Builds" ; palette redesignée noir & violet ; migration Astro 6 Content Layer documentée ; M0 et M1 terminés ; pré-checklist M2 partiellement complétée ; section "Modifications en cours de route" ajoutée |
 | v5.0 | M2 terminé ; SetCard + SkillBar construits ; icônes auto-téléchargées via UESP API ; morphs vérifiés et corrigés ; vigor → resolving-vigor ; data integrity check ; workflow post-patch documenté |
 | v6.0 | M3 terminé ; page 404 custom ; contraste text-muted #6b6585 → #7d77a0 (WCAG AA) ; preconnect Google Fonts ; SkillBar tooltips accessibles au clavier (tabindex + :focus-within) |
+| v7.0 | Stats/Champion Points/Consumables sur les pages de build ; dropdown nav CSS-only avec 7 classes + Subclass ; index Builds avec pills et compteurs ; 6 builds placeholder ; "Articles" renommé "Guides" (collection, pages, layout, nav, RSS) ; 2 nouveaux guides (crit res/dmg) ; Google Fonts @import → link tag (Lighthouse 89→99) ; correction liens cassés homepage + 404 |
 
 ---
 
@@ -86,27 +87,31 @@ En Astro 6, la configuration des Content Collections a changé :
 ├── src/
 │   ├── content/
 │   │   ├── builds/          ← Build pages (Markdown)
-│   │   ├── articles/        ← Editorial/analysis articles (Markdown)
+│   │   ├── guides/          ← Guides et analyses (Markdown)
 │   │   ├── sets/            ← ESO set data, hand-curated JSON (one file per set)
 │   │   └── skills/          ← ESO skill data, hand-curated JSON (one file per skill)
 │   ├── components/
 │   │   ├── SetCard.astro    ← Reusable set display card ✅
 │   │   ├── SkillBar.astro   ← Skill display component 2-bar layout ✅
-│   │   ├── Callout.astro    ← Article annotations (formula, note, warning) ✅
+│   │   ├── Callout.astro    ← Guide annotations (formula, note, warning) ✅
 │   │   ├── BuildCard.astro  ← Card for build index listing ✅
-│   │   ├── Header.astro     ✅
+│   │   ├── StatBlock.astro  ← 3 stat cards (Health/Magicka/Stamina) ✅
+│   │   ├── ChampionPoints.astro ← Grille constellations avec priorités ✅
+│   │   ├── Consumables.astro ← Food / Potion / Poison ✅
+│   │   ├── Header.astro     ← Dropdown CSS-only Builds + nav Guides ✅
 │   │   └── Footer.astro     ✅
 │   ├── layouts/
 │   │   ├── Base.astro       ← Meta tags, OG, mobile, a11y ✅
-│   │   ├── Article.astro    ✅
-│   │   └── Build.astro      ✅
+│   │   ├── Guide.astro      ✅
+│   │   └── Build.astro      ← Stats · Skills · Sets · Consumables · ChampionPoints ✅
 │   ├── pages/
 │   │   ├── index.astro      ✅
 │   │   ├── builds/
-│   │   │   ├── index.astro           ✅
+│   │   │   ├── index.astro           ← Pills par classe + compteurs ✅
 │   │   │   ├── [slug].astro          ✅
-│   │   │   └── class/[class].astro   ✅
-│   │   ├── articles/
+│   │   │   ├── class/[class].astro   ✅
+│   │   │   └── subclass/index.astro  ← Placeholder ✅
+│   │   ├── guides/
 │   │   │   ├── index.astro           ✅
 │   │   │   └── [slug].astro          ✅
 │   │   └── rss.xml.ts               ✅
@@ -130,8 +135,9 @@ En Astro 6, la configuration des Content Collections a changé :
 - `/builds` — Full build index ✅
 - `/builds/[slug]` — Individual build page (ex: `/builds/superstar`) ✅
 - `/builds/class/dragonknight` — Pre-rendered filtered view by class ✅
-- `/articles` — Article index ✅
-- `/articles/[slug]` — Individual article ✅
+- `/guides` — Guide index ✅
+- `/guides/[slug]` — Individual guide ✅
+- `/builds/subclass` — Index subclass builds (placeholder) ✅
 - `/rss.xml` — Flux RSS ✅
 - `/sitemap-index.xml` — Sitemap automatique ✅
 
@@ -225,7 +231,7 @@ UESP peut être en retard de 1-2 semaines après un patch majeur (ex: Update 49)
 --color-surface:     #101018;   /* Fond des cartes et panneaux */
 --color-border:      #1e1c2e;   /* Bordures subtiles */
 --color-text:        #ede8ff;   /* Texte principal — blanc lavande */
---color-text-muted:  #6b6585;   /* Texte secondaire, métadonnées */
+--color-text-muted:  #7d77a0;   /* Texte secondaire, métadonnées — corrigé WCAG AA (4.75:1) */
 --color-accent:      #8b5cf6;   /* Violet primaire */
 --color-accent-dim:  #6d28d9;   /* Violet atténué, hover states */
 --color-critical:    #ef4444;   /* Rouge — warnings */
@@ -236,7 +242,7 @@ UESP peut être en retard de 1-2 semaines après un patch majeur (ex: Update 49)
 - **Display/Headings:** Cormorant Garamond (serif)
 - **Body text:** Crimson Pro (serif)
 - **Stats/values/code:** JetBrains Mono
-- **Load via:** Google Fonts — `@import url(...)` doit précéder `@import "tailwindcss"` dans global.css
+- **Load via:** Google Fonts — `<link rel="stylesheet">` dans `Base.astro` (preconnect + stylesheet). Ne plus utiliser `@import` CSS (render-blocking, coûtait 2 460 ms au Lighthouse)
 
 ### Component conventions
 - **SetCard:** Surface sombre, nom en display font, badge type coloré par catégorie, lignes de bonus en JetBrains Mono, liens UESP + ESOHub
@@ -292,7 +298,7 @@ summary: "Magicka Dragonknight build orienté survie et pression soutenue en PvP
 ---
 ```
 
-### Article page frontmatter
+### Guide page frontmatter
 ```yaml
 ---
 title: "Penetration Caps Explained — And Why Most Guides Get It Wrong"
@@ -302,6 +308,24 @@ published: 2024-03-15
 og_image: ""   # optional
 summary: "A mathematical breakdown of how armor penetration actually interacts with resistances in ESO."
 ---
+```
+
+### Build frontmatter — champs optionnels ajoutés (M3+)
+```yaml
+updatedAt: "2025-05-11"          # date de mise à jour affichée en haut du build
+stats:
+  health:  { target: 30000, note: "priorité absolue" }
+  magicka: { target: 50000, note: "via CP + food" }
+  stamina: { target: 15000, note: "pour les breaks" }
+champion_points:
+  warfare:
+    - { star: "Deadly Aim", points: 50, priority: 1 }
+  fitness:
+    - { star: "Boundless Vitality", points: 50, priority: 1 }
+consumables:
+  food:   { name: "Bewitched Sugar Skulls", stats: "+4621 HP / +4250 Mag / +4250 Stam", note: "BiS survivability", alt: "Artaeum Pickled Fish Bowl" }
+  potion: { name: "Essence of Spell Power", ingredients: ["Cornflower", "Ladys Smock", "Water Hyacinth"], note: "Major Sorcery + Prophecy + restore Mag" }
+  poison: { name: "Drain Health Poison", note: "optionnel" }   # optionnel, omissible
 ```
 
 ---
@@ -392,17 +416,24 @@ Deliverable: Première vraie page de build avec SetCards, SkillBars et liens out
 **Completed:** 2026-05-11
 
 Tasks:
-- [x] Audit performance (Lighthouse > 90 sur toutes les pages) — préparé en code ; vérification manuelle avec Lighthouse DevTools recommandée
-- [x] Page 404 custom (`src/pages/404.astro`) — on-brand, liens /builds /articles /
-- [x] Optimisation images — skill icons déjà `loading="lazy"` + `width`/`height` depuis M2 ; pas d'autres images content sur le site
+- [x] Audit performance (Lighthouse > 90 sur toutes les pages) — **Perf 99 · A11y 95 · Best Practices 100 · SEO 100**
+- [x] Google Fonts : `@import` CSS → `<link rel="stylesheet">` dans `Base.astro` — Lighthouse Perf 89 → 99 (élimine 2 460 ms de render-blocking)
+- [x] Page 404 custom (`src/pages/404.astro`) — on-brand, liens /builds /guides /
+- [x] Optimisation images — skill icons déjà `loading="lazy"` + `width`/`height` depuis M2
 - [ ] Custom domain — décision de l'auteur (non bloquant pour le lancement)
-- [x] QA cross-browser et mobile — responsive déjà en place depuis M0, SkillBar tooltip flippe à droite < 900px
+- [x] QA cross-browser et mobile — responsive depuis M0, SkillBar tooltip flippe à droite < 900px
 - [x] Audit accessibilité complet :
   - [x] Navigation clavier — `focus-visible` ring + skip-link (M0) + `tabindex="0"` sur SkillBar slots (M3)
   - [x] SkillBar tooltips accessibles au clavier (`:focus-within` — M3)
   - [x] Screen reader — ARIA landmarks, `aria-label`, `aria-current`, `role="tooltip"`, `<time datetime>` (M0/M1)
   - [x] Contraste — `--color-text-muted` #6b6585 → #7d77a0 (3.6:1 → 4.75:1, passe WCAG AA — M3)
-- [x] Performance — `preconnect` Google Fonts dans `Base.astro` (M3)
+- [x] Stats/Champion Points/Consumables sur les pages de build — composants `StatBlock.astro`, `ChampionPoints.astro`, `Consumables.astro`
+- [x] Dropdown nav CSS-only sur "Builds" — 7 classes + Subclass, gap bridgé par `::after` (no JS)
+- [x] Index `/builds` refait avec pills cliquables par classe + badge de compteur
+- [x] Page `/builds/subclass` placeholder
+- [x] 6 builds placeholder (Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist)
+- [x] "Articles" renommé "Guides" — collection, layout (`Guide.astro`), pages `/guides`, RSS, nav, homepage, 404
+- [x] 2 guides publiés : *Penetration Caps Explained* + *Critical Resistance & Critical Damage in PvP*
 
 ---
 
@@ -478,6 +509,37 @@ Décisions prises pendant le développement, hors roadmap initiale.
 **Décision :** `morph_of` et `morph_sibling` passent de `z.string()` à `z.string().nullable()`.
 **Raison :** Nécessaire pour les skills récents (post-U49) non encore documentés sur UESP, où on ne peut pas confirmer la chaîne de morph avec certitude.
 
+### Stats / Champion Points / Consumables (M3+)
+**Décision :** Ajout de trois sections optionnelles sur les pages de build, chacune dans un composant dédié.
+**Raison :** L'auteur voulait que les pages de build affichent les stats cibles, le répartition de CP et les consommables recommandés — données essentielles pour reproduire un build.
+**Composants :** `StatBlock.astro` (3 cartes colorées Health/Magicka/Stamina), `ChampionPoints.astro` (grille Warfare/Fitness avec badge priorité), `Consumables.astro` (Food/Potion/Poison, Poison optionnel).
+**Schéma :** Trois champs optionnels ajoutés dans `content.config.ts` — les builds sans ces données continuent à fonctionner.
+
+### Dropdown nav CSS-only (M3+)
+**Décision :** Le lien "Builds" dans le header ouvre un dropdown avec les 7 classes + Subclass.
+**Raison :** Accès direct aux builds filtrés par classe sans passer par la page index.
+**Technique :** CSS-only — `opacity 0 → 1` + `pointer-events` sur `:hover`/`:focus-within`. Un pseudo-élément `::after` sur le wrapper comble le gap de 0.5rem entre le trigger et le panneau pour éviter que le menu disparaisse quand la souris traverse l'espace.
+
+### Index Builds avec pills (M3+)
+**Décision :** La page `/builds` affiche des pills cliquables pour chaque classe (7 classes + Subclass) avec un compteur de builds.
+**Raison :** Navigation visuelle plus claire que la liste plate précédente.
+**Note :** Les classes sont hardcodées (pas dérivées des builds publiés) pour que les 7 classes apparaissent même si certaines n'ont pas encore de build.
+
+### Builds placeholder (M3+)
+**Décision :** 6 builds placeholder créés (Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist) avec `sets: []` et `skills: { bar1: [], bar2: [] }`.
+**Raison :** Permettre de visualiser le rendu de l'index et des pages de classe avant que les vrais builds soient rédigés.
+**À faire :** Remplacer par de vrais builds avant tout lancement public.
+
+### Renommage Articles → Guides (M3+)
+**Décision :** La section "Articles" devient "Guides" partout (collection, layout, pages, nav, RSS, homepage, 404).
+**Raison :** "Guides" est plus précis pour le contenu prévu (mécaniques, breakdowns, théorie PvP).
+**Impact :** Collection Astro renommée, `Article.astro` → `Guide.astro`, `/articles` → `/guides`, RSS mis à jour, liens homepage et 404 corrigés, CLAUDE.md et ROADMAP.md mis à jour.
+
+### Google Fonts render-blocking (M3+)
+**Décision :** Le `@import url(...)` Google Fonts dans `global.css` a été supprimé et remplacé par `<link rel="preconnect">` + `<link rel="stylesheet">` dans `Base.astro`.
+**Raison :** L'`@import` CSS est render-blocking — le navigateur doit d'abord télécharger et parser le CSS avant de commencer le fetch des fonts. Lighthouse mesurait 2 460 ms bloqués. Avec un `<link>` en `<head>`, le fetch démarre en parallèle avec le reste du parsing HTML.
+**Résultat :** Lighthouse Performance 89 → 99.
+
 ---
 
 ## 8. Resolved Decisions
@@ -520,8 +582,8 @@ Pour chaque décision non triviale, expliquer le *pourquoi*. L'auteur doit compr
 - Maintenir cette roadmap : statut des tâches, décisions émergentes, sections "modifications en cours de route"
 
 ### Author's content workflow
-**Publier un build ou un article :**
-1. Créer `.md` dans `src/content/builds/` ou `src/content/articles/`
+**Publier un build ou un guide :**
+1. Créer `.md` dans `src/content/builds/` ou `src/content/guides/`
 2. Remplir le frontmatter (Section 5)
 3. Écrire le body en Markdown
 4. `git add . && git commit -m "..." && git push` → Netlify déploie en ~30s
@@ -542,6 +604,6 @@ Pour chaque décision non triviale, expliquer le *pourquoi*. L'auteur doit compr
 
 ---
 
-*Document version: 6.0*
-*Last updated by: Claude Code — après session 3 (2026-05-11)*
+*Document version: 7.0*
+*Last updated by: Claude Code — après session 4 (2026-05-11)*
 *Next update: Claude Code, après Milestone 4*
