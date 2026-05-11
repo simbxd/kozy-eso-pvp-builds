@@ -21,8 +21,8 @@ interface Props {
 const { bar1Skills, bar2Skills } = Astro.props;
 
 const bars = [
-  { num: '01', label: 'Front Bar', skills: bar1Skills },
-  { num: '02', label: 'Back Bar',  skills: bar2Skills },
+  { num: 'I',  label: 'Front Bar', skills: bar1Skills },
+  { num: 'II', label: 'Back Bar',  skills: bar2Skills },
 ];
 
 function slotIndex(i: number) {
@@ -33,11 +33,11 @@ function slotIndex(i: number) {
 <div class="bars-wrap" data-kz-bars>
   <div class="bars__toggle">
     <button class="tab tab--on" data-bar-tab aria-pressed="true">
-      <span class="tab__num">01</span>
+      <span class="tab__num">I</span>
       <span class="tab__label">Front Bar</span>
     </button>
     <button class="tab" data-bar-tab aria-pressed="false">
-      <span class="tab__num">02</span>
+      <span class="tab__num">II</span>
       <span class="tab__label">Back Bar</span>
     </button>
     <div class="tab__indicator" data-bar-indicator aria-hidden="true"></div>
