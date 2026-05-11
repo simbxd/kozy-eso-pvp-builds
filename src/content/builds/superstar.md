@@ -19,15 +19,15 @@ skills:
     - molten-whip
     - disintegrating-dragonfire
     - shattering-rocks
-    - soul-of-flame
+    - quick-cloak
     - incinerate
     - take-flight
   bar2:
-    - heart-and-home
+    - race-against-time
     - resolving-vigor
     - blood-of-the-elder-dragon
-    - igneous-weapons
-    - shatterspike-mantle
+    - heart-of-flame
+    - heart-and-home
     - temporal-guard
 summary: "Magicka Dragonknight built to hold the line in solo and small-scale PvP. Hard to kill while maintaining constant pressure through Molten Whip procs and Incinerate execute windows."
 pullquote: "Hard to kill. Always relevant. The longer the fight goes, the more Snake stacks — and the harder you bite."

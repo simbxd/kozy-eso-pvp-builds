@@ -1,0 +1,15 @@
+{
+  "id": "race-against-time",
+  "name": "Race Against Time",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/race-against-time.png",
+  "patch_verified": "Gold Road (Q2 2024)",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/race-against-time",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Race_Against_Time"
+}

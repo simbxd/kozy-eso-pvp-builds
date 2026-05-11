@@ -91,7 +91,7 @@ const skills = defineCollection({
     morph_of: z.string().nullable(),
     morph_sibling: z.string().nullable(),
     morph_rationale: z.string().optional(),
-    class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Guild', 'World', 'Alliance War', 'Craft', 'Racial']),
+    class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Guild', 'World', 'Alliance War', 'Craft', 'Racial', 'Weapon']),
     skill_line: z.string(),
     type: z.enum(['Active', 'Passive', 'Ultimate']),
     resource: z.string(),
