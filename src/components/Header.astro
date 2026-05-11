@@ -47,7 +47,7 @@ const guidesActive = currentPath.startsWith('/guides');
 
 <script>
   const ESO_URL = 'https://live-services.elderscrollsonline.com/status/realms';
-  const PROXY   = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(ESO_URL);
+  const PROXY   = 'https://corsproxy.io/?' + encodeURIComponent(ESO_URL);
 
   function setStatus(dot: HTMLElement, label: HTMLElement, state: 'online' | 'offline' | 'unknown') {
     dot.dataset.state = state;
