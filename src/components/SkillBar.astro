@@ -131,7 +131,10 @@ function slotIndex(i: number) {
 </script>
 
 <style>
-  .bars-wrap { }
+  .bars-wrap {
+    position: relative;
+    z-index: 10;
+  }
 
   /* Toggle */
   .bars__toggle {
@@ -341,8 +344,7 @@ function slotIndex(i: number) {
   .tooltip {
     display: none;
     position: absolute;
-    bottom: calc(100% + 14px);
-    top: auto;
+    top: calc(100% + 14px);
     left: 50%;
     transform: translateX(-50%);
     width: 320px;
@@ -360,19 +362,18 @@ function slotIndex(i: number) {
   .tooltip::after {
     content: '';
     position: absolute;
-    bottom: -7px;
-    top: auto;
+    top: -7px;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
     width: 12px;
     height: 12px;
     background: var(--color-surface-2);
-    border-right: 1px solid var(--color-accent);
-    border-bottom: 1px solid var(--color-accent);
+    border-left: 1px solid var(--color-accent);
+    border-top: 1px solid var(--color-accent);
   }
 
   @keyframes kz-tooltip-in {
-    from { opacity: 0; transform: translateX(-50%) translateY(-4px); }
+    from { opacity: 0; transform: translateX(-50%) translateY(4px); }
     to   { opacity: 1; transform: translateX(-50%) translateY(0); }
   }
 
@@ -396,7 +397,28 @@ function slotIndex(i: number) {
   }
 
   @keyframes kz-tooltip-in-r {
-    from { opacity: 0; transform: translateY(-4px); }
+    from { opacity: 0; transform: translateY(4px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Flip slots 1-2 to avoid left-edge overflow */
+  .slot:nth-child(1) .tooltip,
+  .slot:nth-child(2) .tooltip {
+    left: 0;
+    right: auto;
+    transform: none;
+    animation: kz-tooltip-in-l 180ms cubic-bezier(.2,.7,.2,1);
+  }
+
+  .slot:nth-child(1) .tooltip::after,
+  .slot:nth-child(2) .tooltip::after {
+    left: 24px;
+    right: auto;
+    transform: rotate(45deg);
+  }
+
+  @keyframes kz-tooltip-in-l {
+    from { opacity: 0; transform: translateY(4px); }
     to   { opacity: 1; transform: translateY(0); }
   }
 
