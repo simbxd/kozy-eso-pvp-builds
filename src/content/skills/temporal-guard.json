@@ -4,7 +4,7 @@
   "base_skill": "Time Stop",
   "morph_of": "time-stop",
   "morph_sibling": "borrowed-time",
-  "morph_rationale": "Defensive ultimate — freezes nearby enemies in time, creating a window to heal, reposition, or disengage.",
+  "morph_rationale": "Defensive ultimate — rewinds your character's state 4 seconds back in time, restoring HP and resources to what they were before the burst hit.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Ultimate",

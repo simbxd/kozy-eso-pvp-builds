@@ -4,7 +4,7 @@
   "base_skill": "Inferno",
   "morph_of": "inferno",
   "morph_sibling": "cauterize",
-  "morph_rationale": "Execute morph — deals increased damage below 25% health, ideal for closing out kills.",
+  "morph_rationale": "AoE fire DoT around the caster — deals sustained damage over time to nearby enemies.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

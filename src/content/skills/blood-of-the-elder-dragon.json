@@ -4,7 +4,7 @@
   "base_skill": "Dragon Blood",
   "morph_of": "dragon-blood",
   "morph_sibling": "blood-of-the-green-dragon",
-  "morph_rationale": "Grants Major Resolve for sustained Physical and Spell Resistance — core defensive toggle on the back bar.",
+  "morph_rationale": "Burst self-heal that scales with missing Health — the lower your HP, the more it restores.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
   "type": "Active",
