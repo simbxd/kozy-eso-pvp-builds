@@ -36,10 +36,44 @@ const guidesActive = currentPath.startsWith('/guides');
     </nav>
 
     <div class="meta">
-      PATCH U50 &nbsp;·&nbsp; UPD 2026·05·11
+      PATCH U50 &nbsp;·&nbsp;
+      <span class="eso-status" id="eso-status" aria-live="polite">
+        <span class="eso-status__dot" id="eso-dot"></span>
+        <span id="eso-label">—</span>
+      </span>
     </div>
   </div>
 </header>
+
+<script>
+  const ESO_API = 'https://live-services.elderscrollsonline.com/status/realms';
+
+  async function fetchStatus() {
+    const dot   = document.getElementById('eso-dot');
+    const label = document.getElementById('eso-label');
+    if (!dot || !label) return;
+
+    try {
+      const res  = await fetch(ESO_API, { cache: 'no-store' });
+      const data = await res.json();
+
+      // API returns an array of realm objects; pick PC_EU or first available
+      const realm = data.find((r: any) => r.name?.includes('PC_EU'))
+                 ?? data.find((r: any) => r.name?.includes('PC'))
+                 ?? data[0];
+
+      const online = realm?.status === 'UP';
+      dot.dataset.state   = online ? 'online' : 'offline';
+      label.textContent   = online ? 'Online' : 'Offline';
+    } catch {
+      dot.dataset.state = 'unknown';
+      label.textContent = 'Status N/A';
+    }
+  }
+
+  fetchStatus();
+  setInterval(fetchStatus, 60_000);
+</script>
 
 <style>
   header {
@@ -105,7 +139,37 @@ const guidesActive = currentPath.startsWith('/guides');
     box-shadow: 0 0 14px var(--color-accent-glow);
   }
 
-  .meta { text-align: right; }
+  .meta {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .eso-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .eso-status__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-text-muted);
+    flex-shrink: 0;
+    transition: background 400ms, box-shadow 400ms;
+  }
+
+  .eso-status__dot[data-state="online"] {
+    background: #4ade80;
+    box-shadow: 0 0 6px rgba(74, 222, 128, 0.6);
+  }
+
+  .eso-status__dot[data-state="offline"] {
+    background: var(--color-critical);
+    box-shadow: 0 0 6px rgba(239, 68, 68, 0.5);
+  }
 
   @media (max-width: 760px) {
     .rail {
