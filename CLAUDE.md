@@ -53,7 +53,7 @@ Site statique dédié aux builds PvP ESO. Builds optimisés, guides de rotation,
 - **Display/Titres :** Cormorant Garamond (serif)
 - **Corps :** Crimson Pro (serif)
 - **Stats/Code :** JetBrains Mono
-- **Chargement :** Google Fonts via `@import` CSS (doit être en premier dans global.css)
+- **Chargement :** Google Fonts via `<link rel="stylesheet">` dans `Base.astro` (preconnect + stylesheet, plus de `@import` CSS)
 
 ---
 
@@ -63,7 +63,7 @@ Site statique dédié aux builds PvP ESO. Builds optimisés, guides de rotation,
 src/
 ├── content/
 │   ├── builds/          ← Fichiers .md (un par build)
-│   ├── articles/        ← Fichiers .md (un par article)
+│   ├── guides/          ← Fichiers .md (un par guide)
 │   ├── sets/            ← Fichiers .json (un par set ESO)
 │   └── skills/          ← Fichiers .json (un par skill ESO)
 ├── components/
@@ -76,14 +76,14 @@ src/
 ├── layouts/
 │   ├── Base.astro       ← Layout universel (SEO, OG, a11y)
 │   ├── Build.astro      ← Layout page de build
-│   └── Article.astro    ← Layout page d'article
+│   └── Guide.astro      ← Layout page de guide
 ├── pages/
 │   ├── index.astro
 │   ├── builds/
 │   │   ├── index.astro
 │   │   ├── [slug].astro
 │   │   └── class/[class].astro
-│   ├── articles/
+│   ├── guides/
 │   │   ├── index.astro
 │   │   └── [slug].astro
 │   └── rss.xml.ts
@@ -124,6 +124,10 @@ Types : `Active | Passive | Ultimate`
 ---
 
 ## Workflow auteur
+
+### Publier un guide
+1. Créer `src/content/guides/mon-guide.md` avec le frontmatter : `title`, `category`, `tags`, `published`, `summary`
+2. Push → Netlify déploie, le guide apparaît sur `/guides` et dans le flux RSS
 
 ### Publier un build
 1. Créer `src/content/builds/mon-build.md` avec le frontmatter complet
@@ -174,7 +178,7 @@ Types : `Active | Passive | Ultimate`
 
 ### Contenu publié
 - 1 build : SUPERSTAR (MagDK PvP)
-- 1 article : Penetration Caps Explained
+- 2 guides : Penetration Caps Explained, Critical Resistance & Critical Damage in PvP
 - 5 sets : Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee
 - 12 skills : barre offensive + défensive du build SUPERSTAR (icônes PNG depuis UESP)
 
@@ -190,7 +194,7 @@ Types : `Active | Passive | Ultimate`
 - Schéma Zod : `morph_of` / `morph_sibling` acceptent `null`
 
 ### M3 — Terminé (2026-05-11)
-- `src/pages/404.astro` : page 404 custom on-brand, 3 liens de retour (/builds /articles /)
+- `src/pages/404.astro` : page 404 custom on-brand, 3 liens de retour (/builds /guides /)
 - `--color-text-muted` : #6b6585 → #7d77a0 (3.6:1 → 4.75:1, passe WCAG AA)
 - `Base.astro` : preconnect Google Fonts (fonts.googleapis.com + fonts.gstatic.com)
 - `SkillBar.astro` : `tabindex="0"` + `:focus-within` sur les slots → tooltips accessibles au clavier
