@@ -28,7 +28,8 @@ Site statique dédié aux builds PvP ESO. Builds optimisés, guides de rotation,
 | `@astrojs/sitemap` | Génération automatique du sitemap |
 | `@astrojs/rss` | Flux RSS des articles |
 | `sharp` | Conversion SVG → PNG pour les images OG |
-| Cloudflare Pages | Hébergement + CD depuis GitHub |
+| Cloudflare Workers | Hébergement + CD depuis GitHub (via `wrangler` / dashboard) |
+| Cloudflare Worker proxy | `eso-status-proxy.simbad14100.workers.dev` — relay CORS pour le statut des serveurs ESO |
 | Git / GitHub | Contrôle de version |
 
 ---
@@ -40,13 +41,18 @@ Site statique dédié aux builds PvP ESO. Builds optimisés, guides de rotation,
 ```css
 --color-bg:          #09090f;   /* Noir pur, légère teinte violette */
 --color-surface:     #101018;   /* Fond des cartes et panneaux */
+--color-surface-2:   #15131f;   /* Fond légèrement plus clair — TOC sidebar */
 --color-border:      #1e1c2e;   /* Bordures subtiles */
+--color-border-2:    #2a2640;   /* Bordures légèrement plus visibles */
 --color-text:        #ede8ff;   /* Texte principal — blanc lavande */
---color-text-muted:  #6b6585;   /* Texte secondaire, métadonnées */
+--color-text-muted:  #7d77a0;   /* Texte secondaire — WCAG AA (4.75:1) */
 --color-accent:      #8b5cf6;   /* Violet primaire */
 --color-accent-dim:  #6d28d9;   /* Violet atténué, hover states */
+--color-accent-glow: rgba(139,92,246,0.18); /* Glow violet */
 --color-critical:    #ef4444;   /* Rouge — warnings */
 --color-mono:        #c4b5fd;   /* Violet clair — valeurs code/stats */
+--color-mythic:      #d4a44a;   /* Or — sets mythiques */
+--color-mythic-dim:  #6b4f1a;   /* Or atténué */
 ```
 
 ### Typographie
@@ -168,13 +174,18 @@ Types : `Active | Passive | Ultimate`
 - **Filtre par classe :** pages pré-rendues statiquement via `getStaticPaths()` dans `builds/class/[class].astro` — aucun JS client
 - **Data integrity :** `[slug].astro` appelle `assertIds()` au build time — si un ID dans `sets[]` ou `skills.bar1/bar2` n'a pas de JSON correspondant, le build échoue avec un message explicite
 - **Icônes de skills :** stockées dans `public/assets/skills/{id}.png`, récupérées depuis UESP via `node scripts/fetch-skill-icons.mjs`
+- **CSS scoping Astro :** les règles de layout critiques (`.build-layout`, `.build-content`, `.build-toc`) sont dans `<style is:global>` dans `Build.astro` pour éviter les edge cases de scoping. Les styles visuels restent dans `<style>` scopé.
+- **Build layout :** `display: grid; grid-template-columns: 1fr 220px` — grid strict pour que le contenu ne puisse jamais déborder dans la colonne TOC. Ne pas utiliser `overflow: clip` sur `.build-content` (coupe le contenu des cartes).
+- **SetCard overflow :** ne pas remettre `white-space: nowrap` sur `.bonus__val` — les longues valeurs de bonus (ex : Markyn Ring) doivent pouvoir wrapper.
+- **ESO server status :** `Header.astro` fetch `eso-status-proxy.simbad14100.workers.dev` (Worker dédié, nécessaire car l'API ESO n'a pas de headers CORS). Structure JSON : `data.zos_platform_response.response["The Elder Scrolls Online (EU/NA/PTS)"]`. Refresh toutes les 60s.
+- **Sticky TOC :** `position: sticky; top: 80px; align-self: start` dans la colonne grid. Mobile : TOC caché (`display: none`) à ≤1024px, FAB + drawer à la place. IntersectionObserver pour l'état actif (`rootMargin: '-10% 0px -75% 0px'`).
 
 ---
 
 ## État du projet
 
 **Dernière session :** 2026-05-11
-**Milestone actuel :** M3 terminé — M4 (Contributor Support) est le prochain
+**Milestone actuel :** Polish SUPERSTAR — template canonique avant de créer d'autres builds
 
 ### Contenu publié
 - 1 build : SUPERSTAR (MagDK PvP)
@@ -188,17 +199,25 @@ Types : `Active | Passive | Ultimate`
 - `[slug].astro` : résolution des IDs → objets JSON au build time (plus de strings bruts dans le layout)
 - `scripts/fetch-skill-icons.mjs` : script UESP MediaWiki API, télécharge toutes les icônes en une commande
 - `assertIds()` : data integrity check — build échoue avec message explicite si un ID n'a pas de JSON
-- Morphs vérifiés et corrigés pour 7 skills via API UESP (molten-whip, disintegrating-dragonfire, shattering-rocks, incinerate, blood-of-the-elder-dragon, shatterspike-mantle, heart-and-home)
-- `soul-of-flame` : skill U49 non encore documenté sur UESP — morph chain null, pas de tooltip
-- `vigor` supprimé → `resolving-vigor` (nom correct du morph utilisé dans le build)
+- Morphs vérifiés et corrigés pour 7 skills ; `soul-of-flame` U49 = morph chain null
 - Schéma Zod : `morph_of` / `morph_sibling` acceptent `null`
 
 ### M3 — Terminé (2026-05-11)
-- `src/pages/404.astro` : page 404 custom on-brand, 3 liens de retour (/builds /guides /)
-- `--color-text-muted` : #6b6585 → #7d77a0 (3.6:1 → 4.75:1, passe WCAG AA)
-- `Base.astro` : preconnect Google Fonts (fonts.googleapis.com + fonts.gstatic.com)
-- `SkillBar.astro` : `tabindex="0"` + `:focus-within` sur les slots → tooltips accessibles au clavier
-- Images : déjà optimisées depuis M2 (lazy loading, width/height, PNG UESP)
+- `src/pages/404.astro` : page 404 custom on-brand
+- `--color-text-muted` : #6b6585 → #7d77a0 (WCAG AA)
+- `Base.astro` : preconnect Google Fonts
+- `SkillBar.astro` : `tabindex="0"` + `:focus-within` — tooltips accessibles au clavier
 
-### Prochaine étape (M4)
-Contributor Support — évaluer Decap CMS vs GitHub web editor workflow.
+### Session 2026-05-11 (suite) — Polish template SUPERSTAR
+- **Consumables** : Bewitched Sugar Skulls, Essence of Weapon Power (Dragonthorn + Blessed Thistle + Water Hyacinth/Wormwood), Mundus Stone (The Lady / alt: The Warrior)
+- **Champion Points** : Warfare (Cleansing Revival, Master-at-Arms, Ironclad, Fighting Finesse) + Fitness (Celerity, Slippery, Fortified, Pain's Refuge)
+- **Skills** : `morph_rationale` ajouté pour quick-cloak, race-against-time, heart-of-flame ; heart-of-flame corrigé (base = Core of Flame, sibling = soul-of-flame)
+- **Header** : masthead rail réduit à `KOZY · ESO PvP` ; statut serveurs ESO (EU/NA/PTS) en temps réel via Worker proxy
+- **SkillBar** : tabs `01/02` → `I/II`
+- **Gear sheet** : police slot → body 14px ; légende couleurs (Heavy/Medium/Light)
+- **TOC sidebar** : sticky, CSS grid 2 colonnes, IntersectionObserver, FAB mobile + drawer
+- **Layout fix** : `<style is:global>` pour les règles de layout ; `display: grid` (pas flex) pour `.build-layout` ; `white-space: nowrap` retiré de `.bonus__val` dans SetCard
+- **Déploiement** : Cloudflare Workers (pas Pages) ; proxy ESO status = Worker séparé `eso-status-proxy.simbad14100.workers.dev`
+
+### Prochaine étape
+SUPERSTAR est le template canonique — le perfectionner avant de créer d'autres builds.
