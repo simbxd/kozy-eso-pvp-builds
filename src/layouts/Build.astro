@@ -1137,24 +1137,8 @@ const railItems = [`KOZY · ESO PvP`];
     color: var(--color-mono);
   }
 
-  /* ── two-column layout ──────────────────────────────── */
-  .build-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 48px;
-  }
-
-  .build-content {
-    flex: 1;
-    min-width: 0;
-  }
-
   /* ── sticky TOC sidebar ─────────────────────────────── */
   .build-toc {
-    width: 192px;
-    flex-shrink: 0;
-    position: sticky;
-    top: 80px;
     background: var(--color-surface);
     border-left: 1px solid rgba(139, 92, 246, 0.2);
     padding: 20px 0 20px 18px;
@@ -1267,12 +1251,37 @@ const railItems = [`KOZY · ESO PvP`];
 
   /* ── responsive ─────────────────────────────────────── */
   @media (max-width: 1024px) {
-    .build-toc  { display: none; }
-    .toc-fab    { display: flex; }
+    .toc-fab { display: flex; }
+  }
+</style>
+
+<style is:global>
+  /* Two-column build layout — global to avoid Astro scoping edge cases */
+  .build-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .build-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .build-toc {
+    width: 192px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    position: sticky;
+    top: 80px;
   }
 
   @media (max-width: 1280px) {
     .build-layout { gap: 32px; }
     .build-toc    { width: 176px; }
+  }
+
+  @media (max-width: 1024px) {
+    .build-toc { display: none; }
   }
 </style>
