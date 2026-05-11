@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://kozy-eso-pvp-builds.netlify.app',
+  site: 'https://kozy-eso-pvp-builds.simbad14100.workers.dev',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],

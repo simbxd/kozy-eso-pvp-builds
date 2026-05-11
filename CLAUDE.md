@@ -28,7 +28,7 @@ Site statique dédié aux builds PvP ESO. Builds optimisés, guides de rotation,
 | `@astrojs/sitemap` | Génération automatique du sitemap |
 | `@astrojs/rss` | Flux RSS des articles |
 | `sharp` | Conversion SVG → PNG pour les images OG |
-| Netlify | Hébergement + CD depuis GitHub |
+| Cloudflare Pages | Hébergement + CD depuis GitHub |
 | Git / GitHub | Contrôle de version |
 
 ---

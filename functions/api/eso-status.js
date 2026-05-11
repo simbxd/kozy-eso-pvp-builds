@@ -1,4 +1,4 @@
-export default async () => {
+export async function onRequest() {
   try {
     const res = await fetch('https://live-services.elderscrollsonline.com/status/realms', {
       headers: { 'User-Agent': 'kozy-eso-pvp-builds/1.0' },
@@ -17,6 +17,4 @@ export default async () => {
       headers: { 'Content-Type': 'application/json' },
     });
   }
-};
-
-export const config = { path: '/api/eso-status' };
+}
