@@ -46,7 +46,7 @@ const guidesActive = currentPath.startsWith('/guides');
 </header>
 
 <script>
-  const ESO_API = 'https://live-services.elderscrollsonline.com/status/realms';
+  const ESO_API = '/api/eso-status';
 
   async function fetchStatus() {
     const dot   = document.getElementById('eso-dot');
