@@ -109,12 +109,7 @@ const updatedFormatted = updatedAt
   ? updatedAt.replace(/-/g, '·')
   : null;
 
-const railItems = [
-  `KOZY · ESO PvP`,
-  `PATCH ${patch}`,
-  updatedFormatted ? `UPDATED ${updatedFormatted}` : null,
-  difficulty.toUpperCase(),
-].filter(Boolean);
+const railItems = [`KOZY · ESO PvP`];
 ---
 
 <Base title={title} description={summary} ogImage={og_image}>
