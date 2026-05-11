@@ -3,7 +3,7 @@ title: "Critical Resistance & Critical Damage in PvP — The Math Nobody Explain
 category: Mechanics
 tags: [critical, crit-res, crit-damage, PvP, math, arms-race]
 published: 2025-05-11
-summary: "Pourquoi il n'existe pas de cap universel de Crit Resistance en PvP — et comment la course entre Crit Res et Crit Damage change la valeur de chaque stat selon l'adversaire."
+summary: "Why there is no universal Crit Resistance cap in PvP — and how the arms race between Crit Res and Crit Damage shifts the value of each stat depending on your opponent."
 ---
 
 ## The Short Version
