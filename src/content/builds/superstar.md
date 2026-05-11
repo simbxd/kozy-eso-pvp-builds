@@ -72,15 +72,19 @@ champion_points:
     - { star: "PLACEHOLDER",        points: 30, priority: 4 }
 consumables:
   food:
-    name: "Witchmother's Potent Brew"
-    stats: "Max Magicka + Max Health + Magicka Recovery"
-    note: "Privilégier si la recovery magicka est insuffisante"
-    alt: "Bewitched Sugar Skulls si la recovery est déjà couverte par les sets"
+    name: "Bewitched Sugar Skulls"
+    stats: "Max Health + Max Magicka + Max Stamina"
+    note: "Tri-stat food — covers all three resource pools in one slot"
   potion:
-    name: "Essence of Spell Power"
-    ingredients: ["Cornflower", "Lady's Smock", "Water Hyacinth"]
-    note: "Fournit Major Sorcery + Major Heroism + restore Magicka"
-  poison:
-    name: "Creeping Ravage Health"
-    note: "Optionnel — utile en Cyrodiil pour les engagements prolongés"
+    name: "Essence of Weapon Power"
+    ingredients: ["Dragonthorn", "Blessed Thistle", "Water Hyacinth or Wormwood"]
+    note: "Grants Major Brutality + restore Stamina + Major Expedition on use"
+  mundus:
+    stone: "The Lady"
+    effect: "Increases Physical and Spell Resistance"
+    note: "Max tankiness — recommended default for solo and small-scale PvP"
+    alt:
+      stone: "The Warrior"
+      effect: "Increases Weapon and Spell Damage"
+      note: "Decent damage and healing increase — swap in if survivability is already covered"
 ---

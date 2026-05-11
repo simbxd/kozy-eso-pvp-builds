@@ -1,9 +1,9 @@
 {
   "id": "heart-of-flame",
   "name": "Heart of Flame",
-  "base_skill": "Hearthfire",
-  "morph_of": "hearthfire",
-  "morph_sibling": "heart-and-home",
+  "base_skill": "Core of Flame",
+  "morph_of": "core-of-flame",
+  "morph_sibling": "soul-of-flame",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",
