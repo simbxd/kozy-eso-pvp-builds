@@ -159,7 +159,12 @@ const railItems = [`KOZY · ESO PvP`];
     </div>
   </header>
 
+  <!-- TWO-COLUMN LAYOUT -->
+  <div class="build-layout">
+  <div class="build-content">
+
   <!-- OVERVIEW -->
+  <section id="overview">
   <div class="kz-rule" role="separator">
     <span class="kz-rule__line"></span>
     <span class="kz-rule__label">Overview</span>
@@ -199,7 +204,10 @@ const railItems = [`KOZY · ESO PvP`];
     )}
   </div>
 
+  </section>
+
   <!-- SKILL BARS -->
+  <section id="skill-bars">
   <div class="kz-rule" role="separator">
     <span class="kz-rule__line"></span>
     <span class="kz-rule__label">Skill Bars</span>
@@ -207,8 +215,10 @@ const railItems = [`KOZY · ESO PvP`];
   </div>
 
   <SkillBar bar1Skills={bar1} bar2Skills={bar2} />
+  </section>
 
   <!-- GEAR LOGIC -->
+  <section id="gear-logic">
   <div class="kz-rule" role="separator">
     <span class="kz-rule__line"></span>
     <span class="kz-rule__label">Gear Logic</span>
@@ -234,9 +244,11 @@ const railItems = [`KOZY · ESO PvP`];
     ))}
   </div>
 
+  </section>
+
   <!-- GEAR SHEET -->
   {gear && (
-    <>
+    <section id="gear-sheet">
       <div class="kz-rule" role="separator">
         <span class="kz-rule__line"></span>
         <span class="kz-rule__label">Gear Sheet · Slot Assignments</span>
@@ -332,12 +344,12 @@ const railItems = [`KOZY · ESO PvP`];
           </table>
         </div>
       </div>
-    </>
+    </section>
   )}
 
   <!-- CONSUMABLES -->
   {consumables && (
-    <>
+    <section id="consumables">
       <div class="kz-rule" role="separator">
         <span class="kz-rule__line"></span>
         <span class="kz-rule__label">Consumables</span>
@@ -389,12 +401,12 @@ const railItems = [`KOZY · ESO PvP`];
           </div>
         )}
       </div>
-    </>
+    </section>
   )}
 
   <!-- CHAMPION POINTS -->
   {champion_points && (
-    <>
+    <section id="champion-points">
       <div class="kz-rule" role="separator">
         <span class="kz-rule__line"></span>
         <span class="kz-rule__label">Champion Points</span>
@@ -432,9 +444,118 @@ const railItems = [`KOZY · ESO PvP`];
           </div>
         )}
       </div>
-    </>
+    </section>
   )}
+
+  </div><!-- /.build-content -->
+
+  <!-- STICKY TOC SIDEBAR -->
+  <aside class="build-toc" aria-label="Page sections">
+    <div class="toc__label">Sections</div>
+    <nav>
+      <a href="#overview"        class="toc__link">Overview</a>
+      <a href="#skill-bars"      class="toc__link">Skill Bars</a>
+      <a href="#gear-logic"      class="toc__link">Gear Logic</a>
+      <a href="#gear-sheet"      class="toc__link">Gear Sheet</a>
+      <a href="#consumables"     class="toc__link">Consumables</a>
+      <a href="#champion-points" class="toc__link">Champion Points</a>
+    </nav>
+  </aside>
+
+  </div><!-- /.build-layout -->
+
+  <!-- MOBILE FAB -->
+  <button class="toc-fab" id="toc-fab" aria-label="Open sections menu" aria-expanded="false">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <line x1="3" y1="5"  x2="17" y2="5"  stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="3" y1="10" x2="17" y2="10" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="3" y1="15" x2="13" y2="15" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <!-- MOBILE DRAWER -->
+  <div class="toc-drawer" id="toc-drawer" aria-hidden="true">
+    <div class="toc-drawer__inner">
+      <div class="toc-drawer__label">Sections</div>
+      <nav>
+        <a href="#overview"        class="toc-drawer__link">Overview</a>
+        <a href="#skill-bars"      class="toc-drawer__link">Skill Bars</a>
+        <a href="#gear-logic"      class="toc-drawer__link">Gear Logic</a>
+        <a href="#gear-sheet"      class="toc-drawer__link">Gear Sheet</a>
+        <a href="#consumables"     class="toc-drawer__link">Consumables</a>
+        <a href="#champion-points" class="toc-drawer__link">Champion Points</a>
+      </nav>
+    </div>
+  </div>
+  <div class="toc-overlay" id="toc-overlay"></div>
+
 </Base>
+
+<script>
+  // ── TOC: IntersectionObserver ─────────────────────────
+  const sections  = document.querySelectorAll('section[id]');
+  const tocLinks  = document.querySelectorAll('.toc__link');
+
+  if (sections.length && tocLinks.length) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(l => l.classList.remove('toc__link--active'));
+          document.querySelector(`.toc__link[href="#${entry.target.id}"]`)
+            ?.classList.add('toc__link--active');
+        }
+      });
+    }, { rootMargin: '-10% 0px -75% 0px', threshold: 0 });
+
+    sections.forEach(s => observer.observe(s));
+  }
+
+  // ── Mobile FAB + Drawer ───────────────────────────────
+  const fab     = document.getElementById('toc-fab');
+  const drawer  = document.getElementById('toc-drawer');
+  const overlay = document.getElementById('toc-overlay');
+
+  function openDrawer() {
+    drawer?.classList.add('toc-drawer--open');
+    overlay?.classList.add('toc-overlay--show');
+    fab?.setAttribute('aria-expanded', 'true');
+    drawer?.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeDrawer() {
+    drawer?.classList.remove('toc-drawer--open');
+    overlay?.classList.remove('toc-overlay--show');
+    fab?.setAttribute('aria-expanded', 'false');
+    drawer?.setAttribute('aria-hidden', 'true');
+  }
+
+  fab?.addEventListener('click', openDrawer);
+  overlay?.addEventListener('click', closeDrawer);
+
+  document.querySelectorAll('.toc-drawer__link').forEach(link => {
+    link.addEventListener('click', () => {
+      closeDrawer();
+      const id = (link as HTMLAnchorElement).hash.slice(1);
+      const target = document.getElementById(id);
+      if (!target) return;
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+    });
+  });
+
+  // Smooth scroll with reduced-motion respect for sidebar links
+  document.querySelectorAll('.toc__link').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const id = (link as HTMLAnchorElement).hash.slice(1);
+      const target = document.getElementById(id);
+      if (!target) return;
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+      history.pushState(null, '', `#${id}`);
+    });
+  });
+</script>
 
 <style>
   /* ── masthead ───────────────────────────────────────── */
@@ -1014,5 +1135,144 @@ const railItems = [`KOZY · ESO PvP`];
     font-family: var(--font-mono);
     font-size: 13px;
     color: var(--color-mono);
+  }
+
+  /* ── two-column layout ──────────────────────────────── */
+  .build-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .build-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* ── sticky TOC sidebar ─────────────────────────────── */
+  .build-toc {
+    width: 192px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 80px;
+    background: var(--color-surface);
+    border-left: 1px solid rgba(139, 92, 246, 0.2);
+    padding: 20px 0 20px 18px;
+  }
+
+  .toc__label {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 14px;
+  }
+
+  .build-toc nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .toc__link {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    padding: 5px 0 5px 12px;
+    border-left: 2px solid transparent;
+    transition: color 180ms, border-color 180ms;
+    line-height: 1.3;
+  }
+
+  .toc__link:hover { color: var(--color-text); }
+
+  .toc__link--active {
+    color: var(--color-accent);
+    border-left-color: var(--color-accent);
+  }
+
+  /* ── mobile FAB ─────────────────────────────────────── */
+  .toc-fab {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+    z-index: 50;
+    transition: background 200ms, box-shadow 200ms;
+  }
+  .toc-fab:hover { background: var(--color-accent-dim); }
+
+  /* ── mobile drawer ──────────────────────────────────── */
+  .toc-drawer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-accent);
+    padding: 24px 24px 40px;
+    z-index: 60;
+    transform: translateY(100%);
+    transition: transform 280ms cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  .toc-drawer--open { transform: translateY(0); }
+
+  .toc-drawer__label {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+  }
+
+  .toc-drawer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .toc-drawer__link {
+    font-family: var(--font-body);
+    font-size: 17px;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--color-border);
+    transition: color 150ms;
+  }
+  .toc-drawer__link:last-child { border-bottom: none; }
+  .toc-drawer__link:hover { color: var(--color-accent); }
+
+  .toc-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 55;
+  }
+  .toc-overlay--show { display: block; }
+
+  /* ── responsive ─────────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .build-toc  { display: none; }
+    .toc-fab    { display: flex; }
+  }
+
+  @media (max-width: 1280px) {
+    .build-layout { gap: 32px; }
+    .build-toc    { width: 176px; }
   }
 </style>
