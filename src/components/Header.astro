@@ -46,7 +46,8 @@ const guidesActive = currentPath.startsWith('/guides');
 </header>
 
 <script>
-  const PROXY = 'https://corsproxy.io/?https://live-services.elderscrollsonline.com/status/realms';
+  const ESO_URL = 'https://live-services.elderscrollsonline.com/status/realms';
+  const PROXY = 'https://api.allorigins.win/get?url=' + encodeURIComponent(ESO_URL);
 
   async function fetchStatus() {
     const dot   = document.getElementById('eso-dot') as HTMLElement | null;
@@ -59,8 +60,9 @@ const guidesActive = currentPath.startsWith('/guides');
       const res  = await fetch(PROXY, { cache: 'no-store', signal: controller.signal });
       const data = await res.json();
 
-      // corsproxy.io may wrap body as a string
-      const parsed = typeof data === 'string' ? JSON.parse(data) : data;
+      // allorigins.win/get wraps response in { contents: "...", status: {} }
+      const raw = data?.contents ?? data;
+      const parsed = typeof raw === 'string' ? JSON.parse(raw) : raw;
       const servers = parsed?.zos_platform_response?.response ?? {};
       const eu = servers['The Elder Scrolls Online (EU)'];
 
