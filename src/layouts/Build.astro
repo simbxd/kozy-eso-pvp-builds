@@ -1257,33 +1257,34 @@ const railItems = [`KOZY · ESO PvP`];
 </style>
 
 <style is:global>
-  /* Two-column build layout — global to avoid Astro scoping edge cases */
+  /* Two-column build layout — grid for strict column allocation */
   .build-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 48px;
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 64px;
+    align-items: start;
   }
 
   .build-content {
-    flex: 1;
     min-width: 0;
+    overflow: clip;
   }
 
   .build-toc {
-    width: 220px;
-    flex-shrink: 0;
-    align-self: flex-start;
+    align-self: start;
     position: sticky;
     top: 80px;
-    margin-left: 24px;
   }
 
   @media (max-width: 1280px) {
-    .build-layout { gap: 24px; }
-    .build-toc    { width: 200px; margin-left: 16px; }
+    .build-layout {
+      grid-template-columns: 1fr 200px;
+      gap: 48px;
+    }
   }
 
   @media (max-width: 1024px) {
-    .build-toc { display: none; }
+    .build-layout { display: block; }
+    .build-toc    { display: none; }
   }
 </style>
