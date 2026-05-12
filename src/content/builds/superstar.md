@@ -6,11 +6,11 @@ resource: Magicka
 gamemode: PvP
 patch: U50
 updatedAt: 2025-05-11
-difficulty: Advanced
+difficulty: Intermediate
 featured: true
 summary: Magicka Dragonknight built to hold the line in solo and small-scale
   PvP. Hard to kill while maintaining constant pressure through Molten Whip
-  procs and Incinerate execute windows.
+  procs and AoE pressure with Incinerate and Heart of Flame.
 pullquote: Hard to kill. Always relevant. The longer the fight goes, the more
   Snake stacks — and the harder you bite.
 sets:
