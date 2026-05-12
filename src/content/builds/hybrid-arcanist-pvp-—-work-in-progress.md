@@ -7,7 +7,7 @@ gamemode: PvP
 patch: U50
 difficulty: Intermediate
 featured: false
-summary: Build placeholder — contenu à venir.
+summary: Build placeholder — coming soon.
 sets: []
 skills:
   bar1: []
