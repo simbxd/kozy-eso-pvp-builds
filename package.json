@@ -9,7 +9,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "fetch:eso": "node scripts/fetch-eso-data.mjs",
+    "fetch:icons": "node scripts/fetch-skill-icons.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",

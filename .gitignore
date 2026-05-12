@@ -28,3 +28,9 @@ pnpm-debug.log*
 
 # Claude Code local settings
 .claude/
+
+# Generated ESO data (fetched via scripts/fetch-eso-data.mjs)
+src/data/eso/
+
+# Netlify leftover (project runs on Cloudflare Workers)
+.netlify/
