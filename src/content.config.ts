@@ -31,9 +31,9 @@ const builds = defineCollection({
       weapons: z.array(z.object({ slot: z.string(), type: z.literal('weapon'), barLabel: z.string(), item: z.string(), setId: z.string(), tier: z.string(), trait: z.string(), enchant: z.string() })),
     }).optional(),
     stats: z.object({
-      health:  z.object({ target: z.number(), note: z.string().optional() }),
-      magicka: z.object({ target: z.number(), note: z.string().optional() }),
-      stamina: z.object({ target: z.number(), note: z.string().optional() }),
+      health:  z.object({ target: z.number().optional(), note: z.string().optional() }),
+      magicka: z.object({ target: z.number().optional(), note: z.string().optional() }),
+      stamina: z.object({ target: z.number().optional(), note: z.string().optional() }),
     }).optional(),
     champion_points: z.object({
       warfare: z.array(cpStar),

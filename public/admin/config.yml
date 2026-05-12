@@ -80,19 +80,19 @@ collections:
             label: Health
             widget: object
             fields:
-              - { name: target, label: Target, widget: number }
+              - { name: target, label: Target, widget: number, required: false }
               - { name: note,   label: Note,   widget: string, required: false }
           - name: magicka
             label: Magicka
             widget: object
             fields:
-              - { name: target, label: Target, widget: number }
+              - { name: target, label: Target, widget: number, required: false }
               - { name: note,   label: Note,   widget: string, required: false }
           - name: stamina
             label: Stamina
             widget: object
             fields:
-              - { name: target, label: Target, widget: number }
+              - { name: target, label: Target, widget: number, required: false }
               - { name: note,   label: Note,   widget: string, required: false }
 
       # Champion Points
