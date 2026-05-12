@@ -79,19 +79,19 @@ collections:
             widget: object
             fields:
               - { name: target, label: Target, widget: number }
-              - { name: note,   label: Note,   widget: string }
+              - { name: note,   label: Note,   widget: string, required: false }
           - name: magicka
             label: Magicka
             widget: object
             fields:
               - { name: target, label: Target, widget: number }
-              - { name: note,   label: Note,   widget: string }
+              - { name: note,   label: Note,   widget: string, required: false }
           - name: stamina
             label: Stamina
             widget: object
             fields:
               - { name: target, label: Target, widget: number }
-              - { name: note,   label: Note,   widget: string }
+              - { name: note,   label: Note,   widget: string, required: false }
 
       # Champion Points
       - name: champion_points
