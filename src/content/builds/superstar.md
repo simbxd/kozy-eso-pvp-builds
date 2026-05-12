@@ -1,5 +1,5 @@
 ---
-title: The Solo God — Hybrid Dragonknight PvP
+title: The Solo Knight — Hybrid Dragonknight PvP
 class: Dragonknight
 role: DPS
 resource: Hybrid
@@ -8,9 +8,9 @@ patch: U50
 updatedAt: 2025-05-11
 difficulty: Intermediate
 featured: true
-summary: Magicka Dragonknight built to hold the line in solo and small-scale
-  PvP. Hard to kill while maintaining constant pressure through Molten Whip
-  procs and AoE pressure with Incinerate and Heart of Flame.
+summary: Dragonknight built to hold the line in solo and small-scale PvP. Hard
+  to kill while maintaining constant pressure through Molten Whip procs and AoE
+  pressure with Incinerate and Heart of Flame.
 pullquote: Hard to kill. Always relevant. The longer the fight goes, the more
   Snake stacks — and the harder you bite.
 sets:
@@ -18,10 +18,10 @@ sets:
   - rallying-cry
   - markyn-ring-of-majesty
   - armor-of-the-trainee
-  - true-sworn-fury
+  - twice-fanged-serpent
 skills:
   bar1:
-    - flame-lash
+    - molten-whip
     - disintegrating-dragonfire
     - shattering-rocks
     - quick-cloak
