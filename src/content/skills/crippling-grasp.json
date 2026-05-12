@@ -4,7 +4,7 @@
   "base_skill": "Cripple",
   "morph_of": "cripple",
   "morph_sibling": "debilitate",
-  "morph_rationale": "Mobility morph — increases Movement Speed on cast.",
+  "morph_rationale": "CC morph — immobilizes the target for 2 seconds in addition to the DoT and 30% slow; preferred over Debilitate when a hard immobilize matters more than a stronger snare.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

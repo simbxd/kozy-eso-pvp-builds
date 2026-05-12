@@ -11,5 +11,6 @@
   "icon": "/assets/skills/swarming-scion.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/swarming-scion",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Swarming_Scion"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Swarming_Scion",
+  "morph_rationale": "Offensive Ultimate morph — summons bats that deal 870 Magic Damage per second to surrounding enemies during transformation; preferred over Perfect Scion when continuous AoE pressure matters more than negating Vampire Stage drawbacks."
 }

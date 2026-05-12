@@ -4,7 +4,7 @@
   "base_skill": "Hidden Blade",
   "morph_of": "hidden-blade",
   "morph_sibling": "flying-blade",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "Multi-target interrupt morph — bounces to up to 3 nearby enemies, interrupting and potentially stunning multiple casters; preferred over Flying Blade when chain-interrupting multiple targets matters more than single-target burst.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

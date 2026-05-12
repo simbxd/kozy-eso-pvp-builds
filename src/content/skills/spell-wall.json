@@ -4,7 +4,7 @@
   "base_skill": "Shield Wall",
   "morph_of": "shield-wall",
   "morph_sibling": "shield-discipline",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Projectile reflection morph — reflects all projectiles cast at you while auto-blocking; preferred over Shield Discipline when countering ranged heavy attackers matters more than free ability costs.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

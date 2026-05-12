@@ -19,7 +19,7 @@ const DRY_RUN    = process.env.DRY_RUN === '1';
 
 const TARGET_CLASSES = new Set([
   'Dragonknight','Sorcerer','Nightblade','Templar',
-  'Warden','Necromancer','Arcanist','Weapon','Guild',
+  'Warden','Necromancer','Arcanist','Weapon','Guild','Armor',
 ]);
 
 // ---------- Fetch UESP ----------

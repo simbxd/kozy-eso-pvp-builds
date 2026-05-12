@@ -11,5 +11,6 @@
   "icon": "/assets/skills/howl-of-agony.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/howl-of-agony",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Howl_of_Agony"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Howl_of_Agony",
+  "morph_rationale": "Double condition morph — deals 10% bonus damage to both Terrified and Off Balance enemies simultaneously; preferred over Howl of Despair when stacking damage bonuses from Roar's debuffs matters more than providing ally synergies."
 }

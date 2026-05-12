@@ -4,7 +4,7 @@
   "base_skill": "Defensive Posture",
   "morph_of": "defensive-posture",
   "morph_sibling": "absorb-missile",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Absorb Missile.",
+  "morph_rationale": "Counter morph — reflects the next projectile back at the attacker and passively reduces block cost and increases block damage with a shield equipped; preferred over Absorb Missile when punishing ranged enemies and block efficiency matter.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

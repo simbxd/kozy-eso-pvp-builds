@@ -4,7 +4,7 @@
   "base_skill": "Bone Armor",
   "morph_of": "bone-armor",
   "morph_sibling": "summoners-armor",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Anti-ranged morph — pulls ranged attackers to you and taunts them every 2 seconds while active; preferred over Summoner's Armor when punishing and repositioning ranged enemies into melee matters more than summon cost reduction.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

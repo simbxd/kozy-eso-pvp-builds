@@ -4,7 +4,7 @@
   "base_skill": "Sleet Storm",
   "morph_of": "sleet-storm",
   "morph_sibling": "northern-storm",
-  "morph_rationale": "Mobility morph — increases Movement Speed on cast.",
+  "morph_rationale": "Snare morph — slows enemies by 70% instead of Northern Storm's 40% and applies Chilled; preferred when maximum enemy movement restriction matters more than the damage escalation.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

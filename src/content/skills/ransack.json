@@ -4,7 +4,7 @@
   "base_skill": "Puncture",
   "morph_of": "puncture",
   "morph_sibling": "pierce-armor",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Self-protection taunt morph — applies Major Breach and grants Minor Protection, reducing your own damage taken by 5%; preferred over Pierce Armor when personal survivability alongside armor penetration matters more.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Bone Goliath Transformation",
   "morph_of": "bone-goliath-transformation",
   "morph_sibling": "ravenous-goliath",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Ravenous Goliath's alternative effect.",
+  "morph_rationale": "Melee burst morph — Bash attacks hit multiple enemies in front for 1799 Physical Damage; preferred over Ravenous Goliath when target-focused melee burst matters more than passive AoE presence.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

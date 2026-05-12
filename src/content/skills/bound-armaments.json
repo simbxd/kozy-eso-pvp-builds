@@ -4,7 +4,7 @@
   "base_skill": "Bound Armor",
   "morph_of": "bound-armor",
   "morph_sibling": "bound-aegis",
-  "morph_rationale": "Support morph — grants Major Prophecy, increasing your effectiveness.",
+  "morph_rationale": "Stamina DPS morph — converts the cost to Stamina and stores up to 4 light attacks into an empowered heavy attack; chosen on Stamina Sorcerer over the defensive Bound Aegis.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

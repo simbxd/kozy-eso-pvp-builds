@@ -4,7 +4,7 @@
   "base_skill": "Focused Charge",
   "morph_of": "focused-charge",
   "morph_sibling": "explosive-charge",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "Single-target CC morph — focuses the charge and taunt on one enemy with 7 seconds of Major Protection; preferred over Explosive Charge when single-target burst CC is the priority.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

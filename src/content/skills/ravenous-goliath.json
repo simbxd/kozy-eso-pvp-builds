@@ -4,7 +4,7 @@
   "base_skill": "Bone Goliath Transformation",
   "morph_of": "bone-goliath-transformation",
   "morph_sibling": "pummeling-goliath",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Pummeling Goliath's alternative effect.",
+  "morph_rationale": "AoE sustain morph — passively deals 826 Magic Damage per second to all nearby enemies and heals for the same amount; preferred over Pummeling Goliath when sustained AoE pressure and automatic healing matter more.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

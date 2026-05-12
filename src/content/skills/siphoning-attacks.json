@@ -4,7 +4,7 @@
   "base_skill": "Siphoning Strikes",
   "morph_of": "siphoning-strikes",
   "morph_sibling": "leeching-strikes",
-  "morph_rationale": "Stamina morph — converts the cost to Stamina, enabling use on non-Magicka builds.",
+  "morph_rationale": "Resource sustain morph — restores more total resources and adds per-hit Magicka and Stamina recovery; preferred over Leeching Strikes when resource sustain outweighs self-healing.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

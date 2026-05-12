@@ -11,5 +11,6 @@
   "icon": "/assets/skills/deafening-roar.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/deafening-roar",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Deafening_Roar"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Deafening_Roar",
+  "morph_rationale": "Debuff morph — applies Major Breach (−5948 Physical and Spell Resistance) and Minor Maim (−5% damage dealt) to feared enemies for 10 seconds; preferred over Ferocious Roar when sustained armor penetration and damage mitigation on enemies matters."
 }

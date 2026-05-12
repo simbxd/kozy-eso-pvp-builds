@@ -4,7 +4,7 @@
   "base_skill": "Whirlwind",
   "morph_of": "whirlwind",
   "morph_sibling": "steel-tornado",
-  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
+  "morph_rationale": "Execute AoE morph — deals up to 100% bonus damage on targets below 50% Health; preferred over Steel Tornado when burst-finishing low-health enemies in melee range is the priority.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

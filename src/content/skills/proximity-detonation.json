@@ -11,5 +11,6 @@
   "icon": "/assets/skills/proximity-detonation.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/proximity-detonation",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Proximity_Detonation"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Proximity_Detonation",
+  "morph_rationale": "Self-bomb morph — activates the explosion centered on yourself, including you in the enemy count for damage scaling; preferred over Inevitable Detonation when baiting enemies into melee range for maximum AoE matters."
 }

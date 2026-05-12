@@ -4,7 +4,7 @@
   "base_skill": "Secluded Grove",
   "morph_of": "secluded-grove",
   "morph_sibling": "enchanted-forest",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Enchanted Forest's alternative effect.",
+  "morph_rationale": "Sustained HoT morph — healing persists on allies for 4 extra seconds after they leave the forest; preferred over Enchanted Forest when keeping mobile allies healed matters more than Ultimate generation.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

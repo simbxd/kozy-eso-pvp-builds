@@ -4,7 +4,7 @@
   "base_skill": "Meditate",
   "morph_of": "meditate",
   "morph_sibling": "deep-thoughts",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Escalating heal morph — self-healing increases by 10% per tick up to 50% bonus at the end; preferred over Deep Thoughts when maximizing Health recovery over a sustained channel matters more than resource restoration.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",

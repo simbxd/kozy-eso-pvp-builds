@@ -4,7 +4,7 @@
   "base_skill": "Falcon's Swiftness",
   "morph_of": "falcons-swiftness",
   "morph_sibling": "deceptive-predator",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Offensive mobility morph — grants Minor Berserk while slotted, increasing damage done by 5%; preferred over Deceptive Predator when offensive output alongside the mobility matters more than area damage reduction.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

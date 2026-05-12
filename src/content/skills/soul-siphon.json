@@ -4,7 +4,7 @@
   "base_skill": "Soul Shred",
   "morph_of": "soul-shred",
   "morph_sibling": "soul-tether",
-  "morph_rationale": "Support morph — grants Major Vitality to you and nearby allies, increasing your effectiveness.",
+  "morph_rationale": "Group sustain morph — heals nearby allies and grants Major Vitality, boosting healing received and damage shield strength; preferred over Soul Tether when group survivability matters more than the stun.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

@@ -11,5 +11,6 @@
   "icon": "/assets/skills/blood-mist.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/blood-mist",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_Mist"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_Mist",
+  "morph_rationale": "Sustain mist morph — drains blood from nearby enemies for 20 seconds after dispersing, dealing damage and healing you for 45% of it; preferred over Elusive Mist when sustained self-healing during the form matters more than post-dash movement buffs."
 }

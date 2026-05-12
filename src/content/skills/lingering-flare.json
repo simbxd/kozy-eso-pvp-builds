@@ -11,5 +11,6 @@
   "icon": "/assets/skills/lingering-flare.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/lingering-flare",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Lingering_Flare"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lingering_Flare",
+  "morph_rationale": "Extended reveal morph — doubles the reveal duration to 10 seconds, keeping enemies exposed and out of stealth longer; preferred over Blinding Flare when sustained area denial against stealth matters more than the stun."
 }

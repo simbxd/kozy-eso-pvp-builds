@@ -4,7 +4,7 @@
   "base_skill": "Expunge",
   "morph_of": "expunge",
   "morph_sibling": "expunge-and-modify",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Deep cleanse morph — removes up to 4 negative effects instead of 2; preferred over Expunge and Modify when clearing more debuffs in one cast matters more than the resource restoration.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

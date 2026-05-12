@@ -11,5 +11,6 @@
   "icon": "/assets/skills/pack-leader.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/pack-leader",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Pack_Leader"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pack_Leader",
+  "morph_rationale": "Group support Ultimate morph — summons two direwolves and grants Minor Courage to the group, increasing Weapon and Spell Damage by 215; preferred over Werewolf Berserker when contributing group utility alongside 10% personal damage reduction matters."
 }

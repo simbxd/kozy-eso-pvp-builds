@@ -4,7 +4,7 @@
   "base_skill": "Hearthfire",
   "morph_of": "hearthfire",
   "morph_sibling": "hearth-and-home",
-  "morph_rationale": "Support morph — grants Minor Heroism, increasing your effectiveness.",
+  "morph_rationale": "Support morph — grants Minor Fortitude and Minor Heroism to healed targets, generating Ultimate over time; preferred over Hearth and Home when sustained ult generation for the group matters more than Major Protection.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

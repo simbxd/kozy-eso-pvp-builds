@@ -4,7 +4,7 @@
   "base_skill": "Rune Focus",
   "morph_of": "rune-focus",
   "morph_sibling": "channeled-focus",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Stamina sustain morph — recovers 242 Stamina per second with a slightly higher baseline heal; preferred over Channeled Focus on Stamina Templar builds where Stamina sustain matters more than Magicka.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

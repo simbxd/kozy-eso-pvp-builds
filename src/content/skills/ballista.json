@@ -4,7 +4,7 @@
   "base_skill": "Rapid Fire",
   "morph_of": "rapid-fire",
   "morph_sibling": "toxic-barrage",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Turret morph — deploys a stationary crossbow that attacks the target autonomously for 5 seconds; preferred over Toxic Barrage when hands-free deployment and freedom to act during the duration matter.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Mark Target",
   "morph_of": "mark-target",
   "morph_sibling": "piercing-mark",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Execute reward morph — grants Major Berserk for 10 seconds on kill in addition to the full Health restore; preferred over Piercing Mark when a damage burst after the kill matters more than stealth detection.",
   "class": "Nightblade",
   "skill_line": "Assassination",
   "type": "Active",

@@ -11,5 +11,6 @@
   "icon": "/assets/skills/feral-pounce.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/feral-pounce",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Feral_Pounce"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Feral_Pounce",
+  "morph_rationale": "Sustain pounce morph — each hit restores 100 Stamina and extends the Werewolf Transformation by 1 second; preferred over Brutal Pounce when prolonging the transformation and sustaining Stamina in single-target combat matters."
 }

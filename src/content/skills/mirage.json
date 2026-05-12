@@ -4,7 +4,7 @@
   "base_skill": "Blur",
   "morph_of": "blur",
   "morph_sibling": "phantasmal-escape",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Resistance morph — adds Minor Resolve alongside Major Evasion, increasing Physical and Spell Resistance; preferred over Phantasmal Escape when stacking evasion with armor resistance matters more than snare removal.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

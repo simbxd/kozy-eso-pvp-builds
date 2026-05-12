@@ -11,5 +11,6 @@
   "icon": "/assets/skills/hircines-fortitude.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/hircines-fortitude",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Hircine's_Fortitude"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hircine's_Fortitude",
+  "morph_rationale": "Sustain heal morph — heals for 8002 Health (vs 6197) and grants Minor Endurance and Fortitude at full Health, boosting all recovery by 15% for 20 seconds; preferred over Hircine's Rage when maximizing healing output and long-term sustain matters."
 }

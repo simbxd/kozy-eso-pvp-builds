@@ -4,7 +4,7 @@
   "base_skill": "Mark Target",
   "morph_of": "mark-target",
   "morph_sibling": "reapers-mark",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Anti-stealth morph — exposes nearby stealthed enemies when the mark is applied in addition to Major Breach; preferred over Reaper's Mark when tracking invisible targets matters more than the post-kill damage burst.",
   "class": "Nightblade",
   "skill_line": "Assassination",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Mages' Fury",
   "morph_of": "mages-fury",
   "morph_sibling": "mages-wrath",
-  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
+  "morph_rationale": "Resource recovery morph — restores 4860 Magicka when an enemy dies within 5 seconds of being struck; preferred over Mages' Wrath when sustaining Magicka in execute windows matters more than cleave damage.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
   "type": "Active",

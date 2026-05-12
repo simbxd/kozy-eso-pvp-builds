@@ -4,7 +4,7 @@
   "base_skill": "Obsidian Shield",
   "morph_of": "obsidian-shield",
   "morph_sibling": "igneous-shield",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Igneous Shield.",
+  "morph_rationale": "Group shield morph — grants equal-strength damage shields to you and nearby allies, scaling off your Max Magicka or Stamina; preferred over Igneous Shield when spreading uniform protection to allies matters more than a larger personal shield.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
   "type": "Active",

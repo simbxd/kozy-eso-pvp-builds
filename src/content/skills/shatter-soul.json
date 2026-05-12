@@ -11,5 +11,6 @@
   "icon": "/assets/skills/shatter-soul.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/shatter-soul",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Shatter_Soul"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shatter_Soul",
+  "morph_rationale": "AoE burst morph — the soulfire overflows and explodes on all nearby enemies after the channel, dealing 2399 bonus Magic Damage; preferred over Soul Assault when hitting clustered enemies after the channel matters."
 }

@@ -11,5 +11,6 @@
   "icon": "/assets/skills/cleanse.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/cleanse",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Cleanse"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Cleanse",
+  "morph_rationale": "Heal-on-cleanse morph — heals each target for 5% of their Max Health per negative effect removed; preferred over Efficient Purge when combining debuff removal with group healing matters."
 }

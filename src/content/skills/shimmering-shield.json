@@ -4,7 +4,7 @@
   "base_skill": "Crystallized Shield",
   "morph_of": "crystallized-shield",
   "morph_sibling": "crystallized-slab",
-  "morph_rationale": "Support morph — grants Major Heroism, increasing your effectiveness.",
+  "morph_rationale": "Ultimate generation morph — absorbs up to 3 projectiles and grants Major Heroism on each hit, rapidly generating Ultimate; preferred over Crystallized Slab when ult economy matters more than the stun.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

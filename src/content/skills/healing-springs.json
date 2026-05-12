@@ -4,7 +4,7 @@
   "base_skill": "Grand Healing",
   "morph_of": "grand-healing",
   "morph_sibling": "illustrious-healing",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Illustrious Healing's alternative effect.",
+  "morph_rationale": "Resource recovery morph — restores Magicka Recovery for each ally healed, stacking up to 20 times; preferred over Illustrious Healing when self-sustaining Magicka for continued healing output matters.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

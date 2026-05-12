@@ -4,7 +4,7 @@
   "base_skill": "The Imperfect Ring",
   "morph_of": "the-imperfect-ring",
   "morph_sibling": "fulminating-rune",
-  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
+  "morph_rationale": "Crowd control morph — pulls nearby enemies to the rune after a 2-second delay, grouping foes for follow-up AoE; preferred over Fulminating Rune when setup and positioning matter more than immediate burst.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Wall of Elements",
   "morph_of": "wall-of-elements",
   "morph_sibling": "elemental-blockade",
-  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
+  "morph_rationale": "Fire morph — deals Flame Damage and hits Burning enemies for 10% more; preferred over Elemental Blockade when reliable Burning synergy on a Flame staff build matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

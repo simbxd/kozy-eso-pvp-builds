@@ -4,7 +4,7 @@
   "base_skill": "Dark Exchange",
   "morph_of": "dark-exchange",
   "morph_sibling": "dark-conversion",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Dark Conversion's alternative effect.",
+  "morph_rationale": "Stamina sustain morph — restores Stamina instantly and over time alongside Minor Berserk; preferred over Dark Conversion on Stamina Sorcerer builds where Stamina sustain matters more than Magicka.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

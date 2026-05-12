@@ -4,6 +4,7 @@
   "base_skill": "Unstoppable",
   "morph_of": "unstoppable",
   "morph_sibling": "unstoppable-brute",
+  "morph_rationale": "CC immunity morph — grants immunity to knockbacks and disabling effects for 6 seconds alongside Major Resolve, at the cost of 65% reduced Movement Speed; preferred over Unstoppable Brute when hard CC immunity without resource consideration matters.",
   "class": "Armor",
   "skill_line": "Heavy Armor",
   "type": "Active",

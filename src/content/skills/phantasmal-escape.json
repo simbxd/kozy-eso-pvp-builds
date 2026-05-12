@@ -4,7 +4,7 @@
   "base_skill": "Blur",
   "morph_of": "blur",
   "morph_sibling": "mirage",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Escape morph — removes all snares and immobilizations on cast and grants immunity for 4 seconds; preferred over Mirage when breaking CC and preventing reapplication matters more than the resistance bonus.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

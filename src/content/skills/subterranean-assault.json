@@ -4,7 +4,7 @@
   "base_skill": "Scorch",
   "morph_of": "scorch",
   "morph_sibling": "deep-fissure",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Double-hit morph — shalk attack twice in delayed waves, dealing Poison damage; preferred over Deep Fissure when consistent DPS pressure matters more than armor penetration.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

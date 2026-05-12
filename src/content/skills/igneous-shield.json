@@ -4,7 +4,7 @@
   "base_skill": "Obsidian Shield",
   "morph_of": "obsidian-shield",
   "morph_sibling": "fragmented-shield",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Fragmented Shield.",
+  "morph_rationale": "Tank shield morph — provides a significantly larger personal shield (3824 vs 2400) that scales off Max Health; preferred over Fragmented Shield when maximizing your own absorption matters more than group shield equity.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
   "type": "Active",

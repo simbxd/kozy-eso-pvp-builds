@@ -4,7 +4,7 @@
   "base_skill": "Cleave",
   "morph_of": "cleave",
   "morph_sibling": "brawler",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Brawler.",
+  "morph_rationale": "Sustained Bleed morph — applies a Bleed DoT that extends by 10 seconds with each hit, up to 32 seconds; preferred over Brawler when sustained single-target Bleed pressure matters more than a scaling shield.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

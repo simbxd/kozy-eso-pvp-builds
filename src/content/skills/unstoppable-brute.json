@@ -4,6 +4,7 @@
   "base_skill": "Unstoppable",
   "morph_of": "unstoppable",
   "morph_sibling": "immovable",
+  "morph_rationale": "Break Free morph — reduces the cost of Break Free by 5% per Heavy Armor piece while Major Resolve is active; preferred over Immovable when escaping CC more economically alongside the resistance buff matters.",
   "class": "Armor",
   "skill_line": "Heavy Armor",
   "type": "Active",

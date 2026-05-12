@@ -11,5 +11,6 @@
   "icon": "/assets/skills/consuming-trap.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/consuming-trap",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Consuming_Trap"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Consuming_Trap",
+  "morph_rationale": "Self-sustain trap morph — heals for 3200 Health and restores 2400 Magicka and Stamina when an affected enemy dies; preferred over Soul Splitting Trap when resource recovery on kills matters more than AoE spread."
 }

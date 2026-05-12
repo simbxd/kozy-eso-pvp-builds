@@ -4,7 +4,7 @@
   "base_skill": "Bone Armor",
   "morph_of": "bone-armor",
   "morph_sibling": "beckoning-armor",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Summon efficiency morph — reduces the cost of Blastbones, Skeletal Mage, and Spirit Mender by 15% with a longer 30-second duration; preferred over Beckoning Armor when Necromancer summon uptime matters more than anti-ranged utility.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

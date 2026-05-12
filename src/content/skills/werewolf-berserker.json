@@ -11,5 +11,6 @@
   "icon": "/assets/skills/werewolf-berserker.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/werewolf-berserker",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Werewolf_Berserker"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Werewolf_Berserker",
+  "morph_rationale": "Offensive Ultimate morph — Light Attacks apply a 3716 Bleed DoT and Heavy Attacks deal AoE damage during transformation; preferred over Pack Leader when maximizing personal offensive output in the werewolf form matters."
 }

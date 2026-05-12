@@ -4,7 +4,7 @@
   "base_skill": "Weakness to Elements",
   "morph_of": "weakness-to-elements",
   "morph_sibling": "elemental-susceptibility",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Magicka leech morph — applies Minor Magickasteal alongside Major Breach, restoring 168 Magicka per second to you and allies when damaging the target; preferred over Elemental Susceptibility when group Magicka sustain matters more than status effects.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

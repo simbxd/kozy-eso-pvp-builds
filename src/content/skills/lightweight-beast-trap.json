@@ -4,7 +4,7 @@
   "base_skill": "Trap Beast",
   "morph_of": "trap-beast",
   "morph_sibling": "barbed-trap",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Ranged placement morph — launches the trap to a target location instead of placing it at your feet; preferred over Barbed Trap when controlling a specific area at range matters more than the Hemorrhaging status.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
   "type": "Active",

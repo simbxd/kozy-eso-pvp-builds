@@ -4,7 +4,7 @@
   "base_skill": "Wall of Elements",
   "morph_of": "wall-of-elements",
   "morph_sibling": "elemental-blockade",
-  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
+  "morph_rationale": "Base unstable morph — applies element-dependent effects and explodes for 1199 bonus Magic Damage when the barrier ends; preferred when element flexibility alongside the expiry burst matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

@@ -11,5 +11,6 @@
   "icon": "/assets/skills/exhilarating-drain.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/exhilarating-drain",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Exhilarating_Drain"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Exhilarating_Drain",
+  "morph_rationale": "Ultimate generation morph — generates 5 Ultimate per second over the channel duration; preferred over Drain Vigor when fueling Ultimate abilities matters more than Stamina restoration."
 }

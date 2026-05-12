@@ -11,5 +11,6 @@
   "icon": "/assets/skills/sated-fury.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/sated-fury",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Sated_Fury"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sated_Fury",
+  "morph_rationale": "Sustain frenzy morph — heals for 33% of the total Health spent when toggled off, recovering the self-damage cost; preferred over Simmering Frenzy when offsetting Health drain matters more than maximum damage stacking."
 }

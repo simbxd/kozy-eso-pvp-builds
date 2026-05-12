@@ -4,7 +4,7 @@
   "base_skill": "Rune of Eldritch Horror",
   "morph_of": "rune-of-eldritch-horror",
   "morph_sibling": "rune-of-the-colorless-pool",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Crowd control morph — charms the target into moving toward you and applies Minor Vulnerability for 10 seconds, increasing their damage taken; preferred over Rune of the Colorless Pool when soft CC and damage amplification matter more than a hard stun.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Radiant Destruction",
   "morph_of": "radiant-destruction",
   "morph_sibling": "radiant-oppression",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Self-sustain execute morph — heals you for 15% of all damage dealt and triggers execute bonus below 33% HP; preferred over Radiant Oppression when sustaining Health during the execute phase matters.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
   "type": "Active",

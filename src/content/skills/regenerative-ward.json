@@ -4,7 +4,7 @@
   "base_skill": "Conjured Ward",
   "morph_of": "conjured-ward",
   "morph_sibling": "hardened-ward",
-  "morph_rationale": "Support morph — grants Minor Endurance to you and nearby allies, increasing your effectiveness.",
+  "morph_rationale": "Support morph — provides a damage shield and grants Minor Intellect and Minor Endurance to nearby allies, boosting resource recovery; preferred over Hardened Ward when group utility matters more than a larger personal shield.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

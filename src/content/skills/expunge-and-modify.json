@@ -4,7 +4,7 @@
   "base_skill": "Expunge",
   "morph_of": "expunge",
   "morph_sibling": "hexproof",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Resource cleanse morph — restores 515 Magicka and Stamina for each of the 2 effects removed; preferred over Hexproof when resource restoration alongside cleansing matters more than removing more debuffs.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Feral Guardian",
   "morph_of": "feral-guardian",
   "morph_sibling": "eternal-guardian",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "Bleed summon morph — grizzly deals Bleed damage with increased Hemorrhaging chance; preferred over Eternal Guardian when sustained Bleed pressure and status effects matter more.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

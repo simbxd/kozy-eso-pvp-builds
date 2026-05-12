@@ -4,7 +4,7 @@
   "base_skill": "Assassin's Blade",
   "morph_of": "assassins-blade",
   "morph_sibling": "killers-blade",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Execute morph — deals 330% more damage to targets below 25% Health; preferred over Killer's Blade when a deep, narrow execute window matters.",
   "class": "Nightblade",
   "skill_line": "Assassination",
   "type": "Active",

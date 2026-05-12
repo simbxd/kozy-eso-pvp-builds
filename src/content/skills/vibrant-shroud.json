@@ -4,7 +4,7 @@
   "base_skill": "Encase",
   "morph_of": "encase",
   "morph_sibling": "shattering-spines",
-  "morph_rationale": "Support morph — grants Minor Vitality, increasing your effectiveness.",
+  "morph_rationale": "Hybrid morph — heals you and allies with Minor Vitality while simultaneously applying Major Maim to nearby enemies; preferred over Shattering Spines when combining group sustain with damage mitigation.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

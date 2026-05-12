@@ -4,7 +4,7 @@
   "base_skill": "Rune Prison",
   "morph_of": "rune-prison",
   "morph_sibling": "defensive-rune",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "Offensive CC morph — imprisons a target in an unblockable stun that deals 1799 bonus damage if the stun lasts its full duration; preferred over Defensive Rune when initiating CC on a specific target.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

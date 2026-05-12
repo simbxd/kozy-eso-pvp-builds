@@ -4,7 +4,7 @@
   "base_skill": "Hidden Blade",
   "morph_of": "hidden-blade",
   "morph_sibling": "shrouded-daggers",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "Burst mobility morph — marks a target for a free gap-close reactivation dealing 2160 bonus damage, with a 40-second Major Brutality buff; preferred over Shrouded Daggers when burst follow-up and longer buff uptime matter more.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

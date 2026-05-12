@@ -4,7 +4,7 @@
   "base_skill": "Summon Storm Atronach",
   "morph_of": "summon-storm-atronach",
   "morph_sibling": "greater-storm-atronach",
-  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
+  "morph_rationale": "AoE atronach — calls lightning storms every 2 seconds dealing damage to all nearby enemies and applying Concussion; preferred over Greater Storm Atronach when AoE pressure and Off Balance setup matter more.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

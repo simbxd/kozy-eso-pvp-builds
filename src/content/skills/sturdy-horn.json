@@ -11,5 +11,6 @@
   "icon": "/assets/skills/sturdy-horn.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/sturdy-horn",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Sturdy_Horn"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sturdy_Horn",
+  "morph_rationale": "Defensive group morph — grants 1320 Critical Resistance to you and allies for 10 seconds, reducing incoming Critical Damage by 20%; preferred over Aggressive Horn when survivability against burst matters more than offensive output."
 }

@@ -11,5 +11,6 @@
   "icon": "/assets/skills/replenishing-barrier.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/replenishing-barrier",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Replenishing_Barrier"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Replenishing_Barrier",
+  "morph_rationale": "Resource recovery morph — restores 1500 Magicka each time a ward dissolves; preferred over Reviving Barrier when sustaining Magicka economy through extended fights matters more than the group heal over time."
 }

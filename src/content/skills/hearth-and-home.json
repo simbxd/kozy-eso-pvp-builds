@@ -4,7 +4,7 @@
   "base_skill": "Hearthfire",
   "morph_of": "hearthfire",
   "morph_sibling": "fire-keeper",
-  "morph_rationale": "Support morph — grants Major Protection, increasing your damage reduction.",
+  "morph_rationale": "Defensive zone morph — grants you Major Protection while inside and slows enemies within by 70%, combining group healing with zone control; preferred over Fire Keeper when personal protection and enemy movement restriction matter more than ult generation outside the area.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

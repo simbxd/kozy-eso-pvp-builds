@@ -4,6 +4,7 @@
   "base_skill": "Annulment",
   "morph_of": "annulment",
   "morph_sibling": "harness-magicka",
+  "morph_rationale": "Shield cap morph — provides a damage shield with a higher cap (60% Max Health vs Harness Magicka's 50%); preferred when maximum shield absorption matters more than Magicka restoration on hit.",
   "class": "Armor",
   "skill_line": "Light Armor",
   "type": "Active",

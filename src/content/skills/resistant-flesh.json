@@ -4,7 +4,7 @@
   "base_skill": "Render Flesh",
   "morph_of": "render-flesh",
   "morph_sibling": "blood-sacrifice",
-  "morph_rationale": "Self-sustain morph — heals you for a portion of the damage dealt.",
+  "morph_rationale": "Defensive heal morph — grants the healed target Physical and Spell Resistance equal to half the heal amount; preferred over Blood Sacrifice when protecting a single ally with both healing and resistance matters.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

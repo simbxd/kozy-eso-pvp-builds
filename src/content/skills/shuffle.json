@@ -4,6 +4,7 @@
   "base_skill": "Evasion",
   "morph_of": "evasion",
   "morph_sibling": "elude",
+  "morph_rationale": "Snare cleanse morph — each piece of Medium Armor removes snares and grants immunity for 1 second while active; preferred over Elude when breaking snares and maintaining movement throughout the duration matter.",
   "class": "Armor",
   "skill_line": "Medium Armor",
   "type": "Active",

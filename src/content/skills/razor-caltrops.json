@@ -11,5 +11,6 @@
   "icon": "/assets/skills/razor-caltrops.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/razor-caltrops",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Razor_Caltrops"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Razor_Caltrops",
+  "morph_rationale": "Armor pen morph — applies Major Breach to enemies inside the area, reducing their Physical and Spell Resistance by 5948; preferred over Anti-Cavalry Caltrops when armor penetration in foot combat matters more than mount disruption."
 }

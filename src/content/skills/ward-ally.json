@@ -4,7 +4,7 @@
   "base_skill": "Steadfast Ward",
   "morph_of": "steadfast-ward",
   "morph_sibling": "healing-ward",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Healing Ward.",
+  "morph_rationale": "Dual shield morph — simultaneously shields both you and the lowest health ally in range; preferred over Healing Ward when protecting two targets at once matters more than the self-healing component.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

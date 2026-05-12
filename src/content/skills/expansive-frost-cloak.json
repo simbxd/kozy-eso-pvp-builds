@@ -4,7 +4,7 @@
   "base_skill": "Frost Cloak",
   "morph_of": "frost-cloak",
   "morph_sibling": "ice-fortress",
-  "morph_rationale": "Support morph — grants Major Resolve to you and nearby allies, increasing your Physical and Spell Resistance.",
+  "morph_rationale": "Group resistance morph — extends Major Resolve to all grouped allies for 20 seconds; preferred over Ice Fortress when spreading resistance across the group matters more than the extra duration and personal Minor Protection.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

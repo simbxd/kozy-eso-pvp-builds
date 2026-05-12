@@ -4,7 +4,7 @@
   "base_skill": "Puncture",
   "morph_of": "puncture",
   "morph_sibling": "ransack",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Dual breach morph — applies both Minor and Major Breach, reducing enemy Physical and Spell Resistance by a combined 8922; preferred over Ransack when maximum armor penetration on the taunted target matters.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

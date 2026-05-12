@@ -4,7 +4,7 @@
   "base_skill": "Chains of Flame",
   "morph_of": "chains-of-flame",
   "morph_sibling": "chains-of-dominance",
-  "morph_rationale": "Support morph — grants Major Evasion, increasing your effectiveness.",
+  "morph_rationale": "Self-buff morph — pulls you to the enemy and grants Major Berserk and Major Evasion on impact; preferred over Chains of Dominance when aggressive gap-close and personal survivability matter more.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Lacerate",
   "morph_of": "lacerate",
   "morph_sibling": "rend",
-  "morph_rationale": "Self-sustain morph — heals you for a portion of the damage dealt.",
+  "morph_rationale": "Damage stack morph — gains 6% bonus damage per enemy hit, up to 36% with 6 targets; preferred over Rend when fighting multiple enemies and escalating damage from stacks matter more than single-target output.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

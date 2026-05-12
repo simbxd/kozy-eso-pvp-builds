@@ -4,7 +4,7 @@
   "base_skill": "Flurry",
   "morph_of": "flurry",
   "morph_sibling": "bloodthirst",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Burst morph — lands four rapid hits with escalating damage per strike; preferred over Bloodthirst when sustained burst pressure matters more than self-healing between hits.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

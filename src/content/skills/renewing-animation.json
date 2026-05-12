@@ -4,7 +4,7 @@
   "base_skill": "Reanimate",
   "morph_of": "reanimate",
   "morph_sibling": "animate-blastbones",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Resurrection morph — revives up to 3 allies at the target location and restores Magicka and Stamina for each one revived; preferred over Animate Blastbones when group recovery after a wipe matters more than a damage summon.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

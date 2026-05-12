@@ -4,7 +4,7 @@
   "base_skill": "Tome-Bearer's Inspiration",
   "morph_of": "tome-bearers-inspiration",
   "morph_sibling": "recuperative-treatise",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Crux generation morph — pulses every 3 seconds (vs 5), generating Crux more frequently for faster combo access; preferred over Recuperative Treatise when Crux uptime matters more than per-pulse resource restoration.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

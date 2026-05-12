@@ -4,7 +4,7 @@
   "base_skill": "Falcon's Swiftness",
   "morph_of": "falcons-swiftness",
   "morph_sibling": "bird-of-prey",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Defensive mobility morph — grants Minor Evasion while slotted, reducing area attack damage by 10%; preferred over Bird of Prey when reducing AoE burst damage matters more than the damage bonus.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

@@ -11,5 +11,6 @@
   "icon": "/assets/skills/perfect-scion.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/perfect-scion",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Perfect_Scion"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfect_Scion",
+  "morph_rationale": "Penalty-free Ultimate morph — reaches Vampire Stage 5 with none of the usual drawbacks (fire weakness, detection), granting all Stage 4 benefits without penalties; preferred over Swarming Scion when removing Vampire Stage penalties during combat matters more than AoE damage."
 }

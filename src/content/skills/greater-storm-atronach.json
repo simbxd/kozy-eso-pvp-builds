@@ -4,7 +4,7 @@
   "base_skill": "Summon Storm Atronach",
   "morph_of": "summon-storm-atronach",
   "morph_sibling": "summon-charged-atronach",
-  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
+  "morph_rationale": "Sustained DPS atronach — attacks the closest enemy every second for reliable focused damage with an ally synergy granting Major Berserk; preferred over Summon Charged Atronach when consistent single-target output matters more than AoE bursts.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

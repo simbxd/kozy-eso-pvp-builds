@@ -4,7 +4,7 @@
   "base_skill": "Meditate",
   "morph_of": "meditate",
   "morph_sibling": "introspection",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Resource recovery morph — restores 1900 Magicka and Stamina per second (vs Introspection's 1500); preferred over Introspection when maximum resource regeneration during the channel matters more than escalating healing.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",

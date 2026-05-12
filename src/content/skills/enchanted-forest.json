@@ -4,7 +4,7 @@
   "base_skill": "Secluded Grove",
   "morph_of": "secluded-grove",
   "morph_sibling": "healing-thicket",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Healing Thicket's alternative effect.",
+  "morph_rationale": "Ultimate generation morph — generates 20 Ultimate when the initial heal lands on a target below 50% Health; preferred over Healing Thicket when ult generation on critical targets matters more than the extended out-of-area HoT.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

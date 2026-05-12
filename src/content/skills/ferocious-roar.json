@@ -11,5 +11,6 @@
   "icon": "/assets/skills/ferocious-roar.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/ferocious-roar",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Ferocious_Roar"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ferocious_Roar",
+  "morph_rationale": "Offensive morph — speeds up your Heavy Attacks by 33% for 10 seconds and grants Major Savagery and Prophecy while slotted, boosting Weapon and Spell Critical; preferred over Deafening Roar when maximizing personal Heavy Attack pressure matters."
 }

@@ -4,7 +4,7 @@
   "base_skill": "Expert Hunter",
   "morph_of": "expert-hunter",
   "morph_sibling": "evil-hunter",
-  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
+  "morph_rationale": "Crit-trigger morph — grants Minor Berserk for 5 seconds after dealing Critical Damage from an enemy's flank; preferred over Evil Hunter when burst windows from ambush position matter.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
   "type": "Active",

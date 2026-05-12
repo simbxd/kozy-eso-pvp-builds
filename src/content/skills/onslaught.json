@@ -4,7 +4,7 @@
   "base_skill": "Berserker Strike",
   "morph_of": "berserker-strike",
   "morph_sibling": "berserker-rage",
-  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
+  "morph_rationale": "Offensive Ultimate morph — converts enemy Resistance into Spell and Physical Penetration and grants 100% Critical Chance in PvP; preferred over Berserker Rage when maximum burst on the initial engage matters.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

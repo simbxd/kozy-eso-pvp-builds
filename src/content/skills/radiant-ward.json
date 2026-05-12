@@ -4,7 +4,7 @@
   "base_skill": "Sun Shield",
   "morph_of": "sun-shield",
   "morph_sibling": "blazing-shield",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Blazing Shield.",
+  "morph_rationale": "Scale morph — deals upfront damage before forming the shield and scales 20% per enemy hit (up to 120% bonus strength); preferred over Blazing Shield when absorbing as much damage as possible matters more than the expiry explosion.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Grand Healing",
   "morph_of": "grand-healing",
   "morph_sibling": "healing-springs",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Healing Springs's alternative effect.",
+  "morph_rationale": "Pure HoT morph — heals for more total Health over a longer 15-second window; preferred over Healing Springs when maximizing raw group healing throughput matters more than Magicka recovery.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

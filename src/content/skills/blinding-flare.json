@@ -11,5 +11,6 @@
   "icon": "/assets/skills/blinding-flare.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/blinding-flare",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Blinding_Flare"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blinding_Flare",
+  "morph_rationale": "CC reveal morph — stuns exposed enemies for 4 seconds immediately after revealing them; preferred over Lingering Flare when punishing stealth classes with an unblockable stun matters more than extended reveal duration."
 }

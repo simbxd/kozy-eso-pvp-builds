@@ -4,7 +4,7 @@
   "base_skill": "Expert Hunter",
   "morph_of": "expert-hunter",
   "morph_sibling": "camouflaged-hunter",
-  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
+  "morph_rationale": "Stamina Guild morph — increases the damage of Stamina Fighters Guild abilities by 25% while slotted; preferred over Camouflaged Hunter when those abilities are core to the rotation.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
   "type": "Active",

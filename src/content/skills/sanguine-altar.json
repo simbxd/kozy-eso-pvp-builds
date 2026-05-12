@@ -4,7 +4,7 @@
   "base_skill": "Blood Altar",
   "morph_of": "blood-altar",
   "morph_sibling": "overflowing-altar",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Overflowing Altar's alternative effect.",
+  "morph_rationale": "Moderate-synergy morph — the Blood Funnel synergy heals allies for 40% of their Max Health; preferred over Overflowing Altar when a less powerful synergy is sufficient or multiple activations are expected.",
   "class": "Guild",
   "skill_line": "Undaunted",
   "type": "Active",

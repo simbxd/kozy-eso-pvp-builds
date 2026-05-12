@@ -4,7 +4,7 @@
   "base_skill": "Assassin's Blade",
   "morph_of": "assassins-blade",
   "morph_sibling": "impale",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Execute heal morph — deals up to 400% more damage below 50% Health and heals you for 2399 if the target dies within 2 seconds; preferred over Impale when an earlier execute threshold and self-healing on kills matter.",
   "class": "Nightblade",
   "skill_line": "Assassination",
   "type": "Active",

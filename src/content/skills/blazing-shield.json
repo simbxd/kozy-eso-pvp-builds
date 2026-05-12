@@ -4,7 +4,7 @@
   "base_skill": "Sun Shield",
   "morph_of": "sun-shield",
   "morph_sibling": "radiant-ward",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Radiant Ward.",
+  "morph_rationale": "Burst morph — the shield explodes when it expires, dealing 33% of all absorbed damage to nearby enemies; preferred over Radiant Ward when the reactive AoE burst on expiry matters more than maximum shield size.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

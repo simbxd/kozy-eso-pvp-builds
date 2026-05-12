@@ -4,7 +4,7 @@
   "base_skill": "Vitalizing Glyphic",
   "morph_of": "vitalizing-glyphic",
   "morph_sibling": "glyphic-of-the-tides",
-  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
+  "morph_rationale": "Glyphic morph — summons a glyphic that grows stronger as allies attack it, progressively healing nearby allies and boosting Weapon and Spell Damage; preferred over Glyphic of the Tides in combat-focused compositions.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

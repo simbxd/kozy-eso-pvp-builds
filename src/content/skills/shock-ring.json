@@ -4,7 +4,7 @@
   "base_skill": "Impulse",
   "morph_of": "impulse",
   "morph_sibling": "elemental-ring",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Scaling AoE morph — damage increases by 5% per enemy hit, up to 6 times; preferred over Elemental Ring when hitting multiple grouped enemies is the priority.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

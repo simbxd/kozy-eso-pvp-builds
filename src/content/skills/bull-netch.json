@@ -4,7 +4,7 @@
   "base_skill": "Betty Netch",
   "morph_of": "betty-netch",
   "morph_sibling": "blue-betty",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Stamina sustain morph — restores Stamina over 25 seconds; functionally identical to Blue Betty but favored on Stamina Warden builds for the Stamina return.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

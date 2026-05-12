@@ -11,5 +11,6 @@
   "icon": "/assets/skills/drain-vigor.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/drain-vigor",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Drain_Vigor"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Drain_Vigor",
+  "morph_rationale": "Stamina sustain morph — restores 10% of missing Stamina per second alongside the heal over the 3-second channel; preferred over Exhilarating Drain when dual-resource recovery during the drain matters more than Ultimate generation."
 }

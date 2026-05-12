@@ -4,7 +4,7 @@
   "base_skill": "Rune of Eldritch Horror",
   "morph_of": "rune-of-eldritch-horror",
   "morph_sibling": "rune-of-uncanny-adoration",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "Hard CC morph — stuns for 4 seconds and applies Minor Vulnerability and Minor Brittle, increasing damage taken and Critical Damage taken by 5% and 10%; preferred over Rune of Uncanny Adoration when hard CC plus critical damage amplification matter more than the charm.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Piercing Javelin",
   "morph_of": "piercing-javelin",
   "morph_sibling": "aurora-javelin",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Crowd control morph — stuns the target for 4 seconds and ignores Resistances; preferred over Aurora Javelin when holding enemies in place matters more than repositioning them.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

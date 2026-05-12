@@ -4,7 +4,7 @@
   "base_skill": "Power Bash",
   "morph_of": "power-bash",
   "morph_sibling": "reverberating-bash",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Interrupt morph — deals higher damage and costs 50% less after blocking an attack via Resentment stacking; preferred over Reverberating Bash when blocking into a counterattack matters more than the stun.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

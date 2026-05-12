@@ -11,5 +11,6 @@
   "icon": "/assets/skills/reviving-barrier.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/reviving-barrier",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Reviving_Barrier"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Reviving_Barrier",
+  "morph_rationale": "Group sustain morph — adds a 5370 Health over 15 seconds heal over time to all warded allies; preferred over Replenishing Barrier when keeping the group healthy through attrition matters more than Magicka return."
 }

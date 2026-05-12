@@ -4,7 +4,7 @@
   "base_skill": "Weakness to Elements",
   "morph_of": "weakness-to-elements",
   "morph_sibling": "elemental-drain",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Status chain morph — applies Burning, Chilled, and Concussion every 7.5 seconds; preferred over Elemental Drain when stacking all three elemental status effects for follow-up abilities matters more than the Magicka leech.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

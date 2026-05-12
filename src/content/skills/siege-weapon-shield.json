@@ -11,5 +11,6 @@
   "icon": "/assets/skills/siege-weapon-shield.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/siege-weapon-shield",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Siege_Weapon_Shield"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Siege_Weapon_Shield",
+  "morph_rationale": "Siege protection morph — reduces damage to allied siege weapons by 75% in addition to the standard player protection; preferred over Propelling Shield when defending siege equipment in keep defense matters."
 }

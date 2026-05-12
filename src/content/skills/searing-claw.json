@@ -4,7 +4,7 @@
   "base_skill": "Searing Strike",
   "morph_of": "searing-strike",
   "morph_sibling": "burning-embers",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Damage escalation morph — deals 10% more damage every 2 seconds over the DoT duration; preferred over Burning Embers when maximizing damage output matters more than self-healing.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

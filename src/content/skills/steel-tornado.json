@@ -4,7 +4,7 @@
   "base_skill": "Whirlwind",
   "morph_of": "whirlwind",
   "morph_sibling": "whirling-blades",
-  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
+  "morph_rationale": "AoE morph — hits all nearby enemies with up to 33% bonus damage on targets below 50% Health; preferred over Whirling Blades when hitting multiple targets consistently matters more than execute potential.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Destructive Touch",
   "morph_of": "destructive-touch",
   "morph_sibling": "destructive-reach",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Fire morph — deals Flame Damage and guarantees the Burning status effect on hit; preferred on Flame staff builds when reliable Burning application matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

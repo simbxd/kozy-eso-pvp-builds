@@ -4,6 +4,7 @@
   "base_skill": "Evasion",
   "morph_of": "evasion",
   "morph_sibling": "shuffle",
+  "morph_rationale": "Reactive mobility morph — grants Major Expedition on being hit by a direct AoE attack; preferred over Shuffle when the reactive movement burst on incoming AoE matters more than the snare cleanse.",
   "class": "Armor",
   "skill_line": "Medium Armor",
   "type": "Active",

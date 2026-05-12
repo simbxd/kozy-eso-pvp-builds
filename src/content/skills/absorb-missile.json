@@ -4,7 +4,7 @@
   "base_skill": "Defensive Posture",
   "morph_of": "defensive-posture",
   "morph_sibling": "defensive-stance",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Defensive Stance.",
+  "morph_rationale": "Projectile heal morph — heals you for 2560 Health the next time a projectile hits the shield; preferred over Defensive Stance when self-sustain on defense matters more than reflecting projectiles back.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

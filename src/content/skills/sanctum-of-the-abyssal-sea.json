@@ -4,7 +4,7 @@
   "base_skill": "Gibbering Shield",
   "morph_of": "gibbering-shield",
   "morph_sibling": "gibbering-shelter",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Gibbering Shelter.",
+  "morph_rationale": "Retaliation morph — provides a larger max shield (up to 37697) and releases all absorbed damage as Magic Damage to nearby enemies when it collapses; preferred over Gibbering Shelter when solo damage retaliation matters more than group shield sharing.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

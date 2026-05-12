@@ -4,7 +4,7 @@
   "base_skill": "Runic Defense",
   "morph_of": "runic-defense",
   "morph_sibling": "runeguard-of-still-waters",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Runeguard of Still Waters's Minor Protection.",
+  "morph_rationale": "CC immunity morph — when taken below 50% Health, grants CC Immunity and bonus Armor for 7 seconds; preferred over Runeguard of Still Waters when escaping crowd control on low health matters more than the larger emergency heal.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Crystal Shard",
   "morph_of": "crystal-shard",
   "morph_sibling": "crystal-weapon",
-  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
+  "morph_rationale": "Burst proc morph — has a 33% chance to become instant cast at half cost with higher damage after any Magicka ability; preferred over Crystal Weapon for high-spike burst windows.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

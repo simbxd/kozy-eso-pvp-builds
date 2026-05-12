@@ -4,7 +4,7 @@
   "base_skill": "Fungal Growth",
   "morph_of": "fungal-growth",
   "morph_sibling": "soothing-spores",
-  "morph_rationale": "Support morph — grants Minor Endurance, increasing your effectiveness.",
+  "morph_rationale": "Support morph — grants Minor Intellect and Minor Endurance to healed allies, boosting Magicka and Stamina Recovery; preferred over Soothing Spores when resource recovery buffs matter more than raw healing output.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

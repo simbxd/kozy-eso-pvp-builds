@@ -4,7 +4,7 @@
   "base_skill": "Gibbering Shield",
   "morph_of": "gibbering-shield",
   "morph_sibling": "sanctum-of-the-abyssal-sea",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Sanctum of the Abyssal Sea.",
+  "morph_rationale": "Group cascade morph — whenever the main shield absorbs damage it cascades a secondary shield to up to 11 nearby allies; preferred over Sanctum of the Abyssal Sea in group play where spreading protection matters more than damage retaliation.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

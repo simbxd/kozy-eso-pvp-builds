@@ -11,5 +11,6 @@
   "icon": "/assets/skills/elusive-mist.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/elusive-mist",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Elusive_Mist"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Elusive_Mist",
+  "morph_rationale": "Mobility mist morph — grants Major Expedition and Major Evasion on reappearing, boosting speed and reducing AoE damage by 20%; preferred over Blood Mist when escaping and evading after the dash matters more than sustain."
 }

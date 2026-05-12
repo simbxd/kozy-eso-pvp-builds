@@ -4,7 +4,7 @@
   "base_skill": "Daedric Curse",
   "morph_of": "daedric-curse",
   "morph_sibling": "haunting-curse",
-  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
+  "morph_rationale": "Pet synergy morph — Daedric Summoning pets prioritize the cursed target and deal 50% more damage to them; preferred over Haunting Curse on pet-focused Sorcerer builds.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

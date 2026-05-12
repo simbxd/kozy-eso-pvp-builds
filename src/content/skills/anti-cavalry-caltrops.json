@@ -11,5 +11,6 @@
   "icon": "/assets/skills/anti-cavalry-caltrops.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/anti-cavalry-caltrops",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Anti-Cavalry_Caltrops"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Anti-Cavalry_Caltrops",
+  "morph_rationale": "Anti-mount morph — drains Mount Stamina from enemies in the area, dismounting riders; preferred over Razor Caltrops in siege scenarios where preventing mounted movement matters."
 }

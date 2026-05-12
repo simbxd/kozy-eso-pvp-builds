@@ -4,7 +4,7 @@
   "base_skill": "Time Stop",
   "morph_of": "time-stop",
   "morph_sibling": "time-freeze",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "Anti-heal CC morph — stuns enemies at channel end and applies 5000 Heal Absorption, negating the next burst of incoming heals; preferred over Time Freeze when anti-heal in the CC window matters.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",

@@ -11,5 +11,6 @@
   "icon": "/assets/skills/claws-of-life.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/claws-of-life",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Claws_of_Life"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Claws_of_Life",
+  "morph_rationale": "Self-sustain morph — heals you for 66% of the Disease damage over time caused, generating significant passive healing during the DoT; preferred over Claws of Anguish when recovering Health through sustained combat matters more than anti-heal."
 }

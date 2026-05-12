@@ -11,5 +11,6 @@
   "icon": "/assets/skills/stupefy.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/stupefy",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Stupefy"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Stupefy",
+  "morph_rationale": "Snare follow-up morph — applies a 53% Movement Speed reduction after the 5-second stun expires, extending control beyond the initial stun window; preferred over Hypnosis when prolonged chase-prevention on a single target matters."
 }

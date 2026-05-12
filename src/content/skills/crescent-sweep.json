@@ -4,7 +4,7 @@
   "base_skill": "Radial Sweep",
   "morph_of": "radial-sweep",
   "morph_sibling": "everlasting-sweep",
-  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
+  "morph_rationale": "Directional burst morph — enemies directly in your path take 60% more damage; preferred over Everlasting Sweep when a front-focused high-damage pass matters more than an extended DoT duration.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

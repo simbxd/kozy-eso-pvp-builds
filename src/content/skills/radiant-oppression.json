@@ -4,7 +4,7 @@
   "base_skill": "Radiant Destruction",
   "morph_of": "radiant-destruction",
   "morph_sibling": "radiant-glory",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Execute morph — triggers the execute bonus at 40% HP (vs 33%), accelerating the kill window; preferred over Radiant Glory when maximizing execute damage matters more than self-healing.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
   "type": "Active",

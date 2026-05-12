@@ -4,7 +4,7 @@
   "base_skill": "Feral Guardian",
   "morph_of": "feral-guardian",
   "morph_sibling": "wild-guardian",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "Summon morph — grizzly deals Magic damage with an execute ultimate that hits 150% harder below 25% HP; preferred over Wild Guardian when the execute burst matters more than sustained Bleed.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

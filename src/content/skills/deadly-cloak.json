@@ -4,7 +4,7 @@
   "base_skill": "Blade Cloak",
   "morph_of": "blade-cloak",
   "morph_sibling": "quick-cloak",
-  "morph_rationale": "Support morph — grants Major Evasion, increasing your effectiveness.",
+  "morph_rationale": "Defensive morph — grants Major Evasion while active, greatly increasing the chance to dodge incoming attacks; chosen over Quick Cloak's mobility focus.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

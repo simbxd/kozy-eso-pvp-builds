@@ -4,7 +4,7 @@
   "base_skill": "Berserker Strike",
   "morph_of": "berserker-strike",
   "morph_sibling": "onslaught",
-  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
+  "morph_rationale": "Defensive Ultimate morph — grants immunity to disabling and snare effects and converts enemy Resistance into your own defenses; preferred over Onslaught when survivability during the engage matters more than maximum burst.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

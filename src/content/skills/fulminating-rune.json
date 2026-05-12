@@ -4,7 +4,7 @@
   "base_skill": "The Imperfect Ring",
   "morph_of": "the-imperfect-ring",
   "morph_sibling": "rune-of-displacement",
-  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
+  "morph_rationale": "AoE DoT morph — places a rune on the target that detonates after 6 seconds, dealing Frost AoE damage to nearby enemies; preferred over Rune of Displacement when burst AoE damage outweighs enemy grouping.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

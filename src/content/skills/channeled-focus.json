@@ -4,7 +4,7 @@
   "base_skill": "Rune Focus",
   "morph_of": "rune-focus",
   "morph_sibling": "restoring-focus",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Magicka sustain morph — recovers 242 Magicka per second over the duration; preferred over Restoring Focus on Magicka Templar builds where Magicka sustain matters more than Stamina.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

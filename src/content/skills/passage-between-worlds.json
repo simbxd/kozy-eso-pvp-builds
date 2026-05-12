@@ -4,7 +4,7 @@
   "base_skill": "Apocryphal Gate",
   "morph_of": "apocryphal-gate",
   "morph_sibling": "fleet-footed-gate",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Utility morph — creates a twin portal for teleportation that allies can use, generating Crux on each teleport; preferred over Fleet-Footed Gate when portal sharing and Crux generation matter more than the movement speed buff.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

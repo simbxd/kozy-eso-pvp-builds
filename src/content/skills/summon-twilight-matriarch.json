@@ -4,7 +4,7 @@
   "base_skill": "Summon Winged Twilight",
   "morph_of": "summon-winged-twilight",
   "morph_sibling": "summon-twilight-tormentor",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Support summon morph — the Matriarch's active ability heals two allies; preferred over Summon Twilight Tormentor in group settings where ally sustain matters more than burst damage.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

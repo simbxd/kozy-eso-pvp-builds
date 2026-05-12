@@ -4,7 +4,7 @@
   "base_skill": "Malevolent Offering",
   "morph_of": "malevolent-offering",
   "morph_sibling": "healthy-offering",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Self-preservation morph — heals an ally while draining less Health from yourself than Healthy Offering; preferred when minimizing self-damage matters more than the post-cast Minor Mending buff.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

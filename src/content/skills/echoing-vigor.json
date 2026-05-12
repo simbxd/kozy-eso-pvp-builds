@@ -11,5 +11,6 @@
   "icon": "/assets/skills/echoing-vigor.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/echoing-vigor",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Echoing_Vigor"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Echoing_Vigor",
+  "morph_rationale": "Group heal morph — extends the heal over time to you and all allies in the area; preferred over Resolving Vigor when group sustain matters more than personal Stamina restoration."
 }

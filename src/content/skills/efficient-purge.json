@@ -11,5 +11,6 @@
   "icon": "/assets/skills/efficient-purge.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/efficient-purge",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Efficient_Purge"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Efficient_Purge",
+  "morph_rationale": "Pure cleanse morph — removes up to 3 negative effects at lower cost without conditional healing; preferred over Cleanse when spamming cleanses cost-efficiently matters more than the heal."
 }

@@ -4,7 +4,7 @@
   "base_skill": "Meteor",
   "morph_of": "meteor",
   "morph_sibling": "shooting-star",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "CC Ultimate morph — stuns and slows enemies in the area by 50% for 5 seconds after impact; preferred over Shooting Star when maximum area disruption matters more than Ultimate generation.",
   "class": "Guild",
   "skill_line": "Mages Guild",
   "type": "Active",

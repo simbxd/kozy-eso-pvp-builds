@@ -4,7 +4,7 @@
   "base_skill": "Puncturing Strikes",
   "morph_of": "puncturing-strikes",
   "morph_sibling": "puncturing-sweep",
-  "morph_rationale": "Support morph — grants Major Sorcery, increasing your Weapon and Spell Damage.",
+  "morph_rationale": "Stamina morph — converts the cost to Stamina and deals Physical damage, preferred on Stamina Templar over the healing-focused Puncturing Sweep.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

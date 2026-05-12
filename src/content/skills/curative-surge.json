@@ -4,7 +4,7 @@
   "base_skill": "Remedy Cascade",
   "morph_of": "remedy-cascade",
   "morph_sibling": "cascading-fortune",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Ramp morph — healing gradually increases up to 192% stronger at the end of the channel; preferred over Cascading Fortune when maximizing total output during a full uninterrupted channel matters.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

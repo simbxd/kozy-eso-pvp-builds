@@ -4,7 +4,7 @@
   "base_skill": "Daedric Curse",
   "morph_of": "daedric-curse",
   "morph_sibling": "daedric-prey",
-  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
+  "morph_rationale": "Double detonation morph — the curse explodes twice (at 3.5 and 12 seconds) for greater total damage; preferred over Daedric Prey when burst without pet support matters.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

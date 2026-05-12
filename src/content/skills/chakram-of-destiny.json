@@ -4,7 +4,7 @@
   "base_skill": "Chakram Shields",
   "morph_of": "chakram-shields",
   "morph_sibling": "tidal-chakram",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast.",
+  "morph_rationale": "Stack morph — recasting on an already-shielded target grants a 30% stronger shield and generates Crux; preferred over Tidal Chakram when layering shields and generating Crux matter more than converting shields to healing.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

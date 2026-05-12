@@ -4,7 +4,7 @@
   "base_skill": "Bone Shield",
   "morph_of": "bone-shield",
   "morph_sibling": "spiked-bone-shield",
-  "morph_rationale": "Support morph — grants Major Vitality, increasing your effectiveness.",
+  "morph_rationale": "Sustain morph — grants Major Vitality, increasing healing received; preferred over Spiked Bone Shield when self-sustain matters more than the damage-reflect shield.",
   "class": "Guild",
   "skill_line": "Undaunted",
   "type": "Active",

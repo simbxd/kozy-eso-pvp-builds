@@ -11,5 +11,6 @@
   "icon": "/assets/skills/brutal-pounce.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/brutal-pounce",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Brutal_Pounce"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Brutal_Pounce",
+  "morph_rationale": "AoE pounce morph — initial hit applies Hemorrhaging to all nearby enemies and stacks up to 600 Weapon and Spell Damage based on enemies hit; preferred over Feral Pounce when engaging multiple targets simultaneously matters."
 }

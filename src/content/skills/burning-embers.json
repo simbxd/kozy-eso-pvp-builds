@@ -4,7 +4,7 @@
   "base_skill": "Searing Strike",
   "morph_of": "searing-strike",
   "morph_sibling": "searing-claw",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Self-sustain morph — heals you for a significant amount from the initial hit and on each subsequent tick; preferred over Searing Claw when maintaining Health in sustained combat matters more than escalating damage.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

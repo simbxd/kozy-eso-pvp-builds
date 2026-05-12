@@ -11,5 +11,6 @@
   "icon": "/assets/skills/blood-for-blood.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/blood-for-blood",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_for_Blood"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_for_Blood",
+  "morph_rationale": "Extreme execute morph — deals up to 75% more damage based on missing Health (vs 33%), massively amplifying low-Health burst; preferred over Arterial Burst when raw execute damage matters more than the guaranteed crit."
 }

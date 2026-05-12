@@ -4,7 +4,7 @@
   "base_skill": "Swarm",
   "morph_of": "swarm",
   "morph_sibling": "growing-swarm",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Double damage morph — every second cast deals 60% more damage; preferred over Growing Swarm when burst on a single target and combo casting matter more than AoE spread.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Grim Focus",
   "morph_of": "grim-focus",
   "morph_sibling": "merciless-resolve",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Faster proc morph — fires the spectral arrow at 4 stacks instead of 5, triggering more frequently; preferred over Merciless Resolve when proc frequency matters more than the larger self-heal.",
   "class": "Nightblade",
   "skill_line": "Assassination",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Tome-Bearer's Inspiration",
   "morph_of": "tome-bearers-inspiration",
   "morph_sibling": "inspired-scholarship",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Resource sustain morph — pulses every 5 seconds for higher per-hit damage and restores 600 Magicka and Stamina per pulse; preferred over Inspired Scholarship when resource sustain matters more than Crux generation speed.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

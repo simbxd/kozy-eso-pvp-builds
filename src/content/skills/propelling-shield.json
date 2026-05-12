@@ -11,5 +11,6 @@
   "icon": "/assets/skills/propelling-shield.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/propelling-shield",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Propelling_Shield"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Propelling_Shield",
+  "morph_rationale": "Range extension morph — increases the range of abilities over 28 meters by 7 additional meters; preferred over Siege Weapon Shield when extending reach for ranged players matters more than protecting siege equipment."
 }

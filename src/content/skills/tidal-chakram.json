@@ -4,7 +4,7 @@
   "base_skill": "Chakram Shields",
   "morph_of": "chakram-shields",
   "morph_sibling": "chakram-of-destiny",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast.",
+  "morph_rationale": "Shield-to-heal morph — consumes Crux to heal targets for 33% of the remaining shield strength per second; preferred over Chakram of Destiny when converting active shields into sustained healing matters.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

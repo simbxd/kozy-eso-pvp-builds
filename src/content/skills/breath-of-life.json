@@ -4,7 +4,7 @@
   "base_skill": "Rushed Ceremony",
   "morph_of": "rushed-ceremony",
   "morph_sibling": "honor-the-dead",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Dual heal morph — heals a second injured nearby target in addition to the primary; preferred over Honor the Dead when spreading instant heals to two critical targets simultaneously matters more than Magicka sustain.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

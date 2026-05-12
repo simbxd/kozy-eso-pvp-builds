@@ -4,7 +4,7 @@
   "base_skill": "Rushed Ceremony",
   "morph_of": "rushed-ceremony",
   "morph_sibling": "breath-of-life",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Magicka sustain morph — restores 18% of the ability cost as Magicka every 2 seconds when healing a target below 75% Health; preferred over Breath of Life when self-sustaining Magicka for continued healing matters more than dual coverage.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

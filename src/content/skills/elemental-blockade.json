@@ -4,7 +4,7 @@
   "base_skill": "Wall of Elements",
   "morph_of": "wall-of-elements",
   "morph_sibling": "blockade-of-fire",
-  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
+  "morph_rationale": "Base morph — applies different bonus effects depending on your equipped staff element; preferred when flexibility across multiple elemental builds matters more than a single specialized morph.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

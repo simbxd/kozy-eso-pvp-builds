@@ -4,7 +4,7 @@
   "base_skill": "Runemend",
   "morph_of": "runemend",
   "morph_sibling": "audacious-runemend",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Sustained heal morph — adds a 6-second HoT to the three-pulse heal and scales its cost down with Crux stacks; preferred over Audacious Runemend when sustained healing outweighs conditional Minor Heroism.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Time Stop",
   "morph_of": "time-stop",
   "morph_sibling": "borrowed-time",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "CC morph — channels for 4 seconds then stuns enemies; preferred over Borrowed Time when a clean stun without the heal absorption mechanic is sufficient.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",

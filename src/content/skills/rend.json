@@ -4,7 +4,7 @@
   "base_skill": "Lacerate",
   "morph_of": "lacerate",
   "morph_sibling": "thrive-in-chaos",
-  "morph_rationale": "Self-sustain morph — heals you for a portion of the damage dealt.",
+  "morph_rationale": "Sustained Bleed morph — deals higher total damage over 16 seconds with consistent self-healing; preferred over Thrive in Chaos when prolonged sustained pressure on a single target matters more than stacking damage bonuses.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

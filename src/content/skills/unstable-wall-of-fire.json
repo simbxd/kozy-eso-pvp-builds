@@ -4,7 +4,7 @@
   "base_skill": "Wall of Elements",
   "morph_of": "wall-of-elements",
   "morph_sibling": "elemental-blockade",
-  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
+  "morph_rationale": "Fire unstable morph — hits Burning enemies for 10% more and explodes for 1199 Flame AoE on expiry; preferred on Flame staff builds when Burning synergy and end-of-duration burst matter.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Dark Exchange",
   "morph_of": "dark-exchange",
   "morph_sibling": "dark-deal",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Dark Deal's alternative effect.",
+  "morph_rationale": "Magicka sustain morph — restores Magicka instantly and over time alongside Minor Berserk; preferred over Dark Deal on Magicka Sorcerer builds where Magicka sustain matters more than Stamina.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

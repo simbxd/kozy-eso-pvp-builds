@@ -4,7 +4,7 @@
   "base_skill": "Lightning Form",
   "morph_of": "lightning-form",
   "morph_sibling": "boundless-storm",
-  "morph_rationale": "Support morph — grants Minor Expedition, increasing your Movement Speed.",
+  "morph_rationale": "Stamina morph — converts the cost to Stamina for Stamina Sorcerer; trades Boundless Storm's Major Expedition for a Stamina-friendly cost.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
   "type": "Active",

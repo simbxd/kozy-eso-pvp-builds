@@ -11,5 +11,6 @@
   "icon": "/assets/skills/hircines-rage.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/hircines-rage",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Hircine's_Rage"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hircine's_Rage",
+  "morph_rationale": "Offensive conditional morph — grants Major Berserk at full Health, increasing damage done by 10% at the cost of taking 5% more damage; preferred over Hircine's Fortitude when burst damage windows matter more than sustained healing."
 }

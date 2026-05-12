@@ -4,7 +4,7 @@
   "base_skill": "Radial Sweep",
   "morph_of": "radial-sweep",
   "morph_sibling": "crescent-sweep",
-  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
+  "morph_rationale": "Sustained DoT morph — extends the bleed by 2 seconds per enemy hit for prolonged AoE coverage; preferred over Crescent Sweep when fighting multiple enemies and maximizing DoT duration matter more than the directional bonus.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

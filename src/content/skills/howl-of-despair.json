@@ -11,5 +11,6 @@
   "icon": "/assets/skills/howl-of-despair.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/howl-of-despair",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Howl_of_Despair"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Howl_of_Despair",
+  "morph_rationale": "Synergy morph — provides the Feeding Frenzy synergy, granting allies Empower and Minor Force (+10% Critical Damage) for 20 seconds; preferred over Howl of Agony when enabling ally Heavy Attack burst and group critical damage matters."
 }

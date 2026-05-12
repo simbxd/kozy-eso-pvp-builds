@@ -4,7 +4,7 @@
   "base_skill": "Volley",
   "morph_of": "volley",
   "morph_sibling": "arrow-barrage",
-  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
+  "morph_rationale": "Sustained AoE DoT morph — extends the rain to 13 seconds at a lower per-tick rate; preferred over Arrow Barrage when prolonged area denial matters more than burst.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

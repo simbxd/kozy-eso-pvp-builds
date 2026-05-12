@@ -4,7 +4,7 @@
   "base_skill": "Dragon Blood",
   "morph_of": "dragon-blood",
   "morph_sibling": "blood-of-the-elder-dragon",
-  "morph_rationale": "Support morph — grants Minor Vitality, increasing your effectiveness.",
+  "morph_rationale": "Recovery buff morph — heals and grants Major Endurance, Fortitude, and Minor Vitality for 20 seconds, boosting all recovery; preferred over Blood of the Elder Dragon when sustained recovery buffs matter more than burst healing.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
   "type": "Active",

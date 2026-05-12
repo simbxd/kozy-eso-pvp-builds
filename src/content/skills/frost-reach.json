@@ -4,7 +4,7 @@
   "base_skill": "Destructive Touch",
   "morph_of": "destructive-touch",
   "morph_sibling": "destructive-reach",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Frost morph — deals higher initial Frost Damage (2091 vs 1161) and guarantees the Chilled status effect; preferred on Frost staff builds when burst and Chilled application matter.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

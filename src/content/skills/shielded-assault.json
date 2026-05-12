@@ -4,7 +4,7 @@
   "base_skill": "Shield Charge",
   "morph_of": "shield-charge",
   "morph_sibling": "invasion",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Defensive utility morph — stuns the target and grants a Health-scaled damage shield on impact; preferred over Invasion when immediate post-charge survivability matters more than pure gap-close.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

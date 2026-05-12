@@ -4,7 +4,7 @@
   "base_skill": "Focused Charge",
   "morph_of": "focused-charge",
   "morph_sibling": "toppling-charge",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "AoE CC morph — strikes all enemies in the area and grants Major Protection for 15 seconds; preferred over Toppling Charge in multi-enemy situations or when longer damage reduction matters.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

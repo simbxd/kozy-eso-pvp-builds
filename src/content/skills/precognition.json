@@ -4,7 +4,7 @@
   "base_skill": "Undo",
   "morph_of": "undo",
   "morph_sibling": "temporal-guard",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Defensive Ultimate morph — resets position, Health, Magicka, and Stamina to 4 seconds ago and can be activated through crowd control; preferred over Temporal Guard when surviving a coordinated burst and escaping CC simultaneously matters.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",

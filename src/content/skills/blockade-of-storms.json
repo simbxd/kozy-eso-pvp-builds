@@ -4,7 +4,7 @@
   "base_skill": "Wall of Elements",
   "morph_of": "wall-of-elements",
   "morph_sibling": "elemental-blockade",
-  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
+  "morph_rationale": "Storm morph — deals Shock Damage and sets Concussed enemies Off Balance for Heavy Attack setups; preferred on Lightning staff builds when Concussion exploitation matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

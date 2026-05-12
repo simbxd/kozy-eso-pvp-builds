@@ -11,5 +11,6 @@
   "icon": "/assets/skills/mystic-guard.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/mystic-guard",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Mystic_Guard"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mystic_Guard",
+  "morph_rationale": "Defensive guard morph — grants Minor Vitality to you and the bonded ally, increasing healing received and shield strength by 6%; preferred over Stalwart Guard when maximizing the survivability of a protected target matters."
 }

@@ -4,7 +4,7 @@
   "base_skill": "Restoring Aura",
   "morph_of": "restoring-aura",
   "morph_sibling": "repentance",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Support morph — applies Minor Endurance, Fortitude, and Intellect to you and nearby group members for 1 minute, boosting all recovery; preferred over Repentance when long-duration passive recovery buffs matter more than burst group healing.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

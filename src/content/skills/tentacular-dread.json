@@ -4,7 +4,7 @@
   "base_skill": "Abyssal Impact",
   "morph_of": "abyssal-impact",
   "morph_sibling": "cephaliarchs-flail",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Crux burst morph — consumes all Crux to deal 33% more damage with escalating Abyssal Ink bonus per Crux; preferred over Cephaliarch's Flail when converting Crux into maximum burst damage matters more than self-healing.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

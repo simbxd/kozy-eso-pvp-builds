@@ -4,7 +4,7 @@
   "base_skill": "Frost Cloak",
   "morph_of": "frost-cloak",
   "morph_sibling": "expansive-frost-cloak",
-  "morph_rationale": "Support morph — grants Minor Protection, increasing your damage reduction.",
+  "morph_rationale": "Enhanced resistance morph — extends the buff to 30 seconds and adds Minor Protection for you personally; preferred over Expansive Frost Cloak when longer uptime and personal damage reduction matter more.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

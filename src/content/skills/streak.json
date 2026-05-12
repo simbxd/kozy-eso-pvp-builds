@@ -4,7 +4,7 @@
   "base_skill": "Bolt Escape",
   "morph_of": "bolt-escape",
   "morph_sibling": "ball-of-lightning",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Mobility morph — teleports you forward and stuns enemies in your path; preferred over Ball of Lightning when escaping or chasing rather than deflecting projectiles.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
   "type": "Active",

@@ -11,5 +11,6 @@
   "icon": "/assets/skills/arterial-burst.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/arterial-burst",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Arterial_Burst"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Arterial_Burst",
+  "morph_rationale": "Guaranteed crit execute morph — always Critically Strikes when cast below 50% Health, dealing up to 33% more damage based on missing Health; preferred over Blood for Blood when reliable critical burst matters more than extreme execute scaling."
 }

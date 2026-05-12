@@ -4,7 +4,7 @@
   "base_skill": "Equilibrium",
   "morph_of": "equilibrium",
   "morph_sibling": "balance",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Resource recovery morph — converts Health into Magicka and reduces the next ability cost by 33%; preferred over Balance for burst Magicka recovery at the cost of temporary heal reduction.",
   "class": "Guild",
   "skill_line": "Mages Guild",
   "type": "Active",

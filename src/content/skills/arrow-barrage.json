@@ -4,7 +4,7 @@
   "base_skill": "Volley",
   "morph_of": "volley",
   "morph_sibling": "endless-hail",
-  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
+  "morph_rationale": "Burst AoE DoT morph — rains arrows for 8 seconds with higher damage per tick; preferred over Endless Hail when front-loaded burst pressure matters more than prolonged area coverage.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

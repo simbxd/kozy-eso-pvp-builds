@@ -11,5 +11,6 @@
   "icon": "/assets/skills/claws-of-anguish.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/claws-of-anguish",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Claws_of_Anguish"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Claws_of_Anguish",
+  "morph_rationale": "Anti-heal morph — applies Major Defile for 4 seconds on hit, reducing enemy healing received and shield strength by 12%; preferred over Claws of Life when countering enemy sustain matters more than personal healing."
 }

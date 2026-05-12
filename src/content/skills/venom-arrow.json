@@ -4,7 +4,7 @@
   "base_skill": "Poison Arrow",
   "morph_of": "poison-arrow",
   "morph_sibling": "poison-injection",
-  "morph_rationale": "Support morph — grants Major Brutality, increasing your Weapon and Spell Damage.",
+  "morph_rationale": "Self-buff morph — grants Major Brutality on hit, boosting Weapon and Spell Damage; chosen over Poison Injection when the build lacks another source of Major Brutality.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

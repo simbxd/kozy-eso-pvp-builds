@@ -11,5 +11,6 @@
   "icon": "/assets/skills/soul-assault.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/soul-assault",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Soul_Assault"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Soul_Assault",
+  "morph_rationale": "Maximum damage morph — deals 20400 Magic Damage to a single target over 6 seconds (vs Shatter Soul's 14814); preferred when maximizing focused burst on one target matters more than the AoE explosion."
 }

@@ -11,5 +11,6 @@
   "icon": "/assets/skills/stalwart-guard.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/stalwart-guard",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Stalwart_Guard"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Stalwart_Guard",
+  "morph_rationale": "Offensive guard morph — grants Minor Force to you and the bonded ally, increasing Critical Damage by 10%; preferred over Mystic Guard when boosting burst damage on a protected target matters."
 }

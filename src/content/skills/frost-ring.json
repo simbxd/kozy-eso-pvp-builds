@@ -4,7 +4,7 @@
   "base_skill": "Impulse",
   "morph_of": "impulse",
   "morph_sibling": "elemental-ring",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Defensive AoE morph — deals Frost damage and grants Minor Protection to you and nearby allies; preferred over Elemental Ring when reducing incoming damage alongside AoE output matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

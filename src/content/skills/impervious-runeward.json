@@ -4,7 +4,7 @@
   "base_skill": "Runespite Ward",
   "morph_of": "runespite-ward",
   "morph_sibling": "spiteward-of-the-lucid-mind",
-  "morph_rationale": "Defensive morph — provides a damage shield on cast.",
+  "morph_rationale": "Burst shield morph — provides an enormous initial shield for 1 second before settling into a sustained secondary shield; preferred over Spiteward of the Lucid Mind when absorbing a single large incoming burst matters more than cost efficiency.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

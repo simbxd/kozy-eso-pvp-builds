@@ -4,7 +4,7 @@
   "base_skill": "Consuming Darkness",
   "morph_of": "consuming-darkness",
   "morph_sibling": "veil-of-blades",
-  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
+  "morph_rationale": "Defensive Ultimate morph — creates a shadow ring granting Major Protection to you and allies without dealing damage; preferred over Veil of Blades in survival-focused situations.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

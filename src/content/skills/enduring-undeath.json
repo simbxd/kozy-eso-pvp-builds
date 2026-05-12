@@ -4,7 +4,7 @@
   "base_skill": "Life amid Death",
   "morph_of": "life-amid-death",
   "morph_sibling": "renewing-undeath",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Renewing Undeath's alternative effect.",
+  "morph_rationale": "Extended HoT morph — consumes up to 5 additional corpses to extend the healing over time by 5 seconds each; preferred over Renewing Undeath when prolonged group healing matters more than cleansing debuffs.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

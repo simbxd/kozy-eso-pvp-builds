@@ -4,7 +4,7 @@
   "base_skill": "Uppercut",
   "morph_of": "uppercut",
   "morph_sibling": "dizzying-swing",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Empower morph — grants Major Berserk and Empower after casting, boosting damage done and the next Heavy Attack; preferred over Dizzying Swing when burst setup matters more than crowd control.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

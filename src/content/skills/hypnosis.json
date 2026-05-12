@@ -11,5 +11,6 @@
   "icon": "/assets/skills/hypnosis.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/hypnosis",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Hypnosis"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hypnosis",
+  "morph_rationale": "AoE stun morph — affects all nearby enemies facing you rather than only those in front; preferred over Stupefy when stunning multiple surrounding enemies simultaneously matters."
 }

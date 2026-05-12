@@ -4,7 +4,7 @@
   "base_skill": "Blood Altar",
   "morph_of": "blood-altar",
   "morph_sibling": "sanguine-altar",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Sanguine Altar's alternative effect.",
+  "morph_rationale": "High-synergy morph — the Blood Feast synergy heals allies for 65% of their Max Health; preferred over Sanguine Altar when maximizing the burst healing from the ally synergy is the priority.",
   "class": "Guild",
   "skill_line": "Undaunted",
   "type": "Active",

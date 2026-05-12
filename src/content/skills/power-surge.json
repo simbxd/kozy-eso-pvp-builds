@@ -4,7 +4,7 @@
   "base_skill": "Surge",
   "morph_of": "surge",
   "morph_sibling": "critical-surge",
-  "morph_rationale": "Support morph — grants Major Sorcery, increasing your Weapon and Spell Damage.",
+  "morph_rationale": "Support morph — extends the Critical heal to nearby allies instead of self-only; preferred over Critical Surge in group play where supporting teammates matters.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
   "type": "Active",

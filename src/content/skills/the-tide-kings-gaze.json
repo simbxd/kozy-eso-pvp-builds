@@ -4,7 +4,7 @@
   "base_skill": "The Unblinking Eye",
   "morph_of": "the-unblinking-eye",
   "morph_sibling": "the-languid-eye",
-  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
+  "morph_rationale": "Summon morph — deploys a scion for 8 seconds with a beam that auto-tracks the target and pursues nearby enemies; preferred over The Languid Eye when hands-free sustained damage is the priority.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

@@ -11,5 +11,6 @@
   "icon": "/assets/skills/aggressive-horn.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/aggressive-horn",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Aggressive_Horn"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Aggressive_Horn",
+  "morph_rationale": "Offensive group morph — grants Major Force to you and allies for 10 seconds, increasing Critical Damage by 20%; preferred over Sturdy Horn when boosting group burst output matters more than Crit Resistance."
 }

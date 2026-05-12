@@ -3,7 +3,7 @@
   "name": "Quick Cloak",
   "base_skill": "Blade Cloak",
   "morph_of": "blade-cloak",
-  "morph_sibling": null,
+  "morph_sibling": "deadly-cloak",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

@@ -4,7 +4,7 @@
   "base_skill": "Rune Prison",
   "morph_of": "rune-prison",
   "morph_sibling": "rune-cage",
-  "morph_rationale": "Crowd control morph — stuns the target on hit.",
+  "morph_rationale": "Reactive CC morph — places a protective rune on yourself that stuns the next enemy to attack you, unblockable; preferred over Rune Cage when punishing incoming aggression matters more than initiating CC.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

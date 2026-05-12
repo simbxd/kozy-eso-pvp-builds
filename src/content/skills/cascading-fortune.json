@@ -4,7 +4,7 @@
   "base_skill": "Remedy Cascade",
   "morph_of": "remedy-cascade",
   "morph_sibling": "curative-surge",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Triage heal morph — heals for up to 50% more based on the severity of the target's wounds; preferred over Curative Surge when prioritizing critically injured targets matters more than a sustained ramp.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

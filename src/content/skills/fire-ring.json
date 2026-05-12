@@ -4,7 +4,7 @@
   "base_skill": "Impulse",
   "morph_of": "impulse",
   "morph_sibling": "elemental-ring",
-  "morph_rationale": "Offensive morph — deals direct damage to the target.",
+  "morph_rationale": "Execute AoE morph — Ring Afterburn deals up to 300% more damage on targets below 50% Health; preferred over Elemental Ring when grouped low-health enemies are the primary target.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

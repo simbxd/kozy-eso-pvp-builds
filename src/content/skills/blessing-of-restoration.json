@@ -4,7 +4,7 @@
   "base_skill": "Blessing of Protection",
   "morph_of": "blessing-of-protection",
   "morph_sibling": "combat-prayer",
-  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Combat Prayer's Minor Resolve.",
+  "morph_rationale": "Group heal morph — heals you and allies in front of you and grants Minor Resolve, boosting Physical and Spell Resistance; preferred over Combat Prayer when sustained defense matters more than the Minor Berserk damage buff.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

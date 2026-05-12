@@ -11,5 +11,6 @@
   "icon": "/assets/skills/inevitable-detonation.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/inevitable-detonation",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Inevitable_Detonation"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Inevitable_Detonation",
+  "morph_rationale": "Target bomb morph — places the detonation on an enemy and triggers immediately if the debuff is dispelled; preferred over Proximity Detonation when punishing enemy purges and targeting specific opponents matters."
 }

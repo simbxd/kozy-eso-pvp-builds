@@ -11,5 +11,6 @@
   "icon": "/assets/skills/retreating-maneuver.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/retreating-maneuver",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Retreating_Maneuver"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Retreating_Maneuver",
+  "morph_rationale": "Defensive retreat morph — reduces damage taken from behind by 15% while the group moves at Major Expedition speed; preferred over Charging Maneuver when protecting the group during withdrawals matters more than peak speed."
 }

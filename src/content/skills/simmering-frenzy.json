@@ -11,5 +11,6 @@
   "icon": "/assets/skills/simmering-frenzy.png",
   "patch_verified": "U49",
   "esohub_url": "https://eso-hub.com/en/skills/world/vampire/simmering-frenzy",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Simmering_Frenzy"
+  "uesp_url": "https://en.uesp.net/wiki/Online:Simmering_Frenzy",
+  "morph_rationale": "Maximum damage morph — stacks up to 400 Weapon and Spell Damage (vs 300), prioritizing peak offensive output; preferred over Sated Fury when sustaining maximum damage per second during the frenzy matters more than recovering Health on deactivation."
 }

@@ -4,7 +4,7 @@
   "base_skill": "Destructive Touch",
   "morph_of": "destructive-touch",
   "morph_sibling": "destructive-reach",
-  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
+  "morph_rationale": "Shock morph — deals Shock Damage and guarantees the Concussion status effect for Off Balance setup; preferred on Lightning staff builds when Concussion exploitation matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",
