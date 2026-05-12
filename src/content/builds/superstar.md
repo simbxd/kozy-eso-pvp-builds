@@ -21,7 +21,7 @@ sets:
   - true-sworn-fury
 skills:
   bar1:
-    - molten-whip
+    - flame-lash
     - disintegrating-dragonfire
     - shattering-rocks
     - quick-cloak
