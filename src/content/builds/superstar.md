@@ -1,5 +1,5 @@
 ---
-title: SUPERSTAR — Magicka Dragonknight PvP
+title: The Soloer — Magicka Dragonknight PvP
 class: Dragonknight
 role: DPS
 resource: Magicka
