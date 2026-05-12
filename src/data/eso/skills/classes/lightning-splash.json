@@ -1,0 +1,11 @@
+{
+  "id": "30269",
+  "slug": "lightning-splash",
+  "name": "Lightning Splash",
+  "description": "Create a nexus of storm energy at the target location, dealing 308 Shock Damage to enemies in the area every 1 second for 10 seconds.\n \nYou or an ally standing within the nexus can activate the Conduit synergy, dealing 2698 Shock Damage to enemies around them.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

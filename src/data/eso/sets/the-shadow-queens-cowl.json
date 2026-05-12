@@ -1,0 +1,22 @@
+{
+  "id": "the-shadow-queens-cowl",
+  "name": "The Shadow Queen's Cowl",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "head"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "While crouched, you can see Witnesses and Guards through walls.\n\nSuccessfully pickpocketing a Witness or Guard applies Distracted to them for 10 seconds, stunning them and decreasing their Stealth detection radius by 30 meters for the duration.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Shadow_Queen's_Cowl",
+  "esohub_url": "https://eso-hub.com/en/sets/the-shadow-queens-cowl"
+}

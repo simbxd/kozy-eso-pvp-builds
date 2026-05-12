@@ -1,0 +1,40 @@
+{
+  "id": "gorethief",
+  "name": "Gorethief",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing direct damage generates a stack of Gorethief for 30 seconds, up to 10 stacks. While you have Gorethief equipped, Roll Dodge consumes 1 stack and heals you for 2021 Health, scaling off your Max Health.\n\nAt max stacks, while you have Gorethief equipped, bash an enemy to consume all stacks and deal 2144 Bleed damage, scaling off the higher of your Weapon or Spell Damage, to enemies within 8 meters of you.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Gorethief",
+  "esohub_url": "https://eso-hub.com/en/sets/gorethief"
+}

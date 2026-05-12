@@ -1,0 +1,40 @@
+{
+  "id": "adamant-lurker",
+  "name": "Adamant Lurker",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Necrom",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Health Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Health Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Gain 35-1505 Health Recovery while you are standing still.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Adamant_Lurker",
+  "esohub_url": "https://eso-hub.com/en/sets/adamant-lurker"
+}

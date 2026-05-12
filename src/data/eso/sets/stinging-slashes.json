@@ -1,0 +1,22 @@
+{
+  "id": "stinging-slashes",
+  "name": "Stinging Slashes",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Dragonstar Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Twin Slashes deals 209 more damage for each hit of the initial attack and bleed. This effect scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Stinging_Slashes",
+  "esohub_url": "https://eso-hub.com/en/sets/stinging-slashes"
+}

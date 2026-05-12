@@ -1,0 +1,40 @@
+{
+  "id": "diamonds-victory",
+  "name": "Diamond's Victory",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Blackwood, Pentric Run",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, using an ability with a range of 7 meters or less grants you Range Supremacy for 5 seconds, adding 10-437 Weapon and Spell Damage to your damage over time and ranged attacks. \n\nWhile in combat, using an ability with a range of over 7 meters grants you Melee Supremacy for 5 seconds, adding 10-437 Weapon and Spell Damage to your melee attacks.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Diamond's_Victory",
+  "esohub_url": "https://eso-hub.com/en/sets/diamonds-victory"
+}

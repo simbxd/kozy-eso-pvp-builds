@@ -1,0 +1,33 @@
+{
+  "id": "immolator-charr",
+  "name": "Immolator Charr",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Immolator Charr in Temple District, Tel Var lockbox merchant",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 2,
+      "stat": "When you take damage while below 50% Health, gain immunity to immobilization, snares, and crowd control effects for 10 seconds. This effect can occur once every 40 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Immolator_Charr",
+  "esohub_url": "https://eso-hub.com/en/sets/immolator-charr"
+}

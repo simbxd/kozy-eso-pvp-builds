@@ -1,0 +1,45 @@
+{
+  "id": "heem-jas-retribution",
+  "name": "Heem-Jas' Retribution",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Shadowfen, Ruins of Mazzatun",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you are within 28 meters of an enemy you are in combat with, and the enemy dies, you gain Major Berserk for 10 seconds, increasing your damage done by 10%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Heem-Jas'_Retribution",
+  "esohub_url": "https://eso-hub.com/en/sets/heem-jas-retribution"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "heartland-conqueror",
+  "name": "Heartland Conqueror",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Blackwood, Sariellen's Sword",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Increase the effectiveness of your Weapon Traits by 100%. This does not affect Ornate or Intricate traits.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Heartland_Conqueror",
+  "esohub_url": "https://eso-hub.com/en/sets/heartland-conqueror"
+}

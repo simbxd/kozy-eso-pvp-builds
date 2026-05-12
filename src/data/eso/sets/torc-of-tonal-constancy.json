@@ -1,0 +1,22 @@
+{
+  "id": "torc-of-tonal-constancy",
+  "name": "Torc of Tonal Constancy",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "necklace"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "While your Stamina is less than 50%, increase your Magicka Recovery by 450. While your Magicka is less than 50%, increase your Stamina Recovery by 450.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Torc_of_Tonal_Constancy",
+  "esohub_url": "https://eso-hub.com/en/sets/torc-of-tonal-constancy"
+}

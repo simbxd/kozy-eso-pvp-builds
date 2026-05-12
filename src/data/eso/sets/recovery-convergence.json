@@ -1,0 +1,40 @@
+{
+  "id": "recovery-convergence",
+  "name": "Recovery Convergence",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, overhealing done is converted into stored energy on you for 20 seconds. After overhealing 100000 Health, your energy maxes out, granting you the Convergence Release synergy. When you activate this synergy, restore 160-6886 Stamina and Magicka to yourself and group members within 28 meters of you.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Recovery_Convergence",
+  "esohub_url": "https://eso-hub.com/en/sets/recovery-convergence"
+}

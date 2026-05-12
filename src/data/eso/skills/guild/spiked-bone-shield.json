@@ -1,0 +1,11 @@
+{
+  "id": "43323",
+  "slug": "spiked-bone-shield",
+  "name": "Spiked Bone Shield",
+  "description": "Surround yourself with a whirlwind of bones, gaining a damage shield that absorbs up to 4958 damage for 6 seconds and returns 100% of direct damage absorbed back to the enemy. This ability scales off your Max Health.\n\nAn ally near you can activate the Bone Wall synergy, granting the ally and up to 5 other allies a damage shield equal to 30% of their Max Health for 6 seconds.",
+  "category": "guild",
+  "skill_line": "Undaunted",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

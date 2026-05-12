@@ -1,0 +1,40 @@
+{
+  "id": "stuhns-favor",
+  "name": "Stuhn's Favor",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Western Skyrim, Hunter's House",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage to an enemy who is Off Balance, your Offensive Penetration is increased by 123-5312 for 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Stuhn's_Favor",
+  "esohub_url": "https://eso-hub.com/en/sets/stuhns-favor"
+}

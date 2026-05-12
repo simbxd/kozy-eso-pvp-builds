@@ -1,0 +1,11 @@
+{
+  "id": "36063",
+  "slug": "cutpurse",
+  "name": "Cutpurse",
+  "description": "Increases your experience gain with the Medium Armor skill line by 15%.\n\nIncreases your chance to successfully pickpocket by 5%.",
+  "category": "racial",
+  "skill_line": "Khajiit Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

@@ -1,0 +1,40 @@
+{
+  "id": "kraglens-howl",
+  "name": "Kraglen's Howl",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Blackreach, Stone Garden",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "After an enemy you've recently damaged dies, you let out a howl, granting three allies within 15 meters the Heed the Call synergy. Activating the synergy gives you and the activator 12 Ultimate. This effect can occur once every 20 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Kraglen's_Howl",
+  "esohub_url": "https://eso-hub.com/en/sets/kraglens-howl"
+}

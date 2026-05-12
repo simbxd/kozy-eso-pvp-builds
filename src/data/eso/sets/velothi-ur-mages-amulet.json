@@ -1,0 +1,27 @@
+{
+  "id": "velothi-ur-mages-amulet",
+  "name": "Velothi Ur-Mage's Amulet",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "necklace"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Offensive Penetration",
+      "value": 1650
+    },
+    {
+      "count": 1,
+      "stat": "Increase your damage done to monsters by 15%, gain Minor Force at all times, increasing your Critical Damage done by 10%, and reduce your Light and Heavy Attack damage by 99%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Velothi_Ur-Mage's_Amulet",
+  "esohub_url": "https://eso-hub.com/en/sets/velothi-ur-mages-amulet"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "33921",
+  "slug": "fossilize",
+  "name": "Fossilize",
+  "description": "Encase an enemy in molten rock, reducing their movement speed by 50% for 1 second. Upon completion, the target is stunned for 4 seconds, or 8 seconds against monsters. Immobilizes the target for 4 seconds after the stun ends.\n\nThis stun cannot be blocked.\n\nThe molten rock melts through the enemy's armor and applies Minor Breach and Minor Vulnerability for 20 seconds, reducing Armor by 2974 and increasing damage taken by 5%.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

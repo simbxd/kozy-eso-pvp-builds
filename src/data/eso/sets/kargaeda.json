@@ -1,0 +1,33 @@
+{
+  "id": "kargaeda",
+  "name": "Kargaeda",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Varallion in Coral Aerie, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Magicka",
+      "value": 731
+    },
+    {
+      "count": 1,
+      "stat": "Maximum Stamina",
+      "value": 731
+    },
+    {
+      "count": 2,
+      "stat": "On dealing damage with a Heavy Attack, create a 6 meter whirlwind that slowly moves forward for 8 seconds, growing by 3 meters every 3 seconds. Enemies within the whirlwind take 150 Shock damage and 150 Physical damage every second, while group members reduce their Magicka and Stamina costs by 10%. This effect can occur once every 20 seconds and the damage scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Kargaeda",
+  "esohub_url": "https://eso-hub.com/en/sets/kargaeda"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lady-malygda",
+  "name": "Lady Malygda",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Lady Malygda in Arboretum District, Tel Var lockbox merchant",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 2,
+      "stat": "When you deal direct damage to a target within 12 meters, create a 5 meter area that after 1 second, quickly moves forward and then returns, dealing 811 Shock damage to enemies and applying Minor Enervation for 5 seconds, causing the target to deal 10% less Critical Damage. This effect can occur once every 15 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lady_Malygda",
+  "esohub_url": "https://eso-hub.com/en/sets/lady-malygda"
+}

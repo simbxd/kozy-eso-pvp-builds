@@ -1,0 +1,28 @@
+{
+  "id": "orpheon-the-tactician",
+  "name": "Orpheon the Tactician",
+  "type": "Monster",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "While in combat, casting an ability that leaves an effect on the ground summons a tentacle at the target's location. After 2 seconds, the tentacle swings wildly in a 5 meter radius, dealing 229 Physical damage and stunning up to 6 enemies for 3 seconds. Enemies immune to stun take 1429 Physical damage instead. This effect can occur every 8 seconds and the damage scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Orpheon_the_Tactician",
+  "esohub_url": "https://eso-hub.com/en/sets/orpheon-the-tactician"
+}

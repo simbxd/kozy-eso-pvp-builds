@@ -119,34 +119,122 @@ async function writeJson(path, obj) {
 }
 
 // ---------- Set normalisation ----------
+
+// UESP type → acquisition enum (matches src/content/sets schema)
+const UESP_TYPE_TO_ACQUISITION = {
+  'Arena':    'Arena',
+  'Class':    'Dungeon',   // class sets drop from dungeons
+  'Crafted':  'Crafted',
+  'Dungeon':  'Dungeon',
+  'Monster':  'Monster',
+  'Mythic':   'Mythic',
+  'Other':    'Overland',
+  'Overland': 'Overland',
+  'PVP':      'PvP',
+  'Trial':    'Trial',
+};
+
+// Derive our type enum from itemSlots + maxPieces + UESP type
+function deriveSetType(itemSlots, maxPieces, uespType) {
+  if (maxPieces === 1)                    return 'Mythic';
+  if (uespType === 'Monster' || maxPieces === 2) return 'Monster';
+
+  const s = (itemSlots || '').toLowerCase();
+  const hasLight   = s.includes('light');
+  const hasMedium  = s.includes('medium');
+  const hasHeavy   = s.includes('heavy');
+  const hasArmor   = hasLight || hasMedium || hasHeavy;
+  const hasJewelry = s.includes('neck') || s.includes('ring');
+  const hasWeapon  = s.includes('weapon') || s.includes('shield');
+
+  if (!hasArmor && hasJewelry && !hasWeapon) return 'Jewelry';
+  if (!hasArmor && !hasJewelry && hasWeapon) return 'Weapon';
+
+  const armorWeights = [hasLight, hasMedium, hasHeavy].filter(Boolean).length;
+  if (armorWeights === 1 && !hasJewelry && !hasWeapon) {
+    if (hasLight)  return 'Light Armor';
+    if (hasMedium) return 'Medium Armor';
+    return 'Heavy Armor';
+  }
+  return 'Mixed';
+}
+
+// Parse itemSlots string → array of slot names
+function parseSlots(itemSlots) {
+  if (!itemSlots) return [];
+  const s = itemSlots.toLowerCase();
+  const slots = [];
+  if (s.includes('head'))     slots.push('head');
+  if (s.includes('shoulder')) slots.push('shoulders');
+  if (s.includes('chest'))    slots.push('chest');
+  if (s.includes('hands'))    slots.push('hands');
+  if (s.includes('waist'))    slots.push('waist');
+  if (s.includes('legs'))     slots.push('legs');
+  if (s.includes('feet'))     slots.push('feet');
+  if (s.includes('neck'))     slots.push('necklace');
+  if (s.includes('ring'))     slots.push('ring');
+  if (s.includes('weapon'))   slots.push('weapon');
+  if (s.includes('shield'))   slots.push('off-hand');
+  return slots;
+}
+
+// Parse a single UESP bonus description into {count, stat, value}
+function parseBonus(rawDesc) {
+  const desc = String(rawDesc).replace(/\|c[0-9a-fA-F]{6}|\|r/g, '').trim();
+  const pieceMatch = desc.match(/^\((\d+) items?\)\s*/i);
+  const count = pieceMatch ? parseInt(pieceMatch[1]) : 1;
+  const rest  = pieceMatch ? desc.slice(pieceMatch[0].length) : desc;
+
+  // "Adds VALUE STAT" or "Adds MIN-MAX STAT"
+  const addsMatch = rest.match(/^Adds (\d+(?:-\d+)?)\s+(.+)$/);
+  if (addsMatch) {
+    const rawVal = addsMatch[1];
+    const stat   = addsMatch[2].trim();
+    const value  = rawVal.includes('-')
+      ? parseInt(rawVal.split('-')[1])   // use max of range
+      : parseInt(rawVal);
+    return { count, stat, value };
+  }
+
+  // Fallback: full description as stat, no numeric value
+  return { count, stat: rest, value: '' };
+}
+
 function normaliseSet(row) {
   const name = row.setName ?? row.name ?? row.set_name;
   if (!name) return null;
 
-  const id = row.setId ?? row.id ?? null;
-  const slug = slugify(name);
+  const slug      = slugify(name);
+  const maxPieces = parseInt(row.setMaxEquipCount ?? row.maxEquipCount ?? 0, 10) || 1;
+  const uespType  = String(row.type ?? '').trim();
+  const itemSlots = String(row.itemSlots ?? '').trim();
+  const sources   = String(row.sources ?? '').trim();
 
-  const bonuses = {};
+  const setType    = deriveSetType(itemSlots, maxPieces, uespType);
+  const acquisition = UESP_TYPE_TO_ACQUISITION[uespType] ?? 'Overland';
+
+  // Parse bonuses into structured format (same as src/content/sets schema)
+  const bonuses = [];
   for (let i = 1; i <= 12; i++) {
-    const desc =
-      row[`setBonusDesc${i}`] ??
-      row[`bonus${i}`] ??
-      row[`setBonus${i}`] ??
-      null;
+    const desc = row[`setBonusDesc${i}`] ?? row[`bonus${i}`] ?? null;
     if (desc && String(desc).trim()) {
-      const clean = String(desc).replace(/\|c[0-9a-fA-F]{6}|\|r/g, '').trim();
-      if (clean) bonuses[String(i)] = clean;
+      bonuses.push(parseBonus(desc));
     }
   }
 
-  const maxPieces = parseInt(row.setMaxEquipCount ?? row.maxEquipCount ?? 0, 10) || null;
-
   return {
-    id,
-    slug,
+    id:             slug,
     name,
-    max_pieces: maxPieces,
+    type:           setType,
+    acquisition,
+    location:       sources || '',
+    dlc:            'Base Game',   // not available from UESP API
+    pieces:         maxPieces,
+    slots:          parseSlots(itemSlots),
+    patch_verified: 'U49',
     bonuses,
+    uesp_url:       `https://en.uesp.net/wiki/Online:${name.replace(/ /g, '_')}`,
+    esohub_url:     `https://eso-hub.com/en/sets/${slug}`,
   };
 }
 
@@ -247,7 +335,7 @@ async function buildSets() {
 
   const seen = new Map();
   for (const s of sets) {
-    if (!seen.has(s.slug)) seen.set(s.slug, s);
+    if (!seen.has(s.id)) seen.set(s.id, s);
   }
   const final = [...seen.values()].sort((a, b) => a.name.localeCompare(b.name));
   log(`After dedupe: ${final.length} sets`);
@@ -259,10 +347,10 @@ async function buildSets() {
     await rm(setsDir, { recursive: true, force: true });
   }
   for (const set of toWrite) {
-    await writeJson(join(setsDir, `${set.slug}.json`), set);
+    await writeJson(join(setsDir, `${set.id}.json`), set);
   }
 
-  const index = final.map(s => ({ id: s.id, slug: s.slug, name: s.name }));
+  const index = final.map(s => ({ id: s.id, name: s.name, type: s.type, acquisition: s.acquisition }));
   await writeJson(join(OUT_DIR, 'sets-index.json'), index);
 
   log(`✓ Wrote ${toWrite.length} set files + sets-index.json`);
@@ -317,7 +405,6 @@ async function buildSkills() {
 
   const index = final.map(s => ({
     id: s.id,
-    slug: s.slug,
     name: s.name,
     category: s.category,
     skill_line: s.skill_line,

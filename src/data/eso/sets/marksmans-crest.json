@@ -1,0 +1,40 @@
+{
+  "id": "marksmans-crest",
+  "name": "Marksman's Crest",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Elite Gear Vendors",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the cost of your Stamina abilities by 5% and increases the damage of your Bow abilities against Players by 8%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Marksman's_Crest",
+  "esohub_url": "https://eso-hub.com/en/sets/marksmans-crest"
+}

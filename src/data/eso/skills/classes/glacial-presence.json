@@ -1,0 +1,11 @@
+{
+  "id": "86192",
+  "slug": "glacial-presence",
+  "name": "Glacial Presence",
+  "description": "Increases your chance to apply the Chilled status effect by 250% and increases its damage by 105. The damage increasing effect scales off the higher of your Weapon or Spell Damage.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

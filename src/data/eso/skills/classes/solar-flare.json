@@ -1,0 +1,11 @@
+{
+  "id": "24110",
+  "slug": "solar-flare",
+  "name": "Solar Flare",
+  "description": "Conjure a ball of solar energy to heave at an enemy, dealing 2404 Magic Damage and increasing your damage done with class abilities by 5% for 10 seconds.\n\nAlso grants you Empower for 10 seconds, increasing the damage of your Heavy Attacks against monsters by 70%.",
+  "category": "classes",
+  "skill_line": "Dawn's Wrath",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

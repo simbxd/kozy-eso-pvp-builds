@@ -1,0 +1,11 @@
+{
+  "id": "40134583",
+  "slug": "vampiric-drain",
+  "name": "Vampiric Drain",
+  "description": "Siphon away your enemies' vitality, dealing 870 Magic Damage and healing you for 25% of your missing Health every 1 second for 3 seconds.\n\nThis ability is considered direct damage.",
+  "category": "world",
+  "skill_line": "Vampire",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

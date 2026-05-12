@@ -1,0 +1,40 @@
+{
+  "id": "winterborn",
+  "name": "Winterborn",
+  "type": "Mixed",
+  "acquisition": "Arena",
+  "location": "Maelstrom Arena",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Frost Damage, you summon an ice pillar that deals 1071 Frost damage to all enemies in a 3 meter radius. The ice pillar persists for 2 seconds and reduces the Movement Speed of all enemies within the radius by 50%.  This effect can occur once every 6 seconds and the damage scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Winterborn",
+  "esohub_url": "https://eso-hub.com/en/sets/winterborn"
+}

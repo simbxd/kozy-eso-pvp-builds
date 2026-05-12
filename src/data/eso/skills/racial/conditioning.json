@@ -1,0 +1,11 @@
+{
+  "id": "117754",
+  "slug": "conditioning",
+  "name": "Conditioning",
+  "description": "Increases your Max Stamina by 2000.",
+  "category": "racial",
+  "skill_line": "Redguard Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

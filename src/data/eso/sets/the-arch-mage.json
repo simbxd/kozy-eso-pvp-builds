@@ -1,0 +1,40 @@
+{
+  "id": "the-arch-mage",
+  "name": "The Arch-Mage",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Cropsford",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you complete a fully-charged Heavy Attack, you gain an additional 11-506 Magicka Recovery for 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Arch-Mage",
+  "esohub_url": "https://eso-hub.com/en/sets/the-arch-mage"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "unleashed-ritualist",
+  "name": "Unleashed Ritualist",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Deshaan, The Cauldron",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Increases your damage done with summoned pets by 0-20%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Unleashed_Ritualist",
+  "esohub_url": "https://eso-hub.com/en/sets/unleashed-ritualist"
+}

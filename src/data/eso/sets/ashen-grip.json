@@ -1,0 +1,40 @@
+{
+  "id": "ashen-grip",
+  "name": "Ashen Grip",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Beacon Falls in Auridon, Par Molag in Glenumbra, Magmaflow Overlook in Stonefalls",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Martial melee damage, you breathe fire to all enemies in front of you for 774 Flame Damage. This effect can occur once every 4 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ashen_Grip",
+  "esohub_url": "https://eso-hub.com/en/sets/ashen-grip"
+}

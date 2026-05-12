@@ -1,0 +1,22 @@
+{
+  "id": "bloodlords-embrace",
+  "name": "Bloodlord's Embrace",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "chest"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Dealing damage with a Bash attack places a persistent, un-cleansable Blood Curse on an enemy. You can only have one Blood Cursed enemy at a time and dealing additional Bash damage moves the Blood Curse. When you Block a Blood Cursed enemy, restore 1605 Magicka to you. This effect can occur every 1 second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bloodlord's_Embrace",
+  "esohub_url": "https://eso-hub.com/en/sets/bloodlords-embrace"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "30255",
+  "slug": "boundless-storm",
+  "name": "Boundless Storm",
+  "description": "Manifest yourself as pure lightning, zapping nearby enemies with electricity dealing 463 Shock Damage every 2 seconds for 30 seconds.\n\nWhile in this form you also gain Major Resolve, increasing your Physical Resistance and Spell Resistance by 5948.\n\nActivating this grants you Major Expedition, increasing your Movement Speed by 30% for 4 seconds.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

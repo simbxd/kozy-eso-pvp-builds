@@ -1,0 +1,11 @@
+{
+  "id": "86146",
+  "slug": "shimmering-shield",
+  "name": "Shimmering Shield",
+  "description": "Spin a shield of ice around you, absorbing up to 16527 damage from 3 projectiles. \n\nEach time you absorb a projectile you gain 2 Ultimate and gain Major Heroism for 6 seconds, granting you 3 Ultimate every 1.5 seconds.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

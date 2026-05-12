@@ -1,0 +1,45 @@
+{
+  "id": "cowards-gear",
+  "name": "Coward's Gear",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Battlegrounds",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Stamina Recovery",
+      "value": 250
+    },
+    {
+      "count": 5,
+      "stat": "While Sprinting you gain Major Expedition and Major Protection, increasing your Movement Speed by 30% and reducing your damage taken by 10%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Coward's_Gear",
+  "esohub_url": "https://eso-hub.com/en/sets/cowards-gear"
+}

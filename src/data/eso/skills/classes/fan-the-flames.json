@@ -1,0 +1,11 @@
+{
+  "id": "45023",
+  "slug": "fan-the-flames",
+  "name": "Fan the Flames",
+  "description": "Tend to your garden of flame, that it may flourish.\n\nIncreases your chances of applying the Burning status effect by 50% and its damage done by 25%. These values are influenced by the number of Dragonknight abilities slotted.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

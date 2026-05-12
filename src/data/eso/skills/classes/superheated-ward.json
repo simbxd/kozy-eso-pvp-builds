@@ -1,0 +1,11 @@
+{
+  "id": "32194",
+  "slug": "superheated-ward",
+  "name": "Superheated Ward",
+  "description": "Roil the air around you or an ally, granting a damage shield that absorbs up to 4958 for 6 seconds.\n\nThis ability scales off the higher of your Max Magicka or Stamina and is capped at 50% of the target's Max Health.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "218987",
+  "slug": "major-prophecy-savagery",
+  "name": "Major Prophecy/Savagery",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

@@ -1,0 +1,11 @@
+{
+  "id": "46041",
+  "slug": "dark-stalker",
+  "name": "Dark Stalker",
+  "description": "Ignore the Movement Speed penalty of Sneak.\n\nDecreases the time it takes to enter Sneak by 50%.",
+  "category": "world",
+  "skill_line": "Vampire",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

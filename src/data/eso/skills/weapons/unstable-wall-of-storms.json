@@ -1,0 +1,11 @@
+{
+  "id": "41723",
+  "slug": "unstable-wall-of-storms",
+  "name": "Unstable Wall of Storms",
+  "description": "Slam your staff down to create an unstable storm barrier in front of you, dealing 281 Shock Damage to enemies in the target area every 1 second and setting Concussed enemies Off Balance for 7 seconds.\n\nWhen the effect ends, the barrier explodes, dealing 1199 Shock Damage.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

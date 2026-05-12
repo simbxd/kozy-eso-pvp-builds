@@ -1,0 +1,11 @@
+{
+  "id": "36223",
+  "slug": "veiled-strike",
+  "name": "Veiled Strike",
+  "description": "Slash an enemy, dealing 2323 Magic Damage. \n\nIf you strike an enemy from their flank you set them Off Balance.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "116275",
+  "slug": "near-death-experience",
+  "name": "Near-Death Experience",
+  "description": "While you have a Living Death ability slotted, your Critical Strike Chance with all healing abilities is increased by up to 12% in proportion to the severity of the target's wounds.",
+  "category": "classes",
+  "skill_line": "Living Death",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

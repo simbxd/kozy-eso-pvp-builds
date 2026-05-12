@@ -1,0 +1,28 @@
+{
+  "id": "zoal-the-ever-wakeful",
+  "name": "Zoal the Ever-Wakeful",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Zoal the Ever-Wakeful in Elven Gardens District, Tel Var lockbox merchant",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "When you Break Free, you release a wave of Watcher energy, causing enemies within 8 meters of you to become Feared for 3 seconds. You also gain 0-34 Weapon and Spell Damage for each enemy hit, up to 6 enemies, for 7 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Zoal_the_Ever-Wakeful",
+  "esohub_url": "https://eso-hub.com/en/sets/zoal-the-ever-wakeful"
+}

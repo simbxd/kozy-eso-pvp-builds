@@ -1,0 +1,11 @@
+{
+  "id": "41358",
+  "slug": "defensive-stance",
+  "name": "Defensive Stance",
+  "description": "Bolster your defenses, gaining a damage shield that absorbs up to 4958 damage for 6 seconds. This portion of the ability scales off your Max Health.\n\nYou reflect the next harmful direct damage projectile cast at you, once per cast.\n\nWhile slotted and you have a shield equipped, the amount of damage you can block is increased by 10% and the cost of blocking is reduced by 10%.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "nobles-conquest",
+  "name": "Noble's Conquest",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Imperial City, Nobles Armory",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you Bash a target, you heal for 3408 Health over 10 seconds and apply Minor Vulnerability to the enemy for 10 seconds, increasing their damage taken by 5%. The heal can only activate once every 10 seconds and scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Noble's_Conquest",
+  "esohub_url": "https://eso-hub.com/en/sets/nobles-conquest"
+}

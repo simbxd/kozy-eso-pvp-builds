@@ -1,0 +1,11 @@
+{
+  "id": "55386",
+  "slug": "undaunted-mettle",
+  "name": "Undaunted Mettle",
+  "description": "Increases your Max Health, Stamina, and Magicka by 2% per type of Armor (Heavy, Medium, Light) that you have equipped. \n\nCurrent bonus: 0%.",
+  "category": "guild",
+  "skill_line": "Undaunted",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

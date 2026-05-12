@@ -1,0 +1,22 @@
+{
+  "id": "torc-of-the-last-ayleid-king",
+  "name": "Torc of the Last Ayleid King",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "necklace"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Reduce your damage taken by 15%. \nAdds 1337 Weapon and Spell Damage.\nAdds 500 Magicka and Stamina Recovery.\nDisable all other item set bonuses.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Torc_of_the_Last_Ayleid_King",
+  "esohub_url": "https://eso-hub.com/en/sets/torc-of-the-last-ayleid-king"
+}

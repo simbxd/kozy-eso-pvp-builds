@@ -1,0 +1,11 @@
+{
+  "id": "116194",
+  "slug": "dismember",
+  "name": "Dismember",
+  "description": "While a Grave Lord ability is active, your Spell and Physical Penetration are increased by 3271.",
+  "category": "classes",
+  "skill_line": "Grave Lord",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

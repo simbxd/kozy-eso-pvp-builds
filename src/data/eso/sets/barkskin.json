@@ -1,0 +1,40 @@
+{
+  "id": "barkskin",
+  "name": "Barkskin",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Grahtwood, Elden Hollow",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the duration of immobilizations and snares applied to you by 50%. When an immobilization or snare is applied to you, heal for 39-1715 Health and restore 19-858 Stamina. This effect can occur once every 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Barkskin",
+  "esohub_url": "https://eso-hub.com/en/sets/barkskin"
+}

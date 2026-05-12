@@ -1,0 +1,11 @@
+{
+  "id": "139942",
+  "slug": "scry",
+  "name": "Scry",
+  "description": "Adds the selected contiguous group of facets to your area of control.\n\nConsumes 1 turn.",
+  "category": "world",
+  "skill_line": "Scrying",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

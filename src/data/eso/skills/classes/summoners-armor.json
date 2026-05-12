@@ -1,0 +1,11 @@
+{
+  "id": "40118244",
+  "slug": "summoners-armor",
+  "name": "Summoner's Armor",
+  "description": "Wrap yourself in hardened bone, granting you Major Resolve and Minor Resolve for 30 seconds, increasing your Physical Resistance and Spell Resistance by 5948 and 2974.\n\nWhile active, reduce the cost of Blastbones, Skeletal Mage, and Spirit Mender by 15%.\n\nIf cast during combat, you can cast a corpse consuming ability on yourself. This effect can occur once every 10 seconds.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

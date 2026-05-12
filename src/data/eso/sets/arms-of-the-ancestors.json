@@ -1,0 +1,23 @@
+{
+  "id": "arms-of-the-ancestors",
+  "name": "Arms of the Ancestors",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "No longer dropped",
+  "dlc": "Base Game",
+  "pieces": 3,
+  "slots": [
+    "ring",
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 3,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Arms_of_the_Ancestors",
+  "esohub_url": "https://eso-hub.com/en/sets/arms-of-the-ancestors"
+}

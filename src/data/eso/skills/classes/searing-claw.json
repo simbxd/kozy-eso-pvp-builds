@@ -1,0 +1,11 @@
+{
+  "id": "23915",
+  "slug": "searing-claw",
+  "name": "Searing Claw",
+  "description": "Slash your foe with a fiery claw, dealing 1161 Flame Damage and an additional 3480 Flame Damage over 10 seconds.\n\nThe flame sears into the target, dealing 10% more damage every 2 seconds.\n\nThe initial hit always applies the Burning status effect.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

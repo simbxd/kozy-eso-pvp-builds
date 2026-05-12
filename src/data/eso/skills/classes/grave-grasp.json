@@ -1,0 +1,11 @@
+{
+  "id": "40115177",
+  "slug": "grave-grasp",
+  "name": "Grave Grasp",
+  "description": "Summon three patches of skeletal claws from the ground in front of you. Enemies in the first area are snared by 30% for 5 seconds, immobilized in the second area for 4 seconds, and stunned in the final area for 3 seconds.\n\nEach patch applies Minor Maim to enemies hit for 10 seconds, reducing their damage done by 5%.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

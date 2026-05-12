@@ -1,0 +1,11 @@
+{
+  "id": "36129",
+  "slug": "shrewd-offering",
+  "name": "Shrewd Offering",
+  "description": "Pour out your lifesblood and channel the arcane, healing yourself or an ally in front of you for 3485 Health, while draining 810 Health from yourself over 2 seconds.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

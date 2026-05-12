@@ -1,0 +1,11 @@
+{
+  "id": "33881",
+  "slug": "fragmented-shield",
+  "name": "Fragmented Shield",
+  "description": "Call the earth to your defense, creating a damage shield for you and nearby allies that absorbs 2400 damage. This portion of the ability scales off the higher of your Max Magicka or Stamina and is capped at 31% of the target's Max Health.\n\nYou also gain Major Mending, increasing your healing done by 16% for 6 seconds.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

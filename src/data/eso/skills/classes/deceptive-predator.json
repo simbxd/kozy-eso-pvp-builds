@@ -1,0 +1,11 @@
+{
+  "id": "86044",
+  "slug": "deceptive-predator",
+  "name": "Deceptive Predator",
+  "description": "Invoke the spirit of agility to gain Major Expedition for 6 seconds, increasing your Movement Speed by 30%.\n\nGain immunity to snares and immobilizations for 4 seconds.\n\nWhile slotted you gain Minor Evasion, reducing damage from area attacks by 10%.",
+  "category": "classes",
+  "skill_line": "Animal Companions",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

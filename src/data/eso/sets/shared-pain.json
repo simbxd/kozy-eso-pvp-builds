@@ -1,0 +1,40 @@
+{
+  "id": "shared-pain",
+  "name": "Shared Pain",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Whenever you are dealt damage from a damage over time ability, you deal 139 Magic damage to the attacker. This effect scales off the higher of your Weapon or Spell Damage. Reduce your damage taken from over time abilities by 8%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shared_Pain",
+  "esohub_url": "https://eso-hub.com/en/sets/shared-pain"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "139905",
+  "slug": "augur",
+  "name": "Augur",
+  "description": "Indicates how near the Antiquity is to the selected location. \n\nCan only be used a limited number of times, based on the Antiquity's Difficulty.\n\nWorks on the lowest six layers of dirt and rocks. Cannot detect Bonus Loot.\n\nUsing Augur does not consume a turn.",
+  "category": "world",
+  "skill_line": "Excavation",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

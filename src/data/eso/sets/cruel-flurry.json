@@ -1,0 +1,22 @@
+{
+  "id": "cruel-flurry",
+  "name": "Cruel Flurry",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Maelstrom Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "When you deal damage with Flurry, your single target damage over time abilities used within 5 seconds gain 39-1690 Weapon and Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Cruel_Flurry",
+  "esohub_url": "https://eso-hub.com/en/sets/cruel-flurry"
+}

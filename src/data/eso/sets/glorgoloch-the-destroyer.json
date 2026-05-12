@@ -1,0 +1,28 @@
+{
+  "id": "glorgoloch-the-destroyer",
+  "name": "Glorgoloch the Destroyer",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Glorgoloch the Destroyer in Arena District, Tel Var lockbox merchant",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 2,
+      "stat": "While in combat, each second you stand still grants you a stack of Flesh Fortress, up to 10 stacks. Each stack increases your Armor by 8-380 and your Critical Resistance by 0-38. Each second you move removes a stack of Flesh Fortress. Exiting combat removes all stacks of Flesh Fortress.\n\nUsing charge and teleport abilities do not remove stacks of Flesh Fortress.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glorgoloch_the_Destroyer",
+  "esohub_url": "https://eso-hub.com/en/sets/glorgoloch-the-destroyer"
+}

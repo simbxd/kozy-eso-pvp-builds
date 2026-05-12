@@ -1,0 +1,40 @@
+{
+  "id": "shared-burden",
+  "name": "Shared Burden",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you enter combat, 6% of the damage you take is transferred to your Companion instead. Reduce the damage your Companion takes by 0-16%. When your Companion dies in combat, they will automatically revive themselves after 12 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shared_Burden",
+  "esohub_url": "https://eso-hub.com/en/sets/shared-burden"
+}

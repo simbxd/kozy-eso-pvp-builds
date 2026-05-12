@@ -1,0 +1,11 @@
+{
+  "id": "36626",
+  "slug": "reveler",
+  "name": "Reveler",
+  "description": "Increases your experience gain with the Two Handed skill line by 15%.\n\nIncreases the duration of any consumed drink by 15 minutes.",
+  "category": "racial",
+  "skill_line": "Nord Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

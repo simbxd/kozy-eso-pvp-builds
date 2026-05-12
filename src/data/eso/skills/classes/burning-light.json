@@ -1,0 +1,11 @@
+{
+  "id": "44730",
+  "slug": "burning-light",
+  "name": "Burning Light",
+  "description": "When you deal damage you generate a stack of Burning Light for 3 seconds. After reaching 4 stacks, you deal 500 Magic Damage to your target. This effect can stack once every half second and scales off the higher of your Weapon or Spell Damage.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

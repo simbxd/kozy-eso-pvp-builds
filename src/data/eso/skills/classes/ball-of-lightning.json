@@ -1,0 +1,11 @@
+{
+  "id": "30224",
+  "slug": "ball-of-lightning",
+  "name": "Ball of Lightning",
+  "description": "Transform yourself into pure energy and flash forward. After reaching your location, you become immune to snare and immobilize effects for 2 seconds. A ball of lightning is summoned at your end point, which intercepts up to 1 projectile attack made against you every 1 second for 3 seconds.\n\nCasting again within 4 seconds costs 33% more Magicka.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

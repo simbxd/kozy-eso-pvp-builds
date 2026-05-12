@@ -1,0 +1,11 @@
+{
+  "id": "93934",
+  "slug": "natures-grasp",
+  "name": "Nature's Grasp",
+  "description": "Launch a vine to swing yourself to an ally, healing them for 3480 Health over 10 seconds. You gain 3 Ultimate when this effect completes if you are in combat.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

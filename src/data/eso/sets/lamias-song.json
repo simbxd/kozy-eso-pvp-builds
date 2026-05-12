@@ -1,0 +1,40 @@
+{
+  "id": "lamias-song",
+  "name": "Lamia's Song",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Shadowfen, Arx Corinium",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you use an Ultimate ability, you and your group members within 20 meters of you heal for 0-25 Health and restore 0-25 Magicka and Stamina per Ultimate spent.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lamia's_Song",
+  "esohub_url": "https://eso-hub.com/en/sets/lamias-song"
+}

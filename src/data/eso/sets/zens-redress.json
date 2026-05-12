@@ -1,0 +1,40 @@
+{
+  "id": "zens-redress",
+  "name": "Z'en's Redress",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Grahtwood, Lair of Maarselok",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Your Light Attacks apply the Touch of Z'en on enemies for 20 seconds. Enemies with the Touch of Z'en take an additional 1% more damage for each damage over time effect you've placed on them, up to 5%. Enemies can only be affected by one Touch of Z'en at a time.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Z'en's_Redress",
+  "esohub_url": "https://eso-hub.com/en/sets/zens-redress"
+}

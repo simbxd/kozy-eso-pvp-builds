@@ -1,0 +1,40 @@
+{
+  "id": "coup-de-grace",
+  "name": "Coup De Grâce",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing damage to an Immobilized enemy applies Major Vulnerability to them for 3 seconds, increasing their damage taken by 10%. This effect can occur once every 1 second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Coup_De_Grâce",
+  "esohub_url": "https://eso-hub.com/en/sets/coup-de-grace"
+}

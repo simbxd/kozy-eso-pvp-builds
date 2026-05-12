@@ -1,0 +1,11 @@
+{
+  "id": "33090",
+  "slug": "undeath",
+  "name": "Undeath",
+  "description": "Reduces your damage taken by up to 15% based on your missing Health.\n\nCurrent bonus: 1%",
+  "category": "world",
+  "skill_line": "Vampire",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

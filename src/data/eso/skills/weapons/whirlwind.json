@@ -1,0 +1,11 @@
+{
+  "id": "40714",
+  "slug": "whirlwind",
+  "name": "Whirlwind",
+  "description": "Launch yourself into a lethal spin, dealing 1742 Physical Damage to nearby enemies. Deals up to 33% more damage to enemies with less than 50% Health.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

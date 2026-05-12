@@ -1,0 +1,45 @@
+{
+  "id": "black-rose",
+  "name": "Black Rose",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Tel Var Merchant",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 176
+    },
+    {
+      "count": 5,
+      "stat": "Increases the Magicka and Stamina restored from the Constitution passive ability by 60%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Black_Rose",
+  "esohub_url": "https://eso-hub.com/en/sets/black-rose"
+}

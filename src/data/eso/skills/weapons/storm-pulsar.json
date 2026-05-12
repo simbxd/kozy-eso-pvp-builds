@@ -1,0 +1,11 @@
+{
+  "id": "43001",
+  "slug": "storm-pulsar",
+  "name": "Storm Pulsar",
+  "description": "Release a surge of storm energy, dealing 1742 Shock Damage to nearby enemies and afflicting them with Minor Mangle, reducing their Max Health by 10% for 10 seconds. This damage is increased by 5% for each enemy hit, up to 6 times.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "41881",
+  "slug": "arterial-burst",
+  "name": "Arterial Burst",
+  "description": "Rend an enemy, dealing 2399 Magic Damage and applying the Hemorrhaging status effect.\n\nDeals up to 33% more damage based on your missing Health.\n\nIf you use this ability while you are under 50% Health, it will always be a Critical Strike.",
+  "category": "world",
+  "skill_line": "Vampire",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

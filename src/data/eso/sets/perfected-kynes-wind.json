@@ -1,0 +1,45 @@
+{
+  "id": "perfected-kynes-wind",
+  "name": "Perfected Kyne's Wind",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Greymoor, Kyne's Aegis",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 3-129 Magicka Recovery",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you overheal yourself or a group member, you create a pool of Kyne's Blessing under the target for 4 seconds. You and group members standing in Kyne's Blessing restore 9-420 Stamina and Magicka every 1 second. This effect can occur once every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Kyne's_Wind",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-kynes-wind"
+}

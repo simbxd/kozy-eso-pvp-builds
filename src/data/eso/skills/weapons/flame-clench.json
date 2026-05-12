@@ -1,0 +1,11 @@
+{
+  "id": "41009",
+  "slug": "flame-clench",
+  "name": "Flame Clench",
+  "description": "Devastate an enemy with an enhanced charge from your staff, dealing 1199 Flame Damage and applying the Burning status effect.\n\nEnemies struck are knocked back 8 meters and stunned for 1.4 seconds.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "vivecs-duality",
+  "name": "Vivec's Duality",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Necrom",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Your weapon charges over 15 seconds while not Weapon Swapping. Once fully charged, restore 6636 Magicka and Stamina after Weapon Swapping.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vivec's_Duality",
+  "esohub_url": "https://eso-hub.com/en/sets/vivecs-duality"
+}

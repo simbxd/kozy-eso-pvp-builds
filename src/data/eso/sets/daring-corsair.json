@@ -1,0 +1,40 @@
+{
+  "id": "daring-corsair",
+  "name": "Daring Corsair",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Southern Elsweyr, Cat's-Claw Station",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Reduce the cost of your Weapon abilities by 10% Magicka or Stamina. \n\nAfter casting a Weapon ability, you gain Minor Heroism for 8 seconds, generating 1 Ultimate every 1.5 seconds while in combat. This effect can occur every 8 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Daring_Corsair",
+  "esohub_url": "https://eso-hub.com/en/sets/daring-corsair"
+}

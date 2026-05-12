@@ -1,0 +1,11 @@
+{
+  "id": "63247",
+  "slug": "echoing-vigor",
+  "name": "Echoing Vigor",
+  "description": "Let loose a battle cry, instilling you and your allies with resolve and healing for 3480 Health over 16 seconds.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45583",
+  "slug": "soul-shatter",
+  "name": "Soul Shatter",
+  "description": "When your Health drops below 20% your soul explodes, dealing 1600 Magic Damage to enemies within 8 meters of you.\n\nThis effect can occur once every 2 minutes and scales off your Max Health.",
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

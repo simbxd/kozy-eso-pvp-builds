@@ -1,0 +1,11 @@
+{
+  "id": "40122174",
+  "slug": "frozen-colossus",
+  "name": "Frozen Colossus",
+  "description": "Unleash a frostbitten Flesh Colossus to pulverize enemies in the area. The Colossus smashes the ground three times over 3 seconds, dealing 3096 Frost Damage with each smash.\n\nDealing damage applies Major Vulnerability to any enemy hit for 12 seconds, increasing their damage taken by 10%.",
+  "category": "classes",
+  "skill_line": "Grave Lord",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

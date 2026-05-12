@@ -1,0 +1,11 @@
+{
+  "id": "33293",
+  "slug": "craftsman",
+  "name": "Craftsman",
+  "description": "Increases your experience gain with the Heavy Armor skill line by 15%.\n\nIncreases your crafting inspiration gained by 10%.",
+  "category": "racial",
+  "skill_line": "Orc Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

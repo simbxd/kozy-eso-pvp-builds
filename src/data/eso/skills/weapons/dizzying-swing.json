@@ -1,0 +1,11 @@
+{
+  "id": "39984",
+  "slug": "dizzying-swing",
+  "name": "Dizzying Swing",
+  "description": "Slam an enemy with an upward swing, dealing 2760 Physical Damage and setting them Off Balance for 7 seconds.  \n\nHitting an enemy that is already Off Balance stuns them for 2 seconds.\n\nTargets that are immune to Off Balance are snared by 40% for 2 seconds.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

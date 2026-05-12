@@ -1,0 +1,45 @@
+{
+  "id": "berserking-warrior",
+  "name": "Berserking Warrior",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Craglorn, Hel Ra Citadel",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Critical Chance",
+      "value": 986
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Martial melee damage, your Critical Chance is increased by 6-298 for 5 seconds, stacking up to 5 times. This effect can occur once every half second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Berserking_Warrior",
+  "esohub_url": "https://eso-hub.com/en/sets/berserking-warrior"
+}

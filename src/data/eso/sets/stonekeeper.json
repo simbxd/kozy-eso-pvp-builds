@@ -1,0 +1,38 @@
+{
+  "id": "stonekeeper",
+  "name": "Stonekeeper",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "The Stonekeeper in Frostvault, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Stamina",
+      "value": 548
+    },
+    {
+      "count": 1,
+      "stat": "Maximum Magicka",
+      "value": 548
+    },
+    {
+      "count": 1,
+      "stat": "Maximum Health",
+      "value": 603
+    },
+    {
+      "count": 2,
+      "stat": "When you Block, you gain an energy Charge stack. When you gain 6 Charges, you release the energy, restoring 57-2480 Stamina and Magicka, and healing for 57-2480. After releasing the Charges, you cannot regain new Charges for 14 seconds.\n\nCharges can be accumulated up to once every .25 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Stonekeeper",
+  "esohub_url": "https://eso-hub.com/en/sets/stonekeeper"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45621",
+  "slug": "reach",
+  "name": "Reach",
+  "description": "Increases the range of long-range abilities by 5 meters while near a keep or outpost.\n\nAny ability with a range greater than 28 meters is affected.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

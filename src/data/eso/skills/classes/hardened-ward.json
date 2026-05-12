@@ -1,0 +1,11 @@
+{
+  "id": "30474",
+  "slug": "hardened-ward",
+  "name": "Hardened Ward",
+  "description": "Conjure globes of Daedric energy for protection, granting a damage shield for you and your pets that absorbs 7323 damage for 6 seconds.\n\nThis ability scales off the higher of your Max Health or Magicka and the shield is capped at 72% of your Max Health.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

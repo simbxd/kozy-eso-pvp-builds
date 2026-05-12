@@ -1,0 +1,28 @@
+{
+  "id": "grundwulf",
+  "name": "Grundwulf",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Grundwulf in Moongrave Fane, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 2,
+      "stat": "Whenever you deal critical damage, restore 16-700 Magicka or Stamina, whichever maximum is higher. You also gain 8-350 of the other resource. This effect can occur once every 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Grundwulf",
+  "esohub_url": "https://eso-hub.com/en/sets/grundwulf"
+}

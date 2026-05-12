@@ -1,0 +1,45 @@
+{
+  "id": "perfected-peace-and-serenity",
+  "name": "Perfected Peace and Serenity",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Necrom, Sanity's Edge",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 3-129 Weapon and Spell Damage",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "While you are standing still, you gain 10-465 Weapon and Spell Damage. While you are moving, you gain 4-203 Health, Magicka, and Stamina Recovery.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Peace_and_Serenity",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-peace-and-serenity"
+}

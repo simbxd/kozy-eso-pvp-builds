@@ -1,0 +1,40 @@
+{
+  "id": "twilight-remedy",
+  "name": "Twilight Remedy",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Reaper's March, Maw of Lorkhaj",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When an ally activates a synergy you have created within 10 seconds, they heal themselves for 7704 Health over 15 seconds and gain Minor Force for the duration, increasing their Critical Damage by 10%. This effect scales off the higher of the synergy activator's Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Twilight_Remedy",
+  "esohub_url": "https://eso-hub.com/en/sets/twilight-remedy"
+}

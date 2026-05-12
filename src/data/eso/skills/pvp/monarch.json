@@ -1,0 +1,11 @@
+{
+  "id": "39625",
+  "slug": "monarch",
+  "name": "Monarch",
+  "description": "Increases your healing received while in your campaign, depending on how many Home Keeps you own.\n\n1 or less Keep: 25%\n2 Keeps: 30%\n3 Keeps: 35%\n4 Keeps: 40%\n5 Keeps: 45%\n6 Keeps: 50%",
+  "category": "pvp",
+  "skill_line": "Emperor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

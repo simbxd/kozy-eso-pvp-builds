@@ -1,0 +1,11 @@
+{
+  "id": "37532",
+  "slug": "incapacitating-strike",
+  "name": "Incapacitating Strike",
+  "description": "Ravage an enemy with a swift strike, dealing 3840 Disease Damage and causing them to take 20% more damage from your attacks for 8 seconds.\n\nIf cast with 120 or more Ultimate, you instead deal 4223 Disease Damage, stun the enemy for 3 seconds, and increase the duration of the damage taken effect to 12 seconds.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

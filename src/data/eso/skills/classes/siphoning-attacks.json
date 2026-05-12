@@ -1,0 +1,11 @@
+{
+  "id": "38050",
+  "slug": "siphoning-attacks",
+  "name": "Siphoning Attacks",
+  "description": "Channel a portion of your soul to convert Health to 2600 Magicka and Stamina.\n\nWhile slotted on either bar, your soul yearns for the warmth of life. All damage you deal heals you for 1250 Health and restores 200 Magicka and Stamina, up to once every 1 second.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "hist-bark",
+  "name": "Hist Bark",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Rootwatch Tower in Greenshade, Trader's Rest in Rivenspire, Hatchling's Crown in Shadowfen",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "While you are Bracing, you gain Major Evasion, reducing damage from area attacks by 20%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hist_Bark",
+  "esohub_url": "https://eso-hub.com/en/sets/hist-bark"
+}

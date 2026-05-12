@@ -1,0 +1,40 @@
+{
+  "id": "prayer-shawl",
+  "name": "Prayer Shawl",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Glenumbra, Spindleclutch",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you overheal yourself or an ally, you grant them a damage shield that absorbs 116-4997 damage for 6 seconds. This effect can occur once every 2 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Prayer_Shawl",
+  "esohub_url": "https://eso-hub.com/en/sets/prayer-shawl"
+}

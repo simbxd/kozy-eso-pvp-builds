@@ -1,0 +1,11 @@
+{
+  "id": "42110",
+  "slug": "pounce",
+  "name": "Pounce",
+  "description": "Pounce on an enemy with primal fury, dealing 1742 Bleed Damage and applying the Hemorrhaging status effect.\n\nActivating the ability again within the next 5 seconds causes you to rip into an enemy and deal 1296 Bleed Damage over 10 seconds, dealing up to 450% more damage to enemies under 100% Health.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

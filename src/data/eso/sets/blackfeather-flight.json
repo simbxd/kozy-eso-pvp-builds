@@ -1,0 +1,40 @@
+{
+  "id": "blackfeather-flight",
+  "name": "Blackfeather Flight",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you Break Free, gain 100% Movement Speed for 7 seconds. This effect can occur once every 28 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blackfeather_Flight",
+  "esohub_url": "https://eso-hub.com/en/sets/blackfeather-flight"
+}

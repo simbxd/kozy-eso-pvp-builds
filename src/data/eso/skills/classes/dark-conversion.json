@@ -1,0 +1,11 @@
+{
+  "id": "30072",
+  "slug": "dark-conversion",
+  "name": "Dark Conversion",
+  "description": "Bargain with darkness to restore 10000 Health and 4500 Magicka instantly, and an additional 3000 Magicka over 20 seconds.\n\nThe exchange also grants you Minor Berserk for 20 seconds, increasing your damage done by 5%.",
+  "category": "classes",
+  "skill_line": "Dark Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

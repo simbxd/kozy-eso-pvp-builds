@@ -1,0 +1,40 @@
+{
+  "id": "banis-torment",
+  "name": "Bani's Torment",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Wrothgar, Icereach",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you taunt a nearby enemy, you tether to them for 15 seconds, as long as you remain within 8 meters of them. While tethered, you apply Major Maim to your enemy, reducing their damage done by 10%, and you gain Major Vitality, increasing your healing received and damage shield strength by 12%. This effect can occur once every 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bani's_Torment",
+  "esohub_url": "https://eso-hub.com/en/sets/banis-torment"
+}

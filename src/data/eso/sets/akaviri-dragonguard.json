@@ -1,0 +1,45 @@
+{
+  "id": "akaviri-dragonguard",
+  "name": "Akaviri Dragonguard",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Eastmarch",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Health Recovery",
+      "value": 158
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the cost of your Ultimate abilities by 15%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Akaviri_Dragonguard",
+  "esohub_url": "https://eso-hub.com/en/sets/akaviri-dragonguard"
+}

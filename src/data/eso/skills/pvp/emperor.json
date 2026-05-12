@@ -1,0 +1,11 @@
+{
+  "id": "39641",
+  "slug": "emperor",
+  "name": "Emperor",
+  "description": "Increases your Max Health, Magicka, and Stamina while in your campaign, depending on how many Home Keeps you own.\n\n1 or less Keep: 38%\n2 Keeps: 45%\n3 Keeps: 53%\n4 Keeps: 60%\n5 Keeps: 68%\n6 Keeps: 75%",
+  "category": "pvp",
+  "skill_line": "Emperor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

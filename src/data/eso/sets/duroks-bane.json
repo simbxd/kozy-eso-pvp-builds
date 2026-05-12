@@ -1,0 +1,40 @@
+{
+  "id": "duroks-bane",
+  "name": "Durok's Bane",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Reaper's March, Selene's Web",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Health Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage, you apply Major Defile to the enemy for 5 seconds, reducing their healing received and damage shield strength by 12%. This effect can occur once every 7 seconds per enemy.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Durok's_Bane",
+  "esohub_url": "https://eso-hub.com/en/sets/duroks-bane"
+}

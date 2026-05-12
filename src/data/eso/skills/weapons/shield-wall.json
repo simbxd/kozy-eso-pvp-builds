@@ -1,0 +1,11 @@
+{
+  "id": "86322",
+  "slug": "shield-wall",
+  "name": "Shield Wall",
+  "description": "Reinforce your shield, allowing you to automatically block all attacks at no cost for 6 seconds.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

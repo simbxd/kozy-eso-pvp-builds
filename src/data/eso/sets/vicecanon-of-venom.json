@@ -1,0 +1,41 @@
+{
+  "id": "vicecanon-of-venom",
+  "name": "Vicecanon of Venom",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Tel Var Merchant",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "feet",
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal direct Critical Damage to an enemy while behind them, you inject a leeching poison that deals 1300 Poison Damage over 10 seconds to them and heals you for 100% of the damage done.  This effect can occur once every 10 seconds per enemy and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vicecanon_of_Venom",
+  "esohub_url": "https://eso-hub.com/en/sets/vicecanon-of-venom"
+}

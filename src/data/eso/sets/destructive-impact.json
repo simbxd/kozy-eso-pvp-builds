@@ -1,0 +1,22 @@
+{
+  "id": "destructive-impact",
+  "name": "Destructive Impact",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Dragonstar Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Reduces the cost of Destructive Touch by 10% and increases your Weapon and Spell Damage by 13-600 for 4 seconds after activating it.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Destructive_Impact",
+  "esohub_url": "https://eso-hub.com/en/sets/destructive-impact"
+}

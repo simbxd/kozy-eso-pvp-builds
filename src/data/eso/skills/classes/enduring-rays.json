@@ -1,0 +1,11 @@
+{
+  "id": "45214",
+  "slug": "enduring-rays",
+  "name": "Enduring Rays",
+  "description": "Increases the duration of your Sun Fire, Eclipse, Solar Flare, and Nova abilities by 2 seconds.",
+  "category": "classes",
+  "skill_line": "Dawn's Wrath",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

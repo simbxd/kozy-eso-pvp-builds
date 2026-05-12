@@ -1,0 +1,11 @@
+{
+  "id": "40114317",
+  "slug": "skeletal-mage",
+  "name": "Skeletal Mage",
+  "description": "Unearth a skeletal mage from the dirt to fight by your side for 20 seconds, while granting you Major Brutality and Sorcery, increasing your Weapon and Spell Damage by 20%. The mage attacks the closest enemy every 2 seconds, dealing 462 Shock Damage.\n\nCreates a corpse on death if you are in combat.",
+  "category": "classes",
+  "skill_line": "Grave Lord",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "40118308",
+  "slug": "ghostly-embrace",
+  "name": "Ghostly Embrace",
+  "description": "Summon three patches of skeletal claws from the ground in front of you, each dealing 898 Frost Damage.\n\nThe first area applies the Chilled status effect, the second area deals an additional 1635 Frost Damage over 5 seconds, and the final area creates a corpse if at least one enemy was hit.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

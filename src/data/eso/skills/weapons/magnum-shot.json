@@ -1,0 +1,11 @@
+{
+  "id": "40869",
+  "slug": "magnum-shot",
+  "name": "Magnum Shot",
+  "description": "Blast an enemy with an explosive arrow, dealing 1727 Physical Damage and knocking them back 8 meters.",
+  "category": "weapons",
+  "skill_line": "Bow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

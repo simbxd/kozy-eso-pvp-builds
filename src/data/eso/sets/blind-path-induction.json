@@ -1,0 +1,40 @@
+{
+  "id": "blind-path-induction",
+  "name": "Blind Path Induction",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Wrothgar, Bedlam Veil",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Increase the strength of your Damage Shields by 13% to you and targets within 15 meters of you. Increase your Healing Done by 13% to targets more than 15 meters away from you.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blind_Path_Induction",
+  "esohub_url": "https://eso-hub.com/en/sets/blind-path-induction"
+}

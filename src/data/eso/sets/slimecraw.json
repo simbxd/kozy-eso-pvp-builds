@@ -1,0 +1,33 @@
+{
+  "id": "slimecraw",
+  "name": "Slimecraw",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Slimecraw in Wayrest Sewers I, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 113
+    },
+    {
+      "count": 2,
+      "stat": "Gain Minor Berserk at all times, increasing your damage done by 5%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Slimecraw",
+  "esohub_url": "https://eso-hub.com/en/sets/slimecraw"
+}

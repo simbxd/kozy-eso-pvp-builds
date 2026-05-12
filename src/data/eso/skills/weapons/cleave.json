@@ -1,0 +1,11 @@
+{
+  "id": "39746",
+  "slug": "cleave",
+  "name": "Cleave",
+  "description": "Focus your strength into a mighty swing, dealing 1742 Physical Damage to enemies in front of you.\n\nYou also gain a damage shield that absorbs 1742 damage for 6 seconds.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

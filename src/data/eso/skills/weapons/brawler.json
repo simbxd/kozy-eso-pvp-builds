@@ -1,0 +1,11 @@
+{
+  "id": "39769",
+  "slug": "brawler",
+  "name": "Brawler",
+  "description": "Focus your strength into a mighty swing, dealing 1742 Physical Damage to enemies in front of you.\n\nYou also gain a damage shield that absorbs 1799 damage for 6 seconds. Each enemy hit increases the damage shield's strength by 50%, up to 300%.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

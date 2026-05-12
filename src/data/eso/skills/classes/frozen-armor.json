@@ -1,0 +1,11 @@
+{
+  "id": "86190",
+  "slug": "frozen-armor",
+  "name": "Frozen Armor",
+  "description": "Increases your Physical and Spell Resistance by 1240 for each Winter's Embrace ability slotted.\n\nCurrent Bonus: 0.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

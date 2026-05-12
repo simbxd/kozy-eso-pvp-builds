@@ -1,0 +1,11 @@
+{
+  "id": "40137861",
+  "slug": "hypnosis",
+  "name": "Hypnosis",
+  "description": "Subdue enemies around you with your baleful gaze, stunning them for 5 seconds if they are facing your direction.\n\nThis stun cannot be blocked.",
+  "category": "world",
+  "skill_line": "Vampire",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

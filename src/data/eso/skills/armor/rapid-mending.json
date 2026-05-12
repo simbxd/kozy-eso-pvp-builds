@@ -1,0 +1,11 @@
+{
+  "id": "45529",
+  "slug": "rapid-mending",
+  "name": "Rapid Mending",
+  "description": "Increases your healing received by 1% for each piece of Heavy Armor worn.\n\nCurrent bonus: 0%",
+  "category": "armor",
+  "skill_line": "Heavy Armor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

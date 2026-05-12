@@ -1,0 +1,40 @@
+{
+  "id": "undaunted-unweaver",
+  "name": "Undaunted Unweaver",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Bangkorai, Blackheart Haven",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you use an ability that costs Stamina while in combat, you increase the damage of your Light and Heavy Attacks against monsters by 38-1645 for 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Undaunted_Unweaver",
+  "esohub_url": "https://eso-hub.com/en/sets/undaunted-unweaver"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "44996",
+  "slug": "heart-of-stone",
+  "name": "Heart of Stone",
+  "description": "Rock and stone shield your heart, turning aside sharp blades and barbed words.\n\nIncreases your Armor by 2974.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

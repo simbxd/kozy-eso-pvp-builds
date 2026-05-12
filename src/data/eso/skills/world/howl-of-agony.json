@@ -1,0 +1,11 @@
+{
+  "id": "58808",
+  "slug": "howl-of-agony",
+  "name": "Howl of Agony",
+  "description": "Crush an enemy with a deafening howl, dealing 2904 Physical Damage.\n\nDeals 10% more damage to enemies that are Terrified and 10% more to enemies that are Off Balance.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

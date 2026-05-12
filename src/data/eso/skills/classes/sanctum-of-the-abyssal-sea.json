@@ -1,0 +1,11 @@
+{
+  "id": "40192372",
+  "slug": "sanctum-of-the-abyssal-sea",
+  "name": "Sanctum of the Abyssal Sea",
+  "description": "Gather the true strength of Apocrypha as protective tentacles rise from the Abyssal Sea around you. The tentacles form a damage shield that absorbs 60% of all damage for 10 seconds, up to a max of 37697 damage, scaling off your Max Health.\n\nWhen the shield collapses you lash out, dealing all of the damage absorbed as Magic Damage to enemies within 5 meters over 10 seconds.",
+  "category": "classes",
+  "skill_line": "Soldier of Apocrypha",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

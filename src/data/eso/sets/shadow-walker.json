@@ -1,0 +1,40 @@
+{
+  "id": "shadow-walker",
+  "name": "Shadow Walker",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Bruma",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "While you are Sneaking or invisible and are not moving, heal for 50-2150 Health and restore 50-2150 Stamina every 1 second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shadow_Walker",
+  "esohub_url": "https://eso-hub.com/en/sets/shadow-walker"
+}

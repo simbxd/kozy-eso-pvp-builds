@@ -1,0 +1,40 @@
+{
+  "id": "bulwark-ruination",
+  "name": "Bulwark Ruination",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Battlegrounds",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When an enemy blocks one of your attacks, reduce the amount of damage they can block by 8% for 5 seconds. This effect can stack up to 5 times and can occur once every 0.3 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bulwark_Ruination",
+  "esohub_url": "https://eso-hub.com/en/sets/bulwark-ruination"
+}

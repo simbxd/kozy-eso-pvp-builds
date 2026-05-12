@@ -1,0 +1,28 @@
+{
+  "id": "selene",
+  "name": "Selene",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Selene in Selene's Web, Glirion the Redbeard",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "When you deal Martial melee damage, you call upon a primal spirit that mauls the closest enemy in front of you after 1.3 seconds for 1702 Physical damage. This effect can occur once every 6 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Selene",
+  "esohub_url": "https://eso-hub.com/en/sets/selene"
+}

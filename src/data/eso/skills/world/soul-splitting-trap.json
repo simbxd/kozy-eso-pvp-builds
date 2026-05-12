@@ -1,0 +1,11 @@
+{
+  "id": "43067",
+  "slug": "soul-splitting-trap",
+  "name": "Soul Splitting Trap",
+  "description": "Lay claim to enemy souls, dealing 2316 Magic Damage to your target and any other nearby enemies over 10 seconds.\n\nFills an empty Soul Gem if an affected enemy dies.",
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

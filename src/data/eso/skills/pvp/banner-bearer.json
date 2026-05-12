@@ -1,0 +1,11 @@
+{
+  "id": "40217699",
+  "slug": "banner-bearer",
+  "name": "Banner Bearer",
+  "description": "Bring out a banner to inspire yourself and nearby group members.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

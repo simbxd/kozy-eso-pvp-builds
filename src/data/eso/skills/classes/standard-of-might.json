@@ -1,0 +1,11 @@
+{
+  "id": "34021",
+  "slug": "standard-of-might",
+  "name": "Standard of Might",
+  "description": "Call down a battle standard for 15 seconds, rallying you and allies inside the area, increasing Weapon and Spell Damage by 300 and reducing damage taken by 10%. You gain an additional 15% damage done and reduced damage taken and 300 Weapon and Spell Damage.\n\nAn ally near the standard can activate the Shackle synergy, dealing 3375 Flame Damage to enemies in the area and immobilizing them for 5 seconds.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

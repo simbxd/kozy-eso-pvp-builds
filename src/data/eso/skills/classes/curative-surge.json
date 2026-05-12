@@ -1,0 +1,11 @@
+{
+  "id": "40186200",
+  "slug": "curative-surge",
+  "name": "Curative Surge",
+  "description": "Channel the abyssal sea to coalesce a beam that heals you and your allies in its path for 11674 Health over 4.5 seconds.\n\nThe beam gradually grows stronger the longer you channel it, healing for up to 192% more at the end of its duration.\n\nConsume Crux to also restore 728 Magicka and Stamina per Crux spent to your allies over 4.5 seconds.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

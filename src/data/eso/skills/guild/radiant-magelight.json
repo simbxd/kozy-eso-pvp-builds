@@ -1,0 +1,11 @@
+{
+  "id": "42455",
+  "slug": "radiant-magelight",
+  "name": "Radiant Magelight",
+  "description": "Summon a mote of magelight, revealing stealthed and invisible enemies around you for 5 seconds. Exposed enemies cannot return to stealth or invisibility for 4 seconds.\n\nWhile slotted you gain Major Savagery and Prophecy, increasing your Weapon and Spell Critical rating by 2629. You also prevent the stun from stealth attacks for you and nearby allies.",
+  "category": "guild",
+  "skill_line": "Mages Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "rallying-cry",
+  "name": "Rallying Cry",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When your healing critically strikes while Battle Spirit is active, you and group members within 12 meters of you gain 38-1650 Critical Resistance and 6-300 Weapon and Spell Damage for 20 seconds. Each group member affected reduces the Weapon and Spell Damage by 0-15 and Critical Resistance by 1-83. This effect can occur once every 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rallying_Cry",
+  "esohub_url": "https://eso-hub.com/en/sets/rallying-cry"
+}

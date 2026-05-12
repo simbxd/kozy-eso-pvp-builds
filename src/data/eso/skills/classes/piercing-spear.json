@@ -1,0 +1,11 @@
+{
+  "id": "44046",
+  "slug": "piercing-spear",
+  "name": "Piercing Spear",
+  "description": "Increases your Critical Damage by 12%. \n\nIncreases your damage done to blocking players by 12%.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

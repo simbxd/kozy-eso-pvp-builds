@@ -1,0 +1,22 @@
+{
+  "id": "grand-rejuvenation",
+  "name": "Grand Rejuvenation",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Dragonstar Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "The initial heal of Grand Healing invigorates you and group members affected for 6 seconds, restoring 5-224 Magicka and Stamina every 2 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Grand_Rejuvenation",
+  "esohub_url": "https://eso-hub.com/en/sets/grand-rejuvenation"
+}

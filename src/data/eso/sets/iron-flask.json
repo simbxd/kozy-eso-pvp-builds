@@ -1,0 +1,40 @@
+{
+  "id": "iron-flask",
+  "name": "Iron Flask",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Fargrave, Forgotten Feretory",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you drink a potion while in combat, gain 7779 Armor for 20 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Iron_Flask",
+  "esohub_url": "https://eso-hub.com/en/sets/iron-flask"
+}

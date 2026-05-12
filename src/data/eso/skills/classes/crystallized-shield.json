@@ -1,0 +1,11 @@
+{
+  "id": "86138",
+  "slug": "crystallized-shield",
+  "name": "Crystallized Shield",
+  "description": "Spin a shield of ice around you, absorbing up to 16528 damage from 3 projectiles. \n\nEach time you absorb a projectile you gain 2 Ultimate.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

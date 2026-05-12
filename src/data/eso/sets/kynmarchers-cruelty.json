@@ -1,0 +1,40 @@
+{
+  "id": "kynmarchers-cruelty",
+  "name": "Kynmarcher's Cruelty",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Deadlands",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you deal direct damage, you apply one of 5 random Major debuffs to enemies within 8 meters of you for 18 seconds. This effect can occur once every 8 seconds and only if an enemy is in range.\n\nEligible effects are Major Breach, Major Cowardice, Major Defile, Major Maim, and Major Vulnerability.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Kynmarcher's_Cruelty",
+  "esohub_url": "https://eso-hub.com/en/sets/kynmarchers-cruelty"
+}

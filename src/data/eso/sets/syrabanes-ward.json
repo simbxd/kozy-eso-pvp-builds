@@ -1,0 +1,22 @@
+{
+  "id": "syrabanes-ward",
+  "name": "Syrabane's Ward",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "waist"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "While actively Bracing, you create a 12 meter zone of protection but you can no longer move. Group members within the zone increase the amount of damage they can block by 30% and their Health Recovery by 950. The Health Recovery cannot affect yourself.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Syrabane's_Ward",
+  "esohub_url": "https://eso-hub.com/en/sets/syrabanes-ward"
+}

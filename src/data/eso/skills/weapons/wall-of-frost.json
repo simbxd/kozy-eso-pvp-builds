@@ -1,0 +1,11 @@
+{
+  "id": "41668",
+  "slug": "wall-of-frost",
+  "name": "Wall of Frost",
+  "description": "Slam your staff down to create an icy barrier in front of you, dealing 280 Frost Damage to enemies in the target area every 1 second and applying Frost Shield for 6 seconds to you and nearby allies that absorbs up to 4132 damage from projectiles.\n\nChilled enemies are afflicted with Minor Breach and their Movement Speed is reduced by 40% for 4 seconds.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

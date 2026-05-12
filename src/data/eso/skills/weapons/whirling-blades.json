@@ -1,0 +1,11 @@
+{
+  "id": "40731",
+  "slug": "whirling-blades",
+  "name": "Whirling Blades",
+  "description": "Launch yourself into a lethal spin, dealing 1799 Physical Damage to nearby enemies. Deals up to 100% more damage to enemies with less than 50% Health.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

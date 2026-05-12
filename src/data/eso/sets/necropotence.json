@@ -1,0 +1,40 @@
+{
+  "id": "necropotence",
+  "name": "Necropotence",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Rivenspire",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "While you have a pet active, your Max Magicka is increased by 72-3132.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Necropotence",
+  "esohub_url": "https://eso-hub.com/en/sets/necropotence"
+}

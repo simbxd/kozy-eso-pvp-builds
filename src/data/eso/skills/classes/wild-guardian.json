@@ -1,0 +1,11 @@
+{
+  "id": "85993",
+  "slug": "wild-guardian",
+  "name": "Wild Guardian",
+  "description": "Rouse a grizzly to fight by your side. The grizzly swipes at an enemy, dealing 659 Bleed Damage, and sometimes swipes all enemies in front of it, dealing 2640 Bleed Damage and stunning them for 2 seconds.\n\nOnce summoned you can activate Guardian's Savagery for 75 Ultimate, to maul an enemy for 3697 Bleed Damage. Deals 100% more damage to enemies below 25% Health.\n\nThe damage has a higher chance to apply the Hemorrhaging status effect.",
+  "category": "classes",
+  "skill_line": "Animal Companions",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

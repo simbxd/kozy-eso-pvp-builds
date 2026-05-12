@@ -1,0 +1,45 @@
+{
+  "id": "perfected-transformative-hope",
+  "name": "Perfected Transformative Hope",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Necrom, Sanity's Edge",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, when you heal yourself or an ally that is below 50% Health, you ignite a Spark of Hope within them for 3 seconds. If they are above 90% Health when the effect ends, you and the ally gain Major Heroism for 15 seconds. This effect can occur once every 20 seconds per target.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Transformative_Hope",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-transformative-hope"
+}

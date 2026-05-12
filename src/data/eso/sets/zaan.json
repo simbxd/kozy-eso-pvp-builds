@@ -1,0 +1,28 @@
+{
+  "id": "zaan",
+  "name": "Zaan",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Dragon Bones in Scalecaller Peak, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 2,
+      "stat": "When you deal Critical Damage with a Light or Heavy Attack, you have a 33% chance to tether to your enemy for 10 seconds as long as you remain within 8 meters of them. Enemies touching the tether take 145 Flame damage every 1 second, increasing by 100% per tick and are afflicted with the Burning status effect. This effect can occur once every 20 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Zaan",
+  "esohub_url": "https://eso-hub.com/en/sets/zaan"
+}

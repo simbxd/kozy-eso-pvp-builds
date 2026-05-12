@@ -1,0 +1,11 @@
+{
+  "id": "46630",
+  "slug": "purge",
+  "name": "Purge",
+  "description": "Cleanse yourself and your group, removing up to 3 negative effects immediately.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,45 @@
+{
+  "id": "innate-axiom",
+  "name": "Innate Axiom",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Clockwork City, The Refurbishing Yard",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage to your Class abilities.",
+      "value": 400
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Innate_Axiom",
+  "esohub_url": "https://eso-hub.com/en/sets/innate-axiom"
+}

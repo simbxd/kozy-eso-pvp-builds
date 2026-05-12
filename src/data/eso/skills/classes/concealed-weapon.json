@@ -1,0 +1,11 @@
+{
+  "id": "36244",
+  "slug": "concealed-weapon",
+  "name": "Concealed Weapon",
+  "description": "Slash an enemy, dealing 2556 Magic Damage. \n\nIf you strike an enemy from their flank you set them Off Balance.\n\nWhen you leave Sneak or invisibility while in combat, increase your damage done with this ability by 10% for 15 seconds.\n\nWhile slotted on either bar, you gain Minor Expedition, increasing your Movement Speed by 15%.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "42960",
+  "slug": "shock-impulse",
+  "name": "Shock Impulse",
+  "description": "Release a surge of storm energy, dealing 1742 Shock Damage to nearby enemies. This damage is increased by 5% for each enemy hit, up to 6 times.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

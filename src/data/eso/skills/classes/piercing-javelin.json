@@ -1,0 +1,11 @@
+{
+  "id": "26975",
+  "slug": "piercing-javelin",
+  "name": "Piercing Javelin",
+  "description": "Hurl your spear at an enemy with godlike strength, dealing 1392 Magic Damage and knocking them back 8 meters.\n\nThis ability ignores the enemy's Resistances and cannot be blocked.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

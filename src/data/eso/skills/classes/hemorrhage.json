@@ -1,0 +1,11 @@
+{
+  "id": "45060",
+  "slug": "hemorrhage",
+  "name": "Hemorrhage",
+  "description": "Increases your Critical Damage by 10%. \n\nDealing Critical Damage grants you and your group Minor Savagery, increasing your Weapon Critical rating by 1314 for 20 seconds.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

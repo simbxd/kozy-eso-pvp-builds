@@ -1,0 +1,11 @@
+{
+  "id": "40183447",
+  "slug": "chakram-shields",
+  "name": "Chakram Shields",
+  "description": "Carve the runes of the Blind Man to call forth spinning mystical discs. Discs surround you or up to 4 allies in front of you, granting a shield that absorbs 3068 damage for 6 seconds.\n\nDiscs prefer your reticle target, or low-Health targets without shields.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

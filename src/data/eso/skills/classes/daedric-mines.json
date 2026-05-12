@@ -1,0 +1,11 @@
+{
+  "id": "29909",
+  "slug": "daedric-mines",
+  "name": "Daedric Mines",
+  "description": "Surprise your foes by placing 3 volatile Daedric mines around you, which take 3 seconds to arm and last for 15 seconds.\n\nWhen a mine is triggered it explodes, dealing 2613 Magic Damage and immobilizing the enemy for 2 seconds. Enemies can only be damaged by your mines once every 2 seconds.",
+  "category": "classes",
+  "skill_line": "Dark Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

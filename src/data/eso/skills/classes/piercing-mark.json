@@ -1,0 +1,11 @@
+{
+  "id": "37631",
+  "slug": "piercing-mark",
+  "name": "Piercing Mark",
+  "description": "Expose an enemy's weaknesses by applying Major Breach to them, reducing Physical Resistance and Spell Resistance by 5948 for 20 seconds.\n\nYou can detect marked enemies even if they use stealth or invisibility for 3 seconds. When a marked enemy dies, you heal to full Health.\n\nYou can only have one Piercing Mark active at a time.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

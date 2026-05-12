@@ -1,0 +1,11 @@
+{
+  "id": "45607",
+  "slug": "might-of-the-guild",
+  "name": "Might of the Guild",
+  "description": "Casting a Mages Guild ability grants you Empower, increasing the damage of your Heavy Attacks against monsters by 70% for 10 seconds.",
+  "category": "guild",
+  "skill_line": "Mages Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

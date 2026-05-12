@@ -1,0 +1,40 @@
+{
+  "id": "phoenix-moth-theurge",
+  "name": "Phoenix Moth Theurge",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Galen",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Healing yourself or an ally grants the target Minor Courage and Minor Force for 10 seconds, increasing their Weapon and Spell Damage by 215 and their Critical Damage done by 10%. This effect can occur once every 12 seconds per target.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Phoenix_Moth_Theurge",
+  "esohub_url": "https://eso-hub.com/en/sets/phoenix-moth-theurge"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "nerieneth",
+  "name": "Nerien'eth",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Nerien'eth in Crypt of Hearts II, Glirion the Redbeard",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "When you deal direct damage, you have a 15% chance to summon a Lich crystal that explodes after 2 seconds, dealing 1360 Magic damage to all enemies within 4 meters. This effect can occur once every 3 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nerien'eth",
+  "esohub_url": "https://eso-hub.com/en/sets/nerieneth"
+}

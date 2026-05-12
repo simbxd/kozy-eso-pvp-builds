@@ -1,0 +1,11 @@
+{
+  "id": "139909",
+  "slug": "hand-brush",
+  "name": "Hand Brush",
+  "description": "Removes 1 layer of soil or rock from a 1x1 area.\n\nGenerates: 1 Intuition\nMaximum Intuition: 4.",
+  "category": "world",
+  "skill_line": "Excavation",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

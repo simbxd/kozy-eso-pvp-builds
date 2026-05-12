@@ -1,0 +1,11 @@
+{
+  "id": "40115001",
+  "slug": "bone-goliath-transformation",
+  "name": "Bone Goliath Transformation",
+  "description": "Become a horrific Bone Goliath, increasing your Max Health by 30000 for 20 seconds and immediately restoring 30000 Health. \n\nWhile transformed, your damaging Light Attacks restore 319 Health and your fully-charged Heavy Attacks restore 800 Health. This ability scales off your Max Health.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

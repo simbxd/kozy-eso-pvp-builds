@@ -1,0 +1,11 @@
+{
+  "id": "32111",
+  "slug": "dark-talons",
+  "name": "Dark Talons",
+  "description": "Call forth talons from the ground, dealing 1742 Flame Damage to enemies near you and immobilizing them for 4 seconds. \n\nAn ally near the talons can activate the Ignite synergy, dealing 2812 Flame Damage to all enemies held within them.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

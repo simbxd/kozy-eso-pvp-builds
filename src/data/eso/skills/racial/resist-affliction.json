@@ -1,0 +1,11 @@
+{
+  "id": "45319",
+  "slug": "resist-affliction",
+  "name": "Resist Affliction",
+  "description": "Increases your Max Stamina by 2000 and your Disease and Poison Resistance by 2310.",
+  "category": "racial",
+  "skill_line": "Wood Elf Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

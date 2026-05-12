@@ -1,0 +1,40 @@
+{
+  "id": "eye-of-nahviintaas",
+  "name": "Eye of Nahviintaas",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Elsweyr, Sunspire",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When an ally activates a synergy you have created within 10 seconds, you and the ally who activated the synergy get 12% cost reduction for non-Ultimate abilities for 3 seconds. This effect can occur every 6 seconds per target.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Eye_of_Nahviintaas",
+  "esohub_url": "https://eso-hub.com/en/sets/eye-of-nahviintaas"
+}

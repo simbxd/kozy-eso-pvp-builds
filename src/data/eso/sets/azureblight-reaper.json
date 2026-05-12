@@ -1,0 +1,40 @@
+{
+  "id": "azureblight-reaper",
+  "name": "Azureblight Reaper",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Grahtwood, Lair of Maarselok",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing damage over time applies a stack of Blight Seed to the target for 5 seconds. At 20 stacks, Blight Seed explodes, dealing 667 Disease damage to the target and nearby enemies, increasing by 150% per additional monster hit, up to 600%. \n\nThe damage scales off your Weapon or Spell Damage and can occur once every 1 second. Enemies can only have one Blight Seed at a time and require 20 more stacks per group member wearing this set.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Azureblight_Reaper",
+  "esohub_url": "https://eso-hub.com/en/sets/azureblight-reaper"
+}

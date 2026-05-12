@@ -1,0 +1,11 @@
+{
+  "id": "40118639",
+  "slug": "necrotic-potency",
+  "name": "Necrotic Potency",
+  "description": "Sap the lingering life from fresh corpses, granting you 6 Ultimate and healing 682 Health every 1 second for 2 seconds per additional corpse. This ability scales off your Max Health.\n\nWhile slotted, your damage taken is reduced by 3%.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

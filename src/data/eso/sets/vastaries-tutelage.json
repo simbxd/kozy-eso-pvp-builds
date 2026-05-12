@@ -1,0 +1,50 @@
+{
+  "id": "vastaries-tutelage",
+  "name": "Vastarie's Tutelage",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Northern Elsweyr, Rimmen Masterworks",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you resurrect an ally, you and your ally gain 6-258 Weapon and Spell Damage and 10% cost reduction to non-Ultimate abilities for 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vastarie's_Tutelage",
+  "esohub_url": "https://eso-hub.com/en/sets/vastaries-tutelage"
+}

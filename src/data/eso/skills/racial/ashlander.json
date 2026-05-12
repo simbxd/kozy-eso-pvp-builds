@@ -1,0 +1,11 @@
+{
+  "id": "36588",
+  "slug": "ashlander",
+  "name": "Ashlander",
+  "description": "Increases your experience gain with the Dual Wield skill line by 15%.\n\nReduces your damage taken from environmental lava by 50%.",
+  "category": "racial",
+  "skill_line": "Dark Elf Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

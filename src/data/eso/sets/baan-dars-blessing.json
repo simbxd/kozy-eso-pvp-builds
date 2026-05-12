@@ -1,0 +1,40 @@
+{
+  "id": "baan-dars-blessing",
+  "name": "Baan Dar's Blessing",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Reduce the duration of Breakable Crowd Control, Immobilizes, and Snares on you by 75%.\n\nReduce the duration of your Breakable Crowd Control, Immobilizes, and Snares by 38%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Baan_Dar's_Blessing",
+  "esohub_url": "https://eso-hub.com/en/sets/baan-dars-blessing"
+}

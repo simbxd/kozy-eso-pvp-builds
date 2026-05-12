@@ -1,0 +1,11 @@
+{
+  "id": "63255",
+  "slug": "resolving-vigor",
+  "name": "Resolving Vigor",
+  "description": "Let loose a battle cry, instilling yourself with resolve and healing for 5388 Health over 5 seconds.\n\nAfter casting you gain Minor Resolve, increasing your Physical and Spell Resistance by 2974, for 20 seconds.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

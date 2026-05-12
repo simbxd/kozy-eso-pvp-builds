@@ -1,0 +1,40 @@
+{
+  "id": "maligaligs-maelstrom",
+  "name": "Maligalig's Maelstrom",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Summerset, Coral Aerie",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you overheal yourself or a group member with a Direct Heal, you apply Maligalig's Maelstrom to the target for 6 seconds, dealing 33% of the overhealing amount, up to a maximum of 3300, as Shock Damage once every 1 second to enemies within 7 meters. This effect can occur once every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Maligalig's_Maelstrom",
+  "esohub_url": "https://eso-hub.com/en/sets/maligaligs-maelstrom"
+}

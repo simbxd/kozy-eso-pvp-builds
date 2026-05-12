@@ -1,0 +1,11 @@
+{
+  "id": "37603",
+  "slug": "mark-target",
+  "name": "Mark Target",
+  "description": "Expose an enemy's weaknesses by applying Major Breach to them, reducing Physical Resistance and Spell Resistance by 5948 for 20 seconds.\n\nWhen a marked enemy dies, you heal to full Health.\n\nYou can only have one Mark Target active at a time.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

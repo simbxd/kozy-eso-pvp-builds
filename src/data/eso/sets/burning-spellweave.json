@@ -1,0 +1,40 @@
+{
+  "id": "burning-spellweave",
+  "name": "Burning Spellweave",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Greenshade, City of Ash",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a Flame Damage ability, you apply the Burning status effect to the enemy and increase your Weapon and Spell Damage by 11-490 for 8 seconds. These effects can occur once every 12 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Burning_Spellweave",
+  "esohub_url": "https://eso-hub.com/en/sets/burning-spellweave"
+}

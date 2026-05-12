@@ -1,0 +1,11 @@
+{
+  "id": "37913",
+  "slug": "crippling-grasp",
+  "name": "Crippling Grasp",
+  "description": "Sap an enemy's agility and wrack them with pain, dealing 1199 Magic Damage and an additional 4350 Magic Damage over 20 seconds, immobilizing them for 2 seconds, and reducing their Movement Speed by 30% for 4 seconds.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

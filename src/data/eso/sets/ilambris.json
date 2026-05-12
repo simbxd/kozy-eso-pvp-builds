@@ -1,0 +1,28 @@
+{
+  "id": "ilambris",
+  "name": "Ilambris",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Ilambris-Athor or Ilambris-Zaven in Crypt of Hearts I, Glirion the Redbeard",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "When you deal Flame or Shock Damage, you have a 33% chance to summon a meteor shower that deals 145 Flame damage and 145 Shock damage to all enemies within 4 meters every 1 second for 5 seconds. This effect can occur once every 8 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ilambris",
+  "esohub_url": "https://eso-hub.com/en/sets/ilambris"
+}

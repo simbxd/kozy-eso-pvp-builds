@@ -1,0 +1,11 @@
+{
+  "id": "27043",
+  "slug": "repentance",
+  "name": "Repentance",
+  "description": "Consecrate the souls of the fallen, healing you and your allies for 3000 Health and restoring 3000 Stamina to you for each corpse nearby.\n\nWhile slotted on either bar, you gain Minor Fortitude, Minor Endurance, and Minor Intellect, increasing your Health, Stamina, and Magicka Recovery by 15%.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

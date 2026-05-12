@@ -1,0 +1,11 @@
+{
+  "id": "63066",
+  "slug": "radiant-glory",
+  "name": "Radiant Glory",
+  "description": "Burn an enemy with a ray of holy fire, dealing 7482 Magic Damage over 3.8 seconds. Deals up to 500% more damage to enemies below 33% Health.\n\nYou heal for 15% of the damage inflicted.\n\nThis ability is considered direct damage.",
+  "category": "classes",
+  "skill_line": "Dawn's Wrath",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

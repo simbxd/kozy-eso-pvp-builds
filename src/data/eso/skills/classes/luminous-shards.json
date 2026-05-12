@@ -1,0 +1,11 @@
+{
+  "id": "27122",
+  "slug": "luminous-shards",
+  "name": "Luminous Shards",
+  "description": "Send your spear into the heavens to bring down a shower of divine wrath, dealing 1742 Magic Damage to enemies in the area and an additional 165 Magic Damage every 1 second for 10 seconds.\n\nYou or an ally near the spear can activate the Holy Shards synergy, which restores 3960 Magicka and Stamina.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

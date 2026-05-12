@@ -1,0 +1,40 @@
+{
+  "id": "frozen-watcher",
+  "name": "Frozen Watcher",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Gold Coast, Depths of Malatar",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Summon a blizzard around you while you are Bracing, inflicting 496 Frost damage every 1 second to enemies within 6 meters. This effect scales off your Max Health and has a 15% chance of inflicting the Chilled status effect.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Frozen_Watcher",
+  "esohub_url": "https://eso-hub.com/en/sets/frozen-watcher"
+}

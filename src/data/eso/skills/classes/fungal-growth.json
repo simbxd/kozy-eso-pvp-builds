@@ -1,0 +1,11 @@
+{
+  "id": "93771",
+  "slug": "fungal-growth",
+  "name": "Fungal Growth",
+  "description": "Seed a large area of mushrooms in front of you, healing you and your allies for 2613 Health.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

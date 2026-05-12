@@ -1,0 +1,11 @@
+{
+  "id": "24320",
+  "slug": "solar-disturbance",
+  "name": "Solar Disturbance",
+  "description": "Call down a fragment of the sun, dealing 1161 Magic Damage every 1 second for 8 seconds to enemies in the area and applying Major Maim to them for 10 seconds, reducing their damage done by 10%.\n\nAn ally near the fragment can activate the Supernova synergy, dealing 2607 Magic Damage to all enemies in the area and stunning them for 3 seconds.",
+  "category": "classes",
+  "skill_line": "Dawn's Wrath",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

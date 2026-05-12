@@ -1,0 +1,40 @@
+{
+  "id": "grave-stake-collector",
+  "name": "Grave-Stake Collector",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Murkmire, Sweet Breeze Overlook",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When an enemy you recently damaged dies, they drop a grave-stake for 6 seconds. When you touch the grave-stake, you restore 106-4564 Stamina and Magicka. Only one grave-stake can appear at a time.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Grave-Stake_Collector",
+  "esohub_url": "https://eso-hub.com/en/sets/grave-stake-collector"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "86168",
+  "slug": "gripping-shards",
+  "name": "Gripping Shards",
+  "description": "Conjure icy shards around you to skewer enemies in the area, immobilizing them for 3 seconds and dealing 419 Frost Damage every 1 second for 12 seconds.\n\nEnemies hit are overcome with bitter cold, reducing their Movement Speed by 30% for 3 seconds.\n\nDamage done is based on your Max Health and has a higher chance to apply the Chilled status effect.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

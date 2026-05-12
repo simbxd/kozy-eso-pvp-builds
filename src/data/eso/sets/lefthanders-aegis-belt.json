@@ -1,0 +1,22 @@
+{
+  "id": "lefthanders-aegis-belt",
+  "name": "Lefthander's Aegis Belt",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "waist"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Roll Dodge no longer evades attack and instead grants a damage shield that absorbs up to 20990 damage over 1 second. This damage shield is unaffected by Battle Spirit.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lefthander's_Aegis_Belt",
+  "esohub_url": "https://eso-hub.com/en/sets/lefthanders-aegis-belt"
+}

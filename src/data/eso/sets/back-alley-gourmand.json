@@ -1,0 +1,40 @@
+{
+  "id": "back-alley-gourmand",
+  "name": "Back-Alley Gourmand",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Galen",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "While you have a food buff active, your Critical Damage and Critical Healing is increased by 13%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Back-Alley_Gourmand",
+  "esohub_url": "https://eso-hub.com/en/sets/back-alley-gourmand"
+}

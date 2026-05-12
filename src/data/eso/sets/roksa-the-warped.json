@@ -1,0 +1,38 @@
+{
+  "id": "roksa-the-warped",
+  "name": "Roksa the Warped",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Roksa the Warped in Bal Sunnar, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Stamina Recovery",
+      "value": 70
+    },
+    {
+      "count": 1,
+      "stat": "Magicka Recovery",
+      "value": 70
+    },
+    {
+      "count": 1,
+      "stat": "Health Recovery",
+      "value": 70
+    },
+    {
+      "count": 2,
+      "stat": "Each second you are in combat, gain a stack of Darklight, up to 30 stacks max. Each stack of Darklight increases your Stamina Recovery, Magicka Recovery, and Health Recovery by 8. Each second you are out of combat, lose a stack of Darklight.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Roksa_the_Warped",
+  "esohub_url": "https://eso-hub.com/en/sets/roksa-the-warped"
+}

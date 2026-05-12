@@ -1,0 +1,27 @@
+{
+  "id": "perfected-titanic-cleave",
+  "name": "Perfected Titanic Cleave",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Dragonstar Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "(2 perfected items) Adds 27-1190 Offensive Penetration",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "Increases the direct damage Cleave deals by 36-1550 for each enemy in its cone.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Titanic_Cleave",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-titanic-cleave"
+}

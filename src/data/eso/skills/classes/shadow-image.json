@@ -1,0 +1,11 @@
+{
+  "id": "36298",
+  "slug": "shadow-image",
+  "name": "Shadow Image",
+  "description": "Summon a shade version of yourself to stay in place and attack an enemy from range for 20 seconds. \n\nThe shade shoots at an enemy, dealing 478 Magic Damage every 2 seconds, and inflicts Minor Maim for 4 seconds, reducing the enemy's damage done by 5%.\n\nWhile the shade is summoned, you can activate this ability again for no cost to teleport to the shade's location.",
+  "category": "classes",
+  "skill_line": "Shadow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

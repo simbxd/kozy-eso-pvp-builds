@@ -1,0 +1,28 @@
+{
+  "id": "shadowrend",
+  "name": "Shadowrend",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Shadowrend in The Banished Cells I, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "When you take damage, you summon a shadowy Clannfear for 15 seconds. The Clannfear's attacks deal 615 Magic damage and apply Minor Maim, reducing the target's damage done by 5% for 2 seconds. \n\nThe Clannfear can be summoned once every 15 seconds and its damage scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shadowrend",
+  "esohub_url": "https://eso-hub.com/en/sets/shadowrend"
+}

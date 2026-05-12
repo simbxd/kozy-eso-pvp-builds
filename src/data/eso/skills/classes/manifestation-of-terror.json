@@ -1,0 +1,11 @@
+{
+  "id": "38096",
+  "slug": "manifestation-of-terror",
+  "name": "Manifestation of Terror",
+  "description": "Conceal a sinister trap at the target location, which takes 2 seconds to arm and lasts for 20 seconds.\n\nWhen the trap is triggered, up to 6 enemies in the area become terrified, causing them to cower in fear for 2 seconds and be afflicted with Major Cowardice for 10 seconds, reducing their Weapon and Spell Damage by 430.",
+  "category": "classes",
+  "skill_line": "Shadow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

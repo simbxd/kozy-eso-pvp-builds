@@ -1,0 +1,11 @@
+{
+  "id": "45202",
+  "slug": "master-ritualist",
+  "name": "Master Ritualist",
+  "description": "Increases resurrection speed by 20%. \n\nResurrected allies return with 100% more Health. \n\nGives you a 50% chance to fill an empty Soul Gem after each successful resurrection.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

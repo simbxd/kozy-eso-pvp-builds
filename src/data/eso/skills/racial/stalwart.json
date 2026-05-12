@@ -1,0 +1,11 @@
+{
+  "id": "45298",
+  "slug": "stalwart",
+  "name": "Stalwart",
+  "description": "Increases your Max Stamina by 1500.\n\nWhen you take damage, you gain 5 Ultimate.  This effect can occur once every 10 seconds.",
+  "category": "racial",
+  "skill_line": "Nord Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

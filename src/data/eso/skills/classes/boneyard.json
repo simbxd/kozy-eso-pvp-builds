@@ -1,0 +1,11 @@
+{
+  "id": "40115252",
+  "slug": "boneyard",
+  "name": "Boneyard",
+  "description": "Desecrate the ground at the target location, dealing 3080 Frost Damage over 10 seconds to enemies inside and applying Minor Vulnerability, increasing their damage taken by 5%.\n\nConsumes a corpse on cast to deal 30% more damage.\n\nAn ally in the area can activate the Grave Robber synergy, dealing 2249 Frost Damage to nearby enemies and healing for the damage done.",
+  "category": "classes",
+  "skill_line": "Grave Lord",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

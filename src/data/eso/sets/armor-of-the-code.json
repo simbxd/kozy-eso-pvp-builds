@@ -1,0 +1,38 @@
+{
+  "id": "armor-of-the-code",
+  "name": "Armor of the Code",
+  "type": "Jewelry",
+  "acquisition": "Overland",
+  "location": "No longer dropped",
+  "dlc": "Base Game",
+  "pieces": 4,
+  "slots": [
+    "necklace",
+    "ring"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Increase your Critical Chance against targets with a lower % of health than you by 47-2051.",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Armor_of_the_Code",
+  "esohub_url": "https://eso-hub.com/en/sets/armor-of-the-code"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45476",
+  "slug": "slaughter",
+  "name": "Slaughter",
+  "description": "Increases damage with Dual Wield abilities by 20% against enemies with under 25% Health.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

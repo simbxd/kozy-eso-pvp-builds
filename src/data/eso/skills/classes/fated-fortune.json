@@ -1,0 +1,11 @@
+{
+  "id": "184847",
+  "slug": "fated-fortune",
+  "name": "Fated Fortune",
+  "description": "Warp fate when you generate or consume Crux, increasing your Critical Damage and Critical Healing by 12% for 7 seconds.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

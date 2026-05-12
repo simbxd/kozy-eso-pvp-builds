@@ -1,0 +1,11 @@
+{
+  "id": "40186229",
+  "slug": "zenas-empowering-disc",
+  "name": "Zenas' Empowering Disc",
+  "description": "Draw forth your tome and invoke the enigmatum of Morian Zenas to conjure a vortex of eldritch power. Entering this vortex grants you and your allies Minor Courage, Minor Fortitude, Minor Intellect, and Minor Endurance, increasing your Weapon and Spell Damage by 215 and your Health, Magicka, and Stamina Recovery by 15%.\n\nThese effects cling to you and your allies for up to 10 seconds after leaving the vortex.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

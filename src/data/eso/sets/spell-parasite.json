@@ -1,0 +1,40 @@
+{
+  "id": "spell-parasite",
+  "name": "Spell Parasite",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Blackreach, Greymoor Caverns, Parasite's Cave",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Whenever you deal damage, you restore 1-63 Magicka. This effect can occur once every 0.25 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spell_Parasite",
+  "esohub_url": "https://eso-hub.com/en/sets/spell-parasite"
+}

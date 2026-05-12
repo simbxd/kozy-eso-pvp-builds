@@ -1,0 +1,22 @@
+{
+  "id": "timeless-blessing",
+  "name": "Timeless Blessing",
+  "type": "Monster",
+  "acquisition": "Trial",
+  "location": "Clockwork City, Asylum Sanctorium",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "When you cast Blessing of Protection, the cost of your Magicka and Stamina healing abilities are reduced by 21% for 3 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Timeless_Blessing",
+  "esohub_url": "https://eso-hub.com/en/sets/timeless-blessing"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "30674",
+  "slug": "summon-volatile-familiar",
+  "name": "Summon Volatile Familiar",
+  "description": "Command the powers of Oblivion to send a Daedric familiar to fight at your side. The familiar's attacks deal 358 Shock Damage.\n\nOnce summoned, you can activate the familiar's special ability for 3510 Magicka, dealing 435 Shock Damage every 2 seconds for 20 seconds to enemies near them. The second hit stuns enemies hit for 3 seconds.\n\nThe familiar remains until killed or unsummoned.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "venomous-smite",
+  "name": "Venomous Smite",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Western Skyrim",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing Critical Damage inflicts Hunter's Venom on your enemy for 10 seconds, dealing 714 Poison damage to your target and enemies within 6 meters of them every 2 seconds. This effect can occur once every 15 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Venomous_Smite",
+  "esohub_url": "https://eso-hub.com/en/sets/venomous-smite"
+}

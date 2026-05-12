@@ -1,0 +1,45 @@
+{
+  "id": "judgment-of-akatosh",
+  "name": "Judgment of Akatosh",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards of the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Armor",
+      "value": 2291
+    },
+    {
+      "count": 5,
+      "stat": "When you deal direct damage with a Blink, Charge, Leap, Teleport, or Pull ability, you distort time on your enemy. After 3 seconds, the enemy bursts with temporal energy, reducing the Movement Speed of all enemies within 12 meters by 70% for 6 seconds and stunning them for 3 seconds. This effect can be blocked and can occur once every 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Judgment_of_Akatosh",
+  "esohub_url": "https://eso-hub.com/en/sets/judgment-of-akatosh"
+}

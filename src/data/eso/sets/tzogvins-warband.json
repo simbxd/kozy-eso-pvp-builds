@@ -1,0 +1,40 @@
+{
+  "id": "tzogvins-warband",
+  "name": "Tzogvin's Warband",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Eastmarch, Frostvault",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Critical Damage, you gain a stack of Precision, increasing your Critical Chance by 4-177 for 5 seconds, up to 10 stacks max. At max stacks, you also gain Minor Force, increasing your Critical Damage done by 10%.  This effect can occur once every half second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Tzogvin's_Warband",
+  "esohub_url": "https://eso-hub.com/en/sets/tzogvins-warband"
+}

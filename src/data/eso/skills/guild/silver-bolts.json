@@ -1,0 +1,11 @@
+{
+  "id": "42655",
+  "slug": "silver-bolts",
+  "name": "Silver Bolts",
+  "description": "Fire a Dawnguard Vampire Hunter's crossbow bolt to strike an enemy, dealing 2090 Physical Damage.",
+  "category": "guild",
+  "skill_line": "Fighters Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

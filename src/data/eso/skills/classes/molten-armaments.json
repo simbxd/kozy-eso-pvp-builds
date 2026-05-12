@@ -1,0 +1,11 @@
+{
+  "id": "32173",
+  "slug": "molten-armaments",
+  "name": "Molten Armaments",
+  "description": "Charge you and your grouped allies' weapons with volcanic power to gain Major Brutality and Sorcery, increasing your Weapon and Spell Damage by 20% for 30 seconds.\n\nWhile active, dealing damage with Light and Heavy Attacks causes an additional 448 Flame Damage, up to once every 1.5 seconds.\n\nYou also gain Empower for the duration, increasing the damage of your Heavy Attacks against monsters by 70%.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

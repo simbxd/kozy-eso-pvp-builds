@@ -1,0 +1,40 @@
+{
+  "id": "pillar-of-nirn",
+  "name": "Pillar of Nirn",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Craglorn, Falkreath Hold",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage, you create a fissure underneath the enemy after 1 second, dealing 803 Bleed damage to all enemies within 2.5 meters and causing them to bleed for an additional 2405 Bleed damage over 10 seconds. This effect can occur once every 10 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pillar_of_Nirn",
+  "esohub_url": "https://eso-hub.com/en/sets/pillar-of-nirn"
+}

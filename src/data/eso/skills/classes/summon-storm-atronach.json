@@ -1,0 +1,11 @@
+{
+  "id": "30538",
+  "slug": "summon-storm-atronach",
+  "name": "Summon Storm Atronach",
+  "description": "Summon an immobile storm atronach at the target location. Its arrival deals 2249 Shock Damage and stuns enemies for 3 seconds. The atronach zaps the closest enemy, dealing 1124 Shock Damage every 1 second.\n\nAn ally near the atronach can activate the Charged Lightning synergy, granting nearby allies Major Berserk for 10 seconds, increasing their damage done by 10%.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

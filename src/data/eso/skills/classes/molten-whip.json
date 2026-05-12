@@ -1,0 +1,11 @@
+{
+  "id": "23819",
+  "slug": "molten-whip",
+  "name": "Molten Whip",
+  "description": "Lash an enemy with flame, dealing 2399 Flame Damage.\n\nActivating a different Dragonknight ability while in combat grants a stack of Seething Fury up to 3 times, increasing the damage of your next Molten Whip by 33% and your damage done by 5%, or 2% against players, for 10 seconds. The damage done only activates if you are a Dragonknight.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

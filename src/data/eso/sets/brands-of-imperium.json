@@ -1,0 +1,40 @@
+{
+  "id": "brands-of-imperium",
+  "name": "Brands of Imperium",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Imperial City, White-Gold Tower",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage, you grant you and your group members within 8 meters a damage shield that absorbs 261-11260 damage for 6 seconds. This effect can occur once every 12 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Brands_of_Imperium",
+  "esohub_url": "https://eso-hub.com/en/sets/brands-of-imperium"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "black-glove-grounding",
+  "name": "Black-Glove Grounding",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Oathsworn Pit",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "After taking direct damage three times within 5 seconds, you create a 5 meter area for 10 seconds that grants Grounding to you and group members, reducing the cost of roll dodging by 20% and increasing block mitigation by 12% for 15 seconds. This effect can occur once every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Black-Glove_Grounding",
+  "esohub_url": "https://eso-hub.com/en/sets/black-glove-grounding"
+}

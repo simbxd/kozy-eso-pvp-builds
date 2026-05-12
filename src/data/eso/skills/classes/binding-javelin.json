@@ -1,0 +1,11 @@
+{
+  "id": "26992",
+  "slug": "binding-javelin",
+  "name": "Binding Javelin",
+  "description": "Hurl your spear at an enemy with godlike strength, dealing 1393 Physical Damage and stunning them for 4 seconds.\n\nThis ability ignores the enemy's Resistances and cannot be blocked.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

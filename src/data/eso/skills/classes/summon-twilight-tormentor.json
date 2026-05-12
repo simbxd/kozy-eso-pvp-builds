@@ -1,0 +1,11 @@
+{
+  "id": "30598",
+  "slug": "summon-twilight-tormentor",
+  "name": "Summon Twilight Tormentor",
+  "description": "Call on Azura to send a twilight tormentor to fight at your side. The twilight tormentor's zap deals 478 Shock Damage and its kick deals 478 Shock Damage.\n\nOnce summoned, you can activate the twilight tormentor's special ability for 2700 Magicka, causing it to deal 60% more damage to enemies above 50% Health for 20 seconds.\n\nThe twilight tormentor remains until killed or unsummoned.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

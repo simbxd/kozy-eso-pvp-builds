@@ -1,0 +1,11 @@
+{
+  "id": "45452",
+  "slug": "sword-and-board",
+  "name": "Sword and Board",
+  "description": "Increases your Weapon and Spell Damage by 5% and the amount of damage you can block by 20%.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

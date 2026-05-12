@@ -1,0 +1,11 @@
+{
+  "id": "40117883",
+  "slug": "resistant-flesh",
+  "name": "Resistant Flesh",
+  "description": "Sacrifice your own power to repair damaged flesh, healing you or an ally in front of you for 3600 Health but applying Minor Defile to yourself for 4 seconds, reducing your healing received and damage shield strength by 6%.\n\nYou grant the target Spell and Physical Resistance equal to half the amount healed for 3 seconds.",
+  "category": "classes",
+  "skill_line": "Living Death",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,45 @@
+{
+  "id": "infallible-mage",
+  "name": "Infallible Mage",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Craglorn Trials",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Your Heavy Attacks deal an additional 20-900 damage to monsters. Enemies you damage with fully-charged Heavy Attacks are afflicted with Minor Vulnerability for 10 seconds, increasing their damage taken by 5%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Infallible_Mage",
+  "esohub_url": "https://eso-hub.com/en/sets/infallible-mage"
+}

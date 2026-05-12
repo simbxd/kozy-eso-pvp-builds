@@ -1,0 +1,11 @@
+{
+  "id": "45267",
+  "slug": "dynamic",
+  "name": "Dynamic",
+  "description": "Increases your Max Magicka and Max Stamina by 1910.",
+  "category": "racial",
+  "skill_line": "Dark Elf Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

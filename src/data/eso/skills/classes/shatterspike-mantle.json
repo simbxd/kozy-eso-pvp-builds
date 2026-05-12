@@ -1,0 +1,11 @@
+{
+  "id": "23842",
+  "slug": "shatterspike-mantle",
+  "name": "Shatterspike Mantle",
+  "description": "Envelop your body in molten spikes to increase your damage done by 100 and gain Major Resolve, increasing Physical and Spell Resistance by 5948 for 20 seconds.\n\nAs the armor forms you blast foes around you with shattered obsidian, causing them to take 4785 Flame Damage over 20 seconds. When this effect deals damage you gain a stack of Landslide, up to once every 10 seconds.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

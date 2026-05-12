@@ -1,0 +1,11 @@
+{
+  "id": "45009",
+  "slug": "mountain-giant",
+  "name": "Mountain Giant",
+  "description": "The strength of mountains fuels your mightiest blows.\n\nDealing damage with a fully-charged Heavy Attack also applies Off Balance to the target and restores 1430 Stamina. The Stamina restore can occur once every 0.5 seconds.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

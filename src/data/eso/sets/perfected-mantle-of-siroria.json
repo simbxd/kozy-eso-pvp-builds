@@ -1,0 +1,50 @@
+{
+  "id": "perfected-mantle-of-siroria",
+  "name": "Perfected Mantle of Siroria",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Summerset, Cloudrest",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 200
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 3-129 Weapon and Spell Damage",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Dealing damage with a Light or Heavy Attack creates a ring of fire beneath you for 8 seconds. This effect can occur once every 8 seconds. Every second spent standing in the ring increases your Weapon and Spell Damage by 1-44 for 5 seconds, stacking up to 10 times.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Mantle_of_Siroria",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-mantle-of-siroria"
+}

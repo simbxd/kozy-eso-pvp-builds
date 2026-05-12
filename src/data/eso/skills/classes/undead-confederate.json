@@ -1,0 +1,11 @@
+{
+  "id": "116283",
+  "slug": "undead-confederate",
+  "name": "Undead Confederate",
+  "description": "While you have a Sacrificial Bones, Skeletal Mage, or Spirit Mender active, your Health, Magicka, and Stamina Recovery is increased by 155.",
+  "category": "classes",
+  "skill_line": "Living Death",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

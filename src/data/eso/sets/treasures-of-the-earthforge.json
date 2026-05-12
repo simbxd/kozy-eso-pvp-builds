@@ -1,0 +1,23 @@
+{
+  "id": "treasures-of-the-earthforge",
+  "name": "Treasures of the Earthforge",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "No longer dropped",
+  "dlc": "Base Game",
+  "pieces": 3,
+  "slots": [
+    "ring",
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Treasures_of_the_Earthforge",
+  "esohub_url": "https://eso-hub.com/en/sets/treasures-of-the-earthforge"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "86186",
+  "slug": "frozen-retreat",
+  "name": "Frozen Retreat",
+  "description": "Summon an ancient portal, which arms after 1.5 seconds.\n\nWhen triggered the enemy is teleported to you if within range, immobilized for 3 seconds, and dealt 1799 Frost Damage.\n\nAn ally in the portal can activate the Icy Escape synergy, teleporting them to you and granting them Major Expedition, increasing their Movement Speed by 30% for 8 seconds.\n\nYou can have up to 3 Frozen Retreats active at a time.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

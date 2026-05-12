@@ -1,0 +1,11 @@
+{
+  "id": "41659",
+  "slug": "wall-of-fire",
+  "name": "Wall of Fire",
+  "description": "Slam your staff down to create a flaming barrier in front of you, dealing 280 Flame Damage to enemies in the target area every 1 second.\n\nBurning enemies take 10% more damage from this ability.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

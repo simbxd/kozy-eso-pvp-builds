@@ -1,0 +1,40 @@
+{
+  "id": "spriggans-vigor",
+  "name": "Spriggan's Vigor",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Rivenspire, Shipwright's Regret",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Critical Damage, restore 2-100 Stamina and gain a stack of Wild Growth for 5 seconds, increasing your Max Stamina by 5-222.  This effect can stack up to 10 times and can occur once every 0.5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spriggan's_Vigor",
+  "esohub_url": "https://eso-hub.com/en/sets/spriggans-vigor"
+}

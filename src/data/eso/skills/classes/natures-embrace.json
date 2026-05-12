@@ -1,0 +1,11 @@
+{
+  "id": "93940",
+  "slug": "natures-embrace",
+  "name": "Nature's Embrace",
+  "description": "Launch a vine to swing yourself to an ally, healing you and them for 3594 Health over 10 seconds. Gain 3 Ultimate when either of these effects complete while you are in combat.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

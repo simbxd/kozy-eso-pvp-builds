@@ -1,0 +1,22 @@
+{
+  "id": "cryptcanon-vestments",
+  "name": "Cryptcanon Vestments",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "chest"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "You can no longer cast Ultimate abilities. Instead, casting an Ultimate ability transfers your Ultimate resource to your living group members, divided equally among them.\n\nGain Minor Heroism while you are in combat.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Cryptcanon_Vestments",
+  "esohub_url": "https://eso-hub.com/en/sets/cryptcanon-vestments"
+}

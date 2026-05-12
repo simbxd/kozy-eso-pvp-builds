@@ -1,0 +1,45 @@
+{
+  "id": "perfected-test-of-resolve",
+  "name": "Perfected Test of Resolve",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Necrom, Sanity's Edge",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 34-1487 Armor",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage while under 50% Health, your resolve is tested. If you are also below 50% Stamina, you restore full Health, Magicka, and Stamina while also gaining Major Protection and Major Aegis for 10 seconds. If you are above 50% Stamina you become a Beacon of Hope for 20 seconds, causing your Major and Minor buffs to also grant Major Aegis for 10 seconds. This effect can occur once every 45 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Test_of_Resolve",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-test-of-resolve"
+}

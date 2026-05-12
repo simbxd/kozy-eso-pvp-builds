@@ -1,0 +1,22 @@
+{
+  "id": "titanic-cleave",
+  "name": "Titanic Cleave",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Dragonstar Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Increases the direct damage Cleave deals by 36-1550 for each enemy in its cone.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Titanic_Cleave",
+  "esohub_url": "https://eso-hub.com/en/sets/titanic-cleave"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "radiant-bastion",
+  "name": "Radiant Bastion",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "The Reach",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Deal 10% of all direct damage done to you back to the attacker, up to 4250 damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Radiant_Bastion",
+  "esohub_url": "https://eso-hub.com/en/sets/radiant-bastion"
+}

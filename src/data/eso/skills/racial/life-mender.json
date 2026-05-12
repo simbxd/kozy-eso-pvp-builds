@@ -1,0 +1,11 @@
+{
+  "id": "45258",
+  "slug": "life-mender",
+  "name": "Life Mender",
+  "description": "Increases your healing done by 6%.",
+  "category": "racial",
+  "skill_line": "Argonian Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

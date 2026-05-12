@@ -1,0 +1,11 @@
+{
+  "id": "40118809",
+  "slug": "enduring-undeath",
+  "name": "Enduring Undeath",
+  "description": "Release residual fragments of fallen souls at the target location, healing you and your allies for 2399 Health.\n\nConsumes a corpse on cast to continue to heal you and your allies in the area for 2390 Health over 5 seconds. You can consume up to 5 additional corpses on cast, with each corpse extending the duration of the heal over time by 5 seconds.",
+  "category": "classes",
+  "skill_line": "Living Death",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "39892",
+  "slug": "forward-momentum",
+  "name": "Forward Momentum",
+  "description": "Focus your strength and resolve to gain Major Brutality and Sorcery, increasing your Weapon and Spell Damage by 20%, as well as gaining Minor Endurance, increasing your Stamina Recovery by 15% for 1 minute.\n\nActivating this ability removes all snares and immobilizations from you and grants immunity to them for 4 seconds.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,22 @@
+{
+  "id": "dov-rha-sabatons",
+  "name": "Dov-rha Sabatons",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "feet"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "While Sprinting gain a stack of Draconic Scales every 0.5 seconds, granting you 660 Armor, up to 20 stacks max. Upon stopping you deal 0 Physical damage per stack in an 8 meter shockwave, gain a damage shield equal to damage dealt, and retain Draconic Scales for 10 seconds but cannot gain new stacks. At 20 stacks, this damage will also stun for 3 seconds. The damage scales off the higher of your Physical or Spell Resistance.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dov-rha_Sabatons",
+  "esohub_url": "https://eso-hub.com/en/sets/dov-rha-sabatons"
+}

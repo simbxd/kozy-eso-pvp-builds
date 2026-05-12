@@ -1,0 +1,22 @@
+{
+  "id": "chaotic-whirlwind",
+  "name": "Chaotic Whirlwind",
+  "type": "Monster",
+  "acquisition": "Trial",
+  "location": "Clockwork City, Asylum Sanctorium",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "When you cast Whirlwind while in combat, you gain a stack of Chaotic Whirlwind for 5 seconds, granting you 5% Movement Speed per stack, up to a maximum of 5 times. While Chaotic Whirlwind is active, you gain 6 Weapon and Spell Damage for every 1% bonus Movement Speed you have, up to a maximum of 450.  \n\nAt 5 stacks, the duration doubles but cannot be refreshed.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Chaotic_Whirlwind",
+  "esohub_url": "https://eso-hub.com/en/sets/chaotic-whirlwind"
+}

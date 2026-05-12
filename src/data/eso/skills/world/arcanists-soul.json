@@ -1,0 +1,11 @@
+{
+  "id": "220529",
+  "slug": "arcanists-soul",
+  "name": "Arcanist's Soul",
+  "description": null,
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

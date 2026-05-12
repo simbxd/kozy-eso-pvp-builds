@@ -1,0 +1,11 @@
+{
+  "id": "34100",
+  "slug": "cauterize",
+  "name": "Cauterize",
+  "description": "Activate an aura of embers which cauterizes the wounds of you or up to 6 nearby allies every 3 seconds, healing for 1199 Health.\n\nWhile slotted on either bar, you gain Major Prophecy and Savagery, increasing your Spell and Weapon Critical rating by 2629.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

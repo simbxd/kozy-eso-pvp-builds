@@ -1,0 +1,40 @@
+{
+  "id": "gardener-of-seasons",
+  "name": "Gardener of Seasons",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Infinite Archive",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Gain Herald of Spring, causing your Green Balance overheals to apply Minor Heroism for 3 seconds. \n\nCasting a Heal ability while Bracing consumes Herald of Spring and gives you Harbinger of Fall for 6 seconds, causing your Green Balance overheals to create an 8 meter area for 5 seconds, applying Major Cowardice to enemies and Minor Vitality to allies. You can create an area once every 5 seconds.\n\nWhen Harbinger of Fall ends, regain Herald of Spring.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Gardener_of_Seasons",
+  "esohub_url": "https://eso-hub.com/en/sets/gardener-of-seasons"
+}

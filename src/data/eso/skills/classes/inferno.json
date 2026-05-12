@@ -1,0 +1,11 @@
+{
+  "id": "34061",
+  "slug": "inferno",
+  "name": "Inferno",
+  "description": "Activate an aura of flames which launches a wave of flame around you every 5 seconds, dealing 1742 Flame Damage to enemies inside.\n\nWhile slotted on either bar, you gain Major Prophecy and Savagery, increasing your Spell and Weapon Critical rating by 2629.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

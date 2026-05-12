@@ -1,0 +1,40 @@
+{
+  "id": "spelunker",
+  "name": "Spelunker",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Glenumbra, Spindleclutch",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the cost of your Undaunted abilities by 10%. When an ally uses one of your Undaunted ability synergies you restore 16-730 Magicka and Stamina.  This effect can occur once every 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spelunker",
+  "esohub_url": "https://eso-hub.com/en/sets/spelunker"
+}

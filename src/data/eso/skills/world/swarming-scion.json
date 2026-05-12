@@ -1,0 +1,11 @@
+{
+  "id": "41926",
+  "slug": "swarming-scion",
+  "name": "Swarming Scion",
+  "description": "Transform into a monstrous creature of the night, instantly healing to full Health.\n\nWhile transformed, your Max Health, Magicka, and Stamina are increased by 10000, you heal for 15% of all damage you deal, and you can see enemies through walls. \n\nBats also swarm around you and shred enemies that come close, dealing 870 Magic Damage every 1 second.",
+  "category": "world",
+  "skill_line": "Vampire",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

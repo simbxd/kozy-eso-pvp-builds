@@ -1,0 +1,45 @@
+{
+  "id": "perfected-bahseis-mania",
+  "name": "Perfected Bahsei's Mania",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Blackwood, Rockgrove",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 3-129 Weapon and Spell Damage",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Increases your damage done against monsters by up to 10% based on your missing Magicka, reaching the maximum at 50% Magicka.\n\nCurrent value: 0%",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Bahsei's_Mania",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-bahseis-mania"
+}

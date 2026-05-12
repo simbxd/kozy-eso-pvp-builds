@@ -1,0 +1,11 @@
+{
+  "id": "152780",
+  "slug": "heavy-armor-penalties",
+  "name": "Heavy Armor Penalties",
+  "description": "Each piece of Heavy Armor does the following:\n\nIncreases damage taken from Magical attacks by 1%\n\nReduces the Movement Speed bonus of Sprint by 1%\n\nIncreases the cost of Roll Dodge by 3%\n\nIncreases the size of your detection area while Sneaking by 10%",
+  "category": "armor",
+  "skill_line": "Heavy Armor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

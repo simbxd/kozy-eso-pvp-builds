@@ -1,0 +1,11 @@
+{
+  "id": "45469",
+  "slug": "deadly-bash",
+  "name": "Deadly Bash",
+  "description": "Improves your standard Bash attacks, causing them to deal 500 more damage and cost 50% less Stamina.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

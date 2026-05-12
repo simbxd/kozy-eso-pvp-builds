@@ -1,0 +1,45 @@
+{
+  "id": "perfected-ansuuls-torment",
+  "name": "Perfected Ansuul's Torment",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Necrom, Sanity's Edge",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 15-657 Critical Chance",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Increases your damage done against monsters by 0-7%. When you interrupt an enemy, you increase your damage done against monsters by an additional 0-7% for 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Ansuul's_Torment",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-ansuuls-torment"
+}

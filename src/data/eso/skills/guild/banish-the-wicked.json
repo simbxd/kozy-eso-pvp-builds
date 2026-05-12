@@ -1,0 +1,11 @@
+{
+  "id": "45599",
+  "slug": "banish-the-wicked",
+  "name": "Banish the Wicked",
+  "description": "You generate 3 Ultimate whenever you kill an enemy.",
+  "category": "guild",
+  "skill_line": "Fighters Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

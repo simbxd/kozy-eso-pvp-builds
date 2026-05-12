@@ -1,0 +1,45 @@
+{
+  "id": "oblivions-edge",
+  "name": "Oblivion's Edge",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Coldharbour, Vaults of Madness",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 258
+    },
+    {
+      "count": 5,
+      "stat": "When you kill an enemy, you fill an empty Soul Gem and heal for 5906 Health.\n\nThe heal can occur once every 10 seconds and scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Oblivion's_Edge",
+  "esohub_url": "https://eso-hub.com/en/sets/oblivions-edge"
+}

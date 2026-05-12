@@ -1,0 +1,11 @@
+{
+  "id": "46142",
+  "slug": "pursuit",
+  "name": "Pursuit",
+  "description": "Increases your Movement Speed by 30%.\n\nIncreases the Stamina your Heavy Attacks restore by 50%.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

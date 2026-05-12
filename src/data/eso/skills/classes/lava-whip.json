@@ -1,0 +1,11 @@
+{
+  "id": "23811",
+  "slug": "lava-whip",
+  "name": "Lava Whip",
+  "description": "Lash an enemy with flame, dealing 2323 Flame Damage.\n\nHitting an Off Balance enemy grants 5 stacks of Volcanic Whip for 20 seconds, up to once every 20 seconds.\n\nVolcanic Whip replaces this ability and consumes a stack to instead deal 4338 Flame Damage to your target and all nearby enemies.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

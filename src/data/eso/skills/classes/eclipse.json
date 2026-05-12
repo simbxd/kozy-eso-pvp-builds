@@ -1,0 +1,11 @@
+{
+  "id": "27306",
+  "slug": "eclipse",
+  "name": "Eclipse",
+  "description": "Envelop an enemy in a lightless sphere for 4 seconds, that harms them with growing intensity anytime they use a direct damage attack. Limited to one.\n\nTheir first attack reduces their Movement Speed by 30% for 4 seconds, their second attack immobilizes them for 3 seconds, and their third attack stuns them for 3 seconds. The effects can activate once every 1 second.",
+  "category": "classes",
+  "skill_line": "Dawn's Wrath",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

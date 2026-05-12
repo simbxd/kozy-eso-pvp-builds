@@ -1,0 +1,11 @@
+{
+  "id": "48956",
+  "slug": "force-shock",
+  "name": "Force Shock",
+  "description": "Focus all the elemental energies with your staff and blast an enemy for 695 Flame Damage, 695 Frost Damage, and 695 Shock Damage.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

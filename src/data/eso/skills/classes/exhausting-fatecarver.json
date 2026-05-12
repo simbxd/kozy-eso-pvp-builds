@@ -1,0 +1,11 @@
+{
+  "id": "40183122",
+  "slug": "exhausting-fatecarver",
+  "name": "Exhausting Fatecarver",
+  "description": "Harness pure knowledge into a beam of energy that scars the world in front of you. Channel the beam for up to 4 seconds, dealing 879 Magic Damage every 0.3 seconds to up to 6 enemies and snares them by 15%.\n\nCasting Exhausting Fatecarver consumes all Crux and increases damage done by 33%, duration by 0.3 seconds, and snare by 15% per Crux spent.\n\nThis ability is considered direct damage.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

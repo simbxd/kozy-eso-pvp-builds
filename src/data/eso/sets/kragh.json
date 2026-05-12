@@ -1,0 +1,28 @@
+{
+  "id": "kragh",
+  "name": "Kra'gh",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Kra'gh the Dreugh King in Fungal Grotto I, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 2,
+      "stat": "When you deal damage, you have a 10% chance to spawn dreugh limbs that create shockwaves in front of you dealing 249 Physical damage every 0.6 seconds for 2.4 seconds. This effect can occur once every 6 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Kra'gh",
+  "esohub_url": "https://eso-hub.com/en/sets/kragh"
+}

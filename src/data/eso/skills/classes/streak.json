@@ -1,0 +1,11 @@
+{
+  "id": "30215",
+  "slug": "streak",
+  "name": "Streak",
+  "description": "Transform yourself into pure energy and flash forward, dealing 1438 Shock Damage to enemies in your wake and stunning them for 3 seconds.\n\nThis effect cannot be blocked.\n\nCasting again within 4 seconds costs 33% more Magicka.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

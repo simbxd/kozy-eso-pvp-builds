@@ -1,0 +1,11 @@
+{
+  "id": "41512",
+  "slug": "shield-charge",
+  "name": "Shield Charge",
+  "description": "Rush an enemy and ram them, dealing 1392 Physical Damage and stunning them for 3 seconds.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45306",
+  "slug": "rugged",
+  "name": "Rugged",
+  "description": "Increases your Physical and Spell Resistance by 2600.",
+  "category": "racial",
+  "skill_line": "Nord Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

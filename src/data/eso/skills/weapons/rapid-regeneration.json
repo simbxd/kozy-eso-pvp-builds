@@ -1,0 +1,11 @@
+{
+  "id": "41276",
+  "slug": "rapid-regeneration",
+  "name": "Rapid Regeneration",
+  "description": "Share your staff's life-giving energy, healing you or a nearby ally for 3594 Health over 5 seconds.\n\nThe healing increases by up to 50% more on targets under 100% Health.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

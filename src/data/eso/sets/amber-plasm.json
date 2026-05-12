@@ -1,0 +1,50 @@
+{
+  "id": "amber-plasm",
+  "name": "Amber Plasm",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Shadowfen, Ruins of Mazzatun",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Magicka Recovery",
+      "value": 245
+    },
+    {
+      "count": 5,
+      "stat": "Stamina Recovery",
+      "value": 245
+    },
+    {
+      "count": 5,
+      "stat": "Health Recovery",
+      "value": 245
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Amber_Plasm",
+  "esohub_url": "https://eso-hub.com/en/sets/amber-plasm"
+}

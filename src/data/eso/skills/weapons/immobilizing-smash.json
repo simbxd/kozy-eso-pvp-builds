@@ -1,0 +1,11 @@
+{
+  "id": "40217190",
+  "slug": "immobilizing-smash",
+  "name": "Immobilizing Smash",
+  "description": "Immobilizes nearby enemies for 0 seconds and deals 500 Generic Damage. An ally can activate the Ignite Synergy, damaging enemies held within the talons.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

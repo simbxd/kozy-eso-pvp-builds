@@ -1,0 +1,40 @@
+{
+  "id": "hagravens-garden",
+  "name": "Hagraven's Garden",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Craglorn, Bloodroot Forge",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Health Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage while under 50% Health, you summon a preservation of nature around you in a 8 meter radius for 8 seconds which grants Major Protection to you and up to 5 group members while in the area, reducing your damage taken by 10%. This effect can occur once every 30 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hagraven's_Garden",
+  "esohub_url": "https://eso-hub.com/en/sets/hagravens-garden"
+}

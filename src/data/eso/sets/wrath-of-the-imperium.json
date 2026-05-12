@@ -1,0 +1,30 @@
+{
+  "id": "wrath-of-the-imperium",
+  "name": "Wrath of the Imperium",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Cropsford",
+  "dlc": "Base Game",
+  "pieces": 3,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage to your ranged direct damage abilities.",
+      "value": 325
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Wrath_of_the_Imperium",
+  "esohub_url": "https://eso-hub.com/en/sets/wrath-of-the-imperium"
+}

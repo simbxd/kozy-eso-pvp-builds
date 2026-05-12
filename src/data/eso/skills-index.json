@@ -1,0 +1,7502 @@
+[
+  {
+    "id": "45029",
+    "name": "A Soul Ablaze",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "45521",
+    "name": "Absorb",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "41380",
+    "name": "Absorb Missile",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "29881",
+    "name": "Absorption Field",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "40185817",
+    "name": "Abyssal Impact",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "40103503",
+    "name": "Accelerate",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "85883",
+    "name": "Accelerated Growth",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "45492",
+    "name": "Accuracy",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "117979",
+    "name": "Accursed Charge",
+    "category": "pvp",
+    "skill_line": "Volendrung"
+  },
+  {
+    "id": "40789",
+    "name": "Acid Spray",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "36008",
+    "name": "Acrobat",
+    "category": "racial",
+    "skill_line": "Wood Elf Skills"
+  },
+  {
+    "id": "45315",
+    "name": "Adrenaline Rush",
+    "category": "racial",
+    "skill_line": "Redguard Skills"
+  },
+  {
+    "id": "86069",
+    "name": "Advanced Species",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "184923",
+    "name": "Aegis of the Unseen",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "46537",
+    "name": "Aggressive Horn",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "45572",
+    "name": "Agility",
+    "category": "armor",
+    "skill_line": "Medium Armor"
+  },
+  {
+    "id": "40118404",
+    "name": "Agony Totem",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "35898",
+    "name": "Ambush",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "36582",
+    "name": "Amphibian",
+    "category": "racial",
+    "skill_line": "Argonian Skills"
+  },
+  {
+    "id": "45192",
+    "name": "Amplitude",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "45513",
+    "name": "Ancient Knowledge",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40118379",
+    "name": "Animate Blastbones",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "41108",
+    "name": "Annulment",
+    "category": "armor",
+    "skill_line": "Light Armor"
+  },
+  {
+    "id": "46420",
+    "name": "Anti-Cavalry Caltrops",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "141018",
+    "name": "Antiquarian Insight",
+    "category": "world",
+    "skill_line": "Scrying"
+  },
+  {
+    "id": "40183542",
+    "name": "Apocryphal Gate",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "227116",
+    "name": "Arcanist's Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "221152",
+    "name": "Arcanist's Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "220641",
+    "name": "Arcanist's Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "221185",
+    "name": "Arcanist's Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "40183555",
+    "name": "Arcanist's Domain",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "221307",
+    "name": "Arcanist's Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217507",
+    "name": "Arcanist's Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "221667",
+    "name": "Arcanist's Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "220529",
+    "name": "Arcanist's Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "220853",
+    "name": "Arcanist's Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "221596",
+    "name": "Arcanist's Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "221391",
+    "name": "Arcanist's Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "220147",
+    "name": "Arcanist's Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "86159",
+    "name": "Arctic Blast",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "86151",
+    "name": "Arctic Wind",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "45255",
+    "name": "Argonian Resistance",
+    "category": "racial",
+    "skill_line": "Argonian Skills"
+  },
+  {
+    "id": "40944",
+    "name": "Arrow Barrage",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "40765",
+    "name": "Arrow Spray",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "41881",
+    "name": "Arterial Burst",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "36588",
+    "name": "Ashlander",
+    "category": "racial",
+    "skill_line": "Dark Elf Skills"
+  },
+  {
+    "id": "38065",
+    "name": "Aspect of Terror",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "35584",
+    "name": "Assassin's Blade",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "45574",
+    "name": "Athletics",
+    "category": "armor",
+    "skill_line": "Medium Armor"
+  },
+  {
+    "id": "40186191",
+    "name": "Audacious Runemend",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "139905",
+    "name": "Augur",
+    "category": "world",
+    "skill_line": "Excavation"
+  },
+  {
+    "id": "26983",
+    "name": "Aurora Javelin",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "39630",
+    "name": "Authority",
+    "category": "pvp",
+    "skill_line": "Emperor"
+  },
+  {
+    "id": "40117850",
+    "name": "Avid Boneyard",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "27227",
+    "name": "Backlash",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "42278",
+    "name": "Balance",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "45443",
+    "name": "Balanced Blade",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "44732",
+    "name": "Balanced Warrior",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "30224",
+    "name": "Ball of Lightning",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "86620",
+    "name": "Ballista",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "45599",
+    "name": "Banish the Wicked",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "40217699",
+    "name": "Banner Bearer",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "227030",
+    "name": "Bannerman",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "42747",
+    "name": "Barbed Trap",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "46609",
+    "name": "Barrier",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "21972",
+    "name": "Bash",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "21971",
+    "name": "Bash Stun",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "45625",
+    "name": "Battle Resurrection",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "227075",
+    "name": "Battle Resurrection Mastery",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "45448",
+    "name": "Battle Rush",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "45473",
+    "name": "Battlefield Mobility",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40118237",
+    "name": "Beckoning Armor",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "86295",
+    "name": "Berserker Rage",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "86275",
+    "name": "Berserker Strike",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "86053",
+    "name": "Betty Netch",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "227009",
+    "name": "Binding Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "40217257",
+    "name": "Binding Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "40217978",
+    "name": "Binding Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217611",
+    "name": "Binding Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "26992",
+    "name": "Binding Javelin",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "40214974",
+    "name": "Binding Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "86048",
+    "name": "Bird of Prey",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "27197",
+    "name": "Biting Jabs",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "40115238",
+    "name": "Bitter Harvest",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "40633",
+    "name": "Blade Cloak",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "78219",
+    "name": "Blade of Woe",
+    "category": "guild",
+    "skill_line": "Dark Brotherhood"
+  },
+  {
+    "id": "27530",
+    "name": "Blazing Shield",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "27167",
+    "name": "Blazing Spear",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "45001",
+    "name": "Blessing at the Peak",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "41151",
+    "name": "Blessing of Protection",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "41169",
+    "name": "Blessing of Restoration",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "40117690",
+    "name": "Blighted Blastbones",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "63415",
+    "name": "Blinding Flare",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "41770",
+    "name": "Blockade of Fire",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41771",
+    "name": "Blockade of Frost",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41772",
+    "name": "Blockade of Storms",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217299",
+    "name": "Blocking Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "43251",
+    "name": "Blood Altar",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "40687",
+    "name": "Blood Craze",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "41902",
+    "name": "Blood for Blood",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "40132141",
+    "name": "Blood Frenzy",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "45172",
+    "name": "Blood Magic",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "41824",
+    "name": "Blood Mist",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "33646",
+    "name": "Blood of the Elder Dragon",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "33632",
+    "name": "Blood of the Green Dragon",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "46135",
+    "name": "Blood Rage",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "33091",
+    "name": "Blood Ritual",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "40117888",
+    "name": "Blood Sacrifice",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "41920",
+    "name": "Blood Scion",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "32639",
+    "name": "Bloodmoon",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "40599",
+    "name": "Bloodthirst",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "229656",
+    "name": "Bloody Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "86057",
+    "name": "Blue Betty",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "35909",
+    "name": "Blur",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "37744",
+    "name": "Bolstering Darkness",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "30205",
+    "name": "Bolt Escape",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "40777",
+    "name": "Bombard",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "86065",
+    "name": "Bond with Nature",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "40115206",
+    "name": "Bone Armor",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "40115001",
+    "name": "Bone Goliath Transformation",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "115614",
+    "name": "Bone Goliath Transformation D",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "43310",
+    "name": "Bone Shield",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "43334",
+    "name": "Bone Surge",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "40115093",
+    "name": "Bone Totem",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "40115252",
+    "name": "Boneyard",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "40104059",
+    "name": "Borrowed Time",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "30445",
+    "name": "Bound Aegis",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "30432",
+    "name": "Bound Armaments",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "30418",
+    "name": "Bound Armor",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "30255",
+    "name": "Boundless Storm",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "35804",
+    "name": "Bounty Hunter",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "40118070",
+    "name": "Braided Tether",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "39769",
+    "name": "Brawler",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "45309",
+    "name": "Brawny",
+    "category": "racial",
+    "skill_line": "Orc Skills"
+  },
+  {
+    "id": "24222",
+    "name": "Breath of Life",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "42119",
+    "name": "Brutal Pounce",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "93807",
+    "name": "Budding Seeds",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "86061",
+    "name": "Bull Netch",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "23898",
+    "name": "Burning Embers",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "44730",
+    "name": "Burning Light",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "32123",
+    "name": "Burning Talons",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "44922",
+    "name": "Burnished Scales",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "93937",
+    "name": "Bursting Vines",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "46137",
+    "name": "Call of the Pack",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "46385",
+    "name": "Caltrops",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "42641",
+    "name": "Camouflaged Hunter",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "45188",
+    "name": "Capacitor",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "39754",
+    "name": "Carve",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "40186193",
+    "name": "Cascading Fortune",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "45135",
+    "name": "Catalyst",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "34100",
+    "name": "Cauterize",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "40183006",
+    "name": "Cephaliarch's Flail",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "32229",
+    "name": "Chains of Devastation",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "23778",
+    "name": "Chains of Dominance",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "23744",
+    "name": "Chains of Flame",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "40186207",
+    "name": "Chakram of Destiny",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "40183447",
+    "name": "Chakram Shields",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "40103706",
+    "name": "Channeled Acceleration",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "23998",
+    "name": "Channeled Focus",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "227082",
+    "name": "Charging Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "46519",
+    "name": "Charging Maneuver",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "217668",
+    "name": "Charging Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "32135",
+    "name": "Choking Talons",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "42509",
+    "name": "Circle of Protection",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "184932",
+    "name": "Circumvented Fate",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "103811",
+    "name": "Clairvoyance",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "58876",
+    "name": "Claws of Anguish",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "58907",
+    "name": "Claws of Life",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "46644",
+    "name": "Cleanse",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "27255",
+    "name": "Cleansing Ritual",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "39746",
+    "name": "Cleave",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "76451",
+    "name": "Clemency",
+    "category": "guild",
+    "skill_line": "Thieves Guild"
+  },
+  {
+    "id": "139306",
+    "name": "Coalescence",
+    "category": "world",
+    "skill_line": "Scrying"
+  },
+  {
+    "id": "45619",
+    "name": "Combat Frenzy",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "45624",
+    "name": "Combat Medic",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "41189",
+    "name": "Combat Prayer",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "45011",
+    "name": "Combustion",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "36244",
+    "name": "Concealed Weapon",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "103964",
+    "name": "Concentrated Barrier",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "45562",
+    "name": "Concentration",
+    "category": "armor",
+    "skill_line": "Light Armor"
+  },
+  {
+    "id": "117754",
+    "name": "Conditioning",
+    "category": "racial",
+    "skill_line": "Redguard Skills"
+  },
+  {
+    "id": "30463",
+    "name": "Conjured Ward",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "45526",
+    "name": "Constitution",
+    "category": "armor",
+    "skill_line": "Heavy Armor"
+  },
+  {
+    "id": "37696",
+    "name": "Consuming Darkness",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "43083",
+    "name": "Consuming Trap",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "221392",
+    "name": "Contingency",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "45614",
+    "name": "Continuous Attack",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "217692",
+    "name": "Continuous Attacks",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "45478",
+    "name": "Controlled Fury",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "33697",
+    "name": "Core of Flame",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "116285",
+    "name": "Corpse Consumption",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "33852",
+    "name": "Corrosive Armor",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "93810",
+    "name": "Corrupting Pollen",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "33293",
+    "name": "Craftsman",
+    "category": "racial",
+    "skill_line": "Orc Skills"
+  },
+  {
+    "id": "23788",
+    "name": "Crescent Sweep",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "37864",
+    "name": "Cripple",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "37913",
+    "name": "Crippling Grasp",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "39793",
+    "name": "Critical Charge",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "39822",
+    "name": "Critical Rush",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "30406",
+    "name": "Critical Surge",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "217475",
+    "name": "Cruel Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "216854",
+    "name": "Cruel Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "48971",
+    "name": "Crushing Shock",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40103623",
+    "name": "Crushing Weapon",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "40185908",
+    "name": "Cruxweaver Armor",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "47569",
+    "name": "Crystal Fragments",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "47552",
+    "name": "Crystal Shard",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "47560",
+    "name": "Crystal Weapon",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "86138",
+    "name": "Crystallized Shield",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "86142",
+    "name": "Crystallized Slab",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "116287",
+    "name": "Curative Curse",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "40186200",
+    "name": "Curative Surge",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "36063",
+    "name": "Cutpurse",
+    "category": "racial",
+    "skill_line": "Khajiit Skills"
+  },
+  {
+    "id": "86002",
+    "name": "Cutting Dive",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "45520",
+    "name": "Cycle of Life",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "30499",
+    "name": "Daedric Curse",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "29909",
+    "name": "Daedric Mines",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "30511",
+    "name": "Daedric Prey",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "45200",
+    "name": "Daedric Protection",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "29973",
+    "name": "Daedric Refuge",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "29939",
+    "name": "Daedric Tomb",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "41113",
+    "name": "Dampen Magic",
+    "category": "armor",
+    "skill_line": "Light Armor"
+  },
+  {
+    "id": "36351",
+    "name": "Dark Cloak",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "30072",
+    "name": "Dark Conversion",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "30043",
+    "name": "Dark Deal",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "30012",
+    "name": "Dark Exchange",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "24147",
+    "name": "Dark Flare",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "36283",
+    "name": "Dark Shade",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "46041",
+    "name": "Dark Stalker",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "32111",
+    "name": "Dark Talons",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "45115",
+    "name": "Dark Veil",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "45084",
+    "name": "Dark Vigor",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "42566",
+    "name": "Dawnbreaker",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "42598",
+    "name": "Dawnbreaker of Smiting",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "217233",
+    "name": "Dazing Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217346",
+    "name": "Dazing Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217181",
+    "name": "Dazing Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "40221930",
+    "name": "Dazing Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "40217633",
+    "name": "Dazing Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "40220545",
+    "name": "Dazing Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "40118623",
+    "name": "Deaden Pain",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "45469",
+    "name": "Deadly Bash",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40651",
+    "name": "Deadly Cloak",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "42179",
+    "name": "Deafening Roar",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "116235",
+    "name": "Death Gleaning",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "116198",
+    "name": "Death Knell",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "40115115",
+    "name": "Death Scythe",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "37518",
+    "name": "Death Stroke",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "37887",
+    "name": "Debilitate",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "86044",
+    "name": "Deceptive Predator",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "93778",
+    "name": "Deep Fissure",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "41403",
+    "name": "Deep Slash",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40103652",
+    "name": "Deep Thoughts",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "227069",
+    "name": "Defensive Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "217300",
+    "name": "Defensive Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "217260",
+    "name": "Defensive Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217355",
+    "name": "Defensive Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "41351",
+    "name": "Defensive Posture",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "30194",
+    "name": "Defensive Rune",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "41358",
+    "name": "Defensive Stance",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "227073",
+    "name": "Defiant Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "217292",
+    "name": "Defiant Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "217514",
+    "name": "Defiant Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217194",
+    "name": "Defiant Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "217648",
+    "name": "Defiant Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "214991",
+    "name": "Defiant Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "45472",
+    "name": "Deflect Bolts",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "42224",
+    "name": "Degeneration",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "103972",
+    "name": "Deliberation",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "45514",
+    "name": "Destruction Expert",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41006",
+    "name": "Destructive Clench",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41047",
+    "name": "Destructive Reach",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40964",
+    "name": "Destructive Touch",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40118763",
+    "name": "Detonating Siphon",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "32634",
+    "name": "Devour",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "45564",
+    "name": "Dexterity",
+    "category": "armor",
+    "skill_line": "Medium Armor"
+  },
+  {
+    "id": "139308",
+    "name": "Dilation",
+    "category": "world",
+    "skill_line": "Scrying"
+  },
+  {
+    "id": "36312",
+    "name": "Diplomat",
+    "category": "racial",
+    "skill_line": "Imperial Skills"
+  },
+  {
+    "id": "116240",
+    "name": "Disdain Harm",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "34039",
+    "name": "Disintegrating Dragonfire",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "116194",
+    "name": "Dismember",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "217237",
+    "name": "Dispelling Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217664",
+    "name": "Dispelling Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "85998",
+    "name": "Dive",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "39984",
+    "name": "Dizzying Swing",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "39644",
+    "name": "Domination",
+    "category": "pvp",
+    "skill_line": "Emperor"
+  },
+  {
+    "id": "33619",
+    "name": "Dragon Blood",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "33658",
+    "name": "Dragon Leap",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "34031",
+    "name": "Dragonfire Breath",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "33963",
+    "name": "Dragonknight Standard",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "227086",
+    "name": "Dragonknight's Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "221078",
+    "name": "Dragonknight's Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "220616",
+    "name": "Dragonknight's Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "221155",
+    "name": "Dragonknight's Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "221276",
+    "name": "Dragonknight's Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217479",
+    "name": "Dragonknight's Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "221643",
+    "name": "Dragonknight's Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "220505",
+    "name": "Dragonknight's Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "220821",
+    "name": "Dragonknight's Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "221571",
+    "name": "Dragonknight's Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "221366",
+    "name": "Dragonknight's Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "220137",
+    "name": "Dragonknight's Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "37928",
+    "name": "Drain Power",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "40135905",
+    "name": "Drain Vigor",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "40883",
+    "name": "Draining Shot",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "45477",
+    "name": "Dual Wield Expert",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "45267",
+    "name": "Dynamic",
+    "category": "racial",
+    "skill_line": "Dark Elf Skills"
+  },
+  {
+    "id": "23856",
+    "name": "Earthshield Mantle",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "23828",
+    "name": "Earthspike Mantle",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "63247",
+    "name": "Echoing Vigor",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "27306",
+    "name": "Eclipse",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "46636",
+    "name": "Efficient Purge",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "44951",
+    "name": "Elder Dragon",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "41769",
+    "name": "Elemental Blockade",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41567",
+    "name": "Elemental Drain",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40217228",
+    "name": "Elemental Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "229603",
+    "name": "Elemental Explosion DoT",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "45512",
+    "name": "Elemental Force",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "86510",
+    "name": "Elemental Rage",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "42975",
+    "name": "Elemental Ring",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "86485",
+    "name": "Elemental Storm",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41556",
+    "name": "Elemental Susceptibility",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "45276",
+    "name": "Elemental Talent",
+    "category": "racial",
+    "skill_line": "High Elf Skills"
+  },
+  {
+    "id": "40103571",
+    "name": "Elemental Weapon",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "41137",
+    "name": "Elude",
+    "category": "armor",
+    "skill_line": "Medium Armor"
+  },
+  {
+    "id": "41815",
+    "name": "Elusive Mist",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "85877",
+    "name": "Emerald Moss",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "39641",
+    "name": "Emperor",
+    "category": "pvp",
+    "skill_line": "Emperor"
+  },
+  {
+    "id": "217371",
+    "name": "Empower",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "217793",
+    "name": "Empower",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "40118352",
+    "name": "Empowering Grasp",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "30087",
+    "name": "Encase",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "93971",
+    "name": "Enchanted Forest",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "93774",
+    "name": "Enchanted Growth",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "30343",
+    "name": "Endless Fury",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "40932",
+    "name": "Endless Hail",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "45214",
+    "name": "Enduring Rays",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "40118809",
+    "name": "Enduring Undeath",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "45190",
+    "name": "Energized",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "43447",
+    "name": "Energy Orb",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "30381",
+    "name": "Energy Overload",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "34048",
+    "name": "Engulfing Dragonfire",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "42207",
+    "name": "Entropy",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "42251",
+    "name": "Equilibrium",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "185239",
+    "name": "Erudition",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "40182977",
+    "name": "Escalating Runeblades",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "45517",
+    "name": "Essence Drain",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "85989",
+    "name": "Eternal Guardian",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "41126",
+    "name": "Evasion",
+    "category": "armor",
+    "skill_line": "Medium Armor"
+  },
+  {
+    "id": "45602",
+    "name": "Everlasting Magic",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "23794",
+    "name": "Everlasting Sweep",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "42624",
+    "name": "Evil Hunter",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "41866",
+    "name": "Eviscerate",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "45557",
+    "name": "Evocation",
+    "category": "armor",
+    "skill_line": "Light Armor"
+  },
+  {
+    "id": "40186189",
+    "name": "Evolving Runemend",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "139911",
+    "name": "Excavator's Reserves",
+    "category": "world",
+    "skill_line": "Excavation"
+  },
+  {
+    "id": "45048",
+    "name": "Executioner",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "39957",
+    "name": "Executioner",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "40183122",
+    "name": "Exhausting Fatecarver",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "40137259",
+    "name": "Exhilarating Drain",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "86129",
+    "name": "Expansive Frost Cloak",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "42610",
+    "name": "Expert Hunter",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "45195",
+    "name": "Expert Mage",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "45199",
+    "name": "Expert Summoner",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "45181",
+    "name": "Exploitation",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "23726",
+    "name": "Explosive Charge",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "40115307",
+    "name": "Expunge",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "40117940",
+    "name": "Expunge and Modify",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "27295",
+    "name": "Extended Ritual",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "86540",
+    "name": "Eye of Flame",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "86546",
+    "name": "Eye of Frost",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "86552",
+    "name": "Eye of Lightning",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "86534",
+    "name": "Eye of the Storm",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "86040",
+    "name": "Falcon's Swiftness",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "45023",
+    "name": "Fan the Flames",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "139321",
+    "name": "Farsight",
+    "category": "world",
+    "skill_line": "Scrying"
+  },
+  {
+    "id": "40185805",
+    "name": "Fatecarver",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "184847",
+    "name": "Fated Fortune",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "40183648",
+    "name": "Fatewoven Armor",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "42054",
+    "name": "Feed",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "45301",
+    "name": "Feline Ambush",
+    "category": "racial",
+    "skill_line": "Khajiit Skills"
+  },
+  {
+    "id": "85985",
+    "name": "Feral Guardian",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "42128",
+    "name": "Feral Pounce",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "33679",
+    "name": "Ferocious Leap",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "42157",
+    "name": "Ferocious Roar",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "86030",
+    "name": "Fetcher Infection",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "227003",
+    "name": "Fiery Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "86515",
+    "name": "Fiery Rage",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40217637",
+    "name": "Fiery Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "40214978",
+    "name": "Fiery Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "74580",
+    "name": "Finders Keepers",
+    "category": "guild",
+    "skill_line": "Thieves Guild"
+  },
+  {
+    "id": "42958",
+    "name": "Fire Impulse",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "33797",
+    "name": "Fire Keeper",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "42976",
+    "name": "Fire Ring",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "42305",
+    "name": "Fire Rune",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "86492",
+    "name": "Fire Storm",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41009",
+    "name": "Flame Clench",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "23924",
+    "name": "Flame Lash",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "42997",
+    "name": "Flame Pulsar",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41048",
+    "name": "Flame Reach",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40114108",
+    "name": "Flame Skull",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "40965",
+    "name": "Flame Touch",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "42586",
+    "name": "Flawless Dawnbreaker",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "40186211",
+    "name": "Fleet-Footed Gate",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "33749",
+    "name": "Fleetstep Wings",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "86067",
+    "name": "Flourish",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "40582",
+    "name": "Flurry",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "40628",
+    "name": "Flying Blade",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "40907",
+    "name": "Focused Aim",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "23716",
+    "name": "Focused Charge",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "45446",
+    "name": "Follow Up",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "48991",
+    "name": "Force Pulse",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "48956",
+    "name": "Force Shock",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41207",
+    "name": "Force Siphon",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "45444",
+    "name": "Forceful",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "227008",
+    "name": "Fortifying Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "40220747",
+    "name": "Fortifying Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "45471",
+    "name": "Fortress",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "39892",
+    "name": "Forward Momentum",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "33921",
+    "name": "Fossilize",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "33881",
+    "name": "Fragmented Shield",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "41013",
+    "name": "Frost Clench",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "86125",
+    "name": "Frost Cloak",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "42959",
+    "name": "Frost Impulse",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "42999",
+    "name": "Frost Pulsar",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41051",
+    "name": "Frost Reach",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "42978",
+    "name": "Frost Ring",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40967",
+    "name": "Frost Touch",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "86190",
+    "name": "Frozen Armor",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "40122174",
+    "name": "Frozen Colossus",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "86182",
+    "name": "Frozen Device",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "86178",
+    "name": "Frozen Gate",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "86186",
+    "name": "Frozen Retreat",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "40182988",
+    "name": "Fulminating Rune",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "93771",
+    "name": "Fungal Growth",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "35941",
+    "name": "Funnel Health",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "139781",
+    "name": "Future Focus",
+    "category": "world",
+    "skill_line": "Scrying"
+  },
+  {
+    "id": "40118308",
+    "name": "Ghostly Embrace",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "40192380",
+    "name": "Gibbering Shelter",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "40183676",
+    "name": "Gibbering Shield",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "45260",
+    "name": "Gift of Magnus",
+    "category": "racial",
+    "skill_line": "Breton Skills"
+  },
+  {
+    "id": "40122388",
+    "name": "Glacial Colossus",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "86192",
+    "name": "Glacial Presence",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "40193794",
+    "name": "Glyphic of the Tides",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "40227609",
+    "name": "Goading Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "40222966",
+    "name": "Goading Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40216674",
+    "name": "Goading Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "45549",
+    "name": "Grace",
+    "category": "armor",
+    "skill_line": "Light Armor"
+  },
+  {
+    "id": "41248",
+    "name": "Grand Healing",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "40115177",
+    "name": "Grave Grasp",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "40117749",
+    "name": "Grave Lord's Sacrifice",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "30575",
+    "name": "Greater Storm Atronach",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "93911",
+    "name": "Green Lotus",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "62096",
+    "name": "Grim Focus",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "86168",
+    "name": "Gripping Shards",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "217655",
+    "name": "Growing Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "86034",
+    "name": "Growing Swarm",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "63318",
+    "name": "Guard",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "76461",
+    "name": "Haggling",
+    "category": "guild",
+    "skill_line": "Thieves Guild"
+  },
+  {
+    "id": "139909",
+    "name": "Hand Brush",
+    "category": "world",
+    "skill_line": "Excavation"
+  },
+  {
+    "id": "30474",
+    "name": "Hardened Ward",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "41121",
+    "name": "Harness Magicka",
+    "category": "armor",
+    "skill_line": "Light Armor"
+  },
+  {
+    "id": "184858",
+    "name": "Harnessed Quintessence",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "27376",
+    "name": "Hasty Prayer",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "45498",
+    "name": "Hasty Retreat",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "30523",
+    "name": "Haunting Curse",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "45497",
+    "name": "Hawk Eye",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "40220549",
+    "name": "Healing Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "40217462",
+    "name": "Healing Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "40240149",
+    "name": "Healing Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "27342",
+    "name": "Healing Ritual",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "93804",
+    "name": "Healing Seed",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "40217184",
+    "name": "Healing Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "40216813",
+    "name": "Healing Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "41265",
+    "name": "Healing Springs",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "93974",
+    "name": "Healing Thicket",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "185186",
+    "name": "Healing Tides",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "40217607",
+    "name": "Healing Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "40217777",
+    "name": "Healing Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "41320",
+    "name": "Healing Ward",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "116270",
+    "name": "Health Avarice",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "36144",
+    "name": "Healthy Offering",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "33732",
+    "name": "Heart of Flame",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "44996",
+    "name": "Heart of Stone",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "33816",
+    "name": "Hearth and Home",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "33778",
+    "name": "Hearthfire",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "150184",
+    "name": "Heavy Armor Bonuses",
+    "category": "armor",
+    "skill_line": "Heavy Armor"
+  },
+  {
+    "id": "152780",
+    "name": "Heavy Armor Penalties",
+    "category": "armor",
+    "skill_line": "Heavy Armor"
+  },
+  {
+    "id": "139907",
+    "name": "Heavy Shovel",
+    "category": "world",
+    "skill_line": "Excavation"
+  },
+  {
+    "id": "45430",
+    "name": "Heavy Weapons",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "45060",
+    "name": "Hemorrhage",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "217294",
+    "name": "Heroic Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "41414",
+    "name": "Heroic Slash",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40223292",
+    "name": "Heroic Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "40117919",
+    "name": "Hexproof",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "40610",
+    "name": "Hidden Blade",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "185243",
+    "name": "Hideous Clarity",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "35965",
+    "name": "Highborn",
+    "category": "racial",
+    "skill_line": "High Elf Skills"
+  },
+  {
+    "id": "58316",
+    "name": "Hircine's Bounty",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "58334",
+    "name": "Hircine's Fortitude",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "58323",
+    "name": "Hircine's Rage",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "24213",
+    "name": "Honor the Dead",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "58808",
+    "name": "Howl of Agony",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "58794",
+    "name": "Howl of Despair",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "40118223",
+    "name": "Hungry Scythe",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "45296",
+    "name": "Hunter's Eye",
+    "category": "racial",
+    "skill_line": "Wood Elf Skills"
+  },
+  {
+    "id": "30244",
+    "name": "Hurricane",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "40137861",
+    "name": "Hypnosis",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "42478",
+    "name": "Ice Comet",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "86133",
+    "name": "Ice Fortress",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "86496",
+    "name": "Ice Storm",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "86194",
+    "name": "Icy Aura",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "86522",
+    "name": "Icy Rage",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "33872",
+    "name": "Igneous Shield",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "32166",
+    "name": "Igneous Weapons",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "45215",
+    "name": "Illuminate",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "41255",
+    "name": "Illustrious Healing",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "40103483",
+    "name": "Imbue Weapon",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "217246",
+    "name": "Immobilizing Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40217190",
+    "name": "Immobilizing Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "217693",
+    "name": "Immobilizing Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "41103",
+    "name": "Immovable",
+    "category": "armor",
+    "skill_line": "Heavy Armor"
+  },
+  {
+    "id": "35596",
+    "name": "Impale",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "86164",
+    "name": "Impaling Shards",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "45280",
+    "name": "Imperial Mettle",
+    "category": "racial",
+    "skill_line": "Imperial Skills"
+  },
+  {
+    "id": "40183241",
+    "name": "Impervious Runeward",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "185058",
+    "name": "Implacable Outcome",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "63802",
+    "name": "Improved Hiding",
+    "category": "world",
+    "skill_line": "Legerdemain"
+  },
+  {
+    "id": "45567",
+    "name": "Improved Sneak",
+    "category": "armor",
+    "skill_line": "Medium Armor"
+  },
+  {
+    "id": "42957",
+    "name": "Impulse",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "37532",
+    "name": "Incapacitating Strike",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "34080",
+    "name": "Incinerate",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "63293",
+    "name": "Inevitable Detonation",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "58862",
+    "name": "Infectious Claws",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "34061",
+    "name": "Inferno",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "43393",
+    "name": "Inner Beast",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "43363",
+    "name": "Inner Fire",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "42430",
+    "name": "Inner Light",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "43378",
+    "name": "Inner Rage",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "40185842",
+    "name": "Inspired Scholarship",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "40118840",
+    "name": "Intensive Mender",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "217200",
+    "name": "Interrupt",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "29062",
+    "name": "Intimidating Presence",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "185195",
+    "name": "Intricate Runeforms",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "40103665",
+    "name": "Introspection",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "41538",
+    "name": "Invasion",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "45546",
+    "name": "Juggernaut",
+    "category": "armor",
+    "skill_line": "Heavy Armor"
+  },
+  {
+    "id": "140174",
+    "name": "Keen Eye: Dig Sites",
+    "category": "world",
+    "skill_line": "Excavation"
+  },
+  {
+    "id": "139772",
+    "name": "Keen Eye: Treasure Chests",
+    "category": "world",
+    "skill_line": "Excavation"
+  },
+  {
+    "id": "63818",
+    "name": "Kickback",
+    "category": "world",
+    "skill_line": "Legerdemain"
+  },
+  {
+    "id": "35590",
+    "name": "Killer's Blade",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "86370",
+    "name": "Lacerate",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "44984",
+    "name": "Landslide",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "116272",
+    "name": "Last Gasp",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "23811",
+    "name": "Lava Whip",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "40217979",
+    "name": "Leashing Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "40232112",
+    "name": "Leashing Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "40217784",
+    "name": "Leashing Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "40221999",
+    "name": "Leashing Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "217357",
+    "name": "Leeching Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217189",
+    "name": "Leeching Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "38015",
+    "name": "Leeching Strikes",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "93880",
+    "name": "Leeching Vines",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "40897",
+    "name": "Lethal Arrow",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "40115315",
+    "name": "Life amid Death",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "86454",
+    "name": "Life Giver",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "45258",
+    "name": "Life Mender",
+    "category": "racial",
+    "skill_line": "Argonian Skills"
+  },
+  {
+    "id": "150185",
+    "name": "Light Armor Bonuses",
+    "category": "armor",
+    "skill_line": "Light Armor"
+  },
+  {
+    "id": "152778",
+    "name": "Light Armor Penalties",
+    "category": "armor",
+    "skill_line": "Light Armor"
+  },
+  {
+    "id": "63806",
+    "name": "Light Fingers",
+    "category": "world",
+    "skill_line": "Legerdemain"
+  },
+  {
+    "id": "45208",
+    "name": "Light Weaver",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "86475",
+    "name": "Light's Champion",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "30302",
+    "name": "Lightning Flood",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "30235",
+    "name": "Lightning Form",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "30269",
+    "name": "Lightning Splash",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "42771",
+    "name": "Lightweight Beast Trap",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "217461",
+    "name": "Lingering Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217621",
+    "name": "Lingering Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217241",
+    "name": "Lingering Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "63391",
+    "name": "Lingering Flare",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "219719",
+    "name": "Lingering Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "40217188",
+    "name": "Lingering Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "216833",
+    "name": "Lingering Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217095",
+    "name": "Lingering Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "217638",
+    "name": "Lingering Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "217688",
+    "name": "Lingering Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "214982",
+    "name": "Lingering Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "30286",
+    "name": "Liquid Lightning",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "27324",
+    "name": "Living Dark",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "93883",
+    "name": "Living Trellis",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "93877",
+    "name": "Living Vines",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "63814",
+    "name": "Locksmith",
+    "category": "world",
+    "skill_line": "Legerdemain"
+  },
+  {
+    "id": "93914",
+    "name": "Lotus Blossom",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "35882",
+    "name": "Lotus Fan",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "93908",
+    "name": "Lotus Flower",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "41394",
+    "name": "Low Slash",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "27122",
+    "name": "Luminous Shards",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "117848",
+    "name": "Lunar Blessings",
+    "category": "racial",
+    "skill_line": "Khajiit Skills"
+  },
+  {
+    "id": "45601",
+    "name": "Mage Adept",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "42418",
+    "name": "Magelight",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "30319",
+    "name": "Mages' Fury",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "30331",
+    "name": "Mages' Wrath",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "40217473",
+    "name": "Magic Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217705",
+    "name": "Magical Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "217285",
+    "name": "Magical Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "40217459",
+    "name": "Magical Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217605",
+    "name": "Magical Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217231",
+    "name": "Magical Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40217179",
+    "name": "Magical Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "40219780",
+    "name": "Magical Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "40217808",
+    "name": "Magical Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40220542",
+    "name": "Magical Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "45622",
+    "name": "Magicka Aid",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "45603",
+    "name": "Magicka Controller",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "63284",
+    "name": "Magicka Detonation",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "45150",
+    "name": "Magicka Flood",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "45264",
+    "name": "Magicka Mastery",
+    "category": "racial",
+    "skill_line": "Breton Skills"
+  },
+  {
+    "id": "19982",
+    "name": "Magma Armor",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "32205",
+    "name": "Magma Fist",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "33841",
+    "name": "Magma Shell",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "40869",
+    "name": "Magnum Shot",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "216945",
+    "name": "Major Breach",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217255",
+    "name": "Major Brutality",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217790",
+    "name": "Major Brutality",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "219246",
+    "name": "Major Brutality & Sorcery",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217788",
+    "name": "Major Defile",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217792",
+    "name": "Major Endurance",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217105",
+    "name": "Major Maim",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "214994",
+    "name": "Major Prophecy",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "217341",
+    "name": "Major Prophecy",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217670",
+    "name": "Major Prophecy",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "217886",
+    "name": "Major Prophecy",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "218001",
+    "name": "Major Prophecy",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "218016",
+    "name": "Major Prophecy",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "226614",
+    "name": "Major Prophecy",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "226784",
+    "name": "Major Prophecy",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "227122",
+    "name": "Major Prophecy",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "217672",
+    "name": "Major Prophecy and Savagery",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "218987",
+    "name": "Major Prophecy/Savagery",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "216949",
+    "name": "Major Resolve",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217106",
+    "name": "Major Resolve",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "214995",
+    "name": "Major Savagery",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "217360",
+    "name": "Major Savagery",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217671",
+    "name": "Major Savagery",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "217885",
+    "name": "Major Savagery",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "218004",
+    "name": "Major Savagery",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "218015",
+    "name": "Major Savagery",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "226783",
+    "name": "Major Savagery",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "227121",
+    "name": "Major Savagery",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "216948",
+    "name": "Major Sorcery",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217254",
+    "name": "Major Sorcery",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "116094",
+    "name": "Malacath's Vengeance",
+    "category": "pvp",
+    "skill_line": "Volendrung"
+  },
+  {
+    "id": "36109",
+    "name": "Malevolent Offering",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "38096",
+    "name": "Manifestation of Terror",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "37603",
+    "name": "Mark Target",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "45278",
+    "name": "Martial Training",
+    "category": "racial",
+    "skill_line": "Redguard Skills"
+  },
+  {
+    "id": "38075",
+    "name": "Mass Hysteria",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "45038",
+    "name": "Master Assassin",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "45202",
+    "name": "Master Ritualist",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "214973",
+    "name": "Mastery Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "85881",
+    "name": "Maturation",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "40103492",
+    "name": "Meditate",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "150181",
+    "name": "Medium Armor Bonuses",
+    "category": "armor",
+    "skill_line": "Medium Armor"
+  },
+  {
+    "id": "40103747",
+    "name": "Mend Spirit",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "40103543",
+    "name": "Mend Wounds",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "217275",
+    "name": "Mender's Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "45206",
+    "name": "Mending",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "62117",
+    "name": "Merciless Resolve",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "40128709",
+    "name": "Mesmerize",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "42467",
+    "name": "Meteor",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "45607",
+    "name": "Might of the Guild",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217203",
+    "name": "Minor Berserk",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "218988",
+    "name": "Minor Berserk",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217196",
+    "name": "Minor Breach",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "218013",
+    "name": "Minor Breach",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "219247",
+    "name": "Minor Brittle",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217253",
+    "name": "Minor Cowardice",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "219109",
+    "name": "Minor Cowardice",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "217914",
+    "name": "Minor Defile",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217662",
+    "name": "Minor Endurance",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "227123",
+    "name": "Minor Endurance",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "217913",
+    "name": "Minor Enervation",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "218012",
+    "name": "Minor Enervation",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "226700",
+    "name": "Minor Enervation",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "214996",
+    "name": "Minor Expedition",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "217363",
+    "name": "Minor Expedition",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "216792",
+    "name": "Minor Force",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "217887",
+    "name": "Minor Force",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "217661",
+    "name": "Minor Intellect",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217965",
+    "name": "Minor Intellect",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "227124",
+    "name": "Minor Intellect",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "217783",
+    "name": "Minor Lifesteal",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "217912",
+    "name": "Minor Lifesteal",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "218991",
+    "name": "Minor Lifesteal",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217915",
+    "name": "Minor Magickasteal",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "218014",
+    "name": "Minor Magickasteal",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217405",
+    "name": "Minor Maim",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "217782",
+    "name": "Minor Maim",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "217884",
+    "name": "Minor Maim",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "218990",
+    "name": "Minor Maim",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217199",
+    "name": "Minor Mangle",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "223863",
+    "name": "Minor Mangle",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "223865",
+    "name": "Minor Mangle",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "218343",
+    "name": "Minor Protection",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217625",
+    "name": "Minor Resolve",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "218992",
+    "name": "Minor Uncertainty",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "214992",
+    "name": "Minor Vulnerability",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "217658",
+    "name": "Minor Vulnerability",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217666",
+    "name": "Minor Vulnerability",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "218989",
+    "name": "Minor Vulnerability",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "35916",
+    "name": "Mirage",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "217258",
+    "name": "Misery Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217353",
+    "name": "Misery Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217690",
+    "name": "Misery Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "41809",
+    "name": "Mist Form",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "32173",
+    "name": "Molten Armaments",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "32156",
+    "name": "Molten Weapons",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "23819",
+    "name": "Molten Whip",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "39881",
+    "name": "Momentum",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "39625",
+    "name": "Monarch",
+    "category": "pvp",
+    "skill_line": "Emperor"
+  },
+  {
+    "id": "40118122",
+    "name": "Mortal Coil",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "45009",
+    "name": "Mountain Giant",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "63335",
+    "name": "Mystic Guard",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "43415",
+    "name": "Mystic Orb",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "40118008",
+    "name": "Mystic Siphon",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "93940",
+    "name": "Nature's Embrace",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "85879",
+    "name": "Nature's Gift",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "93934",
+    "name": "Nature's Grasp",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "116275",
+    "name": "Near-Death Experience",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "227110",
+    "name": "Necromancer's Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "221146",
+    "name": "Necromancer's Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "220622",
+    "name": "Necromancer's Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "221179",
+    "name": "Necromancer's Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "221301",
+    "name": "Necromancer's Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217504",
+    "name": "Necromancer's Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "221649",
+    "name": "Necromancer's Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "220507",
+    "name": "Necromancer's Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "227114",
+    "name": "Necromancer's Soul",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "220847",
+    "name": "Necromancer's Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "221578",
+    "name": "Necromancer's Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "221385",
+    "name": "Necromancer's Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "216730",
+    "name": "Necromancer's Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "43406",
+    "name": "Necrotic Orb",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "40118639",
+    "name": "Necrotic Potency",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "29844",
+    "name": "Negate Magic",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "220834",
+    "name": "Nighblade's Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "221376",
+    "name": "Nighblade's Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "227101",
+    "name": "Nightblade's Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "221135",
+    "name": "Nightblade's Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "220617",
+    "name": "Nightblade's Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "221169",
+    "name": "Nightblade's Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "221292",
+    "name": "Nightblade's Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217502",
+    "name": "Nightblade's Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "221645",
+    "name": "Nightblade's Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "220510",
+    "name": "Nightblade's Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "221574",
+    "name": "Nightblade's Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "220134",
+    "name": "Nightblade's Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "86116",
+    "name": "Northern Storm",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "24063",
+    "name": "Nova",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "33866",
+    "name": "Obsidian Shield",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "86284",
+    "name": "Onslaught",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "36247",
+    "name": "Opportunist",
+    "category": "racial",
+    "skill_line": "Breton Skills"
+  },
+  {
+    "id": "217656",
+    "name": "Opportunistic Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217358",
+    "name": "Opportunistic Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217647",
+    "name": "Opportunistic Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "217694",
+    "name": "Opportunistic Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "43287",
+    "name": "Overflowing Altar",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "30354",
+    "name": "Overload",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "42367",
+    "name": "Pack Leader",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "79868",
+    "name": "Padomaic Sprint",
+    "category": "guild",
+    "skill_line": "Dark Brotherhood"
+  },
+  {
+    "id": "86425",
+    "name": "Panacea",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "116095",
+    "name": "Pariah's Resolve",
+    "category": "pvp",
+    "skill_line": "Volendrung"
+  },
+  {
+    "id": "217356",
+    "name": "Parrying Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217195",
+    "name": "Parrying Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "217089",
+    "name": "Parrying Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40186220",
+    "name": "Passage Between Worlds",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "37764",
+    "name": "Path of Darkness",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "45509",
+    "name": "Penetrating Magic",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41937",
+    "name": "Perfect Scion",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "86120",
+    "name": "Permafrost",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "45165",
+    "name": "Persistence",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "29061",
+    "name": "Persuasive Will",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "40122395",
+    "name": "Pestilent Colossus",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "33898",
+    "name": "Petrify",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "34234",
+    "name": "Petrify dummy",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "35924",
+    "name": "Phantasmal Escape",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "41497",
+    "name": "Pierce Armor",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "86196",
+    "name": "Piercing Cold",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "58740",
+    "name": "Piercing Howl",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "26975",
+    "name": "Piercing Javelin",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "37631",
+    "name": "Piercing Mark",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "44046",
+    "name": "Piercing Spear",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "40806",
+    "name": "Poison Arrow",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "40842",
+    "name": "Poison Injection",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "86155",
+    "name": "Polar Wind",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "217512",
+    "name": "Potent Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "216940",
+    "name": "Potent Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "42110",
+    "name": "Pounce",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "41435",
+    "name": "Power Bash",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "37937",
+    "name": "Power Extraction",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "27587",
+    "name": "Power of the Light",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "30366",
+    "name": "Power Overload",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "41459",
+    "name": "Power Slam",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "45196",
+    "name": "Power Stone",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "30396",
+    "name": "Power Surge",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "27427",
+    "name": "Practiced Incantation",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "40186366",
+    "name": "Pragmatic Fatecarver",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "40103557",
+    "name": "Precognition",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "139777",
+    "name": "Preemptive Power",
+    "category": "world",
+    "skill_line": "Scrying"
+  },
+  {
+    "id": "45053",
+    "name": "Pressure Points",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "45216",
+    "name": "Prism",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "45561",
+    "name": "Prodigy",
+    "category": "armor",
+    "skill_line": "Light Armor"
+  },
+  {
+    "id": "46670",
+    "name": "Propelling Shield",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "33759",
+    "name": "Protect the Brood",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "63302",
+    "name": "Proximity Detonation",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "184873",
+    "name": "Psychic Lesion",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "42996",
+    "name": "Pulsar",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40118664",
+    "name": "Pummeling Goliath",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "41477",
+    "name": "Puncture",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "27186",
+    "name": "Puncturing Strikes",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "27207",
+    "name": "Puncturing Sweep",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "46630",
+    "name": "Purge",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "27558",
+    "name": "Purifying Light",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "46142",
+    "name": "Pursuit",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "40642",
+    "name": "Quick Cloak",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "41239",
+    "name": "Quick Siphon",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "40103710",
+    "name": "Race Against Time",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "23784",
+    "name": "Radial Sweep",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "27030",
+    "name": "Radiant Aura",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "63058",
+    "name": "Radiant Destruction",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "63066",
+    "name": "Radiant Glory",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "42455",
+    "name": "Radiant Magelight",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "63075",
+    "name": "Radiant Oppression",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "27514",
+    "name": "Radiant Ward",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "41288",
+    "name": "Radiating Regeneration",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "39904",
+    "name": "Rally",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "45493",
+    "name": "Ranger",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "41487",
+    "name": "Ransack",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "86586",
+    "name": "Rapid Fire",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "46492",
+    "name": "Rapid Maneuver",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "45529",
+    "name": "Rapid Mending",
+    "category": "armor",
+    "skill_line": "Heavy Armor"
+  },
+  {
+    "id": "41276",
+    "name": "Rapid Regeneration",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "116201",
+    "name": "Rapid Rot",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "40590",
+    "name": "Rapid Strikes",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "40118279",
+    "name": "Ravenous Goliath",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "46466",
+    "name": "Razor Caltrops",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "45621",
+    "name": "Reach",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "40115410",
+    "name": "Reanimate",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "37658",
+    "name": "Reaper's Mark",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "45198",
+    "name": "Rebate",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "40186234",
+    "name": "Reconstructive Domain",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "40183047",
+    "name": "Recuperative Treatise",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "45293",
+    "name": "Red Diamond",
+    "category": "racial",
+    "skill_line": "Imperial Skills"
+  },
+  {
+    "id": "24195",
+    "name": "Reflective Light",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "37816",
+    "name": "Refreshing Path",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "45103",
+    "name": "Refreshing Shadows",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "41271",
+    "name": "Regeneration",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "30486",
+    "name": "Regenerative Ward",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "62107",
+    "name": "Relentless Focus",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "217088",
+    "name": "Remdying Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40183537",
+    "name": "Remedy Cascade",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "227066",
+    "name": "Remedying Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "217298",
+    "name": "Remedying Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "217510",
+    "name": "Remedying Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217652",
+    "name": "Remedying Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217192",
+    "name": "Remedying Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "216941",
+    "name": "Remedying Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "214987",
+    "name": "Remedying Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "27413",
+    "name": "Remembrance",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "40118380",
+    "name": "Remote Totem",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "86393",
+    "name": "Rend",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "40114196",
+    "name": "Render Flesh",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "40675",
+    "name": "Rending Slashes",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "40118367",
+    "name": "Renewing Animation",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "40118017",
+    "name": "Renewing Undeath",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "217609",
+    "name": "Repelling Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217232",
+    "name": "Repelling Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40219972",
+    "name": "Repelling Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "217639",
+    "name": "Repelling Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "27043",
+    "name": "Repentance",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "46622",
+    "name": "Replenishing Barrier",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "45319",
+    "name": "Resist Affliction",
+    "category": "racial",
+    "skill_line": "Wood Elf Skills"
+  },
+  {
+    "id": "45270",
+    "name": "Resist Flame",
+    "category": "racial",
+    "skill_line": "Dark Elf Skills"
+  },
+  {
+    "id": "45304",
+    "name": "Resist Frost",
+    "category": "racial",
+    "skill_line": "Nord Skills"
+  },
+  {
+    "id": "40117883",
+    "name": "Resistant Flesh",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "45533",
+    "name": "Resolve",
+    "category": "armor",
+    "skill_line": "Heavy Armor"
+  },
+  {
+    "id": "63255",
+    "name": "Resolving Vigor",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "40193558",
+    "name": "Resonating Glyphic",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "45247",
+    "name": "Resourceful",
+    "category": "racial",
+    "skill_line": "Argonian Skills"
+  },
+  {
+    "id": "45519",
+    "name": "Restoration Expert",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "45524",
+    "name": "Restoration Master",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "227007",
+    "name": "Restorative Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "217277",
+    "name": "Restorative Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "27007",
+    "name": "Restoring Aura",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "23985",
+    "name": "Restoring Focus",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "45212",
+    "name": "Restoring Spirit",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "40115926",
+    "name": "Restoring Tether",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "227067",
+    "name": "Resurgent Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "217301",
+    "name": "Resurgent Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "217259",
+    "name": "Resurgent Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217193",
+    "name": "Resurgent Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "216939",
+    "name": "Resurgent Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217090",
+    "name": "Resurgent Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "217635",
+    "name": "Resurgent Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "214988",
+    "name": "Resurgent Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "46505",
+    "name": "Retreating Maneuver",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "116188",
+    "name": "Reusable Parts",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "63370",
+    "name": "Revealing Flare",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "36626",
+    "name": "Reveler",
+    "category": "racial",
+    "skill_line": "Nord Skills"
+  },
+  {
+    "id": "41448",
+    "name": "Reverberating Bash",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "39928",
+    "name": "Reverse Slash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "39942",
+    "name": "Reverse Slice",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "45528",
+    "name": "Revitalize",
+    "category": "armor",
+    "skill_line": "Heavy Armor"
+  },
+  {
+    "id": "46614",
+    "name": "Reviving Barrier",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "40117637",
+    "name": "Ricochet Skull",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "42548",
+    "name": "Ring of Preservation",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "27396",
+    "name": "Rite of Passage",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "27352",
+    "name": "Ritual of Rebirth",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "27275",
+    "name": "Ritual of Retribution",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "42145",
+    "name": "Roar",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "70390",
+    "name": "Robustness",
+    "category": "racial",
+    "skill_line": "Khajiit Skills"
+  },
+  {
+    "id": "116093",
+    "name": "Rourken's Rebuke",
+    "category": "pvp",
+    "skill_line": "Volendrung"
+  },
+  {
+    "id": "45481",
+    "name": "Ruffian",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "45306",
+    "name": "Rugged",
+    "category": "racial",
+    "skill_line": "Nord Skills"
+  },
+  {
+    "id": "45272",
+    "name": "Ruination",
+    "category": "racial",
+    "skill_line": "Dark Elf Skills"
+  },
+  {
+    "id": "116096",
+    "name": "Ruinous Cyclone",
+    "category": "pvp",
+    "skill_line": "Volendrung"
+  },
+  {
+    "id": "40118226",
+    "name": "Ruinous Scythe",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "30177",
+    "name": "Rune Cage",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "23970",
+    "name": "Rune Focus",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "40185839",
+    "name": "Rune of Displacement",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "40185918",
+    "name": "Rune of Eldritch Horror",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "40183267",
+    "name": "Rune of the Colorless Pool",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "40185921",
+    "name": "Rune of Uncanny Adoration",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "30162",
+    "name": "Rune Prison",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "40185794",
+    "name": "Runeblades",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "40186489",
+    "name": "Runeguard of Freedom",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "40183401",
+    "name": "Runeguard of Still Waters",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "40183261",
+    "name": "Runemend",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "40185894",
+    "name": "Runespite Ward",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "40185912",
+    "name": "Runic Defense",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "40186531",
+    "name": "Runic Embrace",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "40183165",
+    "name": "Runic Jolt",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "40183430",
+    "name": "Runic Sunder",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "24204",
+    "name": "Rushed Ceremony",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "45207",
+    "name": "Sacred Ground",
+    "category": "classes",
+    "skill_line": "Restoring Light"
+  },
+  {
+    "id": "40114860",
+    "name": "Sacrificial Bones",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "40192372",
+    "name": "Sanctum of the Abyssal Sea",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "43266",
+    "name": "Sanguine Altar",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "37950",
+    "name": "Sap Essence",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "40135841",
+    "name": "Sated Fury",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "86063",
+    "name": "Savage Beast",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "46139",
+    "name": "Savage Strength",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "42349",
+    "name": "Scalding Rune",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "79865",
+    "name": "Scales of Pitiless Justice",
+    "category": "guild",
+    "skill_line": "Dark Brotherhood"
+  },
+  {
+    "id": "40858",
+    "name": "Scatter Shot",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "93593",
+    "name": "Scorch",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "86006",
+    "name": "Screaming Cliff Racer",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "139779",
+    "name": "Scrier's Patience",
+    "category": "world",
+    "skill_line": "Scrying"
+  },
+  {
+    "id": "139942",
+    "name": "Scry",
+    "category": "world",
+    "skill_line": "Scrying"
+  },
+  {
+    "id": "23915",
+    "name": "Searing Claw",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "23886",
+    "name": "Searing Strike",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "93968",
+    "name": "Secluded Grove",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "103793",
+    "name": "See the Unseen",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "45071",
+    "name": "Shadow Barrier",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "36337",
+    "name": "Shadow Cloak",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "36298",
+    "name": "Shadow Image",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "77400",
+    "name": "Shadow Rider",
+    "category": "guild",
+    "skill_line": "Dark Brotherhood"
+  },
+  {
+    "id": "43489",
+    "name": "Shadow Silk",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "36368",
+    "name": "Shadowy Disguise",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "77396",
+    "name": "Shadowy Supplier",
+    "category": "guild",
+    "skill_line": "Dark Brotherhood"
+  },
+  {
+    "id": "43109",
+    "name": "Shatter Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "227004",
+    "name": "Shattering Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "40217340",
+    "name": "Shattering Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "33944",
+    "name": "Shattering Rocks",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "30095",
+    "name": "Shattering Spines",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "217071",
+    "name": "Shattering Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "23842",
+    "name": "Shatterspike Mantle",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "41512",
+    "name": "Shield Charge",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "86345",
+    "name": "Shield Discipline",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40217061",
+    "name": "Shield Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "86322",
+    "name": "Shield Wall",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "41526",
+    "name": "Shielded Assault",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "33987",
+    "name": "Shifting Standard",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "86146",
+    "name": "Shimmering Shield",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "41016",
+    "name": "Shock Clench",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "42960",
+    "name": "Shock Impulse",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41054",
+    "name": "Shock Reach",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "42980",
+    "name": "Shock Ring",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40970",
+    "name": "Shock Touch",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217706",
+    "name": "Shocking Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "40115924",
+    "name": "Shocking Siphon",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "42492",
+    "name": "Shooting Star",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "36129",
+    "name": "Shrewd Offering",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "40619",
+    "name": "Shrouded Daggers",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "41131",
+    "name": "Shuffle",
+    "category": "armor",
+    "skill_line": "Medium Armor"
+  },
+  {
+    "id": "46653",
+    "name": "Siege Shield",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "46661",
+    "name": "Siege Weapon Shield",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "42655",
+    "name": "Silver Bolts",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "42696",
+    "name": "Silver Leash",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "42671",
+    "name": "Silver Shards",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "40134160",
+    "name": "Simmering Frenzy",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "41225",
+    "name": "Siphon Spirit",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "38050",
+    "name": "Siphoning Attacks",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "37977",
+    "name": "Siphoning Strikes",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "40118726",
+    "name": "Skeletal Arcanist",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "40118680",
+    "name": "Skeletal Archer",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "40114317",
+    "name": "Skeletal Mage",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "40393",
+    "name": "Skilled Tracker",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "45476",
+    "name": "Slaughter",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "45596",
+    "name": "Slayer",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "86112",
+    "name": "Sleet Storm",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "217186",
+    "name": "Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "217305",
+    "name": "Snaring Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "217477",
+    "name": "Snaring Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "218340",
+    "name": "Snaring Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217243",
+    "name": "Snaring Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217478",
+    "name": "Snaring Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "217645",
+    "name": "Snaring Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "217689",
+    "name": "Snaring Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "214986",
+    "name": "Snaring Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "40892",
+    "name": "Snipe",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "24157",
+    "name": "Solar Barrage",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "24320",
+    "name": "Solar Disturbance",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "24110",
+    "name": "Solar Flare",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "24301",
+    "name": "Solar Prison",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "93777",
+    "name": "Soothing Spores",
+    "category": "classes",
+    "skill_line": "Green Balance"
+  },
+  {
+    "id": "227093",
+    "name": "Sorcerer's Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "221132",
+    "name": "Sorcerer's Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "220620",
+    "name": "Sorcerer's Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "221166",
+    "name": "Sorcerer's Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "221289",
+    "name": "Sorcerer's Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217500",
+    "name": "Sorcerer's Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "221644",
+    "name": "Sorcerer's Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "217816",
+    "name": "Sorcerer's Soul",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "218259",
+    "name": "Sorcerer's Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "220831",
+    "name": "Sorcerer's Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "221573",
+    "name": "Sorcerer's Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "221373",
+    "name": "Sorcerer's Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "220135",
+    "name": "Sorcerer's Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "43099",
+    "name": "Soul Assault",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217472",
+    "name": "Soul Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217522",
+    "name": "Soul Burst Buffs",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "37545",
+    "name": "Soul Harvest",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "45580",
+    "name": "Soul Lock",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "33715",
+    "name": "Soul of Flame",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "45583",
+    "name": "Soul Shatter",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "36166",
+    "name": "Soul Shred",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "36186",
+    "name": "Soul Siphon",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "45155",
+    "name": "Soul Siphoner",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "43067",
+    "name": "Soul Splitting Trap",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "43093",
+    "name": "Soul Strike",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "45590",
+    "name": "Soul Summons",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "36207",
+    "name": "Soul Tether",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "43056",
+    "name": "Soul Trap",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "27090",
+    "name": "Spear Shards",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "44721",
+    "name": "Spear Wall",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "77401",
+    "name": "Spectral Assassin",
+    "category": "guild",
+    "skill_line": "Dark Brotherhood"
+  },
+  {
+    "id": "45262",
+    "name": "Spell Attunement",
+    "category": "racial",
+    "skill_line": "Breton Skills"
+  },
+  {
+    "id": "103878",
+    "name": "Spell Orb",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "45274",
+    "name": "Spell Recharge",
+    "category": "racial",
+    "skill_line": "High Elf Skills"
+  },
+  {
+    "id": "42263",
+    "name": "Spell Symmetry",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "86333",
+    "name": "Spell Wall",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "45559",
+    "name": "Spell Warding",
+    "category": "armor",
+    "skill_line": "Light Armor"
+  },
+  {
+    "id": "43323",
+    "name": "Spiked Bone Shield",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "40118912",
+    "name": "Spirit Guardian",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "40115710",
+    "name": "Spirit Mender",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "40185901",
+    "name": "Spiteward of the Lucid Mind",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "184887",
+    "name": "Splintered Secrets",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "45298",
+    "name": "Stalwart",
+    "category": "racial",
+    "skill_line": "Nord Skills"
+  },
+  {
+    "id": "63351",
+    "name": "Stalwart Guard",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "39807",
+    "name": "Stampede",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "34021",
+    "name": "Standard of Might",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "41310",
+    "name": "Steadfast Ward",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "40744",
+    "name": "Steel Tornado",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "43001",
+    "name": "Storm Pulsar",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "30215",
+    "name": "Streak",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "35931",
+    "name": "Strife",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "46040",
+    "name": "Strike from the Shadows",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "42240",
+    "name": "Structured Entropy",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "40138097",
+    "name": "Stupefy",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "46546",
+    "name": "Sturdy Horn",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "93791",
+    "name": "Subterranean Assault",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "30553",
+    "name": "Summon Charged Atronach",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "36313",
+    "name": "Summon Shade",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "30538",
+    "name": "Summon Storm Atronach",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "30626",
+    "name": "Summon Twilight Matriarch",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "30598",
+    "name": "Summon Twilight Tormentor",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "30657",
+    "name": "Summon Unstable Clannfear",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "30641",
+    "name": "Summon Unstable Familiar",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "30674",
+    "name": "Summon Volatile Familiar",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "30587",
+    "name": "Summon Winged Twilight",
+    "category": "classes",
+    "skill_line": "Daedric Summoning"
+  },
+  {
+    "id": "40118244",
+    "name": "Summoner's Armor",
+    "category": "classes",
+    "skill_line": "Bone Tyrant"
+  },
+  {
+    "id": "24171",
+    "name": "Sun Fire",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "27501",
+    "name": "Sun Shield",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "217704",
+    "name": "Sundering Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "40217465",
+    "name": "Sundering Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "229600",
+    "name": "Sundering Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40217872",
+    "name": "Sundering Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "40217178",
+    "name": "Sundering Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "40215731",
+    "name": "Sundering Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "117985",
+    "name": "Sundering Swing",
+    "category": "pvp",
+    "skill_line": "Volendrung"
+  },
+  {
+    "id": "40216973",
+    "name": "Sundering Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40217630",
+    "name": "Sundering Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "40220541",
+    "name": "Sundering Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "40214960",
+    "name": "Sundering Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "32194",
+    "name": "Superheated Ward",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "29861",
+    "name": "Suppression Field",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "30390",
+    "name": "Surge",
+    "category": "classes",
+    "skill_line": "Storm Calling"
+  },
+  {
+    "id": "36234",
+    "name": "Surprise Attack",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "35949",
+    "name": "Swallow Soul",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "86026",
+    "name": "Swarm",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "41926",
+    "name": "Swarming Scion",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "227071",
+    "name": "Swift Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "217091",
+    "name": "Swift Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "217696",
+    "name": "Swift Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "214989",
+    "name": "Swift Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "45312",
+    "name": "Swift Warrior",
+    "category": "racial",
+    "skill_line": "Orc Skills"
+  },
+  {
+    "id": "76457",
+    "name": "Swiftly Forgotten",
+    "category": "guild",
+    "skill_line": "Thieves Guild"
+  },
+  {
+    "id": "45452",
+    "name": "Sword and Board",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "40103755",
+    "name": "Symbiosis",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "117970",
+    "name": "Syrabane's Boon",
+    "category": "racial",
+    "skill_line": "High Elf Skills"
+  },
+  {
+    "id": "39647",
+    "name": "Tactician",
+    "category": "pvp",
+    "skill_line": "Emperor"
+  },
+  {
+    "id": "33668",
+    "name": "Take Flight",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "43477",
+    "name": "Tangling Webs",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "35871",
+    "name": "Teleport Strike",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "227091",
+    "name": "Templar's Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "221129",
+    "name": "Templar's Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "220619",
+    "name": "Templar's Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "221159",
+    "name": "Templar's Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "221286",
+    "name": "Templar's Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217482",
+    "name": "Templar's Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "221642",
+    "name": "Templar's Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "220508",
+    "name": "Templar's Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "220828",
+    "name": "Templar's Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "221572",
+    "name": "Templar's Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "221370",
+    "name": "Templar's Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "220136",
+    "name": "Templar's Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "40103564",
+    "name": "Temporal Guard",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "217654",
+    "name": "Tenacious Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "217649",
+    "name": "Tenacious Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "40185823",
+    "name": "Tentacular Dread",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "40185836",
+    "name": "The Imperfect Ring",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "40189867",
+    "name": "The Languid Eye",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "44953",
+    "name": "The Storm Voice",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "40189837",
+    "name": "The Tide King's Gaze",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "40189791",
+    "name": "The Unblinking Eye",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "86410",
+    "name": "Thrive in Chaos",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "86504",
+    "name": "Thunder Storm",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "86528",
+    "name": "Thunderous Rage",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40186209",
+    "name": "Tidal Chakram",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "40104079",
+    "name": "Time Freeze",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "40103488",
+    "name": "Time Stop",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "76452",
+    "name": "Timely Escape",
+    "category": "guild",
+    "skill_line": "Thieves Guild"
+  },
+  {
+    "id": "40186452",
+    "name": "Tome-Bearer's Inspiration",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "23870",
+    "name": "Toppling Charge",
+    "category": "classes",
+    "skill_line": "Aedric Spear"
+  },
+  {
+    "id": "217660",
+    "name": "Torch-bearer's Sweep",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "217646",
+    "name": "Torchbearer",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "50907",
+    "name": "Tough",
+    "category": "racial",
+    "skill_line": "Imperial Skills"
+  },
+  {
+    "id": "86603",
+    "name": "Toxic Barrage",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "63810",
+    "name": "Trafficker",
+    "category": "world",
+    "skill_line": "Legerdemain"
+  },
+  {
+    "id": "217667",
+    "name": "Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "45145",
+    "name": "Transfer",
+    "category": "classes",
+    "skill_line": "Siphoning"
+  },
+  {
+    "id": "42720",
+    "name": "Trap Beast",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "43541",
+    "name": "Trapping Webs",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "45012",
+    "name": "Traumatic Burns",
+    "category": "classes",
+    "skill_line": "Ardent Flame"
+  },
+  {
+    "id": "40222313",
+    "name": "Traumatic Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "40217663",
+    "name": "Traumatic Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "217342",
+    "name": "Traveling Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "45500",
+    "name": "Tri Focus",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "140093",
+    "name": "Trowel",
+    "category": "world",
+    "skill_line": "Excavation"
+  },
+  {
+    "id": "42529",
+    "name": "Turn Evil",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "45482",
+    "name": "Twin Blade and Blunt",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "40664",
+    "name": "Twin Slashes",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "37796",
+    "name": "Twisting Path",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "40217528",
+    "name": "Ulfsild's Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "40186477",
+    "name": "Unbreakable Fate",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "55676",
+    "name": "Undaunted Command",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "55386",
+    "name": "Undaunted Mettle",
+    "category": "guild",
+    "skill_line": "Undaunted"
+  },
+  {
+    "id": "116283",
+    "name": "Undead Confederate",
+    "category": "classes",
+    "skill_line": "Living Death"
+  },
+  {
+    "id": "33090",
+    "name": "Undeath",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "40103478",
+    "name": "Undo",
+    "category": "guild",
+    "skill_line": "Psijic Order"
+  },
+  {
+    "id": "84672",
+    "name": "Unflinching Rage",
+    "category": "racial",
+    "skill_line": "Orc Skills"
+  },
+  {
+    "id": "45176",
+    "name": "Unholy Knowledge",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "135218",
+    "name": "Unnatural Movement",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "40117805",
+    "name": "Unnerving Boneyard",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "27311",
+    "name": "Unstable Core",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "41711",
+    "name": "Unstable Wall of Elements",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41712",
+    "name": "Unstable Wall of Fire",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41717",
+    "name": "Unstable Wall of Frost",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41723",
+    "name": "Unstable Wall of Storms",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41082",
+    "name": "Unstoppable",
+    "category": "armor",
+    "skill_line": "Heavy Armor"
+  },
+  {
+    "id": "41091",
+    "name": "Unstoppable Brute",
+    "category": "armor",
+    "skill_line": "Heavy Armor"
+  },
+  {
+    "id": "39968",
+    "name": "Uppercut",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "217096",
+    "name": "Valorous Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "24180",
+    "name": "Vampire's Bane",
+    "category": "classes",
+    "skill_line": "Dawn's Wrath"
+  },
+  {
+    "id": "40134583",
+    "name": "Vampiric Drain",
+    "category": "world",
+    "skill_line": "Vampire"
+  },
+  {
+    "id": "214970",
+    "name": "Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "214997",
+    "name": "Vault Fatigue",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "37713",
+    "name": "Veil of Blades",
+    "category": "classes",
+    "skill_line": "Shadow"
+  },
+  {
+    "id": "76453",
+    "name": "Veil of Shadows",
+    "category": "guild",
+    "skill_line": "Thieves Guild"
+  },
+  {
+    "id": "36223",
+    "name": "Veiled Strike",
+    "category": "classes",
+    "skill_line": "Assassination"
+  },
+  {
+    "id": "40823",
+    "name": "Venom Arrow",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "40117624",
+    "name": "Venom Skull",
+    "category": "classes",
+    "skill_line": "Grave Lord"
+  },
+  {
+    "id": "30107",
+    "name": "Vibrant Shroud",
+    "category": "classes",
+    "skill_line": "Dark Magic"
+  },
+  {
+    "id": "63240",
+    "name": "Vigor",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "45494",
+    "name": "Vinedusk Training",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "40183709",
+    "name": "Vitalizing Glyphic",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  },
+  {
+    "id": "42327",
+    "name": "Volcanic Rune",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "32199",
+    "name": "Volcanic Ward",
+    "category": "classes",
+    "skill_line": "Earthen Heart"
+  },
+  {
+    "id": "40917",
+    "name": "Volley",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "41658",
+    "name": "Wall of Elements",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41659",
+    "name": "Wall of Fire",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41668",
+    "name": "Wall of Frost",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "41663",
+    "name": "Wall of Storms",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "46529",
+    "name": "War Horn",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "41302",
+    "name": "Ward Ally",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "227094",
+    "name": "Warden's Banner",
+    "category": "pvp",
+    "skill_line": "Support"
+  },
+  {
+    "id": "221141",
+    "name": "Warden's Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "220618",
+    "name": "Warden's Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "221173",
+    "name": "Warden's Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "221296",
+    "name": "Warden's Explosion",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "217508",
+    "name": "Warden's Knife",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "221647",
+    "name": "Warden's Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "220506",
+    "name": "Warden's Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "220839",
+    "name": "Warden's Throw",
+    "category": "weapons",
+    "skill_line": "One Hand and Shield"
+  },
+  {
+    "id": "221576",
+    "name": "Warden's Torch",
+    "category": "guild",
+    "skill_line": "Fighters Guild"
+  },
+  {
+    "id": "221380",
+    "name": "Warden's Trample",
+    "category": "pvp",
+    "skill_line": "Assault"
+  },
+  {
+    "id": "220128",
+    "name": "Warden's Vault",
+    "category": "weapons",
+    "skill_line": "Bow"
+  },
+  {
+    "id": "40243686",
+    "name": "Warding Bond",
+    "category": "weapons",
+    "skill_line": "Restoration Staff"
+  },
+  {
+    "id": "40217460",
+    "name": "Warding Burst",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "217608",
+    "name": "Warding Contingency",
+    "category": "guild",
+    "skill_line": "Mages Guild"
+  },
+  {
+    "id": "40217820",
+    "name": "Warding Smash",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "40216802",
+    "name": "Warding Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "84680",
+    "name": "Wayfarer",
+    "category": "racial",
+    "skill_line": "Redguard Skills"
+  },
+  {
+    "id": "41548",
+    "name": "Weakness to Elements",
+    "category": "weapons",
+    "skill_line": "Destruction Staff"
+  },
+  {
+    "id": "185036",
+    "name": "Wellspring of the Abyss",
+    "category": "classes",
+    "skill_line": "Soldier of Apocrypha"
+  },
+  {
+    "id": "42379",
+    "name": "Werewolf Berserker",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "42358",
+    "name": "Werewolf Transformation",
+    "category": "world",
+    "skill_line": "Werewolf"
+  },
+  {
+    "id": "40731",
+    "name": "Whirling Blades",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "40714",
+    "name": "Whirlwind",
+    "category": "weapons",
+    "skill_line": "Dual Wield"
+  },
+  {
+    "id": "216803",
+    "name": "Wield Soul",
+    "category": "world",
+    "skill_line": "Soul Magic"
+  },
+  {
+    "id": "85993",
+    "name": "Wild Guardian",
+    "category": "classes",
+    "skill_line": "Animal Companions"
+  },
+  {
+    "id": "45565",
+    "name": "Wind Walker",
+    "category": "armor",
+    "skill_line": "Medium Armor"
+  },
+  {
+    "id": "33743",
+    "name": "Wing Buffet",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "86172",
+    "name": "Winter's Revenge",
+    "category": "classes",
+    "skill_line": "Winter's Embrace"
+  },
+  {
+    "id": "44933",
+    "name": "World in Ruin",
+    "category": "classes",
+    "skill_line": "Draconic Power"
+  },
+  {
+    "id": "40008",
+    "name": "Wrecking Blow",
+    "category": "weapons",
+    "skill_line": "Two Handed"
+  },
+  {
+    "id": "40185803",
+    "name": "Writhing Runeblades",
+    "category": "classes",
+    "skill_line": "Herald of the Tome"
+  },
+  {
+    "id": "64281",
+    "name": "Y'ffre's Endurance",
+    "category": "racial",
+    "skill_line": "Wood Elf Skills"
+  },
+  {
+    "id": "40186229",
+    "name": "Zenas' Empowering Disc",
+    "category": "classes",
+    "skill_line": "Curative Runeforms"
+  }
+]

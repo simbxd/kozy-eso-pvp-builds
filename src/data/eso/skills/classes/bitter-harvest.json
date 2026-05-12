@@ -1,0 +1,11 @@
+{
+  "id": "40115238",
+  "slug": "bitter-harvest",
+  "name": "Bitter Harvest",
+  "description": "Sap the lingering life from fresh corpses, granting you 2 Ultimate and healing 660 Health every 1 second for 2 seconds per corpse consumed. This ability scales off your Max Health.\n\nWhile slotted, your damage taken is reduced by 3%.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

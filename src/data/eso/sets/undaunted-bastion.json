@@ -1,0 +1,40 @@
+{
+  "id": "undaunted-bastion",
+  "name": "Undaunted Bastion",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Grahtwood, Elden Hollow",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you use a taunt ability while you are under 75% Health, gain a damage shield that absorbs 328-14127 damage for 6 seconds. This effect can occur once every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Undaunted_Bastion",
+  "esohub_url": "https://eso-hub.com/en/sets/undaunted-bastion"
+}

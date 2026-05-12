@@ -1,0 +1,40 @@
+{
+  "id": "moondancer",
+  "name": "Moondancer",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Reaper's March, Maw of Lorkhaj",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you activate a synergy while in combat, you gain a shadow blessing that increases your Weapon and Spell Damage by 11-474 or a lunar blessing that increases your Magicka Recovery by 11-474 for 20 seconds. You can only have one blessing active at a time.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Moondancer",
+  "esohub_url": "https://eso-hub.com/en/sets/moondancer"
+}

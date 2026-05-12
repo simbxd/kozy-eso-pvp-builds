@@ -1,0 +1,11 @@
+{
+  "id": "39928",
+  "slug": "reverse-slash",
+  "name": "Reverse Slash",
+  "description": "Shift your grip and strike an enemy down, dealing 1161 Physical Damage. Deals up to 300% more damage to enemies with less than 50% Health.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

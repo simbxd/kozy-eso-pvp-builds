@@ -1,0 +1,11 @@
+{
+  "id": "74580",
+  "slug": "finders-keepers",
+  "name": "Finders Keepers",
+  "description": "Thieves Troves are caches that are located all over Tamriel. They can only be opened by members of the Thieves Guild.",
+  "category": "guild",
+  "skill_line": "Thieves Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

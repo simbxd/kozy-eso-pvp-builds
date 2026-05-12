@@ -1,0 +1,11 @@
+{
+  "id": "40217459",
+  "slug": "magical-burst",
+  "name": "Magical Burst",
+  "description": "Unleash a powerful burst of soul magic around you.",
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

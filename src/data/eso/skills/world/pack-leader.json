@@ -1,0 +1,11 @@
+{
+  "id": "42367",
+  "slug": "pack-leader",
+  "name": "Pack Leader",
+  "description": "Transform into a beast, fearing nearby enemies for 3 seconds. \n\nWhile transformed, your Max Stamina is increased by 30%, you take 10% less damage, and you summon two direwolves. You also grant yourself and nearby group members Minor Courage, increasing their Weapon and Spell Damage by 215.\n\nWhile slotted, your Stamina Recovery is increased by 15%.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

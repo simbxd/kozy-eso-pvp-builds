@@ -1,0 +1,40 @@
+{
+  "id": "nix-hounds-howl",
+  "name": "Nix-Hound's Howl",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Stonefalls, Bal Sunnar",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Completing a fully-charged Heavy Attack applies Major Cowardice to your target for 1 second per 1000 Weapon Damage you have, lowering their Weapon and Spell Damage by 430. You then gain Major Courage for the same duration, increasing your Weapon and Spell Damage by 430. This effect can occur once every 12 seconds.\n\nCurrent Durations\nMajor Cowardice: 1 second\nMajor Courage: 1 second",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nix-Hound's_Howl",
+  "esohub_url": "https://eso-hub.com/en/sets/nix-hounds-howl"
+}

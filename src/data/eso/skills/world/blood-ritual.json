@@ -1,0 +1,11 @@
+{
+  "id": "33091",
+  "slug": "blood-ritual",
+  "name": "Blood Ritual",
+  "description": "Allows you to infect another player with Noxiphilic Sanguivoria once every week by returning to the Vampire ritual site. \n\nPlayers already infected with Lycanthropy cannot be infected with Noxiphilic Sanguivoria.",
+  "category": "world",
+  "skill_line": "Vampire",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

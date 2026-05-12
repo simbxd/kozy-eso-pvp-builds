@@ -1,0 +1,40 @@
+{
+  "id": "telvanni-efficiency",
+  "name": "Telvanni Efficiency",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Necrom",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "While you have a living Companion, reduce the cooldown of their abilities by 50%. While you do not have a living Companion, reduce the cost of your Magicka, Stamina, Health, and Ultimate abilities by 8%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Telvanni_Efficiency",
+  "esohub_url": "https://eso-hub.com/en/sets/telvanni-efficiency"
+}

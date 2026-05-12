@@ -1,0 +1,11 @@
+{
+  "id": "39793",
+  "slug": "critical-charge",
+  "name": "Critical Charge",
+  "description": "Launch across the earth and smash an enemy, dealing 1392 Physical Damage. \n\nThis attack is always a Critical Strike.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

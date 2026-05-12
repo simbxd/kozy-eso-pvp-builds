@@ -1,0 +1,40 @@
+{
+  "id": "roar-of-alkosh",
+  "name": "Roar of Alkosh",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Reaper's March, Maw of Lorkhaj",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you activate a synergy, you send a shockwave from your position that deals 318 Physical Damage and an additional 1590 Physical Damage over 10 seconds. Reduces the Physical and Spell Resistance of any enemy hit by the amount of your Weapon Damage for the duration, up to a maximum of 6000.  The damage scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Roar_of_Alkosh",
+  "esohub_url": "https://eso-hub.com/en/sets/roar-of-alkosh"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "vesture-of-darloc-brae",
+  "name": "Vesture of Darloc Brae",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Northern Elsweyr",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Reduces the radius you can be detected while Sneaking by 2 meters. Reduces the cost of Sneak by 0-10%.",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "While you are crouching and not Bracing, you restore 15-670 Magicka and Stamina and heal for 15-670 Health every second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vesture_of_Darloc_Brae",
+  "esohub_url": "https://eso-hub.com/en/sets/vesture-of-darloc-brae"
+}

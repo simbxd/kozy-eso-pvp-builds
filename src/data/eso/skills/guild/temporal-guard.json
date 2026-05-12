@@ -1,0 +1,11 @@
+{
+  "id": "40103564",
+  "slug": "temporal-guard",
+  "name": "Temporal Guard",
+  "description": "Step backwards in time, resetting your Health, Magicka, Stamina, and position to what they were 4 seconds ago.\n\nWhile slotted you gain Minor Protection, reducing your damage taken by 5%.",
+  "category": "guild",
+  "skill_line": "Psijic Order",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

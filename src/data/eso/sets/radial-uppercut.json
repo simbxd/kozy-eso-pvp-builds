@@ -1,0 +1,22 @@
+{
+  "id": "radial-uppercut",
+  "name": "Radial Uppercut",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Blackrose Prison",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Uppercut deals 45% of its damage to all enemies near your primary target.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Radial_Uppercut",
+  "esohub_url": "https://eso-hub.com/en/sets/radial-uppercut"
+}

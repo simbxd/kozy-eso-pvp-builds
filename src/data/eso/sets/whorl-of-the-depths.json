@@ -1,0 +1,40 @@
+{
+  "id": "whorl-of-the-depths",
+  "name": "Whorl of the Depths",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "High Isle, Dreadsail Reef",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a Light Attack, you apply Whorl of the Depths to the target, dealing 1016 Frost damage over 8 seconds. When this effect ends, a 5 meter whirlpool is created under the target for 6 seconds and deals 764 Frost damage every 1 second. This effect can occur once every 18 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Whorl_of_the_Depths",
+  "esohub_url": "https://eso-hub.com/en/sets/whorl-of-the-depths"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "30445",
+  "slug": "bound-aegis",
+  "name": "Bound Aegis",
+  "description": "Protect yourself with the power of Oblivion, creating a suit of Daedric mail that increases your block mitigation by 50% for 3 seconds. The duration is based on your combined Physical and Spell Resistance.\n\nWhen slotted on either bar, you gain Minor Protection and Minor Resolve, reducing your damage taken by 5% and increasing your Armor by 2974.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "dragons-appetite",
+  "name": "Dragon's Appetite",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Western Skyrim, Dragon's Belly",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Increase your damage done to Bleeding enemies by 5-225. Dealing non-Bleed damage to Bleeding enemies generates a stack of Dragon's Appetite for 5 seconds, up to once per half second. After 10 stacks you consume Dragon's Appetite and heal for 4415 Health. The heal effect scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dragon's_Appetite",
+  "esohub_url": "https://eso-hub.com/en/sets/dragons-appetite"
+}

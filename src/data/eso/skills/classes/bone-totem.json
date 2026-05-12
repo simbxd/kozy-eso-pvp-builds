@@ -1,0 +1,11 @@
+{
+  "id": "40115093",
+  "slug": "bone-totem",
+  "name": "Bone Totem",
+  "description": "Summon an effigy of bone at your feet for 11 seconds that grants Minor Protection to you and your allies, reducing damage taken by 5%. Enemies in the area are afflicted with Major Cowardice, reducing their Weapon and Spell Damage by 430.\n\nAfter 2 seconds, the totem begins fearing nearby enemies every 2 seconds, causing them to cower in place for 4 seconds.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

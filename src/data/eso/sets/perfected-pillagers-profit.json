@@ -1,0 +1,45 @@
+{
+  "id": "perfected-pillagers-profit",
+  "name": "Perfected Pillager's Profit",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "High Isle, Dreadsail Reef",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 3-129 Magicka Recovery",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Casting an Ultimate ability while in combat grants 2% of Ultimate spent as Ultimate to up to 11 other group members within 12 meters every 2 seconds over 10 seconds. Group members can only be affected by this set once every 45 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Pillager's_Profit",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-pillagers-profit"
+}

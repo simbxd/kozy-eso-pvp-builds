@@ -1,0 +1,11 @@
+{
+  "id": "45446",
+  "slug": "follow-up",
+  "name": "Follow Up",
+  "description": "When you complete a fully-charged Heavy Attack, your damage done with Two Handed attacks increases by 10% for 4 seconds.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

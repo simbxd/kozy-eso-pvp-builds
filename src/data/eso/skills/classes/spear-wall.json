@@ -1,0 +1,11 @@
+{
+  "id": "44721",
+  "slug": "spear-wall",
+  "name": "Spear Wall",
+  "description": "Gain Minor Berserk and Minor Protection for 6 seconds, increasing damage done and reducing damage taken by 5%.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

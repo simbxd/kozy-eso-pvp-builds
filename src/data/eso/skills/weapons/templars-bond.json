@@ -1,0 +1,11 @@
+{
+  "id": "221129",
+  "slug": "templars-bond",
+  "name": "Templar's Bond",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

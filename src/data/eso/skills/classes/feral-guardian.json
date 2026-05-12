@@ -1,0 +1,11 @@
+{
+  "id": "85985",
+  "slug": "feral-guardian",
+  "name": "Feral Guardian",
+  "description": "Rouse a grizzly to fight by your side. The grizzly swipes at an enemy, dealing 580 Magic Damage, and sometimes swipes all enemies in front of it, dealing 2323 Magic Damage and stunning them for 2 seconds.\n\nOnce summoned you can activate Guardian's Wrath for 75 Ultimate, causing the grizzly to maul an enemy for 3253 Magic Damage. Deals 100% more damage to enemies below 25% Health.",
+  "category": "classes",
+  "skill_line": "Animal Companions",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

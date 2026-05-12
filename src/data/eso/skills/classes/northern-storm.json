@@ -1,0 +1,11 @@
+{
+  "id": "86116",
+  "slug": "northern-storm",
+  "name": "Northern Storm",
+  "description": "Twist a violent storm around you, dealing 1199 Frost Damage every 1 second for 8 seconds to enemies around you and reducing their Movement Speed by 40%. As the storm holds, your damage done increases by 2% every 1 second for 12 seconds, up to 9 stacks max.\n\nYou and nearby allies gain Major Protection, reducing your damage taken by 10%.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

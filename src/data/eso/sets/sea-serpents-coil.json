@@ -1,0 +1,22 @@
+{
+  "id": "sea-serpents-coil",
+  "name": "Sea-Serpent's Coil",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "necklace"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "While at full Health, you gain 40% damage reduction. After taking damage while at full Health in combat, you gain Serpent's Rebuke for 10 seconds, snaring yourself by 40% and gaining Major Berserk and Major Courage, increasing your damage done by 10% and Weapon and Spell Damage by 430.\n\nThe damage resistance does not apply while Serpent's Rebuke is active.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sea-Serpent's_Coil",
+  "esohub_url": "https://eso-hub.com/en/sets/sea-serpents-coil"
+}

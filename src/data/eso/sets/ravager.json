@@ -1,0 +1,40 @@
+{
+  "id": "ravager",
+  "name": "Ravager",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Vlastarus",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Each time you attempt to reduce the target's Physical or Spell Resistance, you gain a stack of Ravager for 5 seconds, increasing your Weapon and Spell Damage by 3-146. You can gain a stack every 1 second. At 4 stacks, the duration doubles but cannot be refreshed.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ravager",
+  "esohub_url": "https://eso-hub.com/en/sets/ravager"
+}

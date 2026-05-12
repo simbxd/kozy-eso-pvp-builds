@@ -1,0 +1,40 @@
+{
+  "id": "tavas-favor",
+  "name": "Tava's Favor",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Hew's Bane, Forebear's Junction",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you dodge an attack, you receive the blessing of Tava, generating 12 Ultimate over 3 seconds.  This effect can occur once every 3 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Tava's_Favor",
+  "esohub_url": "https://eso-hub.com/en/sets/tavas-favor"
+}

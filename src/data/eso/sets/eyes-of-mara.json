@@ -1,0 +1,40 @@
+{
+  "id": "eyes-of-mara",
+  "name": "Eyes of Mara",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Eyevea, Mara's Eye Manufactory",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the cost of your Restoration Staff abilities by 15%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Eyes_of_Mara",
+  "esohub_url": "https://eso-hub.com/en/sets/eyes-of-mara"
+}

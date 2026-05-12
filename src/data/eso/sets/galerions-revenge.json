@@ -1,0 +1,42 @@
+{
+  "id": "galerions-revenge",
+  "name": "Galerion's Revenge",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Tel Var Merchant",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "waist",
+    "feet",
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a Light or Heavy Attack, you put a Mark of Revenge on the enemy for 15 seconds. After stacking 5 Marks of Revenge on an enemy they detonate for 1462 Magic Damage.\n\nYou can only apply a stack once every half second and the damage scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Galerion's_Revenge",
+  "esohub_url": "https://eso-hub.com/en/sets/galerions-revenge"
+}

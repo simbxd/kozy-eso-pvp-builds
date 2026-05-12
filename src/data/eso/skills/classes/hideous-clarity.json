@@ -1,0 +1,11 @@
+{
+  "id": "185243",
+  "slug": "hideous-clarity",
+  "name": "Hideous Clarity",
+  "description": "You've stared too long into the abyss. When you generate Crux, you restore 225 Magicka and Stamina.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

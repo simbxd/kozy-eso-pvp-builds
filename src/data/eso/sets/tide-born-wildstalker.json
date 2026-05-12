@@ -1,0 +1,40 @@
+{
+  "id": "tide-born-wildstalker",
+  "name": "Tide-Born Wildstalker",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Increase your direct damage done to monsters by 12%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Tide-Born_Wildstalker",
+  "esohub_url": "https://eso-hub.com/en/sets/tide-born-wildstalker"
+}

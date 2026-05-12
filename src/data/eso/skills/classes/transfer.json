@@ -1,0 +1,11 @@
+{
+  "id": "45145",
+  "slug": "transfer",
+  "name": "Transfer",
+  "description": "Casting a Siphoning ability while in combat generates 2 Ultimate. This effect can occur once every 4 seconds.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

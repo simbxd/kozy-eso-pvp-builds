@@ -1,0 +1,11 @@
+{
+  "id": "45521",
+  "slug": "absorb",
+  "name": "Absorb",
+  "description": "Restores 600 Magicka whenever you block an attack. This effect can occur once every .25 seconds.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

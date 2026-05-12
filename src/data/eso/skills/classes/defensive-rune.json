@@ -1,0 +1,11 @@
+{
+  "id": "30194",
+  "slug": "defensive-rune",
+  "name": "Defensive Rune",
+  "description": "Place a rune of protection on yourself for 2 minutes. While active, the next enemy to attack you is imprisoned in a constricting sphere of dark magic, stunning them after a short delay for 3 seconds.\n\nThis stun cannot be blocked.",
+  "category": "classes",
+  "skill_line": "Dark Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

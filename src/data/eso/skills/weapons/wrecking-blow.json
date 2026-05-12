@@ -1,0 +1,11 @@
+{
+  "id": "40008",
+  "slug": "wrecking-blow",
+  "name": "Wrecking Blow",
+  "description": "Slam an enemy with an upward swing, dealing 2760 Physical Damage.\n\nGrants you Major Berserk and Empower for 3 seconds, increasing damage done by 10% and increasing damage done with Heavy Attacks against monsters by 70%.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

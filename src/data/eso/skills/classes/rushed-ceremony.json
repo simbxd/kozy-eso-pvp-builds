@@ -1,0 +1,11 @@
+{
+  "id": "24204",
+  "slug": "rushed-ceremony",
+  "name": "Rushed Ceremony",
+  "description": "Beacon your inner light, healing yourself or a wounded ally in front of you for 3486 Health.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

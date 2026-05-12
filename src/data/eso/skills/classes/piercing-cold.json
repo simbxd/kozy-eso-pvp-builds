@@ -1,0 +1,11 @@
+{
+  "id": "86196",
+  "slug": "piercing-cold",
+  "name": "Piercing Cold",
+  "description": "Increases the amount of damage you block by 8% and increases your Frost Damage by 15%.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

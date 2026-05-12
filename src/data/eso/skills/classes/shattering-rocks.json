@@ -1,0 +1,11 @@
+{
+  "id": "33944",
+  "slug": "shattering-rocks",
+  "name": "Shattering Rocks",
+  "description": "Encase an enemy in molten rock, reducing their movement speed by 50% for 1 second. Upon completion, the target is stunned for 4 seconds, or 8 seconds against monsters. After the stun ends, the target takes 1379 Flame Damage and you heal for 2760 Health.\n\nThis stun cannot be blocked.\n\nThe molten rock melts through the enemy's armor and applies Minor Breach for 10 seconds, reducing Armor by 2974.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

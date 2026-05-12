@@ -1,0 +1,11 @@
+{
+  "id": "46040",
+  "slug": "strike-from-the-shadows",
+  "name": "Strike from the Shadows",
+  "description": "When you leave Sneak, invisibility, or Mist Form your Weapon and Spell Damage is increased by 300 for 6 seconds.",
+  "category": "world",
+  "skill_line": "Vampire",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

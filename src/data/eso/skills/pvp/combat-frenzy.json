@@ -1,0 +1,11 @@
+{
+  "id": "45619",
+  "slug": "combat-frenzy",
+  "name": "Combat Frenzy",
+  "description": "You generate 20 Ultimate when you kill an enemy player.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

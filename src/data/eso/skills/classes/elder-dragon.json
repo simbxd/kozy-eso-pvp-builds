@@ -1,0 +1,11 @@
+{
+  "id": "44951",
+  "slug": "elder-dragon",
+  "name": "Elder Dragon",
+  "description": "The eldest Dragons are forces of nature. As are you.\n\nActivating a Draconic Power ability grants you and group members Minor Brutality for 20 seconds, increasing Weapon Damage by 10%.\n\nIncreases your Health Recovery by up to 700, based on your missing Health.\nCurrent amount: 0",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

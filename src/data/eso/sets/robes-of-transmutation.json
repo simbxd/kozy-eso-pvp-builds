@@ -1,0 +1,40 @@
+{
+  "id": "robes-of-transmutation",
+  "name": "Robes of Transmutation",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Elite Gear Vendors",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you heal yourself or an ally with a healing over time ability, grant them 32-1400 Critical Resistance for 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Robes_of_Transmutation",
+  "esohub_url": "https://eso-hub.com/en/sets/robes-of-transmutation"
+}

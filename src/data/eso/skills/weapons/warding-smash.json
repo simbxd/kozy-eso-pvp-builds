@@ -1,0 +1,11 @@
+{
+  "id": "40217820",
+  "slug": "warding-smash",
+  "name": "Warding Smash",
+  "description": "Drag your weapon along the ground to smash a cone in front of you.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

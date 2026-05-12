@@ -1,0 +1,45 @@
+{
+  "id": "perfected-saxhleel-champion",
+  "name": "Perfected Saxhleel Champion",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Blackwood, Rockgrove",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 25-1096 Maximum Stamina",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you use an Ultimate ability while in combat, you and up to 11 group members within 28 meters of you gain Major Force for 1 second per 15 Ultimate spent, increasing your Critical Damage done by 20%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Saxhleel_Champion",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-saxhleel-champion"
+}

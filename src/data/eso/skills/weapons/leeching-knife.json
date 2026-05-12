@@ -1,0 +1,11 @@
+{
+  "id": "217357",
+  "slug": "leeching-knife",
+  "name": "Leeching Knife",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45212",
+  "slug": "restoring-spirit",
+  "name": "Restoring Spirit",
+  "description": "Reduces the Health, Magicka, Stamina, and Ultimate costs of your abilities by 5%.",
+  "category": "classes",
+  "skill_line": "Dawn's Wrath",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

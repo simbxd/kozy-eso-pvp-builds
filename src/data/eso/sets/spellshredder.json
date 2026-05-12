@@ -1,0 +1,40 @@
+{
+  "id": "spellshredder",
+  "name": "Spellshredder",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Increase your damage done against enemies by 2% for each Damage Shield and healing over time effect on them.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spellshredder",
+  "esohub_url": "https://eso-hub.com/en/sets/spellshredder"
+}

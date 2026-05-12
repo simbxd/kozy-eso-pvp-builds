@@ -1,0 +1,11 @@
+{
+  "id": "45430",
+  "slug": "heavy-weapons",
+  "name": "Heavy Weapons",
+  "description": "Grants a bonus based on the type of weapon equipped:\n\nSwords increase your Weapon and Spell Damage by 258.\n\nAxes increase your Critical Damage done by 12%.\n\nMaces increase your Offensive Penetration by 2974.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

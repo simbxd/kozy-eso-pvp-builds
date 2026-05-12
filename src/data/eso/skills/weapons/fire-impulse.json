@@ -1,0 +1,11 @@
+{
+  "id": "42958",
+  "slug": "fire-impulse",
+  "name": "Fire Impulse",
+  "description": "Release a surge of flame, dealing 1742 Flame Damage to nearby enemies. Burning enemies are also hit by Impulse Afterburn, which deals 230 Flame Damage. Impulse Afterburn deals up to 300% more damage to enemies with less than 50% Health.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

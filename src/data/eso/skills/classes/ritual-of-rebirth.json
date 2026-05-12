@@ -1,0 +1,11 @@
+{
+  "id": "27352",
+  "slug": "ritual-of-rebirth",
+  "name": "Ritual of Rebirth",
+  "description": "Focus your spiritual devotion, healing you and nearby allies for 2614 Health.\n\nYou heal a single ally outside this ability's radius for an additional 2700 Health.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

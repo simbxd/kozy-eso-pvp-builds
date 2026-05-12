@@ -1,0 +1,22 @@
+{
+  "id": "executioners-blade",
+  "name": "Executioner's Blade",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Vateshran Hollows",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Hidden Blade deals up to 250% more damage to targets under 100% Health when you are standing behind them.\n\nRestores 1890 Stamina if the target was below 50% Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Executioner's_Blade",
+  "esohub_url": "https://eso-hub.com/en/sets/executioners-blade"
+}

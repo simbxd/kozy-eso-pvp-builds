@@ -1,0 +1,40 @@
+{
+  "id": "morkuldin",
+  "name": "Morkuldin",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Wrothgar, Morkuldin Forge",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a Light or Heavy Attack, you summon an animated weapon to attack your enemies for 15 seconds. The animated weapon's basic attacks deal 422 Physical Damage. This effect can occur once every 15 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Morkuldin",
+  "esohub_url": "https://eso-hub.com/en/sets/morkuldin"
+}

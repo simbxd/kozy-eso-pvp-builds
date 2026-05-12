@@ -1,0 +1,11 @@
+{
+  "id": "40217257",
+  "slug": "binding-bond",
+  "name": "Binding Bond",
+  "description": "Tether yourself to an ally, manifesting a life link between you and them.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "86475",
+  "slug": "lights-champion",
+  "name": "Light's Champion",
+  "description": "Release the rejuvenating energies of your staff to swirl around you, healing you or a nearby ally for 2904 Health every 1 second for 5 seconds.\n\nAny friendly target you heal gains Major Force for 8 seconds, increasing their Critical Damage by 20%.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "93877",
+  "slug": "living-vines",
+  "name": "Living Vines",
+  "description": "Grow vines to embrace you or the lowest health ally in front of you for 10 seconds. The vines heal the target for 695 Health each time they take damage. This effect can occur once every 1 second.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

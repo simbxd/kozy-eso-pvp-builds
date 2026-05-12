@@ -1,0 +1,40 @@
+{
+  "id": "spell-strategist",
+  "name": "Spell Strategist",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a Light Attack, you place a mark over your target for 5 seconds, granting you 10-460 Weapon and Spell Damage against your marked target. This effect can occur every 4 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spell_Strategist",
+  "esohub_url": "https://eso-hub.com/en/sets/spell-strategist"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "42509",
+  "slug": "circle-of-protection",
+  "name": "Circle of Protection",
+  "description": "Brand the earth at your location with a rune of protection for 20 seconds. You and your allies in the area gain Minor Protection and Minor Endurance, reducing your damage taken by 5% and increasing your Stamina Recovery by 15%.",
+  "category": "guild",
+  "skill_line": "Fighters Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

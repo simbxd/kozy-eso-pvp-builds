@@ -1,0 +1,11 @@
+{
+  "id": "141018",
+  "slug": "antiquarian-insight",
+  "name": "Antiquarian Insight",
+  "description": "Allows you to scry for Antiquities of up to Ultimate difficulty.",
+  "category": "world",
+  "skill_line": "Scrying",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 5
+}

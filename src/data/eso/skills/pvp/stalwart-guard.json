@@ -1,0 +1,11 @@
+{
+  "id": "63351",
+  "slug": "stalwart-guard",
+  "name": "Stalwart Guard",
+  "description": "Create a lifebond between you and an allied player. While bonded, 30% of the damage they take is instead redistributed to you.\n\nYou and your bonded ally also gain Minor Force, increasing your Critical Damage by 10%.\n\nThe bond will remain until you recast the spell or move more than 15 meters away from your ally.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

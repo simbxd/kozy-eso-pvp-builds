@@ -1,0 +1,11 @@
+{
+  "id": "217096",
+  "slug": "valorous-throw",
+  "name": "Valorous Throw",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

@@ -1,0 +1,40 @@
+{
+  "id": "nocturnals-ploy",
+  "name": "Nocturnal's Ploy",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Critical Resistance",
+      "value": 424
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you directly apply a Major Debuff to an enemy, remove a Major Buff with a duration from the target. When you directly apply a Minor Debuff, remove a Minor Buff from the target. These effects can both occur once every 15 seconds and a target can be affected once every 15 seconds.\n\nThis does not apply to abilities with delays.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nocturnal's_Ploy",
+  "esohub_url": "https://eso-hub.com/en/sets/nocturnals-ploy"
+}

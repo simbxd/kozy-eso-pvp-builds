@@ -1,0 +1,11 @@
+{
+  "id": "40186477",
+  "slug": "unbreakable-fate",
+  "name": "Unbreakable Fate",
+  "description": "Forge defiant runic armor around you, granting 5% Block Mitigation and Major Resolve for 20 seconds, increasing your Armor by 5948 for 20 seconds.\n\nConsume Crux to gain 5% additional Block Mitigation per Crux spent.\n\nWhile the armor persists, taking damage applies Minor Breach, reducing the Armor of your attacker by 2974 for 6 seconds.",
+  "category": "classes",
+  "skill_line": "Soldier of Apocrypha",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "drakes-rush",
+  "name": "Drake's Rush",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Gold Coast, Black Drake Villa",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you Bash an enemy, you and up to 3 group members within 15 meters of you gain Major Heroism for 12 seconds, granting you 3 Ultimate every 1.5 seconds. This effect can occur once every 18 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Drake's_Rush",
+  "esohub_url": "https://eso-hub.com/en/sets/drakes-rush"
+}

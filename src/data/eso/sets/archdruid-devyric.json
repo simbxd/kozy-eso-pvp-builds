@@ -1,0 +1,28 @@
+{
+  "id": "archdruid-devyric",
+  "name": "Archdruid Devyric",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Archdruid Devyric in Earthen Root Enclave, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 2,
+      "stat": "When you deal damage with a Heavy Attack, after 1.2 seconds deal 650 Shock damage to up to 6 enemies within a 7 by 5 meter line on your target, applying Major Vulnerability to them for 7 seconds, increasing the damage enemies take by 10%. This effect can occur once every 15 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Archdruid_Devyric",
+  "esohub_url": "https://eso-hub.com/en/sets/archdruid-devyric"
+}

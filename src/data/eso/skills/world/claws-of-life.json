@@ -1,0 +1,11 @@
+{
+  "id": "58907",
+  "slug": "claws-of-life",
+  "name": "Claws of Life",
+  "description": "Shred enemies in front of you with your tainted claws, dealing 2249 Disease Damage and an additional 3620 Disease Damage over 20 seconds. You are healed for 66% of the damage over time caused.\n\nEnemies hit by the initial hit are afflicted with the Diseased status effect.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "43406",
+  "slug": "necrotic-orb",
+  "name": "Necrotic Orb",
+  "description": "Project a globe of annihilation that slowly floats forward for 10 seconds, dealing 316 Magic Damage every 1 second to nearby enemies. \n\nAn ally near the globe can activate the Combustion synergy, causing the orb to explode for 2249 Magic Damage to nearby enemies and restore 3960 Magicka or Stamina to the ally, whichever maximum is higher.",
+  "category": "guild",
+  "skill_line": "Undaunted",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

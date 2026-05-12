@@ -1,0 +1,11 @@
+{
+  "id": "86172",
+  "slug": "winters-revenge",
+  "name": "Winter's Revenge",
+  "description": "Conjure icy shards at the target location to skewer enemies in the area, dealing 294 Frost Damage every 1 second for 12 seconds. This damage increases by 30% if cast with a Destruction Staff equipped.\n\nEnemies hit are overcome with bitter cold, reducing their Movement Speed by 30% for 3 seconds.\n\nThis ability has a higher chance to apply the Chilled status effect.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

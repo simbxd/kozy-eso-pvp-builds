@@ -1,0 +1,40 @@
+{
+  "id": "ward-of-cyrodiil",
+  "name": "Ward of Cyrodiil",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Bruma",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Martial melee damage, you apply Major Defile to the enemy for 4 seconds, reducing their healing received and damage shield strength by 12%. This effect can occur once every 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ward_of_Cyrodiil",
+  "esohub_url": "https://eso-hub.com/en/sets/ward-of-cyrodiil"
+}

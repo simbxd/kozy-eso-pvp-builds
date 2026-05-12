@@ -1,0 +1,40 @@
+{
+  "id": "hawks-eye",
+  "name": "Hawk's Eye",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Bruma",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the cost and increases the damage of your Bow abilities by 6%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hawk's_Eye",
+  "esohub_url": "https://eso-hub.com/en/sets/hawks-eye"
+}

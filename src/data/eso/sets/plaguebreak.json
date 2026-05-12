@@ -1,0 +1,40 @@
+{
+  "id": "plaguebreak",
+  "name": "Plaguebreak",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing direct damage causes player enemies to become a Plague Carrier, dealing 1000 Disease damage over 10 seconds and applying the Diseased status effect. If the plague is removed early it explodes and deals 735 Disease damage to all enemies within 8 meters of the carrier, increasing by 50% per enemy hit. This effect can occur once every 20 seconds per target, once per attack, and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Plaguebreak",
+  "esohub_url": "https://eso-hub.com/en/sets/plaguebreak"
+}

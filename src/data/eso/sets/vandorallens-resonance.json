@@ -1,0 +1,40 @@
+{
+  "id": "vandorallens-resonance",
+  "name": "Vandorallen's Resonance",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing damage with a fully-charged Heavy Attack places an electric charge on yourself and below your enemy. After 1 second, both charges explode in a 4 meter blast, each dealing 914 Shock damage to enemies hit. This effect can occur once every 6 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vandorallen's_Resonance",
+  "esohub_url": "https://eso-hub.com/en/sets/vandorallens-resonance"
+}

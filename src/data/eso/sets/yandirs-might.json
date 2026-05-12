@@ -1,0 +1,40 @@
+{
+  "id": "yandirs-might",
+  "name": "Yandir's Might",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Greymoor, Kyne's Aegis",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing Critical Damage increases your Weapon and Spell Damage by 2-86, stacking up to 5 times. This effect can occur once every 0.5 seconds.\n\nCompleting a fully-charged Heavy Attack removes all stacks and increases your Weapon and Spell Damage by 3-136 per stack removed.\n\nYou cannot have both effects active at the same time.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Yandir's_Might",
+  "esohub_url": "https://eso-hub.com/en/sets/yandirs-might"
+}

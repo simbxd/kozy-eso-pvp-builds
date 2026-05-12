@@ -1,0 +1,40 @@
+{
+  "id": "lustrous-soulwell",
+  "name": "Lustrous Soulwell",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Health Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you use an Ultimate ability while in combat, you and the closest 3 group members within 28 meters of you gain 465 Health Recovery, Magicka Recovery, and Stamina Recovery that lasts for 2 seconds for each 20 Ultimate spent.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lustrous_Soulwell",
+  "esohub_url": "https://eso-hub.com/en/sets/lustrous-soulwell"
+}

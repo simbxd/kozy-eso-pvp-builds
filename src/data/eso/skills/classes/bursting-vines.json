@@ -1,0 +1,11 @@
+{
+  "id": "93937",
+  "slug": "bursting-vines",
+  "name": "Bursting Vines",
+  "description": "Launch a vine to swing yourself to an ally, instantly healing them for 2700 Health.  \n\nGain 10 Ultimate when healing an ally under 60% Health while you are in combat. This effect can occur every 4 seconds.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

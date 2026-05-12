@@ -1,0 +1,40 @@
+{
+  "id": "critical-riposte",
+  "name": "Critical Riposte",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Cyrodiil, Vlastarus Armory",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Resistance",
+      "value": 424
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Critical Resistance",
+      "value": 424
+    },
+    {
+      "count": 5,
+      "stat": "When you take critical damage, you apply Minor Uncertainty and Minor Enervation to the enemy for 9 seconds, reducing their Physical and Spell Critical by 1314 and reducing their Critical Damage by 10%. An enemy can only be affected by your Critical Riposte once every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Critical_Riposte",
+  "esohub_url": "https://eso-hub.com/en/sets/critical-riposte"
+}

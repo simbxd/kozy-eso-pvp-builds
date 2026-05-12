@@ -1,0 +1,40 @@
+{
+  "id": "monolith-of-storms",
+  "name": "Monolith of Storms",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Infinite Archive",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing damage with a Storm Calling ability's initial hit or every 5th tick creates a Monolith near the enemy for 10 seconds, up to one every 1 second. You may have up to 3 Monoliths at a time. Monoliths link to your other Monoliths within 28 meters of each other. Each link deals 680 Shock damage, scaling off of the higher of your Weapon or Spell Damage, every 2 seconds to enemies between and near them. An enemy can only take damage from this set once every 2 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Monolith_of_Storms",
+  "esohub_url": "https://eso-hub.com/en/sets/monolith-of-storms"
+}

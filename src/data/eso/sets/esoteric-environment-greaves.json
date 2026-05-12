@@ -1,0 +1,20 @@
+{
+  "id": "esoteric-environment-greaves",
+  "name": "Esoteric Environment Greaves",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "While you are above 50% Stamina, reduce your direct damage taken by 50% and lose 968 Stamina whenever you take direct damage, up to once every 0.3 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Esoteric_Environment_Greaves",
+  "esohub_url": "https://eso-hub.com/en/sets/esoteric-environment-greaves"
+}

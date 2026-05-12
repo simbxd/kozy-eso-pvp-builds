@@ -1,0 +1,30 @@
+{
+  "id": "agility",
+  "name": "Agility",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Imperial City Treasure Vaults",
+  "dlc": "Base Game",
+  "pieces": 3,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1752
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 206
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Agility",
+  "esohub_url": "https://eso-hub.com/en/sets/agility"
+}

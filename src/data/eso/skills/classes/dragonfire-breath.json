@@ -1,0 +1,11 @@
+{
+  "id": "34031",
+  "slug": "dragonfire-breath",
+  "name": "Dragonfire Breath",
+  "description": "Exhale a blast of draconic fire in front of you, dealing 1742 Flame Damage and an additional 2900 Flame Damage over 10 seconds to enemies in your path.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

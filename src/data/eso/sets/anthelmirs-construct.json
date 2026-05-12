@@ -1,0 +1,28 @@
+{
+  "id": "anthelmirs-construct",
+  "name": "Anthelmir's Construct",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Aradros the Awakened in Oathsworn Pit, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "Dealing damage with a fully-charged Heavy Attack throws an axe at the enemy, dealing 1572 Physical damage and reducing their Armor by 400 for 5 seconds. This effect can occur once every 10 seconds and scales off the higher of your Weapon or Spell Damage.\n\nThe axe drops to the ground after traveling to your target for 5 seconds. Touching the axe reduces the cooldown of this set by 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Anthelmir's_Construct",
+  "esohub_url": "https://eso-hub.com/en/sets/anthelmirs-construct"
+}

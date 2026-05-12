@@ -1,0 +1,11 @@
+{
+  "id": "33668",
+  "slug": "take-flight",
+  "name": "Take Flight",
+  "description": "Launch yourself at an enemy, dealing 4106 Flame Damage to all enemies in the area, knocking them back 4 meters, and stunning them for 2 seconds. If the target is a monster they are instead knocked into the air and stunned for 3 seconds.\n\nUpon activation you are filled with draconic fury for 15 seconds, increasing your damage done by 10%. This effect's potency doubles against monsters.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

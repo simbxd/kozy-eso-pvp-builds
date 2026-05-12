@@ -1,0 +1,22 @@
+{
+  "id": "concentrated-force",
+  "name": "Concentrated Force",
+  "type": "Monster",
+  "acquisition": "Trial",
+  "location": "Clockwork City, Asylum Sanctorium",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Every second cast of Force Shock will always apply the Burning, Concussion, and Chilled status effects. The Force Shock casts must be made within 5 seconds of each other for this effect to occur.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Concentrated_Force",
+  "esohub_url": "https://eso-hub.com/en/sets/concentrated-force"
+}

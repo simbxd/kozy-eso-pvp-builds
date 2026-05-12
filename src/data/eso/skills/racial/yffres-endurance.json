@@ -1,0 +1,11 @@
+{
+  "id": "64281",
+  "slug": "yffres-endurance",
+  "name": "Y'ffre's Endurance",
+  "description": "Increases your Stamina Recovery by 258.",
+  "category": "racial",
+  "skill_line": "Wood Elf Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

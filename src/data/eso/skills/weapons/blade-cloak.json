@@ -1,0 +1,11 @@
+{
+  "id": "40633",
+  "slug": "blade-cloak",
+  "name": "Blade Cloak",
+  "description": "Envelop yourself in a protective cloak of razors, gaining Major Evasion for 20 seconds, reducing damage from area attacks by 20%. \n\nEvery 2 seconds the shrapnel will pulse, dealing 421 Physical Damage to all enemies within 5 meters.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

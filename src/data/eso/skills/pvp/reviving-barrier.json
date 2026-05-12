@@ -1,0 +1,11 @@
+{
+  "id": "46614",
+  "slug": "reviving-barrier",
+  "name": "Reviving Barrier",
+  "description": "Invoke defensive tactics to protect yourself and nearby group members with wards that each absorb up to 11620 damage for 30 seconds.\n\nThe wards also heal you and your group members for 5370 Health over 15 seconds.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

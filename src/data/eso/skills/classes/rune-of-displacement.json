@@ -1,0 +1,11 @@
+{
+  "id": "40185839",
+  "slug": "rune-of-displacement",
+  "name": "Rune of Displacement",
+  "description": "Summon a discharging rune under an enemy. After 2 seconds the rune pulses, pulling in foes between 2 to 10 meters and etching them with scrawled glyphs that deal 4780 Magic Damage over 18 seconds.\n\nAn ally near the initial target can activate the Runebreak synergy, dealing 2698 Frost Damage to enemies within 7 meters.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

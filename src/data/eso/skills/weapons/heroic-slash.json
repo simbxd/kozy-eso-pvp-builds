@@ -1,0 +1,11 @@
+{
+  "id": "41414",
+  "slug": "heroic-slash",
+  "name": "Heroic Slash",
+  "description": "Surprise an enemy with a deep lunge, dealing 1438 Physical Damage and afflicting them with Minor Maim, reducing their damage done by 5% for 15 seconds. \n\nYou gain Minor Heroism, granting you 1 Ultimate every 1.5 seconds for 15 seconds.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "40217340",
+  "slug": "shattering-knife",
+  "name": "Shattering Knife",
+  "description": "Twirl and throw an enchanted dagger at an enemy, which explodes after 0.5 seconds and hits all enemies near the initial target.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

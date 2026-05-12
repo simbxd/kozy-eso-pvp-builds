@@ -1,0 +1,11 @@
+{
+  "id": "185186",
+  "slug": "healing-tides",
+  "name": "Healing Tides",
+  "description": "Your mastery of weaving fate and abyssal water increases your healing done by 4% for each active Crux.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

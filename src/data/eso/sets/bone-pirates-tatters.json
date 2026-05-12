@@ -1,0 +1,40 @@
+{
+  "id": "bone-pirates-tatters",
+  "name": "Bone Pirate's Tatters",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Bangkorai, Blackheart Haven",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "While you have a drink buff active, your Max Stamina is increased by 46-2000 and Stamina Recovery by 3-133.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bone_Pirate's_Tatters",
+  "esohub_url": "https://eso-hub.com/en/sets/bone-pirates-tatters"
+}

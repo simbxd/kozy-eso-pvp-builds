@@ -1,0 +1,11 @@
+{
+  "id": "40610",
+  "slug": "hidden-blade",
+  "name": "Hidden Blade",
+  "description": "Fire a secret dagger from your sleeve at an enemy, dealing 1392 Physical Damage and granting you Major Brutality and Sorcery, increasing your Weapon and Spell Damage by 20% for 20 seconds.\n\nIf the enemy hit is casting an ability they are interrupted, set Off Balance, and stunned for 3 seconds.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

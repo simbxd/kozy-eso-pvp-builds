@@ -1,0 +1,11 @@
+{
+  "id": "27255",
+  "slug": "cleansing-ritual",
+  "name": "Cleansing Ritual",
+  "description": "Exalt in the sacred light of the Aedra, cleansing up to 2 harmful effects from yourself immediately and healing you and nearby allies for 843 Health every 2 seconds for 20 seconds.\n\nAllies in the area can activate the Purify synergy, cleansing all harmful effects from themselves and healing for 1912 Health.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

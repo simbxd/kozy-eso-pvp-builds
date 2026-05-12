@@ -1,0 +1,11 @@
+{
+  "id": "45512",
+  "slug": "elemental-force",
+  "name": "Elemental Force",
+  "description": "Increases your chance to apply status effects by 100%.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

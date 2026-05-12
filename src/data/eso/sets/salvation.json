@@ -1,0 +1,40 @@
+{
+  "id": "salvation",
+  "name": "Salvation",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Malabal Tor",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the cost of your Werewolf Transformation ability by 33%. While in Werewolf form, your Weapon and Spell Damage is increased by 5-150.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Salvation",
+  "esohub_url": "https://eso-hub.com/en/sets/salvation"
+}

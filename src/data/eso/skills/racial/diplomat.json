@@ -1,0 +1,11 @@
+{
+  "id": "36312",
+  "slug": "diplomat",
+  "name": "Diplomat",
+  "description": "Increases your experience gain with the One Hand and Shield skill line by 15%.\n\nIncreases your gold gained by 1%.",
+  "category": "racial",
+  "skill_line": "Imperial Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

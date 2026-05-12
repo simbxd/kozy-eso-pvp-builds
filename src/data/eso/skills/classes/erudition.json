@@ -1,0 +1,11 @@
+{
+  "id": "185239",
+  "slug": "erudition",
+  "name": "Erudition",
+  "description": "Knowledge is power. Your excessive scholarship increases your Magicka and Stamina Recovery by 18%.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

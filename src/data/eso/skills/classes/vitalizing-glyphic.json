@@ -1,0 +1,11 @@
+{
+  "id": "40183709",
+  "slug": "vitalizing-glyphic",
+  "name": "Vitalizing Glyphic",
+  "description": "Summon an Apocryphal glyphic, which you and your allies can heal. The glyphic spawns at 30% Health and grows stronger the more you heal it.\n\nThe power within the glyphic grants up to 200 Weapon and Spell Damage and heals you and your allies around it for up to 927 Health every 1 second in proportion to its Health.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

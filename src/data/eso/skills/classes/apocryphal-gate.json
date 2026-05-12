@@ -1,0 +1,11 @@
+{
+  "id": "40183542",
+  "slug": "apocryphal-gate",
+  "name": "Apocryphal Gate",
+  "description": "Breach the world walls to create a portal at a target location. Its twin appears directly before you. Crossing the threshold allows you to teleport from one to the other for as long as the portals remain open. \n\nApocryphal Gate generates Crux each time you teleport.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

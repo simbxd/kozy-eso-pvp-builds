@@ -1,0 +1,40 @@
+{
+  "id": "hand-of-mephala",
+  "name": "Hand of Mephala",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Shadowfen, Cradle of Shadows",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage, you encase the ground beneath you in webs for 5 seconds, reducing the Movement Speed of enemies within a 4 meter radius by 33% and applying Minor Breach to them, reducing their Physical and Spell Resistance by 2974. After 5 seconds the webs burst into venom, dealing 0 Poison damage. This effect can occur once every 5 seconds and scales off the higher of your Physical or Spell Resistance.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hand_of_Mephala",
+  "esohub_url": "https://eso-hub.com/en/sets/hand-of-mephala"
+}

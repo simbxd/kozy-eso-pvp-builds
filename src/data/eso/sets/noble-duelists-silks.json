@@ -1,0 +1,40 @@
+{
+  "id": "noble-duelists-silks",
+  "name": "Noble Duelist's Silks",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "The Rift, Blessed Crucible",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a Light or Heavy Attack in melee range, you increase the damage of your Light and Heavy Attacks against monsters by 49-2110 for 15 seconds. This effect can occur once every 12 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Noble_Duelist's_Silks",
+  "esohub_url": "https://eso-hub.com/en/sets/noble-duelists-silks"
+}

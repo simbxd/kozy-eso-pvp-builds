@@ -1,0 +1,40 @@
+{
+  "id": "trappings-of-invigoration",
+  "name": "Trappings of Invigoration",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Bangkorai, Fang Lair",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you cast an ability that costs resources while under 25% Stamina, you restore 263-11350 Stamina. This effect can occur once every 45 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Trappings_of_Invigoration",
+  "esohub_url": "https://eso-hub.com/en/sets/trappings-of-invigoration"
+}

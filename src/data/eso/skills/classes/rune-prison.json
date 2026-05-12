@@ -1,0 +1,11 @@
+{
+  "id": "30162",
+  "slug": "rune-prison",
+  "name": "Rune Prison",
+  "description": "Imprison an enemy in a constricting sphere of dark magic. After a short duration they are stunned for 3 seconds.\n\nThis stun cannot be blocked.",
+  "category": "classes",
+  "skill_line": "Dark Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,45 @@
+{
+  "id": "macabre-vintage",
+  "name": "Macabre Vintage",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "West Weald",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 150
+    },
+    {
+      "count": 5,
+      "stat": "When you kill a monster they burst with blood magic, dealing 50% of their Max Health to enemies within 6 meters as Bleed Damage, up to 24096 Bleed Damage. This damage cannot critically strike. This effect can occur once every 0.5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Macabre_Vintage",
+  "esohub_url": "https://eso-hub.com/en/sets/macabre-vintage"
+}

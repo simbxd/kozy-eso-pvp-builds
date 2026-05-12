@@ -1,0 +1,28 @@
+{
+  "id": "scourge-harvester",
+  "name": "Scourge Harvester",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Allene Pellingare or Varaine Pellingare in Wayrest Sewers II, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 2,
+      "stat": "When you take damage, you have a 10% chance to tether to your enemy for 6 seconds, as long as you remain within 8 meters of them. While tethered, you deal 311 Magic damage every second to the enemy, heal for the damage caused, and gain Major Vitality, increasing your healing received and damage shield strength by 12%. This effect can occur once every 6 seconds and scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Scourge_Harvester",
+  "esohub_url": "https://eso-hub.com/en/sets/scourge-harvester"
+}

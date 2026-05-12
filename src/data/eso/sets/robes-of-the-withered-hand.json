@@ -1,0 +1,40 @@
+{
+  "id": "robes-of-the-withered-hand",
+  "name": "Robes of the Withered Hand",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Alik'r Desert",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you are within 28 meters of an enemy you are in combat with, and the enemy dies, you heal for 38-1637 Health and gain 38-1637 Magicka. This effect can occur once every 3 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Robes_of_the_Withered_Hand",
+  "esohub_url": "https://eso-hub.com/en/sets/robes-of-the-withered-hand"
+}

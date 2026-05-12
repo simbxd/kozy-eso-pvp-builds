@@ -1,0 +1,11 @@
+{
+  "id": "29062",
+  "slug": "intimidating-presence",
+  "name": "Intimidating Presence",
+  "description": "Allows you to Intimidate NPCs in conversation.\n\nReduces the Stamina cost of your Fighters Guild abilities by 15%.",
+  "category": "guild",
+  "skill_line": "Fighters Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

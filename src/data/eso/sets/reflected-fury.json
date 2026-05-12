@@ -1,0 +1,40 @@
+{
+  "id": "reflected-fury",
+  "name": "Reflected Fury",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Wrothgar, Bedlam Veil",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you taunt an enemy, gain a stack of Broken Shards for 5 seconds, up to 5 stacks max. You can only gain one stack every 1 second. When Broken Shards ends, you release the stacks in an 8 meter blast, dealing 920 Physical damage to enemies hit and applying Major Maim to them for 3 seconds per stack of Broken Shards consumed, reducing their damage done by 10%. The damage scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Reflected_Fury",
+  "esohub_url": "https://eso-hub.com/en/sets/reflected-fury"
+}

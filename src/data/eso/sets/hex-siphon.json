@@ -1,0 +1,45 @@
+{
+  "id": "hex-siphon",
+  "name": "Hex Siphon",
+  "type": "Mixed",
+  "acquisition": "Arena",
+  "location": "Vateshran Hollows",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 171
+    },
+    {
+      "count": 5,
+      "stat": "Whenever you Bash an enemy, you release a cone of hexing energy in front of you.  Each enemy hit increases your Weapon and Spell Damage by 2-88 for 8 seconds, up to a maximum of 6 enemies.  This effect can occur once every 8 seconds. \n\nWhenever you successfully interrupt a target, you restore 23-1000 Magicka.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hex_Siphon",
+  "esohub_url": "https://eso-hub.com/en/sets/hex-siphon"
+}

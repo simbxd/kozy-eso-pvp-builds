@@ -1,0 +1,40 @@
+{
+  "id": "wretched-vitality",
+  "name": "Wretched Vitality",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "The Deadlands, The Razorworks",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, applying a Major Buff or Debuff with a duration to a target grants you 260 Magicka and Stamina Recovery for 15 seconds. \nWhile in combat, applying a Minor Buff or Debuff with a duration to a target grants you 130 Magicka and Stamina Recovery for 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Wretched_Vitality",
+  "esohub_url": "https://eso-hub.com/en/sets/wretched-vitality"
+}

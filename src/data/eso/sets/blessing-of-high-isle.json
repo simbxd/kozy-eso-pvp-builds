@@ -1,0 +1,41 @@
+{
+  "id": "blessing-of-high-isle",
+  "name": "Blessing of High Isle",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "High Isle and Amenos",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "shoulders",
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you are healed while in combat, increase your Weapon and Spell Damage by 8-369 for 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blessing_of_High_Isle",
+  "esohub_url": "https://eso-hub.com/en/sets/blessing-of-high-isle"
+}

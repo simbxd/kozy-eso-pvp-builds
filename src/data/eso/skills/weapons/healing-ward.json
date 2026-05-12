@@ -1,0 +1,11 @@
+{
+  "id": "41320",
+  "slug": "healing-ward",
+  "name": "Healing Ward",
+  "description": "Call on your staff's strength to protect you or the lowest health ally around you with a damage shield that absorbs 2399 damage.\n\nThe shield's strength is increased by up to 100%, depending on the severity of the target's wounds. \n\nWhile the shield persists, the target is healed for 33% of the shield's remaining strength every second.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

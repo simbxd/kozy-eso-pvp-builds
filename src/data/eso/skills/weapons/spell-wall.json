@@ -1,0 +1,11 @@
+{
+  "id": "86333",
+  "slug": "spell-wall",
+  "name": "Spell Wall",
+  "description": "Reinforce your shield, allowing you to automatically block all attacks at no cost and reflect all projectiles cast at you for 7 seconds.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

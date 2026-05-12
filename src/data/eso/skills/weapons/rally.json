@@ -1,0 +1,11 @@
+{
+  "id": "39904",
+  "slug": "rally",
+  "name": "Rally",
+  "description": "Focus your strength and resolve to gain Major Brutality and Sorcery, increasing your Weapon and Spell Damage by 20%, as well as gaining Minor Endurance, increasing your Stamina Recovery by 15% for 30 seconds.\n\nYou heal for 1799 Health when Rally ends. The final heal is increased by 20% every 2 seconds, up to a maximum of 200%.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

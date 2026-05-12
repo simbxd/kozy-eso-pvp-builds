@@ -1,0 +1,35 @@
+{
+  "id": "shattered-fate",
+  "name": "Shattered Fate",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Necrom",
+  "dlc": "Base Game",
+  "pieces": 12,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 5,
+      "stat": "Offensive Penetration",
+      "value": 7918
+    },
+    {
+      "count": 10,
+      "stat": "Weapon and Spell Damage",
+      "value": 687
+    },
+    {
+      "count": 12,
+      "stat": "Critical Chance",
+      "value": 1528
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shattered_Fate",
+  "esohub_url": "https://eso-hub.com/en/sets/shattered-fate"
+}

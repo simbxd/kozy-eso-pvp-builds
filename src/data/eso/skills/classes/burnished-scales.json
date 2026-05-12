@@ -1,0 +1,11 @@
+{
+  "id": "44922",
+  "slug": "burnished-scales",
+  "name": "Burnished Scales",
+  "description": "A Dragon's scales will turn aside arrow, fire, and blade.\n\nIncreases the amount of damage you block by 10%.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

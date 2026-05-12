@@ -1,0 +1,28 @@
+{
+  "id": "lady-thorn",
+  "name": "Lady Thorn",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Lady Thorn in Castle Thorn, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 2,
+      "stat": "Casting an ability that costs Health spawns a blood ball for 10 seconds. This effect can occur once every 10 seconds. \n\nYou or an ally near the blood ball can activate the Sanguine Burst synergy, dealing 2879 Disease damage to nearby enemies and applying Major Maim for 8 seconds, decreasing their damage done by 10%. Enemies can only receive Major Maim from Sanguine Burst once every 20 seconds. The damage scales off the synergy activator's Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lady_Thorn",
+  "esohub_url": "https://eso-hub.com/en/sets/lady-thorn"
+}

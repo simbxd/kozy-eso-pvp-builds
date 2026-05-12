@@ -1,0 +1,11 @@
+{
+  "id": "46492",
+  "slug": "rapid-maneuver",
+  "name": "Rapid Maneuver",
+  "description": "Mobilize your forces, granting Major Expedition to you and your group, increasing your Movement Speed by 30% for 8 seconds.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

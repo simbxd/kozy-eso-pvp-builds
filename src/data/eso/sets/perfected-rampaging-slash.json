@@ -1,0 +1,33 @@
+{
+  "id": "perfected-rampaging-slash",
+  "name": "Perfected Rampaging Slash",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Maelstrom Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "(2 perfected items) Adds 1-77 Magicka Recovery",
+      "value": ""
+    },
+    {
+      "count": 1,
+      "stat": "(2 perfected items) Adds 1-77 Stamina Recovery",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "When you deal damage with Low Slash, your next fully-charged Heavy Attack used within 5 seconds restores 44-1904 Magicka and Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Rampaging_Slash",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-rampaging-slash"
+}

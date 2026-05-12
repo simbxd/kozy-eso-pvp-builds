@@ -1,0 +1,11 @@
+{
+  "id": "21972",
+  "slug": "bash",
+  "name": "Bash",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

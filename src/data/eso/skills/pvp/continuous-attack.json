@@ -1,0 +1,11 @@
+{
+  "id": "45614",
+  "slug": "continuous-attack",
+  "name": "Continuous Attack",
+  "description": "Increases your Weapon and Spell Damage by 10% and Health, Magicka, and Stamina Recovery by 20% for 10 minutes after you capture a Lumber Mill, Farm, Mine, or Keep.\n\nGain Gallop at all times, increasing your Mount Speed by 15%.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

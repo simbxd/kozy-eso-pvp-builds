@@ -1,0 +1,11 @@
+{
+  "id": "45208",
+  "slug": "light-weaver",
+  "name": "Light Weaver",
+  "description": "When you heal an ally under 50% Health with a Restoring Light ability, you grant them 2 Ultimate.\n\nActivating an ability with a cast or channel time while in combat causes you to automatically block all attacks at no cost for 2 seconds, up to once every 15 seconds.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

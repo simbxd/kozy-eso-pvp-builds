@@ -1,0 +1,11 @@
+{
+  "id": "63810",
+  "slug": "trafficker",
+  "name": "Trafficker",
+  "description": "Increases the number of fence interactions you can use each day by 180%.",
+  "category": "world",
+  "skill_line": "Legerdemain",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "silks-of-the-sun",
+  "name": "Silks of the Sun",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Stonefalls",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage to your Flame Damage abilities.",
+      "value": 400
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Silks_of_the_Sun",
+  "esohub_url": "https://eso-hub.com/en/sets/silks-of-the-sun"
+}

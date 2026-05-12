@@ -1,0 +1,40 @@
+{
+  "id": "claw-of-the-forest-wraith",
+  "name": "Claw of the Forest Wraith",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Galen",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Critical Chance to your Class abilities.",
+      "value": 2037
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Claw_of_the_Forest_Wraith",
+  "esohub_url": "https://eso-hub.com/en/sets/claw-of-the-forest-wraith"
+}

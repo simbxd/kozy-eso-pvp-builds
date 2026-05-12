@@ -1,0 +1,37 @@
+{
+  "id": "gaze-of-sithis",
+  "name": "Gaze of Sithis",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "head"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Health",
+      "value": 3276
+    },
+    {
+      "count": 1,
+      "stat": "Health Recovery",
+      "value": 1025
+    },
+    {
+      "count": 1,
+      "stat": "Armor",
+      "value": 4000
+    },
+    {
+      "count": 1,
+      "stat": "Reduces your Block Mitigation to 0.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Gaze_of_Sithis",
+  "esohub_url": "https://eso-hub.com/en/sets/gaze-of-sithis"
+}

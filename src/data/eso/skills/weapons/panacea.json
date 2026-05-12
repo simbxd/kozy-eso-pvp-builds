@@ -1,0 +1,11 @@
+{
+  "id": "86425",
+  "slug": "panacea",
+  "name": "Panacea",
+  "description": "Release the rejuvenating energies of your staff to swirl around you, healing you or an ally for 2904 Health every 1 second for 5 seconds.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

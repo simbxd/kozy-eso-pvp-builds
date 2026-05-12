@@ -1,0 +1,11 @@
+{
+  "id": "40103652",
+  "slug": "deep-thoughts",
+  "name": "Deep Thoughts",
+  "description": "Focus your body and mind into a meditative state, healing for 1500 Health and restoring 1900 Magicka and Stamina every 1 second.\n\nYou will remain in a meditative state until you toggle this ability off or are interrupted.",
+  "category": "guild",
+  "skill_line": "Psijic Order",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,45 @@
+{
+  "id": "warrior-poet",
+  "name": "Warrior-Poet",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Vvardenfell",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Maximum Health",
+      "value": 1600
+    },
+    {
+      "count": 5,
+      "stat": "Gain Minor Toughness at all times, increasing your Max Health by 10%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Warrior-Poet",
+  "esohub_url": "https://eso-hub.com/en/sets/warrior-poet"
+}

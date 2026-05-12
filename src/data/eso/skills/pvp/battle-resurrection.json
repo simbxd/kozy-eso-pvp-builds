@@ -1,0 +1,11 @@
+{
+  "id": "45625",
+  "slug": "battle-resurrection",
+  "name": "Battle Resurrection",
+  "description": "Reduces the time it takes you to resurrect another player by 30% while you are in a PvP area.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

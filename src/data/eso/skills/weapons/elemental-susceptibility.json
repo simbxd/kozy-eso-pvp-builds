@@ -1,0 +1,11 @@
+{
+  "id": "41556",
+  "slug": "elemental-susceptibility",
+  "name": "Elemental Susceptibility",
+  "description": "Send the elements to sap an enemy's defenses and afflict them with Major Breach for 30 seconds, reducing their Physical and Spell Resistance by 5948.\n\nEvery 7.5 seconds the enemy is afflicted with the Burning, Chilled, and Concussion status effect.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

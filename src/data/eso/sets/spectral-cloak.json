@@ -1,0 +1,22 @@
+{
+  "id": "spectral-cloak",
+  "name": "Spectral Cloak",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Blackrose Prison",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Activating Blade Cloak while in combat allows you to gain Spectral Cloak whenever Blade Cloak deals damage for 2 seconds, reducing your damage taken and increasing your damage done by 6%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spectral_Cloak",
+  "esohub_url": "https://eso-hub.com/en/sets/spectral-cloak"
+}

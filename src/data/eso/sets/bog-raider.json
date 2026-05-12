@@ -1,0 +1,40 @@
+{
+  "id": "bog-raider",
+  "name": "Bog Raider",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Blackwood",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When an enemy you have recently damaged dies, gain 10 Ultimate and increase your Health Recovery by 26-1156 for 10 seconds. This effect can occur once every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bog_Raider",
+  "esohub_url": "https://eso-hub.com/en/sets/bog-raider"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "blunted-blades",
+  "name": "Blunted Blades",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you take direct damage, Minor Enervation is applied to your enemy for 4 seconds, reducing their Critical Damage done by 10%. This can occur once every 5 seconds.\n\nIncrease your damage done to enemies with Minor Enervation by 6%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blunted_Blades",
+  "esohub_url": "https://eso-hub.com/en/sets/blunted-blades"
+}

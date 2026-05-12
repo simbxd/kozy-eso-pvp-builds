@@ -1,0 +1,40 @@
+{
+  "id": "plague-slinger",
+  "name": "Plague Slinger",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Stormhaven, Scalecaller Peak",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage, summon a Skeever corpse which will launch five poison balls over 5 seconds that each deal 737 Poison damage to the nearest enemy within 10 meters. This effect can occur once every 8 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Plague_Slinger",
+  "esohub_url": "https://eso-hub.com/en/sets/plague-slinger"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "217611",
+  "slug": "binding-contingency",
+  "name": "Binding Contingency",
+  "description": null,
+  "category": "guild",
+  "skill_line": "Mages Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

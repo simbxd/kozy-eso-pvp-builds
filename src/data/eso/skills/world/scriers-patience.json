@@ -1,0 +1,11 @@
+{
+  "id": "139779",
+  "slug": "scriers-patience",
+  "name": "Scrier's Patience",
+  "description": "Grants you two additional turns of Scrying.",
+  "category": "world",
+  "skill_line": "Scrying",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

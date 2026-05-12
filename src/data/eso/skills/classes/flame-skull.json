@@ -1,0 +1,11 @@
+{
+  "id": "40114108",
+  "slug": "flame-skull",
+  "name": "Flame Skull",
+  "description": "Lob an explosive skull at an enemy, dealing 2090 Flame Damage.\n\nEvery third cast of this ability deals 50% increased damage and creates a corpse near the enemy.",
+  "category": "classes",
+  "skill_line": "Grave Lord",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

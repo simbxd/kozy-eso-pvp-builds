@@ -1,0 +1,11 @@
+{
+  "id": "58740",
+  "slug": "piercing-howl",
+  "name": "Piercing Howl",
+  "description": "Crush an enemy with a deafening howl, dealing 2904 Physical Damage.\n\nDeals 10% more damage to enemies that are Terrified.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

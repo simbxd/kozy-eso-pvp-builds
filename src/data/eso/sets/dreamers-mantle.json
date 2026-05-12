@@ -1,0 +1,40 @@
+{
+  "id": "dreamers-mantle",
+  "name": "Dreamer's Mantle",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Stormhaven",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage while you are under 35% Health, you knockdown all enemies within 4 meters of you for 2 seconds and restore 24-1058 Magicka. This effect can occur once every 7 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dreamer's_Mantle",
+  "esohub_url": "https://eso-hub.com/en/sets/dreamers-mantle"
+}

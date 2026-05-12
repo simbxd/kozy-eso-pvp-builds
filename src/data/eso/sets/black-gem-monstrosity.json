@@ -1,0 +1,28 @@
+{
+  "id": "black-gem-monstrosity",
+  "name": "Black Gem Monstrosity",
+  "type": "Monster",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 2,
+      "stat": "While in combat, casting a Soul Magic ability consumes a Soul Gem and gives you a Black Gemsplitter for 10 seconds. This effect can occur once every 6 seconds. Dealing Light or Heavy Attack damage fires the Black Gemsplitter at your target, dealing 17.1% of your target's Max Health as Magic Damage, up to 17100 Magic Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Black_Gem_Monstrosity",
+  "esohub_url": "https://eso-hub.com/en/sets/black-gem-monstrosity"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "30319",
+  "slug": "mages-fury",
+  "name": "Mages' Fury",
+  "description": "Call down lightning to strike an enemy, dealing 870 Shock Damage.\n\nIf the enemy falls to or below 20% Health within 2 seconds of being struck, an explosion deals an additional 3195 Shock Damage to them and 695 Shock Damage to other enemies nearby.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

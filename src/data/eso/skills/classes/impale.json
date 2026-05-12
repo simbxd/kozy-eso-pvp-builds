@@ -1,0 +1,11 @@
+{
+  "id": "35596",
+  "slug": "impale",
+  "name": "Impale",
+  "description": "Throw a magic blade with lethal precision to strike an enemy, dealing 1161 Magic Damage. Deals 330% more damage to enemies below 25% Health.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

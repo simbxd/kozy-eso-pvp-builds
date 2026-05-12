@@ -1,0 +1,22 @@
+{
+  "id": "ring-of-the-pale-order",
+  "name": "Ring of the Pale Order",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "ring"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Restore 20% of the damage you deal as Health. This value is decreased by 4% per ally you are grouped with. You cannot be healed by anyone but yourself, your pets, or your Companions.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ring_of_the_Pale_Order",
+  "esohub_url": "https://eso-hub.com/en/sets/ring-of-the-pale-order"
+}

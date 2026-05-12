@@ -1,0 +1,11 @@
+{
+  "id": "40590",
+  "slug": "rapid-strikes",
+  "name": "Rapid Strikes",
+  "description": "Flood an enemy with steel, battering them with four consecutive attacks that each deal 689 Physical Damage.\n\nEach hit increases the damage of the subsequent hit by 5%.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

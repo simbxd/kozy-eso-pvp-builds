@@ -1,0 +1,11 @@
+{
+  "id": "139781",
+  "slug": "future-focus",
+  "name": "Future Focus",
+  "description": "Grants you two additional Magicka Charges for use in Scrying.",
+  "category": "world",
+  "skill_line": "Scrying",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

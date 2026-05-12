@@ -1,0 +1,40 @@
+{
+  "id": "grace-of-gloom",
+  "name": "Grace of Gloom",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Summerset",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage, you become a living shadow for 10 seconds, causing you to heal for 927 every 2 seconds and gaining Major Evasion, reducing damage from area attacks by 20%. This effect can occur every 20 seconds and scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Grace_of_Gloom",
+  "esohub_url": "https://eso-hub.com/en/sets/grace-of-gloom"
+}

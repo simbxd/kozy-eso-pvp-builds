@@ -1,0 +1,40 @@
+{
+  "id": "dreugh-king-slayer",
+  "name": "Dreugh King Slayer",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Stonefalls, Fungal Grotto",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Gain Major Brutality and Sorcery at all times, increasing your Weapon and Spell Damage by 20%. When you kill an enemy, you gain Major Expedition for 8 seconds, increasing your Movement Speed by 30%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dreugh_King_Slayer",
+  "esohub_url": "https://eso-hub.com/en/sets/dreugh-king-slayer"
+}

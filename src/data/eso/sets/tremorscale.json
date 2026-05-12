@@ -1,0 +1,28 @@
+{
+  "id": "tremorscale",
+  "name": "Tremorscale",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Guardian Council in Volenfell, Glirion the Redbeard",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "When you activate a taunt ability on an enemy, you cause a duneripper to burst from the ground beneath them after 1 second, dealing 0 Physical damage to all enemies within 4 meters and reducing their Armor by 0 for 15 seconds. This effect can occur once every 10 seconds and scales off the higher of your Physical or Spell Resistance.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Tremorscale",
+  "esohub_url": "https://eso-hub.com/en/sets/tremorscale"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "217246",
+  "slug": "immobilizing-explosion",
+  "name": "Immobilizing Explosion",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

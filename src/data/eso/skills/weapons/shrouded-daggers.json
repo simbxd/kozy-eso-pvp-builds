@@ -1,0 +1,11 @@
+{
+  "id": "40619",
+  "slug": "shrouded-daggers",
+  "name": "Shrouded Daggers",
+  "description": "Fire a secret dagger from your sleeve that bounces up to 3 times to nearby enemies, dealing 1799 Physical Damage per hit.  \n\nIf enemies hit are casting they are interrupted, set Off Balance, and stunned for 3 seconds.\n\nYou also gain Major Brutality and Sorcery, increasing your Weapon and Spell Damage by 20% for 20 seconds.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "86295",
+  "slug": "berserker-rage",
+  "name": "Berserker Rage",
+  "description": "Strike at an enemy with a vicious blow, dealing 3600 Physical Damage to them and all nearby enemies.\n\nThis attack ignores the target's Resistance and grants you Physical and Spell Resistance equal to the amount ignored from the initial target for 12 seconds.\n\nYou are immune to all disabling, snare, and immobilization effects for the duration.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

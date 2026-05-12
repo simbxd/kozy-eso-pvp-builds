@@ -1,0 +1,28 @@
+{
+  "id": "prior-thierric",
+  "name": "Prior Thierric",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Prior Thierric Sarazen in Red Petal Bastion, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "Dealing direct damage with an area of effect ability creates a 6 meter shadowy whirlwind below your enemy for 7 seconds. Enemies within the whirlwind take 283 Physical damage each second and increase their damage taken from your area of effect abilities by 5%. This effect can occur once every 15 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Prior_Thierric",
+  "esohub_url": "https://eso-hub.com/en/sets/prior-thierric"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "63240",
+  "slug": "vigor",
+  "name": "Vigor",
+  "description": "Let loose a battle cry, instilling yourself and nearby allies with resolve and healing them for 3480 Health over 10 seconds.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

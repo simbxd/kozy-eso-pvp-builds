@@ -1,0 +1,11 @@
+{
+  "id": "30043",
+  "slug": "dark-deal",
+  "name": "Dark Deal",
+  "description": "Bargain with darkness to restore 8000 Health and 3600 Stamina instantly, and an additional 2400 Stamina over 10 seconds.\n\nThe exchange also grants you Minor Berserk for 20 seconds, increasing your damage done by 5%.",
+  "category": "classes",
+  "skill_line": "Dark Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

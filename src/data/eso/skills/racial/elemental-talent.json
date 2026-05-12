@@ -1,0 +1,11 @@
+{
+  "id": "45276",
+  "slug": "elemental-talent",
+  "name": "Elemental Talent",
+  "description": "Increases your Weapon and Spell Damage by 258.",
+  "category": "racial",
+  "skill_line": "High Elf Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

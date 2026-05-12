@@ -1,0 +1,11 @@
+{
+  "id": "217507",
+  "slug": "arcanists-knife",
+  "name": "Arcanist's Knife",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

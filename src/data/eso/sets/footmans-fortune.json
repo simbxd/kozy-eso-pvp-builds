@@ -1,0 +1,40 @@
+{
+  "id": "footmans-fortune",
+  "name": "Footman's Fortune",
+  "type": "Mixed",
+  "acquisition": "Arena",
+  "location": "Dragonstar Arena",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Increases the amount of damage you block by 14%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Footman's_Fortune",
+  "esohub_url": "https://eso-hub.com/en/sets/footmans-fortune"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "40189867",
+  "slug": "the-languid-eye",
+  "name": "The Languid Eye",
+  "description": "Tear open the fabric of the Aurbis to summon a scion of Hermaeus Mora. This being casts forth a beam that rends asunder reality for 6 seconds that deals 1115 Magic Damage to enemies within 5 meters every 0.5 seconds and snares them by 50% for 3 seconds. Every 0.5 seconds, the beam's damage increases by 7%.\n\nThe scion's beam can be repositioned by recasting The Languid Eye.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "dragonguard-elite",
+  "name": "Dragonguard Elite",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Southern Elsweyr",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "You gain a stack of Dragonguard Tactics for 5 seconds when you deal direct damage to an enemy from the front or their sides, up to 10 stacks. Each stack of Dragonguard Tactics increases your Critical Chance by 6-275. You can only gain one stack every 0.5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dragonguard_Elite",
+  "esohub_url": "https://eso-hub.com/en/sets/dragonguard-elite"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "46137",
+  "slug": "call-of-the-pack",
+  "name": "Call of the Pack",
+  "description": "Reduces the cost of remaining in your Werewolf Transformation by 20% for each transformed werewolf or direwolf in your group, including yourself, up to a maximum of 80%.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

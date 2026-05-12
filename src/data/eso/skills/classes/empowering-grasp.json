@@ -1,0 +1,11 @@
+{
+  "id": "40118352",
+  "slug": "empowering-grasp",
+  "name": "Empowering Grasp",
+  "description": "Summon three patches of skeletal claws from the ground in front of you. Enemies in the first area are snared by 30% for 5 seconds, immobilized in the second area for 4 seconds, and stunned in the final area for 3 seconds.\n\nEach area applies Major Maim to enemies and Empower to your allies for 10 seconds, reducing enemy damage done by 10% and allied Heavy Attack Damage against monsters by 70%.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

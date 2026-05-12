@@ -1,0 +1,11 @@
+{
+  "id": "217106",
+  "slug": "major-resolve",
+  "name": "Major Resolve",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

@@ -1,0 +1,40 @@
+{
+  "id": "armor-of-the-veiled-heritance",
+  "name": "Armor of the Veiled Heritance",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Auridon",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you interrupt an enemy, you gain 12-516 Weapon and Spell Damage for 15 seconds. Your Bash attacks deal 12-516 more damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Armor_of_the_Veiled_Heritance",
+  "esohub_url": "https://eso-hub.com/en/sets/armor-of-the-veiled-heritance"
+}

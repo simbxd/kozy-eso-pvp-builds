@@ -1,0 +1,11 @@
+{
+  "id": "27090",
+  "slug": "spear-shards",
+  "name": "Spear Shards",
+  "description": "Send your spear into the heavens to bring down a shower of divine wrath, dealing 1742 Magic Damage to enemies in the area and an additional 166 Magic Damage every 1 second for 10 seconds.\n\nAn ally near the spear can activate the Blessed Shards synergy, restoring 3960 Magicka or Stamina, whichever maximum is higher.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

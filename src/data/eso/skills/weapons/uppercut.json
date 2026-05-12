@@ -1,0 +1,11 @@
+{
+  "id": "39968",
+  "slug": "uppercut",
+  "name": "Uppercut",
+  "description": "Slam an enemy with an upward swing, dealing 2672 Physical Damage.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

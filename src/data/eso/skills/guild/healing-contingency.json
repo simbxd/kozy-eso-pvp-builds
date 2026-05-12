@@ -1,0 +1,11 @@
+{
+  "id": "40240149",
+  "slug": "healing-contingency",
+  "name": "Healing Contingency",
+  "description": "Imbue yourself with the magical runes of Ulfsild for 20 seconds. These runes trigger when you cast an ability with a cost, causing a burst of magic around you.",
+  "category": "guild",
+  "skill_line": "Mages Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

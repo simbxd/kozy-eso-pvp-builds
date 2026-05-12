@@ -1,0 +1,11 @@
+{
+  "id": "58316",
+  "slug": "hircines-bounty",
+  "name": "Hircine's Bounty",
+  "description": "Invoke the Huntsman's blessing, healing you for 6198 Health. This ability scales off your Max Health. If you are at full Health you instead restore 3000 Stamina.\n\nWhile slotted you gain Major Brutality and Sorcery, increasing your Weapon and Spell Damage by 20%.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

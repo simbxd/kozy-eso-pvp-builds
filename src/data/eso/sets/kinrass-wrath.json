@@ -1,0 +1,40 @@
+{
+  "id": "kinrass-wrath",
+  "name": "Kinras's Wrath",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Gold Coast, Black Drake Villa",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing damage with a Light or Heavy Attack grants you a stack of Burning Heart for 5 seconds, up to 5 stacks. While you have 5 stacks, you generate an aura of wrath, granting you Major Berserk, increasing your damage done by 10%. While you have an aura of wrath, group members within 12 meters of you gain Minor Berserk, increasing their damage done by 5%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Kinras's_Wrath",
+  "esohub_url": "https://eso-hub.com/en/sets/kinrass-wrath"
+}

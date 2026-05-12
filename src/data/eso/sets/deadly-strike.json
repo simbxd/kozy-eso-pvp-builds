@@ -1,0 +1,40 @@
+{
+  "id": "deadly-strike",
+  "name": "Deadly Strike",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Bruma",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Increase the damage your damage over time and channeled attacks do by 15%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Deadly_Strike",
+  "esohub_url": "https://eso-hub.com/en/sets/deadly-strike"
+}

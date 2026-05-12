@@ -1,0 +1,11 @@
+{
+  "id": "184873",
+  "slug": "psychic-lesion",
+  "name": "Psychic Lesion",
+  "description": "Your attacks wound the mind with heretical knowledge, increasing damage dealt by Status Effects by 15% and Status Effect Chance by 55%.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

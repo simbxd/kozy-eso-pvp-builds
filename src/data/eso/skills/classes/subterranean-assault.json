@@ -1,0 +1,11 @@
+{
+  "id": "93791",
+  "slug": "subterranean-assault",
+  "name": "Subterranean Assault",
+  "description": "Stir a group of shalk that attack after 3 seconds, dealing 2591 Poison Damage to enemies in front of you.\n\nAfter the shalk complete their attack, they burrow underground for 3 seconds and then resurface again, dealing 2591 Poison Damage to enemies in front of you.",
+  "category": "classes",
+  "skill_line": "Animal Companions",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

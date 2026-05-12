@@ -1,0 +1,11 @@
+{
+  "id": "27342",
+  "slug": "healing-ritual",
+  "name": "Healing Ritual",
+  "description": "Focus your spiritual devotion, healing you and nearby allies for 2613 Health.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

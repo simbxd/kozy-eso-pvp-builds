@@ -1,0 +1,40 @@
+{
+  "id": "shield-of-the-valiant",
+  "name": "Shield of the Valiant",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Bruma",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Reduces your damage taken from Players by 3%.",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the cost of Break Free by 40%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shield_of_the_Valiant",
+  "esohub_url": "https://eso-hub.com/en/sets/shield-of-the-valiant"
+}

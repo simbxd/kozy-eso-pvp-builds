@@ -1,0 +1,40 @@
+{
+  "id": "flanking-strategist",
+  "name": "Flanking Strategist",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Gold Coast",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage to your damaging abilities when you attack an enemy from behind or their sides.",
+      "value": 400
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Flanking_Strategist",
+  "esohub_url": "https://eso-hub.com/en/sets/flanking-strategist"
+}

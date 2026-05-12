@@ -1,0 +1,22 @@
+{
+  "id": "piercing-spray",
+  "name": "Piercing Spray",
+  "type": "Monster",
+  "acquisition": "Trial",
+  "location": "Clockwork City, Asylum Sanctorium",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "When you deal damage with Arrow Spray, you cause enemies hit to have 153-6600 less Armor against Bow attacks for 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Piercing_Spray",
+  "esohub_url": "https://eso-hub.com/en/sets/piercing-spray"
+}

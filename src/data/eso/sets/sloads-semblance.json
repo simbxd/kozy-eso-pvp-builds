@@ -1,0 +1,40 @@
+{
+  "id": "sloads-semblance",
+  "name": "Sload's Semblance",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Artaeum, Craftworks",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Damaging an enemy has a 10% chance to fire a Shadow Pearl at them, dealing 3% of the target's Max Health as Oblivion Damage every 1 second for 6 seconds. The Shadow Pearl cannot be reflected. Effect can occur every 6 seconds.\n\nThis can deal a maximum of 69-3000 Oblivion Damage per tick.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sload's_Semblance",
+  "esohub_url": "https://eso-hub.com/en/sets/sloads-semblance"
+}

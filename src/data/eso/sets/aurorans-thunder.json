@@ -1,0 +1,40 @@
+{
+  "id": "aurorans-thunder",
+  "name": "Auroran's Thunder",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Gold Coast, Depths of Malatar",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Dealing direct damage to a target within 10 meters of you summons a cone of lightning from your chest for 5 seconds, dealing 396 Shock damage every 1 second to enemies in the cone. This effect can occur every 10 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Auroran's_Thunder",
+  "esohub_url": "https://eso-hub.com/en/sets/aurorans-thunder"
+}

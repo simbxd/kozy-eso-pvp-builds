@@ -1,0 +1,11 @@
+{
+  "id": "45293",
+  "slug": "red-diamond",
+  "name": "Red Diamond",
+  "description": "Reduces the cost of all your abilities by 6%.",
+  "category": "racial",
+  "skill_line": "Imperial Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

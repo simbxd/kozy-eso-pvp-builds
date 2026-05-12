@@ -1,0 +1,11 @@
+{
+  "id": "40103665",
+  "slug": "introspection",
+  "name": "Introspection",
+  "description": "Focus your body and mind into a meditative state, healing for 1800 Health and restoring 1500 Magicka and Stamina every 1 second.\n\nMaintaining the channel increases the Health restored by 10% every tick, up to a maximum of 50%.\n\nYou will remain in a meditative state until you toggle this ability off or are interrupted.",
+  "category": "guild",
+  "skill_line": "Psijic Order",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

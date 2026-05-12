@@ -1,0 +1,45 @@
+{
+  "id": "medusa",
+  "name": "Medusa",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Shadowfen, Arx Corinium",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Critical Chance",
+      "value": 892
+    },
+    {
+      "count": 5,
+      "stat": "Gain Minor Force at all times, increasing your Critical Damage by 10%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Medusa",
+  "esohub_url": "https://eso-hub.com/en/sets/medusa"
+}

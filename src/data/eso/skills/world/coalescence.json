@@ -1,0 +1,11 @@
+{
+  "id": "139306",
+  "slug": "coalescence",
+  "name": "Coalescence",
+  "description": "Unites a hexagonal cluster of facets in the Antiquarian's Eye, converting the symbols to match that of the central facet.\n\nNew Effect: The ability's range increases by one facet, creating a snowflake-like pattern.\n\nConsumes 1 Magicka Charge.",
+  "category": "world",
+  "skill_line": "Scrying",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

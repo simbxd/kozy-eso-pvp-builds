@@ -1,0 +1,11 @@
+{
+  "id": "45471",
+  "slug": "fortress",
+  "name": "Fortress",
+  "description": "Reduces the Stamina cost of your One Hand and Shield abilities by 15% and reduces the cost of blocking by 36%.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

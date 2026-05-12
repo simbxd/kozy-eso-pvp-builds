@@ -1,0 +1,40 @@
+{
+  "id": "aetherial-ascension",
+  "name": "Aetherial Ascension",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Blackreach, Arkthzand Cavern, Philosopher's Cradle",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Armor. Increases the cost of Block, Sprint, Dodge, and Break Free by 20%.",
+      "value": 7377
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Aetherial_Ascension",
+  "esohub_url": "https://eso-hub.com/en/sets/aetherial-ascension"
+}

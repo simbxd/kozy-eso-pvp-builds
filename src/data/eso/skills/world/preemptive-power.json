@@ -1,0 +1,11 @@
+{
+  "id": "139777",
+  "slug": "preemptive-power",
+  "name": "Preemptive Power",
+  "description": "Start each Scrying attempt with an additional row of facets already claimed.",
+  "category": "world",
+  "skill_line": "Scrying",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

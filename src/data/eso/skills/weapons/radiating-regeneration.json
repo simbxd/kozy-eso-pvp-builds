@@ -1,0 +1,11 @@
+{
+  "id": "41288",
+  "slug": "radiating-regeneration",
+  "name": "Radiating Regeneration",
+  "description": "Share your staff's life-giving energy, healing you or up to 3 nearby allies for 3594 over 10 seconds.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

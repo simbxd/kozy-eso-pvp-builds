@@ -1,0 +1,11 @@
+{
+  "id": "40192380",
+  "slug": "gibbering-shelter",
+  "name": "Gibbering Shelter",
+  "description": "Gather the true strength of Apocrypha, forming a tentacle damage shield that absorbs 60% of all damage for 10 seconds, up to a max of 31733 damage.\n\nWhen the shield absorbs damage, pseudopods cascade out at up to 11 allies within 15 meters, granting them a damage shield for 4 seconds that absorbs up to 5462 damage. These shields can be applied once every 4 seconds. Both shields scale off your Max Health.",
+  "category": "classes",
+  "skill_line": "Soldier of Apocrypha",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

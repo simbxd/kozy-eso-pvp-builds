@@ -1,0 +1,23 @@
+{
+  "id": "puncturing-remedy",
+  "name": "Puncturing Remedy",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Dragonstar Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "When you deal damage with Puncture, you heal for 2230 Health and gain Spell and Physical Resistance equal to the amount of healing or over healing done for 5 seconds. The healing scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Puncturing_Remedy",
+  "esohub_url": "https://eso-hub.com/en/sets/puncturing-remedy"
+}

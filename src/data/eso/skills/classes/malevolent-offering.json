@@ -1,0 +1,11 @@
+{
+  "id": "36109",
+  "slug": "malevolent-offering",
+  "name": "Malevolent Offering",
+  "description": "Pour out your lifesblood and channel the arcane, healing yourself or an ally in front of you for 3486 Health, while draining 1080 Health from yourself over 3 seconds.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

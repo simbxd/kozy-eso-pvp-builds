@@ -1,0 +1,11 @@
+{
+  "id": "36582",
+  "slug": "amphibian",
+  "name": "Amphibian",
+  "description": "Increases your experience gain with the Restoration Staff skill line by 15%.\n\nIncreases your swimming speed by 50%.",
+  "category": "racial",
+  "skill_line": "Argonian Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

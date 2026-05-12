@@ -1,0 +1,11 @@
+{
+  "id": "36351",
+  "slug": "dark-cloak",
+  "name": "Dark Cloak",
+  "description": "Shroud yourself in protective shadow to heal for 853 Health every 1 second, over 3 seconds, increasing by an additional 150% while Bracing. This portion of the ability scales off your Max Health.\n\nWhile slotted on either bar, you gain Minor Protection, reducing your damage taken by 5%.",
+  "category": "classes",
+  "skill_line": "Shadow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

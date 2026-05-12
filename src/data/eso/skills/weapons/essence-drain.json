@@ -1,0 +1,11 @@
+{
+  "id": "45517",
+  "slug": "essence-drain",
+  "name": "Essence Drain",
+  "description": "You gain Major Mending for 4 seconds after completing a fully-charged Heavy Attack, increasing your healing done by 16%.\n\nYou also heal yourself or an ally within 12 meters of the target for 50% of the damage inflicted by the final hit of a fully-charged Heavy Attack.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

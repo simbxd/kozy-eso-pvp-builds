@@ -1,0 +1,40 @@
+{
+  "id": "aspect-of-mazzatun",
+  "name": "Aspect of Mazzatun",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Shadowfen, Ruins of Mazzatun",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage while under 30% Health, you heal for 243-10481 Health and restore 243-10481 Magicka and Stamina. This effect can occur once every 45 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Aspect_of_Mazzatun",
+  "esohub_url": "https://eso-hub.com/en/sets/aspect-of-mazzatun"
+}

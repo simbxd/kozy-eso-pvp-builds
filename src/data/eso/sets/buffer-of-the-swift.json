@@ -1,0 +1,40 @@
+{
+  "id": "buffer-of-the-swift",
+  "name": "Buffer of the Swift",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Cropsford",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Reduce damage taken from Players by 10%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Buffer_of_the_Swift",
+  "esohub_url": "https://eso-hub.com/en/sets/buffer-of-the-swift"
+}

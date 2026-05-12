@@ -1,0 +1,40 @@
+{
+  "id": "grave-inevitability",
+  "name": "Grave Inevitability",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "High Isle, Graven Deep",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Dealing damage with a Light or Heavy Attack grants you a stack of Remorseless for 5 seconds, up to 5 stacks, up to once every 0.5 seconds. While you have 5 stacks, you generate an aura of focus, granting you Major Force, increasing your Critical Damage by 20%, while group members within 12 meters of you gain Minor Force, increasing their Critical Damage by 10%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Grave_Inevitability",
+  "esohub_url": "https://eso-hub.com/en/sets/grave-inevitability"
+}

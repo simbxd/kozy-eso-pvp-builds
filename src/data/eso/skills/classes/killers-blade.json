@@ -1,0 +1,11 @@
+{
+  "id": "35590",
+  "slug": "killers-blade",
+  "name": "Killer's Blade",
+  "description": "Thrust a caustic blade with lethal precision to stab an enemy, dealing 1161 Disease Damage. Deals up to 400% more damage to enemies with less than 50% Health.\n\nHeals you for 2399 if the enemy dies within 2 seconds of being struck.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

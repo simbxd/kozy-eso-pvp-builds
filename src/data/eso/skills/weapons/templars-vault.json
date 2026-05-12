@@ -1,0 +1,11 @@
+{
+  "id": "220136",
+  "slug": "templars-vault",
+  "name": "Templar's Vault",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Bow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

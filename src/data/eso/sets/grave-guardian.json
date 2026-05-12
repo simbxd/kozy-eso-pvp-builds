@@ -1,0 +1,40 @@
+{
+  "id": "grave-guardian",
+  "name": "Grave Guardian",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Bangkorai, Unhallowed Grave",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Summon a stone aura while you are Bracing, hardening you and your nearby group members, increasing your Physical and Spell Resistance by 103-4430.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Grave_Guardian",
+  "esohub_url": "https://eso-hub.com/en/sets/grave-guardian"
+}

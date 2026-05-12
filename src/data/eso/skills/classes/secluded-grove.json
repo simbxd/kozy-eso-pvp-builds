@@ -1,0 +1,11 @@
+{
+  "id": "93968",
+  "slug": "secluded-grove",
+  "name": "Secluded Grove",
+  "description": "Swell a healing forest at the target location, instantly healing the most injured friendly target for 2787 Health. The forest continues to heal you and your allies in the area for 927 Health every 1 second for 6 seconds.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

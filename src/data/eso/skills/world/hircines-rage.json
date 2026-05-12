@@ -1,0 +1,11 @@
+{
+  "id": "58323",
+  "slug": "hircines-rage",
+  "name": "Hircine's Rage",
+  "description": "Invoke the Huntsman's blessing, healing you for 6197 Health. This portion of the ability scales off your Max Health. \n\nIf you are at full Health you instead restore 3000 Stamina and gain Major Berserk, increasing your damage done by 10% for 10 seconds, but you also take 5% more damage.\n\nWhile slotted you gain Major Brutality and Sorcery, increasing your Weapon and Spell Damage by 20%.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

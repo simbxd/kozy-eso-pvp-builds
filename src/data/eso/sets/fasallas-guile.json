@@ -1,0 +1,45 @@
+{
+  "id": "fasallas-guile",
+  "name": "Fasalla's Guile",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Elite Gear Vendors",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, every 1 second you apply Minor Defile to enemies within 5 meters of you for 2 seconds, reducing their healing received and damage shield strength by 6%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fasalla's_Guile",
+  "esohub_url": "https://eso-hub.com/en/sets/fasallas-guile"
+}

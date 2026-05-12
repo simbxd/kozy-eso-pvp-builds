@@ -1,0 +1,11 @@
+{
+  "id": "116201",
+  "slug": "rapid-rot",
+  "name": "Rapid Rot",
+  "description": "Increases your damage done with damage over time effects by 10%.",
+  "category": "classes",
+  "skill_line": "Grave Lord",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

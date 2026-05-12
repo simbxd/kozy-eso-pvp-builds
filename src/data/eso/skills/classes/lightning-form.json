@@ -1,0 +1,11 @@
+{
+  "id": "30235",
+  "slug": "lightning-form",
+  "name": "Lightning Form",
+  "description": "Manifest yourself as pure lightning, zapping nearby enemies with electricity dealing 462 Shock Damage every 2 seconds for 20 seconds.  \n\nWhile in this form you also gain Major Resolve, increasing your Physical Resistance and Spell Resistance by 5948.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

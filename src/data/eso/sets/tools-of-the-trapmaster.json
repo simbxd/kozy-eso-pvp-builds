@@ -1,0 +1,40 @@
+{
+  "id": "tools-of-the-trapmaster",
+  "name": "Tools of the Trapmaster",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Dealing direct damage with a non-Heavy Attack grants you a stack of Trapmaster for 5 seconds, up to 4 stacks max. You can gain a stack every 1 second.\n\nDealing damage with a fully-charged Heavy Attack consumes the stacks, applies Sundered, and deals 353 Physical damage per stack consumed.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Tools_of_the_Trapmaster",
+  "esohub_url": "https://eso-hub.com/en/sets/tools-of-the-trapmaster"
+}

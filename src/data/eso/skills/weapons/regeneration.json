@@ -1,0 +1,11 @@
+{
+  "id": "41271",
+  "slug": "regeneration",
+  "name": "Regeneration",
+  "description": "Share your staff's life-giving energy, healing you or a nearby ally for 3480 Health over 10 seconds.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

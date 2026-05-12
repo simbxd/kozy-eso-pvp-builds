@@ -1,0 +1,11 @@
+{
+  "id": "42179",
+  "slug": "deafening-roar",
+  "name": "Deafening Roar",
+  "description": "Roar with bloodlust to fear nearby enemies for 4 seconds and setting them Off Balance for 7 seconds.\n\nYour roar also leaves enemies dazed, applying Major Breach and Minor Maim, reducing their Physical and Spell Resistance by 5948 and damage done by 5% for 10 seconds.\n\nWhile slotted you gain Major Protection and your Heavy Attacks taunt enemies for 15 seconds.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

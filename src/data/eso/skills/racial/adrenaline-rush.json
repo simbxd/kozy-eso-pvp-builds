@@ -1,0 +1,11 @@
+{
+  "id": "45315",
+  "slug": "adrenaline-rush",
+  "name": "Adrenaline Rush",
+  "description": "When you deal damage, you restore 1005 Stamina. This effect can occur once every 5 seconds.",
+  "category": "racial",
+  "skill_line": "Redguard Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

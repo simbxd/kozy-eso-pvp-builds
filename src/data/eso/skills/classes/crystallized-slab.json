@@ -1,0 +1,11 @@
+{
+  "id": "86142",
+  "slug": "crystallized-slab",
+  "name": "Crystallized Slab",
+  "description": "Spin a shield of ice around you, absorbing up to 24791 damage from 3 projectiles. \n\nEach time you absorb a projectile you launch an icy bolt back at the enemy, dealing 1199 Frost Damage and stunning them for 3 seconds.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "216945",
+  "slug": "major-breach",
+  "name": "Major Breach",
+  "description": null,
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

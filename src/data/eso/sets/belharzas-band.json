@@ -1,0 +1,22 @@
+{
+  "id": "belharzas-band",
+  "name": "Belharza's Band",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "ring"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Increase the damage of your Light Attacks by 900.\n\nWhen you deal damage with consecutive melee Light Attacks, gain a stack of Belharza's Temper for 10 seconds, up to 5 stacks max. At 5 stacks, consume Belharza's Temper and after 1 second, deal 1471 Physical Damage to enemies in a line and stun them for 3 seconds. This effect can occur once every 10 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Belharza's_Band",
+  "esohub_url": "https://eso-hub.com/en/sets/belharzas-band"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prophets",
+  "name": "Prophet's",
+  "type": "Mythic",
+  "acquisition": "Overland",
+  "location": "Level Up Advisor",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "chest",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Health",
+      "value": 1206
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Prophet's",
+  "esohub_url": "https://eso-hub.com/en/sets/prophets"
+}

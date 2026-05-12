@@ -1,0 +1,45 @@
+{
+  "id": "order-of-diagna",
+  "name": "Order of Diagna",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Alik'r Desert",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Adds 5% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Gain Minor Vitality at all times, increasing your healing received and damage shield strength by 6%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Order_of_Diagna",
+  "esohub_url": "https://eso-hub.com/en/sets/order-of-diagna"
+}

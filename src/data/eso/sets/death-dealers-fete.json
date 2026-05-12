@@ -1,0 +1,22 @@
+{
+  "id": "death-dealers-fete",
+  "name": "Death Dealer's Fete",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "ring"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Gain a persistent stack of Escalating Fete every 2 seconds you are in combat, up to 30 stacks max. Each stack of Escalating Fete increases your Maximum Stamina, Health, and Magicka by 88. You lose a stack of Escalating Fete every 4 seconds you are out of combat.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Death_Dealer's_Fete",
+  "esohub_url": "https://eso-hub.com/en/sets/death-dealers-fete"
+}

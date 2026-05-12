@@ -1,0 +1,11 @@
+{
+  "id": "45207",
+  "slug": "sacred-ground",
+  "name": "Sacred Ground",
+  "description": "While standing in your own Cleansing Ritual, Rune Focus, or Rite of Passage area effects and for up to 4 seconds after leaving them you gain Minor Mending, increasing your healing done by 8%.\n\nAlso increases the amount of damage you can block by 10% for the duration.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

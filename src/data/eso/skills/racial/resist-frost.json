@@ -1,0 +1,11 @@
+{
+  "id": "45304",
+  "slug": "resist-frost",
+  "name": "Resist Frost",
+  "description": "Increases your Max Health by 1000 and Frost Resistance by 4620.",
+  "category": "racial",
+  "skill_line": "Nord Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

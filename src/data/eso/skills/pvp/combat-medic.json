@@ -1,0 +1,11 @@
+{
+  "id": "45624",
+  "slug": "combat-medic",
+  "name": "Combat Medic",
+  "description": "Increases your healing done by 20% when you are near a Keep.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

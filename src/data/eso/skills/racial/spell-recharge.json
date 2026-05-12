@@ -1,0 +1,11 @@
+{
+  "id": "45274",
+  "slug": "spell-recharge",
+  "name": "Spell Recharge",
+  "description": "When you activate an ability, you restore 625 Magicka or Stamina, based on whichever is lowest. This effect can occur once every 6 seconds.\n\nWhen you are using an ability with a channel or cast time, you take 5% less damage.",
+  "category": "racial",
+  "skill_line": "High Elf Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

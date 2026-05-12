@@ -1,0 +1,11 @@
+{
+  "id": "40115307",
+  "slug": "expunge",
+  "name": "Expunge",
+  "description": "Embrace the power of death, removing up to 2 negative effects from yourself.\n\nWhile slotted, the cost of all your abilities are reduced by 3%.",
+  "category": "classes",
+  "skill_line": "Living Death",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

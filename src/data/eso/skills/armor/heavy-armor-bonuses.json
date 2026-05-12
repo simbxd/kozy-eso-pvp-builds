@@ -1,0 +1,11 @@
+{
+  "id": "150184",
+  "slug": "heavy-armor-bonuses",
+  "name": "Heavy Armor Bonuses",
+  "description": "Each piece of Heavy Armor does the following:\n\nReduces damage taken from Martial attacks by 1%\n\nIncreases the amount of damage blocked by 1%\n\nIncreases damage done with Bash by 30\n\nReduces your damage taken while immune to crowd control by 1%",
+  "category": "armor",
+  "skill_line": "Heavy Armor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

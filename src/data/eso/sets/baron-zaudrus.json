@@ -1,0 +1,38 @@
+{
+  "id": "baron-zaudrus",
+  "name": "Baron Zaudrus",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Baron Zaudrus in The Cauldron, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Stamina",
+      "value": 548
+    },
+    {
+      "count": 1,
+      "stat": "Maximum Magicka",
+      "value": 548
+    },
+    {
+      "count": 1,
+      "stat": "Maximum Health",
+      "value": 603
+    },
+    {
+      "count": 2,
+      "stat": "Applying a status effect to an enemy grants you a stack of Zaudrus's Ambition for 10 seconds, up to 3 stacks max. When you gain 3 stacks, the stacks are removed and you gain 4 Ultimate. On gaining Ultimate, you cannot gain additional stacks of Zaudrus's Ambition for 1 second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Baron_Zaudrus",
+  "esohub_url": "https://eso-hub.com/en/sets/baron-zaudrus"
+}

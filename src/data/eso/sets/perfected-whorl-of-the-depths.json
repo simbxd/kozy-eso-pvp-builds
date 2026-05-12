@@ -1,0 +1,45 @@
+{
+  "id": "perfected-whorl-of-the-depths",
+  "name": "Perfected Whorl of the Depths",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "High Isle, Dreadsail Reef",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 15-657 Critical Chance",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a Light Attack, you apply Whorl of the Depths to the target, dealing 1016 Frost Damage over 8 seconds. When this effect ends, a 5 meter whirlpool is created under the target for 6 seconds and deals 764 Frost Damage every 1 second. This effect can occur once every 18 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Whorl_of_the_Depths",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-whorl-of-the-depths"
+}

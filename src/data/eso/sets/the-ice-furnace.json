@@ -1,0 +1,40 @@
+{
+  "id": "the-ice-furnace",
+  "name": "The Ice Furnace",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Eastmarch, Direfrost Keep",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Frost Damage, you deal an additional 238 Flame damage to all enemies within 8 meters around the initial target. This effect can occur once every 1 second and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Ice_Furnace",
+  "esohub_url": "https://eso-hub.com/en/sets/the-ice-furnace"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "58876",
+  "slug": "claws-of-anguish",
+  "name": "Claws of Anguish",
+  "description": "Shred enemies in front of you with your tainted claws, dealing 2178 Disease Damage and an additional 3620 Disease Damage over 20 seconds.\n\nAfflicts enemies with Major Defile for 4 seconds, reducing their healing received and damage shield strength by 12%.\n\nEnemies hit by any part of the ability are afflicted with the Diseased status effect.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

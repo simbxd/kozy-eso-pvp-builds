@@ -1,0 +1,33 @@
+{
+  "id": "swarm-mother",
+  "name": "Swarm Mother",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "The Whisperer in Spindleclutch I, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 1,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "When you Block an enemy that is between 8 and 22 meters from you, you spin strands of spider silk to pull the enemy to you and taunt them for 15 seconds if they are not already taunted. This effect can occur once every 1 second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Swarm_Mother",
+  "esohub_url": "https://eso-hub.com/en/sets/swarm-mother"
+}

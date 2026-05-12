@@ -1,0 +1,11 @@
+{
+  "id": "23794",
+  "slug": "everlasting-sweep",
+  "name": "Everlasting Sweep",
+  "description": "Swing your Aedric spear around with holy vengeance, dealing 2399 Physical Damage to all nearby enemies and an additional 1161 Physical Damage every 2 seconds for 10 seconds. The duration is extended by 2 seconds for each enemy hit.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

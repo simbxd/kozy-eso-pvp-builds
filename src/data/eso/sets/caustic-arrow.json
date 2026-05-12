@@ -1,0 +1,22 @@
+{
+  "id": "caustic-arrow",
+  "name": "Caustic Arrow",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Dragonstar Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Increases your Weapon and Spell Damage by 7-330 against targets affected by your Poison Arrow.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Caustic_Arrow",
+  "esohub_url": "https://eso-hub.com/en/sets/caustic-arrow"
+}

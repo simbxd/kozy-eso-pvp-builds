@@ -1,0 +1,11 @@
+{
+  "id": "23778",
+  "slug": "chains-of-dominance",
+  "name": "Chains of Dominance",
+  "description": "Lash out with a chain bound in Draconic runes, pulling an enemy to you. The enchanted metal deals 1393 Flame Damage, applies the Burning status effect, and taunts them for 15 seconds if they are not already taunted. If the target cannot be pulled, you restore the ability's Magicka cost.\n\nThis attack cannot be dodged or reflected.\n\nAlso inflicts Major Cowardice on the enemy, reducing Weapon and Spell Damage by 430 for 15 seconds.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

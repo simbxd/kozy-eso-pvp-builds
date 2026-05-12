@@ -1,0 +1,45 @@
+{
+  "id": "perfected-coral-riptide",
+  "name": "Perfected Coral Riptide",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "High Isle, Dreadsail Reef",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 15-657 Critical Chance",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Increases your Weapon and Spell Damage by up to 600, based on your missing Stamina, reaching the maximum at 50% Stamina.\n\nCurrent bonus: 0 Weapon and Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Coral_Riptide",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-coral-riptide"
+}

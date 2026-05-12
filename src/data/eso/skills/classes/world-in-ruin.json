@@ -1,0 +1,11 @@
+{
+  "id": "44933",
+  "slug": "world-in-ruin",
+  "name": "World in Ruin",
+  "description": "Dragons leave naught but ash and ruin in their wake.\n\nIncreases your damage done with area and over time attacks by 7%.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

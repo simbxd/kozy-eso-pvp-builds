@@ -1,0 +1,40 @@
+{
+  "id": "heroic-unity",
+  "name": "Heroic Unity",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Activating a Synergy gives you and up to 3 group members within 12 meters Major Heroism for 6 seconds, granting 3 Ultimate every 1.5 seconds. This effect can occur once every 1 second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Heroic_Unity",
+  "esohub_url": "https://eso-hub.com/en/sets/heroic-unity"
+}

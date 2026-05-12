@@ -1,0 +1,40 @@
+{
+  "id": "xanmeer-genesis",
+  "name": "Xanmeer Genesis",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When an enemy you have recently damaged dies, after 0.5 seconds, you and allies within 8 meters of the dead enemy receive 322 Health, Magicka, and Stamina Recovery for 10 seconds. This effect can occur once every 6 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Xanmeer_Genesis",
+  "esohub_url": "https://eso-hub.com/en/sets/xanmeer-genesis"
+}

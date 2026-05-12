@@ -1,0 +1,22 @@
+{
+  "id": "disciplined-slash",
+  "name": "Disciplined Slash",
+  "type": "Monster",
+  "acquisition": "Trial",
+  "location": "Clockwork City, Asylum Sanctorium",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "When you deal damage with Reverse Slash, you generate up to 12 Ultimate based on how much execute bonus damage it dealt.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Disciplined_Slash",
+  "esohub_url": "https://eso-hub.com/en/sets/disciplined-slash"
+}

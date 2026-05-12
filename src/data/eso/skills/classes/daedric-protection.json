@@ -1,0 +1,11 @@
+{
+  "id": "45200",
+  "slug": "daedric-protection",
+  "name": "Daedric Protection",
+  "description": "Reduce your damage taken by 5% while you have a Daedric Summoning ability active.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

@@ -1,0 +1,40 @@
+{
+  "id": "senche-rahts-grit",
+  "name": "Senche-raht's Grit",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Northern Elsweyr, Starlight Adeptorium",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "After being damaged by a damage over time ability, increase your Healing Received by 0-6% and your Physical and Spell Resistance by 60-2585 for 3 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Senche-raht's_Grit",
+  "esohub_url": "https://eso-hub.com/en/sets/senche-rahts-grit"
+}

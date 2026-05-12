@@ -1,0 +1,11 @@
+{
+  "id": "33632",
+  "slug": "blood-of-the-green-dragon",
+  "name": "Blood of the Green Dragon",
+  "description": "Draw on your draconic blood to heal for 4131 Health, increasing by up to 50% additional healing based on your missing Health. Heals for an additional 2555 Health over 5 seconds. This ability scales off your Max Health.\n\nYou also gain Major Endurance and Fortitude and Minor Vitality, increasing Health and Stamina Recovery by 30% and increasing healing received and damage shield strength by 6% for 20 seconds.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

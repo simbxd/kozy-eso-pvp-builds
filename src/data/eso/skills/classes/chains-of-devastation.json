@@ -1,0 +1,11 @@
+{
+  "id": "32229",
+  "slug": "chains-of-devastation",
+  "name": "Chains of Devastation",
+  "description": "Lash out with a chain bound in jagged links, pulling yourself to an enemy. The searing metal deals 1438 Flame Damage and applies the Burning status effect.\n\nThis attack cannot be dodged or reflected.\n\nHitting the target grants you Major Berserk for 6 seconds and Major Evasion for 10 seconds, increasing damage done by 10% reducing damage taken from area attacks by 20%.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

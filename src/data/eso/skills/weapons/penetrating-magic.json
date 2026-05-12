@@ -1,0 +1,11 @@
+{
+  "id": "45509",
+  "slug": "penetrating-magic",
+  "name": "Penetrating Magic",
+  "description": "Your Destruction Staff abilities ignore 2974 of the enemy's Spell Resistance.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

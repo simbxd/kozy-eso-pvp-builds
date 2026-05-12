@@ -1,0 +1,11 @@
+{
+  "id": "37796",
+  "slug": "twisting-path",
+  "name": "Twisting Path",
+  "description": "Create a corridor of shadows for 10 seconds, granting you and allies in the area Major Expedition, increasing Movement Speed by 30% which persists for 4 seconds after leaving the path.\n\nDeals 377 Magic Damage to enemies in the target area every 1 second.",
+  "category": "classes",
+  "skill_line": "Shadow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

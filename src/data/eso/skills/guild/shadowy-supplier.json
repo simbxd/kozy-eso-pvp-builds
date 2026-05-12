@@ -1,0 +1,11 @@
+{
+  "id": "77396",
+  "slug": "shadowy-supplier",
+  "name": "Shadowy Supplier",
+  "description": "A contact from the Brotherhood provides beneficial items once per day. This contact is located in Outlaw Refuges, the Gold Coast Dark Brotherhood Sanctuary, and the Hew's Bane Thieves Den.",
+  "category": "guild",
+  "skill_line": "Dark Brotherhood",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

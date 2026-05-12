@@ -1,0 +1,40 @@
+{
+  "id": "embershield",
+  "name": "Embershield",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Greenshade, City of Ash",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you complete a fully-charged Heavy Attack, you increase your Physical and Spell Resistance by 76-3300 and deal 0 Flame damage to all enemies within 5 meters of you every 1 second for 6 seconds. The damage scales off the higher of your Physical or Spell Resistance.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Embershield",
+  "esohub_url": "https://eso-hub.com/en/sets/embershield"
+}

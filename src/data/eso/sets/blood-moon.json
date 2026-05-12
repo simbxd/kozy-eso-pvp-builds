@@ -1,0 +1,40 @@
+{
+  "id": "blood-moon",
+  "name": "Blood Moon",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Greenshade, March of Sacrifices",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a melee Light Attack, you gain a stack of Blood Scent for 8 seconds. When you gain 5 stacks, you become Frenzied for 5 seconds, increasing your melee Light Attack damage by 47-2050 and attack speed by 50%. This effect can occur every 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_Moon",
+  "esohub_url": "https://eso-hub.com/en/sets/blood-moon"
+}

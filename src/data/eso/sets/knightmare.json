@@ -1,0 +1,45 @@
+{
+  "id": "knightmare",
+  "name": "Knightmare",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Glenumbra, Spindleclutch",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Martial melee damage, you apply Minor Maim to all enemies within 8 meters of you for 5 seconds, reducing their damage done by 5%.  This effect can occur once every 3 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Knightmare",
+  "esohub_url": "https://eso-hub.com/en/sets/knightmare"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "beacon-of-oblivion",
+  "name": "Beacon of Oblivion",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Infinite Archive",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "While you have a permanent pet active, gain 1840 Health and 1980 Armor.\n\nWhile you do not have a permanent pet active, increase your Damage Done and Healing Done by 15%. This value is reduced to 5% while affected by Battle Spirit.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Beacon_of_Oblivion",
+  "esohub_url": "https://eso-hub.com/en/sets/beacon-of-oblivion"
+}

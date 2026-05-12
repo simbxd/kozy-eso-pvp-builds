@@ -1,0 +1,29 @@
+{
+  "id": "eagle-eye",
+  "name": "Eagle Eye",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Bruma",
+  "dlc": "Base Game",
+  "pieces": 3,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance to your ranged direct damage abilities.",
+      "value": 1652
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Eagle_Eye",
+  "esohub_url": "https://eso-hub.com/en/sets/eagle-eye"
+}

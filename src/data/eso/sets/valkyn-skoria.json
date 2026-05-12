@@ -1,0 +1,28 @@
+{
+  "id": "valkyn-skoria",
+  "name": "Valkyn Skoria",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Valkyn Skoria in City of Ash II, Glirion the Redbeard",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 2,
+      "stat": "When you deal damage with a damage over time effect, you have an 8% chance to summon a meteor that deals 1342 Flame damage to the target and 447 Flame damage to all other enemies within 5 meters. This effect can occur once every 5 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Valkyn_Skoria",
+  "esohub_url": "https://eso-hub.com/en/sets/valkyn-skoria"
+}

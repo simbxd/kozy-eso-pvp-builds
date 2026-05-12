@@ -1,0 +1,40 @@
+{
+  "id": "skooma-smuggler",
+  "name": "Skooma Smuggler",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Reaper's March",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you drink a potion while in combat, you gain Major Expedition for 30 seconds, increasing your Movement Speed by 30%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Skooma_Smuggler",
+  "esohub_url": "https://eso-hub.com/en/sets/skooma-smuggler"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "40806",
+  "slug": "poison-arrow",
+  "name": "Poison Arrow",
+  "description": "Shoot an arrow coated in Baandari poison at an enemy, dealing 1161 Poison Damage and an additional 3470 Poison Damage over 20 seconds.",
+  "category": "weapons",
+  "skill_line": "Bow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

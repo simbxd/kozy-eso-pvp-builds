@@ -1,0 +1,28 @@
+{
+  "id": "engine-guardian",
+  "name": "Engine Guardian",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "The Engine Guardian in Darkshade Caverns II, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Health Recovery",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "When you use an ability that costs resources, you have a 25% chance to summon a Dwemer automaton to restore 12-550 Stamina or Magicka or 45-1955 Health to you every 0.5 seconds for 6 seconds. This effect can occur once every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Engine_Guardian",
+  "esohub_url": "https://eso-hub.com/en/sets/engine-guardian"
+}

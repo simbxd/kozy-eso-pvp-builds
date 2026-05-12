@@ -1,0 +1,11 @@
+{
+  "id": "30418",
+  "slug": "bound-armor",
+  "name": "Bound Armor",
+  "description": "Protect yourself with the power of Oblivion, creating a suit of Daedric mail that increases your block mitigation by 36% for 3 seconds. The duration is based on your combined Physical and Spell Resistance.\n\nWhile slotted on either ability bar, you gain Minor Protection, reducing your damage taken by 5%.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

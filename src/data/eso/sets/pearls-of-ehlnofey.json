@@ -1,0 +1,22 @@
+{
+  "id": "pearls-of-ehlnofey",
+  "name": "Pearls of Ehlnofey",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "necklace"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "When you attempt to use resources to cast a healing ability while in combat and your dominant resource is under 50%, gain Major Heroism for 1.5 seconds, granting you 3 Ultimate every 1.5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pearls_of_Ehlnofey",
+  "esohub_url": "https://eso-hub.com/en/sets/pearls-of-ehlnofey"
+}

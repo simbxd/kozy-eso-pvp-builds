@@ -1,0 +1,40 @@
+{
+  "id": "overwhelming-surge",
+  "name": "Overwhelming Surge",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Malabal Tor, Tempest Island",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a Class ability, you surround yourself with a torrent that deals 149 Shock damage to enemies within 8 meters of you every 1 second for 6 seconds. 15% of the damage you deal this way is restored to you as Magicka. This effect can occur every 7 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Overwhelming_Surge",
+  "esohub_url": "https://eso-hub.com/en/sets/overwhelming-surge"
+}

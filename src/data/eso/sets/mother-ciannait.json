@@ -1,0 +1,28 @@
+{
+  "id": "mother-ciannait",
+  "name": "Mother Ciannait",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Mother Ciannait in Icereach, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "While in combat, casting an ability with a cast time or channeling an ability grants you a damage shield that absorbs 116-5000 damage for 6 seconds.  If the damage shield is broken, you restore 22-985 Magicka. This effect can occur once every 7 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mother_Ciannait",
+  "esohub_url": "https://eso-hub.com/en/sets/mother-ciannait"
+}

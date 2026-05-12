@@ -1,0 +1,40 @@
+{
+  "id": "icy-conjurer",
+  "name": "Icy Conjurer",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Eastmarch, Frostvault",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Applying a minor debuff to your enemy summons a non-reflectable Ice Wraith that will charge into your enemy, dealing 3070 Frost damage over 10 seconds. This effect can occur every 10 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Icy_Conjurer",
+  "esohub_url": "https://eso-hub.com/en/sets/icy-conjurer"
+}

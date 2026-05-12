@@ -1,0 +1,45 @@
+{
+  "id": "perfected-claw-of-yolnahkriin",
+  "name": "Perfected Claw of Yolnahkriin",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Elsweyr, Sunspire",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 28-1206 Maximum Health",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you taunt an enemy, you give yourself and 11 group members Minor Courage for 15 seconds, increasing your Weapon and Spell Damage by 215. This effect can occur once every 8 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Claw_of_Yolnahkriin",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-claw-of-yolnahkriin"
+}

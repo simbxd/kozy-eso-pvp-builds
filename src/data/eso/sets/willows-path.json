@@ -1,0 +1,40 @@
+{
+  "id": "willows-path",
+  "name": "Willow's Path",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Greenspeaker's Grove in Reaper's March, Viridian Hideaway in Bangkorai, Smokefrost Vigil in The Rift",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Health Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Increases your Health, Magicka, and Stamina Recovery by 18%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Willow's_Path",
+  "esohub_url": "https://eso-hub.com/en/sets/willows-path"
+}

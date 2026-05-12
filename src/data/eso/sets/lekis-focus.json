@@ -1,0 +1,40 @@
+{
+  "id": "lekis-focus",
+  "name": "Leki's Focus",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Elite Gear Vendors",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Reduces your damage done with area of effect attacks by 5%, but grants Major Evasion at all times; reducing your damage taken from area of effect attacks by 20%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Leki's_Focus",
+  "esohub_url": "https://eso-hub.com/en/sets/lekis-focus"
+}

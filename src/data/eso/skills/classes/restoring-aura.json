@@ -1,0 +1,11 @@
+{
+  "id": "27007",
+  "slug": "restoring-aura",
+  "name": "Restoring Aura",
+  "description": "Champion the cause of divine glory to apply Minor Endurance, Minor Fortitude, and Minor Intellect to nearby group members for 20 seconds, increasing Health, Magicka, and Stamina Recovery by 15%.\n\nWhile slotted on either bar you gain these effects.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

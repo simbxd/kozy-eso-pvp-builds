@@ -1,0 +1,11 @@
+{
+  "id": "216949",
+  "slug": "major-resolve",
+  "name": "Major Resolve",
+  "description": null,
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

@@ -1,0 +1,11 @@
+{
+  "id": "46546",
+  "slug": "sturdy-horn",
+  "name": "Sturdy Horn",
+  "description": "Sound a war horn to rally your forces, increasing you and your group's Max Magicka and Max Stamina by 10% for 30 seconds.\n\nYou and your allies gain 1320 Critical Resistance for 10 seconds, reducing incoming Critical Damage by 20%.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

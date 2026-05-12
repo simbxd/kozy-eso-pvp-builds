@@ -1,0 +1,40 @@
+{
+  "id": "apocryphal-inspiration",
+  "name": "Apocryphal Inspiration",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Scrivener's Hall",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "You and group members within 28 meters of you gain Major Fortitude, Major Intellect, and Major Endurance, increasing your Health Recovery, Magicka Recovery, and Stamina Recovery by 30%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Apocryphal_Inspiration",
+  "esohub_url": "https://eso-hub.com/en/sets/apocryphal-inspiration"
+}

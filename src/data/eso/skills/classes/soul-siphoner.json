@@ -1,0 +1,11 @@
+{
+  "id": "45155",
+  "slug": "soul-siphoner",
+  "name": "Soul Siphoner",
+  "description": "Increases your healing done by 3% for each Siphoning ability slotted. \n\nCurrent bonus: 0%.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

@@ -1,0 +1,40 @@
+{
+  "id": "meridias-blessed-armor",
+  "name": "Meridia's Blessed Armor",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Coldharbour",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you Block, you gain Meridia's Blessed Armor for 5 seconds, causing you to dodge all incoming attacks. This effect can occur once every 25 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Meridia's_Blessed_Armor",
+  "esohub_url": "https://eso-hub.com/en/sets/meridias-blessed-armor"
+}

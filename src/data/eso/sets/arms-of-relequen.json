@@ -1,0 +1,40 @@
+{
+  "id": "arms-of-relequen",
+  "name": "Arms of Relequen",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Summerset, Cloudrest",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Your Light and Heavy attacks apply a stack of harmful winds to your target for 5 seconds. Harmful winds deal 51 Physical damage per stack every 1 second. This effect can stack once every 0.5 seconds, up to 10 times, and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Arms_of_Relequen",
+  "esohub_url": "https://eso-hub.com/en/sets/arms-of-relequen"
+}

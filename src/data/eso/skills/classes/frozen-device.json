@@ -1,0 +1,11 @@
+{
+  "id": "86182",
+  "slug": "frozen-device",
+  "name": "Frozen Device",
+  "description": "Summon an ancient portal, which arms after 1.5 seconds.\n\nWhen triggered the enemy is teleported to you if within range, immobilized for 3 seconds, dealt 1799 Frost Damage, and afflicted with Major Maim, reducing their damage done by 10% for 4 seconds.\n\nYou can have up to 3 Frozen Devices active at a time.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

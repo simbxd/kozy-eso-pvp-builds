@@ -1,0 +1,40 @@
+{
+  "id": "renalds-resolve",
+  "name": "Renald's Resolve",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Northern Elsweyr, Moongrave Fane",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Whenever you deal direct damage, gain a stack of Resolve for 5 seconds. Each stack increases your healing received by 1% and your Physical and Spell Resistance by 9-420.\n\nThis effect can occur once every half second and can stack up to 9 times.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Renald's_Resolve",
+  "esohub_url": "https://eso-hub.com/en/sets/renalds-resolve"
+}

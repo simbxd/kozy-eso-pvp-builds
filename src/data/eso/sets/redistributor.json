@@ -1,0 +1,40 @@
+{
+  "id": "redistributor",
+  "name": "Redistributor",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Imperial City, Arboretum Armory",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you overheal yourself, you heal a group member within 15 meters of you for 663 Health. This effect can occur once every 1 second and scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Redistributor",
+  "esohub_url": "https://eso-hub.com/en/sets/redistributor"
+}

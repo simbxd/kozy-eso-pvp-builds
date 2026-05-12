@@ -1,0 +1,11 @@
+{
+  "id": "48971",
+  "slug": "crushing-shock",
+  "name": "Crushing Shock",
+  "description": "Focus all the elemental energies with your staff and blast an enemy for 696 Flame Damage, 696 Frost Damage, and 696 Shock Damage.\n\nEnemies hit while casting are interrupted, set Off Balance, and stunned for 3 seconds.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

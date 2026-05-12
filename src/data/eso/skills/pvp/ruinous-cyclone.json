@@ -1,0 +1,11 @@
+{
+  "id": "116096",
+  "slug": "ruinous-cyclone",
+  "name": "Ruinous Cyclone",
+  "description": "Turn into a living cyclone, dealing 7875 Physical Damage every 0.5 seconds for 7 seconds in an 8 meter radius, while pulling all enemies within 15 meters closer to you.",
+  "category": "pvp",
+  "skill_line": "Volendrung",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

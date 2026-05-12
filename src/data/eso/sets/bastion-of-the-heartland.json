@@ -1,0 +1,40 @@
+{
+  "id": "bastion-of-the-heartland",
+  "name": "Bastion of the Heartland",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Vlastarus",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Reduces your damage taken from Players by 3%.",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Reduces your damage taken from Siege Weapons and Player area of effect abilities by 10%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bastion_of_the_Heartland",
+  "esohub_url": "https://eso-hub.com/en/sets/bastion-of-the-heartland"
+}

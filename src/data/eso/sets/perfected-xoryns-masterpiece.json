@@ -1,0 +1,45 @@
+{
+  "id": "perfected-xoryns-masterpiece",
+  "name": "Perfected Xoryn's Masterpiece",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Lucent Citadel",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 25-1096 Maximum Magicka",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Increases Max Magicka and Max Stamina by 1667 for you and up to 11 other group members within 28 meters of you. This bonus persists through death.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Xoryn's_Masterpiece",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-xoryns-masterpiece"
+}

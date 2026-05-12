@@ -1,0 +1,40 @@
+{
+  "id": "widowmaker",
+  "name": "Widowmaker",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Shadowfen, Cradle of Shadows",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When your alchemical poison fires, you drop a poisonous spore in front of you that bursts after 1 second, dealing 2856 Poison damage over 10 seconds to all enemies within 5 meters. This effect scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Widowmaker",
+  "esohub_url": "https://eso-hub.com/en/sets/widowmaker"
+}

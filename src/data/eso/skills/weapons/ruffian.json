@@ -1,0 +1,11 @@
+{
+  "id": "45481",
+  "slug": "ruffian",
+  "name": "Ruffian",
+  "description": "Gives you a 15% damage bonus when attacking stunned, immobilized, or silenced enemies.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

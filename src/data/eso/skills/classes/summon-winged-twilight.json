@@ -1,0 +1,11 @@
+{
+  "id": "30587",
+  "slug": "summon-winged-twilight",
+  "name": "Summon Winged Twilight",
+  "description": "Call on Azura to send a winged twilight to fight at your side. The winged twilight's zap deals 347 Shock Damage and its kick deals 347 Shock Damage.\n\nOnce summoned, you can activate the winged twilight's special ability for 4590 Magicka, causing it to heal a friendly target for 3486 and itself for 1742.\n\nThe winged twilight remains until killed or unsummoned.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

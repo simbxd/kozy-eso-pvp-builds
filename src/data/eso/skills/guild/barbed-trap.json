@@ -1,0 +1,11 @@
+{
+  "id": "42747",
+  "slug": "barbed-trap",
+  "name": "Barbed Trap",
+  "description": "Set a sharpened blade trap at your location, which takes 1.5 seconds to arm and lasts for 20 seconds.\n\nWhen triggered, the trap deals 1438 Bleed Damage, an additional 3580 Bleed Damage over 20 seconds, and grants you Minor Force, increasing your Critical Damage by 10% for the duration.\n\nEnemies hit by the initial hit are afflicted with the Hemorrhaging status effect.\n\n Enemies who activate the trap are immobilized for 2 seconds.",
+  "category": "guild",
+  "skill_line": "Fighters Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

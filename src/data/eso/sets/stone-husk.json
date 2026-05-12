@@ -1,0 +1,28 @@
+{
+  "id": "stone-husk",
+  "name": "Stone Husk",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Arkasis the Mad Alchemist in Stone Garden, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 2,
+      "stat": "Your Heavy Attacks tether you to enemies for 5 seconds, as long as you remain within 10 meters of them. Enemies touching the tether take 212 Physical damage every 1 second and you gain a stack of Husk Drain, up to 15 stacks. This effect can occur once every 10 seconds and scales off the higher of your Weapon or Spell Damage.\n\nWhen the tether ends, you consume the stacks and gain 0-30 Weapon and Spell Damage per stack for 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Stone_Husk",
+  "esohub_url": "https://eso-hub.com/en/sets/stone-husk"
+}

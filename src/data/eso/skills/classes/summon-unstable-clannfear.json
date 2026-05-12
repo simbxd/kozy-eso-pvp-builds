@@ -1,0 +1,11 @@
+{
+  "id": "30657",
+  "slug": "summon-unstable-clannfear",
+  "name": "Summon Unstable Clannfear",
+  "description": "Command the powers of Oblivion to send a Daedric clannfear to fight at your side. The clannfear's headbutt deals 358 Physical Damage, while its tail spike hits nearby enemies for 358 Physical Damage after 1 second.  \n\nOnce summoned, you can activate the clannfear's special ability for 4320 Magicka, healing you for 5121 and the clannfear for 2560.\n\nThe clannfear remains until killed or unsummoned.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

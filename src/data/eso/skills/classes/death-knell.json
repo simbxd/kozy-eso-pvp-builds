@@ -1,0 +1,11 @@
+{
+  "id": "116198",
+  "slug": "death-knell",
+  "name": "Death Knell",
+  "description": "Increases your Critical Strike Chance against enemies under 33% Health by 20%.",
+  "category": "classes",
+  "skill_line": "Grave Lord",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

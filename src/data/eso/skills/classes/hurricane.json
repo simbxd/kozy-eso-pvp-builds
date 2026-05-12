@@ -1,0 +1,11 @@
+{
+  "id": "30244",
+  "slug": "hurricane",
+  "name": "Hurricane",
+  "description": "Manifest yourself as pure air, buffeting nearby enemies with wind dealing 478 Physical Damage every 2 seconds for 20 seconds. The winds grow in damage and size, increasing up to 120% more damage and up to 9 meters in size.\n\nWhile in this form you gain Major Resolve and Minor Expedition, increasing your Physical and Spell Resistance by 5948 and your Movement Speed by 15%.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

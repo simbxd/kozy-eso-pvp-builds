@@ -1,0 +1,40 @@
+{
+  "id": "nobility-in-decay",
+  "name": "Nobility in Decay",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Infinite Archive",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Casting a Bone Tyrant ability while in combat grants you Beautiful Corpse and Death's Favor for 16 seconds. Death's Favor increases your healing received and reduces damage taken by up to 12% based on your missing Health. This can occur once every 20 seconds, and is reduced by 2 seconds for each slotted Bone Tyrant ability.\n\nCasting a corpse consumer ability consumes Beautiful Corpse, treating you as a corpse.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nobility_in_Decay",
+  "esohub_url": "https://eso-hub.com/en/sets/nobility-in-decay"
+}

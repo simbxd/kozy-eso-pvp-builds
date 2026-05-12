@@ -1,0 +1,45 @@
+{
+  "id": "rangers-gait",
+  "name": "Ranger's Gait",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Grahtwood",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Reduce the effectiveness of snares applied to you by 50%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ranger's_Gait",
+  "esohub_url": "https://eso-hub.com/en/sets/rangers-gait"
+}

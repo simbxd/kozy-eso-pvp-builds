@@ -1,0 +1,40 @@
+{
+  "id": "haven-of-ursus",
+  "name": "Haven of Ursus",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Greenshade, March of Sacrifices",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage while you are under 50% Health, summon Ursus's spirit for 6 seconds at a random group member. You or a group member can activate a synergy on Ursus to grant a shield that protects up to 6 group members within a 28 meter radius from 13967 damage for 6 seconds. This effect can occur once every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Haven_of_Ursus",
+  "esohub_url": "https://eso-hub.com/en/sets/haven-of-ursus"
+}

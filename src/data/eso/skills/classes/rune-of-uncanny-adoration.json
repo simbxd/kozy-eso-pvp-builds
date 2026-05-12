@@ -1,0 +1,11 @@
+{
+  "id": "40185921",
+  "slug": "rune-of-uncanny-adoration",
+  "name": "Rune of Uncanny Adoration",
+  "description": "Etch a blasphemous rune on your enemy's mind, charming them after a 1 second delay for 4 seconds. This eldritch attraction causes them to move towards the player and applies Minor Vulnerability for 10 seconds, increasing their damage taken by 5%.\n\nIf used against a monster, the charm lasts for 8 seconds.\n\nThis ability cannot be dodged.",
+  "category": "classes",
+  "skill_line": "Soldier of Apocrypha",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

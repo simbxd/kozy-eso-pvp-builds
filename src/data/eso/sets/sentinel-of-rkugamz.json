@@ -1,0 +1,28 @@
+{
+  "id": "sentinel-of-rkugamz",
+  "name": "Sentinel of Rkugamz",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Sentinel of Rkugamz in Darkshade Caverns I, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "When you heal yourself or an ally you summon a Dwemer spider that heals for 23-1000 Health and restores 2-125 Magicka and Stamina to you and your allies within 5 meters every 1 second for 8 seconds. This effect can occur once every 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sentinel_of_Rkugamz",
+  "esohub_url": "https://eso-hub.com/en/sets/sentinel-of-rkugamz"
+}

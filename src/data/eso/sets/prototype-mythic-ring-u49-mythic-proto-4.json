@@ -1,0 +1,22 @@
+{
+  "id": "prototype-mythic-ring-u49-mythic-proto-4",
+  "name": "Prototype Mythic Ring - u49 Mythic Proto 4",
+  "type": "Mythic",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "ring"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Dealing direct damage generates a stack of Gorethief for 30 seconds, up to 10 stacks. While you have Gorethief equipped, Roll Dodge consumes 1 stack and heals you for 2021 Health, scaling off your Max Health.\n\nAt max stacks, while you have Gorethief equipped, bash an enemy to consume all stacks and deal 2144 Bleed Damage, scaling off the higher of your Weapon or Spell Damage, to enemies within 8 meters of you.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Prototype_Mythic_Ring_-_u49_Mythic_Proto_4",
+  "esohub_url": "https://eso-hub.com/en/sets/prototype-mythic-ring-u49-mythic-proto-4"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "huntsmans-warmask",
+  "name": "Huntsman's Warmask",
+  "type": "Mythic",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "head"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Dealing damage with a Bash or fully-charged Heavy Attack places the Mark of Hircine on your target for 1 minute. While active, you gain Minor Berserk, increasing damage done by 5%, and deal 15% more damage to the target and 50% less damage to all other enemies. If the enemy dies while marked, you gain 2418 Stamina or Magicka, based off your highest maximum resource. This effect can trigger up to every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Huntsman's_Warmask",
+  "esohub_url": "https://eso-hub.com/en/sets/huntsmans-warmask"
+}

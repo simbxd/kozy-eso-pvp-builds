@@ -1,0 +1,11 @@
+{
+  "id": "37816",
+  "slug": "refreshing-path",
+  "name": "Refreshing Path",
+  "description": "Create a corridor of shadows for 10 seconds, granting you and allies in the area Major Expedition, Minor Endurance, and Minor Intellect, increasing Movement Speed by 30%, as well as Stamina and Magicka Recovery by 15%. Effect persists for 4 seconds after leaving the path.\n\nHeals 435 Health to you and allies in the area every 1 second.",
+  "category": "classes",
+  "skill_line": "Shadow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

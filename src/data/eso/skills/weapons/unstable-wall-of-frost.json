@@ -1,0 +1,11 @@
+{
+  "id": "41717",
+  "slug": "unstable-wall-of-frost",
+  "name": "Unstable Wall of Frost",
+  "description": "Create an icy barrier, dealing 281 Frost Damage to enemies in the area every 1 second and applying Unstable Frost Shield for 6 seconds on you and nearby allies that absorbs up to 4267 damage from projectiles.\n\nChilled enemies are afflicted with Minor Breach and their Movement Speed is reduced by 40% for 4 seconds.\n\nWhen the effect ends, the barrier explodes, dealing 1199 Frost Damage and shielding you and nearby allies for 2065 from projectiles.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

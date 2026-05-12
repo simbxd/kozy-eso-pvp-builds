@@ -1,0 +1,22 @@
+{
+  "id": "virulent-shot",
+  "name": "Virulent Shot",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Blackrose Prison",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Scatter Shot applies a damage over time effect that deals 65% of your initial attack as Poison Damage every 2 seconds for 4 seconds. The duration increases if you are farther away from your target to a maximum of 12 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Virulent_Shot",
+  "esohub_url": "https://eso-hub.com/en/sets/virulent-shot"
+}

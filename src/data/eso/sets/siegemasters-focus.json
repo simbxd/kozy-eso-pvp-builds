@@ -1,0 +1,40 @@
+{
+  "id": "siegemasters-focus",
+  "name": "Siegemaster's Focus",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "While you are using a non-Ram Siege Weapon you are immune to knockback and disabling effects, you reduce your damage taken by 33%, and you can see enemies through walls.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Siegemaster's_Focus",
+  "esohub_url": "https://eso-hub.com/en/sets/siegemasters-focus"
+}

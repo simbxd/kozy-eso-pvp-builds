@@ -1,0 +1,11 @@
+{
+  "id": "42278",
+  "slug": "balance",
+  "name": "Balance",
+  "description": "Barter with Oblivion to trade vitality for power, sacrificing your Health in exchange for 3000 Magicka.\n\nAfter the exchange is complete, you gain Major Resolve for 30 seconds, increasing your Physical and Spell Resistance by 5948.\n\nThe exchange reduces your healing done and damage shield strength by 50% for 4 seconds.",
+  "category": "guild",
+  "skill_line": "Mages Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

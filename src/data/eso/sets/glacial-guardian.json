@@ -1,0 +1,40 @@
+{
+  "id": "glacial-guardian",
+  "name": "Glacial Guardian",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Summerset, Coral Aerie",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Health Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you Block, tether to the enemy if they are within 8 meters of you for 8 seconds. While tethered, you deal 256 Frost damage every second to enemies touching the tether and cause them to have a 200% increased Status Effect Chance. The tether breaks if the target moves more than 12 meters away. This effect can occur once every 12 seconds and the damage scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glacial_Guardian",
+  "esohub_url": "https://eso-hub.com/en/sets/glacial-guardian"
+}

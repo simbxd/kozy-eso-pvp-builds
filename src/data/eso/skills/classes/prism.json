@@ -1,0 +1,11 @@
+{
+  "id": "45216",
+  "slug": "prism",
+  "name": "Prism",
+  "description": "Casting a Dawn's Wrath ability while in combat generates 3 Ultimate. This effect can occur once every 6 seconds.",
+  "category": "classes",
+  "skill_line": "Dawn's Wrath",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

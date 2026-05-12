@@ -1,0 +1,11 @@
+{
+  "id": "45260",
+  "slug": "gift-of-magnus",
+  "name": "Gift of Magnus",
+  "description": "Increases your Max Magicka by 2000.",
+  "category": "racial",
+  "skill_line": "Breton Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

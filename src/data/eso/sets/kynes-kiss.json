@@ -1,0 +1,40 @@
+{
+  "id": "kynes-kiss",
+  "name": "Kyne's Kiss",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Bruma",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you deal direct damage while 12 meters or further from your target, you heal for 521 Health and restore 30-1314 Stamina.  This effect can occur once every 5 seconds and the heal scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Kyne's_Kiss",
+  "esohub_url": "https://eso-hub.com/en/sets/kynes-kiss"
+}

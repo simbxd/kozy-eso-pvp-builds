@@ -1,0 +1,40 @@
+{
+  "id": "foolkillers-ward",
+  "name": "Foolkiller's Ward",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Deshaan, The Cauldron",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Activating Block while in combat places a damage shield on you and up to 3 group members within 18 meters for 2 seconds that absorbs up to 4000 direct damage. If a damage shield breaks, the wearer of the shield restores 132-5680 Magicka and Stamina.\n\nThis effect can occur once every 30 seconds if a damage shield broke. This effect can occur once every 10 seconds if no damage shields broke.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Foolkiller's_Ward",
+  "esohub_url": "https://eso-hub.com/en/sets/foolkillers-ward"
+}

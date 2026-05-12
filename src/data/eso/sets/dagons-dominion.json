@@ -1,0 +1,40 @@
+{
+  "id": "dagons-dominion",
+  "name": "Dagon's Dominion",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Deshaan, The Cauldron",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage to your area of effect abilities.",
+      "value": 492
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dagon's_Dominion",
+  "esohub_url": "https://eso-hub.com/en/sets/dagons-dominion"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "rakkhats-voidmantle",
+  "name": "Rakkhat's Voidmantle",
+  "type": "Mythic",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Increases your damage done with non-Ultimate Heavy Attacks and decreases your damage done with Light Attacks by 50% each.\n\nDealing damage with a Light Attack restores 431 Magicka or Stamina, depending on your equipped weapon type. This resource restore is treated as a Heavy Attack resource restore for bonuses and penalties. Your Heavy Attacks no longer restore resources.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rakkhat's_Voidmantle",
+  "esohub_url": "https://eso-hub.com/en/sets/rakkhats-voidmantle"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45206",
+  "slug": "mending",
+  "name": "Mending",
+  "description": "Increases your healing done by up to 13%, in proportion to the severity of the target's wounds.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

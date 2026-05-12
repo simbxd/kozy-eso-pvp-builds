@@ -1,0 +1,11 @@
+{
+  "id": "43541",
+  "slug": "trapping-webs",
+  "name": "Trapping Webs",
+  "description": "Hurl webs to ensnare your foes, reducing the Movement Speed of enemies in the area by 50% and dealing 1742 Physical Damage. After 10 seconds the webs explode, dealing 2323 Poison Damage to enemies within.\n\nA ranged ally can activate the Spawn Broodling synergy on an affected enemy, dealing 2249 Poison Damage to them and summoning a spider to attack for 10 seconds. The spider bites enemies for 673 Physical Damage.",
+  "category": "guild",
+  "skill_line": "Undaunted",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

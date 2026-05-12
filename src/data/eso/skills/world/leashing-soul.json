@@ -1,0 +1,11 @@
+{
+  "id": "40217784",
+  "slug": "leashing-soul",
+  "name": "Leashing Soul",
+  "description": "Launch a concentrated blast of soul magic at a target.",
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

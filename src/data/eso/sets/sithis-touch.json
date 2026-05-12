@@ -1,0 +1,40 @@
+{
+  "id": "sithis-touch",
+  "name": "Sithis' Touch",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Gold Coast",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you kill an enemy you gain 5% movement speed for 30 seconds and become invisible for 3 seconds.  The movement speed stacks up to 20 times.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sithis'_Touch",
+  "esohub_url": "https://eso-hub.com/en/sets/sithis-touch"
+}

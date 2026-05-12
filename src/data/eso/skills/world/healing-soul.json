@@ -1,0 +1,11 @@
+{
+  "id": "40216813",
+  "slug": "healing-soul",
+  "name": "Healing Soul",
+  "description": "Launch a concentrated blast of soul magic at yourself or an ally.",
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,45 @@
+{
+  "id": "highland-sentinel",
+  "name": "Highland Sentinel",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "West Weald",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Critical Chance",
+      "value": 986
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, each second you stand still grants you a stack of Sentinel's Eye, increasing your Critical Chance by 10-443 per stack, stacking up to 3 times. Each second you move, one stack is removed. Using charge and teleport abilities does not remove stacks, and exiting combat will remove all stacks of Sentinel's Eye.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Highland_Sentinel",
+  "esohub_url": "https://eso-hub.com/en/sets/highland-sentinel"
+}

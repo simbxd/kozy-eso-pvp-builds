@@ -1,0 +1,11 @@
+{
+  "id": "140093",
+  "slug": "trowel",
+  "name": "Trowel",
+  "description": "Removes 3 layers of dirt or rock from a 1x1 area.\n\nCosts 2 Intuition to use.\nCan safely trigger Fissures to create explosive chain reactions.",
+  "category": "world",
+  "skill_line": "Excavation",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

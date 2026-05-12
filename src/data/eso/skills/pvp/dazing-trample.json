@@ -1,0 +1,11 @@
+{
+  "id": "40220545",
+  "slug": "dazing-trample",
+  "name": "Dazing Trample",
+  "description": "Pierce the air with a shrill whistle, calling your mount forth to trample enemies in a line. This ability cannot be re-activated while your mount is already attacking.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

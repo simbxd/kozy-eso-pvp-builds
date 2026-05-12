@@ -1,0 +1,40 @@
+{
+  "id": "eternal-vigor",
+  "name": "Eternal Vigor",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Western Skyrim",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Health Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Stamina and Magicka Recovery while your Health is above 50%. Adds 23-1011 Health Recovery while your Health is 50% or less.",
+      "value": 337
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Eternal_Vigor",
+  "esohub_url": "https://eso-hub.com/en/sets/eternal-vigor"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "46385",
+  "slug": "caltrops",
+  "name": "Caltrops",
+  "description": "Hurl a ball of caltrops that scatter over the target area, dealing 280 Physical Damage every 1 second to enemies inside, and reducing their Movement Speed by 50%.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

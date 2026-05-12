@@ -1,0 +1,11 @@
+{
+  "id": "184858",
+  "slug": "harnessed-quintessence",
+  "name": "Harnessed Quintessence",
+  "description": "You master the warp and weft of your very soul. When you are restored Magicka or Stamina, increase your Weapon and Spell Damage by 284 for 10 seconds.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

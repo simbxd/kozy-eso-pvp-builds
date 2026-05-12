@@ -1,0 +1,22 @@
+{
+  "id": "menders-ward",
+  "name": "Mender's Ward",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Blackrose Prison",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Steadfast Ward applies Major Vitality to your target for 4 seconds, increasing their healing received and damage shield strength by 12%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mender's_Ward",
+  "esohub_url": "https://eso-hub.com/en/sets/menders-ward"
+}

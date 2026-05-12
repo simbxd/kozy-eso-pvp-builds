@@ -1,0 +1,11 @@
+{
+  "id": "63284",
+  "slug": "magicka-detonation",
+  "name": "Magicka Detonation",
+  "description": "Curse an enemy with a magical bomb that explodes after 4 seconds, dealing 434 Magic Damage to all enemies in the area.\n\nEach enemy within the bomb's radius increases the damage by 100%, including the original target.",
+  "category": "pvp",
+  "skill_line": "Assault",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "86034",
+  "slug": "growing-swarm",
+  "name": "Growing Swarm",
+  "description": "Unleash a swarm of fetcherflies to relentlessly attack an enemy, causing them to bleed for 4785 Bleed Damage over 20 seconds. \n\nThe fetcherflies rip through the original enemy's flesh, afflicting them with Minor Vulnerability for the duration, increasing their damage taken by 5%.\n\nEnemies near the carrier take 435 Bleed Damage every 2 seconds for the duration.\n\nYou can only have one Growing Swarm active at a time.",
+  "category": "classes",
+  "skill_line": "Animal Companions",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

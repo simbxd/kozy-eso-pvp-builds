@@ -1,0 +1,11 @@
+{
+  "id": "45103",
+  "slug": "refreshing-shadows",
+  "name": "Refreshing Shadows",
+  "description": "Increases your Health, Stamina, and Magicka Recovery by 15%.",
+  "category": "classes",
+  "skill_line": "Shadow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

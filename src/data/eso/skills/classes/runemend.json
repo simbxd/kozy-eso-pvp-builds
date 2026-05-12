@@ -1,0 +1,11 @@
+{
+  "id": "40183261",
+  "slug": "runemend",
+  "name": "Runemend",
+  "description": "Craft a series of precise Apocryphal runes, then propel them at yourself or an ally in front of you. The runes heal for 1161 Health three times and generate Crux.\n\nEach active Crux reduces the cost of this ability by 3%.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

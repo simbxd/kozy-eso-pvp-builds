@@ -1,0 +1,11 @@
+{
+  "id": "45301",
+  "slug": "feline-ambush",
+  "name": "Feline Ambush",
+  "description": "Increases your Critical Damage and Critical Healing by 12%.\n\nDecreases your detection radius in Stealth by 3 meters.",
+  "category": "racial",
+  "skill_line": "Khajiit Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

@@ -1,0 +1,40 @@
+{
+  "id": "torugs-pact",
+  "name": "Torug's Pact",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Fisherman's Isle in Grahtwood, Hammerdeath Workshop in Stormhaven, Lake Hlaalu Retreat in Deshaan",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Decreases weapon enchantment cooldown by 33% and increases non Oblivion Damage weapon enchantment potency by 45%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Torug's_Pact",
+  "esohub_url": "https://eso-hub.com/en/sets/torugs-pact"
+}

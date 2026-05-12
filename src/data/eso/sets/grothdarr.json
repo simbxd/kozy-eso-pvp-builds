@@ -1,0 +1,28 @@
+{
+  "id": "grothdarr",
+  "name": "Grothdarr",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Mad Architect in Vaults of Madness, Glirion the Redbeard",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "When you deal damage to an enemy within 8 meters, you have a 10% chance to create lava pools that swirl around you, dealing 259 Flame damage to all enemies within 8 meters of you every 1 second for 5 seconds. This effect can occur once every 10 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Grothdarr",
+  "esohub_url": "https://eso-hub.com/en/sets/grothdarr"
+}

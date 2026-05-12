@@ -1,0 +1,28 @@
+{
+  "id": "the-blind",
+  "name": "The Blind",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "The Blind in Bedlam Veil, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 2,
+      "stat": "When your healing critically strikes, your target gains a Hydroglass Damage Shield that absorbs up to 62-2692 damage for 6 seconds. While the Damage Shield holds and for 3 seconds after it ends, the target gains Minor Force, increasing their Critical Damage done by 10%. This effect can occur once every 6 seconds per target.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Blind",
+  "esohub_url": "https://eso-hub.com/en/sets/the-blind"
+}

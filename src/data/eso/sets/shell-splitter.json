@@ -1,0 +1,40 @@
+{
+  "id": "shell-splitter",
+  "name": "Shell Splitter",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When an enemy blocks one of your attacks, increase your Offensive Penetration by 631 for 5 seconds. This effect can stack up to 20 times. You can gain one stack every 0.5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shell_Splitter",
+  "esohub_url": "https://eso-hub.com/en/sets/shell-splitter"
+}

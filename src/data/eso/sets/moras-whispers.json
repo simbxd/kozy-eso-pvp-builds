@@ -1,0 +1,22 @@
+{
+  "id": "moras-whispers",
+  "name": "Mora's Whispers",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Gain up to 1528 Critical Chance and 10% increased Inspiration, Alliance Rank, Alliance skill, and 15% monster kill experience based off how many books of Shalidor's Library have been collected.\n\nCurrent Bonus:\n229 Critical Chance\n1% Inspiration, Alliance Rank, and Alliance skill\n2% monster kill experience.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mora's_Whispers",
+  "esohub_url": "https://eso-hub.com/en/sets/moras-whispers"
+}

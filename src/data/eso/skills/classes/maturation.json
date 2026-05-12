@@ -1,0 +1,11 @@
+{
+  "id": "85881",
+  "slug": "maturation",
+  "name": "Maturation",
+  "description": "When you activate a heal on yourself or an ally you grant the target Minor Toughness, increasing their Max Health by 10% for 20 seconds.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

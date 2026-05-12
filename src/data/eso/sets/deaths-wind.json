@@ -1,0 +1,40 @@
+{
+  "id": "deaths-wind",
+  "name": "Death's Wind",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Eastshore Islets Camp in Auridon, Chill House in Glenumbra, Armature's Upheaval in Stonefalls",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you take melee damage while you are under 35% Health, you knockback and stun all enemies within 8 meters of you for 4 seconds. This effect can occur once every 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Death's_Wind",
+  "esohub_url": "https://eso-hub.com/en/sets/deaths-wind"
+}

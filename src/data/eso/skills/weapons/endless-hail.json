@@ -1,0 +1,11 @@
+{
+  "id": "40932",
+  "slug": "endless-hail",
+  "name": "Endless Hail",
+  "description": "Launch a multitude of arrows into the sky to rain down, dealing 343 Physical Damage to enemies in the target area every 1 second for 13 seconds, after a 2 second delay.",
+  "category": "weapons",
+  "skill_line": "Bow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

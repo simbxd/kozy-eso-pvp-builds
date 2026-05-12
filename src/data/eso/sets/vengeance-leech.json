@@ -1,0 +1,30 @@
+{
+  "id": "vengeance-leech",
+  "name": "Vengeance Leech",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Bruma",
+  "dlc": "Base Game",
+  "pieces": 3,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "When you kill an enemy, you heal for 64-2772 Health and restore 64-2772 Magicka and Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vengeance_Leech",
+  "esohub_url": "https://eso-hub.com/en/sets/vengeance-leech"
+}

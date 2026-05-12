@@ -1,0 +1,11 @@
+{
+  "id": "45272",
+  "slug": "ruination",
+  "name": "Ruination",
+  "description": "Increases your Weapon and Spell Damage by 258.",
+  "category": "racial",
+  "skill_line": "Dark Elf Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

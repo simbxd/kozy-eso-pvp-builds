@@ -1,0 +1,11 @@
+{
+  "id": "40185794",
+  "slug": "runeblades",
+  "name": "Runeblades",
+  "description": "Craft a series of Apocryphal runes before launching them at a foe, dealing 695 Magic Damage three times and generating Crux.\n\nThis ability deals 3% increased damage for each active Crux when cast.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

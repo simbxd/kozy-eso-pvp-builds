@@ -1,0 +1,28 @@
+{
+  "id": "nightflame",
+  "name": "Nightflame",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Bogdan the Nightflame in Elden Hollow II, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "When you heal yourself or an ally, you have a 20% chance to summon a totem for 6 seconds that heals you and your allies within 5 meters for 704 Health every 1 second. This effect can occur once every 10 seconds and scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nightflame",
+  "esohub_url": "https://eso-hub.com/en/sets/nightflame"
+}

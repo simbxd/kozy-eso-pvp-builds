@@ -1,0 +1,11 @@
+{
+  "id": "35898",
+  "slug": "ambush",
+  "name": "Ambush",
+  "description": "Flash through the shadows and ambush an enemy, dealing 1655 Physical Damage and afflicting them with Minor Vulnerability for 10 seconds, increasing their damage taken by 5%.\n\nAlso grants you Empower and Minor Berserk for 10 seconds, increasing the damage of your Heavy Attacks against monsters by 70% and your damage done by 5%.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

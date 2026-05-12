@@ -1,0 +1,11 @@
+{
+  "id": "42119",
+  "slug": "brutal-pounce",
+  "name": "Brutal Pounce",
+  "description": "Pounce on an enemy with primal fury, dealing 1799 Bleed Damage and applying the Hemorrhaging status effect to all nearby enemies.\n\nActivating the ability again within the next 5 seconds causes you to rip into all enemies in front of you to deal 1302 Bleed Damage over 10 seconds, dealing up to 450% more damage to enemies under 100% Health. Increases your Weapon and Spell Damage by 100 for each enemy hit, up to 6 times.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

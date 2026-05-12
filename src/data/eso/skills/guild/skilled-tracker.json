@@ -1,0 +1,11 @@
+{
+  "id": "40393",
+  "slug": "skilled-tracker",
+  "name": "Skilled Tracker",
+  "description": "Your Fighters Guild abilities deal an additional 10% damage. This bonus doubles against player Vampires and Werewolves.",
+  "category": "guild",
+  "skill_line": "Fighters Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

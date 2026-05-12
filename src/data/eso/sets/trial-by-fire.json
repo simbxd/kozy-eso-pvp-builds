@@ -1,0 +1,40 @@
+{
+  "id": "trial-by-fire",
+  "name": "Trial by Fire",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Wrothgar, Malacath Statue",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "While under the effect of an Elemental Status Effect you gain 197-8500 Armor.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Trial_by_Fire",
+  "esohub_url": "https://eso-hub.com/en/sets/trial-by-fire"
+}

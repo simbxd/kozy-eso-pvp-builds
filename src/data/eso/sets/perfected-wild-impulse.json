@@ -1,0 +1,27 @@
+{
+  "id": "perfected-wild-impulse",
+  "name": "Perfected Wild Impulse",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Blackrose Prison",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "(2 perfected items) Adds 27-1190 Offensive Penetration",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "Reduce the cost of Impulse by 10%. Impulse places lingering elemental damage on your targets, dealing 605 Flame, 605 Shock, and 605 Frost Damage over 8 seconds. Each element ticks once over the duration and its damage scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Wild_Impulse",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-wild-impulse"
+}

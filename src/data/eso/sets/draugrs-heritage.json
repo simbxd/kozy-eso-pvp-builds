@@ -1,0 +1,41 @@
+{
+  "id": "draugrs-heritage",
+  "name": "Draugr's Heritage",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "The Rift",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "feet",
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage while you are under 35% Health, you knockdown all enemies within 4 meters of you for 2 seconds and heal for 2506 Health. This effect can occur once every 7 seconds and the heal scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Draugr's_Heritage",
+  "esohub_url": "https://eso-hub.com/en/sets/draugrs-heritage"
+}

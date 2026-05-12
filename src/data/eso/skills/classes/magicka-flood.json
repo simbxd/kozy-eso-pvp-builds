@@ -1,0 +1,11 @@
+{
+  "id": "45150",
+  "slug": "magicka-flood",
+  "name": "Magicka Flood",
+  "description": "Increases your Max Magicka and Stamina by 6%.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

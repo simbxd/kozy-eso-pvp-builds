@@ -1,0 +1,11 @@
+{
+  "id": "42467",
+  "slug": "meteor",
+  "name": "Meteor",
+  "description": "Call a comet down from the constellations to blast an enemy, dealing 4065 Flame Damage to all enemies in the area, knocking them down, and stunning them for 2 seconds.\n\nAfter impact, enemies in the target area take 1161 Flame Damage every 1 second for 11 seconds.",
+  "category": "guild",
+  "skill_line": "Mages Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

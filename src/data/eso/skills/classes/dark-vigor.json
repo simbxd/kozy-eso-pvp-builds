@@ -1,0 +1,11 @@
+{
+  "id": "45084",
+  "slug": "dark-vigor",
+  "name": "Dark Vigor",
+  "description": "Increases your Max Health by 5% for each Shadow ability slotted.\n\nCurrent bonus: 0%.",
+  "category": "classes",
+  "skill_line": "Shadow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

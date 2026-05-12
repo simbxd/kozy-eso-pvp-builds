@@ -1,0 +1,11 @@
+{
+  "id": "217965",
+  "slug": "minor-intellect",
+  "name": "Minor Intellect",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

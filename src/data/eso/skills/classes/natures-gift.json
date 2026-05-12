@@ -1,0 +1,11 @@
+{
+  "id": "85879",
+  "slug": "natures-gift",
+  "name": "Nature's Gift",
+  "description": "When you heal an ally with a Green Balance ability, you gain 277 Magicka or 277 Stamina, whichever resource pool is lower. This effect can occur once every 1 second.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

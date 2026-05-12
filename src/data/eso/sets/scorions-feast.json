@@ -1,0 +1,40 @@
+{
+  "id": "scorions-feast",
+  "name": "Scorion's Feast",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Blackwood, The Dread Cellar",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a fully-charged Heavy Attack, you gain an Imbued Aura for 10 seconds, granting you and up to 3 other group members 7-307 Magicka and Stamina Recovery. This effect can occur once every 20 seconds.\n\nIf you deal damage with a fully-charged Heavy Attack with an Imbued Aura active, consume it and gain an Overflow Aura for 10 seconds, granting you and up to 3 other group members 7-307 Weapon and Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Scorion's_Feast",
+  "esohub_url": "https://eso-hub.com/en/sets/scorions-feast"
+}

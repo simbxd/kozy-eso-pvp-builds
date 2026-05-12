@@ -1,0 +1,45 @@
+{
+  "id": "way-of-the-arena",
+  "name": "Way of the Arena",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Craglorn, Lanista's Waystation",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 165
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the cost of Break Free by 40%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Way_of_the_Arena",
+  "esohub_url": "https://eso-hub.com/en/sets/way-of-the-arena"
+}

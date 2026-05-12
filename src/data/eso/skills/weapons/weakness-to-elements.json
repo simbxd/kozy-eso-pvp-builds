@@ -1,0 +1,11 @@
+{
+  "id": "41548",
+  "slug": "weakness-to-elements",
+  "name": "Weakness to Elements",
+  "description": "Send the elements to sap an enemy's defenses and afflict them with Major Breach for 30 seconds, reducing their Physical and Spell Resistance by 5948.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

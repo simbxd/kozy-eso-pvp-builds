@@ -1,0 +1,11 @@
+{
+  "id": "41567",
+  "slug": "elemental-drain",
+  "name": "Elemental Drain",
+  "description": "Send the elements to sap an enemy's defenses and afflict them with Major Breach for 1 minute, reducing their Physical and Spell Resistance by 5948.\n\nAlso applies Minor Magickasteal to the enemy for 1 minute, causing you and your allies to restore 168 Magicka every 1 second when damaging them.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

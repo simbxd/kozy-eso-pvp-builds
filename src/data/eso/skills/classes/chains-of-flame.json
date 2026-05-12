@@ -1,0 +1,11 @@
+{
+  "id": "23744",
+  "slug": "chains-of-flame",
+  "name": "Chains of Flame",
+  "description": "Lash out with a flaming chain, pulling an enemy to you. The searing metal deals 1392 Flame Damage, applies the Burning status effect, and taunts them for 15 seconds if they are not already taunted.\n\nThis attack cannot be dodged or reflected.\n\nAlso inflicts Major Cowardice on the enemy, reducing Weapon and Spell Damage by 430 for 10 seconds.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "37950",
+  "slug": "sap-essence",
+  "name": "Sap Essence",
+  "description": "Siphon the vigor from your enemies' blood, dealing 1742 Magic Damage to all nearby enemies and healing you and your allies for 599 plus 20% more for each enemy hit.\n\nIf an enemy is hit, you gain Major Brutality and Sorcery, increasing your Weapon and Spell Damage by 20% for 30 seconds.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

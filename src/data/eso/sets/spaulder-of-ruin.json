@@ -1,0 +1,22 @@
+{
+  "id": "spaulder-of-ruin",
+  "name": "Spaulder of Ruin",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Activating crouch activates and deactivates a 12 meter Aura of Pride. Up to 6 group members in the aura gain 260 Weapon and Spell Damage. Reduce your Health, Magicka, and Stamina Recovery by 70 for every target benefiting from your Aura of Pride.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spaulder_of_Ruin",
+  "esohub_url": "https://eso-hub.com/en/sets/spaulder-of-ruin"
+}

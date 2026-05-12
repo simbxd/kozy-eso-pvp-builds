@@ -1,0 +1,40 @@
+{
+  "id": "slivers-of-the-null-arca",
+  "name": "Slivers of the Null Arca",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Lucent Citadel",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Dealing Critical Damage gives you a stack of Sliver for 10 seconds, up to once every 0.5 seconds.\n\nUpon gaining your third stack, they merge into a crystal that launches at the last enemy you damaged, dealing 1952 Physical damage. This effect scales off the higher of your Weapon or Spell Damage, and you cannot gain Sliver for 4 seconds after the crystal is launched.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Slivers_of_the_Null_Arca",
+  "esohub_url": "https://eso-hub.com/en/sets/slivers-of-the-null-arca"
+}

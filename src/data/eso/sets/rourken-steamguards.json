@@ -1,0 +1,20 @@
+{
+  "id": "rourken-steamguards",
+  "name": "Rourken Steamguards",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "While actively Bracing, you gain Steam Guardian for 0.5 seconds, reducing your damage taken by 90%. This effect activates only upon the start of Bracing and can occur once every 10 seconds.\n\nBlocking any attack while Steam Guardian is active reduces its cooldown by 5 seconds, up to once per application of the effect.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rourken_Steamguards",
+  "esohub_url": "https://eso-hub.com/en/sets/rourken-steamguards"
+}

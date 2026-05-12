@@ -1,0 +1,40 @@
+{
+  "id": "death-dancer",
+  "name": "Death-Dancer",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Critical Chance while you have 50% or more Stamina. Reduce the cost of your Core Combat abilities by 0-23% while you have less than 50% of your Stamina.",
+      "value": 1528
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Death-Dancer",
+  "esohub_url": "https://eso-hub.com/en/sets/death-dancer"
+}

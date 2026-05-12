@@ -1,0 +1,11 @@
+{
+  "id": "33619",
+  "slug": "dragon-blood",
+  "name": "Dragon Blood",
+  "description": "Draw on your draconic blood to heal for 4132 Health, increasing by up to 50% additional healing based on your missing Health. This ability scales off your Max Health.\n\nYou also gain Major Fortitude, increasing your Health Recovery by 30% for 20 seconds.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,22 @@
+{
+  "id": "crushing-wall",
+  "name": "Crushing Wall",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Maelstrom Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Increases the damage Wall of Elements deals by 29-1250.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Crushing_Wall",
+  "esohub_url": "https://eso-hub.com/en/sets/crushing-wall"
+}

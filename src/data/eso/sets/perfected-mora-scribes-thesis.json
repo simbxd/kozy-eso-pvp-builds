@@ -1,0 +1,45 @@
+{
+  "id": "perfected-mora-scribes-thesis",
+  "name": "Perfected Mora Scribe's Thesis",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Lucent Citadel",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 15-657 Critical Chance",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Increase your Critical Chance by 128 for every Major Buff active on you, up to 1536 Critical Chance. \n\nIncrease your Critical Damage done by 1% for every Minor Buff active on you, up to 12% Critical Damage done.\n\nCurrent Bonus: 0 Critical Chance and 0% Critical Damage",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Mora_Scribe's_Thesis",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-mora-scribes-thesis"
+}

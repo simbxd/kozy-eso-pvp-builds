@@ -1,0 +1,11 @@
+{
+  "id": "41255",
+  "slug": "illustrious-healing",
+  "name": "Illustrious Healing",
+  "description": "Summon restoring spirits with your staff, healing you and your allies in the target area for 5486 Health over 15 seconds.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

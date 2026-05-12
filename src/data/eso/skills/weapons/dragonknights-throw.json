@@ -1,0 +1,11 @@
+{
+  "id": "220821",
+  "slug": "dragonknights-throw",
+  "name": "Dragonknight's Throw",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

@@ -1,0 +1,11 @@
+{
+  "id": "221132",
+  "slug": "sorcerers-bond",
+  "name": "Sorcerer's Bond",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

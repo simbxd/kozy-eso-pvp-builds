@@ -1,0 +1,11 @@
+{
+  "id": "217199",
+  "slug": "minor-mangle",
+  "name": "Minor Mangle",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

@@ -1,0 +1,22 @@
+{
+  "id": "monomyth-reforged",
+  "name": "Monomyth Reforged",
+  "type": "Mythic",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "ring"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "While in combat and on your Primary Weapon gain Major Force, Minor Berserk, and Minor Vulnerability.\n\nWhile in combat and on your Secondary Weapon gain Major Protection, Minor Vitality, and Minor Timidity.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Monomyth_Reforged",
+  "esohub_url": "https://eso-hub.com/en/sets/monomyth-reforged"
+}

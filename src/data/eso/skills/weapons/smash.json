@@ -1,0 +1,11 @@
+{
+  "id": "217186",
+  "slug": "smash",
+  "name": "Smash",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

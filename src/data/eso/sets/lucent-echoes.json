@@ -1,0 +1,40 @@
+{
+  "id": "lucent-echoes",
+  "name": "Lucent Echoes",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Lucent Citadel",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "While you have more than 50% Health, the Critical Damage and Critical Healing of any group members not wearing Lucent Echoes within 28 meters of you increases by 11%.\n\nWhile you have 50% or less Health, your damage taken from monsters is reduced by 20%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lucent_Echoes",
+  "esohub_url": "https://eso-hub.com/en/sets/lucent-echoes"
+}

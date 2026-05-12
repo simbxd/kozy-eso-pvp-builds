@@ -1,0 +1,11 @@
+{
+  "id": "37518",
+  "slug": "death-stroke",
+  "name": "Death Stroke",
+  "description": "Ravage an enemy with a swift strike, dealing 3716 Magic Damage and causing them to take 20% more damage from your attacks for 8 seconds.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

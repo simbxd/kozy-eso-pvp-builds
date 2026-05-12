@@ -1,0 +1,11 @@
+{
+  "id": "217358",
+  "slug": "opportunistic-knife",
+  "name": "Opportunistic Knife",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

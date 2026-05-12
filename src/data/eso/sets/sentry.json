@@ -1,0 +1,45 @@
+{
+  "id": "sentry",
+  "name": "Sentry",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Bruma",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 266
+    },
+    {
+      "count": 5,
+      "stat": "When you begin to crouch, gain Stealth Detection for 10 seconds. This effect can only be activated every 30 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sentry",
+  "esohub_url": "https://eso-hub.com/en/sets/sentry"
+}

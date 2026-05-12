@@ -1,0 +1,11 @@
+{
+  "id": "39957",
+  "slug": "executioner",
+  "name": "Executioner",
+  "description": "Shift your grip and cut deep, dealing 1161 Bleed Damage to your foe. Deals up to 400% more damage to enemies with less than 50% Health.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

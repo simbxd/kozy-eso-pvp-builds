@@ -1,0 +1,22 @@
+{
+  "id": "point-blank-snipe",
+  "name": "Point-Blank Snipe",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Vateshran Hollows",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Increases your damage done with Snipe based on how close you are to your target.  \n\nMax Damage:  33% at 3 meters.\nMinimum Damage: 5% at 18.5 meters.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Point-Blank_Snipe",
+  "esohub_url": "https://eso-hub.com/en/sets/point-blank-snipe"
+}

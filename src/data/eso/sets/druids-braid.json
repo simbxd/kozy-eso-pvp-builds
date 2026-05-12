@@ -1,0 +1,80 @@
+{
+  "id": "druids-braid",
+  "name": "Druid's Braid",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "High Isle, Hidden Foundry",
+  "dlc": "Base Game",
+  "pieces": 12,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Maximum Magicka",
+      "value": 1565
+    },
+    {
+      "count": 6,
+      "stat": "Maximum Stamina",
+      "value": 1565
+    },
+    {
+      "count": 7,
+      "stat": "Maximum Health",
+      "value": 1722
+    },
+    {
+      "count": 8,
+      "stat": "Maximum Magicka",
+      "value": 1565
+    },
+    {
+      "count": 9,
+      "stat": "Maximum Stamina",
+      "value": 1565
+    },
+    {
+      "count": 10,
+      "stat": "Maximum Health",
+      "value": 1722
+    },
+    {
+      "count": 11,
+      "stat": "Maximum Magicka",
+      "value": 1565
+    },
+    {
+      "count": 12,
+      "stat": "Maximum Stamina",
+      "value": 1565
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Druid's_Braid",
+  "esohub_url": "https://eso-hub.com/en/sets/druids-braid"
+}

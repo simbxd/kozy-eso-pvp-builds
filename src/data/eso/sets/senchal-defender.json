@@ -1,0 +1,40 @@
+{
+  "id": "senchal-defender",
+  "name": "Senchal Defender",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Southern Elsweyr",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Dealing direct damage with a non-Heavy Attack grants you one persistent stack of Senchal's Duty, up to 10 stacks.  After completing a fully-charged Heavy Attack, restore 17-757 Stamina and Magicka for each stack of Senchal's Duty and consume them.  You can only gain one stack of Senchal's Duty every 1 second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Senchal_Defender",
+  "esohub_url": "https://eso-hub.com/en/sets/senchal-defender"
+}

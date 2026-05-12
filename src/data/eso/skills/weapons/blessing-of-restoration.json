@@ -1,0 +1,11 @@
+{
+  "id": "41169",
+  "slug": "blessing-of-restoration",
+  "name": "Blessing of Restoration",
+  "description": "Slam your staff down to activate its blessings, healing you and your allies in front of you for 2970 Health.\n\nAlso grants Minor Resolve, increasing you and your allies' Physical Resistance and Spell Resistance by 2974 for 20 seconds.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

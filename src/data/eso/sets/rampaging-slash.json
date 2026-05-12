@@ -1,0 +1,23 @@
+{
+  "id": "rampaging-slash",
+  "name": "Rampaging Slash",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Maelstrom Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "When you deal damage with Low Slash, your next fully-charged Heavy Attack used within 5 seconds restores 44-1904 Magicka and Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rampaging_Slash",
+  "esohub_url": "https://eso-hub.com/en/sets/rampaging-slash"
+}

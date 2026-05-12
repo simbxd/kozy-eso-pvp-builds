@@ -1,0 +1,28 @@
+{
+  "id": "encratiss-behemoth",
+  "name": "Encratis's Behemoth",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Pyroturge Encratis in Black Drake Villa, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "Dealing Flame Damage to an enemy grants you Behemoth's Aura for 12 seconds that reaches up to 12 meters. You and up to 11 group members in the aura reduce Flame Damage taken by 5%. Enemies in the aura increase their Flame Damage taken by 5%. This effect can occur once every 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Encratis's_Behemoth",
+  "esohub_url": "https://eso-hub.com/en/sets/encratiss-behemoth"
+}

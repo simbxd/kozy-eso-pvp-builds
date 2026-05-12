@@ -1,0 +1,11 @@
+{
+  "id": "45473",
+  "slug": "battlefield-mobility",
+  "name": "Battlefield Mobility",
+  "description": "Reduces the Movement Speed penalty of Bracing.\n\nCurrent penalty: 36%",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

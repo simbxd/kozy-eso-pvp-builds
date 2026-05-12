@@ -1,0 +1,11 @@
+{
+  "id": "217356",
+  "slug": "parrying-knife",
+  "name": "Parrying Knife",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

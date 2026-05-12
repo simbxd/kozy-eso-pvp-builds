@@ -1,0 +1,11 @@
+{
+  "id": "41131",
+  "slug": "shuffle",
+  "name": "Shuffle",
+  "description": "Shroud yourself in mist to gain Major Evasion, decreasing damage taken from area attacks by 20% for 20 seconds.\n\nEach piece of Medium Armor worn removes and grants immunity to snares and immobilizations for 1 second.",
+  "category": "armor",
+  "skill_line": "Medium Armor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

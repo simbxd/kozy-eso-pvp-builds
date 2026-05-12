@@ -1,0 +1,11 @@
+{
+  "id": "33816",
+  "slug": "hearth-and-home",
+  "name": "Hearth and Home",
+  "description": "Throw out a protective flame for 15 seconds, healing you and allies inside for 619 Health every 1 second, scaling off your Max Health.\n\nHealed targets gain Minor Fortitude and Minor Heroism while inside, increasing Health Recovery by 15% and generating 1 Ultimate every 1.5 seconds. You gain Major Protection while inside, reducing damage taken by 10%.\n\nEnemies inside have their Movement Speed reduced by 70%.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

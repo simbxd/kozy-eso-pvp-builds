@@ -1,0 +1,11 @@
+{
+  "id": "41380",
+  "slug": "absorb-missile",
+  "name": "Absorb Missile",
+  "description": "Bolster your defenses, gaining a damage shield that absorbs up to 4958 damage for 6 seconds.  \n\nWhile the shield persists, you are healed for 2560 Health the next time a harmful direct damage projectile hits you. This effect can occur once per cast.\n\nThis ability scales off your Max Health.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

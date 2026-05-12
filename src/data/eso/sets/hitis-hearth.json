@@ -1,0 +1,40 @@
+{
+  "id": "hitis-hearth",
+  "name": "Hiti's Hearth",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Wrothgar, Icereach",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you heal yourself or an ally with an ability, gain a Warming Aura for 10 seconds. While in the Warming Aura, you and group members restore 565 Health every 2 seconds and reduce the cost of Sprint, Block, and Roll Dodge by 5%. This effect can occur once every 12 seconds and the heal scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hiti's_Hearth",
+  "esohub_url": "https://eso-hub.com/en/sets/hitis-hearth"
+}

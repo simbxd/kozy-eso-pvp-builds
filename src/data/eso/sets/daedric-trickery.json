@@ -1,0 +1,40 @@
+{
+  "id": "daedric-trickery",
+  "name": "Daedric Trickery",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Vvardenfell, Randas Ancestral Tomb",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage you gain one of 5 random Major buffs for 21 seconds every 9 seconds. Eligible buffs are Expedition, Protection, Mending, Heroism, or Vitality.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Daedric_Trickery",
+  "esohub_url": "https://eso-hub.com/en/sets/daedric-trickery"
+}

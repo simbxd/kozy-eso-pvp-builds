@@ -1,0 +1,11 @@
+{
+  "id": "139308",
+  "slug": "dilation",
+  "name": "Dilation",
+  "description": "Claim all facets of the selected type that touch your area of control, as well as matching facets directly adjacent.\n\nNew Effect: Dilation now claims ALL contiguous facets of the same type.\n\nConsumes 1 Magicka Charge.",
+  "category": "world",
+  "skill_line": "Scrying",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

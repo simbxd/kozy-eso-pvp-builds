@@ -1,0 +1,40 @@
+{
+  "id": "varens-legacy",
+  "name": "Varen's Legacy",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Gold Coast, Strid River Artisans Camp",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you Block, your next direct damage area of effect attack used within 5 seconds deals an additional 76-3290 damage. This bonus does not work with channeled effects. This effect can occur once every 2 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Varen's_Legacy",
+  "esohub_url": "https://eso-hub.com/en/sets/varens-legacy"
+}

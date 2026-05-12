@@ -1,0 +1,11 @@
+{
+  "id": "85998",
+  "slug": "dive",
+  "name": "Dive",
+  "description": "Command a cliff racer to dive bomb an enemy, dealing 2090 Magic Damage.\n\nIf you are more than 7 meters away from the target, you set them Off Balance for 7 seconds.",
+  "category": "classes",
+  "skill_line": "Animal Companions",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

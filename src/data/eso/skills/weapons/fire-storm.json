@@ -1,0 +1,11 @@
+{
+  "id": "86492",
+  "slug": "fire-storm",
+  "name": "Fire Storm",
+  "description": "Create a cataclysmic storm at the target location that builds for 2 seconds then lays waste to all enemies in the area, dealing 1742 Flame Damage every 1 second for 7 seconds.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

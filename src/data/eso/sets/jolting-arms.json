@@ -1,0 +1,40 @@
+{
+  "id": "jolting-arms",
+  "name": "Jolting Arms",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Malabal Tor, Tempest Island",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you Block, you charge your arms, increasing your Physical and Spell Resistance by 107-4620 for 6 seconds and causing your next Bash attack to deal an additional 81-3513 damage.\n\nThis effect can occur once every 6 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Jolting_Arms",
+  "esohub_url": "https://eso-hub.com/en/sets/jolting-arms"
+}

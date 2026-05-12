@@ -1,0 +1,40 @@
+{
+  "id": "lunar-bastion",
+  "name": "Lunar Bastion",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Reaper's March, Maw of Lorkhaj",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you activate a synergy, you create a lunar blessing underneath you for 8 seconds. The blessing grants a stacking damage shield every 2 seconds that absorbs 63-2737 damage per stack for you and your group members within 8 meters. The damage shield lasts for 4 seconds and refreshes every tick. This effect can occur once every 20 seconds, and stacks up to 6 times.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lunar_Bastion",
+  "esohub_url": "https://eso-hub.com/en/sets/lunar-bastion"
+}

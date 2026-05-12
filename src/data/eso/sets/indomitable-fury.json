@@ -1,0 +1,40 @@
+{
+  "id": "indomitable-fury",
+  "name": "Indomitable Fury",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "After Breaking Free, you gain Minor Protection and Minor Heroism for 7 seconds, reducing your damage taken by 5% and generating 1 Ultimate every 1.5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Indomitable_Fury",
+  "esohub_url": "https://eso-hub.com/en/sets/indomitable-fury"
+}

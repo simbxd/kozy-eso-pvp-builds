@@ -1,0 +1,40 @@
+{
+  "id": "farstrider",
+  "name": "Farstrider",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Battlegrounds",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you deal direct damage with a Blink, Charge, Leap, Teleport, or Pull ability, decrease the Critical Resistance of your enemy by 40% and increase your Critical Resistance by an equal amount for 10 seconds. This effect can occur once every 7 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Farstrider",
+  "esohub_url": "https://eso-hub.com/en/sets/farstrider"
+}

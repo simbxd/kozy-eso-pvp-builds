@@ -1,0 +1,28 @@
+{
+  "id": "nibenay-bay-battlereeve",
+  "name": "Nibenay Bay Battlereeve",
+  "type": "Monster",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Elite Gear Vendor",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Critical Resistance",
+      "value": 424
+    },
+    {
+      "count": 2,
+      "stat": "When you are forcefully moved via a Pull, Knockback or Teleport ability, gain a damage shield that absorbs up to 15112 damage for 6 seconds. This damage shield is not affected by Battle Spirit. This effect can occur once every 14 seconds. While you do not have the damage shield from this set, reduce your damage taken from players by 5%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nibenay_Bay_Battlereeve",
+  "esohub_url": "https://eso-hub.com/en/sets/nibenay-bay-battlereeve"
+}

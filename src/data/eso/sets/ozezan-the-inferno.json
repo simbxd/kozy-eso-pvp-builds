@@ -1,0 +1,28 @@
+{
+  "id": "ozezan-the-inferno",
+  "name": "Ozezan the Inferno",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Valinna in Scrivener's Hall, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "Overhealing yourself or an ally grants them 4272 Armor for 1.1 seconds. Healing yourself or an ally grants them Minor Vitality for 1.1 seconds, increasing their healing received and damage shield strength by 6%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ozezan_the_Inferno",
+  "esohub_url": "https://eso-hub.com/en/sets/ozezan-the-inferno"
+}

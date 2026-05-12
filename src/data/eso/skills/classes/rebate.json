@@ -1,0 +1,11 @@
+{
+  "id": "45198",
+  "slug": "rebate",
+  "name": "Rebate",
+  "description": "You restore 371 Magicka or Stamina when one of your non-Ultimate Daedric Summoning abilities end. The resource returned is dictated by the ability's cost.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

@@ -1,0 +1,11 @@
+{
+  "id": "30343",
+  "slug": "endless-fury",
+  "name": "Endless Fury",
+  "description": "Call down lightning to strike an enemy, dealing 871 Shock Damage.\n\nIf the enemy falls to or below 20% Health within 2 seconds of being struck, an explosion deals an additional 3195 Shock Damage to them and 696 Shock Damage to other enemies nearby.\n\nIf any enemy is killed within 5 seconds of being hit with this ability, you restore 4860 Magicka.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

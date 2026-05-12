@@ -1,0 +1,11 @@
+{
+  "id": "86284",
+  "slug": "onslaught",
+  "name": "Onslaught",
+  "description": "Strike at an enemy with a vicious blow, dealing 3485 Physical Damage to them and all nearby enemies.\n\nThis attack ignores the target's Resistance and grants you Physical and Spell Penetration for direct damage attacks equal to 100% of the amount ignored from the initial target and if Battle Spirit is inactive you gain 100% Critical Chance for 8 seconds.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

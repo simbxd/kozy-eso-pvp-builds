@@ -1,0 +1,11 @@
+{
+  "id": "41435",
+  "slug": "power-bash",
+  "name": "Power Bash",
+  "description": "Strike an enemy full-force with your shield, dealing 2323 Physical Damage. \n\nThis ability's damage is considered Bash damage and interrupts the enemy if they are casting.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

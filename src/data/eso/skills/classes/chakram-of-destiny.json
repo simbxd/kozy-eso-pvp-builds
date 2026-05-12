@@ -1,0 +1,11 @@
+{
+  "id": "40186207",
+  "slug": "chakram-of-destiny",
+  "name": "Chakram of Destiny",
+  "description": "Carve the Fate Crone's runes to create spinning mystical discs and generate Crux. Discs surround you or up to 4 allies in front of you, granting a shield that absorbs 3068 damage for 6 seconds. \n\nRecasting on a target already shielded grants a new shield that is 30% stronger.\n\nDiscs prefer your reticle target, or low-Health targets without shields.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

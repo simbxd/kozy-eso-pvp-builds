@@ -1,0 +1,11 @@
+{
+  "id": "46670",
+  "slug": "propelling-shield",
+  "name": "Propelling Shield",
+  "description": "Create a protective sphere over your location that reduces damage taken from siege weapons by 50% for you and nearby allies.\n\nAlso increases the range of abilities with a range greater than 28 meters by 7 meters. Does not affect Leap, Move Position, and Pull abilities.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "27530",
+  "slug": "blazing-shield",
+  "name": "Blazing Shield",
+  "description": "Surround yourself with solar rays, applying Minor Maim to nearby enemies for 10 seconds, reducing their damage done by 5%.\n\nYou gain a damage shield that absorbs up to 4800 damage for 6 seconds, increasing by 10% for each enemy hit, up to 60%. This ability scales off your Max Health.\n\nWhen the shield expires it explodes, dealing 33% of damage absorbed as Magic Damage to nearby enemies.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

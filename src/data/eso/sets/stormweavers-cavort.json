@@ -1,0 +1,25 @@
+{
+  "id": "stormweavers-cavort",
+  "name": "Stormweaver's Cavort",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Magicka Recovery",
+      "value": 300
+    },
+    {
+      "count": 1,
+      "stat": "Sprint, Roll Dodge, Bash, Break Free, Sneak, and Block now consume Magicka instead of Stamina. You reduce your Magicka Recovery to 0 while Blocking, Sneaking, or Sprinting. You no longer reduce your Stamina Recovery to 0 while Blocking, Sneaking or Sprinting.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Stormweaver's_Cavort",
+  "esohub_url": "https://eso-hub.com/en/sets/stormweavers-cavort"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "shapeshifters-chain",
+  "name": "Shapeshifter's Chain",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "necklace"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Reduce the cost of your Transformation Ultimate and Werewolf abilities by 15%. While transformed, increase your Maximum Health, Stamina, and Magicka by 1707.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shapeshifter's_Chain",
+  "esohub_url": "https://eso-hub.com/en/sets/shapeshifters-chain"
+}

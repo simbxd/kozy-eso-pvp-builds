@@ -1,0 +1,22 @@
+{
+  "id": "the-saint-and-the-seducer",
+  "name": "The Saint and the Seducer",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "necklace"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "While in combat, you gain one of five random Major buffs which changes every 10 seconds. Enemies within 12 meters of you gain one of five random Minor debuffs depending on which buff you have. The available effects are:\n\nMajor Berserk and Minor Maim\nMajor Resolve and Minor Breach\nMajor Force and Minor Brittle\nMajor Evasion and Minor Vulnerability\nMajor Courage and Minor Cowardice",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Saint_and_the_Seducer",
+  "esohub_url": "https://eso-hub.com/en/sets/the-saint-and-the-seducer"
+}

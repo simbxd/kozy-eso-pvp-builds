@@ -1,0 +1,11 @@
+{
+  "id": "93804",
+  "slug": "healing-seed",
+  "name": "Healing Seed",
+  "description": "Summon a field of flowers which blooms after 6 seconds, healing you and allies in the area for 3486 Health.\n\nAn ally within the field can activate the Harvest synergy, healing for 3372 Health over 5 seconds.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

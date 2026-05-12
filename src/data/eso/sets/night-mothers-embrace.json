@@ -1,0 +1,45 @@
+{
+  "id": "night-mothers-embrace",
+  "name": "Night Mother's Embrace",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Deshaan",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 171
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the radius you can be detected while Sneaking by 2 meters. Reduces the cost of Sneak by 25%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Night_Mother's_Embrace",
+  "esohub_url": "https://eso-hub.com/en/sets/night-mothers-embrace"
+}

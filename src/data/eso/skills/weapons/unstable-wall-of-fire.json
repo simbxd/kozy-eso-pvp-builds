@@ -1,0 +1,11 @@
+{
+  "id": "41712",
+  "slug": "unstable-wall-of-fire",
+  "name": "Unstable Wall of Fire",
+  "description": "Slam your staff down to create an unstable flaming barrier in front of you, dealing 281 Flame Damage to enemies in the target area every 1 second.\n\nBurning enemies take 10% more damage from this ability.\n\nWhen the effect ends, the barrier explodes, dealing 1199 Flame Damage.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

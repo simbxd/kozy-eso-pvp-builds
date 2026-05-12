@@ -1,0 +1,40 @@
+{
+  "id": "imperial-physique",
+  "name": "Imperial Physique",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Tel Var Merchant",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "While you are in Imperial City, you tap into the power of the Tel Var Stones you are carrying, increasing your Health, Magicka, and Stamina by 24-1032. While you have a 4x Tel Var Stone multiplier this effect is increased by 600%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Imperial_Physique",
+  "esohub_url": "https://eso-hub.com/en/sets/imperial-physique"
+}

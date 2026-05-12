@@ -1,0 +1,11 @@
+{
+  "id": "41006",
+  "slug": "destructive-clench",
+  "name": "Destructive Clench",
+  "description": "Devastate an enemy with an enhanced charge from your staff, dealing 1161 Magic Damage.\n\nThe initial hit always applies the element's status effect.\n\nFlame Clench also knocks the enemy back.\n\nFrost Clench deals less damage, has increased range, applies Major Maim, immobilizes, and taunts the enemy.\n\nShock Clench converts the attack into an area of effect explosion.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

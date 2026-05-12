@@ -1,0 +1,11 @@
+{
+  "id": "221292",
+  "slug": "nightblades-explosion",
+  "name": "Nightblade's Explosion",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

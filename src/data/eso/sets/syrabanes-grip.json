@@ -1,0 +1,40 @@
+{
+  "id": "syrabanes-grip",
+  "name": "Syrabane's Grip",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Grahtwood",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you Block Flame, Frost, Shock, or Magic Damage, you restore 18-805 Magicka. This effect can occur once every 1 second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Syrabane's_Grip",
+  "esohub_url": "https://eso-hub.com/en/sets/syrabanes-grip"
+}

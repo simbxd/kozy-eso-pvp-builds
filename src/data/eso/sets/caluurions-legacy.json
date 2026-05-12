@@ -1,0 +1,40 @@
+{
+  "id": "caluurions-legacy",
+  "name": "Caluurion's Legacy",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Bangkorai, Fang Lair",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Critical Damage with a Light or Heavy Attack, you launch a projectile at your target that deals 894 Flame, 894 Frost, 894 Shock, or 894 Disease damage and applies the respective status effect. This effect can occur once every 5 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Caluurion's_Legacy",
+  "esohub_url": "https://eso-hub.com/en/sets/caluurions-legacy"
+}

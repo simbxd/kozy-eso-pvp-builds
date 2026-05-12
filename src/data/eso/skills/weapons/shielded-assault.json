@@ -1,0 +1,11 @@
+{
+  "id": "41526",
+  "slug": "shielded-assault",
+  "name": "Shielded Assault",
+  "description": "Rush an enemy and ram them, dealing 1393 Physical Damage and stunning them for 3 seconds.\n\nYou gain a damage shield after the attack, absorbing 5121 damage for 6 seconds. This portion of the ability scales off your Max Health.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

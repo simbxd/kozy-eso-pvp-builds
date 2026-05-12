@@ -1,0 +1,11 @@
+{
+  "id": "36234",
+  "slug": "surprise-attack",
+  "name": "Surprise Attack",
+  "description": "Slash an enemy, dealing 2399 Physical Damage and applying the Sundered status effect.\n\nIf you strike an enemy from their flank you set them Off Balance. This attack will also be guaranteed to be a Critical Strike, up to once every 3 seconds.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

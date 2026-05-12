@@ -1,0 +1,11 @@
+{
+  "id": "42999",
+  "slug": "frost-pulsar",
+  "name": "Frost Pulsar",
+  "description": "Release a surge of frost, dealing 1742 Frost Damage to nearby enemies and afflicting them with Minor Mangle, reducing their Max Health by 10% for 10 seconds and applying Minor Protection to you and nearby group members for 6 seconds, reducing your damage taken by 5%.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

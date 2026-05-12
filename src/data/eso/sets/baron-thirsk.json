@@ -1,0 +1,33 @@
+{
+  "id": "baron-thirsk",
+  "name": "Baron Thirsk",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Baron Thirsk in Nobles District, Tel Var lockbox merchant",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 1,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "On dealing area direct damage, mark a target for 6 seconds. Every 2 seconds after, an Explosive Scamp is spawned nearby and detonates after 1 second, dealing 362 Magic damage to up to 6 enemies within 4 meters and applying Minor Timidity for 10 seconds, draining 1 Ultimate every 1.5 seconds. Each Explosive Scamp spawned deals 100% increased damage. This effect can occur once every 25 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Baron_Thirsk",
+  "esohub_url": "https://eso-hub.com/en/sets/baron-thirsk"
+}

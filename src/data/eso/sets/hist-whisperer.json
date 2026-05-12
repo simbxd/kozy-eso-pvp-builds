@@ -1,0 +1,40 @@
+{
+  "id": "hist-whisperer",
+  "name": "Hist Whisperer",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Blackwood, Withered Root",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Health Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing damage with a Light or Medium Attack heals you for 7-318 Health and restores 7-318 Stamina and Magicka. Dealing damage with a fully-charged Heavy Attack heals you for 14-636 Health and restores 14-636 Stamina and Magicka.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hist_Whisperer",
+  "esohub_url": "https://eso-hub.com/en/sets/hist-whisperer"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "34080",
+  "slug": "incinerate",
+  "name": "Incinerate",
+  "description": "Activate an aura of flames which launches a wave of flames every 5 seconds, dealing 1979 Flame Damage to enemies inside.\n\nEach hit has a 15% chance of applying Burning.\n\nWhile slotted on either bar, you gain Major Prophecy and Savagery, increasing your Spell and Weapon Critical rating by 2629.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "139321",
+  "slug": "farsight",
+  "name": "Farsight",
+  "description": "Claim a line of facets, stretching out from your area of control.\n\nNew Effect: Range increased from 4 facets to 6.\n\nConsumes 1 Magicka Charge.",
+  "category": "world",
+  "skill_line": "Scrying",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

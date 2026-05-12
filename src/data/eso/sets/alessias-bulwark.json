@@ -1,0 +1,40 @@
+{
+  "id": "alessias-bulwark",
+  "name": "Alessia's Bulwark",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Chancel of Divine Entreaty in Malabal Tor, Alezer Kotu in Alik'r Desert, Hammerhome in Eastmarch",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage from a Martial melee attack, you reduce the attacker's Weapon and Spell Damage by 6-300 for 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Alessia's_Bulwark",
+  "esohub_url": "https://eso-hub.com/en/sets/alessias-bulwark"
+}

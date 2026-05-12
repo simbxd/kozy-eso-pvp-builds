@@ -1,0 +1,11 @@
+{
+  "id": "40118008",
+  "slug": "mystic-siphon",
+  "name": "Mystic Siphon",
+  "description": "Violently drain the last spark of life from a corpse, dealing 6180 Shock Damage over 20 seconds to all enemies around the corpse and between you and the corpse. You also gain Major Savagery and Prophecy for 20 seconds, increasing your Weapon and Spell Critical rating by 2629.\n\nWhile siphoning the corpse you gain 150 Health, Magicka, and Stamina Recovery.\n\nWhile slotted, your damage done is increased by 3%.",
+  "category": "classes",
+  "skill_line": "Grave Lord",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "40135841",
+  "slug": "sated-fury",
+  "name": "Sated Fury",
+  "description": "Allow your monstrous appetites to take hold, increasing your Weapon and Spell Damage by 60 every 2 seconds, up to 5 times.\n\nWhile toggled on, the Health cost of this ability increases by 300 per stack and you cannot be healed by anyone but yourself, your pets, or your Companions.\n\nWhen toggled off, you heal for 33% of the total Health cost you spent while active.",
+  "category": "world",
+  "skill_line": "Vampire",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

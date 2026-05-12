@@ -1,0 +1,45 @@
+{
+  "id": "way-of-air",
+  "name": "Way of Air",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Craglorn",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Increases the radius you can detect Sneaking enemies by 2 meters.",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you use Roll Dodge, your Weapon and Spell Damage is increased by 9-391 for 6 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Way_of_Air",
+  "esohub_url": "https://eso-hub.com/en/sets/way-of-air"
+}

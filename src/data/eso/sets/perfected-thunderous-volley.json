@@ -1,0 +1,27 @@
+{
+  "id": "perfected-thunderous-volley",
+  "name": "Perfected Thunderous Volley",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Maelstrom Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "(2 perfected items) Adds 12-526 Critical Chance",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "Increases the damage Volley deals by 10-430 each tick. This bonus increases by 4-191 every time Volley ticks, up to a maximum of 8 times.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Thunderous_Volley",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-thunderous-volley"
+}

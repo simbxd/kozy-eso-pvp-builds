@@ -1,0 +1,40 @@
+{
+  "id": "dark-convergence",
+  "name": "Dark Convergence",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, casting abilities that leave an effect on the ground will create an area that applies a 60% snare and pulls enemies after a 1 second delay, stunning them for 1 second. After 4 seconds, the area deals 821 Magic damage to all enemies in the 10 meter area, and 1642 Magic damage to enemies within 3 meters of the center, increasing by 50% for each target. This effect can occur once every 25 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dark_Convergence",
+  "esohub_url": "https://eso-hub.com/en/sets/dark-convergence"
+}

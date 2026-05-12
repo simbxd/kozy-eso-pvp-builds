@@ -1,0 +1,11 @@
+{
+  "id": "45296",
+  "slug": "hunters-eye",
+  "name": "Hunter's Eye",
+  "description": "Increases your Stealth Detection radius by 3 meters.\n\nIncreases your Movement Speed by 5% and your Physical and Spell Penetration by 950.",
+  "category": "racial",
+  "skill_line": "Wood Elf Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

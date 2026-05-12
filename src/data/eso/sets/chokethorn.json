@@ -1,0 +1,28 @@
+{
+  "id": "chokethorn",
+  "name": "Chokethorn",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Canonreeve Oraneth in Elden Hollow I, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "When you use a heal ability with a cost, you have a 33% chance to summon a strangler sapling that heals you or an ally for 6986 Health over 6 seconds. This effect can occur once every 10 seconds and scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Chokethorn",
+  "esohub_url": "https://eso-hub.com/en/sets/chokethorn"
+}

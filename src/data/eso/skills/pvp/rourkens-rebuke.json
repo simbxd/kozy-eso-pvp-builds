@@ -1,0 +1,11 @@
+{
+  "id": "116093",
+  "slug": "rourkens-rebuke",
+  "name": "Rourken's Rebuke",
+  "description": "Batter foes in an arc in front of you, dealing 9055 Physical Damage, knocking enemies back 4 meters, and stunning them for 4 seconds.",
+  "category": "pvp",
+  "skill_line": "Volendrung",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

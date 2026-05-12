@@ -1,0 +1,11 @@
+{
+  "id": "40185805",
+  "slug": "fatecarver",
+  "name": "Fatecarver",
+  "description": "Harness pure knowledge into a beam of energy that scars the world in front of you. Channel the beam for up to 4 seconds, dealing 879 Magic Damage every 0.3 seconds to up to 6 enemies.\n\nCasting Fatecarver consumes all Crux and increases damage done by 33% per Crux spent.\n\nThis ability is considered direct damage.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

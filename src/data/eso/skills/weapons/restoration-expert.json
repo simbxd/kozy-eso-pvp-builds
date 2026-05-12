@@ -1,0 +1,11 @@
+{
+  "id": "45519",
+  "slug": "restoration-expert",
+  "name": "Restoration Expert",
+  "description": "Increases your healing by 15% on allies under 30% Health.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

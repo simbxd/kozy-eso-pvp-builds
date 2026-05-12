@@ -1,0 +1,11 @@
+{
+  "id": "116272",
+  "slug": "last-gasp",
+  "name": "Last Gasp",
+  "description": "Increase your Max Health by 2412.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

@@ -1,0 +1,11 @@
+{
+  "id": "35909",
+  "slug": "blur",
+  "name": "Blur",
+  "description": "Surround yourself in a phantasmic aura to gain Major Evasion, reducing damage from area attacks by 20% for 20 seconds.\n\nWhile active, taking direct damage reduces the cost of your next Roll Dodge by 10%, up to a maximum of 100%. This effect can stack up to once every half second.",
+  "category": "classes",
+  "skill_line": "Shadow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

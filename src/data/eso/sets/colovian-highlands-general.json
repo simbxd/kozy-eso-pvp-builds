@@ -1,0 +1,28 @@
+{
+  "id": "colovian-highlands-general",
+  "name": "Colovian Highlands General",
+  "type": "Monster",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Elite Gear Vendor",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 2,
+      "stat": "When you kill a Player, gain a stack of Blood Debt for 0.5 seconds. When Blood Debt expires, you and up to 5 group members within 28 meters of you gain 15 Ultimate per stack of Blood Debt.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Colovian_Highlands_General",
+  "esohub_url": "https://eso-hub.com/en/sets/colovian-highlands-general"
+}

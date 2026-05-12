@@ -1,0 +1,11 @@
+{
+  "id": "44984",
+  "slug": "landslide",
+  "name": "Landslide",
+  "description": "Given time, the smallest rock on the mountain can cascade into pure devastation.\n\nWhenever you deal damage you gain a stack of Landslide which increases your damage done by 1% per stack, up to 10 times. This effect can occur once every 5 seconds.\n\nEvery 2 seconds you do not deal damage, you lose a stack.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

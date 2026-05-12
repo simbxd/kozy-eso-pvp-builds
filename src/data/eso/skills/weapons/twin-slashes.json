@@ -1,0 +1,11 @@
+{
+  "id": "40664",
+  "slug": "twin-slashes",
+  "name": "Twin Slashes",
+  "description": "Slice an enemy with both weapons to cause deep lacerations, dealing 580 Bleed Damage with each weapon and causing them to bleed for an additional 3470 Bleed Damage over 20 seconds.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

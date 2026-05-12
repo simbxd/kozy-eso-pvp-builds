@@ -1,0 +1,28 @@
+{
+  "id": "sellistrix",
+  "name": "Sellistrix",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Sellistrix the Lamia Queen in Arx Corinium, Glirion the Redbeard",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "When you deal damage you create an earthquake under the enemy that erupts after 1.5 seconds, dealing 975 Physical damage to all enemies within 4 meters and stunning them for 3 seconds. This effect can occur once every 6 seconds and the damage scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sellistrix",
+  "esohub_url": "https://eso-hub.com/en/sets/sellistrix"
+}

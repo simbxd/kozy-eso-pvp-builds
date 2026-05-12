@@ -1,0 +1,11 @@
+{
+  "id": "218992",
+  "slug": "minor-uncertainty",
+  "name": "Minor Uncertainty",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

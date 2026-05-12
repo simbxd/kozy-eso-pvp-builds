@@ -1,0 +1,20 @@
+{
+  "id": "thrassian-stranglers",
+  "name": "Thrassian Stranglers",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Killing an enemy grants you a stack of Sload's Call for 1 hour, up to a maximum of 50 stacks. Each stack increases your Weapon and Spell Damage by 23, reduces your Maximum Health by 120, and reduces effectiveness of your damage shields by 1%. \n\nSload's Call is lost if you remove Thrassian Stranglers, go invisible, or crouch.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Thrassian_Stranglers",
+  "esohub_url": "https://eso-hub.com/en/sets/thrassian-stranglers"
+}

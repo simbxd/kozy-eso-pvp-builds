@@ -1,0 +1,11 @@
+{
+  "id": "40217872",
+  "slug": "sundering-knife",
+  "name": "Sundering Knife",
+  "description": "Twirl and throw an enchanted dagger at an enemy, which returns to you after 0.5 seconds and hits additional enemies in the path.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

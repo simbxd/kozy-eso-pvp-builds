@@ -1,0 +1,11 @@
+{
+  "id": "40117624",
+  "slug": "venom-skull",
+  "name": "Venom Skull",
+  "description": "Lob an explosive skull at an enemy, dealing 2160 Poison Damage.\n\nEvery third cast of this ability deals 50% increased damage and creates a corpse near the enemy, up to once every 3 seconds.\n\nWhile slotted, casting any Necromancer ability while you are in combat will count towards the third cast.",
+  "category": "classes",
+  "skill_line": "Grave Lord",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

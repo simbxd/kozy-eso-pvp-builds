@@ -1,0 +1,11 @@
+{
+  "id": "30626",
+  "slug": "summon-twilight-matriarch",
+  "name": "Summon Twilight Matriarch",
+  "description": "Call on Azura to send a twilight matriarch to fight at your side. The twilight matriarch's zap deals 347 Shock Damage and its kick deals 347 Shock Damage.\n\nOnce summoned, you can activate the twilight matriarch's special ability for 4590 Magicka, causing it to heal 2 friendly targets for 3600 and itself for 1799.\n\nThe twilight matriarch remains until killed or unsummoned.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "36008",
+  "slug": "acrobat",
+  "name": "Acrobat",
+  "description": "Increases your experience gain with the Bow skill line by 15%.\n\nDecreases your fall damage taken by 10%.",
+  "category": "racial",
+  "skill_line": "Wood Elf Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

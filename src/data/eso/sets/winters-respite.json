@@ -1,0 +1,40 @@
+{
+  "id": "winters-respite",
+  "name": "Winter's Respite",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Western Skyrim",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, casting abilities that leave an effect on the ground will create a circle of healing frost for 10 seconds. You and your group members restore 1125 Health every 2 seconds while inside the circle. This effect can occur once every 10 seconds and scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Winter's_Respite",
+  "esohub_url": "https://eso-hub.com/en/sets/winters-respite"
+}

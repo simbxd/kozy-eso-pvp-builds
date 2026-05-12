@@ -1,0 +1,11 @@
+{
+  "id": "150185",
+  "slug": "light-armor-bonuses",
+  "name": "Light Armor Bonuses",
+  "description": "Each piece of Light Armor does the following:\n\nReduces damage taken from Magical attacks by 1%\n\nReduces the cost of Roll Dodge by 3%\n\nReduces the Movement Speed penalty of Sneak by 5%\n\nReduces the cost of Break Free by 5%\n\nReduces the cost of Bash by 3%",
+  "category": "armor",
+  "skill_line": "Light Armor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

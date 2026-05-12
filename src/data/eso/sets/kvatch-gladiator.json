@@ -1,0 +1,40 @@
+{
+  "id": "kvatch-gladiator",
+  "name": "Kvatch Gladiator",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Gold Coast, Marja's Mill",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "You gain 128-1475 Weapon and Spell Damage against targets who are at or below 25% Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Kvatch_Gladiator",
+  "esohub_url": "https://eso-hub.com/en/sets/kvatch-gladiator"
+}

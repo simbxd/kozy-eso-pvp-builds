@@ -1,0 +1,40 @@
+{
+  "id": "curse-of-doylemish",
+  "name": "Curse of Doylemish",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Stormhaven, Scalecaller Peak",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When using a fully-charged melee Heavy Attack on a taunted monster or any enemy who is stunned, feared, or immobilized, you will deal 1811 Physical damage. This effect can occur once every 4 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Curse_of_Doylemish",
+  "esohub_url": "https://eso-hub.com/en/sets/curse-of-doylemish"
+}

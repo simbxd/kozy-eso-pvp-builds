@@ -1,0 +1,11 @@
+{
+  "id": "36166",
+  "slug": "soul-shred",
+  "name": "Soul Shred",
+  "description": "Ravage nearby enemies' souls with a night rune, dealing 3486 Magic Damage and stunning them for 4 seconds. \n\nAn ally can target a ravaged enemy and activate the Soul Leech synergy, dealing 3122 Magic Damage to them and healing for the damage caused.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

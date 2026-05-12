@@ -1,0 +1,11 @@
+{
+  "id": "38075",
+  "slug": "mass-hysteria",
+  "name": "Mass Hysteria",
+  "description": "Summon a dark spirit to terrify all nearby enemies, causing them to cower in fear for 3 seconds and be afflicted with Major Cowardice for 10 seconds, reducing their Weapon and Spell Damage by 430.",
+  "category": "classes",
+  "skill_line": "Shadow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

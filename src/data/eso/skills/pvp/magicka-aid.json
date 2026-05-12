@@ -1,0 +1,11 @@
+{
+  "id": "45622",
+  "slug": "magicka-aid",
+  "name": "Magicka Aid",
+  "description": "Increases your Magicka Recovery by 10% for each Support ability slotted.\n\nCurrent bonus: 0%.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

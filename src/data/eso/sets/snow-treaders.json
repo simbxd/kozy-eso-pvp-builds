@@ -1,0 +1,22 @@
+{
+  "id": "snow-treaders",
+  "name": "Snow Treaders",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "feet"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "While you are in combat, you are immune to snares and immobilizations that can be cleansed, but you cannot Sprint.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Snow_Treaders",
+  "esohub_url": "https://eso-hub.com/en/sets/snow-treaders"
+}

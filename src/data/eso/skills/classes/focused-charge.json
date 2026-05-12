@@ -1,0 +1,11 @@
+{
+  "id": "23716",
+  "slug": "focused-charge",
+  "name": "Focused Charge",
+  "description": "Charge with your divine lance to impale an enemy, dealing 1392 Magic Damage while taunting them to attack you for 15 seconds. If the enemy hit was casting, they are interrupted, set Off Balance, and stunned for 3 seconds.\n\nYou also gain Major Protection for 7 seconds, reducing your damage taken by 10%.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,4274 @@
+[
+  {
+    "id": "abyssal-brace",
+    "name": "Abyssal Brace",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "adamant-lurker",
+    "name": "Adamant Lurker",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "adept-rider",
+    "name": "Adept Rider",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "aegis-caller",
+    "name": "Aegis Caller",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "aegis-of-galenwe",
+    "name": "Aegis of Galenwe",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "aeries-cry",
+    "name": "Aerie's Cry",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "aetherial-ascension",
+    "name": "Aetherial Ascension",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "aetheric-lancer",
+    "name": "Aetheric Lancer",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "affliction",
+    "name": "Affliction",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "agility",
+    "name": "Agility",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "akaviri-dragonguard",
+    "name": "Akaviri Dragonguard",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "alessias-bulwark",
+    "name": "Alessia's Bulwark",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "alessian-order",
+    "name": "Alessian Order",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "almalexias-mercy",
+    "name": "Almalexia's Mercy",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "amber-plasm",
+    "name": "Amber Plasm",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "ancient-dragonguard",
+    "name": "Ancient Dragonguard",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "ansuuls-torment",
+    "name": "Ansuul's Torment",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "anthelmirs-construct",
+    "name": "Anthelmir's Construct",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "apocryphal-inspiration",
+    "name": "Apocryphal Inspiration",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "archdruid-devyric",
+    "name": "Archdruid Devyric",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "archers-mind",
+    "name": "Archer's Mind",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "arkasiss-genius",
+    "name": "Arkasis's Genius",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "arkays-charity",
+    "name": "Arkay's Charity",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "armor-master",
+    "name": "Armor Master",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "armor-of-the-code",
+    "name": "Armor of the Code",
+    "type": "Jewelry",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "armor-of-the-seducer",
+    "name": "Armor of the Seducer",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "armor-of-the-trainee",
+    "name": "Armor of the Trainee",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "armor-of-the-veiled-heritance",
+    "name": "Armor of the Veiled Heritance",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "armor-of-truth",
+    "name": "Armor of Truth",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "arms-of-infernace",
+    "name": "Arms of Infernace",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "arms-of-relequen",
+    "name": "Arms of Relequen",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "arms-of-the-ancestors",
+    "name": "Arms of the Ancestors",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "ashen-grip",
+    "name": "Ashen Grip",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "aspect-of-mazzatun",
+    "name": "Aspect of Mazzatun",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "assassins-guile",
+    "name": "Assassin's Guile",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "aurorans-thunder",
+    "name": "Auroran's Thunder",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "automated-defense",
+    "name": "Automated Defense",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "ayleid-refuge",
+    "name": "Ayleid Refuge",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "azureblight-reaper",
+    "name": "Azureblight Reaper",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "baan-dars-blessing",
+    "name": "Baan Dar's Blessing",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "back-alley-gourmand",
+    "name": "Back-Alley Gourmand",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "bahrahas-curse",
+    "name": "Bahraha's Curse",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "bahseis-mania",
+    "name": "Bahsei's Mania",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "balorgh",
+    "name": "Balorgh",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "banis-torment",
+    "name": "Bani's Torment",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "bar-sakka",
+    "name": "Bar-Sakka",
+    "type": "Monster",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "barkskin",
+    "name": "Barkskin",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "baron-thirsk",
+    "name": "Baron Thirsk",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "baron-zaudrus",
+    "name": "Baron Zaudrus",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "basalt-blooded-warrior",
+    "name": "Basalt-Blooded Warrior",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "bastion-of-the-draoife",
+    "name": "Bastion of the Draoife",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "bastion-of-the-heartland",
+    "name": "Bastion of the Heartland",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "battalion-defender",
+    "name": "Battalion Defender",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "battlefield-acrobat",
+    "name": "Battlefield Acrobat",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "beacon-of-oblivion",
+    "name": "Beacon of Oblivion",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "beckoning-steel",
+    "name": "Beckoning Steel",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "beekeepers-gear",
+    "name": "Beekeeper's Gear",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "belharzas-band",
+    "name": "Belharza's Band",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "berserking-warrior",
+    "name": "Berserking Warrior",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "black-foundry-steel",
+    "name": "Black Foundry Steel",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "black-gem-monstrosity",
+    "name": "Black Gem Monstrosity",
+    "type": "Monster",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "black-rose",
+    "name": "Black Rose",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "black-glove-grounding",
+    "name": "Black-Glove Grounding",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "blackfeather-flight",
+    "name": "Blackfeather Flight",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "blessing-of-high-isle",
+    "name": "Blessing of High Isle",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "blessing-of-the-potentates",
+    "name": "Blessing of the Potentates",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "blind-path-induction",
+    "name": "Blind Path Induction",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "blood-moon",
+    "name": "Blood Moon",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "blooddrinker",
+    "name": "Blooddrinker",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "bloodlords-embrace",
+    "name": "Bloodlord's Embrace",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "bloodspawn",
+    "name": "Bloodspawn",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "bloodthorns-touch",
+    "name": "Bloodthorn's Touch",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "blunted-blades",
+    "name": "Blunted Blades",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "bog-raider",
+    "name": "Bog Raider",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "bone-pirates-tatters",
+    "name": "Bone Pirate's Tatters",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "brands-of-imperium",
+    "name": "Brands of Imperium",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "briarheart",
+    "name": "Briarheart",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "bright-throats-boast",
+    "name": "Bright-Throat's Boast",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "broken-soul",
+    "name": "Broken Soul",
+    "type": "Monster",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "buffer-of-the-swift",
+    "name": "Buffer of the Swift",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "bulwark-ruination",
+    "name": "Bulwark Ruination",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "burning-spellweave",
+    "name": "Burning Spellweave",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "call-of-the-undertaker",
+    "name": "Call of the Undertaker",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "caluurions-legacy",
+    "name": "Caluurion's Legacy",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "camonna-tong",
+    "name": "Camonna Tong",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "caustic-arrow",
+    "name": "Caustic Arrow",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "champion-of-the-hist",
+    "name": "Champion of the Hist",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "chaotic-whirlwind",
+    "name": "Chaotic Whirlwind",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "chimeras-rebuke",
+    "name": "Chimera's Rebuke",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "chokethorn",
+    "name": "Chokethorn",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "cinders-of-anthelmir",
+    "name": "Cinders of Anthelmir",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "claw-of-the-forest-wraith",
+    "name": "Claw of the Forest Wraith",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "claw-of-yolnahkriin",
+    "name": "Claw of Yolnahkriin",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "clever-alchemist",
+    "name": "Clever Alchemist",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "coldharbours-favorite",
+    "name": "Coldharbour's Favorite",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "colovian-highlands-general",
+    "name": "Colovian Highlands General",
+    "type": "Monster",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "combat-physician",
+    "name": "Combat Physician",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "concentrated-force",
+    "name": "Concentrated Force",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "coral-riptide",
+    "name": "Coral Riptide",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "corpseburster",
+    "name": "Corpseburster",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "coup-de-grace",
+    "name": "Coup De Grâce",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "cowards-gear",
+    "name": "Coward's Gear",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "crafty-alfiq",
+    "name": "Crafty Alfiq",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "crest-of-cyrodiil",
+    "name": "Crest of Cyrodiil",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "crimson-oaths-rive",
+    "name": "Crimson Oath's Rive",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "crimson-twilight",
+    "name": "Crimson Twilight",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "critical-riposte",
+    "name": "Critical Riposte",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "cruel-flurry",
+    "name": "Cruel Flurry",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "crusader",
+    "name": "Crusader",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "crushing-wall",
+    "name": "Crushing Wall",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "cryptcanon-vestments",
+    "name": "Cryptcanon Vestments",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "curse-eater",
+    "name": "Curse Eater",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "curse-of-doylemish",
+    "name": "Curse of Doylemish",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "daedric-trickery",
+    "name": "Daedric Trickery",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "dagons-dominion",
+    "name": "Dagon's Dominion",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "daring-corsair",
+    "name": "Daring Corsair",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "dark-convergence",
+    "name": "Dark Convergence",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "darkstride",
+    "name": "Darkstride",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "dauntless-combatant",
+    "name": "Dauntless Combatant",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "dead-waters-guile",
+    "name": "Dead-Water's Guile",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "deadlands-assassin",
+    "name": "Deadlands Assassin",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "deadlands-demolisher",
+    "name": "Deadlands Demolisher",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "deadly-strike",
+    "name": "Deadly Strike",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "death-dealers-fete",
+    "name": "Death Dealer's Fete",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "death-dancer",
+    "name": "Death-Dancer",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "deaths-wind",
+    "name": "Death's Wind",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "deeproot-zeal",
+    "name": "Deeproot Zeal",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "defending-warrior",
+    "name": "Defending Warrior",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "defensive-position",
+    "name": "Defensive Position",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "defiler",
+    "name": "Defiler",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "desert-rose",
+    "name": "Desert Rose",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "destructive-impact",
+    "name": "Destructive Impact",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "destructive-mage",
+    "name": "Destructive Mage",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "diamonds-victory",
+    "name": "Diamond's Victory",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "disciplined-slash",
+    "name": "Disciplined Slash",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "dolorous-arena",
+    "name": "Dolorous Arena",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "domihaus",
+    "name": "Domihaus",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "dov-rha-sabatons",
+    "name": "Dov-rha Sabatons",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "dragons-appetite",
+    "name": "Dragon's Appetite",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "dragons-defilement",
+    "name": "Dragon's Defilement",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "dragonguard-elite",
+    "name": "Dragonguard Elite",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "drakes-rush",
+    "name": "Drake's Rush",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "draugr-hulk",
+    "name": "Draugr Hulk",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "draugrs-heritage",
+    "name": "Draugr's Heritage",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "draugrs-rest",
+    "name": "Draugr's Rest",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "draugrkins-grip",
+    "name": "Draugrkin's Grip",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "dreamers-mantle",
+    "name": "Dreamer's Mantle",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "dreugh-king-slayer",
+    "name": "Dreugh King Slayer",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "drozakars-claws",
+    "name": "Dro'Zakar's Claws",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "druids-braid",
+    "name": "Druid's Braid",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "dunerippers-scales",
+    "name": "Duneripper's Scales",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "duroks-bane",
+    "name": "Durok's Bane",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "eagle-eye",
+    "name": "Eagle Eye",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "earthgore",
+    "name": "Earthgore",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "ebon-armory",
+    "name": "Ebon Armory",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "elemental-catalyst",
+    "name": "Elemental Catalyst",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "elemental-succession",
+    "name": "Elemental Succession",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "elf-bane",
+    "name": "Elf Bane",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "embershield",
+    "name": "Embershield",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "encratiss-behemoth",
+    "name": "Encratis's Behemoth",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "endurance",
+    "name": "Endurance",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "enervating-aura",
+    "name": "Enervating Aura",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "engine-guardian",
+    "name": "Engine Guardian",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "esoteric-environment-greaves",
+    "name": "Esoteric Environment Greaves",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "essence-thief",
+    "name": "Essence Thief",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "eternal-hunt",
+    "name": "Eternal Hunt",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "eternal-vigor",
+    "name": "Eternal Vigor",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "eternal-warrior",
+    "name": "Eternal Warrior",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "euphotic-gatekeeper",
+    "name": "Euphotic Gatekeeper",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "executioners-blade",
+    "name": "Executioner's Blade",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "explosive-rebuke",
+    "name": "Explosive Rebuke",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "eye-of-nahviintaas",
+    "name": "Eye of Nahviintaas",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "eye-of-the-grasp",
+    "name": "Eye of the Grasp",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "eyes-of-mara",
+    "name": "Eyes of Mara",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "false-gods-devotion",
+    "name": "False God's Devotion",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "farstrider",
+    "name": "Farstrider",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "fasallas-guile",
+    "name": "Fasalla's Guile",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "fauns-lark-cladding",
+    "name": "Faun's Lark Cladding",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "fellowships-fortitude",
+    "name": "Fellowship's Fortitude",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "fiords-legacy",
+    "name": "Fiord's Legacy",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "flame-blossom",
+    "name": "Flame Blossom",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "flanking-strategist",
+    "name": "Flanking Strategist",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "fledglings-nest",
+    "name": "Fledgling's Nest",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "foolkillers-ward",
+    "name": "Foolkiller's Ward",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "footmans-fortune",
+    "name": "Footman's Fortune",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "force-overflow",
+    "name": "Force Overflow",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "fortified-brass",
+    "name": "Fortified Brass",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "frenzied-momentum",
+    "name": "Frenzied Momentum",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "frostbite",
+    "name": "Frostbite",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "frozen-watcher",
+    "name": "Frozen Watcher",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "full-belly-barricade",
+    "name": "Full Belly Barricade",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "galerions-revenge",
+    "name": "Galerion's Revenge",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "gallant-charge",
+    "name": "Gallant Charge",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "gardener-of-seasons",
+    "name": "Gardener of Seasons",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "gaze-of-sithis",
+    "name": "Gaze of Sithis",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "giant-spider",
+    "name": "Giant Spider",
+    "type": "Monster",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "glacial-guardian",
+    "name": "Glacial Guardian",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "glittering-goad",
+    "name": "Glittering Goad",
+    "type": "Monster",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "glorgoloch-the-destroyer",
+    "name": "Glorgoloch the Destroyer",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "glorious-defender",
+    "name": "Glorious Defender",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "gorethief",
+    "name": "Gorethief",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "gossamer",
+    "name": "Gossamer",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "grace-of-gloom",
+    "name": "Grace of Gloom",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "grace-of-the-ancients",
+    "name": "Grace of the Ancients",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "grand-rejuvenation",
+    "name": "Grand Rejuvenation",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "grave-guardian",
+    "name": "Grave Guardian",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "grave-inevitability",
+    "name": "Grave Inevitability",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "grave-stake-collector",
+    "name": "Grave-Stake Collector",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "green-pact",
+    "name": "Green Pact",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "grisly-gourmet",
+    "name": "Grisly Gourmet",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "grothdarr",
+    "name": "Grothdarr",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "grundwulf",
+    "name": "Grundwulf",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "gryphons-ferocity",
+    "name": "Gryphon's Ferocity",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "gryphons-reprisal",
+    "name": "Gryphon's Reprisal",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "hagravens-garden",
+    "name": "Hagraven's Garden",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "hand-of-mephala",
+    "name": "Hand of Mephala",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "hanus-compassion",
+    "name": "Hanu's Compassion",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "harmony-in-chaos",
+    "name": "Harmony in Chaos",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "harpooners-wading-kilt",
+    "name": "Harpooner's Wading Kilt",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "hatchlings-shell",
+    "name": "Hatchling's Shell",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "haven-of-ursus",
+    "name": "Haven of Ursus",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "hawks-eye",
+    "name": "Hawk's Eye",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "healers-habit",
+    "name": "Healer's Habit",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "healing-mage",
+    "name": "Healing Mage",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "heartland-conqueror",
+    "name": "Heartland Conqueror",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "heem-jas-retribution",
+    "name": "Heem-Jas' Retribution",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "heroic-unity",
+    "name": "Heroic Unity",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "hew-and-sunder",
+    "name": "Hew and Sunder",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "hex-siphon",
+    "name": "Hex Siphon",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "hexos-ward",
+    "name": "Hexos' Ward",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "hide-of-morihaus",
+    "name": "Hide of Morihaus",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "hide-of-the-werewolf",
+    "name": "Hide of the Werewolf",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "highland-sentinel",
+    "name": "Highland Sentinel",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "hircines-veneer",
+    "name": "Hircine's Veneer",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "hist-bark",
+    "name": "Hist Bark",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "hist-whisperer",
+    "name": "Hist Whisperer",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "hitis-hearth",
+    "name": "Hiti's Hearth",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "hollowfang-thirst",
+    "name": "Hollowfang Thirst",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "hrothgars-chill",
+    "name": "Hrothgar's Chill",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "hundings-rage",
+    "name": "Hunding's Rage",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "hunt-leader",
+    "name": "Hunt Leader",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "huntsmans-warmask",
+    "name": "Huntsman's Warmask",
+    "type": "Mythic",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "iceheart",
+    "name": "Iceheart",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "icy-conjurer",
+    "name": "Icy Conjurer",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "ilambris",
+    "name": "Ilambris",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "immolator-charr",
+    "name": "Immolator Charr",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "immortal-warrior",
+    "name": "Immortal Warrior",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "imperial-physique",
+    "name": "Imperial Physique",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "impregnable-armor",
+    "name": "Impregnable Armor",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "indomitable-fury",
+    "name": "Indomitable Fury",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "infallible-mage",
+    "name": "Infallible Mage",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "infernal-guardian",
+    "name": "Infernal Guardian",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "innate-axiom",
+    "name": "Innate Axiom",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "inventors-guard",
+    "name": "Inventor's Guard",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "iron-flask",
+    "name": "Iron Flask",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "ironblood",
+    "name": "Ironblood",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "jailbreaker",
+    "name": "Jailbreaker",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "jailers-tenacity",
+    "name": "Jailer's Tenacity",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "jerall-mountains-warchief",
+    "name": "Jerall Mountains Warchief",
+    "type": "Monster",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "jerensis-bladestorm",
+    "name": "Jerensi's Bladestorm",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "jolting-arms",
+    "name": "Jolting Arms",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "jorvulds-guidance",
+    "name": "Jorvuld's Guidance",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "judgment-of-akatosh",
+    "name": "Judgment of Akatosh",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "kagrenacs-hope",
+    "name": "Kagrenac's Hope",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "kargaeda",
+    "name": "Kargaeda",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "kazpians-cruel-signet",
+    "name": "Kazpian's Cruel Signet",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "kinrass-wrath",
+    "name": "Kinras's Wrath",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "kjalnars-nightmare",
+    "name": "Kjalnar's Nightmare",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "knight-slayer",
+    "name": "Knight Slayer",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "knight-errants-mail",
+    "name": "Knight-errant's Mail",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "knightmare",
+    "name": "Knightmare",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "kragh",
+    "name": "Kra'gh",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "kraglens-howl",
+    "name": "Kraglen's Howl",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "kvatch-gladiator",
+    "name": "Kvatch Gladiator",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "kynes-kiss",
+    "name": "Kyne's Kiss",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "kynes-wind",
+    "name": "Kyne's Wind",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "kynmarchers-cruelty",
+    "name": "Kynmarcher's Cruelty",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "lady-malygda",
+    "name": "Lady Malygda",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "lady-thorn",
+    "name": "Lady Thorn",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "lamias-song",
+    "name": "Lamia's Song",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "lamp-knights-art",
+    "name": "Lamp Knight's Art",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "languor-of-peryite",
+    "name": "Languor of Peryite",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "law-of-julianos",
+    "name": "Law of Julianos",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "leeching-plate",
+    "name": "Leeching Plate",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "lefthanders-aegis-belt",
+    "name": "Lefthander's Aegis Belt",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "legacy-of-karth",
+    "name": "Legacy of Karth",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "lekis-focus",
+    "name": "Leki's Focus",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "leviathan",
+    "name": "Leviathan",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "light-of-cyrodiil",
+    "name": "Light of Cyrodiil",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "light-speaker",
+    "name": "Light Speaker",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "livewire",
+    "name": "Livewire",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "lord-warden",
+    "name": "Lord Warden",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "lucent-echoes",
+    "name": "Lucent Echoes",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "lucillas-windshield",
+    "name": "Lucilla's Windshield",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "lunar-bastion",
+    "name": "Lunar Bastion",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "lustrous-soulwell",
+    "name": "Lustrous Soulwell",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "maarselok",
+    "name": "Maarselok",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "macabre-vintage",
+    "name": "Macabre Vintage",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "mad-gods-dancing-shoes",
+    "name": "Mad God's Dancing Shoes",
+    "type": "Mythic",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "mad-tinkerer",
+    "name": "Mad Tinkerer",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "magicka-furnace",
+    "name": "Magicka Furnace",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "magma-incarnate",
+    "name": "Magma Incarnate",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "magnus-gift",
+    "name": "Magnus' Gift",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "malacaths-band-of-brutality",
+    "name": "Malacath's Band of Brutality",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "maligaligs-maelstrom",
+    "name": "Maligalig's Maelstrom",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "mantle-of-siroria",
+    "name": "Mantle of Siroria",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "maras-balm",
+    "name": "Mara's Balm",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "marauders-haste",
+    "name": "Marauder's Haste",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "mark-of-the-pariah",
+    "name": "Mark of the Pariah",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "marksmans-crest",
+    "name": "Marksman's Crest",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "markyn-ring-of-majesty",
+    "name": "Markyn Ring of Majesty",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "master-architect",
+    "name": "Master Architect",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "maw-of-the-infernal",
+    "name": "Maw of the Infernal",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "mechanical-acuity",
+    "name": "Mechanical Acuity",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "medusa",
+    "name": "Medusa",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "menders-ward",
+    "name": "Mender's Ward",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "merciless-charge",
+    "name": "Merciless Charge",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "meridias-blessed-armor",
+    "name": "Meridia's Blessed Armor",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "meritorious-service",
+    "name": "Meritorious Service",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "might-of-the-lost-legion",
+    "name": "Might of the Lost Legion",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "mighty-chudan",
+    "name": "Mighty Chudan",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "mighty-glacier",
+    "name": "Mighty Glacier",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "molag-kena",
+    "name": "Molag Kena",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "monolith-of-storms",
+    "name": "Monolith of Storms",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "monomyth-reforged",
+    "name": "Monomyth Reforged",
+    "type": "Mythic",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "moon-hunter",
+    "name": "Moon Hunter",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "moondancer",
+    "name": "Moondancer",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "mora-scribes-thesis",
+    "name": "Mora Scribe's Thesis",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "moras-whispers",
+    "name": "Mora's Whispers",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "morkuldin",
+    "name": "Morkuldin",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "mother-ciannait",
+    "name": "Mother Ciannait",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "mothers-sorrow",
+    "name": "Mother's Sorrow",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "naga-shaman",
+    "name": "Naga Shaman",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "nazaray",
+    "name": "Nazaray",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "necropotence",
+    "name": "Necropotence",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "nerieneth",
+    "name": "Nerien'eth",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "netch-oil",
+    "name": "Netch Oil",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "netchs-touch",
+    "name": "Netch's Touch",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "new-moon-acolyte",
+    "name": "New Moon Acolyte",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "nibenay-bay-battlereeve",
+    "name": "Nibenay Bay Battlereeve",
+    "type": "Monster",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "night-mothers-embrace",
+    "name": "Night Mother's Embrace",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "night-mothers-gaze",
+    "name": "Night Mother's Gaze",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "night-terror",
+    "name": "Night Terror",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "nights-silence",
+    "name": "Night's Silence",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "nightflame",
+    "name": "Nightflame",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "nikulas-heavy-armor",
+    "name": "Nikulas' Heavy Armor",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "nix-hounds-howl",
+    "name": "Nix-Hound's Howl",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "nobility-in-decay",
+    "name": "Nobility in Decay",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "noble-duelists-silks",
+    "name": "Noble Duelist's Silks",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "nobles-conquest",
+    "name": "Noble's Conquest",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "nocturnals-favor",
+    "name": "Nocturnal's Favor",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "nocturnals-ploy",
+    "name": "Nocturnal's Ploy",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "noxious-boulder",
+    "name": "Noxious Boulder",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "nunatak",
+    "name": "Nunatak",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "oakensoul-ring",
+    "name": "Oakensoul Ring",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "oakfathers-retribution",
+    "name": "Oakfather's Retribution",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "oblivions-edge",
+    "name": "Oblivion's Edge",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "oblivions-foe",
+    "name": "Oblivion's Foe",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "old-growth-brewer",
+    "name": "Old Growth Brewer",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "order-of-diagna",
+    "name": "Order of Diagna",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "orders-wrath",
+    "name": "Order's Wrath",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "orgnums-scales",
+    "name": "Orgnum's Scales",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "orpheon-the-tactician",
+    "name": "Orpheon the Tactician",
+    "type": "Monster",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "overwhelming-surge",
+    "name": "Overwhelming Surge",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "ozezan-the-inferno",
+    "name": "Ozezan the Inferno",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "pangrit-denmother",
+    "name": "Pangrit Denmother",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "para-bellum",
+    "name": "Para Bellum",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "peace-and-serenity",
+    "name": "Peace and Serenity",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "pearlescent-ward",
+    "name": "Pearlescent Ward",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "pearls-of-ehlnofey",
+    "name": "Pearls of Ehlnofey",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "pelinals-wrath",
+    "name": "Pelinal's Wrath",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "perfected-aegis-of-galenwe",
+    "name": "Perfected Aegis of Galenwe",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-ansuuls-torment",
+    "name": "Perfected Ansuul's Torment",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-arms-of-relequen",
+    "name": "Perfected Arms of Relequen",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-bahseis-mania",
+    "name": "Perfected Bahsei's Mania",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-caustic-arrow",
+    "name": "Perfected Caustic Arrow",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-chaotic-whirlwind",
+    "name": "Perfected Chaotic Whirlwind",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-claw-of-yolnahkriin",
+    "name": "Perfected Claw of Yolnahkriin",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-concentrated-force",
+    "name": "Perfected Concentrated Force",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-coral-riptide",
+    "name": "Perfected Coral Riptide",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-cruel-flurry",
+    "name": "Perfected Cruel Flurry",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-crushing-wall",
+    "name": "Perfected Crushing Wall",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-defensive-position",
+    "name": "Perfected Defensive Position",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-destructive-impact",
+    "name": "Perfected Destructive Impact",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-disciplined-slash",
+    "name": "Perfected Disciplined Slash",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-dolorous-arena",
+    "name": "Perfected Dolorous Arena",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "perfected-executioners-blade",
+    "name": "Perfected Executioner's Blade",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-eye-of-nahviintaas",
+    "name": "Perfected Eye of Nahviintaas",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-false-gods-devotion",
+    "name": "Perfected False God's Devotion",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-force-overflow",
+    "name": "Perfected Force Overflow",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-frenzied-momentum",
+    "name": "Perfected Frenzied Momentum",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-gallant-charge",
+    "name": "Perfected Gallant Charge",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-grand-rejuvenation",
+    "name": "Perfected Grand Rejuvenation",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-harmony-in-chaos",
+    "name": "Perfected Harmony in Chaos",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "perfected-kazpians-cruel-signet",
+    "name": "Perfected Kazpian's Cruel Signet",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "perfected-kynes-wind",
+    "name": "Perfected Kyne's Wind",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-lucent-echoes",
+    "name": "Perfected Lucent Echoes",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-mantle-of-siroria",
+    "name": "Perfected Mantle of Siroria",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-menders-ward",
+    "name": "Perfected Mender's Ward",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-merciless-charge",
+    "name": "Perfected Merciless Charge",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-mora-scribes-thesis",
+    "name": "Perfected Mora Scribe's Thesis",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-peace-and-serenity",
+    "name": "Perfected Peace and Serenity",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-pearlescent-ward",
+    "name": "Perfected Pearlescent Ward",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-piercing-spray",
+    "name": "Perfected Piercing Spray",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-pillagers-profit",
+    "name": "Perfected Pillager's Profit",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-point-blank-snipe",
+    "name": "Perfected Point-Blank Snipe",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-precise-regeneration",
+    "name": "Perfected Precise Regeneration",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-puncturing-remedy",
+    "name": "Perfected Puncturing Remedy",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-radial-uppercut",
+    "name": "Perfected Radial Uppercut",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-rampaging-slash",
+    "name": "Perfected Rampaging Slash",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-recovery-convergence",
+    "name": "Perfected Recovery Convergence",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "perfected-roaring-opportunist",
+    "name": "Perfected Roaring Opportunist",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-saxhleel-champion",
+    "name": "Perfected Saxhleel Champion",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-slivers-of-the-null-arca",
+    "name": "Perfected Slivers of the Null Arca",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-spectral-cloak",
+    "name": "Perfected Spectral Cloak",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-stinging-slashes",
+    "name": "Perfected Stinging Slashes",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-stone-talkers-oath",
+    "name": "Perfected Stone-Talker's Oath",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-sul-xans-torment",
+    "name": "Perfected Sul-Xan's Torment",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-test-of-resolve",
+    "name": "Perfected Test of Resolve",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-thunderous-volley",
+    "name": "Perfected Thunderous Volley",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-timeless-blessing",
+    "name": "Perfected Timeless Blessing",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-titanic-cleave",
+    "name": "Perfected Titanic Cleave",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-tooth-of-lokkestiiz",
+    "name": "Perfected Tooth of Lokkestiiz",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-transformative-hope",
+    "name": "Perfected Transformative Hope",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-vestment-of-olorime",
+    "name": "Perfected Vestment of Olorime",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-virulent-shot",
+    "name": "Perfected Virulent Shot",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-void-bash",
+    "name": "Perfected Void Bash",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-vrols-command",
+    "name": "Perfected Vrol's Command",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-whorl-of-the-depths",
+    "name": "Perfected Whorl of the Depths",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-wild-impulse",
+    "name": "Perfected Wild Impulse",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-wrath-of-elements",
+    "name": "Perfected Wrath of Elements",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "perfected-xoryns-masterpiece",
+    "name": "Perfected Xoryn's Masterpiece",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "perfected-yandirs-might",
+    "name": "Perfected Yandir's Might",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "permafrost",
+    "name": "Permafrost",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "pestilent-host",
+    "name": "Pestilent Host",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "phoenix",
+    "name": "Phoenix",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "phoenix-moth-theurge",
+    "name": "Phoenix Moth Theurge",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "phylacterys-grasp",
+    "name": "Phylactery's Grasp",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "piercing-spray",
+    "name": "Piercing Spray",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "pillagers-profit",
+    "name": "Pillager's Profit",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "pillar-of-nirn",
+    "name": "Pillar of Nirn",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "pirate-skeleton",
+    "name": "Pirate Skeleton",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "plague-doctor",
+    "name": "Plague Doctor",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "plague-slinger",
+    "name": "Plague Slinger",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "plaguebreak",
+    "name": "Plaguebreak",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "point-blank-snipe",
+    "name": "Point-Blank Snipe",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "poisonous-serpent",
+    "name": "Poisonous Serpent",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "powerful-assault",
+    "name": "Powerful Assault",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "prayer-shawl",
+    "name": "Prayer Shawl",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "precise-regeneration",
+    "name": "Precise Regeneration",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "prior-thierric",
+    "name": "Prior Thierric",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "prisoners-rags",
+    "name": "Prisoner's Rags",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "prophets",
+    "name": "Prophet's",
+    "type": "Mythic",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "prototype-mythic-ring-u49-mythic-proto-4",
+    "name": "Prototype Mythic Ring - u49 Mythic Proto 4",
+    "type": "Mythic",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "puncturing-remedy",
+    "name": "Puncturing Remedy",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "pyrebrand",
+    "name": "Pyrebrand",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "queens-elegance",
+    "name": "Queen's Elegance",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "quick-serpent",
+    "name": "Quick Serpent",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "radial-uppercut",
+    "name": "Radial Uppercut",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "radiant-bastion",
+    "name": "Radiant Bastion",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "rage-of-the-ursauk",
+    "name": "Rage of the Ursauk",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "rakkhats-voidmantle",
+    "name": "Rakkhat's Voidmantle",
+    "type": "Mythic",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "rallying-cry",
+    "name": "Rallying Cry",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "rampaging-slash",
+    "name": "Rampaging Slash",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "rangers-gait",
+    "name": "Ranger's Gait",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "rattlecage",
+    "name": "Rattlecage",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "ravager",
+    "name": "Ravager",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "reactive-armor",
+    "name": "Reactive Armor",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "reawakened-hierophant",
+    "name": "Reawakened Hierophant",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "recovery-convergence",
+    "name": "Recovery Convergence",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "red-eagles-fury",
+    "name": "Red Eagle's Fury",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "redistributor",
+    "name": "Redistributor",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "reflected-fury",
+    "name": "Reflected Fury",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "relics-of-the-physician-ansur",
+    "name": "Relics of the Physician, Ansur",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "relics-of-the-rebellion",
+    "name": "Relics of the Rebellion",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "renalds-resolve",
+    "name": "Renald's Resolve",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "ring-of-the-pale-order",
+    "name": "Ring of the Pale Order",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "ring-of-the-wild-hunt",
+    "name": "Ring of the Wild Hunt",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "ritemasters-bond",
+    "name": "Ritemaster's Bond",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "roar-of-alkosh",
+    "name": "Roar of Alkosh",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "roaring-opportunist",
+    "name": "Roaring Opportunist",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "robes-of-alteration-mastery",
+    "name": "Robes of Alteration Mastery",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "robes-of-destruction-mastery",
+    "name": "Robes of Destruction Mastery",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "robes-of-the-hist",
+    "name": "Robes of the Hist",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "robes-of-the-withered-hand",
+    "name": "Robes of the Withered Hand",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "robes-of-transmutation",
+    "name": "Robes of Transmutation",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "roksa-the-warped",
+    "name": "Roksa the Warped",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "rourken-steamguards",
+    "name": "Rourken Steamguards",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "runecarvers-blaze",
+    "name": "Runecarver's Blaze",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "rush-of-agony",
+    "name": "Rush of Agony",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "salvation",
+    "name": "Salvation",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "sanctuary",
+    "name": "Sanctuary",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "savage-werewolf",
+    "name": "Savage Werewolf",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "saxhleel-champion",
+    "name": "Saxhleel Champion",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "scathing-mage",
+    "name": "Scathing Mage",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "scavenging-demise",
+    "name": "Scavenging Demise",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "scorions-feast",
+    "name": "Scorion's Feast",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "scourge-harvester",
+    "name": "Scourge Harvester",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "sea-serpents-coil",
+    "name": "Sea-Serpent's Coil",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "seeker-synthesis",
+    "name": "Seeker Synthesis",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "selene",
+    "name": "Selene",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "sellistrix",
+    "name": "Sellistrix",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "senchal-defender",
+    "name": "Senchal Defender",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "senche-rahts-grit",
+    "name": "Senche-raht's Grit",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "senches-bite",
+    "name": "Senche's Bite",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "sentinel-of-rkugamz",
+    "name": "Sentinel of Rkugamz",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "sentry",
+    "name": "Sentry",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "sergeants-mail",
+    "name": "Sergeant's Mail",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "serpents-disdain",
+    "name": "Serpent's Disdain",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "seventh-legion-brute",
+    "name": "Seventh Legion Brute",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "shacklebreaker",
+    "name": "Shacklebreaker",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "shadow-dancers-raiment",
+    "name": "Shadow Dancer's Raiment",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "shadow-of-the-red-mountain",
+    "name": "Shadow of the Red Mountain",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "shadow-walker",
+    "name": "Shadow Walker",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "shadowrend",
+    "name": "Shadowrend",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "shalidors-curse",
+    "name": "Shalidor's Curse",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "shalk-exoskeleton",
+    "name": "Shalk Exoskeleton",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "shapeshifters-chain",
+    "name": "Shapeshifter's Chain",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "shared-burden",
+    "name": "Shared Burden",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "shared-pain",
+    "name": "Shared Pain",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "shattered-fate",
+    "name": "Shattered Fate",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "shattered-paths-signet",
+    "name": "Shattered Paths Signet",
+    "type": "Mythic",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "sheer-venom",
+    "name": "Sheer Venom",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "shell-splitter",
+    "name": "Shell Splitter",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "shield-breaker",
+    "name": "Shield Breaker",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "shield-of-the-valiant",
+    "name": "Shield of the Valiant",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "shroud-of-the-lich",
+    "name": "Shroud of the Lich",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "siegemasters-focus",
+    "name": "Siegemaster's Focus",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "silks-of-the-sun",
+    "name": "Silks of the Sun",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "silver-rose-vigil",
+    "name": "Silver Rose Vigil",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "sithis-touch",
+    "name": "Sithis' Touch",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "skooma-smuggler",
+    "name": "Skooma Smuggler",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "slimecraw",
+    "name": "Slimecraw",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "slivers-of-the-null-arca",
+    "name": "Slivers of the Null Arca",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "sloads-semblance",
+    "name": "Sload's Semblance",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "sluthrugs-hunger",
+    "name": "Sluthrug's Hunger",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "snake-in-the-stars",
+    "name": "Snake in the Stars",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "snow-treaders",
+    "name": "Snow Treaders",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "soldier-of-anguish",
+    "name": "Soldier of Anguish",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "song-of-lamae",
+    "name": "Song of Lamae",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "soulcleaver",
+    "name": "Soulcleaver",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "soulshine",
+    "name": "Soulshine",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "spattering-disjunction",
+    "name": "Spattering Disjunction",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "spaulder-of-ruin",
+    "name": "Spaulder of Ruin",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "spawn-of-mephala",
+    "name": "Spawn of Mephala",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "spectral-cloak",
+    "name": "Spectral Cloak",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "spectres-eye",
+    "name": "Spectre's Eye",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "spell-parasite",
+    "name": "Spell Parasite",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "spell-power-cure",
+    "name": "Spell Power Cure",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "spell-strategist",
+    "name": "Spell Strategist",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "spellshredder",
+    "name": "Spellshredder",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "spelunker",
+    "name": "Spelunker",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "spider-cultist-cowl",
+    "name": "Spider Cultist Cowl",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "spinners-garments",
+    "name": "Spinner's Garments",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "spriggans-thorns",
+    "name": "Spriggan's Thorns",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "spriggans-vigor",
+    "name": "Spriggan's Vigor",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "squall-of-retribution",
+    "name": "Squall of Retribution",
+    "type": "Monster",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "steadfast-hero",
+    "name": "Steadfast Hero",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "steadfasts-mettle",
+    "name": "Steadfast's Mettle",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "stendarrs-embrace",
+    "name": "Stendarr's Embrace",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "stinging-slashes",
+    "name": "Stinging Slashes",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "stone-husk",
+    "name": "Stone Husk",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "stone-talkers-oath",
+    "name": "Stone-Talker's Oath",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "stones-accord",
+    "name": "Stone's Accord",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "stonehulk-domination",
+    "name": "Stonehulk Domination",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "stonekeeper",
+    "name": "Stonekeeper",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "storm-knights-plate",
+    "name": "Storm Knight's Plate",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "storm-master",
+    "name": "Storm Master",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "storm-curseds-revenge",
+    "name": "Storm-Cursed's Revenge",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "stormfist",
+    "name": "Stormfist",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "stormweavers-cavort",
+    "name": "Stormweaver's Cavort",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "strength-of-the-automaton",
+    "name": "Strength of the Automaton",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "stuhns-favor",
+    "name": "Stuhn's Favor",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "stygian",
+    "name": "Stygian",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "sul-xans-torment",
+    "name": "Sul-Xan's Torment",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "sunderflame",
+    "name": "Sunderflame",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "swamp-raider",
+    "name": "Swamp Raider",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "swarm-mother",
+    "name": "Swarm Mother",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "sword-dancer",
+    "name": "Sword Dancer",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "sword-singer",
+    "name": "Sword-Singer",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "symmetry-of-the-weald",
+    "name": "Symmetry of the Weald",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "symphony-of-blades",
+    "name": "Symphony of Blades",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "syrabanes-grip",
+    "name": "Syrabane's Grip",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "syrabanes-ward",
+    "name": "Syrabane's Ward",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "systres-scowl",
+    "name": "Systres' Scowl",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "syvarras-scales",
+    "name": "Syvarra's Scales",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "talfygs-treachery",
+    "name": "Talfyg's Treachery",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "tarnished-nightmare",
+    "name": "Tarnished Nightmare",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "tavas-favor",
+    "name": "Tava's Favor",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "telvanni-efficiency",
+    "name": "Telvanni Efficiency",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "telvanni-enforcer",
+    "name": "Telvanni Enforcer",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "test-of-resolve",
+    "name": "Test of Resolve",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "tharrikers-strike",
+    "name": "Tharriker's Strike",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "the-arch-mage",
+    "name": "The Arch-Mage",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "the-blind",
+    "name": "The Blind",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "the-destruction-suite",
+    "name": "The Destruction Suite",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "the-ice-furnace",
+    "name": "The Ice Furnace",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "the-juggernaut",
+    "name": "The Juggernaut",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "the-morag-tong",
+    "name": "The Morag Tong",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "the-ruckus",
+    "name": "The Ruckus",
+    "type": "Monster",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "the-saint-and-the-seducer",
+    "name": "The Saint and the Seducer",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "the-shadow-queens-cowl",
+    "name": "The Shadow Queen's Cowl",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "the-troll-king",
+    "name": "The Troll King",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "the-worms-raiment",
+    "name": "The Worm's Raiment",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "thews-of-the-harbinger",
+    "name": "Thews of the Harbinger",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "thousand-eyes",
+    "name": "Thousand Eyes",
+    "type": "Monster",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "thrassian-stranglers",
+    "name": "Thrassian Stranglers",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "threads-of-war",
+    "name": "Threads of War",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "three-queens-wellspring",
+    "name": "Three Queens Wellspring",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "thunder-caller",
+    "name": "Thunder Caller",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "thunderbugs-carapace",
+    "name": "Thunderbug's Carapace",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "thunderous-volley",
+    "name": "Thunderous Volley",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "thurvokun",
+    "name": "Thurvokun",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "tide-born-wildstalker",
+    "name": "Tide-Born Wildstalker",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "timeless-blessing",
+    "name": "Timeless Blessing",
+    "type": "Monster",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "titanborn-strength",
+    "name": "Titanborn Strength",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "titanic-cleave",
+    "name": "Titanic Cleave",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "tools-of-the-trapmaster",
+    "name": "Tools of the Trapmaster",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "tooth-of-lokkestiiz",
+    "name": "Tooth of Lokkestiiz",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "toothrow",
+    "name": "Toothrow",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "torc-of-the-last-ayleid-king",
+    "name": "Torc of the Last Ayleid King",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "torc-of-tonal-constancy",
+    "name": "Torc of Tonal Constancy",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "tormentor",
+    "name": "Tormentor",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "torugs-pact",
+    "name": "Torug's Pact",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "trackers-lash",
+    "name": "Tracker's Lash",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "transformative-hope",
+    "name": "Transformative Hope",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "trappings-of-invigoration",
+    "name": "Trappings of Invigoration",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "treasure-hunter",
+    "name": "Treasure Hunter",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "treasures-of-the-earthforge",
+    "name": "Treasures of the Earthforge",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "tremorscale",
+    "name": "Tremorscale",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "trial-by-fire",
+    "name": "Trial by Fire",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "trinimacs-valor",
+    "name": "Trinimac's Valor",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "true-sworn-fury",
+    "name": "True-Sworn Fury",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "turning-tide",
+    "name": "Turning Tide",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "twice-born-star",
+    "name": "Twice-Born Star",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "twice-fanged-serpent",
+    "name": "Twice-Fanged Serpent",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "twilight-remedy",
+    "name": "Twilight Remedy",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "twilights-embrace",
+    "name": "Twilight's Embrace",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "twin-sisters",
+    "name": "Twin Sisters",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "tzogvins-warband",
+    "name": "Tzogvin's Warband",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "ulfnors-favor",
+    "name": "Ulfnor's Favor",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "umbral-edge",
+    "name": "Umbral Edge",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "unchained-aggressor",
+    "name": "Unchained Aggressor",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "undaunted-bastion",
+    "name": "Undaunted Bastion",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "undaunted-infiltrator",
+    "name": "Undaunted Infiltrator",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "undaunted-unweaver",
+    "name": "Undaunted Unweaver",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "unfathomable-darkness",
+    "name": "Unfathomable Darkness",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "unflinching-ultimate",
+    "name": "Unflinching Ultimate",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "unleashed-ritualist",
+    "name": "Unleashed Ritualist",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "unleashed-terror",
+    "name": "Unleashed Terror",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "valkyn-skoria",
+    "name": "Valkyn Skoria",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "vampire-cloak",
+    "name": "Vampire Cloak",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "vampire-lord",
+    "name": "Vampire Lord",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "vampires-kiss",
+    "name": "Vampire's Kiss",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "vandorallens-resonance",
+    "name": "Vandorallen's Resonance",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "vanguards-challenge",
+    "name": "Vanguard's Challenge",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "varens-legacy",
+    "name": "Varen's Legacy",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "vastaries-tutelage",
+    "name": "Vastarie's Tutelage",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "velidreth",
+    "name": "Velidreth",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "velothi-ur-mages-amulet",
+    "name": "Velothi Ur-Mage's Amulet",
+    "type": "Mythic",
+    "acquisition": "Mythic"
+  },
+  {
+    "id": "vengeance-leech",
+    "name": "Vengeance Leech",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "venomous-smite",
+    "name": "Venomous Smite",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "vestment-of-olorime",
+    "name": "Vestment of Olorime",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "vestments-of-the-warlock",
+    "name": "Vestments of the Warlock",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "vesture-of-darloc-brae",
+    "name": "Vesture of Darloc Brae",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "vicecanon-of-venom",
+    "name": "Vicecanon of Venom",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "vicious-death",
+    "name": "Vicious Death",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "vicious-serpent",
+    "name": "Vicious Serpent",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "vipers-sting",
+    "name": "Viper's Sting",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "virulent-shot",
+    "name": "Virulent Shot",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "vivecs-duality",
+    "name": "Vivec's Duality",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "void-bash",
+    "name": "Void Bash",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "voidcaller",
+    "name": "Voidcaller",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "vrols-command",
+    "name": "Vrol's Command",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "vykands-soulfury",
+    "name": "Vykand's Soulfury",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "vykosa",
+    "name": "Vykosa",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "war-machine",
+    "name": "War Machine",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "war-maiden",
+    "name": "War Maiden",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "ward-of-cyrodiil",
+    "name": "Ward of Cyrodiil",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "warrior-poet",
+    "name": "Warrior-Poet",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "warriors-fury",
+    "name": "Warrior's Fury",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "way-of-air",
+    "name": "Way of Air",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "way-of-fire",
+    "name": "Way of Fire",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "way-of-martial-knowledge",
+    "name": "Way of Martial Knowledge",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "way-of-the-arena",
+    "name": "Way of the Arena",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "whitestrakes-retribution",
+    "name": "Whitestrake's Retribution",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "whorl-of-the-depths",
+    "name": "Whorl of the Depths",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "widowmaker",
+    "name": "Widowmaker",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "wild-impulse",
+    "name": "Wild Impulse",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "wilderqueens-arch",
+    "name": "Wilderqueen's Arch",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "willows-path",
+    "name": "Willow's Path",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "willpower",
+    "name": "Willpower",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "winters-respite",
+    "name": "Winter's Respite",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "winterborn",
+    "name": "Winterborn",
+    "type": "Mixed",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "wisdom-of-vanus",
+    "name": "Wisdom of Vanus",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "wise-mage",
+    "name": "Wise Mage",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "witch-knights-defiance",
+    "name": "Witch-Knight's Defiance",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "witchman-armor",
+    "name": "Witchman Armor",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "wizards-riposte",
+    "name": "Wizard's Riposte",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "wrath-of-elements",
+    "name": "Wrath of Elements",
+    "type": "Monster",
+    "acquisition": "Arena"
+  },
+  {
+    "id": "wrath-of-the-imperium",
+    "name": "Wrath of the Imperium",
+    "type": "Mixed",
+    "acquisition": "PvP"
+  },
+  {
+    "id": "wrathsun",
+    "name": "Wrathsun",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "wretched-vitality",
+    "name": "Wretched Vitality",
+    "type": "Mixed",
+    "acquisition": "Crafted"
+  },
+  {
+    "id": "wyrd-trees-blessing",
+    "name": "Wyrd Tree's Blessing",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "xanmeer-genesis",
+    "name": "Xanmeer Genesis",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "xanmeer-spellweaver",
+    "name": "Xanmeer Spellweaver",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "xoryns-masterpiece",
+    "name": "Xoryn's Masterpiece",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "yandirs-might",
+    "name": "Yandir's Might",
+    "type": "Mixed",
+    "acquisition": "Trial"
+  },
+  {
+    "id": "ysgramors-birthright",
+    "name": "Ysgramor's Birthright",
+    "type": "Mixed",
+    "acquisition": "Overland"
+  },
+  {
+    "id": "zens-redress",
+    "name": "Z'en's Redress",
+    "type": "Mixed",
+    "acquisition": "Dungeon"
+  },
+  {
+    "id": "zaan",
+    "name": "Zaan",
+    "type": "Monster",
+    "acquisition": "Monster"
+  },
+  {
+    "id": "zoal-the-ever-wakeful",
+    "name": "Zoal the Ever-Wakeful",
+    "type": "Monster",
+    "acquisition": "Monster"
+  }
+]

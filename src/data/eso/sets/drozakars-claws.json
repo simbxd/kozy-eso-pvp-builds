@@ -1,0 +1,45 @@
+{
+  "id": "drozakars-claws",
+  "name": "Dro'Zakar's Claws",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Northern Elsweyr, Moongrave Fane",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "For every bleed effect you have on an enemy, increase your Weapon and Spell Damage by 2-103 against them.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dro'Zakar's_Claws",
+  "esohub_url": "https://eso-hub.com/en/sets/drozakars-claws"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "40189837",
+  "slug": "the-tide-kings-gaze",
+  "name": "The Tide King's Gaze",
+  "description": "Tear open the fabric of the Aurbis to summon a scion of Hermaeus Mora. This being casts forth a beam that rends asunder reality for 8 seconds that deals 1151 Magic Damage to enemies within 5 meters every 0.5 seconds. \n\nThe scion's beam automatically follows the initial target, and hunts for a new one within 8 meters if it is slain.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

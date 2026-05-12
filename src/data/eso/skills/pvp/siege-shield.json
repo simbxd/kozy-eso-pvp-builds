@@ -1,0 +1,11 @@
+{
+  "id": "46653",
+  "slug": "siege-shield",
+  "name": "Siege Shield",
+  "description": "Create a protective sphere over your location that reduces damage taken from siege weapons by 50% for you and nearby allies.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

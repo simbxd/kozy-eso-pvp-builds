@@ -1,0 +1,28 @@
+{
+  "id": "the-troll-king",
+  "name": "The Troll King",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "The Lava Queen in Blessed Crucible, Glirion the Redbeard",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "When you heal yourself or an ally, if they are still below 50% Health, their Health Recovery is increased by 21-925 for 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Troll_King",
+  "esohub_url": "https://eso-hub.com/en/sets/the-troll-king"
+}

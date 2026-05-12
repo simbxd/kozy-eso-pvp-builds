@@ -1,0 +1,30 @@
+{
+  "id": "endurance",
+  "name": "Endurance",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Imperial City Treasure Vaults",
+  "dlc": "Base Game",
+  "pieces": 3,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1928
+    },
+    {
+      "count": 3,
+      "stat": "Health Recovery",
+      "value": 618
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Endurance",
+  "esohub_url": "https://eso-hub.com/en/sets/endurance"
+}

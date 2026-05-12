@@ -1,0 +1,40 @@
+{
+  "id": "crusader",
+  "name": "Crusader",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Alik'r Desert, Volenfell",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal direct damage with a Blink, Charge, Leap, Teleport, or Pull ability, you consecrate the ground beneath you for 10 seconds and gain a damage shield that absorbs 1595 damage for 6 seconds. Every 2 seconds you and nearby group members in the area gain Minor Courage for 12 seconds. These effects can occur once every 20 seconds and the damage shield scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Crusader",
+  "esohub_url": "https://eso-hub.com/en/sets/crusader"
+}

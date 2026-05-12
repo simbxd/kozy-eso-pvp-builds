@@ -1,0 +1,11 @@
+{
+  "id": "117979",
+  "slug": "accursed-charge",
+  "name": "Accursed Charge",
+  "description": "Spring across the battlefield to smash an enemy, dealing 6300 Physical Damage.",
+  "category": "pvp",
+  "skill_line": "Volendrung",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

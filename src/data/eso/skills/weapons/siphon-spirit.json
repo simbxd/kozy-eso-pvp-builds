@@ -1,0 +1,11 @@
+{
+  "id": "41225",
+  "slug": "siphon-spirit",
+  "name": "Siphon Spirit",
+  "description": "Focus your staff's power to apply Minor Lifesteal to an enemy for 30 seconds, healing you and your allies for 600 Health every 1 second when damaging them.\n\nAlso applies Minor Magickasteal to the enemy for 30 seconds, causing you and your allies to restore 168 Magicka every 1 second when damaging them.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

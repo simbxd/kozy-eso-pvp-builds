@@ -1,0 +1,11 @@
+{
+  "id": "33697",
+  "slug": "core-of-flame",
+  "name": "Core of Flame",
+  "description": "Let the fire within draw heat to your core, restoring 15% of your missing Magicka and Stamina every 2 seconds over 4 seconds.\n\nWhen this ability completes, you release this heat as a blast of fire that deals 2002 Flame Damage to nearby enemies.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "umbral-edge",
+  "name": "Umbral Edge",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Infinite Archive",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you cast a Shadow ability, you gain Umbral Riposte for 3 seconds, up to once every 6 seconds. Umbral Riposte causes you to dodge the next attack made against you and automatically curses the attacking enemy, applying Major Vulnerability for 5 seconds, increasing their damage taken by 10%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Umbral_Edge",
+  "esohub_url": "https://eso-hub.com/en/sets/umbral-edge"
+}

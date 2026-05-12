@@ -1,0 +1,28 @@
+{
+  "id": "maarselok",
+  "name": "Maarselok",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Maarselok in Lair of Maarselok, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "When you deal damage with a melee Heavy Attack, you spew a cone of corruption, dealing 1492 Disease damage to enemies over 4 seconds. This damage is increased by 10% for each negative effect the enemies have, up to a maximum of 300%. This effect can occur once every 10 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Maarselok",
+  "esohub_url": "https://eso-hub.com/en/sets/maarselok"
+}

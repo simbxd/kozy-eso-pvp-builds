@@ -1,0 +1,40 @@
+{
+  "id": "unleashed-terror",
+  "name": "Unleashed Terror",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Western Skyrim, Castle Thorn",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you deal direct damage with a Blink, Charge, Leap, Teleport, or Pull ability, you cut your enemy, causing them to bleed for 10 seconds, dealing 1870 Bleed damage over the duration and applying the Hemorrhaging status effect every tick. This ability can occur once every 10 seconds per target and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Unleashed_Terror",
+  "esohub_url": "https://eso-hub.com/en/sets/unleashed-terror"
+}

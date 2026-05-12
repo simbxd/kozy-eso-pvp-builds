@@ -1,0 +1,40 @@
+{
+  "id": "hunt-leader",
+  "name": "Hunt Leader",
+  "type": "Mixed",
+  "acquisition": "Arena",
+  "location": "Maelstrom Arena",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When your pets attack an enemy you have also attacked in the last 10 seconds, you heal for 56-2433 Health and restore 28-1216 Stamina. This effect can occur once every 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hunt_Leader",
+  "esohub_url": "https://eso-hub.com/en/sets/hunt-leader"
+}

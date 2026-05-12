@@ -1,0 +1,45 @@
+{
+  "id": "hanus-compassion",
+  "name": "Hanu's Compassion",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Greenshade, March of Sacrifices",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Maximum Magicka",
+      "value": 1963
+    },
+    {
+      "count": 5,
+      "stat": "When you resurrect an ally while in combat, both you and your ally gain Major Heroism for 15 seconds, granting 3 Ultimate every 1.5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hanu's_Compassion",
+  "esohub_url": "https://eso-hub.com/en/sets/hanus-compassion"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "40115926",
+  "slug": "restoring-tether",
+  "name": "Restoring Tether",
+  "description": "Siphon the last remnants of life from a corpse, healing for 5544 Health over 12 seconds to yourself and all allies between you and the corpse. \n\nWhile slotted, your healing done is increased by 3%.",
+  "category": "classes",
+  "skill_line": "Living Death",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

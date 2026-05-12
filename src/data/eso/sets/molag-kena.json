@@ -1,0 +1,28 @@
+{
+  "id": "molag-kena",
+  "name": "Molag Kena",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Molag Kena in White-Gold Tower, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "When you consecutively Light Attack 2 times, you trigger Overkill for 6 seconds, which increases your Weapon and Spell Damage by 13-560 but also increases the cost of your abilities by 8%. This effect can occur once every 6 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Molag_Kena",
+  "esohub_url": "https://eso-hub.com/en/sets/molag-kena"
+}

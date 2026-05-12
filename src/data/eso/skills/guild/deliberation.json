@@ -1,0 +1,11 @@
+{
+  "id": "103972",
+  "slug": "deliberation",
+  "name": "Deliberation",
+  "description": "While you are casting or channeling a Psijic Order ability you reduce your damage taken by 30%.",
+  "category": "guild",
+  "skill_line": "Psijic Order",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

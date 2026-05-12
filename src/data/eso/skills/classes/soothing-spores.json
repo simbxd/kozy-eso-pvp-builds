@@ -1,0 +1,11 @@
+{
+  "id": "93777",
+  "slug": "soothing-spores",
+  "name": "Soothing Spores",
+  "description": "Seed a large area of mushrooms in front of you, healing you and your allies for 2700 Health.\n\nHeals for 15% more on allies that are within 8 meters of you.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

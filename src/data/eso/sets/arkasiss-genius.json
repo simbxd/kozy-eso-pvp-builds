@@ -1,0 +1,40 @@
+{
+  "id": "arkasiss-genius",
+  "name": "Arkasis's Genius",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Blackreach, Stone Garden",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Whenever you drink a potion while in combat, you and 3 group members gain 1-44 Ultimate. This effect can occur once every 30 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Arkasis's_Genius",
+  "esohub_url": "https://eso-hub.com/en/sets/arkasiss-genius"
+}

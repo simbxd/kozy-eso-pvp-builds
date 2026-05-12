@@ -1,0 +1,40 @@
+{
+  "id": "hollowfang-thirst",
+  "name": "Hollowfang Thirst",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Northern Elsweyr, Moongrave Fane",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When your healing critically strikes or when you critically damage a target, spawn a ball of Hemoglobin at their location. After 2 seconds the ball explodes, restoring 40-1750 Magicka and applying Minor Vitality to you and your group members within 6 meters of the ball for 9 seconds, increasing their healing received and damage shield strength by 6%. This effect can occur once every 9 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hollowfang_Thirst",
+  "esohub_url": "https://eso-hub.com/en/sets/hollowfang-thirst"
+}

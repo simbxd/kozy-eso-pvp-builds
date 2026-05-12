@@ -1,0 +1,11 @@
+{
+  "id": "45513",
+  "slug": "ancient-knowledge",
+  "name": "Ancient Knowledge",
+  "description": "Inferno Staves increases your damage done with damage over time and Status Effects by 12%.\n\nLightning Staves increases your damage done with direct damage and channeled effects by 12%.\n\nEquipping an Ice Staff reduces the cost of blocking by 36% and increases the amount of damage you block by 20%.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

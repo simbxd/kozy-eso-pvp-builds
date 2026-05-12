@@ -1,0 +1,11 @@
+{
+  "id": "34234",
+  "slug": "petrify-dummy",
+  "name": "Petrify dummy",
+  "description": null,
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

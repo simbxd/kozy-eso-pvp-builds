@@ -1,0 +1,40 @@
+{
+  "id": "storm-master",
+  "name": "Storm Master",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Malabal Tor, Tempest Island",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Critical Damage with a fully-charged Heavy Attack, your Light and Heavy Attacks deal an additional 35-1542 damage to monsters for 8 seconds. This effect can occur once every 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Storm_Master",
+  "esohub_url": "https://eso-hub.com/en/sets/storm-master"
+}

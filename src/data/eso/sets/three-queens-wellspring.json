@@ -1,0 +1,40 @@
+{
+  "id": "three-queens-wellspring",
+  "name": "Three Queens Wellspring",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Gain 1 Magicka Recovery for every 100 Max Magicka you have. \n\nCurrent Increase: \n120 Magicka Recovery",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Three_Queens_Wellspring",
+  "esohub_url": "https://eso-hub.com/en/sets/three-queens-wellspring"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "41351",
+  "slug": "defensive-posture",
+  "name": "Defensive Posture",
+  "description": "Bolster your defenses, gaining a damage shield that absorbs up to 4958 damage for 6 seconds.  This portion of the ability scales off your Max Health.\n\nYou reflect the next harmful direct damage projectile cast at you. This effect can occur once per cast.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

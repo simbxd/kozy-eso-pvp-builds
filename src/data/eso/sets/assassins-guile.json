@@ -1,0 +1,40 @@
+{
+  "id": "assassins-guile",
+  "name": "Assassin's Guile",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Vvardenfell, Marandus",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Increases the duration of your alchemical poisons by 4 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Assassin's_Guile",
+  "esohub_url": "https://eso-hub.com/en/sets/assassins-guile"
+}

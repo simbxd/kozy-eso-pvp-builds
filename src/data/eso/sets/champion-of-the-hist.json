@@ -1,0 +1,45 @@
+{
+  "id": "champion-of-the-hist",
+  "name": "Champion of the Hist",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Murkmire",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Maximum Health",
+      "value": 1600
+    },
+    {
+      "count": 5,
+      "stat": "Gain Minor Heroism at all times while you are in combat, generating 1 Ultimate every 1.5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Champion_of_the_Hist",
+  "esohub_url": "https://eso-hub.com/en/sets/champion-of-the-hist"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "33797",
+  "slug": "fire-keeper",
+  "name": "Fire Keeper",
+  "description": "Throw out a purifying flame, filling a large area with warmth for 15 seconds. This fire heals you and your allies at the target location for 449 Health every 1 second. This healing increases by 50% if you are in the area.\n\nHealed targets gain Minor Fortitude and Minor Heroism for 15 seconds, increasing Health Recovery by 15% and generating 1 Ultimate every 1.5 seconds.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

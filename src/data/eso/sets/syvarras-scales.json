@@ -1,0 +1,45 @@
+{
+  "id": "syvarras-scales",
+  "name": "Syvarra's Scales",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Hew's Bane",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Reduces your damage taken from Guards by 20%.",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage, you cause a burst of lamia poison that deals 149 Poison damage in a 5 meter radius and an additional 1494 Poison damage over 6 seconds to all enemies hit. This effect can occur once every 7 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Syvarra's_Scales",
+  "esohub_url": "https://eso-hub.com/en/sets/syvarras-scales"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "symphony-of-blades",
+  "name": "Symphony of Blades",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Symphony of Blades in Depths of Malatar, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "When you heal a group member who is under 50% of their primary resource, grant them Meridia's Favor, which restores 13-570 Magicka or Stamina every 1 second for 6 seconds. This effect can occur every 18 seconds per target.\n\nThis effect cannot target yourself, and the resource returned is based off the target's highest maximum resource.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Symphony_of_Blades",
+  "esohub_url": "https://eso-hub.com/en/sets/symphony-of-blades"
+}

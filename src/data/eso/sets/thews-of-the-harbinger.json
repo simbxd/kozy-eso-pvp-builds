@@ -1,0 +1,40 @@
+{
+  "id": "thews-of-the-harbinger",
+  "name": "Thews of the Harbinger",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Tel Var Merchant",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you Block, you deal 717 Physical Damage to the attacker. This effect scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Thews_of_the_Harbinger",
+  "esohub_url": "https://eso-hub.com/en/sets/thews-of-the-harbinger"
+}

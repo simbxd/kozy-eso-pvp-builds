@@ -1,0 +1,11 @@
+{
+  "id": "93593",
+  "slug": "scorch",
+  "name": "Scorch",
+  "description": "Stir a group of shalk that attack after 3 seconds, dealing 2509 Magic Damage to enemies in front of you.\n\nAfter the shalk complete their attack, they burrow underground for 6 seconds and then resurface again, dealing 3486 Magic Damage to enemies in front of you.",
+  "category": "classes",
+  "skill_line": "Animal Companions",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

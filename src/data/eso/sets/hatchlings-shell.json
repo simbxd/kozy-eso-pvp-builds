@@ -1,0 +1,40 @@
+{
+  "id": "hatchlings-shell",
+  "name": "Hatchling's Shell",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Shadowfen",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Whenever you take damage you gain a damage shield that absorbs up to 3200 damage for 6 seconds.  This effect can occur once every 6 seconds and scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hatchling's_Shell",
+  "esohub_url": "https://eso-hub.com/en/sets/hatchlings-shell"
+}

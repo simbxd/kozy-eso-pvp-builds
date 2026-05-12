@@ -1,0 +1,45 @@
+{
+  "id": "harmony-in-chaos",
+  "name": "Harmony in Chaos",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 200
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, activating a synergy increases your Weapon and Spell Damage by 88 for 15 seconds, stacking up to 5 times.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Harmony_in_Chaos",
+  "esohub_url": "https://eso-hub.com/en/sets/harmony-in-chaos"
+}

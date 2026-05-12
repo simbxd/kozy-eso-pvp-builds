@@ -1,0 +1,11 @@
+{
+  "id": "86065",
+  "slug": "bond-with-nature",
+  "name": "Bond with Nature",
+  "description": "Anytime one of your Animal Companion skills end, you are healed for 1530 Health.",
+  "category": "classes",
+  "skill_line": "Animal Companions",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

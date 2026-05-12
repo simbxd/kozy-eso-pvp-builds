@@ -1,0 +1,45 @@
+{
+  "id": "vampire-cloak",
+  "name": "Vampire Cloak",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Rivenspire",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 171
+    },
+    {
+      "count": 5,
+      "stat": "Gain Minor Protection at all times, reducing your damage taken by 5%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vampire_Cloak",
+  "esohub_url": "https://eso-hub.com/en/sets/vampire-cloak"
+}

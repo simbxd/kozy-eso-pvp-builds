@@ -1,0 +1,11 @@
+{
+  "id": "27501",
+  "slug": "sun-shield",
+  "name": "Sun Shield",
+  "description": "Surround yourself with solar rays, dealing 1742 Magic Damage to nearby enemies and applying Minor Maim to them for 10 seconds, reducing their damage done by 5%.\n\nThe rays then protect you, granting a damage shield that absorbs up to 4800 damage for 6 seconds, increasing by 10% for each enemy hit, up to 60%. This portion of the ability scales off your Max Health.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

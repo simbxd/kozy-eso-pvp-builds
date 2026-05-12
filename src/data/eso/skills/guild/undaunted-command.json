@@ -1,0 +1,11 @@
+{
+  "id": "55676",
+  "slug": "undaunted-command",
+  "name": "Undaunted Command",
+  "description": "Activating a synergy restores 4% of your Max Health, Stamina, and Magicka.\n\nCurrent Bonus: 640 Health, 480 Stamina, and 480 Magicka.",
+  "category": "guild",
+  "skill_line": "Undaunted",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

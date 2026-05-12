@@ -1,0 +1,11 @@
+{
+  "id": "86345",
+  "slug": "shield-discipline",
+  "name": "Shield Discipline",
+  "description": "Reinforce your shield, allowing you to automatically block all attacks at no cost for 8 seconds.\n\nYour One Hand and Shield non-Ultimate abilities cost nothing while this effect persists.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

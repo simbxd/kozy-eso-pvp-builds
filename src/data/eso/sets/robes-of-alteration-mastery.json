@@ -1,0 +1,40 @@
+{
+  "id": "robes-of-alteration-mastery",
+  "name": "Robes of Alteration Mastery",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Cropsford",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the cost of all of your abilities by 6%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Robes_of_Alteration_Mastery",
+  "esohub_url": "https://eso-hub.com/en/sets/robes-of-alteration-mastery"
+}

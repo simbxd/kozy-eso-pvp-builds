@@ -1,0 +1,40 @@
+{
+  "id": "vanguards-challenge",
+  "name": "Vanguard's Challenge",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Battlegrounds",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you taunt an enemy player, they deal 35% less damage to all other players but 35% more damage to you for 15 seconds. This effect is lost if you enter Sneak, invisibility, or move further than 28 meters away from them.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vanguard's_Challenge",
+  "esohub_url": "https://eso-hub.com/en/sets/vanguards-challenge"
+}

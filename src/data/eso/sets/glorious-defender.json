@@ -1,0 +1,40 @@
+{
+  "id": "glorious-defender",
+  "name": "Glorious Defender",
+  "type": "Mixed",
+  "acquisition": "Arena",
+  "location": "Maelstrom Arena",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you Bash an enemy, you gain Glorious Defense for 10 seconds, allowing you to dodge the next attack made against you and all others afterwards for 1 second. This effect can occur once every 13 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glorious_Defender",
+  "esohub_url": "https://eso-hub.com/en/sets/glorious-defender"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "chimeras-rebuke",
+  "name": "Chimera's Rebuke",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Galen",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Dealing damage with a fully-charged Heavy Attack also restores 54-2363 Magicka or Stamina to the three allies nearest your target. The resource restore is based on the type of weapon you are wielding.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Chimera's_Rebuke",
+  "esohub_url": "https://eso-hub.com/en/sets/chimeras-rebuke"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "bloodspawn",
+  "name": "Bloodspawn",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Vorenor Winterbourne in Spindleclutch II, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "When you take damage, you have a 6% chance to generate 0-13 Ultimate and increase your Physical and Spell Resistance by 86-3731 for 5 seconds. This effect can occur once every 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bloodspawn",
+  "esohub_url": "https://eso-hub.com/en/sets/bloodspawn"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "43393",
+  "slug": "inner-beast",
+  "name": "Inner Beast",
+  "description": "Ignite the fires of hate in an enemy's heart, dealing 2160 Physical Damage, taunting them to attack you, and applying Minor Maim and Minor Vulnerability for 15 seconds, reducing their damage done and increasing their damage taken by 5%.\n\nAn ally targeting the enemy can activate the Radiate synergy, dealing 1344 Flame Damage to them over 3 seconds then an additional 2249 Flame Damage to them and other nearby enemies.",
+  "category": "guild",
+  "skill_line": "Undaunted",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

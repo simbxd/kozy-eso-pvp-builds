@@ -1,0 +1,11 @@
+{
+  "id": "85883",
+  "slug": "accelerated-growth",
+  "name": "Accelerated Growth",
+  "description": "When you heal yourself or an ally under 40% Health with a Green Balance ability you gain Major Mending, increasing your healing done by 16% for 4 seconds.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

@@ -1,0 +1,11 @@
+{
+  "id": "30087",
+  "slug": "encase",
+  "name": "Encase",
+  "description": "Call forth Daedric shards from the earth to immobilize enemies in front of you for 4 seconds.\n\nEnemies hit are afflicted with Major Maim, reducing their damage done by 10% for 10 seconds.",
+  "category": "classes",
+  "skill_line": "Dark Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

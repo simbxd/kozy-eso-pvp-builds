@@ -1,0 +1,45 @@
+{
+  "id": "pestilent-host",
+  "name": "Pestilent Host",
+  "type": "Mixed",
+  "acquisition": "Arena",
+  "location": "Vateshran Hollows",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Whenever you kill an enemy afflicted with a poison effect, their corpse releases a writhing mass of Fetcherflies, which seek out the nearest enemy within 12 meters, causing them to bleed for 5850 Bleed damage over 10 seconds.  This effect scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pestilent_Host",
+  "esohub_url": "https://eso-hub.com/en/sets/pestilent-host"
+}

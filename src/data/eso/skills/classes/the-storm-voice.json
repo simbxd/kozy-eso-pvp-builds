@@ -1,0 +1,11 @@
+{
+  "id": "44953",
+  "slug": "the-storm-voice",
+  "name": "The Storm Voice",
+  "description": "The syllables of that ancient tongue live in the mouth of every Dragonknight.\n\nWhen you cast an Ultimate ability, you restore 16 Health, 16 Magicka, and 16 Stamina for each point of the Ultimate spent. Each Dragonknight ability slotted increases this value by 6.\n\nCurrent amount:\n16 Health\n16 Magicka \n16 Stamina",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

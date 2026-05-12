@@ -1,0 +1,11 @@
+{
+  "id": "40744",
+  "slug": "steel-tornado",
+  "name": "Steel Tornado",
+  "description": "Launch yourself into a lethal spin, releasing a flurry of blades around you that deals 1742 Physical Damage to nearby enemies. Deals up to 33% more damage to enemies with less than 50% Health.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

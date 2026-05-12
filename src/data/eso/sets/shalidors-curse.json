@@ -1,0 +1,40 @@
+{
+  "id": "shalidors-curse",
+  "name": "Shalidor's Curse",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Eyevea, Shalidor's Cursed Manufactory",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "While you are under 50% Health, dealing damage with a Light or Heavy Attack heals you for 941 Health. This effect can occur once every 1 second and scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shalidor's_Curse",
+  "esohub_url": "https://eso-hub.com/en/sets/shalidors-curse"
+}

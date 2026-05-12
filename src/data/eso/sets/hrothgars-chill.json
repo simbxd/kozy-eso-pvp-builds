@@ -1,0 +1,40 @@
+{
+  "id": "hrothgars-chill",
+  "name": "Hrothgar's Chill",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Stunning or immobilizing your enemy causes them to burst with frost magic, applying the Chilled status effect and dealing 13% of their total Physical and Spell Resistance as Frost Damage to themselves and enemies within 8 meters of them. This effect can occur once every 7 seconds, ignores Spell Resistance, and cannot be blocked.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hrothgar's_Chill",
+  "esohub_url": "https://eso-hub.com/en/sets/hrothgars-chill"
+}

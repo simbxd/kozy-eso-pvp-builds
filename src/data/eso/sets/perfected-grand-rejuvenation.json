@@ -1,0 +1,27 @@
+{
+  "id": "perfected-grand-rejuvenation",
+  "name": "Perfected Grand Rejuvenation",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Dragonstar Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "(2 perfected items) Adds 20-877 Maximum Magicka",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "The initial heal of Grand Healing invigorates you and group members affected for 6 seconds, restoring 5-224 Magicka and Stamina every 2 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Grand_Rejuvenation",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-grand-rejuvenation"
+}

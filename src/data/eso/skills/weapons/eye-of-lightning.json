@@ -1,0 +1,11 @@
+{
+  "id": "86552",
+  "slug": "eye-of-lightning",
+  "name": "Eye of Lightning",
+  "description": "Create a cataclysmic storm above you that builds after 2 seconds then lays waste to all enemies nearby, dealing 1799 Shock Damage every 1 second for 7 seconds.",
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

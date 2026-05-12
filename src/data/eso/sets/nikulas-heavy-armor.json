@@ -1,0 +1,40 @@
+{
+  "id": "nikulas-heavy-armor",
+  "name": "Nikulas' Heavy Armor",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "The Rift, Blessed Crucible",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you Block, you gain a stack of Nikulas' Resolve for 5 seconds, up to once every half second.  After 8 stacks you consume Nikulas' Resolve and deflect the next direct damaging attack made against you within 5 seconds, avoiding it completely.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nikulas'_Heavy_Armor",
+  "esohub_url": "https://eso-hub.com/en/sets/nikulas-heavy-armor"
+}

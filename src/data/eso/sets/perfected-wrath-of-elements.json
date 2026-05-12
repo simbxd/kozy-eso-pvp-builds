@@ -1,0 +1,27 @@
+{
+  "id": "perfected-wrath-of-elements",
+  "name": "Perfected Wrath of Elements",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Vateshran Hollows",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "(2 perfected items) Adds 27-1190 Offensive Penetration",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "Casting Weakness to Elements on a target within 15 meters of you causes a surge of elemental energy to tether between you for 10 seconds.  While the tether persists, enemies touching the tether take 331 Flame Damage, 331 Shock Damage, or 331 Frost Damage every 1 second, which increases by 1% each time it deals damage, up to 20%. This effect can occur once every 10 seconds, and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Wrath_of_Elements",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-wrath-of-elements"
+}

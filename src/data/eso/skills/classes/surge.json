@@ -1,0 +1,11 @@
+{
+  "id": "30390",
+  "slug": "surge",
+  "name": "Surge",
+  "description": "Invoke Meridia's name to gain Major Brutality and Sorcery, increasing your Weapon and Spell Damage by 20% for 33 seconds.\n\nWhile active, dealing Critical Damage heals you for 2550 Health. This effect can occur once every 1 second.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

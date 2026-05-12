@@ -1,0 +1,28 @@
+{
+  "id": "spawn-of-mephala",
+  "name": "Spawn of Mephala",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Vila Theran in Fungal Grotto II, Maj al-Ragath",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 2,
+      "stat": "When you deal damage with a fully-charged Heavy Attack, you create a web under the target for 10 seconds that deals 218 Poison damage every 1 second to all enemies within 4 meters. This effect can occur once every 10 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spawn_of_Mephala",
+  "esohub_url": "https://eso-hub.com/en/sets/spawn-of-mephala"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "the-worms-raiment",
+  "name": "The Worm's Raiment",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Coldharbour, Vaults of Madness",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Grants 3-145 Magicka Recovery to you and up to 11 other group members within 28 meters of you. This bonus persists through death.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Worm's_Raiment",
+  "esohub_url": "https://eso-hub.com/en/sets/the-worms-raiment"
+}

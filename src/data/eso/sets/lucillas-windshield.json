@@ -1,0 +1,40 @@
+{
+  "id": "lucillas-windshield",
+  "name": "Lucilla's Windshield",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Blocking 3 attacks within 10 seconds creates an 8 meter Windshield at your feet for 10 seconds. Enemies within the area gain Minor Brittle, increasing their Critical Damage taken by 10%. While you are within the area, you gain Major Protection, reducing your damage taken by 10%. This effect can occur once every 7 seconds. You can only have 1 Windshield active at a time.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lucilla's_Windshield",
+  "esohub_url": "https://eso-hub.com/en/sets/lucillas-windshield"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45574",
+  "slug": "athletics",
+  "name": "Athletics",
+  "description": "Increases the Movement Speed bonus of Sprint by 3% for each piece of Medium Armor equipped.\n\nCurrent bonus: 0%.\n\nReduces the cost of Roll Dodge by 4% for each piece of Medium Armor equipped.\n\nCurrent bonus: 0%.",
+  "category": "armor",
+  "skill_line": "Medium Armor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

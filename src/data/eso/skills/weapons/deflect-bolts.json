@@ -1,0 +1,11 @@
+{
+  "id": "45472",
+  "slug": "deflect-bolts",
+  "name": "Deflect Bolts",
+  "description": "Increases the amount of damage you can block from projectiles and ranged attacks by 14%.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

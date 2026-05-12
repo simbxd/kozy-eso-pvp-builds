@@ -1,0 +1,11 @@
+{
+  "id": "40189791",
+  "slug": "the-unblinking-eye",
+  "name": "The Unblinking Eye",
+  "description": "Tear open the fabric of the Aurbis to summon a scion of Hermaeus Mora. This being casts forth a beam that rends asunder reality for 6 seconds and deals 1115 Magic Damage to enemies within 5 meters every 0.5 seconds.\n\nThe scion's beam can be repositioned by recasting The Unblinking Eye.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

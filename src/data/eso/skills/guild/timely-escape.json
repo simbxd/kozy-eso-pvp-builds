@@ -1,0 +1,11 @@
+{
+  "id": "76452",
+  "slug": "timely-escape",
+  "name": "Timely Escape",
+  "description": "When you have Bounty and are in combat, you have a chance to spot a \"Footpad\" in a town with a Refuge. Interacting with the Footpad will transport the player safely into the nearest Refuge.",
+  "category": "guild",
+  "skill_line": "Thieves Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

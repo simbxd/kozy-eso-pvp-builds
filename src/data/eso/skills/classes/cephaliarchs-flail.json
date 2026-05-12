@@ -1,0 +1,11 @@
+{
+  "id": "40183006",
+  "slug": "cephaliarchs-flail",
+  "name": "Cephaliarch's Flail",
+  "description": "Infuse your arm with abyssal magic to form tentacles that lash out at your foes dealing 1939 Physical Damage and generating Crux. Enemies are immobilized for 3 seconds and marked with Abyssal Ink for 20 seconds.\n\nIf an enemy is hit, you for heal for 1000 Health, once per cast.\n\nYou deal 5% increased damage to enemies drenched in Abyssal Ink.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

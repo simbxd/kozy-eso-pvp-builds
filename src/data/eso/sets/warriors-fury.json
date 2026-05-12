@@ -1,0 +1,40 @@
+{
+  "id": "warriors-fury",
+  "name": "Warrior's Fury",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Elite Gear Vendors",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage, your Weapon and Spell Damage is increased by 0-24 for 5 seconds, stacking up to 20 times. This effect can occur once every half second. Upon reaching 20 stacks, the duration is doubled but can no longer be refreshed.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Warrior's_Fury",
+  "esohub_url": "https://eso-hub.com/en/sets/warriors-fury"
+}

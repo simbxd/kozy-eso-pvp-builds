@@ -1,0 +1,11 @@
+{
+  "id": "24171",
+  "slug": "sun-fire",
+  "name": "Sun Fire",
+  "description": "Blast an enemy with a charge of radiant heat, dealing 1161 Flame Damage, and an additional 3470 Flame Damage over 20 seconds.\n\nUpon activation you gain Major Savagery and Major Prophecy for 20 seconds, increasing your Weapon and Spell Critical rating by 2629.",
+  "category": "classes",
+  "skill_line": "Dawn's Wrath",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

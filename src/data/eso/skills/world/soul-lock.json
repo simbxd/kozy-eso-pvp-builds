@@ -1,0 +1,11 @@
+{
+  "id": "45580",
+  "slug": "soul-lock",
+  "name": "Soul Lock",
+  "description": "Killing an enemy has a 10% chance of automatically filling an empty Soul Gem.",
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

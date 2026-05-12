@@ -1,0 +1,45 @@
+{
+  "id": "orders-wrath",
+  "name": "Order's Wrath",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "High Isle, Steadfast Hammer and Saw",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Critical Chance",
+      "value": 943
+    },
+    {
+      "count": 5,
+      "stat": "Increases your Critical Damage and Critical Healing by 8%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Order's_Wrath",
+  "esohub_url": "https://eso-hub.com/en/sets/orders-wrath"
+}

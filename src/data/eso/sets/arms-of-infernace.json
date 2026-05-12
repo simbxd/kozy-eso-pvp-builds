@@ -1,0 +1,23 @@
+{
+  "id": "arms-of-infernace",
+  "name": "Arms of Infernace",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "No longer dropped",
+  "dlc": "Base Game",
+  "pieces": 3,
+  "slots": [
+    "necklace",
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Arms_of_Infernace",
+  "esohub_url": "https://eso-hub.com/en/sets/arms-of-infernace"
+}

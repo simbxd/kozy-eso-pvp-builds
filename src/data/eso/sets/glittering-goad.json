@@ -1,0 +1,28 @@
+{
+  "id": "glittering-goad",
+  "name": "Glittering Goad",
+  "type": "Monster",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "Dealing damage with a Bash or Heavy Attack deals 812 Frost damage over 8 seconds to the enemy. This effect can occur once every 8 seconds.\n\nIf the effect completes, the enemy applies Minor Brittle to up to 6 enemies within 12 meters of itself for 10 seconds. \n\nIf the enemy dies, the enemy releases glittering energy, restoring 847 Magicka and Stamina to you and group members within 12 meters of the defeated enemy.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glittering_Goad",
+  "esohub_url": "https://eso-hub.com/en/sets/glittering-goad"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "38015",
+  "slug": "leeching-strikes",
+  "name": "Leeching Strikes",
+  "description": "Channel a portion of your soul to convert Health to 2000 Magicka and Stamina.\n\nWhile slotted on either bar, your soul yearns for the warmth of life. All damage you deal heals you for 1800 Health and reduces the cost of your next Leeching Strikes by 10%, stacking up to 10 times. This effect can occur once every 1 second.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

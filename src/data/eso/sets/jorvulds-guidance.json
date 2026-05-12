@@ -1,0 +1,40 @@
+{
+  "id": "jorvulds-guidance",
+  "name": "Jorvuld's Guidance",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Stormhaven, Scalecaller Peak",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, increases the duration of all Major buffs, Minor buffs, and damage shields you apply to yourself and allies by 40%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Jorvuld's_Guidance",
+  "esohub_url": "https://eso-hub.com/en/sets/jorvulds-guidance"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "vykosa",
+  "name": "Vykosa",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Vykosa in Moon Hunter Keep, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "When you Bash an enemy you've taunted, you frighten them with a deafening howl, applying Major Cowardice to them, lowering their Weapon and Spell Damage by 430 for 8 seconds. This effect can occur once every 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vykosa",
+  "esohub_url": "https://eso-hub.com/en/sets/vykosa"
+}

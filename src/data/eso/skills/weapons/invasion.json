@@ -1,0 +1,11 @@
+{
+  "id": "41538",
+  "slug": "invasion",
+  "name": "Invasion",
+  "description": "Rush an enemy and ram them, dealing 1393 Physical Damage and stunning them for 4 seconds.\n\nStuns up to 50% longer based on the distance traveled.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

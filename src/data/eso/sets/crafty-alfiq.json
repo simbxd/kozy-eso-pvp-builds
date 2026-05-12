@@ -1,0 +1,40 @@
+{
+  "id": "crafty-alfiq",
+  "name": "Crafty Alfiq",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Northern Elsweyr",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Maximum Magicka",
+      "value": 2550
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Crafty_Alfiq",
+  "esohub_url": "https://eso-hub.com/en/sets/crafty-alfiq"
+}

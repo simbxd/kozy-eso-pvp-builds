@@ -1,0 +1,40 @@
+{
+  "id": "sul-xans-torment",
+  "name": "Sul-Xan's Torment",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Blackwood, Rockgrove",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When an enemy you recently damaged dies, they leave behind a vengeful soul for 6 seconds. You can only create one vengeful soul at a time. Touching the soul increases your Critical Chance by 50-2160 and your Critical Damage by 12% for 30 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sul-Xan's_Torment",
+  "esohub_url": "https://eso-hub.com/en/sets/sul-xans-torment"
+}

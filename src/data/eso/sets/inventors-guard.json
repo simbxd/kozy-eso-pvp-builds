@@ -1,0 +1,40 @@
+{
+  "id": "inventors-guard",
+  "name": "Inventor's Guard",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Vvardenfell, Halls of Fabrication",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Done",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "When you use an Ultimate ability while in combat, you and the closest 5 group members within 28 meters of you gain Major Aegis for 1 second per 10 Ultimate spent, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 10%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Inventor's_Guard",
+  "esohub_url": "https://eso-hub.com/en/sets/inventors-guard"
+}

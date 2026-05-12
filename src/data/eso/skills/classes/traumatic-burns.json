@@ -1,0 +1,11 @@
+{
+  "id": "45012",
+  "slug": "traumatic-burns",
+  "name": "Traumatic Burns",
+  "description": "Fire cares not for love, or coin, or creed. It consumes.\n\nDealing direct damage with an Ardent Flame ability causes the target to take 5% increased Flame Damage and reduces their Movement Speed by 30% for 5 seconds.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

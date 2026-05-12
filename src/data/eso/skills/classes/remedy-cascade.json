@@ -1,0 +1,11 @@
+{
+  "id": "40183537",
+  "slug": "remedy-cascade",
+  "name": "Remedy Cascade",
+  "description": "Channel the abyssal sea to coalesce a beam of restorative energy. The beam heals you and your allies in its path for 11310 Health over 4.5 seconds.\n\nConsume Crux to also restore 728 Magicka and Stamina per Crux spent to your allies over 4.5 seconds.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

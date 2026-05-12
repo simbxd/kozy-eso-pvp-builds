@@ -1,0 +1,11 @@
+{
+  "id": "33963",
+  "slug": "dragonknight-standard",
+  "name": "Dragonknight Standard",
+  "description": "Call down a battle standard for 15 seconds, rallying you and allies inside the area, increasing Weapon and Spell Damage by 300 and reducing damage taken by 10%.\n\nAn ally near the standard can activate the Shackle synergy, dealing 3375 Flame Damage to enemies in the area and immobilizing them for 5 seconds.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

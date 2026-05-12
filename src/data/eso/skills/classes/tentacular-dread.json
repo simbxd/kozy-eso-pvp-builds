@@ -1,0 +1,11 @@
+{
+  "id": "40185823",
+  "slug": "tentacular-dread",
+  "name": "Tentacular Dread",
+  "description": "Infuse your arm with abyssal magic to form tentacles that lash out at your foes, dealing 2002 Frost Damage. Enemies are immobilized for 3 seconds and marked with Abyssal Ink for 20 seconds.\n\nYou deal 5% increased damage to enemies drenched in Abyssal Ink.\n\nConsume all Crux and increase Tentacular Dread damage by 33% and damage to foes drenched in Abyssal Ink by 2% per Crux spent.",
+  "category": "classes",
+  "skill_line": "Herald of the Tome",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45247",
+  "slug": "resourceful",
+  "name": "Resourceful",
+  "description": "Increases your Max Magicka and Max Stamina by 1000.\n\nWhen you drink a potion, you restore 3125 Health, Magicka, and Stamina.",
+  "category": "racial",
+  "skill_line": "Argonian Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

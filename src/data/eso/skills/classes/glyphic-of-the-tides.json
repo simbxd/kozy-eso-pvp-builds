@@ -1,0 +1,11 @@
+{
+  "id": "40193794",
+  "slug": "glyphic-of-the-tides",
+  "name": "Glyphic of the Tides",
+  "description": "Summon an Apocryphal glyphic, which you and your allies can heal. The glyphic spawns at 53% Health and grows stronger the more you heal it.\n\nThe power within the glyphic grants up to 200 Weapon and Spell Damage and heals you and your allies around it for up to 928 Health every 1 second in proportion to its Health.\n\nAt full Health the glyphic grants Major Protection, reducing damage taken by 10%.",
+  "category": "classes",
+  "skill_line": "Curative Runeforms",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

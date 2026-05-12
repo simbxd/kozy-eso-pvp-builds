@@ -1,0 +1,11 @@
+{
+  "id": "23828",
+  "slug": "earthspike-mantle",
+  "name": "Earthspike Mantle",
+  "description": "Envelop your body in molten spikes to increase your damage done by 100 and gain Major Resolve, increasing Physical and Spell Resistance by 5948 for 20 seconds.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

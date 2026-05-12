@@ -1,0 +1,40 @@
+{
+  "id": "basalt-blooded-warrior",
+  "name": "Basalt-Blooded Warrior",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Infinite Archive",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Casting an Earthen Heart ability grants you a Rock Stance for 10 seconds. While on your Primary Weapon you gain Molten Stance, granting you Major Heroism, generating 3 Ultimate every 1.5 seconds. While you are on your Secondary Weapon you gain Obsidian Stance, increasing your Healing Done and damage shields by 14%. \n\nBar Swapping will swap your Stance automatically.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Basalt-Blooded_Warrior",
+  "esohub_url": "https://eso-hub.com/en/sets/basalt-blooded-warrior"
+}

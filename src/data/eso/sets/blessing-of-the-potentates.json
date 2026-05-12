@@ -1,0 +1,30 @@
+{
+  "id": "blessing-of-the-potentates",
+  "name": "Blessing of the Potentates",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Vlastarus",
+  "dlc": "Base Game",
+  "pieces": 3,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Reduces your damage taken from Players by 3%.",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Reduces the cost of your Ultimate abilities by 15%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blessing_of_the_Potentates",
+  "esohub_url": "https://eso-hub.com/en/sets/blessing-of-the-potentates"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wild-impulse",
+  "name": "Wild Impulse",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Blackrose Prison",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Reduce the cost of Impulse by 10%. Impulse places lingering elemental damage on your targets, dealing 605 Flame, 605 Shock, and 605 Frost Damage over 8 seconds. Each element ticks once over the duration and its damage scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Wild_Impulse",
+  "esohub_url": "https://eso-hub.com/en/sets/wild-impulse"
+}

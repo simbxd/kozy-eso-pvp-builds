@@ -1,0 +1,11 @@
+{
+  "id": "117848",
+  "slug": "lunar-blessings",
+  "name": "Lunar Blessings",
+  "description": "Increase your Maximum Health, Magicka, and Stamina by 915.",
+  "category": "racial",
+  "skill_line": "Khajiit Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

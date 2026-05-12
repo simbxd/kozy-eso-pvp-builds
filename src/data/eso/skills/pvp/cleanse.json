@@ -1,0 +1,11 @@
+{
+  "id": "46644",
+  "slug": "cleanse",
+  "name": "Cleanse",
+  "description": "Cleanse yourself and your group, removing 3 negative effects immediately.  \n\nFor every negative effect removed, the target is healed for 5% of their Max Health.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

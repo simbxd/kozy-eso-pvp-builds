@@ -1,0 +1,11 @@
+{
+  "id": "217500",
+  "slug": "sorcerers-knife",
+  "name": "Sorcerer's Knife",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

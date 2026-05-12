@@ -1,0 +1,40 @@
+{
+  "id": "unfathomable-darkness",
+  "name": "Unfathomable Darkness",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Clockwork City",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage, you call a murder of crows around you for 12 seconds. Every 3 seconds a crow will be sent to peck the closest enemy within 12 meters of you, dealing 871 Physical Damage. This effect can occur once every 15 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Unfathomable_Darkness",
+  "esohub_url": "https://eso-hub.com/en/sets/unfathomable-darkness"
+}

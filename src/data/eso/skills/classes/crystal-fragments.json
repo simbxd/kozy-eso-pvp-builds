@@ -1,0 +1,11 @@
+{
+  "id": "47569",
+  "slug": "crystal-fragments",
+  "name": "Crystal Fragments",
+  "description": "Conjure dark crystals to bombard an enemy, dealing 2483 Magic Damage. Your next non-Ultimate ability cast within 3 seconds costs 10% less.\n\nWhile slotted on either bar, casting a non-Ultimate ability has a 33% chance of causing your next Crystal Fragments to be instant cast at half cost, dealing 4123 Magic Damage.",
+  "category": "classes",
+  "skill_line": "Dark Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

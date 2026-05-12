@@ -1,0 +1,11 @@
+{
+  "id": "41126",
+  "slug": "evasion",
+  "name": "Evasion",
+  "description": "Shroud yourself in mist to gain Major Evasion, reducing damage taken from area attacks by 20% for 20 seconds.",
+  "category": "armor",
+  "skill_line": "Medium Armor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

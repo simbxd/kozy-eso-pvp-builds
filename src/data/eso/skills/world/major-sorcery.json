@@ -1,0 +1,11 @@
+{
+  "id": "216948",
+  "slug": "major-sorcery",
+  "name": "Major Sorcery",
+  "description": null,
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

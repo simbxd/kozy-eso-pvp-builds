@@ -1,0 +1,40 @@
+{
+  "id": "shadow-of-the-red-mountain",
+  "name": "Shadow of the Red Mountain",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Stonefalls",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a weapon, you spawn a volcano that erupts after 1 second, launching liquid hot lava at the closest enemy dealing 1860 Flame damage. This effect can occur once every 8 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shadow_of_the_Red_Mountain",
+  "esohub_url": "https://eso-hub.com/en/sets/shadow-of-the-red-mountain"
+}

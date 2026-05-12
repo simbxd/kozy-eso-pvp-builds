@@ -1,0 +1,40 @@
+{
+  "id": "eternal-hunt",
+  "name": "Eternal Hunt",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Hew's Bane, The Lost Pavilion",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you use Roll Dodge, you leave behind a rune that detonates when an enemy comes close, dealing 992 Poison Damage and immobilizing them for 1.5 seconds.  This effect scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Eternal_Hunt",
+  "esohub_url": "https://eso-hub.com/en/sets/eternal-hunt"
+}

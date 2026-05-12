@@ -1,0 +1,40 @@
+{
+  "id": "mark-of-the-pariah",
+  "name": "Mark of the Pariah",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Wrothgar",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "Increases your Physical and Spell Resistance by up to 237-10206 based on your missing Health.\n\nCurrent value: 55-2373",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mark_of_the_Pariah",
+  "esohub_url": "https://eso-hub.com/en/sets/mark-of-the-pariah"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45255",
+  "slug": "argonian-resistance",
+  "name": "Argonian Resistance",
+  "description": "Increases your Max Health by 1000 and your Disease and Poison Resistance by 2310.",
+  "category": "racial",
+  "skill_line": "Argonian Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

@@ -1,0 +1,45 @@
+{
+  "id": "wisdom-of-vanus",
+  "name": "Wisdom of Vanus",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Summerset",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "After completing a fully-charged Heavy Attack, you gain Major Mending for 5 seconds, increasing your healing done by 16%. This duration is increased with each rank of the Restoration Staff Passive of Essence Drain when using a Restoration Staff.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Wisdom_of_Vanus",
+  "esohub_url": "https://eso-hub.com/en/sets/wisdom-of-vanus"
+}

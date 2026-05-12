@@ -1,0 +1,42 @@
+{
+  "id": "alessian-order",
+  "name": "Alessian Order",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Vlastarus",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "head",
+    "chest",
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Increase your Health Recovery by 2% of your sum total Physical Resistance and Spell Resistance, up to a maximum of 1320.\n\nCurrent Bonus Health Recovery: 0.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Alessian_Order",
+  "esohub_url": "https://eso-hub.com/en/sets/alessian-order"
+}

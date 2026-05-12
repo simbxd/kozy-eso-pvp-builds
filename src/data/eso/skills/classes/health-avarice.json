@@ -1,0 +1,11 @@
+{
+  "id": "116270",
+  "slug": "health-avarice",
+  "name": "Health Avarice",
+  "description": "Increase your Healing Received by 3% for each Bone Tyrant ability slotted.\n\nCurrent bonus: 0%.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

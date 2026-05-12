@@ -1,0 +1,11 @@
+{
+  "id": "220834",
+  "slug": "nighblades-throw",
+  "name": "Nighblade's Throw",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

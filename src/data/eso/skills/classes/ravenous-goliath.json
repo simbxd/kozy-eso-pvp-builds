@@ -1,0 +1,11 @@
+{
+  "id": "40118279",
+  "slug": "ravenous-goliath",
+  "name": "Ravenous Goliath",
+  "description": "Become a horrific Ravenous Goliath, increasing your Max Health by 30000 for 20 seconds and immediately restoring 30000 Health. \n\nWhile transformed, your damaging Light Attacks restore 319 Health and your fully-charged Heavy Attacks restore 800 Health. You deal 826 Magic Damage to nearby enemies every second and heal for that amount. These abilities scale off your Max Health.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

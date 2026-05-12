@@ -1,0 +1,11 @@
+{
+  "id": "30523",
+  "slug": "haunting-curse",
+  "name": "Haunting Curse",
+  "description": "Curse an enemy with a destructive rune, dealing 2999 Magic Damage to the target and all other nearby enemies after 3.5 seconds.\n\nThe curse will continue to haunt the enemy and explode a second time, dealing 2999 Magic Damage to the target and all other nearby enemies after an additional 8.5 seconds.\n\nYou can have only one Haunting Curse active at a time.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

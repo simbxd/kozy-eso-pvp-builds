@@ -1,0 +1,11 @@
+{
+  "id": "218259",
+  "slug": "sorcerers-soul",
+  "name": "Sorcerer's Soul",
+  "description": null,
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

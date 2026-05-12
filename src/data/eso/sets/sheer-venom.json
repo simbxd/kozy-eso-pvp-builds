@@ -1,0 +1,40 @@
+{
+  "id": "sheer-venom",
+  "name": "Sheer Venom",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Imperial City, Imperial City Prison",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with an Execute ability you infect the enemy, dealing 948 Poison damage over 6 seconds and dealing up to 100% more damage to enemies under 100% Health. This effect can occur once every 6 seconds per target and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sheer_Venom",
+  "esohub_url": "https://eso-hub.com/en/sets/sheer-venom"
+}

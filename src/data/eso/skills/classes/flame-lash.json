@@ -1,0 +1,11 @@
+{
+  "id": "23924",
+  "slug": "flame-lash",
+  "name": "Flame Lash",
+  "description": "Lash an enemy with flame, dealing 2323 Flame Damage and healing for 799 Health.\n\nHitting an Off Balance enemy grants 5 stacks of Power Lash for 20 seconds, up to once every 20 seconds.\n\nActivating again consumes a stack to deal 4337 Flame Damage to your target and all nearby enemies and heals for 3200 Health. Consuming all stacks as a Dragonknight increases your damage done by 7%, double against monsters, for 45 seconds.",
+  "category": "classes",
+  "skill_line": "Ardent Flame",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

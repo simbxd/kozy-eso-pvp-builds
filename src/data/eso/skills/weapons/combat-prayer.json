@@ -1,0 +1,11 @@
+{
+  "id": "41189",
+  "slug": "combat-prayer",
+  "name": "Combat Prayer",
+  "description": "Slam your staff down to activate its blessings, healing you and your allies in front of you for 2614 Health.\n\nAlso grants Minor Berserk and Minor Resolve increasing you and your allies' damage done by 5% and Physical Resistance and Spell Resistance by 2974 for 10 seconds.",
+  "category": "weapons",
+  "skill_line": "Restoration Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

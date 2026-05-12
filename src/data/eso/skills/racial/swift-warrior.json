@@ -1,0 +1,11 @@
+{
+  "id": "45312",
+  "slug": "swift-warrior",
+  "name": "Swift Warrior",
+  "description": "Increases your Weapon and Spell Damage by 258.\n\nReduces the cost of Sprint by 12% and increases the Movement Speed bonus of Sprint by 10%.",
+  "category": "racial",
+  "skill_line": "Orc Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

@@ -1,0 +1,40 @@
+{
+  "id": "turning-tide",
+  "name": "Turning Tide",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Rivenspire, Shipwright's Regret",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you Block, you gain Flowing Water for 10 seconds, causing your next Bash attack to deal 2223 Magic damage to up to 6 enemies in a 5 by 10 meter line, and apply Major Vulnerability for 10 seconds, increasing their damage taken by 10%. This effect can occur once every 15 seconds and scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Turning_Tide",
+  "esohub_url": "https://eso-hub.com/en/sets/turning-tide"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "dragons-defilement",
+  "name": "Dragon's Defilement",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Grahtwood, Lair of Maarselok",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you take damage from a melee attack, gain a corrupting aura for 5 seconds that applies Minor Breach to all enemies within 8 meters of you, reducing their Physical and Spell Resistance by 2974. This effect can occur every 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dragon's_Defilement",
+  "esohub_url": "https://eso-hub.com/en/sets/dragons-defilement"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "32123",
+  "slug": "burning-talons",
+  "name": "Burning Talons",
+  "description": "Call forth talons from the ground, dealing 1799 Flame Damage to enemies near you, an additional 1635 Flame Damage over 5 seconds, and immobilizing them for 4 seconds. \n\nAn ally near the talons can activate the Ignite synergy, dealing 2812 Flame Damage to all enemies held within them.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

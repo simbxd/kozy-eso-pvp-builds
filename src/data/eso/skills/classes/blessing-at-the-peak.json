@@ -1,0 +1,11 @@
+{
+  "id": "45001",
+  "slug": "blessing-at-the-peak",
+  "name": "Blessing at the Peak",
+  "description": "Where earth meets sky is a wellspring of power you can tap at will.\n\nWhen you cast or deal damage with an Earthen Heart ability in combat you generate 3 Ultimate. This effect can occur once every 6 seconds.\n\nIncreases your Critical Damage by 10%.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

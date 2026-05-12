@@ -1,0 +1,40 @@
+{
+  "id": "beekeepers-gear",
+  "name": "Beekeeper's Gear",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Greenshade",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Health Recovery",
+      "value": 900
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Beekeeper's_Gear",
+  "esohub_url": "https://eso-hub.com/en/sets/beekeepers-gear"
+}

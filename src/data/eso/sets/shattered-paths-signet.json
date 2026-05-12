@@ -1,0 +1,22 @@
+{
+  "id": "shattered-paths-signet",
+  "name": "Shattered Paths Signet",
+  "type": "Mythic",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "ring"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Increase your damage done with status effects by 1% for every 1 Ultimate you have, up to 170%. Both the current and maximum damage done is halved against Players.\n\nWhile you have 170 or more Ultimate, your Light and Heavy Attacks apply a random status effect, up to once every 4 seconds.\n\nApplies Minor Timidity to you, consuming 1 Ultimate every 1.5 seconds while in combat.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shattered_Paths_Signet",
+  "esohub_url": "https://eso-hub.com/en/sets/shattered-paths-signet"
+}

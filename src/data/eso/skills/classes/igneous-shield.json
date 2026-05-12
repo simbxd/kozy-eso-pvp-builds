@@ -1,0 +1,11 @@
+{
+  "id": "33872",
+  "slug": "igneous-shield",
+  "name": "Igneous Shield",
+  "description": "Call the earth to your defense, granting a damage shield for nearby allies that absorbs 1322 damage. Your own damage shield absorbs 3824 damage. This portion of the ability scales off your Max Health.\n\nYou also gain Major Mending, increasing your healing done by 16% for 4 seconds.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

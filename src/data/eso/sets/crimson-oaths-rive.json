@@ -1,0 +1,40 @@
+{
+  "id": "crimson-oaths-rive",
+  "name": "Crimson Oath's Rive",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Blackwood, The Dread Cellar",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "While you are in combat, casting an ability, drinking a potion, or using a poison that applies a Major or Minor buff to yourself or an ally, sends out a wave of energy that reduces the Armor of nearby enemies within 12 meters by 82-3541 for 15 seconds. This effect can occur once every 12 seconds, and will only occur if an enemy is within range.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Crimson_Oath's_Rive",
+  "esohub_url": "https://eso-hub.com/en/sets/crimson-oaths-rive"
+}

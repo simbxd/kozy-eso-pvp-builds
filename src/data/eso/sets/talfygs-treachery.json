@@ -1,0 +1,40 @@
+{
+  "id": "talfygs-treachery",
+  "name": "Talfyg's Treachery",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Western Skyrim, Castle Thorn",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Increases your Weapon and Spell Damage by 8-372. Increases your damage taken from Flame and Fighter's Guild abilities by 5%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Talfyg's_Treachery",
+  "esohub_url": "https://eso-hub.com/en/sets/talfygs-treachery"
+}

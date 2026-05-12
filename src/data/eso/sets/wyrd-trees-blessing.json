@@ -1,0 +1,40 @@
+{
+  "id": "wyrd-trees-blessing",
+  "name": "Wyrd Tree's Blessing",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Glenumbra",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you cast a Magicka ability, you remove all negative effects from yourself. This effect can occur once every 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Wyrd_Tree's_Blessing",
+  "esohub_url": "https://eso-hub.com/en/sets/wyrd-trees-blessing"
+}

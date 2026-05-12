@@ -1,0 +1,11 @@
+{
+  "id": "40135905",
+  "slug": "drain-vigor",
+  "name": "Drain Vigor",
+  "description": "Siphon away your enemies' vitality, dealing 870 Magic Damage, healing you for 25% of your missing Health, and restoring 10% of your missing Stamina every 1 second for 3 seconds.\n\nThis ability is considered direct damage.",
+  "category": "world",
+  "skill_line": "Vampire",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

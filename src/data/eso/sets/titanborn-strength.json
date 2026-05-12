@@ -1,0 +1,40 @@
+{
+  "id": "titanborn-strength",
+  "name": "Titanborn Strength",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Wrothgar, Icereach",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage and 28-1240 Offensive Penetration. While in combat, this bonus doubles when you are under 75% Health and quadruples when you are under 50% Health.",
+      "value": 110
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Titanborn_Strength",
+  "esohub_url": "https://eso-hub.com/en/sets/titanborn-strength"
+}

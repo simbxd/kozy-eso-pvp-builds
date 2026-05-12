@@ -1,0 +1,11 @@
+{
+  "id": "45477",
+  "slug": "dual-wield-expert",
+  "name": "Dual Wield Expert",
+  "description": "Increases Weapon and Spell Damage by 6% of off-hand weapon's damage.",
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

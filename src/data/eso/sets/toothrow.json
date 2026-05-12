@@ -1,0 +1,45 @@
+{
+  "id": "toothrow",
+  "name": "Toothrow",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Wayrest, Wayrest Sewers",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 171
+    },
+    {
+      "count": 5,
+      "stat": "Gain Major Savagery and Prophecy at all times, increasing your Weapon and Spell Critical rating by 2629.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Toothrow",
+  "esohub_url": "https://eso-hub.com/en/sets/toothrow"
+}

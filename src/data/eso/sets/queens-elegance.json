@@ -1,0 +1,40 @@
+{
+  "id": "queens-elegance",
+  "name": "Queen's Elegance",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Auridon",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you use a Light Attack you reduce the Health, Magicka, or Stamina cost of your next active ability cast within 2 seconds by 10%.  \n\nWhen you use a fully-charged Heavy Attack you gain Empower for 3 seconds, increasing the damage of your Heavy Attacks against monsters by 70%.\n\nEach of these effects can occur once every second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Queen's_Elegance",
+  "esohub_url": "https://eso-hub.com/en/sets/queens-elegance"
+}

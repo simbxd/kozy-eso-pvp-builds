@@ -1,0 +1,11 @@
+{
+  "id": "37937",
+  "slug": "power-extraction",
+  "name": "Power Extraction",
+  "description": "Siphon the vigor from your enemies' blood, dealing 1742 Disease Damage to all nearby enemies.\n\nIf an enemy is hit you gain Major Brutality and Sorcery, and Minor Courage increasing your Weapon and Spell Damage by 20% and 215 for 30 seconds. Enemies hit have Minor Cowardice applied to them for 10 seconds, reducing their Weapon and Spell Damage by 215.",
+  "category": "classes",
+  "skill_line": "Siphoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

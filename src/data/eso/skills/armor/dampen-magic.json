@@ -1,0 +1,11 @@
+{
+  "id": "41113",
+  "slug": "dampen-magic",
+  "name": "Dampen Magic",
+  "description": "Convert a portion of your Magicka into a protective ward, gaining a damage shield that absorbs 3718 damage for 6 seconds. Damage shield strength capped at 60% of your Max Health.\n\nEach piece of Light Armor worn increases the amount of damage absorbed by 6%.",
+  "category": "armor",
+  "skill_line": "Light Armor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

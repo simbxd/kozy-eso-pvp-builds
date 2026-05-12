@@ -1,0 +1,40 @@
+{
+  "id": "bright-throats-boast",
+  "name": "Bright-Throat's Boast",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Murkmire",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "While you have a drink buff active, your Max Magicka is increased by 46-2000 and Magicka Recovery by 3-133.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bright-Throat's_Boast",
+  "esohub_url": "https://eso-hub.com/en/sets/bright-throats-boast"
+}

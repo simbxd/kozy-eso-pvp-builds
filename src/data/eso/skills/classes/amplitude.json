@@ -1,0 +1,11 @@
+{
+  "id": "45192",
+  "slug": "amplitude",
+  "name": "Amplitude",
+  "description": "Increases your damage done against enemies by 1% for every 10% current Health they have.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

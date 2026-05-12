@@ -1,0 +1,11 @@
+{
+  "id": "32639",
+  "slug": "bloodmoon",
+  "name": "Bloodmoon",
+  "description": "Allows you to infect another player with Lycanthropy once every week by returning to the Werewolf ritual site. \n\nPlayers already infected with Noxiphilic Sanguivoria cannot be infected with Lycanthropy.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

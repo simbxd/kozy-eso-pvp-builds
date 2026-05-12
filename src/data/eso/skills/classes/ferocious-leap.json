@@ -1,0 +1,11 @@
+{
+  "id": "33679",
+  "slug": "ferocious-leap",
+  "name": "Ferocious Leap",
+  "description": "Launch yourself at an enemy, dealing 3574 Flame Damage to all enemies in the area, knocking players back 4 meters and stunning them for 2 seconds. If the target is a monster they are instead knocked into the air and stunned for 3 seconds.\n\nUpon activation you gain a damage shield that absorbs 17173 damage for 10 seconds. This portion of the ability scales with your Max Health.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

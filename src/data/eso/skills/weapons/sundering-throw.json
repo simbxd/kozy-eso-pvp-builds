@@ -1,0 +1,11 @@
+{
+  "id": "40216973",
+  "slug": "sundering-throw",
+  "name": "Sundering Throw",
+  "description": "Hurl your shield at an enemy, which then returns to you.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,40 @@
+{
+  "id": "vrols-command",
+  "name": "Vrol's Command",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Greymoor, Kyne's Aegis",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "After completing a fully-charged Heavy Attack, apply Major Aegis to you and up to 11 nearby group members for 12 seconds, reducing damage taken from Dungeon, Trial, and Arena enemies by 10%. This effect can occur once every 21 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vrol's_Command",
+  "esohub_url": "https://eso-hub.com/en/sets/vrols-command"
+}

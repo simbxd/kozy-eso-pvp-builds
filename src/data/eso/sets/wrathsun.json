@@ -1,0 +1,40 @@
+{
+  "id": "wrathsun",
+  "name": "Wrathsun",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Infinite Archive",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you deal damage with a Dawn's Wrath ability, you gain a stack of Sunlight for 15 seconds, once per attack. You can have 40 stacks max and gain 12 Magicka Recovery per stack. When at max stacks, your Dawn's Wrath abilities deal 25% bonus damage and a Wrathful Nova is cast on the enemy, but you cannot refresh Sunlight.\n\nWhen Sunlight expires at max stacks, you lose 50% of your current Magicka.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Wrathsun",
+  "esohub_url": "https://eso-hub.com/en/sets/wrathsun"
+}

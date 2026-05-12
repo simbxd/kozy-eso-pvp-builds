@@ -1,0 +1,11 @@
+{
+  "id": "93810",
+  "slug": "corrupting-pollen",
+  "name": "Corrupting Pollen",
+  "description": "Summon a field of flowers which blooms after 6 seconds, healing you and allies in the area for 3600 Health.\n\nEnemies who enter the field are afflicted with Major Defile and Minor Cowardice, reducing their healing received and damage shield strength by 12% and their Weapon and Spell Damage by 215.\n\nAn ally within the field can activate the Harvest synergy, healing for 3372 Health over 5 seconds.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

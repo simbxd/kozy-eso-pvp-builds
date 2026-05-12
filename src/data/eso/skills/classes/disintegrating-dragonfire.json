@@ -1,0 +1,11 @@
+{
+  "id": "34039",
+  "slug": "disintegrating-dragonfire",
+  "name": "Disintegrating Dragonfire",
+  "description": "Exhale a blast of draconic fire in front of you, dealing 1799 Flame Damage, applying the Burning status effect, and an additional 2995 Flame Damage over 10 seconds to enemies in your path.\n\nThe initial hit liquifies the armor of your enemies, applying Major Breach to enemies for the duration, reducing Physical and Spell Resistance by 5948.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

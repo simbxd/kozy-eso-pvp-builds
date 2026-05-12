@@ -1,0 +1,11 @@
+{
+  "id": "78219",
+  "slug": "blade-of-woe",
+  "name": "Blade of Woe",
+  "description": "Call the weapon of the Dark Brotherhood to your hand and deliver a killing blow to an unsuspecting target. Experience from this target is reduced by 75%.\n\nThis ability does not work on players or difficult targets.",
+  "category": "guild",
+  "skill_line": "Dark Brotherhood",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

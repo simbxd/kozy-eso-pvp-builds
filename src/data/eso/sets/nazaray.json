@@ -1,0 +1,28 @@
+{
+  "id": "nazaray",
+  "name": "Nazaray",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Captain Numirril in Shipwright's Regret, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 2,
+      "stat": "When you use an Ultimate ability, the closest 6 enemies within 12 meters have all Major and Minor debuffs applied to them extended by 1 second per 20 Ultimate spent. This effect can occur once every 30 seconds per target.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nazaray",
+  "esohub_url": "https://eso-hub.com/en/sets/nazaray"
+}

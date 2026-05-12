@@ -1,0 +1,40 @@
+{
+  "id": "night-terror",
+  "name": "Night Terror",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Stormhaven",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Reduces the radius you can be detected while Sneaking by 2 meters. Reduces the cost of Sneak by 0-10%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "When you take melee damage, you deal 285 Poison damage to the attacker. This effect can occur once every 1 second and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Night_Terror",
+  "esohub_url": "https://eso-hub.com/en/sets/night-terror"
+}

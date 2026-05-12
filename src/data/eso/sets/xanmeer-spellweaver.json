@@ -1,0 +1,40 @@
+{
+  "id": "xanmeer-spellweaver",
+  "name": "Xanmeer Spellweaver",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Increase your damage done with Flame, Frost, and Shock Damage by 5%.\nIncrease your damage done with Burning, Chilled, and Concussion by an additional 15%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Xanmeer_Spellweaver",
+  "esohub_url": "https://eso-hub.com/en/sets/xanmeer-spellweaver"
+}

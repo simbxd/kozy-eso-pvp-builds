@@ -1,0 +1,40 @@
+{
+  "id": "seeker-synthesis",
+  "name": "Seeker Synthesis",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Necrom",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you cast an ability that costs resources while in combat, you reduce your potion cooldown by 1 second. This effect can occur once every 2 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Seeker_Synthesis",
+  "esohub_url": "https://eso-hub.com/en/sets/seeker-synthesis"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "93774",
+  "slug": "enchanted-growth",
+  "name": "Enchanted Growth",
+  "description": "Seed a large area of mushrooms in front of you, healing you and your allies for 2700 Health. \n\nAny target healed gains Minor Intellect and Minor Endurance, increasing their Magicka and Stamina Recovery by 15% for 20 seconds.",
+  "category": "classes",
+  "skill_line": "Green Balance",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

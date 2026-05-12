@@ -1,0 +1,11 @@
+{
+  "id": "40104059",
+  "slug": "borrowed-time",
+  "name": "Borrowed Time",
+  "description": "Freeze the passage of time at the target location, gradually reducing the Movement Speed of enemies in the area during the channel before finally stunning them in place for 3 seconds when the channel completes.\n\nEnemies that are stunned gain 5000 Heal Absorption for 3 seconds, negating the next 5000 points of healing done.",
+  "category": "guild",
+  "skill_line": "Psijic Order",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

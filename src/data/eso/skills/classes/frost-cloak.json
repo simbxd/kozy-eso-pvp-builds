@@ -1,0 +1,11 @@
+{
+  "id": "86125",
+  "slug": "frost-cloak",
+  "name": "Frost Cloak",
+  "description": "Wrap a thick cloak of ice around you and your grouped allies. The ice grants Major Resolve, increasing your Physical and Spell Resistance by 5948 for 20 seconds.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

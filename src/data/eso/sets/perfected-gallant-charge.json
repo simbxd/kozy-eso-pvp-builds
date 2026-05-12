@@ -1,0 +1,28 @@
+{
+  "id": "perfected-gallant-charge",
+  "name": "Perfected Gallant Charge",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Blackrose Prison",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "(2 perfected items) Adds 27-1190 Armor",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "Reduces the cost of Shield Charge by 25% and reduces the cost of your next non-Shield Charge One Handed and Shield ability cast within 3 seconds by 100%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Gallant_Charge",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-gallant-charge"
+}

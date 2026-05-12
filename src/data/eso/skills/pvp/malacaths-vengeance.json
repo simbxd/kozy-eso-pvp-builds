@@ -1,0 +1,11 @@
+{
+  "id": "116094",
+  "slug": "malacaths-vengeance",
+  "name": "Malacath's Vengeance",
+  "description": "Swing Volendrung in a mighty downward blow, dealing 12075 Physical Damage to a single target.",
+  "category": "pvp",
+  "skill_line": "Volendrung",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

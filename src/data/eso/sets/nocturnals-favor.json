@@ -1,0 +1,40 @@
+{
+  "id": "nocturnals-favor",
+  "name": "Nocturnal's Favor",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Summerset Isle, Augury Basin",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 5,
+      "stat": "Whenever you successfully Dodge, you heal yourself for 2820 Health over 5 seconds. This effect can occur every 5 seconds and scales off the higher of your Max Magicka or Stamina.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nocturnal's_Favor",
+  "esohub_url": "https://eso-hub.com/en/sets/nocturnals-favor"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "knight-errants-mail",
+  "name": "Knight-errant's Mail",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Bangkorai, Blackheart Haven",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage to your One Hand and Shield abilities. When you use a One Hand and Shield ability, you heal for 35-1537 Health.",
+      "value": 450
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Knight-errant's_Mail",
+  "esohub_url": "https://eso-hub.com/en/sets/knight-errants-mail"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "42240",
+  "slug": "structured-entropy",
+  "name": "Structured Entropy",
+  "description": "Bind an enemy with chaotic magic, dealing 4642 Magic Damage over 20 seconds, and healing you for 435 every 2 seconds.",
+  "category": "guild",
+  "skill_line": "Mages Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

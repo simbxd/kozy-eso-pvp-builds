@@ -1,0 +1,40 @@
+{
+  "id": "full-belly-barricade",
+  "name": "Full Belly Barricade",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "While you have a food buff active, your Block Mitigation is increased by 0-8% and block cost is reduced by 0-8%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Full_Belly_Barricade",
+  "esohub_url": "https://eso-hub.com/en/sets/full-belly-barricade"
+}

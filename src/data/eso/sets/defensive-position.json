@@ -1,0 +1,23 @@
+{
+  "id": "defensive-position",
+  "name": "Defensive Position",
+  "type": "Monster",
+  "acquisition": "Trial",
+  "location": "Clockwork City, Asylum Sanctorium",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "When you reflect or absorb a spell projectile with Defensive Posture, you restore 51-2200 Magicka. If Defensive Posture expires without reflecting or absorbing a spell projectile, you restore 153-6600 Magicka instead.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Defensive_Position",
+  "esohub_url": "https://eso-hub.com/en/sets/defensive-position"
+}

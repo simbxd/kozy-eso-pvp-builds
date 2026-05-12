@@ -1,0 +1,40 @@
+{
+  "id": "roaring-opportunist",
+  "name": "Roaring Opportunist",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Greymoor, Kyne's Aegis",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Slayer at all times, increasing your damage done to Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "After completing a fully-charged Heavy Attack, you and up to 5 group members gain Major Slayer, increasing your damage done to Dungeon, Trial, and Arena Monsters by 10% for 1 second for every 600 Spell Damage or 6300 Magicka you have. Roaring Opportunist can only affect a target every 22 seconds.\n\nMaximum duration 12 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Roaring_Opportunist",
+  "esohub_url": "https://eso-hub.com/en/sets/roaring-opportunist"
+}

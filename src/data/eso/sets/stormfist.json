@@ -1,0 +1,28 @@
+{
+  "id": "stormfist",
+  "name": "Stormfist",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Stormreeve Neidir in Tempest Island, Glirion the Redbeard",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "When you deal damage, you have a 10% chance to create a thunderfist to crush the enemy, dealing 277 Shock damage every 1 second for 3 seconds to all enemies within 4 meters and a final 1110 Physical damage when the fist closes. This effect can occur once every 8 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Stormfist",
+  "esohub_url": "https://eso-hub.com/en/sets/stormfist"
+}

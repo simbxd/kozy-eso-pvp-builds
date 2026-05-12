@@ -1,0 +1,40 @@
+{
+  "id": "enervating-aura",
+  "name": "Enervating Aura",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "When you deal direct damage, you have a 10% chance to create an area under the target that detonates after 1 second, applying Enervating Aura for 10 seconds to enemies within 5 meters. Enervating Aura lowers the Health Recovery, Magicka Recovery, and Stamina Recovery of enemy players by 3-129 per player hit. This effect can occur once every 15 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Enervating_Aura",
+  "esohub_url": "https://eso-hub.com/en/sets/enervating-aura"
+}

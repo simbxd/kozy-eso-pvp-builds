@@ -1,0 +1,11 @@
+{
+  "id": "227114",
+  "slug": "necromancers-soul",
+  "name": "Necromancer's Soul",
+  "description": null,
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

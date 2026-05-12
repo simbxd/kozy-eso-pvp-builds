@@ -1,0 +1,11 @@
+{
+  "id": "32634",
+  "slug": "devour",
+  "name": "Devour",
+  "description": "Allows you to devour corpses to increase the duration of your Werewolf Transformation and restore your Health.\n\nEvery second you spend devouring a corpse adds 3 seconds to the duration of your Werewolf Transformation and restores 8% of your Max Health. Each corpse can be devoured for up to 4 seconds.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 1
+}

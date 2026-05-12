@@ -1,0 +1,22 @@
+{
+  "id": "fauns-lark-cladding",
+  "name": "Faun's Lark Cladding",
+  "type": "Mythic",
+  "acquisition": "Mythic",
+  "location": "Fragment Leads",
+  "dlc": "Base Game",
+  "pieces": 1,
+  "slots": [
+    "chest"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "If you continuously Sprint for 1 second, you gain the ability to pass through enemies. Enemies you pass through become Charmed for 4 seconds, removing their ability to attack or cast abilities as they move toward you. Charming an enemy this way restores 678 Stamina and Magicka to you, and heals you for 678 Health. \n\nCharming an enemy removes you from Stealth.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Faun's_Lark_Cladding",
+  "esohub_url": "https://eso-hub.com/en/sets/fauns-lark-cladding"
+}

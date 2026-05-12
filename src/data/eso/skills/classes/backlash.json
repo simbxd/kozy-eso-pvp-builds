@@ -1,0 +1,11 @@
+{
+  "id": "27227",
+  "slug": "backlash",
+  "name": "Backlash",
+  "description": "Summon an expanding beam of pure sunlight to doom an enemy, dealing 1161 Magic Damage immediately and marking them for 6 seconds.\n\nAfter the duration ends, the sunlight bursts, dealing 1284 Magic Damage to the enemy, which increases based on the amount of damage you dealt to them over the duration, up to 200%.\n\nYou can have only one Backlash active at a time.",
+  "category": "classes",
+  "skill_line": "Dawn's Wrath",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

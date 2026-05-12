@@ -1,0 +1,11 @@
+{
+  "id": "116235",
+  "slug": "death-gleaning",
+  "name": "Death Gleaning",
+  "description": "Whenever an enemy you are in combat with dies within 28 meters of you, restore 666 Magicka and Stamina.",
+  "category": "classes",
+  "skill_line": "Bone Tyrant",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

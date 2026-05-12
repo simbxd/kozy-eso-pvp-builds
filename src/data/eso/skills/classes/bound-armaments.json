@@ -1,0 +1,11 @@
+{
+  "id": "30432",
+  "slug": "bound-armaments",
+  "name": "Bound Armaments",
+  "description": "When slotted on either bar, you gain Major Prophecy and Major Savagery, increasing your Critical Rating by 2629.\n\nYour Light and Heavy Attacks now generate a stack of Bound Armaments for 10 seconds, up to 8 times. Fully-charged Heavy Attacks grant two stacks.\n\nWhen at one or more stacks, you can arm up to 4 of them to strike your target for 863 Physical Damage every 0.3 seconds for each stack of Bound Armaments consumed.",
+  "category": "classes",
+  "skill_line": "Daedric Summoning",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

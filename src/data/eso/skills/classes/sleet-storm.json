@@ -1,0 +1,11 @@
+{
+  "id": "86112",
+  "slug": "sleet-storm",
+  "name": "Sleet Storm",
+  "description": "Twist a violent storm around you, dealing 1161 Frost Damage every 1 second for 8 seconds to enemies around you and reducing their Movement Speed by 40%.  \n\nYou and nearby allies gain Major Protection, reducing your damage taken by 10%.",
+  "category": "classes",
+  "skill_line": "Winter's Embrace",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lord-warden",
+  "name": "Lord Warden",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Lord Warden Dusk in Imperial City Prison, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 2,
+      "stat": "When you take damage, you have a 50% chance to summon a shadow orb for 10 seconds that increases the Physical and Spell Resistance of you and your group members within 8 meters by 73-3180. This effect can occur once every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lord_Warden",
+  "esohub_url": "https://eso-hub.com/en/sets/lord-warden"
+}

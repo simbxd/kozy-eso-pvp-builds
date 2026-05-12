@@ -1,0 +1,40 @@
+{
+  "id": "red-eagles-fury",
+  "name": "Red Eagle's Fury",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "The Reach, Red Eagle Redoubt",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage to your Weapon Skill abilities. Increases the cost of your Weapon Skill abilities by 5%.",
+      "value": 469
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Red_Eagle's_Fury",
+  "esohub_url": "https://eso-hub.com/en/sets/red-eagles-fury"
+}

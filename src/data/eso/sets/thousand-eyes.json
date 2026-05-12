@@ -1,0 +1,28 @@
+{
+  "id": "thousand-eyes",
+  "name": "Thousand Eyes",
+  "type": "Monster",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 2,
+      "stat": "Dealing direct critical damage applies Shived to the enemy, dealing 1079 Bleed damage and increasing their damage taken from you by 2% for 15 seconds. This damage scales off the higher of your Weapon or Spell Damage. When the enemy dies, Shived is reapplied to the lowest health enemy within 12 meters of the corpse and increases the damage taken by 2%, up to 8%. You may only have 1 enemy with Shived.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Thousand_Eyes",
+  "esohub_url": "https://eso-hub.com/en/sets/thousand-eyes"
+}

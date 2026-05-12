@@ -1,0 +1,40 @@
+{
+  "id": "hundings-rage",
+  "name": "Hunding's Rage",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Broken Arch in Reaper's March, Wethers' Cleft in Bangkorai, Trollslayer's Gully in The Rift",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Weapon and Spell Damage",
+      "value": 300
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hunding's_Rage",
+  "esohub_url": "https://eso-hub.com/en/sets/hundings-rage"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "40118070",
+  "slug": "braided-tether",
+  "name": "Braided Tether",
+  "description": "Siphon the last remnants of life from a corpse, healing for 5742 Health over 12 seconds to yourself, all allies around you, and all allies between you and the corpse. \n\nWhile slotted, your healing done is increased by 3%.",
+  "category": "classes",
+  "skill_line": "Living Death",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

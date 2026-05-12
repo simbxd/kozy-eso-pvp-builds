@@ -1,0 +1,11 @@
+{
+  "id": "63415",
+  "slug": "blinding-flare",
+  "name": "Blinding Flare",
+  "description": "Launch a blinding flare, revealing stealthed and invisible enemies in the target area for 5 seconds. Exposed enemies are stunned for 4 seconds, and cannot return to stealth or invisibility for 4 seconds.\n\nWhile slotted you gain Major Protection, reducing your damage taken by 10%.",
+  "category": "pvp",
+  "skill_line": "Support",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

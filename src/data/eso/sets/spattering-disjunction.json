@@ -1,0 +1,40 @@
+{
+  "id": "spattering-disjunction",
+  "name": "Spattering Disjunction",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Infinite Archive",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Dealing damage with an Arcanist ability applies two random status effects to your target. This effect can occur once every 7 seconds. Dealing damage with a Herald of the Tome ability reduces this cooldown by 0.5 seconds, up to once every 1 second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spattering_Disjunction",
+  "esohub_url": "https://eso-hub.com/en/sets/spattering-disjunction"
+}

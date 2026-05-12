@@ -1,0 +1,11 @@
+{
+  "id": "217232",
+  "slug": "repelling-explosion",
+  "name": "Repelling Explosion",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Destruction Staff",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

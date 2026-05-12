@@ -1,0 +1,40 @@
+{
+  "id": "combat-physician",
+  "name": "Combat Physician",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Wayrest, Wayrest Sewers",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When your healing critically strikes, you grant your target a damage shield that absorbs 100-4308 damage for 6 seconds. This effect can occur once every 6 seconds per target.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Combat_Physician",
+  "esohub_url": "https://eso-hub.com/en/sets/combat-physician"
+}

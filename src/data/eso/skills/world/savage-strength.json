@@ -1,0 +1,11 @@
+{
+  "id": "46139",
+  "slug": "savage-strength",
+  "name": "Savage Strength",
+  "description": "Increases your Weapon and Spell Damage by 18%.\n\nGrants you Major Resolve, increasing your Physical and Spell Resistance by 5948.",
+  "category": "world",
+  "skill_line": "Werewolf",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

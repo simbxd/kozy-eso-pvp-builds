@@ -1,0 +1,40 @@
+{
+  "id": "undaunted-infiltrator",
+  "name": "Undaunted Infiltrator",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Shadowfen, Arx Corinium",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you use an ability that costs Magicka while in combat, you increase the damage of your Light and Heavy Attacks against monsters by 38-1645 for 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Undaunted_Infiltrator",
+  "esohub_url": "https://eso-hub.com/en/sets/undaunted-infiltrator"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "euphotic-gatekeeper",
+  "name": "Euphotic Gatekeeper",
+  "type": "Monster",
+  "acquisition": "Monster",
+  "location": "Zelvraak the Unbreathing in Graven Deep, Urgarlag Chief-bane",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Stamina Recovery",
+      "value": 129
+    },
+    {
+      "count": 2,
+      "stat": "When you use Roll Dodge, create a Hadolid Husk after you roll. While within 5 meters of the Hadolid Husk, it will absorb all direct damage attacks against you. After 1 second, the Hadolid Husk explodes, dealing 1155 Poison damage to all enemies within 5 meters. This effect can occur once every 20 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Euphotic_Gatekeeper",
+  "esohub_url": "https://eso-hub.com/en/sets/euphotic-gatekeeper"
+}

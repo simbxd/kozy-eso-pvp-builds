@@ -1,0 +1,11 @@
+{
+  "id": "41091",
+  "slug": "unstoppable-brute",
+  "name": "Unstoppable Brute",
+  "description": "Intensify your physical presence to gain Major Resolve, increasing your Physical and Spell Resistance by 5948 for 20 seconds.\n\nWhile this effect persists, each piece of Heavy Armor worn decreases the cost of Break Free by 5%.\n\nAlso grants you immunity to knockback and disabling effects for 6 seconds, but reduces your Movement Speed by 65% for the duration.",
+  "category": "armor",
+  "skill_line": "Heavy Armor",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

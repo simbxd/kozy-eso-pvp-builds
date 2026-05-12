@@ -1,0 +1,11 @@
+{
+  "id": "139911",
+  "slug": "excavators-reserves",
+  "name": "Excavator's Reserves",
+  "description": "Further increases the amount of time you have available when excavating a dig site.",
+  "category": "world",
+  "skill_line": "Excavation",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

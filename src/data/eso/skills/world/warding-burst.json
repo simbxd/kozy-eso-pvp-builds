@@ -1,0 +1,11 @@
+{
+  "id": "40217460",
+  "slug": "warding-burst",
+  "name": "Warding Burst",
+  "description": "Unleash a powerful burst of soul magic around you.",
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

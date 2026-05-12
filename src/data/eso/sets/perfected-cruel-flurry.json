@@ -1,0 +1,27 @@
+{
+  "id": "perfected-cruel-flurry",
+  "name": "Perfected Cruel Flurry",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Maelstrom Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "(2 perfected items) Adds 2-103 Weapon and Spell Damage",
+      "value": ""
+    },
+    {
+      "count": 2,
+      "stat": "When you deal damage with Flurry, your single target damage over time abilities used within 5 seconds gain 39-1690 Weapon and Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Cruel_Flurry",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-cruel-flurry"
+}

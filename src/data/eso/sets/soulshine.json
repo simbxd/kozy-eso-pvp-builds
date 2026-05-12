@@ -1,0 +1,40 @@
+{
+  "id": "soulshine",
+  "name": "Soulshine",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Reaper's March",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Activating an ability with a cast or channel time grants you 8-369 Weapon and Spell Damage for 5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Soulshine",
+  "esohub_url": "https://eso-hub.com/en/sets/soulshine"
+}

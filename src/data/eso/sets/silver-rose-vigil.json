@@ -1,0 +1,40 @@
+{
+  "id": "silver-rose-vigil",
+  "name": "Silver Rose Vigil",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Glenumbra, Red Petal Bastion",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you Block, gain a stack of Realmshaper for 15 seconds, gaining up to 1 stack every 0.5 seconds. When you reach 3 stacks, you consume them and launch necrotic energy at your attacker, dealing 3226 Magic damage and applying Major Maim for 12 seconds, reducing their damage done by 10%. Once you fire the necrotic energy, you cannot gain additional stacks of Realmshaper for 12 seconds. Damage scales off your Max Health.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Silver_Rose_Vigil",
+  "esohub_url": "https://eso-hub.com/en/sets/silver-rose-vigil"
+}

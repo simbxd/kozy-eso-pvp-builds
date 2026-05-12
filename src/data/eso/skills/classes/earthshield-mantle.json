@@ -1,0 +1,11 @@
+{
+  "id": "23856",
+  "slug": "earthshield-mantle",
+  "name": "Earthshield Mantle",
+  "description": "Envelop your body in molten spikes to increase your damage done by 100 and gain Major Resolve, increasing Physical and Spell Resistance by 5948 for 20 seconds.\n\nPower drawn from the heart of a volcano forms a damage shield around you that absorbs up to 5121 damage for 6 seconds, scaling off your Max Health.",
+  "category": "classes",
+  "skill_line": "Earthen Heart",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

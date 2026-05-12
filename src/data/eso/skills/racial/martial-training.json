@@ -1,0 +1,11 @@
+{
+  "id": "45278",
+  "slug": "martial-training",
+  "name": "Martial Training",
+  "description": "Reduces the cost of your weapon abilities by 8%.\n\nReduces the effectiveness of snares applied to you by 15%.",
+  "category": "racial",
+  "skill_line": "Redguard Skills",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

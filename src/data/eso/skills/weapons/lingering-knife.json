@@ -1,0 +1,11 @@
+{
+  "id": "219719",
+  "slug": "lingering-knife",
+  "name": "Lingering Knife",
+  "description": null,
+  "category": "weapons",
+  "skill_line": "Dual Wield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": -1
+}

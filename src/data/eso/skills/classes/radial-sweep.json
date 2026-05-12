@@ -1,0 +1,11 @@
+{
+  "id": "23784",
+  "slug": "radial-sweep",
+  "name": "Radial Sweep",
+  "description": "Swing your Aedric spear around with holy vengeance, dealing 2323 Magic Damage to all nearby enemies and an additional 1161 Magic Damage every 2 seconds for 6 seconds.",
+  "category": "classes",
+  "skill_line": "Aedric Spear",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "116188",
+  "slug": "reusable-parts",
+  "name": "Reusable Parts",
+  "description": "When your Sacrificial Bones, Skeletal Mage, or Spirit Mender dies, the cost of your next Sacrificial Bones, Skeletal Mage, or Spirit Mender is reduced by 66%.",
+  "category": "classes",
+  "skill_line": "Grave Lord",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

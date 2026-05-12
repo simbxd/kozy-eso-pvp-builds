@@ -1,0 +1,11 @@
+{
+  "id": "62096",
+  "slug": "grim-focus",
+  "name": "Grim Focus",
+  "description": "When slotted on either bar, you gain Major Prophecy and Major Savagery, increasing your Spell and Weapon Critical rating by 2629.\n\nYour Light and Heavy Attacks now generate a stack of Grim Focus, up to 10 times. Fully-charged Heavy Attacks grant two stacks.\n\nWhen at 5 or more stacks, you can consume 5 to fire a spectral arrow to deal 4182 Magic Damage and heal for 33% of the damage dealt, if you are in melee range.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

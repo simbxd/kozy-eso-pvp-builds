@@ -1,0 +1,45 @@
+{
+  "id": "snake-in-the-stars",
+  "name": "Snake in the Stars",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Rewards for the Worthy",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Applying a Major or Minor Debuff to an enemy applies Star Venom to them for 4 seconds. This effect can occur once every 12 seconds. Whenever an enemy with Star Venom is healed, they take 1170 Oblivion Damage, up to once every 0.1 seconds.\n\nAn enemy can only be affected by one instance of Star Venom every 12 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Snake_in_the_Stars",
+  "esohub_url": "https://eso-hub.com/en/sets/snake-in-the-stars"
+}

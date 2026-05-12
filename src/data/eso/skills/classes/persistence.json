@@ -1,0 +1,11 @@
+{
+  "id": "45165",
+  "slug": "persistence",
+  "name": "Persistence",
+  "description": "After blocking an attack, your next Health, Magicka, or Stamina ability costs 18% less.",
+  "category": "classes",
+  "skill_line": "Dark Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

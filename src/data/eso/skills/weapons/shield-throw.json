@@ -1,0 +1,11 @@
+{
+  "id": "40217061",
+  "slug": "shield-throw",
+  "name": "Shield Throw",
+  "description": "Hurl your shield at an enemy, which then returns to you.",
+  "category": "weapons",
+  "skill_line": "One Hand and Shield",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "40115710",
+  "slug": "spirit-mender",
+  "name": "Spirit Mender",
+  "description": "Conjure a ghostly spirit to do your bidding and stay by your side for 16 seconds. The spirit heals you or the lowest Health ally around you every 2 seconds, restoring 695 Health.\n\nCreates a corpse on death if you are in combat.",
+  "category": "classes",
+  "skill_line": "Living Death",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

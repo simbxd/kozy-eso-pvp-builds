@@ -1,0 +1,11 @@
+{
+  "id": "37658",
+  "slug": "reapers-mark",
+  "name": "Reaper's Mark",
+  "description": "Expose an enemy's weaknesses by applying Major Breach to them, reducing Physical Resistance and Spell Resistance by 5948 for 20 seconds.\n\nWhen a marked enemy dies, you heal to full Health and gain Major Berserk, increasing your damage done by 10% for 10 seconds.\n\nYou can only have one Reaper's Mark active at a time.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

@@ -1,0 +1,11 @@
+{
+  "id": "40183676",
+  "slug": "gibbering-shield",
+  "name": "Gibbering Shield",
+  "description": "Gather the true strength of Apocrypha around you, forming protective tentacles and a damage shield that absorbs 60% of all damage for 10 seconds, up to a max of 31732 damage, scaling off your Max Health.\n\nWhen the shield collapses you lash out, dealing all of the damage absorbed as Magic Damage to enemies within 5 meters over 10 seconds.",
+  "category": "classes",
+  "skill_line": "Soldier of Apocrypha",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

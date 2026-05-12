@@ -1,0 +1,11 @@
+{
+  "id": "33658",
+  "slug": "dragon-leap",
+  "name": "Dragon Leap",
+  "description": "Launch yourself at an enemy, dealing 3574 Flame Damage to all enemies in the area, knocking players back 4 meters and stunning them for 2 seconds. If the target is a monster they are instead knocked into the air and stunned for 3 seconds.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

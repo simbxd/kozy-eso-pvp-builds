@@ -1,0 +1,28 @@
+{
+  "id": "squall-of-retribution",
+  "name": "Squall of Retribution",
+  "type": "Monster",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 1,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 2,
+      "stat": "When you take damage, gain one random effect for 6 seconds:\nGain Minor Protection, reducing your damage taken by 5%.\nGain a damage shield that absorbs up to 5835 damage.\nHeal for 607 Health every 2 seconds.\n\nThe Health restore scales off of your Max Health. This effect can occur once every 4.5 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Squall_of_Retribution",
+  "esohub_url": "https://eso-hub.com/en/sets/squall-of-retribution"
+}

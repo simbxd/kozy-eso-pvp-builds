@@ -1,0 +1,11 @@
+{
+  "id": "45444",
+  "slug": "forceful",
+  "name": "Forceful",
+  "description": "Your Light and Heavy Attacks damage up to 3 other nearby enemies for 100% of the damage inflicted to the primary target.",
+  "category": "weapons",
+  "skill_line": "Two Handed",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

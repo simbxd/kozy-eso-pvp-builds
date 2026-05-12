@@ -1,0 +1,40 @@
+{
+  "id": "night-mothers-gaze",
+  "name": "Night Mother's Gaze",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Old Town Cavern in Reaper's March, Silaseli Ruins in Bangkorai, Eldbjorg's Hideaway in The Rift",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "When you deal Critical Damage you apply Major Breach to the enemy, reducing their Physical and Spell Resistance by 5948 for 4 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Night_Mother's_Gaze",
+  "esohub_url": "https://eso-hub.com/en/sets/night-mothers-gaze"
+}

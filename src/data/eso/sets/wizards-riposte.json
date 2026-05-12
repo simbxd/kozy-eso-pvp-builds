@@ -1,0 +1,45 @@
+{
+  "id": "wizards-riposte",
+  "name": "Wizard's Riposte",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Battlegrounds",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Magicka Recovery",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Critical Resistance",
+      "value": 660
+    },
+    {
+      "count": 5,
+      "stat": "When you take direct Critical Damage, you apply Minor Enervation to the enemy for 5 seconds, reducing their Critical Damage done by 10%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Wizard's_Riposte",
+  "esohub_url": "https://eso-hub.com/en/sets/wizards-riposte"
+}

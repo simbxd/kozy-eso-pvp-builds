@@ -1,0 +1,40 @@
+{
+  "id": "camonna-tong",
+  "name": "Camonna Tong",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Necrom",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "When you kill a monster and gain Experience Points, gain 1 Weapon and Spell Damage for every 50 Experience Points the monster is worth for 30 seconds. This bonus can stack up to a maximum of 540 Weapon and Spell Damage.\n\nThis item set is not affected by Experience Point boosting effects.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Camonna_Tong",
+  "esohub_url": "https://eso-hub.com/en/sets/camonna-tong"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45590",
+  "slug": "soul-summons",
+  "name": "Soul Summons",
+  "description": "Allows you to revive once every 1 hour without spending a Soul Gem.",
+  "category": "world",
+  "skill_line": "Soul Magic",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

@@ -1,0 +1,11 @@
+{
+  "id": "45596",
+  "slug": "slayer",
+  "name": "Slayer",
+  "description": "Increases your Weapon and Spell Damage by 3% for each Fighters Guild ability slotted.\n\nCurrent bonus: 0%.",
+  "category": "guild",
+  "skill_line": "Fighters Guild",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 3
+}

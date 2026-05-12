@@ -1,0 +1,30 @@
+{
+  "id": "grace-of-the-ancients",
+  "name": "Grace of the Ancients",
+  "type": "Mixed",
+  "acquisition": "PvP",
+  "location": "Cyrodiil, Cropsford",
+  "dlc": "Base Game",
+  "pieces": 3,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Magicka",
+      "value": 2406
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Grace_of_the_Ancients",
+  "esohub_url": "https://eso-hub.com/en/sets/grace-of-the-ancients"
+}

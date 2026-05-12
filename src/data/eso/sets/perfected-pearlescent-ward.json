@@ -1,0 +1,45 @@
+{
+  "id": "perfected-pearlescent-ward",
+  "name": "Perfected Pearlescent Ward",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "High Isle, Dreadsail Reef",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 3,
+      "stat": "Gain Minor Aegis at all times, reducing your damage taken from Dungeon, Trial, and Arena Monsters by 5%.",
+      "value": ""
+    },
+    {
+      "count": 4,
+      "stat": "Adds 4% Healing Taken",
+      "value": ""
+    },
+    {
+      "count": 1,
+      "stat": "(5 perfected items) Adds 28-1206 Maximum Health",
+      "value": ""
+    },
+    {
+      "count": 5,
+      "stat": "Grants you and up to 11 other group members Pearlescent Ward. This bonus persists through death.\n\nPearlescent Ward increases Weapon and Spell Damage by up to 4-180 based on the number of group members that are alive.\nCurrent 4-180 Weapon and Spell Damage.\n\nPearlescent Ward increases damage reduction from non-player enemies out of 66% based on the number of group members that are dead.\nCurrent 0% damage reduction.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfected_Pearlescent_Ward",
+  "esohub_url": "https://eso-hub.com/en/sets/perfected-pearlescent-ward"
+}

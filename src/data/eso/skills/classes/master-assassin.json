@@ -1,0 +1,11 @@
+{
+  "id": "45038",
+  "slug": "master-assassin",
+  "name": "Master Assassin",
+  "description": "Increases your Critical Chance rating against enemies you are flanking by 1448, increasing your chance to critically strike by |6.6%.",
+  "category": "classes",
+  "skill_line": "Assassination",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 2
+}

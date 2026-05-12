@@ -1,0 +1,40 @@
+{
+  "id": "blooddrinker",
+  "name": "Blooddrinker",
+  "type": "Mixed",
+  "acquisition": "Dungeon",
+  "location": "Craglorn, Bloodroot Forge",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 4,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 5,
+      "stat": "Increases your Bleed damaging attacks by 20%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blooddrinker",
+  "esohub_url": "https://eso-hub.com/en/sets/blooddrinker"
+}

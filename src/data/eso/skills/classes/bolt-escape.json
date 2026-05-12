@@ -1,0 +1,11 @@
+{
+  "id": "30205",
+  "slug": "bolt-escape",
+  "name": "Bolt Escape",
+  "description": "Transform yourself into pure energy and flash forward, stunning enemies near your final location for 3 seconds. \n\nThis effect cannot be blocked.\n\nCasting again within 4 seconds costs 33% more Magicka.",
+  "category": "classes",
+  "skill_line": "Storm Calling",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

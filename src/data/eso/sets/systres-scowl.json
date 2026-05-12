@@ -1,0 +1,40 @@
+{
+  "id": "systres-scowl",
+  "name": "Systres' Scowl",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "High Isle and Amenos",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Health",
+      "value": 1206
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "When you Bash an enemy, place Systres' Scowl on them for 15 seconds. When hit by a Light Attack, a target with Systres' Scowl takes 45-1973 Frost Damage, up to once every second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Systres'_Scowl",
+  "esohub_url": "https://eso-hub.com/en/sets/systres-scowl"
+}

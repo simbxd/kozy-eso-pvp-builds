@@ -1,0 +1,40 @@
+{
+  "id": "quick-serpent",
+  "name": "Quick Serpent",
+  "type": "Mixed",
+  "acquisition": "Trial",
+  "location": "Craglorn, Aetherian Archive",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 5,
+      "stat": "Reduces the costs of your Stamina abilities by 8%. When an enemy you have recently damaged dies, you restore 57-2454 Stamina and gain Major Expedition for 8 seconds, increasing your Movement Speed by 30%. These effects can occur once every second.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Quick_Serpent",
+  "esohub_url": "https://eso-hub.com/en/sets/quick-serpent"
+}

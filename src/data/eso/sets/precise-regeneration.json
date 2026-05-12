@@ -1,0 +1,22 @@
+{
+  "id": "precise-regeneration",
+  "name": "Precise Regeneration",
+  "type": "Monster",
+  "acquisition": "Arena",
+  "location": "Maelstrom Arena",
+  "dlc": "Base Game",
+  "pieces": 2,
+  "slots": [
+    "weapon"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "When your Regeneration critically strikes, you restore 12-558 Magicka. This effect cannot occur from simultaneous critical strikes.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Precise_Regeneration",
+  "esohub_url": "https://eso-hub.com/en/sets/precise-regeneration"
+}

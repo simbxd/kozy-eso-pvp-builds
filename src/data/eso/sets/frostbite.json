@@ -1,0 +1,40 @@
+{
+  "id": "frostbite",
+  "name": "Frostbite",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "Blackwood",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Critical Chance",
+      "value": 657
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Increases your damage done with Frost abilities by 8%. Increases your damage done against Chilled enemies by 4%. Increases your damage done against enemies afflicted with Minor Brittle by 2%.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Frostbite",
+  "esohub_url": "https://eso-hub.com/en/sets/frostbite"
+}

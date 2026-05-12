@@ -1,0 +1,40 @@
+{
+  "id": "jerensis-bladestorm",
+  "name": "Jerensi's Bladestorm",
+  "type": "Mixed",
+  "acquisition": "Overland",
+  "location": "",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 3,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 4,
+      "stat": "Offensive Penetration",
+      "value": 1487
+    },
+    {
+      "count": 5,
+      "stat": "While in combat, casting an ability that leaves an effect on the ground creates a 6 meter Spike Vortex that deals 3855 Physical damage over 5 seconds to enemies inside it. After 5 seconds, enemies within the Vortex are dealt 1925 Physical damage over 5 seconds. This effect can occur once every 15 seconds and scales off the higher of your Weapon or Spell Damage.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Jerensi's_Bladestorm",
+  "esohub_url": "https://eso-hub.com/en/sets/jerensis-bladestorm"
+}

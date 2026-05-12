@@ -1,0 +1,11 @@
+{
+  "id": "27275",
+  "slug": "ritual-of-retribution",
+  "name": "Ritual of Retribution",
+  "description": "Exalt in the sacred light of the Aedra, cleansing up to 2 harmful effects from yourself immediately.  While in the area, enemies take 435 Magic Damage every 2 seconds for 20 seconds which increases by 12% per tick.  \n\nAllies in the area can activate the Purify synergy, cleansing all harmful effects from themselves and healing for 1912 Health.",
+  "category": "classes",
+  "skill_line": "Restoring Light",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

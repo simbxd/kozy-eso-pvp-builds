@@ -1,0 +1,11 @@
+{
+  "id": "33749",
+  "slug": "fleetstep-wings",
+  "name": "Fleetstep Wings",
+  "description": "Unfurl draconic wings to knock back enemies around you 4 meters and stun them for 1.8 seconds. \n\nThe enchanted winds summoned by your wings coalesce around you, reducing your damage taken from projectiles by 50% for 6 seconds, while granting you immunity to snares and immobilizations and Major Expedition for 4 seconds, increasing Movement Speed by 30%.",
+  "category": "classes",
+  "skill_line": "Draconic Power",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

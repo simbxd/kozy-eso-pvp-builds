@@ -1,0 +1,40 @@
+{
+  "id": "coldharbours-favorite",
+  "name": "Coldharbour's Favorite",
+  "type": "Mixed",
+  "acquisition": "Crafted",
+  "location": "Northern Elsweyr, Valenwood Border Artisan Camp",
+  "dlc": "Base Game",
+  "pieces": 5,
+  "slots": [
+    "necklace",
+    "ring",
+    "weapon",
+    "off-hand"
+  ],
+  "patch_verified": "U49",
+  "bonuses": [
+    {
+      "count": 2,
+      "stat": "Maximum Magicka",
+      "value": 1096
+    },
+    {
+      "count": 3,
+      "stat": "Maximum Stamina",
+      "value": 1096
+    },
+    {
+      "count": 4,
+      "stat": "Weapon and Spell Damage",
+      "value": 129
+    },
+    {
+      "count": 5,
+      "stat": "Healing yourself or a group member summons Coldharbour's Favorite, who after 2 seconds, begins healing you and group members near him for 4648 Health over 6 seconds based on the higher of your Max Magicka or Stamina.\n\nDealing damage summons Coldharbour's Favorite, who after 2 seconds, explodes, damaging enemies near him for 2352 Magic damage over 6 seconds based on the higher of your Weapon or Spell Damage.\n\nColdharbour's Favorite can only be summoned once every 10 seconds.",
+      "value": ""
+    }
+  ],
+  "uesp_url": "https://en.uesp.net/wiki/Online:Coldharbour's_Favorite",
+  "esohub_url": "https://eso-hub.com/en/sets/coldharbours-favorite"
+}

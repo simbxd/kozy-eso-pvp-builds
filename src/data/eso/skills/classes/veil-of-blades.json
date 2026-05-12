@@ -1,0 +1,11 @@
+{
+  "id": "37713",
+  "slug": "veil-of-blades",
+  "name": "Veil of Blades",
+  "description": "Conjure a ring of shadow, reducing the Movement Speed of enemies by 70%, dealing 1438 Magic Damage to them every 1 second, and granting you and your allies Major Protection, reducing your damage taken by 10%. \n\nAllies in the area can activate the Hidden Refresh synergy, granting them invisibility, increasing their Movement Speed by 70%, and healing them for 9110 Health over 4 seconds.",
+  "category": "classes",
+  "skill_line": "Shadow",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}

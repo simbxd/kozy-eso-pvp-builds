@@ -1,0 +1,11 @@
+{
+  "id": "40115315",
+  "slug": "life-amid-death",
+  "name": "Life amid Death",
+  "description": "Release residual fragments of fallen souls at the target location, healing you and your allies for 2323 Health.\n\nConsumes a corpse on cast to continue to heal you and your allies in the area for 2310 Health over 5 seconds.",
+  "category": "classes",
+  "skill_line": "Living Death",
+  "is_passive": true,
+  "is_ultimate": false,
+  "max_rank": 4
+}
