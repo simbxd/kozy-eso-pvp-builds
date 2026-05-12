@@ -3,7 +3,7 @@
   "name": "Hearth and Home",
   "base_skill": "Hearthfire",
   "morph_of": "hearthfire",
-  "morph_sibling": "heart-of-flame",
+  "morph_sibling": "fire-keeper",
   "morph_rationale": "AoE heal on the ground — reposition under it regularly to maintain the healing uptime.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",

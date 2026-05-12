@@ -13,7 +13,8 @@
     "fetch:eso": "node scripts/fetch-eso-data.mjs",
     "fetch:icons": "node scripts/fetch-skill-icons.mjs",
     "gen:decap": "node scripts/gen-decap-config.mjs",
-    "update:decap": "npm run fetch:eso && npm run gen:decap"
+    "update:decap": "npm run fetch:eso && npm run gen:decap",
+    "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
