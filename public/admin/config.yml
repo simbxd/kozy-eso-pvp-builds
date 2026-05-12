@@ -142,8 +142,8 @@ collections:
             widget: object
             required: false
             fields:
-              - { name: name, label: Name, widget: string }
-              - { name: note, label: Note, widget: string }
+              - { name: name, label: Name, widget: string, required: false }
+              - { name: note, label: Note, widget: string, required: false }
           - name: mundus
             label: Mundus Stone
             widget: object
