@@ -36,14 +36,14 @@ skills:
     - temporal-guard
 stats:
   health:
-    target: 18000
-    note: minimum viable en Battlegrounds
+    target: 32000
+    note: "minimum viable "
   magicka:
     target: 40000
-    note: avec Witchmother's Potent Brew
+    note: "minimum viable "
   stamina:
-    target: 12000
-    note: nécessaire pour break free et roll dodge
+    target: 20000
+    note: needed to break free & roll dodge
 champion_points:
   warfare:
     - star: Cleansing Revival
