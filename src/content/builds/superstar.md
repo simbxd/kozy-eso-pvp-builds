@@ -1,8 +1,8 @@
 ---
-title: The Solo God — Magicka Dragonknight PvP
+title: The Solo God — Hybrid Dragonknight PvP
 class: Dragonknight
 role: DPS
-resource: Magicka
+resource: Hybrid
 gamemode: PvP
 patch: U50
 updatedAt: 2025-05-11
@@ -21,7 +21,7 @@ sets:
   - true-sworn-fury
 skills:
   bar1:
-    - molten-whip
+    - flame-lash
     - disintegrating-dragonfire
     - shattering-rocks
     - quick-cloak
