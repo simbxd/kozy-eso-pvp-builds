@@ -1,5 +1,5 @@
 ---
-title: The Soloer — Magicka Dragonknight PvP
+title: The Solo God — Magicka Dragonknight PvP
 class: Dragonknight
 role: DPS
 resource: Magicka
