@@ -3,40 +3,49 @@
  * Generates public/admin/config.yml from ESO data indexes.
  *
  * Reads:
- *   src/data/eso/sets-index.json    → select options for set fields
- *   src/data/eso/skills-index.json  → select options for skill bars
+ *   src/data/eso/sets-index.json  → 712 set options (label=name, value=slug)
+ *   src/content/skills/*.json     → curated skill options (only these work in builds)
  *
- * Run after fetch:eso:
+ * Run after fetch:eso or after adding new skills:
  *   node scripts/gen-decap-config.mjs
  *   npm run gen:decap
  *
  * Requires: Node.js 18+
  */
 
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const ROOT = new URL('..', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
-const ESO_DIR = join(ROOT, 'src/data/eso');
+const ESO_DIR     = join(ROOT, 'src/data/eso');
+const SKILLS_DIR  = join(ROOT, 'src/content/skills');
 const OUT = join(ROOT, 'public/admin/config.yml');
 
 const log = (...a) => console.log('[gen-decap]', ...a);
 
-// ---------- Load indexes ----------
+// ---------- Load data ----------
 const setsIndex = JSON.parse(
   await readFile(join(ESO_DIR, 'sets-index.json'), 'utf8')
 );
-const skillsIndex = JSON.parse(
-  await readFile(join(ESO_DIR, 'skills-index.json'), 'utf8')
-);
 
-log(`Loaded ${setsIndex.length} sets, ${skillsIndex.length} skills`);
+// Skills: only curated files in src/content/skills/ (these are the ones assertIds() accepts)
+const skillFiles = (await readdir(SKILLS_DIR)).filter(f => f.endsWith('.json'));
+const skillsIndex = await Promise.all(
+  skillFiles.map(async f => {
+    const id   = f.replace('.json', '');
+    const data = JSON.parse(await readFile(join(SKILLS_DIR, f), 'utf8'));
+    return { id, name: data.name, skill_line: data.skill_line ?? '' };
+  })
+);
+skillsIndex.sort((a, b) => a.name.localeCompare(b.name));
+
+log(`Loaded ${setsIndex.length} sets, ${skillsIndex.length} curated skills`);
 
 // ---------- Build YAML option blocks ----------
 function setOptions(indent = 10) {
   const pad = ' '.repeat(indent);
   return setsIndex
-    .map(s => `${pad}- { label: "${s.name.replace(/"/g, '\\"')}", value: "${s.slug}" }`)
+    .map(s => `${pad}- { label: "${s.name.replace(/"/g, '\\"')}", value: "${s.id}" }`)
     .join('\n');
 }
 
@@ -45,7 +54,7 @@ function skillOptions(indent = 12) {
   return skillsIndex
     .map(s => {
       const label = s.skill_line ? `${s.name} — ${s.skill_line}` : s.name;
-      return `${pad}- { label: "${label.replace(/"/g, '\\"')}", value: "${s.slug}" }`;
+      return `${pad}- { label: "${label.replace(/"/g, '\\"')}", value: "${s.id}" }`;
     })
     .join('\n');
 }
