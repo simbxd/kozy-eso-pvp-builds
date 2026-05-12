@@ -125,18 +125,19 @@ collections:
             widget: object
             fields:
               - { name: name,  label: Name,       widget: string }
-              - { name: stats, label: Stats,       widget: string }
-              - { name: note,  label: Note,        widget: string }
+              - { name: stats, label: Stats,       widget: string, required: false }
+              - { name: note,  label: Note,        widget: string, required: false }
               - { name: alt,   label: Alternative, widget: string, required: false }
           - name: potion
             label: Potion
             widget: object
             fields:
               - { name: name, label: Name, widget: string }
-              - { name: note, label: Note, widget: string }
+              - { name: note, label: Note, widget: string, required: false }
               - name: ingredients
                 label: Ingredients
                 widget: list
+                required: false
           - name: poison
             label: Poison
             widget: object
@@ -150,16 +151,16 @@ collections:
             required: false
             fields:
               - { name: stone,  label: Stone,  widget: string }
-              - { name: effect, label: Effect, widget: string }
-              - { name: note,   label: Note,   widget: string }
+              - { name: effect, label: Effect, widget: string, required: false }
+              - { name: note,   label: Note,   widget: string, required: false }
               - name: alt
                 label: Alternative Stone
                 widget: object
                 required: false
                 fields:
                   - { name: stone,  label: Stone,  widget: string }
-                  - { name: effect, label: Effect, widget: string }
-                  - { name: note,   label: Note,   widget: string }
+                  - { name: effect, label: Effect, widget: string, required: false }
+                  - { name: note,   label: Note,   widget: string, required: false }
 
       # Gear Sheet
       - name: gear

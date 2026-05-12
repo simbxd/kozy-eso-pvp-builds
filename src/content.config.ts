@@ -40,10 +40,10 @@ const builds = defineCollection({
       fitness: z.array(cpStar),
     }).optional(),
     consumables: z.object({
-      food:   z.object({ name: z.string(), stats: z.string(), note: z.string(), alt: z.string().optional() }),
-      potion: z.object({ name: z.string(), ingredients: z.array(z.string()), note: z.string() }),
-      poison: z.object({ name: z.string(), note: z.string() }).optional(),
-      mundus: z.object({ stone: z.string(), effect: z.string(), note: z.string(), alt: z.object({ stone: z.string(), effect: z.string(), note: z.string() }).optional() }).optional(),
+      food:   z.object({ name: z.string(), stats: z.string().optional(), note: z.string().optional(), alt: z.string().optional() }),
+      potion: z.object({ name: z.string(), ingredients: z.array(z.string()).optional(), note: z.string().optional() }),
+      poison: z.object({ name: z.string().optional(), note: z.string().optional() }).optional(),
+      mundus: z.object({ stone: z.string(), effect: z.string().optional(), note: z.string().optional(), alt: z.object({ stone: z.string(), effect: z.string().optional(), note: z.string().optional() }).optional() }).optional(),
     }).optional(),
   }),
 });
