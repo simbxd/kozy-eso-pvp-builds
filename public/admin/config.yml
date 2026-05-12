@@ -125,17 +125,19 @@ collections:
           - name: food
             label: Food
             widget: object
+            required: false
             fields:
-              - { name: name,  label: Name,       widget: string }
+              - { name: name,  label: Name,       widget: string, required: false }
               - { name: stats, label: Stats,       widget: string, required: false }
               - { name: note,  label: Note,        widget: string, required: false }
               - { name: alt,   label: Alternative, widget: string, required: false }
           - name: potion
             label: Potion
             widget: object
+            required: false
             fields:
-              - { name: name, label: Name, widget: string }
-              - { name: note, label: Note, widget: string, required: false }
+              - { name: name, label: Name,        widget: string, required: false }
+              - { name: note, label: Note,        widget: string, required: false }
               - name: ingredients
                 label: Ingredients
                 widget: list
@@ -152,7 +154,7 @@ collections:
             widget: object
             required: false
             fields:
-              - { name: stone,  label: Stone,  widget: string }
+              - { name: stone,  label: Stone,  widget: string, required: false }
               - { name: effect, label: Effect, widget: string, required: false }
               - { name: note,   label: Note,   widget: string, required: false }
               - name: alt
@@ -160,7 +162,7 @@ collections:
                 widget: object
                 required: false
                 fields:
-                  - { name: stone,  label: Stone,  widget: string }
+                  - { name: stone,  label: Stone,  widget: string, required: false }
                   - { name: effect, label: Effect, widget: string, required: false }
                   - { name: note,   label: Note,   widget: string, required: false }
 
