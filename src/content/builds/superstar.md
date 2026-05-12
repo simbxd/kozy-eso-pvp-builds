@@ -16,9 +16,9 @@ pullquote: Hard to kill. Always relevant. The longer the fight goes, the more
 sets:
   - mighty-chudan
   - rallying-cry
-  - two-fanged-snake
   - markyn-ring-of-majesty
   - armor-of-the-trainee
+  - true-sworn-fury
 skills:
   bar1:
     - molten-whip
