@@ -4,6 +4,7 @@
   "base_skill": "Spear Shards",
   "morph_of": "spear-shards",
   "morph_sibling": "luminous-shards",
+  "morph_rationale": "Crowd control morph — roots the target in place on hit.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Dive",
   "morph_of": "dive",
   "morph_sibling": "screaming-cliff-racer",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

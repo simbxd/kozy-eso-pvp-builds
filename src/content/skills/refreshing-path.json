@@ -4,6 +4,7 @@
   "base_skill": "Path of Darkness",
   "morph_of": "path-of-darkness",
   "morph_sibling": "twisting-path",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

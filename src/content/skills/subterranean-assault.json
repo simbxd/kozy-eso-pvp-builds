@@ -4,6 +4,7 @@
   "base_skill": "Scorch",
   "morph_of": "scorch",
   "morph_sibling": "deep-fissure",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

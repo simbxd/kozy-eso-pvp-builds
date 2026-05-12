@@ -4,6 +4,7 @@
   "base_skill": "Conjured Ward",
   "morph_of": "conjured-ward",
   "morph_sibling": "regenerative-ward",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Regenerative Ward.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

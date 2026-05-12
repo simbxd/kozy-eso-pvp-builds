@@ -4,6 +4,7 @@
   "base_skill": "Restoring Aura",
   "morph_of": "restoring-aura",
   "morph_sibling": "repentance",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

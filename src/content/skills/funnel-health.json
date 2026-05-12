@@ -4,6 +4,7 @@
   "base_skill": "Strife",
   "morph_of": "strife",
   "morph_sibling": "swallow-soul",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

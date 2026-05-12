@@ -4,6 +4,7 @@
   "base_skill": "Nova",
   "morph_of": "nova",
   "morph_sibling": "solar-disturbance",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
   "type": "Active",

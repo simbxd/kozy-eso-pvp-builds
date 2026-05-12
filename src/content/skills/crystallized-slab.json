@@ -4,6 +4,7 @@
   "base_skill": "Crystallized Shield",
   "morph_of": "crystallized-shield",
   "morph_sibling": "shimmering-shield",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

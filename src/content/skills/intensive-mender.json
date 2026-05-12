@@ -4,6 +4,7 @@
   "base_skill": "Spirit Mender",
   "morph_of": "spirit-mender",
   "morph_sibling": "spirit-guardian",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

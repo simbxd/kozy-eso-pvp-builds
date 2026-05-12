@@ -4,6 +4,7 @@
   "base_skill": "Render Flesh",
   "morph_of": "render-flesh",
   "morph_sibling": "resistant-flesh",
+  "morph_rationale": "Self-sustain morph — heals you for a portion of the damage dealt.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

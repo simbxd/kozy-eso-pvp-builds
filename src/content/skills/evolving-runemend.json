@@ -4,6 +4,7 @@
   "base_skill": "Runemend",
   "morph_of": "runemend",
   "morph_sibling": "audacious-runemend",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

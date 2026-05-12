@@ -4,6 +4,7 @@
   "base_skill": "Critical Charge",
   "morph_of": "critical-charge",
   "morph_sibling": "stampede",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Stampede.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

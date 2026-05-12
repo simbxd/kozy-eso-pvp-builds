@@ -4,6 +4,7 @@
   "base_skill": "Healing Ritual",
   "morph_of": "healing-ritual",
   "morph_sibling": "hasty-prayer",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Hasty Prayer's Minor Expedition.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

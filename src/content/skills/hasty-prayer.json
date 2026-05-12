@@ -4,6 +4,7 @@
   "base_skill": "Healing Ritual",
   "morph_of": "healing-ritual",
   "morph_sibling": "ritual-of-rebirth",
+  "morph_rationale": "Support morph — grants Minor Expedition, increasing your Movement Speed.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

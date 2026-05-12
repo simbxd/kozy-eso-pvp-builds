@@ -4,6 +4,7 @@
   "base_skill": "Sleet Storm",
   "morph_of": "sleet-storm",
   "morph_sibling": "permafrost",
+  "morph_rationale": "Mobility morph — increases Movement Speed on cast.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

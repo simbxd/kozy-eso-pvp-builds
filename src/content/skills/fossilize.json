@@ -4,6 +4,7 @@
   "base_skill": "Petrify",
   "morph_of": "petrify",
   "morph_sibling": "shattering-rocks",
+  "morph_rationale": "Mobility morph — increases Movement Speed on cast.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
   "type": "Active",

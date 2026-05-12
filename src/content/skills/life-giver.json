@@ -4,6 +4,7 @@
   "base_skill": "Panacea",
   "morph_of": "panacea",
   "morph_sibling": "lights-champion",
+  "morph_rationale": "Self-sustain morph — heals you for a portion of the damage dealt.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Magelight",
   "morph_of": "magelight",
   "morph_sibling": "radiant-magelight",
+  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
   "class": "Guild",
   "skill_line": "Mages Guild",
   "type": "Active",

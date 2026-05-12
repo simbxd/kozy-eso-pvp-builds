@@ -4,6 +4,7 @@
   "base_skill": "Arctic Wind",
   "morph_of": "arctic-wind",
   "morph_sibling": "arctic-blast",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

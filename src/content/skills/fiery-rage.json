@@ -4,6 +4,7 @@
   "base_skill": "Elemental Storm",
   "morph_of": "elemental-storm",
   "morph_sibling": "eye-of-the-storm",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

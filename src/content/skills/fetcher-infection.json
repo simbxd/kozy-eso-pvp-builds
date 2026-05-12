@@ -4,6 +4,7 @@
   "base_skill": "Swarm",
   "morph_of": "swarm",
   "morph_sibling": "growing-swarm",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

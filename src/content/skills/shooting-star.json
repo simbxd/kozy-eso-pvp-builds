@@ -4,6 +4,7 @@
   "base_skill": "Meteor",
   "morph_of": "meteor",
   "morph_sibling": "ice-comet",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Guild",
   "skill_line": "Mages Guild",
   "type": "Active",

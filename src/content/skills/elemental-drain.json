@@ -4,6 +4,7 @@
   "base_skill": "Weakness to Elements",
   "morph_of": "weakness-to-elements",
   "morph_sibling": "elemental-susceptibility",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

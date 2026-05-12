@@ -4,6 +4,7 @@
   "base_skill": "Impaling Shards",
   "morph_of": "impaling-shards",
   "morph_sibling": "winters-revenge",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

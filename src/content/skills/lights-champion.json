@@ -4,6 +4,7 @@
   "base_skill": "Panacea",
   "morph_of": "panacea",
   "morph_sibling": "life-giver",
+  "morph_rationale": "Support morph — grants Major Force, increasing your Critical Damage.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

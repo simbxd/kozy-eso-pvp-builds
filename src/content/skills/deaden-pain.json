@@ -4,6 +4,7 @@
   "base_skill": "Bitter Harvest",
   "morph_of": "bitter-harvest",
   "morph_sibling": "necrotic-potency",
+  "morph_rationale": "Support morph — grants Major Protection, increasing your damage reduction.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

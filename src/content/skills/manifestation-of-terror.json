@@ -4,6 +4,7 @@
   "base_skill": "Aspect of Terror",
   "morph_of": "aspect-of-terror",
   "morph_sibling": "mass-hysteria",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Mass Hysteria.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Spirit Mender",
   "morph_of": "spirit-mender",
   "morph_sibling": "intensive-mender",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

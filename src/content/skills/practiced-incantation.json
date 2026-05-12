@@ -4,6 +4,7 @@
   "base_skill": "Rite of Passage",
   "morph_of": "rite-of-passage",
   "morph_sibling": "remembrance",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Remembrance's Major Protection.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

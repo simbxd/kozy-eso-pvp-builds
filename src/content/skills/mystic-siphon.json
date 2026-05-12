@@ -4,6 +4,7 @@
   "base_skill": "Shocking Siphon",
   "morph_of": "shocking-siphon",
   "morph_sibling": "detonating-siphon",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
   "type": "Active",

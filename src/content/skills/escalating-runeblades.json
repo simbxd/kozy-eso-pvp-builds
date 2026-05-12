@@ -4,6 +4,7 @@
   "base_skill": "Runeblades",
   "morph_of": "runeblades",
   "morph_sibling": "writhing-runeblades",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

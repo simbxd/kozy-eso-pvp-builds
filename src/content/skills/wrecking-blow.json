@@ -4,6 +4,7 @@
   "base_skill": "Uppercut",
   "morph_of": "uppercut",
   "morph_sibling": "dizzying-swing",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

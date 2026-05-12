@@ -4,6 +4,7 @@
   "base_skill": "Elemental Storm",
   "morph_of": "elemental-storm",
   "morph_sibling": "eye-of-the-storm",
+  "morph_rationale": "Crowd control morph — roots the target in place on hit.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

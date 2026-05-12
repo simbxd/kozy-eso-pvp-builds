@@ -4,6 +4,7 @@
   "base_skill": "Radial Sweep",
   "morph_of": "radial-sweep",
   "morph_sibling": "crescent-sweep",
+  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

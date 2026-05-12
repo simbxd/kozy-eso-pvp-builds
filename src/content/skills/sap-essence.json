@@ -4,6 +4,7 @@
   "base_skill": "Drain Power",
   "morph_of": "drain-power",
   "morph_sibling": "power-extraction",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

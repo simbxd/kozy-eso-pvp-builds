@@ -4,6 +4,7 @@
   "base_skill": "Puncture",
   "morph_of": "puncture",
   "morph_sibling": "ransack",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

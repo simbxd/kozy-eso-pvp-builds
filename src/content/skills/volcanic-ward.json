@@ -4,6 +4,7 @@
   "base_skill": "Superheated Ward",
   "morph_of": "superheated-ward",
   "morph_sibling": "magma-fist",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Poison Arrow",
   "morph_of": "poison-arrow",
   "morph_sibling": "poison-injection",
+  "morph_rationale": "Support morph — grants Major Brutality, increasing your Weapon and Spell Damage.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Flame Skull",
   "morph_of": "flame-skull",
   "morph_sibling": "ricochet-skull",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Ricochet Skull.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
   "type": "Active",

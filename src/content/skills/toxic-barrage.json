@@ -4,6 +4,7 @@
   "base_skill": "Rapid Fire",
   "morph_of": "rapid-fire",
   "morph_sibling": "ballista",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Secluded Grove",
   "morph_of": "secluded-grove",
   "morph_sibling": "enchanted-forest",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Enchanted Forest's alternative effect.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

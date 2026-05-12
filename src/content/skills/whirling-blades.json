@@ -4,6 +4,7 @@
   "base_skill": "Whirlwind",
   "morph_of": "whirlwind",
   "morph_sibling": "steel-tornado",
+  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

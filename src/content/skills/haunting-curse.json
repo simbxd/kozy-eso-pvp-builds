@@ -4,6 +4,7 @@
   "base_skill": "Daedric Curse",
   "morph_of": "daedric-curse",
   "morph_sibling": "daedric-prey",
+  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

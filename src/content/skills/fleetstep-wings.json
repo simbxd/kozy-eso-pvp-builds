@@ -4,6 +4,7 @@
   "base_skill": "Wing Buffet",
   "morph_of": "wing-buffet",
   "morph_sibling": "protect-the-brood",
+  "morph_rationale": "Crowd control morph — knocks enemies back on hit.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
   "type": "Active",

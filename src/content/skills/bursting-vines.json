@@ -4,6 +4,7 @@
   "base_skill": "Nature's Grasp",
   "morph_of": "natures-grasp",
   "morph_sibling": "natures-embrace",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

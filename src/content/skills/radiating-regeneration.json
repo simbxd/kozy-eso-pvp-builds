@@ -4,6 +4,7 @@
   "base_skill": "Regeneration",
   "morph_of": "regeneration",
   "morph_sibling": "rapid-regeneration",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

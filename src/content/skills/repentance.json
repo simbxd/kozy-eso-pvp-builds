@@ -4,6 +4,7 @@
   "base_skill": "Restoring Aura",
   "morph_of": "restoring-aura",
   "morph_sibling": "radiant-aura",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

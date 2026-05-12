@@ -4,6 +4,7 @@
   "base_skill": "Rune Focus",
   "morph_of": "rune-focus",
   "morph_sibling": "channeled-focus",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

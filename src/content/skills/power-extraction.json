@@ -4,6 +4,7 @@
   "base_skill": "Drain Power",
   "morph_of": "drain-power",
   "morph_sibling": "sap-essence",
+  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

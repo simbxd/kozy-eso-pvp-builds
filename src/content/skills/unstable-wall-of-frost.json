@@ -4,6 +4,7 @@
   "base_skill": "Wall of Elements",
   "morph_of": "wall-of-elements",
   "morph_sibling": "elemental-blockade",
+  "morph_rationale": "Debuff morph — applies Minor Breach on hit.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Mages' Fury",
   "morph_of": "mages-fury",
   "morph_sibling": "endless-fury",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
   "type": "Active",

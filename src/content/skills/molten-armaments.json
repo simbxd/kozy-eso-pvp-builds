@@ -4,6 +4,7 @@
   "base_skill": "Molten Weapons",
   "morph_of": "molten-weapons",
   "morph_sibling": "igneous-weapons",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
   "type": "Active",

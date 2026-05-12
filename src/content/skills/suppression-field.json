@@ -4,6 +4,7 @@
   "base_skill": "Negate Magic",
   "morph_of": "negate-magic",
   "morph_sibling": "absorption-field",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

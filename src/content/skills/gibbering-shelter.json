@@ -4,6 +4,7 @@
   "base_skill": "Gibbering Shield",
   "morph_of": "gibbering-shield",
   "morph_sibling": "sanctum-of-the-abyssal-sea",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Sanctum of the Abyssal Sea.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Crystallized Shield",
   "morph_of": "crystallized-shield",
   "morph_sibling": "crystallized-slab",
+  "morph_rationale": "Support morph — grants Major Heroism, increasing your effectiveness.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

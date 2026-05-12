@@ -4,6 +4,7 @@
   "base_skill": "Accelerate",
   "morph_of": "accelerate",
   "morph_sibling": "race-against-time",
+  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",

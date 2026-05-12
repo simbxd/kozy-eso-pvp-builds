@@ -4,6 +4,7 @@
   "base_skill": "Arctic Wind",
   "morph_of": "arctic-wind",
   "morph_sibling": "polar-wind",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

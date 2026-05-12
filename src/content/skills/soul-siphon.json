@@ -4,6 +4,7 @@
   "base_skill": "Soul Shred",
   "morph_of": "soul-shred",
   "morph_sibling": "soul-tether",
+  "morph_rationale": "Support morph — grants Major Vitality to you and nearby allies, increasing your effectiveness.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

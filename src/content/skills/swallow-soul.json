@@ -4,6 +4,7 @@
   "base_skill": "Strife",
   "morph_of": "strife",
   "morph_sibling": "funnel-health",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Funnel Health's alternative effect.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

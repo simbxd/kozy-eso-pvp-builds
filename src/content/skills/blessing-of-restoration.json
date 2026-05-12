@@ -4,6 +4,7 @@
   "base_skill": "Blessing of Protection",
   "morph_of": "blessing-of-protection",
   "morph_sibling": "combat-prayer",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Combat Prayer's Minor Resolve.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

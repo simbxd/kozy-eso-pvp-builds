@@ -4,6 +4,7 @@
   "base_skill": "Scatter Shot",
   "morph_of": "scatter-shot",
   "morph_sibling": "draining-shot",
+  "morph_rationale": "Crowd control morph — knocks enemies back on hit.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

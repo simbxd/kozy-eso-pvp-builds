@@ -4,6 +4,7 @@
   "base_skill": "Shield Charge",
   "morph_of": "shield-charge",
   "morph_sibling": "shielded-assault",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

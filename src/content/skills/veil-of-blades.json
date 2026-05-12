@@ -4,6 +4,7 @@
   "base_skill": "Consuming Darkness",
   "morph_of": "consuming-darkness",
   "morph_sibling": "bolstering-darkness",
+  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

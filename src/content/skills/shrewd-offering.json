@@ -4,6 +4,7 @@
   "base_skill": "Malevolent Offering",
   "morph_of": "malevolent-offering",
   "morph_sibling": "healthy-offering",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

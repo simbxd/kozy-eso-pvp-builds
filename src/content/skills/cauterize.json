@@ -4,6 +4,7 @@
   "base_skill": "Inferno",
   "morph_of": "inferno",
   "morph_sibling": "incinerate",
+  "morph_rationale": "Burst morph — deals damage instantly rather than over time like Incinerate.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

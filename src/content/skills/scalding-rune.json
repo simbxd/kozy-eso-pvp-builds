@@ -4,6 +4,7 @@
   "base_skill": "Fire Rune",
   "morph_of": "fire-rune",
   "morph_sibling": "volcanic-rune",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Guild",
   "skill_line": "Mages Guild",
   "type": "Active",

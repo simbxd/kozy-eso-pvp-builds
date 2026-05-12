@@ -4,6 +4,7 @@
   "base_skill": "The Unblinking Eye",
   "morph_of": "the-unblinking-eye",
   "morph_sibling": "the-tide-kings-gaze",
+  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

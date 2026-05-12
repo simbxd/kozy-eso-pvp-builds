@@ -4,6 +4,7 @@
   "base_skill": "Undo",
   "morph_of": "undo",
   "morph_sibling": "temporal-guard",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",

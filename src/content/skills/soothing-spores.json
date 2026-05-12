@@ -4,6 +4,7 @@
   "base_skill": "Fungal Growth",
   "morph_of": "fungal-growth",
   "morph_sibling": "enchanted-growth",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Enchanted Growth's Minor Endurance.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Restoring Tether",
   "morph_of": "restoring-tether",
   "morph_sibling": "braided-tether",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Braided Tether.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

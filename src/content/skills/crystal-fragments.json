@@ -4,6 +4,7 @@
   "base_skill": "Crystal Shard",
   "morph_of": "crystal-shard",
   "morph_sibling": "crystal-weapon",
+  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

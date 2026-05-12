@@ -4,6 +4,7 @@
   "base_skill": "Secluded Grove",
   "morph_of": "secluded-grove",
   "morph_sibling": "healing-thicket",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Healing Thicket's alternative effect.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

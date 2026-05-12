@@ -4,6 +4,7 @@
   "base_skill": "Death Stroke",
   "morph_of": "death-stroke",
   "morph_sibling": "incapacitating-strike",
+  "morph_rationale": "Anti-heal morph — applies Major Defile on hit, reducing enemy healing received.",
   "class": "Nightblade",
   "skill_line": "Assassination",
   "type": "Active",

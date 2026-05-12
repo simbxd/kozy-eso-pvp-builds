@@ -4,6 +4,7 @@
   "base_skill": "Falcon's Swiftness",
   "morph_of": "falcons-swiftness",
   "morph_sibling": "deceptive-predator",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

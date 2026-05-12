@@ -4,6 +4,7 @@
   "base_skill": "Destructive Touch",
   "morph_of": "destructive-touch",
   "morph_sibling": "destructive-reach",
+  "morph_rationale": "Burst morph — deals damage instantly rather than over time like Destructive Reach.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

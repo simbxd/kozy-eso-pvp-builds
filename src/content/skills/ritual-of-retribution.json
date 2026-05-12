@@ -4,6 +4,7 @@
   "base_skill": "Cleansing Ritual",
   "morph_of": "cleansing-ritual",
   "morph_sibling": "extended-ritual",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

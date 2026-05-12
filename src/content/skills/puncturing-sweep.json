@@ -4,6 +4,7 @@
   "base_skill": "Puncturing Strikes",
   "morph_of": "puncturing-strikes",
   "morph_sibling": "biting-jabs",
+  "morph_rationale": "Mobility morph — increases Movement Speed on cast.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

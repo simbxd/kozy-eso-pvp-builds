@@ -4,6 +4,7 @@
   "base_skill": "Obsidian Shield",
   "morph_of": "obsidian-shield",
   "morph_sibling": "igneous-shield",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Igneous Shield.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
   "type": "Active",

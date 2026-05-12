@@ -4,6 +4,7 @@
   "base_skill": "Encase",
   "morph_of": "encase",
   "morph_sibling": "shattering-spines",
+  "morph_rationale": "Support morph — grants Minor Vitality, increasing your effectiveness.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

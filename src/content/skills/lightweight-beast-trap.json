@@ -4,6 +4,7 @@
   "base_skill": "Trap Beast",
   "morph_of": "trap-beast",
   "morph_sibling": "barbed-trap",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Dark Talons",
   "morph_of": "dark-talons",
   "morph_sibling": "choking-talons",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Momentum",
   "morph_of": "momentum",
   "morph_sibling": "rally",
+  "morph_rationale": "Burst morph — deals damage instantly rather than over time like Rally.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

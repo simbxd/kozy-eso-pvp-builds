@@ -4,6 +4,7 @@
   "base_skill": "Surge",
   "morph_of": "surge",
   "morph_sibling": "critical-surge",
+  "morph_rationale": "Support morph — grants Major Sorcery, increasing your Weapon and Spell Damage.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
   "type": "Active",

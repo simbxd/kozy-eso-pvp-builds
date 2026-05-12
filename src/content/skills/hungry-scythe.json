@@ -4,6 +4,7 @@
   "base_skill": "Death Scythe",
   "morph_of": "death-scythe",
   "morph_sibling": "ruinous-scythe",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

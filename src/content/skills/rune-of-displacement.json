@@ -4,6 +4,7 @@
   "base_skill": "The Imperfect Ring",
   "morph_of": "the-imperfect-ring",
   "morph_sibling": "fulminating-rune",
+  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

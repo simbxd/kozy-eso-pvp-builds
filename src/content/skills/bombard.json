@@ -4,6 +4,7 @@
   "base_skill": "Arrow Spray",
   "morph_of": "arrow-spray",
   "morph_sibling": "acid-spray",
+  "morph_rationale": "Crowd control morph — roots the target in place on hit.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

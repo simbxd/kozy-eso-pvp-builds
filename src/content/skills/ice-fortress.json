@@ -4,6 +4,7 @@
   "base_skill": "Frost Cloak",
   "morph_of": "frost-cloak",
   "morph_sibling": "expansive-frost-cloak",
+  "morph_rationale": "Support morph — grants Minor Protection, increasing your damage reduction.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Hearthfire",
   "morph_of": "hearthfire",
   "morph_sibling": "hearth-and-home",
+  "morph_rationale": "Support morph — grants Minor Heroism, increasing your effectiveness.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

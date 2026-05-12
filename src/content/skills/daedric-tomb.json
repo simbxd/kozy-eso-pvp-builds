@@ -4,6 +4,7 @@
   "base_skill": "Daedric Mines",
   "morph_of": "daedric-mines",
   "morph_sibling": "daedric-refuge",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Daedric Refuge.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

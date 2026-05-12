@@ -4,6 +4,7 @@
   "base_skill": "Frozen Gate",
   "morph_of": "frozen-gate",
   "morph_sibling": "frozen-device",
+  "morph_rationale": "Support morph — grants Major Expedition, increasing your Movement Speed.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

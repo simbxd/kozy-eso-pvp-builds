@@ -4,6 +4,7 @@
   "base_skill": "Regeneration",
   "morph_of": "regeneration",
   "morph_sibling": "radiating-regeneration",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Radiating Regeneration's alternative effect.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

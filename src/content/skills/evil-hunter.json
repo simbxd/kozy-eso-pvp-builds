@@ -4,6 +4,7 @@
   "base_skill": "Expert Hunter",
   "morph_of": "expert-hunter",
   "morph_sibling": "camouflaged-hunter",
+  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
   "type": "Active",

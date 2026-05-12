@@ -4,6 +4,7 @@
   "base_skill": "Poison Arrow",
   "morph_of": "poison-arrow",
   "morph_sibling": "venom-arrow",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

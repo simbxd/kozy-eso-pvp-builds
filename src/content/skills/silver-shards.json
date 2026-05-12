@@ -4,6 +4,7 @@
   "base_skill": "Silver Bolts",
   "morph_of": "silver-bolts",
   "morph_sibling": "silver-leash",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
   "type": "Active",

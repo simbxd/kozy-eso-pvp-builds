@@ -4,6 +4,7 @@
   "base_skill": "Summon Unstable Familiar",
   "morph_of": "summon-unstable-familiar",
   "morph_sibling": "summon-unstable-clannfear",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

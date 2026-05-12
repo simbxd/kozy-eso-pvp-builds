@@ -4,6 +4,7 @@
   "base_skill": "Dark Exchange",
   "morph_of": "dark-exchange",
   "morph_sibling": "dark-conversion",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Dark Conversion's alternative effect.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

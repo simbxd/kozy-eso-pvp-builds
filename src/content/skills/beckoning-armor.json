@@ -4,6 +4,7 @@
   "base_skill": "Bone Armor",
   "morph_of": "bone-armor",
   "morph_sibling": "summoners-armor",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

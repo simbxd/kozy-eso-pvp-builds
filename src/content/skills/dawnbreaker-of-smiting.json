@@ -4,6 +4,7 @@
   "base_skill": "Dawnbreaker",
   "morph_of": "dawnbreaker",
   "morph_sibling": "flawless-dawnbreaker",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
   "type": "Active",

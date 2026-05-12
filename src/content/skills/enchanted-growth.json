@@ -4,6 +4,7 @@
   "base_skill": "Fungal Growth",
   "morph_of": "fungal-growth",
   "morph_sibling": "soothing-spores",
+  "morph_rationale": "Support morph — grants Minor Endurance, increasing your effectiveness.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

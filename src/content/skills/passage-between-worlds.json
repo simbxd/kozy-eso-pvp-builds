@@ -4,6 +4,7 @@
   "base_skill": "Apocryphal Gate",
   "morph_of": "apocryphal-gate",
   "morph_sibling": "fleet-footed-gate",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

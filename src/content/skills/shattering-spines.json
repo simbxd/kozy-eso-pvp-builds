@@ -4,6 +4,7 @@
   "base_skill": "Encase",
   "morph_of": "encase",
   "morph_sibling": "vibrant-shroud",
+  "morph_rationale": "Damage mitigation morph — applies Major Maim on hit, reducing enemy damage output.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

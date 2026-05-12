@@ -4,6 +4,7 @@
   "base_skill": "Fatecarver",
   "morph_of": "fatecarver",
   "morph_sibling": "exhausting-fatecarver",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

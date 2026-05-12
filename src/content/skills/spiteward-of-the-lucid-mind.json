@@ -4,6 +4,7 @@
   "base_skill": "Runespite Ward",
   "morph_of": "runespite-ward",
   "morph_sibling": "impervious-runeward",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

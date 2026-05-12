@@ -4,6 +4,7 @@
   "base_skill": "Sun Fire",
   "morph_of": "sun-fire",
   "morph_sibling": "vampires-bane",
+  "morph_rationale": "Mobility morph — increases Movement Speed on cast.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
   "type": "Active",

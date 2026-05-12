@@ -4,6 +4,7 @@
   "base_skill": "Rite of Passage",
   "morph_of": "rite-of-passage",
   "morph_sibling": "practiced-incantation",
+  "morph_rationale": "Support morph — grants Major Protection, increasing your damage reduction.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

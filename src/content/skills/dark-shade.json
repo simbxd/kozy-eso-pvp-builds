@@ -4,6 +4,7 @@
   "base_skill": "Summon Shade",
   "morph_of": "summon-shade",
   "morph_sibling": "shadow-image",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

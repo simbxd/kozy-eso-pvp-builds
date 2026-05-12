@@ -4,6 +4,7 @@
   "base_skill": "Mend Wounds",
   "morph_of": "mend-wounds",
   "morph_sibling": "symbiosis",
+  "morph_rationale": "Support morph — grants Major Resolve, increasing your Physical and Spell Resistance.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",

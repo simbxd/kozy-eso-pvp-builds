@@ -4,6 +4,7 @@
   "base_skill": "Hidden Blade",
   "morph_of": "hidden-blade",
   "morph_sibling": "flying-blade",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

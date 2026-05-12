@@ -4,6 +4,7 @@
   "base_skill": "Healing Seed",
   "morph_of": "healing-seed",
   "morph_sibling": "corrupting-pollen",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Corrupting Pollen's Major Defile.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

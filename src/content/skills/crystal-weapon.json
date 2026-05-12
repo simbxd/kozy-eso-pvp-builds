@@ -4,6 +4,7 @@
   "base_skill": "Crystal Shard",
   "morph_of": "crystal-shard",
   "morph_sibling": "crystal-fragments",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

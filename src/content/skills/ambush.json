@@ -4,6 +4,7 @@
   "base_skill": "Teleport Strike",
   "morph_of": "teleport-strike",
   "morph_sibling": "lotus-fan",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Lotus Fan.",
   "class": "Nightblade",
   "skill_line": "Assassination",
   "type": "Active",

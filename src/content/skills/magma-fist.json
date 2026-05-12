@@ -4,6 +4,7 @@
   "base_skill": "Superheated Ward",
   "morph_of": "superheated-ward",
   "morph_sibling": "volcanic-ward",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Volcanic Ward.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
   "type": "Active",

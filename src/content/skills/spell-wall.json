@@ -4,6 +4,7 @@
   "base_skill": "Shield Wall",
   "morph_of": "shield-wall",
   "morph_sibling": "shield-discipline",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

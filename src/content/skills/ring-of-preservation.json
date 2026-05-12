@@ -4,6 +4,7 @@
   "base_skill": "Circle of Protection",
   "morph_of": "circle-of-protection",
   "morph_sibling": "turn-evil",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
   "type": "Active",

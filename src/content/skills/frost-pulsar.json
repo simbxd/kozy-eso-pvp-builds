@@ -4,6 +4,7 @@
   "base_skill": "Impulse",
   "morph_of": "impulse",
   "morph_sibling": "elemental-ring",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

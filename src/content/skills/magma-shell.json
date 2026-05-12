@@ -4,6 +4,7 @@
   "base_skill": "Magma Armor",
   "morph_of": "magma-armor",
   "morph_sibling": "corrosive-armor",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
   "type": "Active",

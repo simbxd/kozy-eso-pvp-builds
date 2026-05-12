@@ -4,6 +4,7 @@
   "base_skill": "Arrow Spray",
   "morph_of": "arrow-spray",
   "morph_sibling": "bombard",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

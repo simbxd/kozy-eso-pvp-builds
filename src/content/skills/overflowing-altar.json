@@ -4,6 +4,7 @@
   "base_skill": "Blood Altar",
   "morph_of": "blood-altar",
   "morph_sibling": "sanguine-altar",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Sanguine Altar's alternative effect.",
   "class": "Guild",
   "skill_line": "Undaunted",
   "type": "Active",

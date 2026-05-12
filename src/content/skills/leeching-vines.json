@@ -4,6 +4,7 @@
   "base_skill": "Living Vines",
   "morph_of": "living-vines",
   "morph_sibling": "living-trellis",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Searing Strike",
   "morph_of": "searing-strike",
   "morph_sibling": "burning-embers",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

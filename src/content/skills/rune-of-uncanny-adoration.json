@@ -4,6 +4,7 @@
   "base_skill": "Rune of Eldritch Horror",
   "morph_of": "rune-of-eldritch-horror",
   "morph_sibling": "rune-of-the-colorless-pool",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

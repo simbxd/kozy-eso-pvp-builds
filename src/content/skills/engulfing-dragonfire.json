@@ -4,6 +4,7 @@
   "base_skill": "Dragonfire Breath",
   "morph_of": "dragonfire-breath",
   "morph_sibling": "disintegrating-dragonfire",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
   "type": "Active",

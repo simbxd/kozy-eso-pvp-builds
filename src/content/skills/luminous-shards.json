@@ -4,6 +4,7 @@
   "base_skill": "Spear Shards",
   "morph_of": "spear-shards",
   "morph_sibling": "blazing-spear",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

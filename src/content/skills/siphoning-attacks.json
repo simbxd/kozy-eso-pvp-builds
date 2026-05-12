@@ -4,6 +4,7 @@
   "base_skill": "Siphoning Strikes",
   "morph_of": "siphoning-strikes",
   "morph_sibling": "leeching-strikes",
+  "morph_rationale": "Stamina morph — converts the cost to Stamina, enabling use on non-Magicka builds.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

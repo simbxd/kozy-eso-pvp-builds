@@ -4,6 +4,7 @@
   "base_skill": "Hearthfire",
   "morph_of": "hearthfire",
   "morph_sibling": "fire-keeper",
+  "morph_rationale": "Support morph — grants Major Protection, increasing your damage reduction.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

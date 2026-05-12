@@ -4,6 +4,7 @@
   "base_skill": "Dragonknight Standard",
   "morph_of": "dragonknight-standard",
   "morph_sibling": "shifting-standard",
+  "morph_rationale": "Burst morph — deals damage instantly rather than over time like Shifting Standard.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

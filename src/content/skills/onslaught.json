@@ -4,6 +4,7 @@
   "base_skill": "Berserker Strike",
   "morph_of": "berserker-strike",
   "morph_sibling": "berserker-rage",
+  "morph_rationale": "AoE morph — hits multiple targets simultaneously.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

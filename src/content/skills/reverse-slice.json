@@ -4,6 +4,7 @@
   "base_skill": "Reverse Slash",
   "morph_of": "reverse-slash",
   "morph_sibling": "executioner",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

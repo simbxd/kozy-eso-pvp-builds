@@ -4,6 +4,7 @@
   "base_skill": "Dragonknight Standard",
   "morph_of": "dragonknight-standard",
   "morph_sibling": "standard-of-might",
+  "morph_rationale": "Anti-heal morph — applies Major Defile on hit, reducing enemy healing received.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Imbue Weapon",
   "morph_of": "imbue-weapon",
   "morph_sibling": "elemental-weapon",
+  "morph_rationale": "Armor penetration morph — applies Major Breach on hit, reducing enemy Physical and Spell Resistance.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Cripple",
   "morph_of": "cripple",
   "morph_sibling": "debilitate",
+  "morph_rationale": "Mobility morph — increases Movement Speed on cast.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

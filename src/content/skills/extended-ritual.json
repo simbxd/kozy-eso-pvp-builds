@@ -4,6 +4,7 @@
   "base_skill": "Cleansing Ritual",
   "morph_of": "cleansing-ritual",
   "morph_sibling": "ritual-of-retribution",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Lotus Flower",
   "morph_of": "lotus-flower",
   "morph_sibling": "lotus-blossom",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Lotus Blossom's Major Prophecy.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Rune Prison",
   "morph_of": "rune-prison",
   "morph_sibling": "rune-cage",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

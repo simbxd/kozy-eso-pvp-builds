@@ -4,6 +4,7 @@
   "base_skill": "Scatter Shot",
   "morph_of": "scatter-shot",
   "morph_sibling": "magnum-shot",
+  "morph_rationale": "Mobility morph — increases Movement Speed on cast.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

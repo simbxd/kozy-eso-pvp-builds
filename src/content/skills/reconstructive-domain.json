@@ -4,6 +4,7 @@
   "base_skill": "Arcanist's Domain",
   "morph_of": "arcanists-domain",
   "morph_sibling": "zenas-empowering-disc",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

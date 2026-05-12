@@ -4,6 +4,7 @@
   "base_skill": "Mend Wounds",
   "morph_of": "mend-wounds",
   "morph_sibling": "mend-spirit",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Mend Spirit's Major Resolve.",
   "class": "Guild",
   "skill_line": "Psijic Order",
   "type": "Active",

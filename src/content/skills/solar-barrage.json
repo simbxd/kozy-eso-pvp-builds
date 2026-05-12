@@ -4,6 +4,7 @@
   "base_skill": "Solar Flare",
   "morph_of": "solar-flare",
   "morph_sibling": "dark-flare",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
   "type": "Active",

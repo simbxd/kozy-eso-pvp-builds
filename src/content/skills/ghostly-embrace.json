@@ -4,6 +4,7 @@
   "base_skill": "Grave Grasp",
   "morph_of": "grave-grasp",
   "morph_sibling": "empowering-grasp",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

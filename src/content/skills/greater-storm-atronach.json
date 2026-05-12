@@ -4,6 +4,7 @@
   "base_skill": "Summon Storm Atronach",
   "morph_of": "summon-storm-atronach",
   "morph_sibling": "summon-charged-atronach",
+  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

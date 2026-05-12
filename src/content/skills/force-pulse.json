@@ -4,6 +4,7 @@
   "base_skill": "Force Shock",
   "morph_of": "force-shock",
   "morph_sibling": "crushing-shock",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

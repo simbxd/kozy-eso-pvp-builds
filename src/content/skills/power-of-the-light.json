@@ -4,6 +4,7 @@
   "base_skill": "Backlash",
   "morph_of": "backlash",
   "morph_sibling": "purifying-light",
+  "morph_rationale": "Burst morph — deals damage instantly rather than over time like Purifying Light.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
   "type": "Active",

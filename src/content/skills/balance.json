@@ -4,6 +4,7 @@
   "base_skill": "Equilibrium",
   "morph_of": "equilibrium",
   "morph_sibling": "spell-symmetry",
+  "morph_rationale": "Support morph — grants Major Resolve, increasing your Physical and Spell Resistance.",
   "class": "Guild",
   "skill_line": "Mages Guild",
   "type": "Active",

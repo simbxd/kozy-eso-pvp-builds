@@ -4,6 +4,7 @@
   "base_skill": "Sun Fire",
   "morph_of": "sun-fire",
   "morph_sibling": "reflective-light",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Blur",
   "morph_of": "blur",
   "morph_sibling": "phantasmal-escape",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

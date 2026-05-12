@@ -4,6 +4,7 @@
   "base_skill": "Low Slash",
   "morph_of": "low-slash",
   "morph_sibling": "heroic-slash",
+  "morph_rationale": "Damage mitigation morph — applies Minor Maim on hit, reducing enemy damage output.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

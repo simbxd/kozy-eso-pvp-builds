@@ -4,6 +4,7 @@
   "base_skill": "Piercing Javelin",
   "morph_of": "piercing-javelin",
   "morph_sibling": "binding-javelin",
+  "morph_rationale": "Crowd control morph — knocks enemies back on hit.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

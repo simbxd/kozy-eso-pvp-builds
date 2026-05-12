@@ -4,6 +4,7 @@
   "base_skill": "Aspect of Terror",
   "morph_of": "aspect-of-terror",
   "morph_sibling": "manifestation-of-terror",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

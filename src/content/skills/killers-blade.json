@@ -4,6 +4,7 @@
   "base_skill": "Assassin's Blade",
   "morph_of": "assassins-blade",
   "morph_sibling": "impale",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Nightblade",
   "skill_line": "Assassination",
   "type": "Active",

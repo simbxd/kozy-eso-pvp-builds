@@ -4,6 +4,7 @@
   "base_skill": "Malevolent Offering",
   "morph_of": "malevolent-offering",
   "morph_sibling": "shrewd-offering",
+  "morph_rationale": "Support morph — grants Minor Mending, increasing your effectiveness.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
   "type": "Active",

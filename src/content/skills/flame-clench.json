@@ -4,6 +4,7 @@
   "base_skill": "Destructive Touch",
   "morph_of": "destructive-touch",
   "morph_sibling": "destructive-reach",
+  "morph_rationale": "Crowd control morph — knocks enemies back on hit.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

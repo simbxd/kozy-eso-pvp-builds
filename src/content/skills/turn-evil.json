@@ -4,6 +4,7 @@
   "base_skill": "Circle of Protection",
   "morph_of": "circle-of-protection",
   "morph_sibling": "ring-of-preservation",
+  "morph_rationale": "Burst morph — deals damage instantly rather than over time like Ring of Preservation.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
   "type": "Active",

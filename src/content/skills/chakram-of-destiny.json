@@ -4,6 +4,7 @@
   "base_skill": "Chakram Shields",
   "morph_of": "chakram-shields",
   "morph_sibling": "tidal-chakram",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

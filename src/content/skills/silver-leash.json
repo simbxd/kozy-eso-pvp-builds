@@ -4,6 +4,7 @@
   "base_skill": "Silver Bolts",
   "morph_of": "silver-bolts",
   "morph_sibling": "silver-shards",
+  "morph_rationale": "Mobility morph — increases Movement Speed on cast.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
   "type": "Active",

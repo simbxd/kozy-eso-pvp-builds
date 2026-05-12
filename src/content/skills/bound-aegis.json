@@ -4,6 +4,7 @@
   "base_skill": "Bound Armor",
   "morph_of": "bound-armor",
   "morph_sibling": "bound-armaments",
+  "morph_rationale": "Support morph — grants Minor Protection, increasing your damage reduction.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

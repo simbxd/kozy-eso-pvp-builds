@@ -4,6 +4,7 @@
   "base_skill": "Feral Guardian",
   "morph_of": "feral-guardian",
   "morph_sibling": "eternal-guardian",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

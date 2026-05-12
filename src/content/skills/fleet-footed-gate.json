@@ -4,6 +4,7 @@
   "base_skill": "Apocryphal Gate",
   "morph_of": "apocryphal-gate",
   "morph_sibling": "passage-between-worlds",
+  "morph_rationale": "Support morph — grants Major Expedition, increasing your Movement Speed.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

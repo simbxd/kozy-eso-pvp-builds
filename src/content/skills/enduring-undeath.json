@@ -4,6 +4,7 @@
   "base_skill": "Life amid Death",
   "morph_of": "life-amid-death",
   "morph_sibling": "renewing-undeath",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Renewing Undeath's alternative effect.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

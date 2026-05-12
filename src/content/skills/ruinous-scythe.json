@@ -4,6 +4,7 @@
   "base_skill": "Death Scythe",
   "morph_of": "death-scythe",
   "morph_sibling": "hungry-scythe",
+  "morph_rationale": "Burst morph — deals damage instantly rather than over time like Hungry Scythe.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

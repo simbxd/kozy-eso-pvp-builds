@@ -4,6 +4,7 @@
   "base_skill": "Critical Charge",
   "morph_of": "critical-charge",
   "morph_sibling": "critical-rush",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

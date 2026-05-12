@@ -4,6 +4,7 @@
   "base_skill": "Dark Talons",
   "morph_of": "dark-talons",
   "morph_sibling": "burning-talons",
+  "morph_rationale": "Damage mitigation morph — applies Minor Maim on hit, reducing enemy damage output.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Impaling Shards",
   "morph_of": "impaling-shards",
   "morph_sibling": "gripping-shards",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Gripping Shards.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

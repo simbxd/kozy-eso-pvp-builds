@@ -4,6 +4,7 @@
   "base_skill": "Reanimate",
   "morph_of": "reanimate",
   "morph_sibling": "renewing-animation",
+  "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

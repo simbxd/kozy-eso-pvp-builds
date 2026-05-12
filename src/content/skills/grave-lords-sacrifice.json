@@ -4,6 +4,7 @@
   "base_skill": "Sacrificial Bones",
   "morph_of": "sacrificial-bones",
   "morph_sibling": "blighted-blastbones",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
   "type": "Active",

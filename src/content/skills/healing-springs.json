@@ -4,6 +4,7 @@
   "base_skill": "Grand Healing",
   "morph_of": "grand-healing",
   "morph_sibling": "illustrious-healing",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Illustrious Healing's alternative effect.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

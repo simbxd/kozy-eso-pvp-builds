@@ -4,6 +4,7 @@
   "base_skill": "Volley",
   "morph_of": "volley",
   "morph_sibling": "endless-hail",
+  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

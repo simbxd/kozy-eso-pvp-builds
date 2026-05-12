@@ -4,6 +4,7 @@
   "base_skill": "Bone Totem",
   "morph_of": "bone-totem",
   "morph_sibling": "remote-totem",
+  "morph_rationale": "AoE DoT morph — applies sustained damage over time to multiple targets.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

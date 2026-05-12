@@ -4,6 +4,7 @@
   "base_skill": "Puncturing Strikes",
   "morph_of": "puncturing-strikes",
   "morph_sibling": "puncturing-sweep",
+  "morph_rationale": "Support morph — grants Major Sorcery, increasing your Weapon and Spell Damage.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

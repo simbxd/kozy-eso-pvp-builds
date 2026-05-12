@@ -4,6 +4,7 @@
   "base_skill": "Trapping Webs",
   "morph_of": "trapping-webs",
   "morph_sibling": "shadow-silk",
+  "morph_rationale": "Burst morph — deals damage instantly rather than over time like Shadow Silk.",
   "class": "Guild",
   "skill_line": "Undaunted",
   "type": "Active",

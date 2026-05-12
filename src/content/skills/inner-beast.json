@@ -4,6 +4,7 @@
   "base_skill": "Inner Fire",
   "morph_of": "inner-fire",
   "morph_sibling": "inner-rage",
+  "morph_rationale": "Damage mitigation morph — applies Minor Maim on hit, reducing enemy damage output.",
   "class": "Guild",
   "skill_line": "Undaunted",
   "type": "Active",

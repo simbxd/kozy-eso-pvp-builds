@@ -4,6 +4,7 @@
   "base_skill": "Necrotic Orb",
   "morph_of": "necrotic-orb",
   "morph_sibling": "mystic-orb",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Guild",
   "skill_line": "Undaunted",
   "type": "Active",

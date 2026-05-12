@@ -4,6 +4,7 @@
   "base_skill": "Equilibrium",
   "morph_of": "equilibrium",
   "morph_sibling": "balance",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Guild",
   "skill_line": "Mages Guild",
   "type": "Active",

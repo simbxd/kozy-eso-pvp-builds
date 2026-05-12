@@ -4,6 +4,7 @@
   "base_skill": "Momentum",
   "morph_of": "momentum",
   "morph_sibling": "forward-momentum",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

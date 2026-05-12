@@ -4,6 +4,7 @@
   "base_skill": "Flame Skull",
   "morph_of": "flame-skull",
   "morph_sibling": "venom-skull",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
   "type": "Active",

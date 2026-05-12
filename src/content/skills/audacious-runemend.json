@@ -4,6 +4,7 @@
   "base_skill": "Runemend",
   "morph_of": "runemend",
   "morph_sibling": "evolving-runemend",
+  "morph_rationale": "Support morph — grants Minor Heroism, increasing your effectiveness.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Boneyard",
   "morph_of": "boneyard",
   "morph_sibling": "avid-boneyard",
+  "morph_rationale": "Armor penetration morph — applies Major Breach on hit, reducing enemy Physical and Spell Resistance.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
   "type": "Active",

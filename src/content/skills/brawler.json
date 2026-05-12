@@ -4,6 +4,7 @@
   "base_skill": "Cleave",
   "morph_of": "cleave",
   "morph_sibling": "carve",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Carve.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Lightning Form",
   "morph_of": "lightning-form",
   "morph_sibling": "hurricane",
+  "morph_rationale": "Support morph — grants Major Expedition, increasing your Movement Speed.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
   "type": "Active",

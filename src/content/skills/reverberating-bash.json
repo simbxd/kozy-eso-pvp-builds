@@ -4,6 +4,7 @@
   "base_skill": "Power Bash",
   "morph_of": "power-bash",
   "morph_sibling": "power-slam",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
   "type": "Active",

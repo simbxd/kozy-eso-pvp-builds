@@ -4,6 +4,7 @@
   "base_skill": "Elemental Storm",
   "morph_of": "elemental-storm",
   "morph_sibling": "eye-of-flame",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Eye of Flame.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

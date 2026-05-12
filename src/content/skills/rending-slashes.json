@@ -4,6 +4,7 @@
   "base_skill": "Twin Slashes",
   "morph_of": "twin-slashes",
   "morph_sibling": "blood-craze",
+  "morph_rationale": "Mobility morph — increases Movement Speed on cast.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

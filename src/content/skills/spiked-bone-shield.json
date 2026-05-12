@@ -4,6 +4,7 @@
   "base_skill": "Bone Shield",
   "morph_of": "bone-shield",
   "morph_sibling": "bone-surge",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Bone Surge.",
   "class": "Guild",
   "skill_line": "Undaunted",
   "type": "Active",

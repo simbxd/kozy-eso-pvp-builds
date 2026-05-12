@@ -4,6 +4,7 @@
   "base_skill": "Sacrificial Bones",
   "morph_of": "sacrificial-bones",
   "morph_sibling": "grave-lords-sacrifice",
+  "morph_rationale": "Anti-heal morph — applies Major Defile on hit, reducing enemy healing received.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Grave Grasp",
   "morph_of": "grave-grasp",
   "morph_sibling": "ghostly-embrace",
+  "morph_rationale": "Damage mitigation morph — applies Major Maim on hit, reducing enemy damage output.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

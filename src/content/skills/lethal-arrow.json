@@ -4,6 +4,7 @@
   "base_skill": "Snipe",
   "morph_of": "snipe",
   "morph_sibling": "focused-aim",
+  "morph_rationale": "Anti-heal morph — applies Minor Defile on hit, reducing enemy healing received.",
   "class": "Weapon",
   "skill_line": "Bow",
   "type": "Active",

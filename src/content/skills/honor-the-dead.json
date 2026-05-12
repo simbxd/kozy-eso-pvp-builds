@@ -4,6 +4,7 @@
   "base_skill": "Rushed Ceremony",
   "morph_of": "rushed-ceremony",
   "morph_sibling": "breath-of-life",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Templar",
   "skill_line": "Restoring Light",
   "type": "Active",

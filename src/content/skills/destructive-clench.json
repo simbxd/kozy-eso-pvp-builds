@@ -4,6 +4,7 @@
   "base_skill": "Destructive Touch",
   "morph_of": "destructive-touch",
   "morph_sibling": "destructive-reach",
+  "morph_rationale": "Damage mitigation morph — applies Major Maim on hit, reducing enemy damage output.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

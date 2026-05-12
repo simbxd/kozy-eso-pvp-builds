@@ -4,6 +4,7 @@
   "base_skill": "Magma Armor",
   "morph_of": "magma-armor",
   "morph_sibling": "magma-shell",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
   "type": "Active",

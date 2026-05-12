@@ -4,6 +4,7 @@
   "base_skill": "Summon Winged Twilight",
   "morph_of": "summon-winged-twilight",
   "morph_sibling": "summon-twilight-matriarch",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
   "type": "Active",

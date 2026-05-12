@@ -4,6 +4,7 @@
   "base_skill": "Bitter Harvest",
   "morph_of": "bitter-harvest",
   "morph_sibling": "deaden-pain",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

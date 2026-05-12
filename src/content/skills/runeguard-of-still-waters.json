@@ -4,6 +4,7 @@
   "base_skill": "Runic Defense",
   "morph_of": "runic-defense",
   "morph_sibling": "runeguard-of-freedom",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Runeguard of Freedom's Minor Protection.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

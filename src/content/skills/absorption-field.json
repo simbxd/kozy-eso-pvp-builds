@@ -4,6 +4,7 @@
   "base_skill": "Negate Magic",
   "morph_of": "negate-magic",
   "morph_sibling": "suppression-field",
+  "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

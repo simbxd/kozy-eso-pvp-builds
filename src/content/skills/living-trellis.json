@@ -4,6 +4,7 @@
   "base_skill": "Living Vines",
   "morph_of": "living-vines",
   "morph_sibling": "leeching-vines",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

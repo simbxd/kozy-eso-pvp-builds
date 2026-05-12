@@ -4,6 +4,7 @@
   "base_skill": "Scorch",
   "morph_of": "scorch",
   "morph_sibling": "subterranean-assault",
+  "morph_rationale": "Armor penetration morph — applies Minor Breach on hit, reducing enemy Physical and Spell Resistance.",
   "class": "Warden",
   "skill_line": "Animal Companions",
   "type": "Active",

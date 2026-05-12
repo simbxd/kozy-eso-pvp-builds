@@ -4,6 +4,7 @@
   "base_skill": "Necrotic Orb",
   "morph_of": "necrotic-orb",
   "morph_sibling": "energy-orb",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Guild",
   "skill_line": "Undaunted",
   "type": "Active",

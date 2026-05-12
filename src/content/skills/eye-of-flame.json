@@ -4,6 +4,7 @@
   "base_skill": "Elemental Storm",
   "morph_of": "elemental-storm",
   "morph_sibling": "eye-of-the-storm",
+  "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

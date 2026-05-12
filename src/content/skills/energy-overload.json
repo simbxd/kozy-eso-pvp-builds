@@ -4,6 +4,7 @@
   "base_skill": "Overload",
   "morph_of": "overload",
   "morph_sibling": "power-overload",
+  "morph_rationale": "Ultimate morph — reduces cost or generates Ultimate on use.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
   "type": "Active",

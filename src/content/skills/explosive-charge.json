@@ -4,6 +4,7 @@
   "base_skill": "Focused Charge",
   "morph_of": "focused-charge",
   "morph_sibling": "toppling-charge",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

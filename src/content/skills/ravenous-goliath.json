@@ -4,6 +4,7 @@
   "base_skill": "Bone Goliath Transformation",
   "morph_of": "bone-goliath-transformation",
   "morph_sibling": "pummeling-goliath",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Pummeling Goliath's alternative effect.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Impulse",
   "morph_of": "impulse",
   "morph_sibling": "elemental-ring",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

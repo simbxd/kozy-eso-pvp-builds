@@ -4,6 +4,7 @@
   "base_skill": "Abyssal Impact",
   "morph_of": "abyssal-impact",
   "morph_sibling": "tentacular-dread",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

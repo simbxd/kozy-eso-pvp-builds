@@ -4,6 +4,7 @@
   "base_skill": "Healing Seed",
   "morph_of": "healing-seed",
   "morph_sibling": "budding-seeds",
+  "morph_rationale": "Anti-heal morph — applies Major Defile on hit, reducing enemy healing received.",
   "class": "Warden",
   "skill_line": "Green Balance",
   "type": "Active",

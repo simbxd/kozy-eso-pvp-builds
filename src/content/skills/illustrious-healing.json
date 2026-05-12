@@ -4,6 +4,7 @@
   "base_skill": "Grand Healing",
   "morph_of": "grand-healing",
   "morph_sibling": "healing-springs",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Healing Springs's alternative effect.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

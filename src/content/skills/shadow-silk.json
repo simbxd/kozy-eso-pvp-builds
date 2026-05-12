@@ -4,6 +4,7 @@
   "base_skill": "Trapping Webs",
   "morph_of": "trapping-webs",
   "morph_sibling": "tangling-webs",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Guild",
   "skill_line": "Undaunted",
   "type": "Active",

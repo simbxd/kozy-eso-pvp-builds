@@ -4,6 +4,7 @@
   "base_skill": "Runeblades",
   "morph_of": "runeblades",
   "morph_sibling": "escalating-runeblades",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Escalating Runeblades.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

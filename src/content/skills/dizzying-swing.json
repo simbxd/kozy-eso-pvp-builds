@@ -4,6 +4,7 @@
   "base_skill": "Uppercut",
   "morph_of": "uppercut",
   "morph_sibling": "wrecking-blow",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Weapon",
   "skill_line": "Two Handed",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Wing Buffet",
   "morph_of": "wing-buffet",
   "morph_sibling": "fleetstep-wings",
+  "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Fleetstep Wings.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
   "type": "Active",

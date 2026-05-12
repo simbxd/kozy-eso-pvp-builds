@@ -4,6 +4,7 @@
   "base_skill": "Piercing Javelin",
   "morph_of": "piercing-javelin",
   "morph_sibling": "aurora-javelin",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
   "type": "Active",

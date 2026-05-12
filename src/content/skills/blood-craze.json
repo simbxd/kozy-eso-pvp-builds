@@ -4,6 +4,7 @@
   "base_skill": "Twin Slashes",
   "morph_of": "twin-slashes",
   "morph_sibling": "rending-slashes",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
   "type": "Active",

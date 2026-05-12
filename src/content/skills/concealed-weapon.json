@@ -4,6 +4,7 @@
   "base_skill": "Veiled Strike",
   "morph_of": "veiled-strike",
   "morph_sibling": "surprise-attack",
+  "morph_rationale": "Support morph — grants Minor Expedition, increasing your Movement Speed.",
   "class": "Nightblade",
   "skill_line": "Assassination",
   "type": "Active",

@@ -4,6 +4,7 @@
   "base_skill": "Blessing of Protection",
   "morph_of": "blessing-of-protection",
   "morph_sibling": "blessing-of-restoration",
+  "morph_rationale": "Self-sustain morph — prioritizes personal healing over Blessing of Restoration's Minor Resolve.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
   "type": "Active",

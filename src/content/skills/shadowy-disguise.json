@@ -4,6 +4,7 @@
   "base_skill": "Shadow Cloak",
   "morph_of": "shadow-cloak",
   "morph_sibling": "dark-cloak",
+  "morph_rationale": "Burst morph — deals damage instantly rather than over time like Dark Cloak.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

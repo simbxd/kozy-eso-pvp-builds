@@ -4,6 +4,7 @@
   "base_skill": "Force Shock",
   "morph_of": "force-shock",
   "morph_sibling": "force-pulse",
+  "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
   "type": "Active",

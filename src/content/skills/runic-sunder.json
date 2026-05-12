@@ -4,6 +4,7 @@
   "base_skill": "Runic Jolt",
   "morph_of": "runic-jolt",
   "morph_sibling": "runic-embrace",
+  "morph_rationale": "Burst morph — deals damage instantly rather than over time like Runic Embrace.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
   "type": "Active",

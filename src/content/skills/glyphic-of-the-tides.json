@@ -4,6 +4,7 @@
   "base_skill": "Vitalizing Glyphic",
   "morph_of": "vitalizing-glyphic",
   "morph_sibling": "resonating-glyphic",
+  "morph_rationale": "Support morph — grants Major Protection, increasing your damage reduction.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
   "type": "Active",

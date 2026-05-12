@@ -4,6 +4,7 @@
   "base_skill": "Daedric Mines",
   "morph_of": "daedric-mines",
   "morph_sibling": "daedric-tomb",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
   "type": "Active",

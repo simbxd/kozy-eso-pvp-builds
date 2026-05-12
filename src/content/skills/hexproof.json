@@ -4,6 +4,7 @@
   "base_skill": "Expunge",
   "morph_of": "expunge",
   "morph_sibling": "expunge-and-modify",
+  "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Necromancer",
   "skill_line": "Living Death",
   "type": "Active",

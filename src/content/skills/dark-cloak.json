@@ -4,6 +4,7 @@
   "base_skill": "Shadow Cloak",
   "morph_of": "shadow-cloak",
   "morph_sibling": "shadowy-disguise",
+  "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Nightblade",
   "skill_line": "Shadow",
   "type": "Active",

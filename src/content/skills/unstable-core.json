@@ -4,6 +4,7 @@
   "base_skill": "Eclipse",
   "morph_of": "eclipse",
   "morph_sibling": "living-dark",
+  "morph_rationale": "Crowd control morph — roots the target in place on hit.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
   "type": "Active",

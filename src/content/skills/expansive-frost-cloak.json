@@ -4,6 +4,7 @@
   "base_skill": "Frost Cloak",
   "morph_of": "frost-cloak",
   "morph_sibling": "ice-fortress",
+  "morph_rationale": "Support morph — grants Major Resolve to you and nearby allies, increasing your Physical and Spell Resistance.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
   "type": "Active",

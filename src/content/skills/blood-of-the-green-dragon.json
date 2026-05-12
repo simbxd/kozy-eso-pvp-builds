@@ -4,6 +4,7 @@
   "base_skill": "Dragon Blood",
   "morph_of": "dragon-blood",
   "morph_sibling": "blood-of-the-elder-dragon",
+  "morph_rationale": "Support morph — grants Minor Vitality, increasing your effectiveness.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
   "type": "Active",

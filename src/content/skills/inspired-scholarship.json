@@ -4,6 +4,7 @@
   "base_skill": "Tome-Bearer's Inspiration",
   "morph_of": "tome-bearers-inspiration",
   "morph_sibling": "recuperative-treatise",
+  "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
   "type": "Active",

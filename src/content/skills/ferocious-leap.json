@@ -4,6 +4,7 @@
   "base_skill": "Dragon Leap",
   "morph_of": "dragon-leap",
   "morph_sibling": "take-flight",
+  "morph_rationale": "Defensive morph — provides a damage shield on cast.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
   "type": "Active",

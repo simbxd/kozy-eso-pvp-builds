@@ -4,6 +4,7 @@
   "base_skill": "Eclipse",
   "morph_of": "eclipse",
   "morph_sibling": "unstable-core",
+  "morph_rationale": "Self-sustain morph — heals you for a portion of the damage dealt.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
   "type": "Active",

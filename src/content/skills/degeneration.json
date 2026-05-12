@@ -4,6 +4,7 @@
   "base_skill": "Entropy",
   "morph_of": "entropy",
   "morph_sibling": "structured-entropy",
+  "morph_rationale": "Support morph — grants Major Brutality, increasing your Weapon and Spell Damage.",
   "class": "Guild",
   "skill_line": "Mages Guild",
   "type": "Active",
