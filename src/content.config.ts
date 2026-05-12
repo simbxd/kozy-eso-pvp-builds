@@ -12,7 +12,9 @@ const builds = defineCollection({
     resource: z.enum(['Stamina', 'Magicka', 'Hybrid']),
     gamemode: z.enum(['PvP', 'PvE', 'Both']),
     patch: z.string(),
-    updatedAt: z.string().optional(),
+    updatedAt: z.union([z.string(), z.date()])
+      .transform(v => v instanceof Date ? v.toISOString().split('T')[0] : v)
+      .optional(),
     difficulty: z.enum(['Beginner', 'Intermediate', 'Advanced']),
     featured: z.boolean().default(false),
     og_image: z.string().optional(),
@@ -57,7 +59,9 @@ const guides = defineCollection({
     summary: z.string(),
     patch: z.string().optional(),
     readTime: z.string().optional(),
-    updatedAt: z.string().optional(),
+    updatedAt: z.union([z.string(), z.date()])
+      .transform(v => v instanceof Date ? v.toISOString().split('T')[0] : v)
+      .optional(),
   }),
 });
 
