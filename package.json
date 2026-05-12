@@ -11,7 +11,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "fetch:eso": "node scripts/fetch-eso-data.mjs",
-    "fetch:icons": "node scripts/fetch-skill-icons.mjs"
+    "fetch:icons": "node scripts/fetch-skill-icons.mjs",
+    "gen:decap": "node scripts/gen-decap-config.mjs",
+    "update:decap": "npm run fetch:eso && npm run gen:decap"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
