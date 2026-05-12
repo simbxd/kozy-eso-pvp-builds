@@ -39,8 +39,8 @@ stats:
     target: 32000
     note: "minimum viable "
   magicka:
-    target: 40000
-    note: "minimum viable "
+    target: 26000
+    note: ""
   stamina:
     target: 20000
     note: needed to break free & roll dodge
