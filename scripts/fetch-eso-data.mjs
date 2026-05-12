@@ -37,7 +37,10 @@ import { join, dirname } from 'node:path';
 
 // ---------- Config ----------
 const UESP_BASE = 'https://esolog.uesp.net/exportJson.php';
-const OUT_DIR = process.env.OUT_DIR || './src/data/eso';
+// Sets go directly into src/content/sets/ (single source of truth)
+// Skills + index files stay in src/data/eso/ (used by gen-decap-config.mjs)
+const SETS_DIR   = process.env.SETS_DIR   || './src/content';
+const SKILLS_DIR = process.env.SKILLS_DIR || './src/data/eso';
 const DRY_RUN = process.env.DRY_RUN === '1';
 const SAMPLE = process.env.SAMPLE ? parseInt(process.env.SAMPLE, 10) : null;
 const FETCH_TIMEOUT_MS = 120_000;
@@ -342,18 +345,23 @@ async function buildSets() {
 
   const toWrite = SAMPLE ? final.slice(0, SAMPLE) : final;
 
-  const setsDir = join(OUT_DIR, 'sets');
-  if (!DRY_RUN && existsSync(setsDir)) {
-    await rm(setsDir, { recursive: true, force: true });
-  }
+  // Write sets directly to src/content/sets/ — skip files that already exist
+  // (curated sets are manually maintained and must not be overwritten)
+  const setsDir = join(SETS_DIR, 'sets');
+  await mkdir(setsDir, { recursive: true });
+  let written = 0, skipped = 0;
   for (const set of toWrite) {
-    await writeJson(join(setsDir, `${set.id}.json`), set);
+    const dest = join(setsDir, `${set.id}.json`);
+    if (existsSync(dest)) { skipped++; continue; }
+    await writeJson(dest, set);
+    written++;
   }
+  log(`✓ Sets: ${written} written, ${skipped} skipped (curated)`);
 
   const index = final.map(s => ({ id: s.id, name: s.name, type: s.type, acquisition: s.acquisition }));
-  await writeJson(join(OUT_DIR, 'sets-index.json'), index);
+  await writeJson(join(SKILLS_DIR, 'sets-index.json'), index);
 
-  log(`✓ Wrote ${toWrite.length} set files + sets-index.json`);
+  log(`✓ sets-index.json written`);
   return final;
 }
 
@@ -393,7 +401,7 @@ async function buildSkills() {
   const final = filtered.sort((a, b) => a.name.localeCompare(b.name));
   const toWrite = SAMPLE ? final.slice(0, SAMPLE) : final;
 
-  const skillsDir = join(OUT_DIR, 'skills');
+  const skillsDir = join(SKILLS_DIR, 'skills');
   if (!DRY_RUN && existsSync(skillsDir)) {
     await rm(skillsDir, { recursive: true, force: true });
   }
@@ -409,7 +417,7 @@ async function buildSkills() {
     category: s.category,
     skill_line: s.skill_line,
   }));
-  await writeJson(join(OUT_DIR, 'skills-index.json'), index);
+  await writeJson(join(SKILLS_DIR, 'skills-index.json'), index);
 
   log(`✓ Wrote ${toWrite.length} skill files + skills-index.json`);
   return final;
@@ -417,7 +425,7 @@ async function buildSkills() {
 
 // ---------- Run ----------
 (async () => {
-  log(`Output dir: ${OUT_DIR}${DRY_RUN ? ' (DRY RUN)' : ''}${SAMPLE ? ` (SAMPLE=${SAMPLE})` : ''}`);
+  log(`Sets → ${SETS_DIR}/sets/ | Skills → ${SKILLS_DIR}/skills/${DRY_RUN ? ' (DRY RUN)' : ''}${SAMPLE ? ` (SAMPLE=${SAMPLE})` : ''}`);
   try {
     const [sets, skills] = await Promise.all([buildSets(), buildSkills()]);
     log(`Done. ${sets.length} sets, ${skills.length} skills.`);
