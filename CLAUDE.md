@@ -211,7 +211,7 @@ Types : `Active | Passive | Ultimate`
 - **1 build :** SUPERSTAR (MagDK PvP) — seul build complet, sert de template
 - **2 guides :** Penetration Caps Explained · Critical Resistance & Critical Damage in PvP
 - **6 builds placeholder :** Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist (à remplacer avant lancement public)
-- **5 sets :** Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee
+- **713 sets** — base exhaustive, 707 vérifiés U49, 6 encore en "Gold Road (Q2 2024)" (Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee, Mother's Sorrow) — à re-vérifier contre U49
 - **389 morphs skills** avec `morph_rationale` complet — toutes classes, Alliance War, World (Vampire/Werewolf/Soul Magic)
 
 ### Decap CMS
