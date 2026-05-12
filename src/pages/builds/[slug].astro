@@ -35,8 +35,17 @@ assertIds(build.data.skills.bar1,   skillsMap, 'skill', build.id);
 assertIds(build.data.skills.bar2,   skillsMap, 'skill', build.id);
 
 const resolvedSets = build.data.sets.map(id => setsMap[id]!);
-const resolvedBar1 = build.data.skills.bar1.map(id => skillsMap[id]!);
-const resolvedBar2 = build.data.skills.bar2.map(id => skillsMap[id]!);
+
+function enrichSkill(id: string) {
+  const skill = skillsMap[id]!;
+  return {
+    ...skill,
+    morph_sibling_name: skill.morph_sibling ? (skillsMap[skill.morph_sibling]?.name ?? null) : null,
+  };
+}
+
+const resolvedBar1 = build.data.skills.bar1.map(enrichSkill);
+const resolvedBar2 = build.data.skills.bar2.map(enrichSkill);
 ---
 
 <Build

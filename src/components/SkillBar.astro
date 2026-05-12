@@ -5,6 +5,7 @@ interface Skill {
   base_skill?: string | null;
   morph_of?: string | null;
   morph_sibling?: string | null;
+  morph_sibling_name?: string | null;
   morph_rationale?: string | null;
   class: string;
   skill_line: string;
@@ -46,9 +47,9 @@ function slotIndex(i: number) {
   {bars.map(({ skills }, barIdx) => (
     <div class="bars__row" data-bar-row hidden={barIdx !== 0 || undefined}>
       {skills.map((skill, i) => {
-        const isUlt  = i === 5;
-        const hasImg = !!skill.icon;
-        const hasMorph = !!(skill.morph_rationale && skill.morph_rationale.length > 0);
+        const isUlt    = i === 5;
+        const hasImg   = !!skill.icon;
+        const hasMorph = !!skill.morph_of;
 
         return (
           <div
@@ -75,28 +76,32 @@ function slotIndex(i: number) {
               <div class="tooltip" role="tooltip">
                 <div class="tooltip__head">
                   <div class="tooltip__title">{skill.name}</div>
-                  <div class="tooltip__type">{skill.skill_line.toUpperCase()}</div>
+                  <div class="tooltip__meta">
+                    <span class="tooltip__line">{skill.skill_line.toUpperCase()}</span>
+                    <div class="tooltip__tags">
+                      <span class:list={['tag', `tag--${skill.type.toLowerCase()}`]}>{skill.type}</span>
+                      {skill.resource && skill.resource !== 'None' && (
+                        <span class:list={['tag', `tag--${skill.resource.toLowerCase()}`]}>{skill.resource}</span>
+                      )}
+                    </div>
+                  </div>
                 </div>
 
-                <div class:list={['morph', !skill.base_skill && 'morph--none']}>
-                  {skill.base_skill ? (
+                <div class="morph">
+                  <span class="morph__base">{skill.base_skill}</span>
+                  <span class="morph__arrow">→</span>
+                  <span class="morph__chosen">{skill.name}</span>
+                  {skill.morph_sibling_name && (
                     <>
-                      <span class="morph__base">{skill.base_skill}</span>
-                      <span class="morph__arrow">→</span>
-                      <span class="morph__chosen">{skill.name}</span>
-                      {skill.morph_sibling && (
-                        <>
-                          <span class="morph__or">/</span>
-                          <span class="morph__sibling">{skill.morph_sibling}</span>
-                        </>
-                      )}
+                      <span class="morph__or">/</span>
+                      <span class="morph__sibling">{skill.morph_sibling_name}</span>
                     </>
-                  ) : (
-                    <span>Base skill — no morph</span>
                   )}
                 </div>
 
-                <p class="tooltip__rationale">{skill.morph_rationale}</p>
+                {skill.morph_rationale && (
+                  <p class="tooltip__rationale">{skill.morph_rationale}</p>
+                )}
               </div>
             )}
           </div>
@@ -434,16 +439,47 @@ function slotIndex(i: number) {
     font-size: 22px;
     color: var(--color-text);
     line-height: 1.1;
+    margin-bottom: 8px;
   }
 
-  .tooltip__type {
+  .tooltip__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .tooltip__line {
     font-family: var(--font-mono);
     font-size: 10px;
     letter-spacing: 0.22em;
     color: var(--color-text-muted);
     text-transform: uppercase;
-    margin-top: 6px;
   }
+
+  .tooltip__tags {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border: 1px solid var(--color-border-2);
+    color: var(--color-text-muted);
+  }
+
+  .tag--active   { color: var(--color-mono);    border-color: rgba(196,181,253,0.25); }
+  .tag--ultimate { color: var(--color-mythic);  border-color: rgba(212,164,74,0.3); }
+  .tag--passive  { color: var(--color-text-muted); }
+  .tag--magicka  { color: #a78bfa; border-color: rgba(167,139,250,0.25); }
+  .tag--stamina  { color: #86efac; border-color: rgba(134,239,172,0.25); }
+  .tag--health   { color: #fca5a5; border-color: rgba(252,165,165,0.25); }
+  .tag--ultimate-resource { display: none; }
 
   /* Morph chain */
   .morph {
