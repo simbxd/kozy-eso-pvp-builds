@@ -1,0 +1,15 @@
+{
+  "id": "summoners-armor",
+  "name": "Summoner's Armor",
+  "base_skill": "Bone Armor",
+  "morph_of": "bone-armor",
+  "morph_sibling": "beckoning-armor",
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/summoners-armor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/summoners-armor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Summoner's_Armor"
+}

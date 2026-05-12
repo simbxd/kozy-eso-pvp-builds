@@ -1,0 +1,15 @@
+{
+  "id": "piercing-mark",
+  "name": "Piercing Mark",
+  "base_skill": "Mark Target",
+  "morph_of": "mark-target",
+  "morph_sibling": "reapers-mark",
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/piercing-mark.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/piercing-mark",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Piercing_Mark"
+}

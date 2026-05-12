@@ -1,0 +1,15 @@
+{
+  "id": "resistant-flesh",
+  "name": "Resistant Flesh",
+  "base_skill": "Render Flesh",
+  "morph_of": "render-flesh",
+  "morph_sibling": "blood-sacrifice",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/resistant-flesh.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/resistant-flesh",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Resistant_Flesh"
+}

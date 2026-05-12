@@ -1,0 +1,15 @@
+{
+  "id": "channeled-acceleration",
+  "name": "Channeled Acceleration",
+  "base_skill": "Accelerate",
+  "morph_of": "accelerate",
+  "morph_sibling": "race-against-time",
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/channeled-acceleration.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/channeled-acceleration",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Channeled_Acceleration"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "green-lotus",
+  "name": "Green Lotus",
+  "base_skill": "Lotus Flower",
+  "morph_of": "lotus-flower",
+  "morph_sibling": "lotus-blossom",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/green-lotus.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/green-lotus",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Green_Lotus"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "lights-champion",
+  "name": "Light's Champion",
+  "base_skill": "Panacea",
+  "morph_of": "panacea",
+  "morph_sibling": "life-giver",
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/lights-champion.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/lights-champion",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Light's_Champion"
+}

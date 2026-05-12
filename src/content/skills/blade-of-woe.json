@@ -1,0 +1,15 @@
+{
+  "id": "blade-of-woe",
+  "name": "Blade of Woe",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Dark Brotherhood",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/blade-of-woe.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/dark-brotherhood/blade-of-woe",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blade_of_Woe"
+}

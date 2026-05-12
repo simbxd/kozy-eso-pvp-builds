@@ -1,0 +1,15 @@
+{
+  "id": "magnum-shot",
+  "name": "Magnum Shot",
+  "base_skill": "Scatter Shot",
+  "morph_of": "scatter-shot",
+  "morph_sibling": "draining-shot",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/magnum-shot.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/magnum-shot",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Magnum_Shot"
+}

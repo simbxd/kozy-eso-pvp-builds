@@ -1,0 +1,15 @@
+{
+  "id": "binding-bond",
+  "name": "Binding Bond",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/binding-bond.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/binding-bond",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Binding_Bond"
+}

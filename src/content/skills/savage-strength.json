@@ -1,0 +1,15 @@
+{
+  "id": "savage-strength",
+  "name": "Savage Strength",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/savage-strength.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/savage-strength",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Savage_Strength"
+}

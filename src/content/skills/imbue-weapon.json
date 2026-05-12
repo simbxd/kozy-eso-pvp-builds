@@ -1,0 +1,15 @@
+{
+  "id": "imbue-weapon",
+  "name": "Imbue Weapon",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/imbue-weapon.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/imbue-weapon",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Imbue_Weapon"
+}

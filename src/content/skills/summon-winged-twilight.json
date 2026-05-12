@@ -1,0 +1,15 @@
+{
+  "id": "summon-winged-twilight",
+  "name": "Summon Winged Twilight",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Sorcerer",
+  "skill_line": "Daedric Summoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/summon-winged-twilight.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/daedric-summoning/summon-winged-twilight",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Summon_Winged_Twilight"
+}

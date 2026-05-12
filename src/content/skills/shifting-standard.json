@@ -1,0 +1,15 @@
+{
+  "id": "shifting-standard",
+  "name": "Shifting Standard",
+  "base_skill": "Dragonknight Standard",
+  "morph_of": "dragonknight-standard",
+  "morph_sibling": "standard-of-might",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/shifting-standard.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/shifting-standard",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shifting_Standard"
+}

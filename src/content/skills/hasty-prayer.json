@@ -1,0 +1,15 @@
+{
+  "id": "hasty-prayer",
+  "name": "Hasty Prayer",
+  "base_skill": "Healing Ritual",
+  "morph_of": "healing-ritual",
+  "morph_sibling": "ritual-of-rebirth",
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/hasty-prayer.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/hasty-prayer",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hasty_Prayer"
+}

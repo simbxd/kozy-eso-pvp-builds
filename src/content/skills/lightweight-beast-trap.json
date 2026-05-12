@@ -1,0 +1,15 @@
+{
+  "id": "lightweight-beast-trap",
+  "name": "Lightweight Beast Trap",
+  "base_skill": "Trap Beast",
+  "morph_of": "trap-beast",
+  "morph_sibling": "barbed-trap",
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/lightweight-beast-trap.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/lightweight-beast-trap",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lightweight_Beast_Trap"
+}

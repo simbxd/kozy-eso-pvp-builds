@@ -1,0 +1,15 @@
+{
+  "id": "funnel-health",
+  "name": "Funnel Health",
+  "base_skill": "Strife",
+  "morph_of": "strife",
+  "morph_sibling": "swallow-soul",
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/funnel-health.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/funnel-health",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Funnel_Health"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "explosive-charge",
+  "name": "Explosive Charge",
+  "base_skill": "Focused Charge",
+  "morph_of": "focused-charge",
+  "morph_sibling": "toppling-charge",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/explosive-charge.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/explosive-charge",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Explosive_Charge"
+}

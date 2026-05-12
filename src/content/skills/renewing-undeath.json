@@ -1,0 +1,15 @@
+{
+  "id": "renewing-undeath",
+  "name": "Renewing Undeath",
+  "base_skill": "Life amid Death",
+  "morph_of": "life-amid-death",
+  "morph_sibling": "enduring-undeath",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/renewing-undeath.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/renewing-undeath",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Renewing_Undeath"
+}

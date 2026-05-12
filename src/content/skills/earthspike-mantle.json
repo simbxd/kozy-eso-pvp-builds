@@ -1,0 +1,15 @@
+{
+  "id": "earthspike-mantle",
+  "name": "Earthspike Mantle",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/earthspike-mantle.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/earthspike-mantle",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Earthspike_Mantle"
+}

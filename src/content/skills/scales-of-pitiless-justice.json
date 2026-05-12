@@ -1,0 +1,15 @@
+{
+  "id": "scales-of-pitiless-justice",
+  "name": "Scales of Pitiless Justice",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Dark Brotherhood",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/scales-of-pitiless-justice.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/dark-brotherhood/scales-of-pitiless-justice",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Scales_of_Pitiless_Justice"
+}

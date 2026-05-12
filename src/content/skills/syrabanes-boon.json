@@ -1,0 +1,15 @@
+{
+  "id": "syrabanes-boon",
+  "name": "Syrabane's Boon",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "High Elf Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/syrabanes-boon.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/high-elf-skills/syrabanes-boon",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Syrabane's_Boon"
+}

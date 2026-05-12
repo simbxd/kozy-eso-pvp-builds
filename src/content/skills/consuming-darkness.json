@@ -1,0 +1,15 @@
+{
+  "id": "consuming-darkness",
+  "name": "Consuming Darkness",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/consuming-darkness.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/consuming-darkness",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Consuming_Darkness"
+}

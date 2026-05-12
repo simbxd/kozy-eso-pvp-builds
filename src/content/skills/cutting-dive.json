@@ -1,0 +1,15 @@
+{
+  "id": "cutting-dive",
+  "name": "Cutting Dive",
+  "base_skill": "Dive",
+  "morph_of": "dive",
+  "morph_sibling": "screaming-cliff-racer",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/cutting-dive.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/cutting-dive",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Cutting_Dive"
+}

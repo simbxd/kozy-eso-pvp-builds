@@ -1,0 +1,15 @@
+{
+  "id": "practiced-incantation",
+  "name": "Practiced Incantation",
+  "base_skill": "Rite of Passage",
+  "morph_of": "rite-of-passage",
+  "morph_sibling": "remembrance",
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/practiced-incantation.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/practiced-incantation",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Practiced_Incantation"
+}

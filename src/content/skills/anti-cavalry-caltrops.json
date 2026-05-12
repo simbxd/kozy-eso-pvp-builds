@@ -1,0 +1,15 @@
+{
+  "id": "anti-cavalry-caltrops",
+  "name": "Anti-Cavalry Caltrops",
+  "base_skill": "Caltrops",
+  "morph_of": "caltrops",
+  "morph_sibling": "razor-caltrops",
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/anti-cavalry-caltrops.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/anti-cavalry-caltrops",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Anti-Cavalry_Caltrops"
+}

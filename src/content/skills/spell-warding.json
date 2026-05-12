@@ -1,0 +1,15 @@
+{
+  "id": "spell-warding",
+  "name": "Spell Warding",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Armor",
+  "skill_line": "Light Armor",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/spell-warding.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/light-armor/spell-warding",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spell_Warding"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "arcanists-smash",
+  "name": "Arcanist's Smash",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/arcanists-smash.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/arcanists-smash",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Arcanist's_Smash"
+}

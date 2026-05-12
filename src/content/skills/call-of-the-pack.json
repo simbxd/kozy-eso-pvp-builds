@@ -1,0 +1,15 @@
+{
+  "id": "call-of-the-pack",
+  "name": "Call of the Pack",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/call-of-the-pack.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/call-of-the-pack",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Call_of_the_Pack"
+}

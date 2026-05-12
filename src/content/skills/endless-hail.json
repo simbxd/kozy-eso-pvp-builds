@@ -1,0 +1,15 @@
+{
+  "id": "endless-hail",
+  "name": "Endless Hail",
+  "base_skill": "Volley",
+  "morph_of": "volley",
+  "morph_sibling": "arrow-barrage",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/endless-hail.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/endless-hail",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Endless_Hail"
+}

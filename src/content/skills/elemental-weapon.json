@@ -1,0 +1,15 @@
+{
+  "id": "elemental-weapon",
+  "name": "Elemental Weapon",
+  "base_skill": "Imbue Weapon",
+  "morph_of": "imbue-weapon",
+  "morph_sibling": "crushing-weapon",
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/elemental-weapon.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/elemental-weapon",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Elemental_Weapon"
+}

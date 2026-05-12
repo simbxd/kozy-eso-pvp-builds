@@ -1,0 +1,15 @@
+{
+  "id": "spear-wall",
+  "name": "Spear Wall",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/spear-wall.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/spear-wall",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spear_Wall"
+}

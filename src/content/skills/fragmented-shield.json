@@ -1,0 +1,15 @@
+{
+  "id": "fragmented-shield",
+  "name": "Fragmented Shield",
+  "base_skill": "Obsidian Shield",
+  "morph_of": "obsidian-shield",
+  "morph_sibling": "igneous-shield",
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/fragmented-shield.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/fragmented-shield",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fragmented_Shield"
+}

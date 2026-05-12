@@ -1,0 +1,15 @@
+{
+  "id": "emerald-moss",
+  "name": "Emerald Moss",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/emerald-moss.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/emerald-moss",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Emerald_Moss"
+}

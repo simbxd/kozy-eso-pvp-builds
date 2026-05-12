@@ -1,0 +1,15 @@
+{
+  "id": "harnessed-quintessence",
+  "name": "Harnessed Quintessence",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Passive",
+  "resource": "None",
+  "icon": "/assets/skills/harnessed-quintessence.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/harnessed-quintessence",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Harnessed_Quintessence"
+}

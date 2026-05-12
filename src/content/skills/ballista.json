@@ -1,0 +1,15 @@
+{
+  "id": "ballista",
+  "name": "Ballista",
+  "base_skill": "Rapid Fire",
+  "morph_of": "rapid-fire",
+  "morph_sibling": "toxic-barrage",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/ballista.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/ballista",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ballista"
+}

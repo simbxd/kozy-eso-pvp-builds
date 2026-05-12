@@ -1,0 +1,15 @@
+{
+  "id": "improved-sneak",
+  "name": "Improved Sneak",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Armor",
+  "skill_line": "Medium Armor",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/improved-sneak.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/medium-armor/improved-sneak",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Improved_Sneak"
+}

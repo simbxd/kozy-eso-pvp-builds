@@ -1,0 +1,15 @@
+{
+  "id": "sap-essence",
+  "name": "Sap Essence",
+  "base_skill": "Drain Power",
+  "morph_of": "drain-power",
+  "morph_sibling": "power-extraction",
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/sap-essence.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/sap-essence",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sap_Essence"
+}

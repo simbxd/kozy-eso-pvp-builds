@@ -1,0 +1,15 @@
+{
+  "id": "absorb-missile",
+  "name": "Absorb Missile",
+  "base_skill": "Defensive Posture",
+  "morph_of": "defensive-posture",
+  "morph_sibling": "defensive-stance",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/absorb-missile.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/absorb-missile",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Absorb_Missile"
+}

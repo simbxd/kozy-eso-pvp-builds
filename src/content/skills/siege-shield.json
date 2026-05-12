@@ -1,0 +1,15 @@
+{
+  "id": "siege-shield",
+  "name": "Siege Shield",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/siege-shield.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/siege-shield",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Siege_Shield"
+}

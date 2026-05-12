@@ -1,0 +1,15 @@
+{
+  "id": "radiant-aura",
+  "name": "Radiant Aura",
+  "base_skill": "Restoring Aura",
+  "morph_of": "restoring-aura",
+  "morph_sibling": "repentance",
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/radiant-aura.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/radiant-aura",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Radiant_Aura"
+}

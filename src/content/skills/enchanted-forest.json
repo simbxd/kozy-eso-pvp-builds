@@ -1,0 +1,15 @@
+{
+  "id": "enchanted-forest",
+  "name": "Enchanted Forest",
+  "base_skill": "Secluded Grove",
+  "morph_of": "secluded-grove",
+  "morph_sibling": "healing-thicket",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/enchanted-forest.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/enchanted-forest",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Enchanted_Forest"
+}

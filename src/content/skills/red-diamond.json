@@ -1,0 +1,15 @@
+{
+  "id": "red-diamond",
+  "name": "Red Diamond",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Imperial Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/red-diamond.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/imperial-skills/red-diamond",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Red_Diamond"
+}

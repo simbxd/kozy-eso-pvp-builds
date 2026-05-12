@@ -1,0 +1,15 @@
+{
+  "id": "radiant-magelight",
+  "name": "Radiant Magelight",
+  "base_skill": "Magelight",
+  "morph_of": "magelight",
+  "morph_sibling": "inner-light",
+  "class": "Guild",
+  "skill_line": "Mages Guild",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/radiant-magelight.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/mages-guild/radiant-magelight",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Radiant_Magelight"
+}

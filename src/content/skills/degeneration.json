@@ -1,0 +1,15 @@
+{
+  "id": "degeneration",
+  "name": "Degeneration",
+  "base_skill": "Entropy",
+  "morph_of": "entropy",
+  "morph_sibling": "structured-entropy",
+  "class": "Guild",
+  "skill_line": "Mages Guild",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/degeneration.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/mages-guild/degeneration",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Degeneration"
+}

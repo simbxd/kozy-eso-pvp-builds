@@ -1,0 +1,15 @@
+{
+  "id": "growing-swarm",
+  "name": "Growing Swarm",
+  "base_skill": "Swarm",
+  "morph_of": "swarm",
+  "morph_sibling": "fetcher-infection",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/growing-swarm.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/growing-swarm",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Growing_Swarm"
+}

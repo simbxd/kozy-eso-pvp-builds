@@ -1,0 +1,15 @@
+{
+  "id": "radiant-glory",
+  "name": "Radiant Glory",
+  "base_skill": "Radiant Destruction",
+  "morph_of": "radiant-destruction",
+  "morph_sibling": "radiant-oppression",
+  "class": "Templar",
+  "skill_line": "Dawn's Wrath",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/radiant-glory.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/dawns-wrath/radiant-glory",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Radiant_Glory"
+}

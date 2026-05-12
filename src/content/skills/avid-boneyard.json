@@ -1,0 +1,15 @@
+{
+  "id": "avid-boneyard",
+  "name": "Avid Boneyard",
+  "base_skill": "Boneyard",
+  "morph_of": "boneyard",
+  "morph_sibling": "unnerving-boneyard",
+  "class": "Necromancer",
+  "skill_line": "Grave Lord",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/avid-boneyard.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/grave-lord/avid-boneyard",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Avid_Boneyard"
+}

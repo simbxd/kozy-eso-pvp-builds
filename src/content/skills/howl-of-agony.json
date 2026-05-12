@@ -1,0 +1,15 @@
+{
+  "id": "howl-of-agony",
+  "name": "Howl of Agony",
+  "base_skill": "Piercing Howl",
+  "morph_of": "piercing-howl",
+  "morph_sibling": "howl-of-despair",
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/howl-of-agony.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/howl-of-agony",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Howl_of_Agony"
+}

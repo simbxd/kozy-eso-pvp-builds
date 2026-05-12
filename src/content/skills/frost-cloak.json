@@ -1,0 +1,15 @@
+{
+  "id": "frost-cloak",
+  "name": "Frost Cloak",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/frost-cloak.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/frost-cloak",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Frost_Cloak"
+}

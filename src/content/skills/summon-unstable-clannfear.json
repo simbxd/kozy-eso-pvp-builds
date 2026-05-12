@@ -1,0 +1,15 @@
+{
+  "id": "summon-unstable-clannfear",
+  "name": "Summon Unstable Clannfear",
+  "base_skill": "Summon Unstable Familiar",
+  "morph_of": "summon-unstable-familiar",
+  "morph_sibling": "summon-volatile-familiar",
+  "class": "Sorcerer",
+  "skill_line": "Daedric Summoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/summon-unstable-clannfear.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/daedric-summoning/summon-unstable-clannfear",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Summon_Unstable_Clannfear"
+}

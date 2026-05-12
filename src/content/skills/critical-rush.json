@@ -1,0 +1,15 @@
+{
+  "id": "critical-rush",
+  "name": "Critical Rush",
+  "base_skill": "Critical Charge",
+  "morph_of": "critical-charge",
+  "morph_sibling": "stampede",
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/critical-rush.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/critical-rush",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Critical_Rush"
+}

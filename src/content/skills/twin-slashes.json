@@ -1,0 +1,15 @@
+{
+  "id": "twin-slashes",
+  "name": "Twin Slashes",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/twin-slashes.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/twin-slashes",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Twin_Slashes"
+}

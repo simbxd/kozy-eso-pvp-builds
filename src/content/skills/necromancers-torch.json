@@ -1,0 +1,15 @@
+{
+  "id": "necromancers-torch",
+  "name": "Necromancer's Torch",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/necromancers-torch.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/necromancers-torch",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Necromancer's_Torch"
+}

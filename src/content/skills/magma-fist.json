@@ -1,0 +1,15 @@
+{
+  "id": "magma-fist",
+  "name": "Magma Fist",
+  "base_skill": "Superheated Ward",
+  "morph_of": "superheated-ward",
+  "morph_sibling": "volcanic-ward",
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/magma-fist.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/magma-fist",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Magma_Fist"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rune-focus",
+  "name": "Rune Focus",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/rune-focus.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/rune-focus",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rune_Focus"
+}

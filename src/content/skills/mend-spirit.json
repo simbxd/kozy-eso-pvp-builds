@@ -1,0 +1,15 @@
+{
+  "id": "mend-spirit",
+  "name": "Mend Spirit",
+  "base_skill": "Mend Wounds",
+  "morph_of": "mend-wounds",
+  "morph_sibling": "symbiosis",
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/mend-spirit.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/mend-spirit",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mend_Spirit"
+}

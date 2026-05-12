@@ -1,0 +1,15 @@
+{
+  "id": "ruinous-scythe",
+  "name": "Ruinous Scythe",
+  "base_skill": "Death Scythe",
+  "morph_of": "death-scythe",
+  "morph_sibling": "hungry-scythe",
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/ruinous-scythe.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/ruinous-scythe",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ruinous_Scythe"
+}

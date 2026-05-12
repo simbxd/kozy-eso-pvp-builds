@@ -1,0 +1,15 @@
+{
+  "id": "simmering-frenzy",
+  "name": "Simmering Frenzy",
+  "base_skill": "Blood Frenzy",
+  "morph_of": "blood-frenzy",
+  "morph_sibling": "sated-fury",
+  "class": "World",
+  "skill_line": "Vampire",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/simmering-frenzy.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/vampire/simmering-frenzy",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Simmering_Frenzy"
+}

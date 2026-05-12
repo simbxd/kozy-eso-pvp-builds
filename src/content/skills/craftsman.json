@@ -1,0 +1,15 @@
+{
+  "id": "craftsman",
+  "name": "Craftsman",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Orc Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/craftsman.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/orc-skills/craftsman",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Craftsman"
+}

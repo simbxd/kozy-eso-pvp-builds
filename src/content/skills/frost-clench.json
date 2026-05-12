@@ -1,0 +1,15 @@
+{
+  "id": "frost-clench",
+  "name": "Frost Clench",
+  "base_skill": "Destructive Touch",
+  "morph_of": "destructive-touch",
+  "morph_sibling": "destructive-reach",
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/frost-clench.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/frost-clench",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Frost_Clench"
+}

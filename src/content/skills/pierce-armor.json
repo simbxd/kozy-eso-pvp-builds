@@ -1,0 +1,15 @@
+{
+  "id": "pierce-armor",
+  "name": "Pierce Armor",
+  "base_skill": "Puncture",
+  "morph_of": "puncture",
+  "morph_sibling": "ransack",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/pierce-armor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/pierce-armor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pierce_Armor"
+}

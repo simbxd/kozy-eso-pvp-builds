@@ -1,0 +1,15 @@
+{
+  "id": "endless-fury",
+  "name": "Endless Fury",
+  "base_skill": "Mages' Fury",
+  "morph_of": "mages-fury",
+  "morph_sibling": "mages-wrath",
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/endless-fury.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/endless-fury",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Endless_Fury"
+}

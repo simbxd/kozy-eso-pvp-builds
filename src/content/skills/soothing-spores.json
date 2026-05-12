@@ -1,0 +1,15 @@
+{
+  "id": "soothing-spores",
+  "name": "Soothing Spores",
+  "base_skill": "Fungal Growth",
+  "morph_of": "fungal-growth",
+  "morph_sibling": "enchanted-growth",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/soothing-spores.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/soothing-spores",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Soothing_Spores"
+}

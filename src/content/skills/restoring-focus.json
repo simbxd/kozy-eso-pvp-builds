@@ -1,0 +1,15 @@
+{
+  "id": "restoring-focus",
+  "name": "Restoring Focus",
+  "base_skill": "Rune Focus",
+  "morph_of": "rune-focus",
+  "morph_sibling": "channeled-focus",
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/restoring-focus.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/restoring-focus",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Restoring_Focus"
+}

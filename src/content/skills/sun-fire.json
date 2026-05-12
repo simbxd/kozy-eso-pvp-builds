@@ -1,0 +1,15 @@
+{
+  "id": "sun-fire",
+  "name": "Sun Fire",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Templar",
+  "skill_line": "Dawn's Wrath",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/sun-fire.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/dawns-wrath/sun-fire",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sun_Fire"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "intricate-runeforms",
+  "name": "Intricate Runeforms",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Arcanist",
+  "skill_line": "Curative Runeforms",
+  "type": "Passive",
+  "resource": "None",
+  "icon": "/assets/skills/intricate-runeforms.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/curative-runeforms/intricate-runeforms",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Intricate_Runeforms"
+}

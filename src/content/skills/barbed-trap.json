@@ -1,0 +1,15 @@
+{
+  "id": "barbed-trap",
+  "name": "Barbed Trap",
+  "base_skill": "Trap Beast",
+  "morph_of": "trap-beast",
+  "morph_sibling": "lightweight-beast-trap",
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/barbed-trap.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/barbed-trap",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Barbed_Trap"
+}

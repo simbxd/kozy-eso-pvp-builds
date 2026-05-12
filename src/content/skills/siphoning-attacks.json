@@ -1,0 +1,15 @@
+{
+  "id": "siphoning-attacks",
+  "name": "Siphoning Attacks",
+  "base_skill": "Siphoning Strikes",
+  "morph_of": "siphoning-strikes",
+  "morph_sibling": "leeching-strikes",
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/siphoning-attacks.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/siphoning-attacks",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Siphoning_Attacks"
+}

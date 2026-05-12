@@ -1,0 +1,15 @@
+{
+  "id": "leeching-vines",
+  "name": "Leeching Vines",
+  "base_skill": "Living Vines",
+  "morph_of": "living-vines",
+  "morph_sibling": "living-trellis",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/leeching-vines.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/leeching-vines",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Leeching_Vines"
+}

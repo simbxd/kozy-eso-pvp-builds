@@ -1,0 +1,15 @@
+{
+  "id": "hardened-ward",
+  "name": "Hardened Ward",
+  "base_skill": "Conjured Ward",
+  "morph_of": "conjured-ward",
+  "morph_sibling": "regenerative-ward",
+  "class": "Sorcerer",
+  "skill_line": "Daedric Summoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/hardened-ward.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/daedric-summoning/hardened-ward",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hardened_Ward"
+}

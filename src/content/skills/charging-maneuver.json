@@ -1,0 +1,15 @@
+{
+  "id": "charging-maneuver",
+  "name": "Charging Maneuver",
+  "base_skill": "Rapid Maneuver",
+  "morph_of": "rapid-maneuver",
+  "morph_sibling": "retreating-maneuver",
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/charging-maneuver.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/charging-maneuver",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Charging_Maneuver"
+}

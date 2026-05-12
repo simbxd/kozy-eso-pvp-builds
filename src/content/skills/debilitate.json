@@ -1,0 +1,15 @@
+{
+  "id": "debilitate",
+  "name": "Debilitate",
+  "base_skill": "Cripple",
+  "morph_of": "cripple",
+  "morph_sibling": "crippling-grasp",
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/debilitate.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/debilitate",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Debilitate"
+}

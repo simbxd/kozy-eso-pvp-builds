@@ -1,0 +1,15 @@
+{
+  "id": "binding-javelin",
+  "name": "Binding Javelin",
+  "base_skill": "Piercing Javelin",
+  "morph_of": "piercing-javelin",
+  "morph_sibling": "aurora-javelin",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/binding-javelin.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/binding-javelin",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Binding_Javelin"
+}

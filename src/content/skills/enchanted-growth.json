@@ -1,0 +1,15 @@
+{
+  "id": "enchanted-growth",
+  "name": "Enchanted Growth",
+  "base_skill": "Fungal Growth",
+  "morph_of": "fungal-growth",
+  "morph_sibling": "soothing-spores",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/enchanted-growth.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/enchanted-growth",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Enchanted_Growth"
+}

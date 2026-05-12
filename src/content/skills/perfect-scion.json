@@ -1,0 +1,15 @@
+{
+  "id": "perfect-scion",
+  "name": "Perfect Scion",
+  "base_skill": "Blood Scion",
+  "morph_of": "blood-scion",
+  "morph_sibling": "swarming-scion",
+  "class": "World",
+  "skill_line": "Vampire",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/perfect-scion.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/vampire/perfect-scion",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Perfect_Scion"
+}

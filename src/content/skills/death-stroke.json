@@ -1,0 +1,15 @@
+{
+  "id": "death-stroke",
+  "name": "Death Stroke",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/death-stroke.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/death-stroke",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Death_Stroke"
+}

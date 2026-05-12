@@ -1,0 +1,15 @@
+{
+  "id": "corrosive-armor",
+  "name": "Corrosive Armor",
+  "base_skill": "Magma Armor",
+  "morph_of": "magma-armor",
+  "morph_sibling": "magma-shell",
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/corrosive-armor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/corrosive-armor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Corrosive_Armor"
+}

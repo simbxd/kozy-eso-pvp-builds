@@ -1,0 +1,15 @@
+{
+  "id": "pestilent-colossus",
+  "name": "Pestilent Colossus",
+  "base_skill": "Frozen Colossus",
+  "morph_of": "frozen-colossus",
+  "morph_sibling": "glacial-colossus",
+  "class": "Necromancer",
+  "skill_line": "Grave Lord",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/pestilent-colossus.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/grave-lord/pestilent-colossus",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pestilent_Colossus"
+}

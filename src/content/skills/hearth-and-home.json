@@ -1,0 +1,15 @@
+{
+  "id": "hearth-and-home",
+  "name": "Hearth and Home",
+  "base_skill": "Hearthfire",
+  "morph_of": "hearthfire",
+  "morph_sibling": "fire-keeper",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/hearth-and-home.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/hearth-and-home",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hearth_and_Home"
+}

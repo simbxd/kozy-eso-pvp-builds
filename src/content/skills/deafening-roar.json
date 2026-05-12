@@ -1,0 +1,15 @@
+{
+  "id": "deafening-roar",
+  "name": "Deafening Roar",
+  "base_skill": "Roar",
+  "morph_of": "roar",
+  "morph_sibling": "ferocious-roar",
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/deafening-roar.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/deafening-roar",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Deafening_Roar"
+}

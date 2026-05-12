@@ -1,0 +1,15 @@
+{
+  "id": "deadly-cloak",
+  "name": "Deadly Cloak",
+  "base_skill": "Blade Cloak",
+  "morph_of": "blade-cloak",
+  "morph_sibling": "quick-cloak",
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/deadly-cloak.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/deadly-cloak",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Deadly_Cloak"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "scry",
+  "name": "Scry",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Scrying",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/scry.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/scrying/scry",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Scry"
+}

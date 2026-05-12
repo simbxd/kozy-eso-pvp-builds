@@ -1,0 +1,15 @@
+{
+  "id": "rite-of-passage",
+  "name": "Rite of Passage",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/rite-of-passage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/rite-of-passage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rite_of_Passage"
+}

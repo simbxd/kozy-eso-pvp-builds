@@ -1,0 +1,15 @@
+{
+  "id": "shrouded-daggers",
+  "name": "Shrouded Daggers",
+  "base_skill": "Hidden Blade",
+  "morph_of": "hidden-blade",
+  "morph_sibling": "flying-blade",
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/shrouded-daggers.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/shrouded-daggers",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shrouded_Daggers"
+}

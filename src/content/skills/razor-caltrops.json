@@ -1,0 +1,15 @@
+{
+  "id": "razor-caltrops",
+  "name": "Razor Caltrops",
+  "base_skill": "Caltrops",
+  "morph_of": "caltrops",
+  "morph_sibling": "anti-cavalry-caltrops",
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/razor-caltrops.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/razor-caltrops",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Razor_Caltrops"
+}

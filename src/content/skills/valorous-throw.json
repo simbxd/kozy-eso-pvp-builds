@@ -1,0 +1,15 @@
+{
+  "id": "valorous-throw",
+  "name": "Valorous Throw",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/valorous-throw.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/valorous-throw",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Valorous_Throw"
+}

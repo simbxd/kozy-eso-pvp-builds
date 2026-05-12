@@ -1,0 +1,15 @@
+{
+  "id": "shadow-barrier",
+  "name": "Shadow Barrier",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/shadow-barrier.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/shadow-barrier",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shadow_Barrier"
+}

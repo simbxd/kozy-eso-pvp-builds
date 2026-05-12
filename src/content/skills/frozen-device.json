@@ -1,0 +1,15 @@
+{
+  "id": "frozen-device",
+  "name": "Frozen Device",
+  "base_skill": "Frozen Gate",
+  "morph_of": "frozen-gate",
+  "morph_sibling": "frozen-retreat",
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/frozen-device.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/frozen-device",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Frozen_Device"
+}

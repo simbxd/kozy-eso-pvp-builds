@@ -1,0 +1,15 @@
+{
+  "id": "dawnbreaker-of-smiting",
+  "name": "Dawnbreaker of Smiting",
+  "base_skill": "Dawnbreaker",
+  "morph_of": "dawnbreaker",
+  "morph_sibling": "flawless-dawnbreaker",
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/dawnbreaker-of-smiting.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/dawnbreaker-of-smiting",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dawnbreaker_of_Smiting"
+}

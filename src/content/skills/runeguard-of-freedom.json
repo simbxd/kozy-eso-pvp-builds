@@ -1,0 +1,15 @@
+{
+  "id": "runeguard-of-freedom",
+  "name": "Runeguard of Freedom",
+  "base_skill": "Runic Defense",
+  "morph_of": "runic-defense",
+  "morph_sibling": "runeguard-of-still-waters",
+  "class": "Arcanist",
+  "skill_line": "Soldier of Apocrypha",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/runeguard-of-freedom.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/soldier-of-apocrypha/runeguard-of-freedom",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Runeguard_of_Freedom"
+}

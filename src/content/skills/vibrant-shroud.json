@@ -1,0 +1,15 @@
+{
+  "id": "vibrant-shroud",
+  "name": "Vibrant Shroud",
+  "base_skill": "Encase",
+  "morph_of": "encase",
+  "morph_sibling": "shattering-spines",
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/vibrant-shroud.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/vibrant-shroud",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vibrant_Shroud"
+}

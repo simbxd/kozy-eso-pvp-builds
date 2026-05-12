@@ -1,0 +1,15 @@
+{
+  "id": "critical-charge",
+  "name": "Critical Charge",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/critical-charge.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/critical-charge",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Critical_Charge"
+}

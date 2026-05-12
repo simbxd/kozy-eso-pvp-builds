@@ -1,0 +1,15 @@
+{
+  "id": "healing-tides",
+  "name": "Healing Tides",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Arcanist",
+  "skill_line": "Curative Runeforms",
+  "type": "Passive",
+  "resource": "None",
+  "icon": "/assets/skills/healing-tides.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/curative-runeforms/healing-tides",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Healing_Tides"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "igneous-shield",
+  "name": "Igneous Shield",
+  "base_skill": "Obsidian Shield",
+  "morph_of": "obsidian-shield",
+  "morph_sibling": "fragmented-shield",
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/igneous-shield.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/igneous-shield",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Igneous_Shield"
+}

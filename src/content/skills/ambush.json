@@ -1,0 +1,15 @@
+{
+  "id": "ambush",
+  "name": "Ambush",
+  "base_skill": "Teleport Strike",
+  "morph_of": "teleport-strike",
+  "morph_sibling": "lotus-fan",
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/ambush.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/ambush",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ambush"
+}

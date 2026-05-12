@@ -1,0 +1,15 @@
+{
+  "id": "introspection",
+  "name": "Introspection",
+  "base_skill": "Meditate",
+  "morph_of": "meditate",
+  "morph_sibling": "deep-thoughts",
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/introspection.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/introspection",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Introspection"
+}

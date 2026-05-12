@@ -1,0 +1,15 @@
+{
+  "id": "unstoppable",
+  "name": "Unstoppable",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Armor",
+  "skill_line": "Heavy Armor",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/unstoppable.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/heavy-armor/unstoppable",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Unstoppable"
+}

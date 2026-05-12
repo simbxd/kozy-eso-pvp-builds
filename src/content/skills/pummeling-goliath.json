@@ -1,0 +1,15 @@
+{
+  "id": "pummeling-goliath",
+  "name": "Pummeling Goliath",
+  "base_skill": "Bone Goliath Transformation",
+  "morph_of": "bone-goliath-transformation",
+  "morph_sibling": "ravenous-goliath",
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/pummeling-goliath.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/pummeling-goliath",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pummeling_Goliath"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "deep-fissure",
+  "name": "Deep Fissure",
+  "base_skill": "Scorch",
+  "morph_of": "scorch",
+  "morph_sibling": "subterranean-assault",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/deep-fissure.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/deep-fissure",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Deep_Fissure"
+}

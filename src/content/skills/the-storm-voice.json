@@ -1,0 +1,15 @@
+{
+  "id": "the-storm-voice",
+  "name": "The Storm Voice",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/the-storm-voice.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/the-storm-voice",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Storm_Voice"
+}

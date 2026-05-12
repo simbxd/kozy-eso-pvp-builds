@@ -1,0 +1,15 @@
+{
+  "id": "screaming-cliff-racer",
+  "name": "Screaming Cliff Racer",
+  "base_skill": "Dive",
+  "morph_of": "dive",
+  "morph_sibling": "cutting-dive",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/screaming-cliff-racer.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/screaming-cliff-racer",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Screaming_Cliff_Racer"
+}

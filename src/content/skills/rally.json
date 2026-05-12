@@ -1,0 +1,15 @@
+{
+  "id": "rally",
+  "name": "Rally",
+  "base_skill": "Momentum",
+  "morph_of": "momentum",
+  "morph_sibling": "forward-momentum",
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/rally.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/rally",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rally"
+}

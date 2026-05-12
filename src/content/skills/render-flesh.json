@@ -1,0 +1,15 @@
+{
+  "id": "render-flesh",
+  "name": "Render Flesh",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/render-flesh.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/render-flesh",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Render_Flesh"
+}

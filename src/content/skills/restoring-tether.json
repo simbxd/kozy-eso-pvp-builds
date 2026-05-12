@@ -1,0 +1,15 @@
+{
+  "id": "restoring-tether",
+  "name": "Restoring Tether",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/restoring-tether.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/restoring-tether",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Restoring_Tether"
+}

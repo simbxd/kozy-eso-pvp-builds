@@ -1,0 +1,15 @@
+{
+  "id": "master-assassin",
+  "name": "Master Assassin",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/master-assassin.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/master-assassin",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Master_Assassin"
+}

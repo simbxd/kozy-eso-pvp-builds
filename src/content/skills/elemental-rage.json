@@ -1,0 +1,15 @@
+{
+  "id": "elemental-rage",
+  "name": "Elemental Rage",
+  "base_skill": "Elemental Storm",
+  "morph_of": "elemental-storm",
+  "morph_sibling": "eye-of-the-storm",
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/elemental-rage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/elemental-rage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Elemental_Rage"
+}

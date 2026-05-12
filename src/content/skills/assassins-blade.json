@@ -1,0 +1,15 @@
+{
+  "id": "assassins-blade",
+  "name": "Assassin's Blade",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/assassins-blade.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/assassins-blade",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Assassin's_Blade"
+}

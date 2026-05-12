@@ -1,0 +1,15 @@
+{
+  "id": "flame-lash",
+  "name": "Flame Lash",
+  "base_skill": "Lava Whip",
+  "morph_of": "lava-whip",
+  "morph_sibling": "molten-whip",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/flame-lash.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/flame-lash",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Flame_Lash"
+}

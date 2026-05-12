@@ -1,0 +1,15 @@
+{
+  "id": "pack-leader",
+  "name": "Pack Leader",
+  "base_skill": "Werewolf Transformation",
+  "morph_of": "werewolf-transformation",
+  "morph_sibling": "werewolf-berserker",
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/pack-leader.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/pack-leader",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pack_Leader"
+}

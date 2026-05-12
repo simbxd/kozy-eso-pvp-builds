@@ -1,0 +1,15 @@
+{
+  "id": "snaring-trample",
+  "name": "Snaring Trample",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/snaring-trample.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/snaring-trample",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Snaring_Trample"
+}

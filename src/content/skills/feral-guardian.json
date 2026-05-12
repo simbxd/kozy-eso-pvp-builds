@@ -1,0 +1,15 @@
+{
+  "id": "feral-guardian",
+  "name": "Feral Guardian",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/feral-guardian.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/feral-guardian",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Feral_Guardian"
+}

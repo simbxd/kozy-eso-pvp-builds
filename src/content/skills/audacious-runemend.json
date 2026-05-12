@@ -1,0 +1,15 @@
+{
+  "id": "audacious-runemend",
+  "name": "Audacious Runemend",
+  "base_skill": "Runemend",
+  "morph_of": "runemend",
+  "morph_sibling": "evolving-runemend",
+  "class": "Arcanist",
+  "skill_line": "Curative Runeforms",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/audacious-runemend.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/curative-runeforms/audacious-runemend",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Audacious_Runemend"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rune-of-uncanny-adoration",
+  "name": "Rune of Uncanny Adoration",
+  "base_skill": "Rune of Eldritch Horror",
+  "morph_of": "rune-of-eldritch-horror",
+  "morph_sibling": "rune-of-the-colorless-pool",
+  "class": "Arcanist",
+  "skill_line": "Soldier of Apocrypha",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/rune-of-uncanny-adoration.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/soldier-of-apocrypha/rune-of-uncanny-adoration",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rune_of_Uncanny_Adoration"
+}

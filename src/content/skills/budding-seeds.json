@@ -1,0 +1,15 @@
+{
+  "id": "budding-seeds",
+  "name": "Budding Seeds",
+  "base_skill": "Healing Seed",
+  "morph_of": "healing-seed",
+  "morph_sibling": "corrupting-pollen",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/budding-seeds.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/budding-seeds",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Budding_Seeds"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "blood-for-blood",
+  "name": "Blood for Blood",
+  "base_skill": "Eviscerate",
+  "morph_of": "eviscerate",
+  "morph_sibling": "arterial-burst",
+  "class": "World",
+  "skill_line": "Vampire",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/blood-for-blood.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/vampire/blood-for-blood",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_for_Blood"
+}

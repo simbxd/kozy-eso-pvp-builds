@@ -1,0 +1,15 @@
+{
+  "id": "reconstructive-domain",
+  "name": "Reconstructive Domain",
+  "base_skill": "Arcanist's Domain",
+  "morph_of": "arcanists-domain",
+  "morph_sibling": "zenas-empowering-disc",
+  "class": "Arcanist",
+  "skill_line": "Curative Runeforms",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/reconstructive-domain.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/curative-runeforms/reconstructive-domain",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Reconstructive_Domain"
+}

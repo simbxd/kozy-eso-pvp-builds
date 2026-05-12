@@ -1,0 +1,15 @@
+{
+  "id": "elemental-drain",
+  "name": "Elemental Drain",
+  "base_skill": "Weakness to Elements",
+  "morph_of": "weakness-to-elements",
+  "morph_sibling": "elemental-susceptibility",
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/elemental-drain.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/elemental-drain",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Elemental_Drain"
+}

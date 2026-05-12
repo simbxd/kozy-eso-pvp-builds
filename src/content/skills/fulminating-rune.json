@@ -1,0 +1,15 @@
+{
+  "id": "fulminating-rune",
+  "name": "Fulminating Rune",
+  "base_skill": "The Imperfect Ring",
+  "morph_of": "the-imperfect-ring",
+  "morph_sibling": "rune-of-displacement",
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/fulminating-rune.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/fulminating-rune",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fulminating_Rune"
+}

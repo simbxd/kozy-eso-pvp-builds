@@ -1,0 +1,15 @@
+{
+  "id": "replenishing-barrier",
+  "name": "Replenishing Barrier",
+  "base_skill": "Barrier",
+  "morph_of": "barrier",
+  "morph_sibling": "reviving-barrier",
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/replenishing-barrier.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/replenishing-barrier",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Replenishing_Barrier"
+}

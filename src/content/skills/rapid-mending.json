@@ -1,0 +1,15 @@
+{
+  "id": "rapid-mending",
+  "name": "Rapid Mending",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Armor",
+  "skill_line": "Heavy Armor",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/rapid-mending.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/heavy-armor/rapid-mending",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rapid_Mending"
+}

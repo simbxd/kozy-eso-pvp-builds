@@ -1,0 +1,15 @@
+{
+  "id": "cascading-fortune",
+  "name": "Cascading Fortune",
+  "base_skill": "Remedy Cascade",
+  "morph_of": "remedy-cascade",
+  "morph_sibling": "curative-surge",
+  "class": "Arcanist",
+  "skill_line": "Curative Runeforms",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/cascading-fortune.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/curative-runeforms/cascading-fortune",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Cascading_Fortune"
+}

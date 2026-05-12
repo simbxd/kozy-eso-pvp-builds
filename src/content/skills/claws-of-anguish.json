@@ -1,0 +1,15 @@
+{
+  "id": "claws-of-anguish",
+  "name": "Claws of Anguish",
+  "base_skill": "Infectious Claws",
+  "morph_of": "infectious-claws",
+  "morph_sibling": "claws-of-life",
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/claws-of-anguish.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/claws-of-anguish",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Claws_of_Anguish"
+}

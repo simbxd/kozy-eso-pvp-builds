@@ -1,0 +1,15 @@
+{
+  "id": "authority",
+  "name": "Authority",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Emperor",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/authority.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/emperor/authority",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Authority"
+}

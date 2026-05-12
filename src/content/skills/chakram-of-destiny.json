@@ -1,0 +1,15 @@
+{
+  "id": "chakram-of-destiny",
+  "name": "Chakram of Destiny",
+  "base_skill": "Chakram Shields",
+  "morph_of": "chakram-shields",
+  "morph_sibling": "tidal-chakram",
+  "class": "Arcanist",
+  "skill_line": "Curative Runeforms",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/chakram-of-destiny.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/curative-runeforms/chakram-of-destiny",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Chakram_of_Destiny"
+}

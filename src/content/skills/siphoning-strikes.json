@@ -1,0 +1,15 @@
+{
+  "id": "siphoning-strikes",
+  "name": "Siphoning Strikes",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/siphoning-strikes.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/siphoning-strikes",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Siphoning_Strikes"
+}

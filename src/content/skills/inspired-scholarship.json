@@ -1,0 +1,15 @@
+{
+  "id": "inspired-scholarship",
+  "name": "Inspired Scholarship",
+  "base_skill": "Tome-Bearer's Inspiration",
+  "morph_of": "tome-bearers-inspiration",
+  "morph_sibling": "recuperative-treatise",
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/inspired-scholarship.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/inspired-scholarship",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Inspired_Scholarship"
+}

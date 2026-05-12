@@ -1,0 +1,15 @@
+{
+  "id": "fire-ring",
+  "name": "Fire Ring",
+  "base_skill": "Impulse",
+  "morph_of": "impulse",
+  "morph_sibling": "elemental-ring",
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/fire-ring.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/fire-ring",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fire_Ring"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "arrow-barrage",
+  "name": "Arrow Barrage",
+  "base_skill": "Volley",
+  "morph_of": "volley",
+  "morph_sibling": "endless-hail",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/arrow-barrage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/arrow-barrage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Arrow_Barrage"
+}

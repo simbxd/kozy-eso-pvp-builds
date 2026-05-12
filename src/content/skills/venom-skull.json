@@ -1,0 +1,15 @@
+{
+  "id": "venom-skull",
+  "name": "Venom Skull",
+  "base_skill": "Flame Skull",
+  "morph_of": "flame-skull",
+  "morph_sibling": "ricochet-skull",
+  "class": "Necromancer",
+  "skill_line": "Grave Lord",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/venom-skull.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/grave-lord/venom-skull",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Venom_Skull"
+}

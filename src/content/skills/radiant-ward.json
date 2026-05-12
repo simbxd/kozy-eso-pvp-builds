@@ -1,0 +1,15 @@
+{
+  "id": "radiant-ward",
+  "name": "Radiant Ward",
+  "base_skill": "Sun Shield",
+  "morph_of": "sun-shield",
+  "morph_sibling": "blazing-shield",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/radiant-ward.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/radiant-ward",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Radiant_Ward"
+}

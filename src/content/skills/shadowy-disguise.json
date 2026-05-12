@@ -1,0 +1,15 @@
+{
+  "id": "shadowy-disguise",
+  "name": "Shadowy Disguise",
+  "base_skill": "Shadow Cloak",
+  "morph_of": "shadow-cloak",
+  "morph_sibling": "dark-cloak",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/shadowy-disguise.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/shadowy-disguise",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shadowy_Disguise"
+}

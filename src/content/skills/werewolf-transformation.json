@@ -1,0 +1,15 @@
+{
+  "id": "werewolf-transformation",
+  "name": "Werewolf Transformation",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/werewolf-transformation.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/werewolf-transformation",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Werewolf_Transformation"
+}

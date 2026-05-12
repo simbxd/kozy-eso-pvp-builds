@@ -1,0 +1,15 @@
+{
+  "id": "solar-barrage",
+  "name": "Solar Barrage",
+  "base_skill": "Solar Flare",
+  "morph_of": "solar-flare",
+  "morph_sibling": "dark-flare",
+  "class": "Templar",
+  "skill_line": "Dawn's Wrath",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/solar-barrage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/dawns-wrath/solar-barrage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Solar_Barrage"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "flying-blade",
+  "name": "Flying Blade",
+  "base_skill": "Hidden Blade",
+  "morph_of": "hidden-blade",
+  "morph_sibling": "shrouded-daggers",
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/flying-blade.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/flying-blade",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Flying_Blade"
+}

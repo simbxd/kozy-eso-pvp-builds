@@ -1,0 +1,15 @@
+{
+  "id": "feral-pounce",
+  "name": "Feral Pounce",
+  "base_skill": "Pounce",
+  "morph_of": "pounce",
+  "morph_sibling": "brutal-pounce",
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/feral-pounce.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/feral-pounce",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Feral_Pounce"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "timely-escape",
+  "name": "Timely Escape",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Thieves Guild",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/timely-escape.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/thieves-guild/timely-escape",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Timely_Escape"
+}

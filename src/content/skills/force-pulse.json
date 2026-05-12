@@ -1,0 +1,15 @@
+{
+  "id": "force-pulse",
+  "name": "Force Pulse",
+  "base_skill": "Force Shock",
+  "morph_of": "force-shock",
+  "morph_sibling": "crushing-shock",
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/force-pulse.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/force-pulse",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Force_Pulse"
+}

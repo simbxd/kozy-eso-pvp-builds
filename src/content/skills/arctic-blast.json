@@ -1,0 +1,15 @@
+{
+  "id": "arctic-blast",
+  "name": "Arctic Blast",
+  "base_skill": "Arctic Wind",
+  "morph_of": "arctic-wind",
+  "morph_sibling": "polar-wind",
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/arctic-blast.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/arctic-blast",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Arctic_Blast"
+}

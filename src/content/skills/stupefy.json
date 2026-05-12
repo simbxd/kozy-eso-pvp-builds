@@ -1,0 +1,15 @@
+{
+  "id": "stupefy",
+  "name": "Stupefy",
+  "base_skill": "Mesmerize",
+  "morph_of": "mesmerize",
+  "morph_sibling": "hypnosis",
+  "class": "World",
+  "skill_line": "Vampire",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/stupefy.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/vampire/stupefy",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Stupefy"
+}

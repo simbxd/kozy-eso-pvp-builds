@@ -1,0 +1,15 @@
+{
+  "id": "streak",
+  "name": "Streak",
+  "base_skill": "Bolt Escape",
+  "morph_of": "bolt-escape",
+  "morph_sibling": "ball-of-lightning",
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/streak.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/streak",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Streak"
+}

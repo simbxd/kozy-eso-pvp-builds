@@ -1,0 +1,15 @@
+{
+  "id": "steadfast-ward",
+  "name": "Steadfast Ward",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/steadfast-ward.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/steadfast-ward",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Steadfast_Ward"
+}

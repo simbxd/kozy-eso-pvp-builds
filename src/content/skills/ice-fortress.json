@@ -1,0 +1,15 @@
+{
+  "id": "ice-fortress",
+  "name": "Ice Fortress",
+  "base_skill": "Frost Cloak",
+  "morph_of": "frost-cloak",
+  "morph_sibling": "expansive-frost-cloak",
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/ice-fortress.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/ice-fortress",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ice_Fortress"
+}

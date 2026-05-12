@@ -1,0 +1,15 @@
+{
+  "id": "healing-thicket",
+  "name": "Healing Thicket",
+  "base_skill": "Secluded Grove",
+  "morph_of": "secluded-grove",
+  "morph_sibling": "enchanted-forest",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/healing-thicket.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/healing-thicket",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Healing_Thicket"
+}

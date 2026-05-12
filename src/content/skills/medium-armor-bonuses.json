@@ -1,0 +1,15 @@
+{
+  "id": "medium-armor-bonuses",
+  "name": "Medium Armor Bonuses",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Armor",
+  "skill_line": "Medium Armor",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/medium-armor-bonuses.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/medium-armor/medium-armor-bonuses",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Medium_Armor_Bonuses"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "blood-mist",
+  "name": "Blood Mist",
+  "base_skill": "Mist Form",
+  "morph_of": "mist-form",
+  "morph_sibling": "elusive-mist",
+  "class": "World",
+  "skill_line": "Vampire",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/blood-mist.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/vampire/blood-mist",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_Mist"
+}

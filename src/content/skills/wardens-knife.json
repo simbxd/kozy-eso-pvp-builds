@@ -1,0 +1,15 @@
+{
+  "id": "wardens-knife",
+  "name": "Warden's Knife",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/wardens-knife.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/wardens-knife",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Warden's_Knife"
+}

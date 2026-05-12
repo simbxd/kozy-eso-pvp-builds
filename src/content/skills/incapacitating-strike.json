@@ -1,0 +1,15 @@
+{
+  "id": "incapacitating-strike",
+  "name": "Incapacitating Strike",
+  "base_skill": "Death Stroke",
+  "morph_of": "death-stroke",
+  "morph_sibling": "soul-harvest",
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/incapacitating-strike.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/incapacitating-strike",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Incapacitating_Strike"
+}

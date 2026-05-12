@@ -1,0 +1,15 @@
+{
+  "id": "deaden-pain",
+  "name": "Deaden Pain",
+  "base_skill": "Bitter Harvest",
+  "morph_of": "bitter-harvest",
+  "morph_sibling": "necrotic-potency",
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/deaden-pain.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/deaden-pain",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Deaden_Pain"
+}

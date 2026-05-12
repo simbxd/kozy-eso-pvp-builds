@@ -1,0 +1,15 @@
+{
+  "id": "blue-betty",
+  "name": "Blue Betty",
+  "base_skill": "Betty Netch",
+  "morph_of": "betty-netch",
+  "morph_sibling": "bull-netch",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/blue-betty.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/blue-betty",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blue_Betty"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rapid-regeneration",
+  "name": "Rapid Regeneration",
+  "base_skill": "Regeneration",
+  "morph_of": "regeneration",
+  "morph_sibling": "radiating-regeneration",
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/rapid-regeneration.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/rapid-regeneration",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rapid_Regeneration"
+}

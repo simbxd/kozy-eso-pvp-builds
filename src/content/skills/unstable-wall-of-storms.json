@@ -1,0 +1,15 @@
+{
+  "id": "unstable-wall-of-storms",
+  "name": "Unstable Wall of Storms",
+  "base_skill": "Wall of Elements",
+  "morph_of": "wall-of-elements",
+  "morph_sibling": "elemental-blockade",
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/unstable-wall-of-storms.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/unstable-wall-of-storms",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Unstable_Wall_of_Storms"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "tome-bearers-inspiration",
+  "name": "Tome-Bearer's Inspiration",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/tome-bearers-inspiration.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/tome-bearers-inspiration",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Tome-Bearer's_Inspiration"
+}

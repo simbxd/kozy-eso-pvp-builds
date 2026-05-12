@@ -1,0 +1,15 @@
+{
+  "id": "choking-talons",
+  "name": "Choking Talons",
+  "base_skill": "Dark Talons",
+  "morph_of": "dark-talons",
+  "morph_sibling": "burning-talons",
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/choking-talons.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/choking-talons",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Choking_Talons"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "mortal-coil",
+  "name": "Mortal Coil",
+  "base_skill": "Restoring Tether",
+  "morph_of": "restoring-tether",
+  "morph_sibling": "braided-tether",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/mortal-coil.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/mortal-coil",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mortal_Coil"
+}

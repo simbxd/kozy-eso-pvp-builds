@@ -1,0 +1,15 @@
+{
+  "id": "defensive-posture",
+  "name": "Defensive Posture",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/defensive-posture.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/defensive-posture",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Defensive_Posture"
+}

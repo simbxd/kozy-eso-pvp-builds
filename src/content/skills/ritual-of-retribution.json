@@ -1,0 +1,15 @@
+{
+  "id": "ritual-of-retribution",
+  "name": "Ritual of Retribution",
+  "base_skill": "Cleansing Ritual",
+  "morph_of": "cleansing-ritual",
+  "morph_sibling": "extended-ritual",
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/ritual-of-retribution.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/ritual-of-retribution",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ritual_of_Retribution"
+}

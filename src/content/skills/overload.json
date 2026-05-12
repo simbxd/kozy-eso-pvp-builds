@@ -1,0 +1,15 @@
+{
+  "id": "overload",
+  "name": "Overload",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/overload.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/overload",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Overload"
+}

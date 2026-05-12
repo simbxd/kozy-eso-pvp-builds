@@ -1,0 +1,15 @@
+{
+  "id": "mark-target",
+  "name": "Mark Target",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/mark-target.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/mark-target",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mark_Target"
+}

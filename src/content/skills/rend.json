@@ -1,0 +1,15 @@
+{
+  "id": "rend",
+  "name": "Rend",
+  "base_skill": "Lacerate",
+  "morph_of": "lacerate",
+  "morph_sibling": "thrive-in-chaos",
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/rend.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/rend",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rend"
+}

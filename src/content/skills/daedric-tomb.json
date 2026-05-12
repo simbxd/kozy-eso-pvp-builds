@@ -1,0 +1,15 @@
+{
+  "id": "daedric-tomb",
+  "name": "Daedric Tomb",
+  "base_skill": "Daedric Mines",
+  "morph_of": "daedric-mines",
+  "morph_sibling": "daedric-refuge",
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/daedric-tomb.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/daedric-tomb",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Daedric_Tomb"
+}

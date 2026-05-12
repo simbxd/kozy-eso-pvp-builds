@@ -1,0 +1,15 @@
+{
+  "id": "harness-magicka",
+  "name": "Harness Magicka",
+  "base_skill": "Annulment",
+  "morph_of": "annulment",
+  "morph_sibling": "dampen-magic",
+  "class": "Armor",
+  "skill_line": "Light Armor",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/harness-magicka.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/light-armor/harness-magicka",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Harness_Magicka"
+}

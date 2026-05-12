@@ -1,0 +1,15 @@
+{
+  "id": "soul-trap",
+  "name": "Soul Trap",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Soul Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/soul-trap.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/soul-trap",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Soul_Trap"
+}

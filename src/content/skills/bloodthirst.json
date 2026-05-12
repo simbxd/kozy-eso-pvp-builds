@@ -1,0 +1,15 @@
+{
+  "id": "bloodthirst",
+  "name": "Bloodthirst",
+  "base_skill": "Flurry",
+  "morph_of": "flurry",
+  "morph_sibling": "rapid-strikes",
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/bloodthirst.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/bloodthirst",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bloodthirst"
+}

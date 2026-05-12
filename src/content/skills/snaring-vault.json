@@ -1,0 +1,15 @@
+{
+  "id": "snaring-vault",
+  "name": "Snaring Vault",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/snaring-vault.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/snaring-vault",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Snaring_Vault"
+}

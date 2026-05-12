@@ -1,0 +1,15 @@
+{
+  "id": "spear-shards",
+  "name": "Spear Shards",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/spear-shards.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/spear-shards",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spear_Shards"
+}

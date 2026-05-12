@@ -1,0 +1,15 @@
+{
+  "id": "surprise-attack",
+  "name": "Surprise Attack",
+  "base_skill": "Veiled Strike",
+  "morph_of": "veiled-strike",
+  "morph_sibling": "concealed-weapon",
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/surprise-attack.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/surprise-attack",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Surprise_Attack"
+}

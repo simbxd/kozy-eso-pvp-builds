@@ -1,0 +1,15 @@
+{
+  "id": "aspect-of-terror",
+  "name": "Aspect of Terror",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/aspect-of-terror.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/aspect-of-terror",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Aspect_of_Terror"
+}

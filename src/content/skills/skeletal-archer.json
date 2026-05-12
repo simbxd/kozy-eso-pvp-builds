@@ -1,0 +1,15 @@
+{
+  "id": "skeletal-archer",
+  "name": "Skeletal Archer",
+  "base_skill": "Skeletal Mage",
+  "morph_of": "skeletal-mage",
+  "morph_sibling": "skeletal-arcanist",
+  "class": "Necromancer",
+  "skill_line": "Grave Lord",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/skeletal-archer.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/grave-lord/skeletal-archer",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Skeletal_Archer"
+}

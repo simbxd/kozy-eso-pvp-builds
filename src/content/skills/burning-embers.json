@@ -1,0 +1,15 @@
+{
+  "id": "burning-embers",
+  "name": "Burning Embers",
+  "base_skill": "Searing Strike",
+  "morph_of": "searing-strike",
+  "morph_sibling": "searing-claw",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/burning-embers.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/burning-embers",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Burning_Embers"
+}

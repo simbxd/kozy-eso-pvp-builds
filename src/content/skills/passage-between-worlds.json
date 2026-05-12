@@ -1,0 +1,15 @@
+{
+  "id": "passage-between-worlds",
+  "name": "Passage Between Worlds",
+  "base_skill": "Apocryphal Gate",
+  "morph_of": "apocryphal-gate",
+  "morph_sibling": "fleet-footed-gate",
+  "class": "Arcanist",
+  "skill_line": "Curative Runeforms",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/passage-between-worlds.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/curative-runeforms/passage-between-worlds",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Passage_Between_Worlds"
+}

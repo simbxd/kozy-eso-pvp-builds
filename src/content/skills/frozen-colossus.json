@@ -1,0 +1,15 @@
+{
+  "id": "frozen-colossus",
+  "name": "Frozen Colossus",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Grave Lord",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/frozen-colossus.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/grave-lord/frozen-colossus",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Frozen_Colossus"
+}

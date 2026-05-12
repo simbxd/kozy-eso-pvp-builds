@@ -1,0 +1,15 @@
+{
+  "id": "rapid-strikes",
+  "name": "Rapid Strikes",
+  "base_skill": "Flurry",
+  "morph_of": "flurry",
+  "morph_sibling": "bloodthirst",
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/rapid-strikes.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/rapid-strikes",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rapid_Strikes"
+}

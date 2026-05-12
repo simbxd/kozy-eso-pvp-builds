@@ -1,0 +1,15 @@
+{
+  "id": "volcanic-rune",
+  "name": "Volcanic Rune",
+  "base_skill": "Fire Rune",
+  "morph_of": "fire-rune",
+  "morph_sibling": "scalding-rune",
+  "class": "Guild",
+  "skill_line": "Mages Guild",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/volcanic-rune.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/mages-guild/volcanic-rune",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Volcanic_Rune"
+}

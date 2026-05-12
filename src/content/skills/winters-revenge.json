@@ -1,0 +1,15 @@
+{
+  "id": "winters-revenge",
+  "name": "Winter's Revenge",
+  "base_skill": "Impaling Shards",
+  "morph_of": "impaling-shards",
+  "morph_sibling": "gripping-shards",
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/winters-revenge.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/winters-revenge",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Winter's_Revenge"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "remedying-burst",
+  "name": "Remedying Burst",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Soul Magic",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/remedying-burst.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/remedying-burst",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Remedying_Burst"
+}

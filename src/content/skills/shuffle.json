@@ -1,0 +1,15 @@
+{
+  "id": "shuffle",
+  "name": "Shuffle",
+  "base_skill": "Evasion",
+  "morph_of": "evasion",
+  "morph_sibling": "elude",
+  "class": "Armor",
+  "skill_line": "Medium Armor",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/shuffle.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/medium-armor/shuffle",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shuffle"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "magma-armor",
+  "name": "Magma Armor",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/magma-armor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/magma-armor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Magma_Armor"
+}

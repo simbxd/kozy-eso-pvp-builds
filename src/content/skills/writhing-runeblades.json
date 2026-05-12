@@ -1,0 +1,15 @@
+{
+  "id": "writhing-runeblades",
+  "name": "Writhing Runeblades",
+  "base_skill": "Runeblades",
+  "morph_of": "runeblades",
+  "morph_sibling": "escalating-runeblades",
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/writhing-runeblades.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/writhing-runeblades",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Writhing_Runeblades"
+}

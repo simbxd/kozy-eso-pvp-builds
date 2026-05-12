@@ -1,0 +1,15 @@
+{
+  "id": "dark-cloak",
+  "name": "Dark Cloak",
+  "base_skill": "Shadow Cloak",
+  "morph_of": "shadow-cloak",
+  "morph_sibling": "shadowy-disguise",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/dark-cloak.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/dark-cloak",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dark_Cloak"
+}

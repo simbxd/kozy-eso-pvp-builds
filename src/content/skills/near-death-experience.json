@@ -1,0 +1,15 @@
+{
+  "id": "near-death-experience",
+  "name": "Near-Death Experience",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/near-death-experience.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/near-death-experience",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Near-Death_Experience"
+}

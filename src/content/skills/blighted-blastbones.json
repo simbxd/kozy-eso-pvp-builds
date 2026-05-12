@@ -1,0 +1,15 @@
+{
+  "id": "blighted-blastbones",
+  "name": "Blighted Blastbones",
+  "base_skill": "Sacrificial Bones",
+  "morph_of": "sacrificial-bones",
+  "morph_sibling": "grave-lords-sacrifice",
+  "class": "Necromancer",
+  "skill_line": "Grave Lord",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/blighted-blastbones.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/grave-lord/blighted-blastbones",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blighted_Blastbones"
+}

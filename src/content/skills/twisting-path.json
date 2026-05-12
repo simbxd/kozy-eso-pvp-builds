@@ -1,0 +1,15 @@
+{
+  "id": "twisting-path",
+  "name": "Twisting Path",
+  "base_skill": "Path of Darkness",
+  "morph_of": "path-of-darkness",
+  "morph_sibling": "refreshing-path",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/twisting-path.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/twisting-path",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Twisting_Path"
+}

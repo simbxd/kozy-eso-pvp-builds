@@ -1,0 +1,15 @@
+{
+  "id": "luminous-shards",
+  "name": "Luminous Shards",
+  "base_skill": "Spear Shards",
+  "morph_of": "spear-shards",
+  "morph_sibling": "blazing-spear",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/luminous-shards.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/luminous-shards",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Luminous_Shards"
+}

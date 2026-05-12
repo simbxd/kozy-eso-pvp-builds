@@ -1,0 +1,15 @@
+{
+  "id": "bone-surge",
+  "name": "Bone Surge",
+  "base_skill": "Bone Shield",
+  "morph_of": "bone-shield",
+  "morph_sibling": "spiked-bone-shield",
+  "class": "Guild",
+  "skill_line": "Undaunted",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/bone-surge.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/undaunted/bone-surge",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bone_Surge"
+}

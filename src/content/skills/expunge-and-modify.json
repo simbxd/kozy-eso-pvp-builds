@@ -1,0 +1,15 @@
+{
+  "id": "expunge-and-modify",
+  "name": "Expunge and Modify",
+  "base_skill": "Expunge",
+  "morph_of": "expunge",
+  "morph_sibling": "hexproof",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/expunge-and-modify.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/expunge-and-modify",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Expunge_and_Modify"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "amphibian",
+  "name": "Amphibian",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Argonian Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/amphibian.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/argonian-skills/amphibian",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Amphibian"
+}

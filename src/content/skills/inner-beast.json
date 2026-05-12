@@ -1,0 +1,15 @@
+{
+  "id": "inner-beast",
+  "name": "Inner Beast",
+  "base_skill": "Inner Fire",
+  "morph_of": "inner-fire",
+  "morph_sibling": "inner-rage",
+  "class": "Guild",
+  "skill_line": "Undaunted",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/inner-beast.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/undaunted/inner-beast",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Inner_Beast"
+}

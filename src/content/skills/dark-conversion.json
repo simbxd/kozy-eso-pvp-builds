@@ -1,0 +1,15 @@
+{
+  "id": "dark-conversion",
+  "name": "Dark Conversion",
+  "base_skill": "Dark Exchange",
+  "morph_of": "dark-exchange",
+  "morph_sibling": "dark-deal",
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/dark-conversion.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/dark-conversion",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dark_Conversion"
+}

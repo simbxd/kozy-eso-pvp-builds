@@ -1,0 +1,15 @@
+{
+  "id": "spectral-assassin",
+  "name": "Spectral Assassin",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Dark Brotherhood",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/spectral-assassin.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/dark-brotherhood/spectral-assassin",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spectral_Assassin"
+}

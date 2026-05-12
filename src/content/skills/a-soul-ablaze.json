@@ -1,0 +1,15 @@
+{
+  "id": "a-soul-ablaze",
+  "name": "A Soul Ablaze",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/a-soul-ablaze.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/a-soul-ablaze",
+  "uesp_url": "https://en.uesp.net/wiki/Online:A_Soul_Ablaze"
+}

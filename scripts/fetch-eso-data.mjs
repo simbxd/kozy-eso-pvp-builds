@@ -31,7 +31,7 @@
  * Requires: Node.js 18+
  */
 
-import { writeFile, mkdir, rm } from 'node:fs/promises';
+import { writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 
@@ -242,75 +242,144 @@ function normaliseSet(row) {
 }
 
 // ---------- Skill normalisation ----------
-// Numeric skillType values from UESP playerSkills (verified U49)
-const SKILL_CATEGORY_MAP = {
-  '1': 'classes',
-  '2': 'weapons',
-  '3': 'armor',
-  '4': 'world',
-  '5': 'guild',
-  '6': 'pvp',
-  '7': 'racial',
-  '8': 'craft',
+
+// Valid class names from UESP classType field (already human-readable strings)
+const VALID_CLASSES = new Set([
+  'Dragonknight', 'Sorcerer', 'Nightblade', 'Templar',
+  'Warden', 'Necromancer', 'Arcanist',
+]);
+
+// skillType → class name (for non-class skills, skillType != "1")
+const SKILL_TYPE_TO_CLASS = {
+  '2': 'Weapon', '3': 'Armor',        '4': 'World',
+  '5': 'Guild',  '6': 'Alliance War', '7': 'Racial', '8': 'Craft',
+};
+
+// mechanic value → resource name
+const MECHANIC_TO_RESOURCE = {
+  '0': 'None', '1': 'Magicka', '2': 'Health', '4': 'Stamina', '6': 'Ultimate',
 };
 
 // Craft skills excluded — not relevant for PvP builds
-const EXCLUDED_CATEGORIES = new Set(['craft']);
+const EXCLUDED_CLASS = new Set(['Craft']);
 
-function categoriseSkill(row) {
-  const raw = String(row.skillType ?? '').trim();
-  return SKILL_CATEGORY_MAP[raw] || 'other';
-}
-
-function normaliseSkillRow(row) {
+function parseSkillRow(row) {
   const name = row.name ?? row.skillName ?? row.abilityName;
   if (!name) return null;
   if (String(name).startsWith('_')) return null;
 
-  const rawDesc = row.description ?? row.desc ?? null;
-  const description = rawDesc
-    ? String(rawDesc).replace(/\|c[0-9a-fA-F]{6}|\|r/g, '').trim()
-    : null;
-
   return {
-    id: row.abilityId ?? row.id ?? null,
-    name: String(name).trim(),
-    description,
-    category: categoriseSkill(row),
-    skillLine: row.skillLine ?? row.line ?? null,
-    isPassive: !!(row.isPassive ?? row.passive),
-    isUltimate: !!(row.isUltimate ?? row.ultimate),
-    morph: row.morph ?? null,
-    rank: parseInt(row.rank ?? 0, 10) || null,
+    numericId: String(row.abilityId ?? row.id ?? ''),
+    name:      String(name).trim(),
+    skillType: String(row.skillType  ?? '').trim(),
+    classType: String(row.classType  ?? '').trim(),
+    skillLine: String(row.skillLine  ?? row.line ?? '').trim(),
+    isPassive: String(row.isPassive  ?? '0').trim(),
+    morph:     String(row.morph      ?? '0').trim(),
+    prevSkill: String(row.prevSkill  ?? '0').trim(),
+    nextSkill: String(row.nextSkill  ?? '0').trim(),
+    mechanic:  String(row.mechanic   ?? '0').trim(),
+    rank:      parseInt(row.rank ?? 0, 10) || 0,
   };
 }
 
-function deduplicateSkills(rows) {
-  const grouped = new Map();
-  for (const r of rows) {
-    if (!r) continue;
-    const key = `${r.skillLine ?? 'unknown'}::${r.name}`;
-    if (!grouped.has(key)) grouped.set(key, []);
-    grouped.get(key).push(r);
+// Map every numeric ability ID → {name, slug}.
+function buildIdMap(parsed) {
+  const map = new Map();
+  for (const r of parsed) {
+    if (r.numericId && r.numericId !== '0' && r.numericId !== '-1' && !map.has(r.numericId)) {
+      map.set(r.numericId, { name: r.name, slug: slugify(r.name) });
+    }
+  }
+  return map;
+}
+
+// Dedup by skillLine::name. Keep highest-rank row for display fields,
+// but keep lowest-rank row's morph/prevSkill — rank 1 of a morph always
+// points directly to the base skill (rank 1 too), enabling sibling resolution.
+function deduplicateByName(parsed) {
+  const byKey = new Map();
+  for (const r of parsed) {
+    const key = `${r.skillLine}::${r.name}`;
+    const cur = byKey.get(key);
+    if (!cur) {
+      byKey.set(key, { rep: r, minRankRow: r });
+    } else {
+      if (r.rank > cur.rep.rank) cur.rep = r;
+      if (r.rank < cur.minRankRow.rank) cur.minRankRow = r;
+    }
+  }
+  return [...byKey.values()].map(({ rep, minRankRow }) => ({
+    ...rep,
+    // Use rank-1 data for morph relationship fields
+    morph:     minRankRow.morph,
+    prevSkill: minRankRow.prevSkill,
+    nextSkill: minRankRow.nextSkill,
+  }));
+}
+
+// Build prevSkillId → [{slug, name}] for sibling lookup.
+// Both morphs of a base skill share the same rank-1 prevSkill ID.
+function buildSiblingMap(deduped) {
+  const map = new Map();
+  for (const r of deduped) {
+    if (r.morph === '0' || !r.prevSkill || r.prevSkill === '0' || r.prevSkill === '-1') continue;
+    if (!map.has(r.prevSkill)) map.set(r.prevSkill, []);
+    map.get(r.prevSkill).push({ slug: slugify(r.name), name: r.name });
+  }
+  return map;
+}
+
+function deriveClass(skillType, classType) {
+  if (skillType === '1' && VALID_CLASSES.has(classType)) return classType;
+  return SKILL_TYPE_TO_CLASS[skillType] ?? 'World';
+}
+
+function deriveType(isPassive, mechanic) {
+  if (isPassive === '1') return 'Passive';
+  if (mechanic.split(',').some(m => m.trim() === '6')) return 'Ultimate';
+  return 'Active';
+}
+
+function deriveResource(mechanic) {
+  const first = mechanic.split(',')[0].trim();
+  return MECHANIC_TO_RESOURCE[first] ?? 'None';
+}
+
+function normaliseToCurated(r, idMap, siblingMap) {
+  const slug       = slugify(r.name);
+  const skillClass = deriveClass(r.skillType, r.classType);
+  const classSlug  = slugify(skillClass);
+  const lineSlug   = slugify(r.skillLine);
+
+  let baseSkillName = null;
+  let morphOf       = null;
+  let morphSibling  = null;
+
+  if (r.morph !== '0' && r.prevSkill && r.prevSkill !== '0' && r.prevSkill !== '-1') {
+    const base = idMap.get(r.prevSkill);
+    if (base) { baseSkillName = base.name; morphOf = base.slug; }
+
+    const siblings = siblingMap.get(r.prevSkill) ?? [];
+    const other    = siblings.find(s => s.slug !== slug);
+    if (other) morphSibling = other.slug;
   }
 
-  const out = [];
-  for (const [, group] of grouped) {
-    group.sort((a, b) => (b.rank ?? 0) - (a.rank ?? 0));
-    const rep = group[0];
-    out.push({
-      id: rep.id,
-      slug: slugify(rep.name),
-      name: rep.name,
-      description: rep.description,
-      category: rep.category,
-      skill_line: rep.skillLine,
-      is_passive: rep.isPassive,
-      is_ultimate: rep.isUltimate,
-      max_rank: rep.rank,
-    });
-  }
-  return out;
+  return {
+    id:             slug,
+    name:           r.name,
+    base_skill:     baseSkillName,
+    morph_of:       morphOf,
+    morph_sibling:  morphSibling,
+    class:          skillClass,
+    skill_line:     r.skillLine,
+    type:           deriveType(r.isPassive, r.mechanic),
+    resource:       deriveResource(r.mechanic),
+    icon:           `/assets/skills/${slug}.png`,
+    patch_verified: 'U49',
+    esohub_url:     `https://eso-hub.com/en/skills/${classSlug}/${lineSlug}/${slug}`,
+    uesp_url:       `https://en.uesp.net/wiki/Online:${r.name.replace(/ /g, '_')}`,
+  };
 }
 
 // ---------- Main ----------
@@ -366,7 +435,7 @@ async function buildSets() {
 }
 
 async function buildSkills() {
-  const primaryTable = tableName('playerSkills');
+  const primaryTable  = tableName('playerSkills');
   const fallbackTable = tableName('minedSkills');
   let raw;
   try {
@@ -382,10 +451,10 @@ async function buildSkills() {
   const rows = Array.isArray(records) ? records : Object.values(records);
   log(`Got ${rows.length} raw skill rows`);
 
-  const normalised = rows.map(normaliseSkillRow).filter(Boolean);
+  const parsed = rows.map(parseSkillRow).filter(Boolean);
 
   if (!SKIP_VALIDATION && ESO_VERSION === 'live') {
-    const names = new Set(normalised.map(s => s.name));
+    const names = new Set(parsed.map(s => s.name));
     const stillPresent = U49_OBSOLETE_SKILLS.filter(n => names.has(n));
     if (stillPresent.length > 0) {
       warn(`Found U48-era skill names: [${stillPresent.join(', ')}]. Data may be pre-U49.`);
@@ -394,32 +463,36 @@ async function buildSkills() {
     }
   }
 
-  const dedup = deduplicateSkills(normalised);
-  const filtered = dedup.filter(s => !EXCLUDED_CATEGORIES.has(s.category));
-  log(`Deduplicated to ${dedup.length} skills, ${filtered.length} after excluding craft`);
+  // Build morph ID lookup before dedup (covers all rank variants)
+  const idMap      = buildIdMap(parsed);
+  const deduped    = deduplicateByName(parsed);
+  const siblingMap = buildSiblingMap(deduped);
 
-  const final = filtered.sort((a, b) => a.name.localeCompare(b.name));
+  const curated  = deduped
+    .map(r => normaliseToCurated(r, idMap, siblingMap))
+    .filter(s => !EXCLUDED_CLASS.has(s.class));
+
+  log(`Deduplicated to ${deduped.length} skills, ${curated.length} after excluding Craft`);
+
+  const final   = curated.sort((a, b) => a.name.localeCompare(b.name));
   const toWrite = SAMPLE ? final.slice(0, SAMPLE) : final;
 
-  const skillsDir = join(SKILLS_DIR, 'skills');
-  if (!DRY_RUN && existsSync(skillsDir)) {
-    await rm(skillsDir, { recursive: true, force: true });
-  }
-
+  // Write to src/content/skills/ — skip curated files that already exist
+  const skillsDir = join(SETS_DIR, 'skills');
+  await mkdir(skillsDir, { recursive: true });
+  let written = 0, skipped = 0;
   for (const skill of toWrite) {
-    const path = join(skillsDir, skill.category, `${skill.slug}.json`);
-    await writeJson(path, skill);
+    const dest = join(skillsDir, `${skill.id}.json`);
+    if (existsSync(dest)) { skipped++; continue; }
+    await writeJson(dest, skill);
+    written++;
   }
+  log(`✓ Skills: ${written} written, ${skipped} skipped (curated)`);
 
-  const index = final.map(s => ({
-    id: s.id,
-    name: s.name,
-    category: s.category,
-    skill_line: s.skill_line,
-  }));
+  const index = final.map(s => ({ id: s.id, name: s.name, class: s.class, skill_line: s.skill_line }));
   await writeJson(join(SKILLS_DIR, 'skills-index.json'), index);
+  log(`✓ skills-index.json written`);
 
-  log(`✓ Wrote ${toWrite.length} skill files + skills-index.json`);
   return final;
 }
 

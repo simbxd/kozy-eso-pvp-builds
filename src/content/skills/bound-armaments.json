@@ -1,0 +1,15 @@
+{
+  "id": "bound-armaments",
+  "name": "Bound Armaments",
+  "base_skill": "Bound Armor",
+  "morph_of": "bound-armor",
+  "morph_sibling": "bound-aegis",
+  "class": "Sorcerer",
+  "skill_line": "Daedric Summoning",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/bound-armaments.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/daedric-summoning/bound-armaments",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bound_Armaments"
+}

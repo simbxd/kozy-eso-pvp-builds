@@ -1,0 +1,15 @@
+{
+  "id": "ghostly-embrace",
+  "name": "Ghostly Embrace",
+  "base_skill": "Grave Grasp",
+  "morph_of": "grave-grasp",
+  "morph_sibling": "empowering-grasp",
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/ghostly-embrace.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/ghostly-embrace",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ghostly_Embrace"
+}

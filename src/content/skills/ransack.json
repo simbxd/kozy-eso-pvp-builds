@@ -1,0 +1,15 @@
+{
+  "id": "ransack",
+  "name": "Ransack",
+  "base_skill": "Puncture",
+  "morph_of": "puncture",
+  "morph_sibling": "pierce-armor",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/ransack.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/ransack",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ransack"
+}

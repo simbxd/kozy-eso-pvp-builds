@@ -1,0 +1,15 @@
+{
+  "id": "everlasting-sweep",
+  "name": "Everlasting Sweep",
+  "base_skill": "Radial Sweep",
+  "morph_of": "radial-sweep",
+  "morph_sibling": "crescent-sweep",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/everlasting-sweep.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/everlasting-sweep",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Everlasting_Sweep"
+}

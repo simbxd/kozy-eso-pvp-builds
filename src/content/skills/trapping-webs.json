@@ -1,0 +1,15 @@
+{
+  "id": "trapping-webs",
+  "name": "Trapping Webs",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Undaunted",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/trapping-webs.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/undaunted/trapping-webs",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Trapping_Webs"
+}

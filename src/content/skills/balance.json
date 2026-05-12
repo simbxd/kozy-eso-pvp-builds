@@ -1,0 +1,15 @@
+{
+  "id": "balance",
+  "name": "Balance",
+  "base_skill": "Equilibrium",
+  "morph_of": "equilibrium",
+  "morph_sibling": "spell-symmetry",
+  "class": "Guild",
+  "skill_line": "Mages Guild",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/balance.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/mages-guild/balance",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Balance"
+}

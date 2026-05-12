@@ -1,0 +1,15 @@
+{
+  "id": "elude",
+  "name": "Elude",
+  "base_skill": "Evasion",
+  "morph_of": "evasion",
+  "morph_sibling": "shuffle",
+  "class": "Armor",
+  "skill_line": "Medium Armor",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/elude.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/medium-armor/elude",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Elude"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "living-trellis",
+  "name": "Living Trellis",
+  "base_skill": "Living Vines",
+  "morph_of": "living-vines",
+  "morph_sibling": "leeching-vines",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/living-trellis.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/living-trellis",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Living_Trellis"
+}

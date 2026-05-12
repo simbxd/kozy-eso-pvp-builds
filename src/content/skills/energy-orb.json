@@ -1,0 +1,15 @@
+{
+  "id": "energy-orb",
+  "name": "Energy Orb",
+  "base_skill": "Necrotic Orb",
+  "morph_of": "necrotic-orb",
+  "morph_sibling": "mystic-orb",
+  "class": "Guild",
+  "skill_line": "Undaunted",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/energy-orb.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/undaunted/energy-orb",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Energy_Orb"
+}

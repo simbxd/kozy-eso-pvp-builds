@@ -1,0 +1,15 @@
+{
+  "id": "impervious-runeward",
+  "name": "Impervious Runeward",
+  "base_skill": "Runespite Ward",
+  "morph_of": "runespite-ward",
+  "morph_sibling": "spiteward-of-the-lucid-mind",
+  "class": "Arcanist",
+  "skill_line": "Soldier of Apocrypha",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/impervious-runeward.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/soldier-of-apocrypha/impervious-runeward",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Impervious_Runeward"
+}

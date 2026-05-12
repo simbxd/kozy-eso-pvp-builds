@@ -1,0 +1,15 @@
+{
+  "id": "howl-of-despair",
+  "name": "Howl of Despair",
+  "base_skill": "Piercing Howl",
+  "morph_of": "piercing-howl",
+  "morph_sibling": "howl-of-agony",
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/howl-of-despair.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/howl-of-despair",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Howl_of_Despair"
+}

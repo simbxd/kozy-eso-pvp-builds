@@ -1,0 +1,15 @@
+{
+  "id": "chains-of-flame",
+  "name": "Chains of Flame",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/chains-of-flame.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/chains-of-flame",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Chains_of_Flame"
+}

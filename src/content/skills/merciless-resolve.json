@@ -1,0 +1,15 @@
+{
+  "id": "merciless-resolve",
+  "name": "Merciless Resolve",
+  "base_skill": "Grim Focus",
+  "morph_of": "grim-focus",
+  "morph_sibling": "relentless-focus",
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/merciless-resolve.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/merciless-resolve",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Merciless_Resolve"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "exhilarating-drain",
+  "name": "Exhilarating Drain",
+  "base_skill": "Vampiric Drain",
+  "morph_of": "vampiric-drain",
+  "morph_sibling": "drain-vigor",
+  "class": "World",
+  "skill_line": "Vampire",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/exhilarating-drain.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/vampire/exhilarating-drain",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Exhilarating_Drain"
+}

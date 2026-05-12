@@ -1,0 +1,15 @@
+{
+  "id": "silver-leash",
+  "name": "Silver Leash",
+  "base_skill": "Silver Bolts",
+  "morph_of": "silver-bolts",
+  "morph_sibling": "silver-shards",
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/silver-leash.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/silver-leash",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Silver_Leash"
+}

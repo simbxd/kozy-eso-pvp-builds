@@ -1,0 +1,15 @@
+{
+  "id": "malacaths-vengeance",
+  "name": "Malacath's Vengeance",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Volendrung",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/malacaths-vengeance.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/volendrung/malacaths-vengeance",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Malacath's_Vengeance"
+}

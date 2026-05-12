@@ -1,0 +1,15 @@
+{
+  "id": "spell-wall",
+  "name": "Spell Wall",
+  "base_skill": "Shield Wall",
+  "morph_of": "shield-wall",
+  "morph_sibling": "shield-discipline",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/spell-wall.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/spell-wall",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spell_Wall"
+}

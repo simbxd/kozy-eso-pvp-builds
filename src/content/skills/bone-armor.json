@@ -1,0 +1,15 @@
+{
+  "id": "bone-armor",
+  "name": "Bone Armor",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/bone-armor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/bone-armor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bone_Armor"
+}

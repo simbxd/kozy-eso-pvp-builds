@@ -1,0 +1,15 @@
+{
+  "id": "blazing-shield",
+  "name": "Blazing Shield",
+  "base_skill": "Sun Shield",
+  "morph_of": "sun-shield",
+  "morph_sibling": "radiant-ward",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/blazing-shield.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/blazing-shield",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blazing_Shield"
+}

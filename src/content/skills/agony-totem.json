@@ -1,0 +1,15 @@
+{
+  "id": "agony-totem",
+  "name": "Agony Totem",
+  "base_skill": "Bone Totem",
+  "morph_of": "bone-totem",
+  "morph_sibling": "remote-totem",
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/agony-totem.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/agony-totem",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Agony_Totem"
+}

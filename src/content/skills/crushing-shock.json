@@ -1,0 +1,15 @@
+{
+  "id": "crushing-shock",
+  "name": "Crushing Shock",
+  "base_skill": "Force Shock",
+  "morph_of": "force-shock",
+  "morph_sibling": "force-pulse",
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/crushing-shock.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/crushing-shock",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Crushing_Shock"
+}

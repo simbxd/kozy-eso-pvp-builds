@@ -1,0 +1,15 @@
+{
+  "id": "light-fingers",
+  "name": "Light Fingers",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Legerdemain",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/light-fingers.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/legerdemain/light-fingers",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Light_Fingers"
+}

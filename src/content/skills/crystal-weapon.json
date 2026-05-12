@@ -1,0 +1,15 @@
+{
+  "id": "crystal-weapon",
+  "name": "Crystal Weapon",
+  "base_skill": "Crystal Shard",
+  "morph_of": "crystal-shard",
+  "morph_sibling": "crystal-fragments",
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/crystal-weapon.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/crystal-weapon",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Crystal_Weapon"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "standard-of-might",
+  "name": "Standard of Might",
+  "base_skill": "Dragonknight Standard",
+  "morph_of": "dragonknight-standard",
+  "morph_sibling": "shifting-standard",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/standard-of-might.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/standard-of-might",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Standard_of_Might"
+}

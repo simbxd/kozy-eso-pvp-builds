@@ -1,0 +1,15 @@
+{
+  "id": "whirling-blades",
+  "name": "Whirling Blades",
+  "base_skill": "Whirlwind",
+  "morph_of": "whirlwind",
+  "morph_sibling": "steel-tornado",
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/whirling-blades.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/whirling-blades",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Whirling_Blades"
+}

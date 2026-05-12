@@ -1,0 +1,15 @@
+{
+  "id": "ring-of-preservation",
+  "name": "Ring of Preservation",
+  "base_skill": "Circle of Protection",
+  "morph_of": "circle-of-protection",
+  "morph_sibling": "turn-evil",
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/ring-of-preservation.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/ring-of-preservation",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ring_of_Preservation"
+}

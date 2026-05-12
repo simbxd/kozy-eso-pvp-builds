@@ -1,0 +1,15 @@
+{
+  "id": "pursuit",
+  "name": "Pursuit",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/pursuit.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/pursuit",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pursuit"
+}

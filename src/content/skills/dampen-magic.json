@@ -1,0 +1,15 @@
+{
+  "id": "dampen-magic",
+  "name": "Dampen Magic",
+  "base_skill": "Annulment",
+  "morph_of": "annulment",
+  "morph_sibling": "harness-magicka",
+  "class": "Armor",
+  "skill_line": "Light Armor",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/dampen-magic.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/light-armor/dampen-magic",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dampen_Magic"
+}

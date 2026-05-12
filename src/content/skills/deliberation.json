@@ -1,0 +1,15 @@
+{
+  "id": "deliberation",
+  "name": "Deliberation",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/deliberation.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/deliberation",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Deliberation"
+}

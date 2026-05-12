@@ -1,0 +1,15 @@
+{
+  "id": "accelerated-growth",
+  "name": "Accelerated Growth",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/accelerated-growth.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/accelerated-growth",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Accelerated_Growth"
+}

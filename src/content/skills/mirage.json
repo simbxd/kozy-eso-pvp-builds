@@ -1,0 +1,15 @@
+{
+  "id": "mirage",
+  "name": "Mirage",
+  "base_skill": "Blur",
+  "morph_of": "blur",
+  "morph_sibling": "phantasmal-escape",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/mirage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/mirage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mirage"
+}

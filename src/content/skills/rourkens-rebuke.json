@@ -1,0 +1,15 @@
+{
+  "id": "rourkens-rebuke",
+  "name": "Rourken's Rebuke",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Volendrung",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/rourkens-rebuke.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/volendrung/rourkens-rebuke",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rourken's_Rebuke"
+}

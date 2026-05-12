@@ -1,0 +1,15 @@
+{
+  "id": "evil-hunter",
+  "name": "Evil Hunter",
+  "base_skill": "Expert Hunter",
+  "morph_of": "expert-hunter",
+  "morph_sibling": "camouflaged-hunter",
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/evil-hunter.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/evil-hunter",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Evil_Hunter"
+}

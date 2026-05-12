@@ -1,0 +1,15 @@
+{
+  "id": "power-extraction",
+  "name": "Power Extraction",
+  "base_skill": "Drain Power",
+  "morph_of": "drain-power",
+  "morph_sibling": "sap-essence",
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/power-extraction.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/power-extraction",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Power_Extraction"
+}

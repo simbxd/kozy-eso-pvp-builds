@@ -1,0 +1,15 @@
+{
+  "id": "shattering-spines",
+  "name": "Shattering Spines",
+  "base_skill": "Encase",
+  "morph_of": "encase",
+  "morph_sibling": "vibrant-shroud",
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/shattering-spines.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/shattering-spines",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shattering_Spines"
+}

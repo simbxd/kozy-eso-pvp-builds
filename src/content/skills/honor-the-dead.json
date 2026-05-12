@@ -1,0 +1,15 @@
+{
+  "id": "honor-the-dead",
+  "name": "Honor the Dead",
+  "base_skill": "Rushed Ceremony",
+  "morph_of": "rushed-ceremony",
+  "morph_sibling": "breath-of-life",
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/honor-the-dead.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/honor-the-dead",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Honor_the_Dead"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "deceptive-predator",
+  "name": "Deceptive Predator",
+  "base_skill": "Falcon's Swiftness",
+  "morph_of": "falcons-swiftness",
+  "morph_sibling": "bird-of-prey",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/deceptive-predator.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/deceptive-predator",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Deceptive_Predator"
+}

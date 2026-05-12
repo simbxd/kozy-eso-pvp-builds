@@ -1,0 +1,15 @@
+{
+  "id": "crippling-grasp",
+  "name": "Crippling Grasp",
+  "base_skill": "Cripple",
+  "morph_of": "cripple",
+  "morph_sibling": "debilitate",
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/crippling-grasp.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/crippling-grasp",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Crippling_Grasp"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "spell-attunement",
+  "name": "Spell Attunement",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Breton Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/spell-attunement.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/breton-skills/spell-attunement",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spell_Attunement"
+}

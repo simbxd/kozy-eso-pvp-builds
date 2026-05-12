@@ -1,0 +1,15 @@
+{
+  "id": "soul-splitting-trap",
+  "name": "Soul Splitting Trap",
+  "base_skill": "Soul Trap",
+  "morph_of": "soul-trap",
+  "morph_sibling": "consuming-trap",
+  "class": "World",
+  "skill_line": "Soul Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/soul-splitting-trap.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/soul-splitting-trap",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Soul_Splitting_Trap"
+}

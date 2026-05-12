@@ -1,0 +1,15 @@
+{
+  "id": "battle-resurrection-mastery",
+  "name": "Battle Resurrection Mastery",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/battle-resurrection-mastery.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/battle-resurrection-mastery",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Battle_Resurrection_Mastery"
+}

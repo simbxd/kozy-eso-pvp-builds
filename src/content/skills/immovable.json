@@ -1,0 +1,15 @@
+{
+  "id": "immovable",
+  "name": "Immovable",
+  "base_skill": "Unstoppable",
+  "morph_of": "unstoppable",
+  "morph_sibling": "unstoppable-brute",
+  "class": "Armor",
+  "skill_line": "Heavy Armor",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/immovable.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/heavy-armor/immovable",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Immovable"
+}

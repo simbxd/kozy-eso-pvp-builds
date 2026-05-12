@@ -1,0 +1,15 @@
+{
+  "id": "sleet-storm",
+  "name": "Sleet Storm",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/sleet-storm.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/sleet-storm",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sleet_Storm"
+}

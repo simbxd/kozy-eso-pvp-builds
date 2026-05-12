@@ -1,0 +1,15 @@
+{
+  "id": "martial-training",
+  "name": "Martial Training",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Redguard Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/martial-training.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/redguard-skills/martial-training",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Martial_Training"
+}

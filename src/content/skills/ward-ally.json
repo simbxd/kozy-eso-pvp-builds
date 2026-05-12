@@ -1,0 +1,15 @@
+{
+  "id": "ward-ally",
+  "name": "Ward Ally",
+  "base_skill": "Steadfast Ward",
+  "morph_of": "steadfast-ward",
+  "morph_sibling": "healing-ward",
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/ward-ally.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/ward-ally",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ward_Ally"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "abyssal-impact",
+  "name": "Abyssal Impact",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/abyssal-impact.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/abyssal-impact",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Abyssal_Impact"
+}

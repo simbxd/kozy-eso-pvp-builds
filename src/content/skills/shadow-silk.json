@@ -1,0 +1,15 @@
+{
+  "id": "shadow-silk",
+  "name": "Shadow Silk",
+  "base_skill": "Trapping Webs",
+  "morph_of": "trapping-webs",
+  "morph_sibling": "tangling-webs",
+  "class": "Guild",
+  "skill_line": "Undaunted",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/shadow-silk.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/undaunted/shadow-silk",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shadow_Silk"
+}

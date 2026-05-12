@@ -1,0 +1,15 @@
+{
+  "id": "deep-thoughts",
+  "name": "Deep Thoughts",
+  "base_skill": "Meditate",
+  "morph_of": "meditate",
+  "morph_sibling": "introspection",
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/deep-thoughts.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/deep-thoughts",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Deep_Thoughts"
+}

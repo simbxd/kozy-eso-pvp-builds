@@ -1,0 +1,15 @@
+{
+  "id": "ferocious-leap",
+  "name": "Ferocious Leap",
+  "base_skill": "Dragon Leap",
+  "morph_of": "dragon-leap",
+  "morph_sibling": "take-flight",
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/ferocious-leap.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/ferocious-leap",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ferocious_Leap"
+}

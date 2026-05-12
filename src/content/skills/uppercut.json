@@ -1,0 +1,15 @@
+{
+  "id": "uppercut",
+  "name": "Uppercut",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/uppercut.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/uppercut",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Uppercut"
+}

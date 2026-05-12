@@ -1,0 +1,15 @@
+{
+  "id": "flame-reach",
+  "name": "Flame Reach",
+  "base_skill": "Destructive Touch",
+  "morph_of": "destructive-touch",
+  "morph_sibling": "destructive-reach",
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/flame-reach.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/flame-reach",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Flame_Reach"
+}

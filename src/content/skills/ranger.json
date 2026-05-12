@@ -1,0 +1,15 @@
+{
+  "id": "ranger",
+  "name": "Ranger",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/ranger.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/ranger",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ranger"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "runic-embrace",
+  "name": "Runic Embrace",
+  "base_skill": "Runic Jolt",
+  "morph_of": "runic-jolt",
+  "morph_sibling": "runic-sunder",
+  "class": "Arcanist",
+  "skill_line": "Soldier of Apocrypha",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/runic-embrace.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/soldier-of-apocrypha/runic-embrace",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Runic_Embrace"
+}

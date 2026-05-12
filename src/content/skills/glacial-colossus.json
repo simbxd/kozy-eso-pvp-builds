@@ -1,0 +1,15 @@
+{
+  "id": "glacial-colossus",
+  "name": "Glacial Colossus",
+  "base_skill": "Frozen Colossus",
+  "morph_of": "frozen-colossus",
+  "morph_sibling": "pestilent-colossus",
+  "class": "Necromancer",
+  "skill_line": "Grave Lord",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/glacial-colossus.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/grave-lord/glacial-colossus",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glacial_Colossus"
+}

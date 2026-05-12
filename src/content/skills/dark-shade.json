@@ -1,0 +1,15 @@
+{
+  "id": "dark-shade",
+  "name": "Dark Shade",
+  "base_skill": "Summon Shade",
+  "morph_of": "summon-shade",
+  "morph_sibling": "shadow-image",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/dark-shade.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/dark-shade",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dark_Shade"
+}

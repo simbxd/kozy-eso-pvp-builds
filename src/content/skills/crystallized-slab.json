@@ -1,0 +1,15 @@
+{
+  "id": "crystallized-slab",
+  "name": "Crystallized Slab",
+  "base_skill": "Crystallized Shield",
+  "morph_of": "crystallized-shield",
+  "morph_sibling": "shimmering-shield",
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/crystallized-slab.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/crystallized-slab",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Crystallized_Slab"
+}

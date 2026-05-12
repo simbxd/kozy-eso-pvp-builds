@@ -1,0 +1,15 @@
+{
+  "id": "shooting-star",
+  "name": "Shooting Star",
+  "base_skill": "Meteor",
+  "morph_of": "meteor",
+  "morph_sibling": "ice-comet",
+  "class": "Guild",
+  "skill_line": "Mages Guild",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/shooting-star.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/mages-guild/shooting-star",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shooting_Star"
+}

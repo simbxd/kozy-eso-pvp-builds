@@ -1,0 +1,15 @@
+{
+  "id": "molten-armaments",
+  "name": "Molten Armaments",
+  "base_skill": "Molten Weapons",
+  "morph_of": "molten-weapons",
+  "morph_sibling": "igneous-weapons",
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/molten-armaments.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/molten-armaments",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Molten_Armaments"
+}

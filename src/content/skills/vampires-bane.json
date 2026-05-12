@@ -1,0 +1,15 @@
+{
+  "id": "vampires-bane",
+  "name": "Vampire's Bane",
+  "base_skill": "Sun Fire",
+  "morph_of": "sun-fire",
+  "morph_sibling": "reflective-light",
+  "class": "Templar",
+  "skill_line": "Dawn's Wrath",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/vampires-bane.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/dawns-wrath/vampires-bane",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vampire's_Bane"
+}

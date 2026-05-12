@@ -1,0 +1,15 @@
+{
+  "id": "pounce",
+  "name": "Pounce",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/pounce.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/pounce",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pounce"
+}

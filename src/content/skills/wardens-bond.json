@@ -1,0 +1,15 @@
+{
+  "id": "wardens-bond",
+  "name": "Warden's Bond",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/wardens-bond.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/wardens-bond",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Warden's_Bond"
+}

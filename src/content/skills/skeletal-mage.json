@@ -1,0 +1,15 @@
+{
+  "id": "skeletal-mage",
+  "name": "Skeletal Mage",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Grave Lord",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/skeletal-mage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/grave-lord/skeletal-mage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Skeletal_Mage"
+}

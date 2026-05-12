@@ -1,0 +1,15 @@
+{
+  "id": "burning-light",
+  "name": "Burning Light",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/burning-light.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/burning-light",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Burning_Light"
+}

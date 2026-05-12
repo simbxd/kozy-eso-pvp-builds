@@ -1,0 +1,15 @@
+{
+  "id": "siege-weapon-shield",
+  "name": "Siege Weapon Shield",
+  "base_skill": "Siege Shield",
+  "morph_of": "siege-shield",
+  "morph_sibling": "propelling-shield",
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/siege-weapon-shield.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/siege-weapon-shield",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Siege_Weapon_Shield"
+}

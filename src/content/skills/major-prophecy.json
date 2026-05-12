@@ -1,0 +1,15 @@
+{
+  "id": "major-prophecy",
+  "name": "Major Prophecy",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/major-prophecy.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/major-prophecy",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Major_Prophecy"
+}

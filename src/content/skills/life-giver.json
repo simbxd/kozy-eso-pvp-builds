@@ -1,0 +1,15 @@
+{
+  "id": "life-giver",
+  "name": "Life Giver",
+  "base_skill": "Panacea",
+  "morph_of": "panacea",
+  "morph_sibling": "lights-champion",
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/life-giver.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/life-giver",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Life_Giver"
+}

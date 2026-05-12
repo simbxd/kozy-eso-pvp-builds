@@ -1,0 +1,15 @@
+{
+  "id": "deep-slash",
+  "name": "Deep Slash",
+  "base_skill": "Low Slash",
+  "morph_of": "low-slash",
+  "morph_sibling": "heroic-slash",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/deep-slash.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/deep-slash",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Deep_Slash"
+}

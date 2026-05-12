@@ -1,0 +1,15 @@
+{
+  "id": "biting-jabs",
+  "name": "Biting Jabs",
+  "base_skill": "Puncturing Strikes",
+  "morph_of": "puncturing-strikes",
+  "morph_sibling": "puncturing-sweep",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/biting-jabs.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/biting-jabs",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Biting_Jabs"
+}

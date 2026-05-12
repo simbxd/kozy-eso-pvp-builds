@@ -1,0 +1,15 @@
+{
+  "id": "focused-charge",
+  "name": "Focused Charge",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/focused-charge.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/focused-charge",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Focused_Charge"
+}

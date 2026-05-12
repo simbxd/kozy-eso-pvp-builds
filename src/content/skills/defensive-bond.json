@@ -1,0 +1,15 @@
+{
+  "id": "defensive-bond",
+  "name": "Defensive Bond",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/defensive-bond.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/defensive-bond",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Defensive_Bond"
+}

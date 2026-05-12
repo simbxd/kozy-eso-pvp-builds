@@ -1,0 +1,15 @@
+{
+  "id": "tangling-webs",
+  "name": "Tangling Webs",
+  "base_skill": "Trapping Webs",
+  "morph_of": "trapping-webs",
+  "morph_sibling": "shadow-silk",
+  "class": "Guild",
+  "skill_line": "Undaunted",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/tangling-webs.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/undaunted/tangling-webs",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Tangling_Webs"
+}

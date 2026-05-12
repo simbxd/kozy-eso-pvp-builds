@@ -1,0 +1,15 @@
+{
+  "id": "carve",
+  "name": "Carve",
+  "base_skill": "Cleave",
+  "morph_of": "cleave",
+  "morph_sibling": "brawler",
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/carve.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/carve",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Carve"
+}

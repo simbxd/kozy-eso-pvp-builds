@@ -1,0 +1,15 @@
+{
+  "id": "soul-assault",
+  "name": "Soul Assault",
+  "base_skill": "Soul Strike",
+  "morph_of": "soul-strike",
+  "morph_sibling": "shatter-soul",
+  "class": "World",
+  "skill_line": "Soul Magic",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/soul-assault.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/soul-assault",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Soul_Assault"
+}

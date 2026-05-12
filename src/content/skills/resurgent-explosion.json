@@ -1,0 +1,15 @@
+{
+  "id": "resurgent-explosion",
+  "name": "Resurgent Explosion",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/resurgent-explosion.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/resurgent-explosion",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Resurgent_Explosion"
+}

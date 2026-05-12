@@ -1,0 +1,15 @@
+{
+  "id": "corrupting-pollen",
+  "name": "Corrupting Pollen",
+  "base_skill": "Healing Seed",
+  "morph_of": "healing-seed",
+  "morph_sibling": "budding-seeds",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/corrupting-pollen.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/corrupting-pollen",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Corrupting_Pollen"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "turn-evil",
+  "name": "Turn Evil",
+  "base_skill": "Circle of Protection",
+  "morph_of": "circle-of-protection",
+  "morph_sibling": "ring-of-preservation",
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/turn-evil.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/turn-evil",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Turn_Evil"
+}

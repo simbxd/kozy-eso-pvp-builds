@@ -1,0 +1,15 @@
+{
+  "id": "nightblades-burst",
+  "name": "Nightblade's Burst",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Soul Magic",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/nightblades-burst.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/nightblades-burst",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nightblade's_Burst"
+}

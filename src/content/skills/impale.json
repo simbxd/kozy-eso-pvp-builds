@@ -1,0 +1,15 @@
+{
+  "id": "impale",
+  "name": "Impale",
+  "base_skill": "Assassin's Blade",
+  "morph_of": "assassins-blade",
+  "morph_sibling": "killers-blade",
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/impale.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/impale",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Impale"
+}

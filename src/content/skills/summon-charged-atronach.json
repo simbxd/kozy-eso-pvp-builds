@@ -1,0 +1,15 @@
+{
+  "id": "summon-charged-atronach",
+  "name": "Summon Charged Atronach",
+  "base_skill": "Summon Storm Atronach",
+  "morph_of": "summon-storm-atronach",
+  "morph_sibling": "greater-storm-atronach",
+  "class": "Sorcerer",
+  "skill_line": "Daedric Summoning",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/summon-charged-atronach.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/daedric-summoning/summon-charged-atronach",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Summon_Charged_Atronach"
+}

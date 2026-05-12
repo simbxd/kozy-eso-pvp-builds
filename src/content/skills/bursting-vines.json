@@ -1,0 +1,15 @@
+{
+  "id": "bursting-vines",
+  "name": "Bursting Vines",
+  "base_skill": "Nature's Grasp",
+  "morph_of": "natures-grasp",
+  "morph_sibling": "natures-embrace",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/bursting-vines.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/bursting-vines",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bursting_Vines"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "finders-keepers",
+  "name": "Finders Keepers",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Thieves Guild",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/finders-keepers.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/thieves-guild/finders-keepers",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Finders_Keepers"
+}

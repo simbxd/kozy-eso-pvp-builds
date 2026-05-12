@@ -1,0 +1,15 @@
+{
+  "id": "critical-surge",
+  "name": "Critical Surge",
+  "base_skill": "Surge",
+  "morph_of": "surge",
+  "morph_sibling": "power-surge",
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/critical-surge.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/critical-surge",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Critical_Surge"
+}

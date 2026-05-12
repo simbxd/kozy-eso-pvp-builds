@@ -1,0 +1,15 @@
+{
+  "id": "fiery-torch",
+  "name": "Fiery Torch",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/fiery-torch.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/fiery-torch",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fiery_Torch"
+}

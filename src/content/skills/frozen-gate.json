@@ -1,0 +1,15 @@
+{
+  "id": "frozen-gate",
+  "name": "Frozen Gate",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/frozen-gate.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/frozen-gate",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Frozen_Gate"
+}

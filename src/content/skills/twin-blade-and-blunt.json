@@ -1,0 +1,15 @@
+{
+  "id": "twin-blade-and-blunt",
+  "name": "Twin Blade and Blunt",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/twin-blade-and-blunt.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/twin-blade-and-blunt",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Twin_Blade_and_Blunt"
+}

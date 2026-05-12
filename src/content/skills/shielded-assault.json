@@ -1,0 +1,15 @@
+{
+  "id": "shielded-assault",
+  "name": "Shielded Assault",
+  "base_skill": "Shield Charge",
+  "morph_of": "shield-charge",
+  "morph_sibling": "invasion",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/shielded-assault.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/shielded-assault",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shielded_Assault"
+}

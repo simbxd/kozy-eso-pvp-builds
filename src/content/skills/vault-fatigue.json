@@ -1,0 +1,15 @@
+{
+  "id": "vault-fatigue",
+  "name": "Vault Fatigue",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/vault-fatigue.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/vault-fatigue",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vault_Fatigue"
+}

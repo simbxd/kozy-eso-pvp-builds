@@ -1,0 +1,15 @@
+{
+  "id": "gripping-shards",
+  "name": "Gripping Shards",
+  "base_skill": "Impaling Shards",
+  "morph_of": "impaling-shards",
+  "morph_sibling": "winters-revenge",
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/gripping-shards.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/gripping-shards",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Gripping_Shards"
+}

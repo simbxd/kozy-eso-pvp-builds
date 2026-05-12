@@ -1,0 +1,15 @@
+{
+  "id": "fetcher-infection",
+  "name": "Fetcher Infection",
+  "base_skill": "Swarm",
+  "morph_of": "swarm",
+  "morph_sibling": "growing-swarm",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/fetcher-infection.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/fetcher-infection",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fetcher_Infection"
+}

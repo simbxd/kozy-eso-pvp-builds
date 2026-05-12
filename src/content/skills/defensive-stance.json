@@ -1,0 +1,15 @@
+{
+  "id": "defensive-stance",
+  "name": "Defensive Stance",
+  "base_skill": "Defensive Posture",
+  "morph_of": "defensive-posture",
+  "morph_sibling": "absorb-missile",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/defensive-stance.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/defensive-stance",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Defensive_Stance"
+}

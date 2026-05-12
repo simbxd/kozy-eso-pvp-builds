@@ -1,0 +1,15 @@
+{
+  "id": "minor-expedition",
+  "name": "Minor Expedition",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/minor-expedition.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/minor-expedition",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Minor_Expedition"
+}

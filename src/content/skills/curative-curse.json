@@ -1,0 +1,15 @@
+{
+  "id": "curative-curse",
+  "name": "Curative Curse",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/curative-curse.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/curative-curse",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Curative_Curse"
+}

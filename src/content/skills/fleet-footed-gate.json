@@ -1,0 +1,15 @@
+{
+  "id": "fleet-footed-gate",
+  "name": "Fleet-Footed Gate",
+  "base_skill": "Apocryphal Gate",
+  "morph_of": "apocryphal-gate",
+  "morph_sibling": "passage-between-worlds",
+  "class": "Arcanist",
+  "skill_line": "Curative Runeforms",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/fleet-footed-gate.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/curative-runeforms/fleet-footed-gate",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fleet-Footed_Gate"
+}

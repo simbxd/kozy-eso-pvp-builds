@@ -1,0 +1,15 @@
+{
+  "id": "vigor",
+  "name": "Vigor",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/vigor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/vigor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vigor"
+}

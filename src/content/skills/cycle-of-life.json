@@ -1,0 +1,15 @@
+{
+  "id": "cycle-of-life",
+  "name": "Cycle of Life",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/cycle-of-life.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/cycle-of-life",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Cycle_of_Life"
+}

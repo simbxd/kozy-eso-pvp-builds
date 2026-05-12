@@ -1,0 +1,15 @@
+{
+  "id": "remembrance",
+  "name": "Remembrance",
+  "base_skill": "Rite of Passage",
+  "morph_of": "rite-of-passage",
+  "morph_sibling": "practiced-incantation",
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/remembrance.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/remembrance",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Remembrance"
+}

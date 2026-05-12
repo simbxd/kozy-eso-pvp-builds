@@ -1,0 +1,15 @@
+{
+  "id": "arcanists-knife",
+  "name": "Arcanist's Knife",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/arcanists-knife.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/arcanists-knife",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Arcanist's_Knife"
+}

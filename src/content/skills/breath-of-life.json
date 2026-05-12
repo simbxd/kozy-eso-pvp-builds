@@ -1,0 +1,15 @@
+{
+  "id": "breath-of-life",
+  "name": "Breath of Life",
+  "base_skill": "Rushed Ceremony",
+  "morph_of": "rushed-ceremony",
+  "morph_sibling": "honor-the-dead",
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/breath-of-life.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/breath-of-life",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Breath_of_Life"
+}

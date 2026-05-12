@@ -1,0 +1,15 @@
+{
+  "id": "proximity-detonation",
+  "name": "Proximity Detonation",
+  "base_skill": "Magicka Detonation",
+  "morph_of": "magicka-detonation",
+  "morph_sibling": "inevitable-detonation",
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/proximity-detonation.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/proximity-detonation",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Proximity_Detonation"
+}

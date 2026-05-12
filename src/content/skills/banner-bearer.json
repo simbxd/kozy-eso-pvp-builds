@@ -1,0 +1,15 @@
+{
+  "id": "banner-bearer",
+  "name": "Banner Bearer",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/banner-bearer.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/banner-bearer",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Banner_Bearer"
+}

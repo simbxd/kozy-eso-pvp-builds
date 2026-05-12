@@ -1,0 +1,15 @@
+{
+  "id": "spirit-guardian",
+  "name": "Spirit Guardian",
+  "base_skill": "Spirit Mender",
+  "morph_of": "spirit-mender",
+  "morph_sibling": "intensive-mender",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/spirit-guardian.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/spirit-guardian",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spirit_Guardian"
+}

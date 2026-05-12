@@ -1,0 +1,15 @@
+{
+  "id": "engulfing-dragonfire",
+  "name": "Engulfing Dragonfire",
+  "base_skill": "Dragonfire Breath",
+  "morph_of": "dragonfire-breath",
+  "morph_sibling": "disintegrating-dragonfire",
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/engulfing-dragonfire.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/engulfing-dragonfire",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Engulfing_Dragonfire"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "blessing-of-restoration",
+  "name": "Blessing of Restoration",
+  "base_skill": "Blessing of Protection",
+  "morph_of": "blessing-of-protection",
+  "morph_sibling": "combat-prayer",
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/blessing-of-restoration.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/blessing-of-restoration",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blessing_of_Restoration"
+}

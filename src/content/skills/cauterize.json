@@ -1,0 +1,15 @@
+{
+  "id": "cauterize",
+  "name": "Cauterize",
+  "base_skill": "Inferno",
+  "morph_of": "inferno",
+  "morph_sibling": "incinerate",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/cauterize.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/cauterize",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Cauterize"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "scalding-rune",
+  "name": "Scalding Rune",
+  "base_skill": "Fire Rune",
+  "morph_of": "fire-rune",
+  "morph_sibling": "volcanic-rune",
+  "class": "Guild",
+  "skill_line": "Mages Guild",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/scalding-rune.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/mages-guild/scalding-rune",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Scalding_Rune"
+}

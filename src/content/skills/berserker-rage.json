@@ -1,0 +1,15 @@
+{
+  "id": "berserker-rage",
+  "name": "Berserker Rage",
+  "base_skill": "Berserker Strike",
+  "morph_of": "berserker-strike",
+  "morph_sibling": "onslaught",
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/berserker-rage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/berserker-rage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Berserker_Rage"
+}

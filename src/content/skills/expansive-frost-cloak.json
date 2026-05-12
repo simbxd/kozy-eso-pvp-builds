@@ -1,0 +1,15 @@
+{
+  "id": "expansive-frost-cloak",
+  "name": "Expansive Frost Cloak",
+  "base_skill": "Frost Cloak",
+  "morph_of": "frost-cloak",
+  "morph_sibling": "ice-fortress",
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/expansive-frost-cloak.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/expansive-frost-cloak",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Expansive_Frost_Cloak"
+}

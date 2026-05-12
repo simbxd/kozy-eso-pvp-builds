@@ -1,0 +1,15 @@
+{
+  "id": "pragmatic-fatecarver",
+  "name": "Pragmatic Fatecarver",
+  "base_skill": "Fatecarver",
+  "morph_of": "fatecarver",
+  "morph_sibling": "exhausting-fatecarver",
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/pragmatic-fatecarver.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/pragmatic-fatecarver",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pragmatic_Fatecarver"
+}

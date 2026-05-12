@@ -1,0 +1,15 @@
+{
+  "id": "subterranean-assault",
+  "name": "Subterranean Assault",
+  "base_skill": "Scorch",
+  "morph_of": "scorch",
+  "morph_sibling": "deep-fissure",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/subterranean-assault.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/subterranean-assault",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Subterranean_Assault"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "pariahs-resolve",
+  "name": "Pariah's Resolve",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Volendrung",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/pariahs-resolve.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/volendrung/pariahs-resolve",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Pariah's_Resolve"
+}

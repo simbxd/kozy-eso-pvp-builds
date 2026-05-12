@@ -1,0 +1,15 @@
+{
+  "id": "intensive-mender",
+  "name": "Intensive Mender",
+  "base_skill": "Spirit Mender",
+  "morph_of": "spirit-mender",
+  "morph_sibling": "spirit-guardian",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/intensive-mender.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/intensive-mender",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Intensive_Mender"
+}

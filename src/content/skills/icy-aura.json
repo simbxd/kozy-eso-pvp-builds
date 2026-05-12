@@ -1,0 +1,15 @@
+{
+  "id": "icy-aura",
+  "name": "Icy Aura",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/icy-aura.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/icy-aura",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Icy_Aura"
+}

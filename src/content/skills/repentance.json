@@ -1,0 +1,15 @@
+{
+  "id": "repentance",
+  "name": "Repentance",
+  "base_skill": "Restoring Aura",
+  "morph_of": "restoring-aura",
+  "morph_sibling": "radiant-aura",
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/repentance.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/repentance",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Repentance"
+}

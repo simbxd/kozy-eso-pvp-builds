@@ -1,0 +1,15 @@
+{
+  "id": "mystic-guard",
+  "name": "Mystic Guard",
+  "base_skill": "Guard",
+  "morph_of": "guard",
+  "morph_sibling": "stalwart-guard",
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/mystic-guard.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/mystic-guard",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mystic_Guard"
+}

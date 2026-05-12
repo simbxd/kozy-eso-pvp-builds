@@ -1,0 +1,15 @@
+{
+  "id": "heroic-slash",
+  "name": "Heroic Slash",
+  "base_skill": "Low Slash",
+  "morph_of": "low-slash",
+  "morph_sibling": "deep-slash",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/heroic-slash.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/heroic-slash",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Heroic_Slash"
+}

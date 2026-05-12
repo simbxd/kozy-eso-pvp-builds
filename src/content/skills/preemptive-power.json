@@ -1,0 +1,15 @@
+{
+  "id": "preemptive-power",
+  "name": "Preemptive Power",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Scrying",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/preemptive-power.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/scrying/preemptive-power",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Preemptive_Power"
+}

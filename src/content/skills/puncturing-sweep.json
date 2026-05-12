@@ -1,0 +1,15 @@
+{
+  "id": "puncturing-sweep",
+  "name": "Puncturing Sweep",
+  "base_skill": "Puncturing Strikes",
+  "morph_of": "puncturing-strikes",
+  "morph_sibling": "biting-jabs",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/puncturing-sweep.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/puncturing-sweep",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Puncturing_Sweep"
+}

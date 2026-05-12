@@ -1,0 +1,15 @@
+{
+  "id": "permafrost",
+  "name": "Permafrost",
+  "base_skill": "Sleet Storm",
+  "morph_of": "sleet-storm",
+  "morph_sibling": "northern-storm",
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/permafrost.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/permafrost",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Permafrost"
+}

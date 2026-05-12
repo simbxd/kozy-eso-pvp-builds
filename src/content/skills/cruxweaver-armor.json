@@ -1,0 +1,15 @@
+{
+  "id": "cruxweaver-armor",
+  "name": "Cruxweaver Armor",
+  "base_skill": "Fatewoven Armor",
+  "morph_of": "fatewoven-armor",
+  "morph_sibling": "unbreakable-fate",
+  "class": "Arcanist",
+  "skill_line": "Soldier of Apocrypha",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/cruxweaver-armor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/soldier-of-apocrypha/cruxweaver-armor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Cruxweaver_Armor"
+}

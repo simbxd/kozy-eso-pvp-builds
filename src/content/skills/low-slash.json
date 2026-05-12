@@ -1,0 +1,15 @@
+{
+  "id": "low-slash",
+  "name": "Low Slash",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/low-slash.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/low-slash",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Low_Slash"
+}

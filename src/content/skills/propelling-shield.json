@@ -1,0 +1,15 @@
+{
+  "id": "propelling-shield",
+  "name": "Propelling Shield",
+  "base_skill": "Siege Shield",
+  "morph_of": "siege-shield",
+  "morph_sibling": "siege-weapon-shield",
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/propelling-shield.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/propelling-shield",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Propelling_Shield"
+}

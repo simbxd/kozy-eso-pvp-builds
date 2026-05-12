@@ -1,0 +1,15 @@
+{
+  "id": "wall-of-storms",
+  "name": "Wall of Storms",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/wall-of-storms.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/wall-of-storms",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Wall_of_Storms"
+}

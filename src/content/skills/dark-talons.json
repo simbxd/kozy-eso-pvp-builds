@@ -1,0 +1,15 @@
+{
+  "id": "dark-talons",
+  "name": "Dark Talons",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/dark-talons.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/dark-talons",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dark_Talons"
+}

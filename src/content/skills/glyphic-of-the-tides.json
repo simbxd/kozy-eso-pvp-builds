@@ -1,0 +1,15 @@
+{
+  "id": "glyphic-of-the-tides",
+  "name": "Glyphic of the Tides",
+  "base_skill": "Vitalizing Glyphic",
+  "morph_of": "vitalizing-glyphic",
+  "morph_sibling": "resonating-glyphic",
+  "class": "Arcanist",
+  "skill_line": "Curative Runeforms",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/glyphic-of-the-tides.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/curative-runeforms/glyphic-of-the-tides",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyphic_of_the_Tides"
+}

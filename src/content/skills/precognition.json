@@ -1,0 +1,15 @@
+{
+  "id": "precognition",
+  "name": "Precognition",
+  "base_skill": "Undo",
+  "morph_of": "undo",
+  "morph_sibling": "temporal-guard",
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/precognition.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/precognition",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Precognition"
+}

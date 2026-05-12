@@ -1,0 +1,15 @@
+{
+  "id": "blazing-spear",
+  "name": "Blazing Spear",
+  "base_skill": "Spear Shards",
+  "morph_of": "spear-shards",
+  "morph_sibling": "luminous-shards",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/blazing-spear.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/blazing-spear",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blazing_Spear"
+}

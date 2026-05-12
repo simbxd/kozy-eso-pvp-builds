@@ -1,0 +1,15 @@
+{
+  "id": "scatter-shot",
+  "name": "Scatter Shot",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/scatter-shot.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/scatter-shot",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Scatter_Shot"
+}

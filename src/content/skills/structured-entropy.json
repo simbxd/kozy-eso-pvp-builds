@@ -1,0 +1,15 @@
+{
+  "id": "structured-entropy",
+  "name": "Structured Entropy",
+  "base_skill": "Entropy",
+  "morph_of": "entropy",
+  "morph_sibling": "degeneration",
+  "class": "Guild",
+  "skill_line": "Mages Guild",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/structured-entropy.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/mages-guild/structured-entropy",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Structured_Entropy"
+}

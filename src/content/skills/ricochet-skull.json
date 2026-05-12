@@ -1,0 +1,15 @@
+{
+  "id": "ricochet-skull",
+  "name": "Ricochet Skull",
+  "base_skill": "Flame Skull",
+  "morph_of": "flame-skull",
+  "morph_sibling": "venom-skull",
+  "class": "Necromancer",
+  "skill_line": "Grave Lord",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/ricochet-skull.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/grave-lord/ricochet-skull",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ricochet_Skull"
+}

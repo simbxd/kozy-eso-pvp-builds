@@ -1,0 +1,15 @@
+{
+  "id": "time-stop",
+  "name": "Time Stop",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/time-stop.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/time-stop",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Time_Stop"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "symbiosis",
+  "name": "Symbiosis",
+  "base_skill": "Mend Wounds",
+  "morph_of": "mend-wounds",
+  "morph_sibling": "mend-spirit",
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/symbiosis.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/symbiosis",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Symbiosis"
+}

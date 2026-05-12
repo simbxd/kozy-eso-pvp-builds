@@ -1,0 +1,15 @@
+{
+  "id": "tough",
+  "name": "Tough",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Imperial Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/tough.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/imperial-skills/tough",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Tough"
+}

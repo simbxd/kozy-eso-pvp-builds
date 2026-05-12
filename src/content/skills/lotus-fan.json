@@ -1,0 +1,15 @@
+{
+  "id": "lotus-fan",
+  "name": "Lotus Fan",
+  "base_skill": "Teleport Strike",
+  "morph_of": "teleport-strike",
+  "morph_sibling": "ambush",
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/lotus-fan.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/lotus-fan",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lotus_Fan"
+}

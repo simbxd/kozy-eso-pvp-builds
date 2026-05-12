@@ -1,0 +1,15 @@
+{
+  "id": "steel-tornado",
+  "name": "Steel Tornado",
+  "base_skill": "Whirlwind",
+  "morph_of": "whirlwind",
+  "morph_sibling": "whirling-blades",
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/steel-tornado.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/steel-tornado",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Steel_Tornado"
+}

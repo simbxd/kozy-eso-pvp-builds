@@ -1,0 +1,15 @@
+{
+  "id": "piercing-howl",
+  "name": "Piercing Howl",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/piercing-howl.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/piercing-howl",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Piercing_Howl"
+}

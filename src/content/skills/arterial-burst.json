@@ -1,0 +1,15 @@
+{
+  "id": "arterial-burst",
+  "name": "Arterial Burst",
+  "base_skill": "Eviscerate",
+  "morph_of": "eviscerate",
+  "morph_sibling": "blood-for-blood",
+  "class": "World",
+  "skill_line": "Vampire",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/arterial-burst.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/vampire/arterial-burst",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Arterial_Burst"
+}

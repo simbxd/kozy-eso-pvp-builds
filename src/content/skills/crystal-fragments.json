@@ -1,0 +1,15 @@
+{
+  "id": "crystal-fragments",
+  "name": "Crystal Fragments",
+  "base_skill": "Crystal Shard",
+  "morph_of": "crystal-shard",
+  "morph_sibling": "crystal-weapon",
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/crystal-fragments.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/crystal-fragments",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Crystal_Fragments"
+}

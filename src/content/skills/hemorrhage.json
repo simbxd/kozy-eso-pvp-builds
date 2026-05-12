@@ -1,0 +1,15 @@
+{
+  "id": "hemorrhage",
+  "name": "Hemorrhage",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/hemorrhage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/hemorrhage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hemorrhage"
+}

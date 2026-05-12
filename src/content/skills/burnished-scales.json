@@ -1,0 +1,15 @@
+{
+  "id": "burnished-scales",
+  "name": "Burnished Scales",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/burnished-scales.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/burnished-scales",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Burnished_Scales"
+}

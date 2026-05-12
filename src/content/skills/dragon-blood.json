@@ -1,0 +1,15 @@
+{
+  "id": "dragon-blood",
+  "name": "Dragon Blood",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/dragon-blood.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/dragon-blood",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dragon_Blood"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bone-shield",
+  "name": "Bone Shield",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Undaunted",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/bone-shield.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/undaunted/bone-shield",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bone_Shield"
+}

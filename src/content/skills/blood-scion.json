@@ -1,0 +1,15 @@
+{
+  "id": "blood-scion",
+  "name": "Blood Scion",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Vampire",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/blood-scion.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/vampire/blood-scion",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_Scion"
+}

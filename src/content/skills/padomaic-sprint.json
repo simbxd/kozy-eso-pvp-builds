@@ -1,0 +1,15 @@
+{
+  "id": "padomaic-sprint",
+  "name": "Padomaic Sprint",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Dark Brotherhood",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/padomaic-sprint.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/dark-brotherhood/padomaic-sprint",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Padomaic_Sprint"
+}

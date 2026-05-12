@@ -1,0 +1,15 @@
+{
+  "id": "undead-confederate",
+  "name": "Undead Confederate",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/undead-confederate.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/undead-confederate",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Undead_Confederate"
+}

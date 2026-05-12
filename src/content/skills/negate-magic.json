@@ -1,0 +1,15 @@
+{
+  "id": "negate-magic",
+  "name": "Negate Magic",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/negate-magic.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/negate-magic",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Negate_Magic"
+}

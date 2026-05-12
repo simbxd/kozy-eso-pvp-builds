@@ -1,0 +1,15 @@
+{
+  "id": "fire-keeper",
+  "name": "Fire Keeper",
+  "base_skill": "Hearthfire",
+  "morph_of": "hearthfire",
+  "morph_sibling": "hearth-and-home",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/fire-keeper.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/fire-keeper",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fire_Keeper"
+}

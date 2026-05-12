@@ -1,0 +1,15 @@
+{
+  "id": "expert-hunter",
+  "name": "Expert Hunter",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/expert-hunter.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/expert-hunter",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Expert_Hunter"
+}

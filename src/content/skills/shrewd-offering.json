@@ -1,0 +1,15 @@
+{
+  "id": "shrewd-offering",
+  "name": "Shrewd Offering",
+  "base_skill": "Malevolent Offering",
+  "morph_of": "malevolent-offering",
+  "morph_sibling": "healthy-offering",
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/shrewd-offering.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/shrewd-offering",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shrewd_Offering"
+}

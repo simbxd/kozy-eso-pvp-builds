@@ -1,0 +1,15 @@
+{
+  "id": "hand-brush",
+  "name": "Hand Brush",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Excavation",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/hand-brush.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/excavation/hand-brush",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hand_Brush"
+}

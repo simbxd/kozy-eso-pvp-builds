@@ -1,0 +1,15 @@
+{
+  "id": "toxic-barrage",
+  "name": "Toxic Barrage",
+  "base_skill": "Rapid Fire",
+  "morph_of": "rapid-fire",
+  "morph_sibling": "ballista",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/toxic-barrage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/toxic-barrage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Toxic_Barrage"
+}

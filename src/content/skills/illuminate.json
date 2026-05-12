@@ -1,0 +1,15 @@
+{
+  "id": "illuminate",
+  "name": "Illuminate",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Templar",
+  "skill_line": "Dawn's Wrath",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/illuminate.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/dawns-wrath/illuminate",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Illuminate"
+}

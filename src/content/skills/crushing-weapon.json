@@ -1,0 +1,15 @@
+{
+  "id": "crushing-weapon",
+  "name": "Crushing Weapon",
+  "base_skill": "Imbue Weapon",
+  "morph_of": "imbue-weapon",
+  "morph_sibling": "elemental-weapon",
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/crushing-weapon.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/crushing-weapon",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Crushing_Weapon"
+}

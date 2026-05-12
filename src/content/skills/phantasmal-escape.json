@@ -1,0 +1,15 @@
+{
+  "id": "phantasmal-escape",
+  "name": "Phantasmal Escape",
+  "base_skill": "Blur",
+  "morph_of": "blur",
+  "morph_sibling": "mirage",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/phantasmal-escape.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/phantasmal-escape",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Phantasmal_Escape"
+}

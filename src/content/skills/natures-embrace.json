@@ -1,0 +1,15 @@
+{
+  "id": "natures-embrace",
+  "name": "Nature's Embrace",
+  "base_skill": "Nature's Grasp",
+  "morph_of": "natures-grasp",
+  "morph_sibling": "bursting-vines",
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/natures-embrace.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/natures-embrace",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nature's_Embrace"
+}

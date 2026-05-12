@@ -1,0 +1,15 @@
+{
+  "id": "capacitor",
+  "name": "Capacitor",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/capacitor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/capacitor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Capacitor"
+}

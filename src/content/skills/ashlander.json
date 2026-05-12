@@ -1,0 +1,15 @@
+{
+  "id": "ashlander",
+  "name": "Ashlander",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Dark Elf Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/ashlander.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/dark-elf-skills/ashlander",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ashlander"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "follow-up",
+  "name": "Follow Up",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/follow-up.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/follow-up",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Follow_Up"
+}

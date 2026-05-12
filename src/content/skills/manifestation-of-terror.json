@@ -1,0 +1,15 @@
+{
+  "id": "manifestation-of-terror",
+  "name": "Manifestation of Terror",
+  "base_skill": "Aspect of Terror",
+  "morph_of": "aspect-of-terror",
+  "morph_sibling": "mass-hysteria",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/manifestation-of-terror.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/manifestation-of-terror",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Manifestation_of_Terror"
+}

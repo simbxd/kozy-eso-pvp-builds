@@ -1,0 +1,15 @@
+{
+  "id": "keen-eye-dig-sites",
+  "name": "Keen Eye: Dig Sites",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Excavation",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/keen-eye-dig-sites.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/excavation/keen-eye-dig-sites",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Keen_Eye:_Dig_Sites"
+}

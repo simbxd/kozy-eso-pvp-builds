@@ -1,0 +1,15 @@
+{
+  "id": "sturdy-horn",
+  "name": "Sturdy Horn",
+  "base_skill": "War Horn",
+  "morph_of": "war-horn",
+  "morph_sibling": "aggressive-horn",
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/sturdy-horn.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/sturdy-horn",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sturdy_Horn"
+}

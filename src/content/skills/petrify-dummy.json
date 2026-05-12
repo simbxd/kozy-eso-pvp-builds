@@ -1,0 +1,15 @@
+{
+  "id": "petrify-dummy",
+  "name": "Petrify dummy",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/petrify-dummy.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/petrify-dummy",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Petrify_dummy"
+}

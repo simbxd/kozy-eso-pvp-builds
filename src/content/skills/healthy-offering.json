@@ -1,0 +1,15 @@
+{
+  "id": "healthy-offering",
+  "name": "Healthy Offering",
+  "base_skill": "Malevolent Offering",
+  "morph_of": "malevolent-offering",
+  "morph_sibling": "shrewd-offering",
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/healthy-offering.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/healthy-offering",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Healthy_Offering"
+}

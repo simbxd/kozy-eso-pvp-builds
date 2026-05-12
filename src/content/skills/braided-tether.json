@@ -1,0 +1,15 @@
+{
+  "id": "braided-tether",
+  "name": "Braided Tether",
+  "base_skill": "Restoring Tether",
+  "morph_of": "restoring-tether",
+  "morph_sibling": "mortal-coil",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/braided-tether.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/braided-tether",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Braided_Tether"
+}

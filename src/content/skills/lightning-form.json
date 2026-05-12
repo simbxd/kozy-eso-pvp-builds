@@ -1,0 +1,15 @@
+{
+  "id": "lightning-form",
+  "name": "Lightning Form",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/lightning-form.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/lightning-form",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lightning_Form"
+}

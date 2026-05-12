@@ -1,0 +1,15 @@
+{
+  "id": "boundless-storm",
+  "name": "Boundless Storm",
+  "base_skill": "Lightning Form",
+  "morph_of": "lightning-form",
+  "morph_sibling": "hurricane",
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/boundless-storm.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/boundless-storm",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Boundless_Storm"
+}

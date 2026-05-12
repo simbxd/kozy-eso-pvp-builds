@@ -1,0 +1,15 @@
+{
+  "id": "leashing-throw",
+  "name": "Leashing Throw",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/leashing-throw.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/leashing-throw",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Leashing_Throw"
+}

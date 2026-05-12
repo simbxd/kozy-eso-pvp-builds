@@ -1,0 +1,15 @@
+{
+  "id": "rending-slashes",
+  "name": "Rending Slashes",
+  "base_skill": "Twin Slashes",
+  "morph_of": "twin-slashes",
+  "morph_sibling": "blood-craze",
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/rending-slashes.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/rending-slashes",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rending_Slashes"
+}

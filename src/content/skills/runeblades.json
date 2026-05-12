@@ -1,0 +1,15 @@
+{
+  "id": "runeblades",
+  "name": "Runeblades",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/runeblades.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/runeblades",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Runeblades"
+}

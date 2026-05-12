@@ -1,0 +1,15 @@
+{
+  "id": "hircines-rage",
+  "name": "Hircine's Rage",
+  "base_skill": "Hircine's Bounty",
+  "morph_of": "hircines-bounty",
+  "morph_sibling": "hircines-fortitude",
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/hircines-rage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/hircines-rage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hircine's_Rage"
+}

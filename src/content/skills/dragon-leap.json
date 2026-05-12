@@ -1,0 +1,15 @@
+{
+  "id": "dragon-leap",
+  "name": "Dragon Leap",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/dragon-leap.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/dragon-leap",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dragon_Leap"
+}

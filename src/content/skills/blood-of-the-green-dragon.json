@@ -1,0 +1,15 @@
+{
+  "id": "blood-of-the-green-dragon",
+  "name": "Blood of the Green Dragon",
+  "base_skill": "Dragon Blood",
+  "morph_of": "dragon-blood",
+  "morph_sibling": "blood-of-the-elder-dragon",
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/blood-of-the-green-dragon.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/blood-of-the-green-dragon",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_of_the_Green_Dragon"
+}

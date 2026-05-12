@@ -1,0 +1,15 @@
+{
+  "id": "ball-of-lightning",
+  "name": "Ball of Lightning",
+  "base_skill": "Bolt Escape",
+  "morph_of": "bolt-escape",
+  "morph_sibling": "streak",
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/ball-of-lightning.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/ball-of-lightning",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ball_of_Lightning"
+}

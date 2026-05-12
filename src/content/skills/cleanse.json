@@ -1,0 +1,15 @@
+{
+  "id": "cleanse",
+  "name": "Cleanse",
+  "base_skill": "Purge",
+  "morph_of": "purge",
+  "morph_sibling": "efficient-purge",
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/cleanse.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/cleanse",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Cleanse"
+}

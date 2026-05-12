@@ -1,0 +1,15 @@
+{
+  "id": "consuming-trap",
+  "name": "Consuming Trap",
+  "base_skill": "Soul Trap",
+  "morph_of": "soul-trap",
+  "morph_sibling": "soul-splitting-trap",
+  "class": "World",
+  "skill_line": "Soul Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/consuming-trap.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/consuming-trap",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Consuming_Trap"
+}

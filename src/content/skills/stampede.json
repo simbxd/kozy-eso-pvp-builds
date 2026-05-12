@@ -1,0 +1,15 @@
+{
+  "id": "stampede",
+  "name": "Stampede",
+  "base_skill": "Critical Charge",
+  "morph_of": "critical-charge",
+  "morph_sibling": "critical-rush",
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/stampede.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/stampede",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Stampede"
+}

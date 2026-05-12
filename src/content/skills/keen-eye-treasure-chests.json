@@ -1,0 +1,15 @@
+{
+  "id": "keen-eye-treasure-chests",
+  "name": "Keen Eye: Treasure Chests",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Excavation",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/keen-eye-treasure-chests.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/excavation/keen-eye-treasure-chests",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Keen_Eye:_Treasure_Chests"
+}

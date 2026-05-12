@@ -1,0 +1,15 @@
+{
+  "id": "the-tide-kings-gaze",
+  "name": "The Tide King's Gaze",
+  "base_skill": "The Unblinking Eye",
+  "morph_of": "the-unblinking-eye",
+  "morph_sibling": "the-languid-eye",
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/the-tide-kings-gaze.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/the-tide-kings-gaze",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Tide_King's_Gaze"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "dragonfire-breath",
+  "name": "Dragonfire Breath",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Draconic Power",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/dragonfire-breath.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/draconic-power/dragonfire-breath",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dragonfire_Breath"
+}

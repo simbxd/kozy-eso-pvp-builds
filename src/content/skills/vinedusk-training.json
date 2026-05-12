@@ -1,0 +1,15 @@
+{
+  "id": "vinedusk-training",
+  "name": "Vinedusk Training",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/vinedusk-training.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/vinedusk-training",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Vinedusk_Training"
+}

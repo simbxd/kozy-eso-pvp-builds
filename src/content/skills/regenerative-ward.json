@@ -1,0 +1,15 @@
+{
+  "id": "regenerative-ward",
+  "name": "Regenerative Ward",
+  "base_skill": "Conjured Ward",
+  "morph_of": "conjured-ward",
+  "morph_sibling": "hardened-ward",
+  "class": "Sorcerer",
+  "skill_line": "Daedric Summoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/regenerative-ward.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/daedric-summoning/regenerative-ward",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Regenerative_Ward"
+}

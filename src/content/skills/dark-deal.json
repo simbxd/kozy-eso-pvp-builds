@@ -1,0 +1,15 @@
+{
+  "id": "dark-deal",
+  "name": "Dark Deal",
+  "base_skill": "Dark Exchange",
+  "morph_of": "dark-exchange",
+  "morph_sibling": "dark-conversion",
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/dark-deal.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/dark-deal",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dark_Deal"
+}

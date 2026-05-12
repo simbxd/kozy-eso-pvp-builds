@@ -1,0 +1,15 @@
+{
+  "id": "healing-springs",
+  "name": "Healing Springs",
+  "base_skill": "Grand Healing",
+  "morph_of": "grand-healing",
+  "morph_sibling": "illustrious-healing",
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/healing-springs.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/healing-springs",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Healing_Springs"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "necromancers-soul",
+  "name": "Necromancer's Soul",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Soul Magic",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/necromancers-soul.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/necromancers-soul",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Necromancer's_Soul"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "draining-shot",
+  "name": "Draining Shot",
+  "base_skill": "Scatter Shot",
+  "morph_of": "scatter-shot",
+  "morph_sibling": "magnum-shot",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/draining-shot.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/draining-shot",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Draining_Shot"
+}

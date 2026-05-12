@@ -1,0 +1,15 @@
+{
+  "id": "flame-skull",
+  "name": "Flame Skull",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Grave Lord",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/flame-skull.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/grave-lord/flame-skull",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Flame_Skull"
+}

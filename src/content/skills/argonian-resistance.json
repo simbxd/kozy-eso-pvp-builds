@@ -1,0 +1,15 @@
+{
+  "id": "argonian-resistance",
+  "name": "Argonian Resistance",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Argonian Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/argonian-resistance.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/argonian-skills/argonian-resistance",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Argonian_Resistance"
+}

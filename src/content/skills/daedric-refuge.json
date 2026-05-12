@@ -1,0 +1,15 @@
+{
+  "id": "daedric-refuge",
+  "name": "Daedric Refuge",
+  "base_skill": "Daedric Mines",
+  "morph_of": "daedric-mines",
+  "morph_sibling": "daedric-tomb",
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/daedric-refuge.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/daedric-refuge",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Daedric_Refuge"
+}

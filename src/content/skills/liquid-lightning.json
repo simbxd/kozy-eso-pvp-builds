@@ -1,0 +1,15 @@
+{
+  "id": "liquid-lightning",
+  "name": "Liquid Lightning",
+  "base_skill": "Lightning Splash",
+  "morph_of": "lightning-splash",
+  "morph_sibling": "lightning-flood",
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/liquid-lightning.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/liquid-lightning",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Liquid_Lightning"
+}

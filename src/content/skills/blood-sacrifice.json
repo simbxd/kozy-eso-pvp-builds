@@ -1,0 +1,15 @@
+{
+  "id": "blood-sacrifice",
+  "name": "Blood Sacrifice",
+  "base_skill": "Render Flesh",
+  "morph_of": "render-flesh",
+  "morph_sibling": "resistant-flesh",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/blood-sacrifice.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/blood-sacrifice",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_Sacrifice"
+}

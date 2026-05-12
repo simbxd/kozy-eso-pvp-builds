@@ -1,0 +1,15 @@
+{
+  "id": "renewing-animation",
+  "name": "Renewing Animation",
+  "base_skill": "Reanimate",
+  "morph_of": "reanimate",
+  "morph_sibling": "animate-blastbones",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/renewing-animation.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/renewing-animation",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Renewing_Animation"
+}

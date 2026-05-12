@@ -1,0 +1,15 @@
+{
+  "id": "defensive-banner",
+  "name": "Defensive Banner",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/defensive-banner.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/defensive-banner",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Defensive_Banner"
+}

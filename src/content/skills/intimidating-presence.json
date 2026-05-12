@@ -1,0 +1,15 @@
+{
+  "id": "intimidating-presence",
+  "name": "Intimidating Presence",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/intimidating-presence.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/intimidating-presence",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Intimidating_Presence"
+}

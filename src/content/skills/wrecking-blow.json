@@ -1,0 +1,15 @@
+{
+  "id": "wrecking-blow",
+  "name": "Wrecking Blow",
+  "base_skill": "Uppercut",
+  "morph_of": "uppercut",
+  "morph_sibling": "dizzying-swing",
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/wrecking-blow.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/wrecking-blow",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Wrecking_Blow"
+}

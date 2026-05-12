@@ -1,0 +1,15 @@
+{
+  "id": "killers-blade",
+  "name": "Killer's Blade",
+  "base_skill": "Assassin's Blade",
+  "morph_of": "assassins-blade",
+  "morph_sibling": "impale",
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/killers-blade.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/killers-blade",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Killer's_Blade"
+}

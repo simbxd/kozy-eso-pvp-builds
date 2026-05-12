@@ -1,0 +1,15 @@
+{
+  "id": "werewolf-berserker",
+  "name": "Werewolf Berserker",
+  "base_skill": "Werewolf Transformation",
+  "morph_of": "werewolf-transformation",
+  "morph_sibling": "pack-leader",
+  "class": "World",
+  "skill_line": "Werewolf",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/werewolf-berserker.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/werewolf/werewolf-berserker",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Werewolf_Berserker"
+}

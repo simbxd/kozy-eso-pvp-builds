@@ -1,0 +1,15 @@
+{
+  "id": "dragonknight-standard",
+  "name": "Dragonknight Standard",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/dragonknight-standard.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/dragonknight-standard",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dragonknight_Standard"
+}

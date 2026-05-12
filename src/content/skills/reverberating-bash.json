@@ -1,0 +1,15 @@
+{
+  "id": "reverberating-bash",
+  "name": "Reverberating Bash",
+  "base_skill": "Power Bash",
+  "morph_of": "power-bash",
+  "morph_sibling": "power-slam",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/reverberating-bash.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/reverberating-bash",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Reverberating_Bash"
+}

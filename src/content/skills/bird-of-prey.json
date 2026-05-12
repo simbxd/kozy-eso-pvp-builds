@@ -1,0 +1,15 @@
+{
+  "id": "bird-of-prey",
+  "name": "Bird of Prey",
+  "base_skill": "Falcon's Swiftness",
+  "morph_of": "falcons-swiftness",
+  "morph_sibling": "deceptive-predator",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/bird-of-prey.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/bird-of-prey",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bird_of_Prey"
+}

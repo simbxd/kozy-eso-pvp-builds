@@ -1,0 +1,15 @@
+{
+  "id": "sword-and-board",
+  "name": "Sword and Board",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/sword-and-board.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/sword-and-board",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sword_and_Board"
+}

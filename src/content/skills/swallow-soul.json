@@ -1,0 +1,15 @@
+{
+  "id": "swallow-soul",
+  "name": "Swallow Soul",
+  "base_skill": "Strife",
+  "morph_of": "strife",
+  "morph_sibling": "funnel-health",
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/swallow-soul.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/swallow-soul",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Swallow_Soul"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "healing-ward",
+  "name": "Healing Ward",
+  "base_skill": "Steadfast Ward",
+  "morph_of": "steadfast-ward",
+  "morph_sibling": "ward-ally",
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/healing-ward.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/healing-ward",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Healing_Ward"
+}

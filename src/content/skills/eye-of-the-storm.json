@@ -1,0 +1,15 @@
+{
+  "id": "eye-of-the-storm",
+  "name": "Eye of the Storm",
+  "base_skill": "Elemental Storm",
+  "morph_of": "elemental-storm",
+  "morph_sibling": "eye-of-flame",
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/eye-of-the-storm.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/eye-of-the-storm",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Eye_of_the_Storm"
+}

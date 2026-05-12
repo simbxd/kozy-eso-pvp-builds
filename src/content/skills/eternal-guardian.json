@@ -1,0 +1,15 @@
+{
+  "id": "eternal-guardian",
+  "name": "Eternal Guardian",
+  "base_skill": "Feral Guardian",
+  "morph_of": "feral-guardian",
+  "morph_sibling": "wild-guardian",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/eternal-guardian.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/eternal-guardian",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Eternal_Guardian"
+}

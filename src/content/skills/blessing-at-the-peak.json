@@ -1,0 +1,15 @@
+{
+  "id": "blessing-at-the-peak",
+  "name": "Blessing at the Peak",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/blessing-at-the-peak.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/blessing-at-the-peak",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blessing_at_the_Peak"
+}

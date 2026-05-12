@@ -1,0 +1,15 @@
+{
+  "id": "runespite-ward",
+  "name": "Runespite Ward",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Arcanist",
+  "skill_line": "Soldier of Apocrypha",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/runespite-ward.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/soldier-of-apocrypha/runespite-ward",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Runespite_Ward"
+}

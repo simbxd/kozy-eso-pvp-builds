@@ -1,0 +1,15 @@
+{
+  "id": "rune-prison",
+  "name": "Rune Prison",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/rune-prison.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/rune-prison",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Rune_Prison"
+}

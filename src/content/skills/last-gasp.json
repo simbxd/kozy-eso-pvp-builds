@@ -1,0 +1,15 @@
+{
+  "id": "last-gasp",
+  "name": "Last Gasp",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/last-gasp.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/last-gasp",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Last_Gasp"
+}

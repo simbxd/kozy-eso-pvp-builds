@@ -1,0 +1,15 @@
+{
+  "id": "unstoppable-brute",
+  "name": "Unstoppable Brute",
+  "base_skill": "Unstoppable",
+  "morph_of": "unstoppable",
+  "morph_sibling": "immovable",
+  "class": "Armor",
+  "skill_line": "Heavy Armor",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/unstoppable-brute.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/heavy-armor/unstoppable-brute",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Unstoppable_Brute"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "banish-the-wicked",
+  "name": "Banish the Wicked",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Fighters Guild",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/banish-the-wicked.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/fighters-guild/banish-the-wicked",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Banish_the_Wicked"
+}

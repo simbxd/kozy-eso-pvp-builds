@@ -1,0 +1,15 @@
+{
+  "id": "dark-exchange",
+  "name": "Dark Exchange",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/dark-exchange.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/dark-exchange",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dark_Exchange"
+}

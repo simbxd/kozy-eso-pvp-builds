@@ -1,0 +1,15 @@
+{
+  "id": "trafficker",
+  "name": "Trafficker",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Legerdemain",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/trafficker.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/legerdemain/trafficker",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Trafficker"
+}

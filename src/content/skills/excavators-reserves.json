@@ -1,0 +1,15 @@
+{
+  "id": "excavators-reserves",
+  "name": "Excavator's Reserves",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "World",
+  "skill_line": "Excavation",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/excavators-reserves.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/excavation/excavators-reserves",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Excavator's_Reserves"
+}

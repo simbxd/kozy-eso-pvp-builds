@@ -1,0 +1,15 @@
+{
+  "id": "acid-spray",
+  "name": "Acid Spray",
+  "base_skill": "Arrow Spray",
+  "morph_of": "arrow-spray",
+  "morph_sibling": "bombard",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/acid-spray.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/acid-spray",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Acid_Spray"
+}

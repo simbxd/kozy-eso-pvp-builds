@@ -1,0 +1,15 @@
+{
+  "id": "adrenaline-rush",
+  "name": "Adrenaline Rush",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Redguard Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/adrenaline-rush.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/redguard-skills/adrenaline-rush",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Adrenaline_Rush"
+}

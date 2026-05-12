@@ -1,0 +1,15 @@
+{
+  "id": "magicka-detonation",
+  "name": "Magicka Detonation",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/magicka-detonation.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/magicka-detonation",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Magicka_Detonation"
+}

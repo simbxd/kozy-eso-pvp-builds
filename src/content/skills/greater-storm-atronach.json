@@ -1,0 +1,15 @@
+{
+  "id": "greater-storm-atronach",
+  "name": "Greater Storm Atronach",
+  "base_skill": "Summon Storm Atronach",
+  "morph_of": "summon-storm-atronach",
+  "morph_sibling": "summon-charged-atronach",
+  "class": "Sorcerer",
+  "skill_line": "Daedric Summoning",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/greater-storm-atronach.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/daedric-summoning/greater-storm-atronach",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Greater_Storm_Atronach"
+}

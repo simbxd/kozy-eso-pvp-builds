@@ -1,0 +1,15 @@
+{
+  "id": "hurricane",
+  "name": "Hurricane",
+  "base_skill": "Lightning Form",
+  "morph_of": "lightning-form",
+  "morph_sibling": "boundless-storm",
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/hurricane.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/hurricane",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hurricane"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "power-slam",
+  "name": "Power Slam",
+  "base_skill": "Power Bash",
+  "morph_of": "power-bash",
+  "morph_sibling": "reverberating-bash",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/power-slam.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/power-slam",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Power_Slam"
+}

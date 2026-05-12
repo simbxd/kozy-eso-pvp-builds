@@ -1,0 +1,15 @@
+{
+  "id": "shield-throw",
+  "name": "Shield Throw",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/shield-throw.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/shield-throw",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shield_Throw"
+}

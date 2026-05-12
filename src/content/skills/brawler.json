@@ -1,0 +1,15 @@
+{
+  "id": "brawler",
+  "name": "Brawler",
+  "base_skill": "Cleave",
+  "morph_of": "cleave",
+  "morph_sibling": "carve",
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/brawler.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/brawler",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Brawler"
+}

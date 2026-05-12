@@ -1,0 +1,15 @@
+{
+  "id": "fossilize",
+  "name": "Fossilize",
+  "base_skill": "Petrify",
+  "morph_of": "petrify",
+  "morph_sibling": "shattering-rocks",
+  "class": "Dragonknight",
+  "skill_line": "Earthen Heart",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/fossilize.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/earthen-heart/fossilize",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fossilize"
+}

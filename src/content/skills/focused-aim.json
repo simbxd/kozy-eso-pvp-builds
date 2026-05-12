@@ -1,0 +1,15 @@
+{
+  "id": "focused-aim",
+  "name": "Focused Aim",
+  "base_skill": "Snipe",
+  "morph_of": "snipe",
+  "morph_sibling": "lethal-arrow",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/focused-aim.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/focused-aim",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Focused_Aim"
+}

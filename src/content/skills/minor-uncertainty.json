@@ -1,0 +1,15 @@
+{
+  "id": "minor-uncertainty",
+  "name": "Minor Uncertainty",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/minor-uncertainty.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/minor-uncertainty",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Minor_Uncertainty"
+}

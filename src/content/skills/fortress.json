@@ -1,0 +1,15 @@
+{
+  "id": "fortress",
+  "name": "Fortress",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/fortress.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/fortress",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fortress"
+}

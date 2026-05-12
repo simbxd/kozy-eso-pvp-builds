@@ -1,0 +1,15 @@
+{
+  "id": "lingering-trample",
+  "name": "Lingering Trample",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/lingering-trample.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/lingering-trample",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lingering_Trample"
+}

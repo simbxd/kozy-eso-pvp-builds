@@ -1,0 +1,15 @@
+{
+  "id": "major-prophecy-and-savagery",
+  "name": "Major Prophecy and Savagery",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/major-prophecy-and-savagery.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/major-prophecy-and-savagery",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Major_Prophecy_and_Savagery"
+}

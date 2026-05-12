@@ -1,0 +1,15 @@
+{
+  "id": "bone-goliath-transformation",
+  "name": "Bone Goliath Transformation",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/bone-goliath-transformation.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/bone-goliath-transformation",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bone_Goliath_Transformation"
+}

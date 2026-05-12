@@ -1,0 +1,15 @@
+{
+  "id": "blood-craze",
+  "name": "Blood Craze",
+  "base_skill": "Twin Slashes",
+  "morph_of": "twin-slashes",
+  "morph_sibling": "rending-slashes",
+  "class": "Weapon",
+  "skill_line": "Dual Wield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/blood-craze.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/dual-wield/blood-craze",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Blood_Craze"
+}

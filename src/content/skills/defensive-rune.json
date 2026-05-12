@@ -1,0 +1,15 @@
+{
+  "id": "defensive-rune",
+  "name": "Defensive Rune",
+  "base_skill": "Rune Prison",
+  "morph_of": "rune-prison",
+  "morph_sibling": "rune-cage",
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/defensive-rune.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/defensive-rune",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Defensive_Rune"
+}

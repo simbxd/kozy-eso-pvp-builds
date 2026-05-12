@@ -1,0 +1,15 @@
+{
+  "id": "illustrious-healing",
+  "name": "Illustrious Healing",
+  "base_skill": "Grand Healing",
+  "morph_of": "grand-healing",
+  "morph_sibling": "healing-springs",
+  "class": "Weapon",
+  "skill_line": "Restoration Staff",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/illustrious-healing.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/restoration-staff/illustrious-healing",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Illustrious_Healing"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "power-overload",
+  "name": "Power Overload",
+  "base_skill": "Overload",
+  "morph_of": "overload",
+  "morph_sibling": "energy-overload",
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/power-overload.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/power-overload",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Power_Overload"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bound-armor",
+  "name": "Bound Armor",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Sorcerer",
+  "skill_line": "Daedric Summoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/bound-armor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/daedric-summoning/bound-armor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bound_Armor"
+}

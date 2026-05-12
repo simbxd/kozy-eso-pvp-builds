@@ -1,0 +1,15 @@
+{
+  "id": "dragonknights-banner",
+  "name": "Dragonknight's Banner",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/dragonknights-banner.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/dragonknights-banner",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dragonknight's_Banner"
+}

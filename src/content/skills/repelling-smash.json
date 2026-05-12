@@ -1,0 +1,15 @@
+{
+  "id": "repelling-smash",
+  "name": "Repelling Smash",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/repelling-smash.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/repelling-smash",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Repelling_Smash"
+}

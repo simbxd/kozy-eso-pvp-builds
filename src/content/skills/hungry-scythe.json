@@ -1,0 +1,15 @@
+{
+  "id": "hungry-scythe",
+  "name": "Hungry Scythe",
+  "base_skill": "Death Scythe",
+  "morph_of": "death-scythe",
+  "morph_sibling": "ruinous-scythe",
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/hungry-scythe.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/hungry-scythe",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hungry_Scythe"
+}

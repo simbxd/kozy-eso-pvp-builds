@@ -1,0 +1,15 @@
+{
+  "id": "daedric-prey",
+  "name": "Daedric Prey",
+  "base_skill": "Daedric Curse",
+  "morph_of": "daedric-curse",
+  "morph_sibling": "haunting-curse",
+  "class": "Sorcerer",
+  "skill_line": "Daedric Summoning",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/daedric-prey.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/daedric-summoning/daedric-prey",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Daedric_Prey"
+}

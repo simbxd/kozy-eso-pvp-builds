@@ -1,0 +1,15 @@
+{
+  "id": "aurora-javelin",
+  "name": "Aurora Javelin",
+  "base_skill": "Piercing Javelin",
+  "morph_of": "piercing-javelin",
+  "morph_sibling": "binding-javelin",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/aurora-javelin.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/aurora-javelin",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Aurora_Javelin"
+}

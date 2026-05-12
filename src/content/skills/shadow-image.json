@@ -1,0 +1,15 @@
+{
+  "id": "shadow-image",
+  "name": "Shadow Image",
+  "base_skill": "Summon Shade",
+  "morph_of": "summon-shade",
+  "morph_sibling": "dark-shade",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/shadow-image.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/shadow-image",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shadow_Image"
+}

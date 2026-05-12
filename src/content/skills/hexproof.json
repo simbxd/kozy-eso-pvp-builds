@@ -1,0 +1,15 @@
+{
+  "id": "hexproof",
+  "name": "Hexproof",
+  "base_skill": "Expunge",
+  "morph_of": "expunge",
+  "morph_sibling": "expunge-and-modify",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/hexproof.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/hexproof",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hexproof"
+}

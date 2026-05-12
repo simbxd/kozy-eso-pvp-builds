@@ -1,0 +1,15 @@
+{
+  "id": "overflowing-altar",
+  "name": "Overflowing Altar",
+  "base_skill": "Blood Altar",
+  "morph_of": "blood-altar",
+  "morph_sibling": "sanguine-altar",
+  "class": "Guild",
+  "skill_line": "Undaunted",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/overflowing-altar.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/undaunted/overflowing-altar",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Overflowing_Altar"
+}

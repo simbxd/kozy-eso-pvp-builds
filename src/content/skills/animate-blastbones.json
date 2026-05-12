@@ -1,0 +1,15 @@
+{
+  "id": "animate-blastbones",
+  "name": "Animate Blastbones",
+  "base_skill": "Reanimate",
+  "morph_of": "reanimate",
+  "morph_sibling": "renewing-animation",
+  "class": "Necromancer",
+  "skill_line": "Living Death",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/animate-blastbones.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/living-death/animate-blastbones",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Animate_Blastbones"
+}

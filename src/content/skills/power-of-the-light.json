@@ -1,0 +1,15 @@
+{
+  "id": "power-of-the-light",
+  "name": "Power of the Light",
+  "base_skill": "Backlash",
+  "morph_of": "backlash",
+  "morph_sibling": "purifying-light",
+  "class": "Templar",
+  "skill_line": "Dawn's Wrath",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/power-of-the-light.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/dawns-wrath/power-of-the-light",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Power_of_the_Light"
+}

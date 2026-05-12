@@ -1,0 +1,15 @@
+{
+  "id": "suppression-field",
+  "name": "Suppression Field",
+  "base_skill": "Negate Magic",
+  "morph_of": "negate-magic",
+  "morph_sibling": "absorption-field",
+  "class": "Sorcerer",
+  "skill_line": "Dark Magic",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/suppression-field.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/dark-magic/suppression-field",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Suppression_Field"
+}

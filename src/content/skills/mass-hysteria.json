@@ -1,0 +1,15 @@
+{
+  "id": "mass-hysteria",
+  "name": "Mass Hysteria",
+  "base_skill": "Aspect of Terror",
+  "morph_of": "aspect-of-terror",
+  "morph_sibling": "manifestation-of-terror",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/mass-hysteria.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/mass-hysteria",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mass_Hysteria"
+}

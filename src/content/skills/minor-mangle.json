@@ -1,0 +1,15 @@
+{
+  "id": "minor-mangle",
+  "name": "Minor Mangle",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/minor-mangle.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/minor-mangle",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Minor_Mangle"
+}

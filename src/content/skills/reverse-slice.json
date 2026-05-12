@@ -1,0 +1,15 @@
+{
+  "id": "reverse-slice",
+  "name": "Reverse Slice",
+  "base_skill": "Reverse Slash",
+  "morph_of": "reverse-slash",
+  "morph_sibling": "executioner",
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/reverse-slice.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/reverse-slice",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Reverse_Slice"
+}

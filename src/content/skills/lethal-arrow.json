@@ -1,0 +1,15 @@
+{
+  "id": "lethal-arrow",
+  "name": "Lethal Arrow",
+  "base_skill": "Snipe",
+  "morph_of": "snipe",
+  "morph_sibling": "focused-aim",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/lethal-arrow.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/lethal-arrow",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lethal_Arrow"
+}

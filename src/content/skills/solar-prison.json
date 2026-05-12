@@ -1,0 +1,15 @@
+{
+  "id": "solar-prison",
+  "name": "Solar Prison",
+  "base_skill": "Nova",
+  "morph_of": "nova",
+  "morph_sibling": "solar-disturbance",
+  "class": "Templar",
+  "skill_line": "Dawn's Wrath",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/solar-prison.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/dawns-wrath/solar-prison",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Solar_Prison"
+}

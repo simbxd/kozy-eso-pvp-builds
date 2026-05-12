@@ -1,0 +1,15 @@
+{
+  "id": "resourceful",
+  "name": "Resourceful",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Argonian Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/resourceful.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/argonian-skills/resourceful",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Resourceful"
+}

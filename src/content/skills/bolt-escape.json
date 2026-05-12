@@ -1,0 +1,15 @@
+{
+  "id": "bolt-escape",
+  "name": "Bolt Escape",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/bolt-escape.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/bolt-escape",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bolt_Escape"
+}

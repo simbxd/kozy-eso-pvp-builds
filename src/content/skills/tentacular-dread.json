@@ -1,0 +1,15 @@
+{
+  "id": "tentacular-dread",
+  "name": "Tentacular Dread",
+  "base_skill": "Abyssal Impact",
+  "morph_of": "abyssal-impact",
+  "morph_sibling": "cephaliarchs-flail",
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/tentacular-dread.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/tentacular-dread",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Tentacular_Dread"
+}

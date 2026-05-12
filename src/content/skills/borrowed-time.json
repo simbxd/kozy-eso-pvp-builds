@@ -1,0 +1,15 @@
+{
+  "id": "borrowed-time",
+  "name": "Borrowed Time",
+  "base_skill": "Time Stop",
+  "morph_of": "time-stop",
+  "morph_sibling": "time-freeze",
+  "class": "Guild",
+  "skill_line": "Psijic Order",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/borrowed-time.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/psijic-order/borrowed-time",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Borrowed_Time"
+}

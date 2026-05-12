@@ -1,0 +1,15 @@
+{
+  "id": "shield-discipline",
+  "name": "Shield Discipline",
+  "base_skill": "Shield Wall",
+  "morph_of": "shield-wall",
+  "morph_sibling": "spell-wall",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/shield-discipline.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/shield-discipline",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shield_Discipline"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "searing-claw",
+  "name": "Searing Claw",
+  "base_skill": "Searing Strike",
+  "morph_of": "searing-strike",
+  "morph_sibling": "burning-embers",
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/searing-claw.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/searing-claw",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Searing_Claw"
+}

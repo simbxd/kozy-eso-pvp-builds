@@ -1,0 +1,15 @@
+{
+  "id": "veil-of-blades",
+  "name": "Veil of Blades",
+  "base_skill": "Consuming Darkness",
+  "morph_of": "consuming-darkness",
+  "morph_sibling": "bolstering-darkness",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/veil-of-blades.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/veil-of-blades",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Veil_of_Blades"
+}

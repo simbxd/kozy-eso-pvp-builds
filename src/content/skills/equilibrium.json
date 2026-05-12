@@ -1,0 +1,15 @@
+{
+  "id": "equilibrium",
+  "name": "Equilibrium",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Guild",
+  "skill_line": "Mages Guild",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/equilibrium.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/mages-guild/equilibrium",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Equilibrium"
+}

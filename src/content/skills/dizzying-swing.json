@@ -1,0 +1,15 @@
+{
+  "id": "dizzying-swing",
+  "name": "Dizzying Swing",
+  "base_skill": "Uppercut",
+  "morph_of": "uppercut",
+  "morph_sibling": "wrecking-blow",
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/dizzying-swing.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/dizzying-swing",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dizzying_Swing"
+}

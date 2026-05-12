@@ -1,0 +1,15 @@
+{
+  "id": "templars-throw",
+  "name": "Templar's Throw",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/templars-throw.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/templars-throw",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Templar's_Throw"
+}

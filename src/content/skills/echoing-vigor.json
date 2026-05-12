@@ -1,0 +1,15 @@
+{
+  "id": "echoing-vigor",
+  "name": "Echoing Vigor",
+  "base_skill": "Vigor",
+  "morph_of": "vigor",
+  "morph_sibling": "resolving-vigor",
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/echoing-vigor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/echoing-vigor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Echoing_Vigor"
+}

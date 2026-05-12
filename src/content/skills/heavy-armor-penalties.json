@@ -1,0 +1,15 @@
+{
+  "id": "heavy-armor-penalties",
+  "name": "Heavy Armor Penalties",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Armor",
+  "skill_line": "Heavy Armor",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/heavy-armor-penalties.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/armor/heavy-armor/heavy-armor-penalties",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Heavy_Armor_Penalties"
+}

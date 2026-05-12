@@ -1,0 +1,15 @@
+{
+  "id": "continuous-attack",
+  "name": "Continuous Attack",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Alliance War",
+  "skill_line": "Assault",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/continuous-attack.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/assault/continuous-attack",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Continuous_Attack"
+}

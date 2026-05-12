@@ -1,0 +1,15 @@
+{
+  "id": "invasion",
+  "name": "Invasion",
+  "base_skill": "Shield Charge",
+  "morph_of": "shield-charge",
+  "morph_sibling": "shielded-assault",
+  "class": "Weapon",
+  "skill_line": "One Hand and Shield",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/invasion.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/one-hand-and-shield/invasion",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Invasion"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bull-netch",
+  "name": "Bull Netch",
+  "base_skill": "Betty Netch",
+  "morph_of": "betty-netch",
+  "morph_sibling": "blue-betty",
+  "class": "Warden",
+  "skill_line": "Animal Companions",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/bull-netch.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/animal-companions/bull-netch",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bull_Netch"
+}

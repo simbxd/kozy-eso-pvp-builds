@@ -1,0 +1,15 @@
+{
+  "id": "relentless-focus",
+  "name": "Relentless Focus",
+  "base_skill": "Grim Focus",
+  "morph_of": "grim-focus",
+  "morph_sibling": "merciless-resolve",
+  "class": "Nightblade",
+  "skill_line": "Assassination",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/relentless-focus.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/assassination/relentless-focus",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Relentless_Focus"
+}

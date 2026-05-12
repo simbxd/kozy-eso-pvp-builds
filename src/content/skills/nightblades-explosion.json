@@ -1,0 +1,15 @@
+{
+  "id": "nightblades-explosion",
+  "name": "Nightblade's Explosion",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Destruction Staff",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/nightblades-explosion.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/destruction-staff/nightblades-explosion",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nightblade's_Explosion"
+}

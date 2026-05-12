@@ -1,0 +1,15 @@
+{
+  "id": "venom-arrow",
+  "name": "Venom Arrow",
+  "base_skill": "Poison Arrow",
+  "morph_of": "poison-arrow",
+  "morph_sibling": "poison-injection",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/venom-arrow.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/venom-arrow",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Venom_Arrow"
+}

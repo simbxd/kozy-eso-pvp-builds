@@ -1,0 +1,15 @@
+{
+  "id": "soul-siphon",
+  "name": "Soul Siphon",
+  "base_skill": "Soul Shred",
+  "morph_of": "soul-shred",
+  "morph_sibling": "soul-tether",
+  "class": "Nightblade",
+  "skill_line": "Siphoning",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/soul-siphon.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/siphoning/soul-siphon",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Soul_Siphon"
+}

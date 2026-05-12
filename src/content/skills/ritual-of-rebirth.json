@@ -1,0 +1,15 @@
+{
+  "id": "ritual-of-rebirth",
+  "name": "Ritual of Rebirth",
+  "base_skill": "Healing Ritual",
+  "morph_of": "healing-ritual",
+  "morph_sibling": "hasty-prayer",
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/ritual-of-rebirth.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/ritual-of-rebirth",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ritual_of_Rebirth"
+}

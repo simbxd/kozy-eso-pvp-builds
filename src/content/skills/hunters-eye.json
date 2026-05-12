@@ -1,0 +1,15 @@
+{
+  "id": "hunters-eye",
+  "name": "Hunter's Eye",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Wood Elf Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/hunters-eye.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/wood-elf-skills/hunters-eye",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hunter's_Eye"
+}

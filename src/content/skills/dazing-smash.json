@@ -1,0 +1,15 @@
+{
+  "id": "dazing-smash",
+  "name": "Dazing Smash",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/dazing-smash.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/dazing-smash",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dazing_Smash"
+}

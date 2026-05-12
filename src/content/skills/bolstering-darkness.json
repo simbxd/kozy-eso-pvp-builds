@@ -1,0 +1,15 @@
+{
+  "id": "bolstering-darkness",
+  "name": "Bolstering Darkness",
+  "base_skill": "Consuming Darkness",
+  "morph_of": "consuming-darkness",
+  "morph_sibling": "veil-of-blades",
+  "class": "Nightblade",
+  "skill_line": "Shadow",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/bolstering-darkness.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/nightblade/shadow/bolstering-darkness",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bolstering_Darkness"
+}

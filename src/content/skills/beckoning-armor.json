@@ -1,0 +1,15 @@
+{
+  "id": "beckoning-armor",
+  "name": "Beckoning Armor",
+  "base_skill": "Bone Armor",
+  "morph_of": "bone-armor",
+  "morph_sibling": "summoners-armor",
+  "class": "Necromancer",
+  "skill_line": "Bone Tyrant",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/beckoning-armor.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/necromancer/bone-tyrant/beckoning-armor",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Beckoning_Armor"
+}

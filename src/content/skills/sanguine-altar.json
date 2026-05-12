@@ -1,0 +1,15 @@
+{
+  "id": "sanguine-altar",
+  "name": "Sanguine Altar",
+  "base_skill": "Blood Altar",
+  "morph_of": "blood-altar",
+  "morph_sibling": "overflowing-altar",
+  "class": "Guild",
+  "skill_line": "Undaunted",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/sanguine-altar.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/undaunted/sanguine-altar",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sanguine_Altar"
+}

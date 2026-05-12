@@ -1,0 +1,15 @@
+{
+  "id": "sacred-ground",
+  "name": "Sacred Ground",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Templar",
+  "skill_line": "Restoring Light",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/sacred-ground.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/restoring-light/sacred-ground",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Sacred_Ground"
+}

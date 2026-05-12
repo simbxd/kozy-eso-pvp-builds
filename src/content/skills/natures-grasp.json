@@ -1,0 +1,15 @@
+{
+  "id": "natures-grasp",
+  "name": "Nature's Grasp",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Warden",
+  "skill_line": "Green Balance",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/natures-grasp.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/green-balance/natures-grasp",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nature's_Grasp"
+}

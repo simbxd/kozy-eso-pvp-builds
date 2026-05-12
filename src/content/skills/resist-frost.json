@@ -1,0 +1,15 @@
+{
+  "id": "resist-frost",
+  "name": "Resist Frost",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Nord Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/resist-frost.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/nord-skills/resist-frost",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Resist_Frost"
+}

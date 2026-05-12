@@ -1,0 +1,15 @@
+{
+  "id": "forward-momentum",
+  "name": "Forward Momentum",
+  "base_skill": "Momentum",
+  "morph_of": "momentum",
+  "morph_sibling": "rally",
+  "class": "Weapon",
+  "skill_line": "Two Handed",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/forward-momentum.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/two-handed/forward-momentum",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Forward_Momentum"
+}

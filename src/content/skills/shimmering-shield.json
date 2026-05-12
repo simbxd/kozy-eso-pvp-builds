@@ -1,0 +1,15 @@
+{
+  "id": "shimmering-shield",
+  "name": "Shimmering Shield",
+  "base_skill": "Crystallized Shield",
+  "morph_of": "crystallized-shield",
+  "morph_sibling": "crystallized-slab",
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/shimmering-shield.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/shimmering-shield",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shimmering_Shield"
+}

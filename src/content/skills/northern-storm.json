@@ -1,0 +1,15 @@
+{
+  "id": "northern-storm",
+  "name": "Northern Storm",
+  "base_skill": "Sleet Storm",
+  "morph_of": "sleet-storm",
+  "morph_sibling": "permafrost",
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/northern-storm.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/northern-storm",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Northern_Storm"
+}

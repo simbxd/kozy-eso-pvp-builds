@@ -1,0 +1,15 @@
+{
+  "id": "inner-rage",
+  "name": "Inner Rage",
+  "base_skill": "Inner Fire",
+  "morph_of": "inner-fire",
+  "morph_sibling": "inner-beast",
+  "class": "Guild",
+  "skill_line": "Undaunted",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/inner-rage.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/guild/undaunted/inner-rage",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Inner_Rage"
+}

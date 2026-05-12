@@ -1,0 +1,15 @@
+{
+  "id": "lunar-blessings",
+  "name": "Lunar Blessings",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Racial",
+  "skill_line": "Khajiit Skills",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/lunar-blessings.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/racial/khajiit-skills/lunar-blessings",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Lunar_Blessings"
+}

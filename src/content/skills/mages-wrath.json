@@ -1,0 +1,15 @@
+{
+  "id": "mages-wrath",
+  "name": "Mages' Wrath",
+  "base_skill": "Mages' Fury",
+  "morph_of": "mages-fury",
+  "morph_sibling": "endless-fury",
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/mages-wrath.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/mages-wrath",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Mages'_Wrath"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bombard",
+  "name": "Bombard",
+  "base_skill": "Arrow Spray",
+  "morph_of": "arrow-spray",
+  "morph_sibling": "acid-spray",
+  "class": "Weapon",
+  "skill_line": "Bow",
+  "type": "Active",
+  "resource": "Stamina",
+  "icon": "/assets/skills/bombard.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/weapon/bow/bombard",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bombard"
+}

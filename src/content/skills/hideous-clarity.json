@@ -1,0 +1,15 @@
+{
+  "id": "hideous-clarity",
+  "name": "Hideous Clarity",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Arcanist",
+  "skill_line": "Curative Runeforms",
+  "type": "Passive",
+  "resource": "None",
+  "icon": "/assets/skills/hideous-clarity.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/curative-runeforms/hideous-clarity",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Hideous_Clarity"
+}

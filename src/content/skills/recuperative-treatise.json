@@ -1,0 +1,15 @@
+{
+  "id": "recuperative-treatise",
+  "name": "Recuperative Treatise",
+  "base_skill": "Tome-Bearer's Inspiration",
+  "morph_of": "tome-bearers-inspiration",
+  "morph_sibling": "inspired-scholarship",
+  "class": "Arcanist",
+  "skill_line": "Herald of the Tome",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/recuperative-treatise.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/arcanist/herald-of-the-tome/recuperative-treatise",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Recuperative_Treatise"
+}

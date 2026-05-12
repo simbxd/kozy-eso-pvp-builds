@@ -1,0 +1,15 @@
+{
+  "id": "surge",
+  "name": "Surge",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Sorcerer",
+  "skill_line": "Storm Calling",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/surge.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/sorcerer/storm-calling/surge",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Surge"
+}

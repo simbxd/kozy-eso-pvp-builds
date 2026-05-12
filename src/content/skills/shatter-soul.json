@@ -1,0 +1,15 @@
+{
+  "id": "shatter-soul",
+  "name": "Shatter Soul",
+  "base_skill": "Soul Strike",
+  "morph_of": "soul-strike",
+  "morph_sibling": "soul-assault",
+  "class": "World",
+  "skill_line": "Soul Magic",
+  "type": "Active",
+  "resource": "None",
+  "icon": "/assets/skills/shatter-soul.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/world/soul-magic/shatter-soul",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Shatter_Soul"
+}

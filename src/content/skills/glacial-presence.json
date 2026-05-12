@@ -1,0 +1,15 @@
+{
+  "id": "glacial-presence",
+  "name": "Glacial Presence",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Warden",
+  "skill_line": "Winter's Embrace",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/glacial-presence.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/warden/winters-embrace/glacial-presence",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glacial_Presence"
+}

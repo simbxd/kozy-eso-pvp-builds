@@ -1,0 +1,15 @@
+{
+  "id": "toppling-charge",
+  "name": "Toppling Charge",
+  "base_skill": "Focused Charge",
+  "morph_of": "focused-charge",
+  "morph_sibling": "explosive-charge",
+  "class": "Templar",
+  "skill_line": "Aedric Spear",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/toppling-charge.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/templar/aedric-spear/toppling-charge",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Toppling_Charge"
+}

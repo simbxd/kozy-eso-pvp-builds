@@ -1,0 +1,15 @@
+{
+  "id": "efficient-purge",
+  "name": "Efficient Purge",
+  "base_skill": "Purge",
+  "morph_of": "purge",
+  "morph_sibling": "cleanse",
+  "class": "Alliance War",
+  "skill_line": "Support",
+  "type": "Active",
+  "resource": "Magicka",
+  "icon": "/assets/skills/efficient-purge.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/alliance-war/support/efficient-purge",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Efficient_Purge"
+}

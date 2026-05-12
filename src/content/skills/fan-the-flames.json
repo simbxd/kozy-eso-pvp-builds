@@ -1,0 +1,15 @@
+{
+  "id": "fan-the-flames",
+  "name": "Fan the Flames",
+  "base_skill": null,
+  "morph_of": null,
+  "morph_sibling": null,
+  "class": "Dragonknight",
+  "skill_line": "Ardent Flame",
+  "type": "Passive",
+  "resource": "Magicka",
+  "icon": "/assets/skills/fan-the-flames.png",
+  "patch_verified": "U49",
+  "esohub_url": "https://eso-hub.com/en/skills/dragonknight/ardent-flame/fan-the-flames",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Fan_the_Flames"
+}
