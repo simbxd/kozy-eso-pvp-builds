@@ -17,6 +17,7 @@
 | v6.0 | M3 terminé ; page 404 custom ; contraste text-muted #6b6585 → #7d77a0 (WCAG AA) ; preconnect Google Fonts ; SkillBar tooltips accessibles au clavier (tabindex + :focus-within) |
 | v7.0 | Stats/Champion Points/Consumables sur les pages de build ; dropdown nav CSS-only avec 7 classes + Subclass ; index Builds avec pills et compteurs ; 6 builds placeholder ; "Articles" renommé "Guides" (collection, pages, layout, nav, RSS) ; 2 nouveaux guides (crit res/dmg) ; Google Fonts @import → link tag (Lighthouse 89→99) ; correction liens cassés homepage + 404 |
 | v8.0 | M4 terminé : Decap CMS configuré (`/public/admin/`) ; OAuth proxy GitHub déployé sur Cloudflare Workers (`kozy-eso-oauth.simbad14100.workers.dev`) ; workflow éditorial Draft→Ready→Publish via branches PR GitHub ; Cloudflare Access Zero Trust configuré pour `/admin` (activation complète sur domaine custom) ; bugfixes TypeScript : `updatedAt` accepte `string\|Date`, champs `note/target/stats/food.alt/mundus` rendus optionnels |
+| v9.0 | M5 terminé : `morph_rationale` généré et audité pour les 389 skills morph du jeu — classes, weapon, guild, armor, Alliance War, World (Vampire/Werewolf/Soul Magic) ; script `gen-morph-rationale.mjs` créé (UESP API + regex) ; 3 scripts de correction batch (214 corrections) ; audit intégrité : `morph_sibling` corrigé sur `quick-cloak` et `reverse-slice` ; classe `Armor` ajoutée au scope du générateur |
 
 ---
 
@@ -438,6 +439,25 @@ Tasks:
 
 ---
 
+### ✅ Milestone 5 — Skills Data Completeness
+**Goal:** Tous les skills morph du jeu ont un `morph_rationale` précis, mécanique et différenciant.
+**Completed:** 2026-05-13
+
+Tasks:
+- [x] Créer `scripts/gen-morph-rationale.mjs` — génération automatique via UESP `exportJson.php?table=playerSkills` + regex patterns (buff nommés, CC, AoE, DoT, Stamina/Magicka, Summon)
+- [x] Générer les rationales pour 375 skills (classes, weapon, guild)
+- [x] Ajouter la classe `Armor` au `TARGET_CLASSES` du générateur — 6 skills Armor couverts
+- [x] Audit multi-passes : doublon exacts, mauvais labels ressource, textes vagues "increasing your effectiveness", fallbacks "Offensive morph" incorrects
+- [x] Script `fix-morph-rationale.mjs` — 64 corrections (labels erronés, fallbacks génériques, skills non-dommage mal catégorisés)
+- [x] Script `fix-morph-rationale-2.mjs` — 103 corrections (paires miroir identiques, doublons exacts)
+- [x] Script `fix-morph-rationale-3.mjs` — 47 corrections (Alliance War, World/Vampire/Werewolf/Soul Magic)
+- [x] Intégrité `morph_sibling` : `quick-cloak` sibling manquant ajouté, `reverse-slice` référence cassée nullifiée
+- [x] 0 morph sans rationale, 0 doublon exact, 0 texte vague en fin d'audit
+
+Deliverable: Base de données skills complète — chaque morph explique sa mécanique clé et sa justification vs son sibling ✅
+
+---
+
 ### ✅ Milestone 4 — Contributor Support
 **Goal:** Allow occasional guest contributors without technical knowledge.
 
@@ -537,6 +557,20 @@ Décisions prises pendant le développement, hors roadmap initiale.
 **Raison :** Permettre de visualiser le rendu de l'index et des pages de classe avant que les vrais builds soient rédigés.
 **À faire :** Remplacer par de vrais builds avant tout lancement public.
 
+### Génération automatique des morph_rationale (M5)
+**Décision :** Création de `scripts/gen-morph-rationale.mjs` pour générer les `morph_rationale` en masse via l'API UESP, plutôt que de les écrire à la main skill par skill.
+**Raison :** 389 morphs à couvrir — l'écriture manuelle aurait été prohibitive.
+**Fonctionnement :** Fetch de `esolog.uesp.net/exportJson.php?table=playerSkills`, matching par `name::skillLine`, puis passage dans un pipeline de règles regex ordonnées (conversion ressource → buffs nommés → CC → AoE → DoT → summon → fallback).
+**Limites identifiées :** 5 causes d'erreurs systématiques — regex `summon` déclenchant sur des skills non-companion, détection buff avant conversion ressource, paires de siblings avec le même pattern → texte identique, fallback "increasing your effectiveness" sur buffs non mappés, fallback "Offensive morph" sur des skills non-offensifs.
+**Résolution :** 3 scripts de corrections batch (`fix-morph-rationale.mjs`, `-2.mjs`, `-3.mjs`) couvrant 214 corrections au total.
+
+### Audit intégrité morph_sibling (M5)
+**Décision :** Vérification systématique de la cohérence des champs `morph_sibling` sur l'ensemble des 389 morphs.
+**Découvertes :**
+- `quick-cloak` : sibling `deadly-cloak` manquant (référence unidirectionnelle) → ajouté
+- `reverse-slice` : `morph_sibling: "executioner"` pointait vers le passif Nightblade (collision de slug) et non vers le morph Two-Handed → nullifié
+**Résultat :** 0 référence cassée ou asymétrique restante.
+
 ### Renommage Articles → Guides (M3+)
 **Décision :** La section "Articles" devient "Guides" partout (collection, layout, pages, nav, RSS, homepage, 404).
 **Raison :** "Guides" est plus précis pour le contenu prévu (mécaniques, breakdowns, théorie PvP).
@@ -611,6 +645,6 @@ Pour chaque décision non triviale, expliquer le *pourquoi*. L'auteur doit compr
 
 ---
 
-*Document version: 7.0*
-*Last updated by: Claude Code — après session 4 (2026-05-11)*
-*Next update: Claude Code, après Milestone 4*
+*Document version: 9.0*
+*Last updated by: Claude Code — après session 5 (2026-05-13)*
+*Next update: Claude Code, après création de nouveaux builds*

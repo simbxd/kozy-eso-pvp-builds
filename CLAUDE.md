@@ -196,8 +196,8 @@ Types : `Active | Passive | Ultimate`
 
 ## État du projet
 
-**Dernière session :** 2026-05-12
-**Milestone actuel :** Polish SUPERSTAR — template canonique avant de créer d'autres builds
+**Dernière session :** 2026-05-13
+**Milestone actuel :** M5 terminé — données skills complètes, prêt pour la création de nouveaux builds
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -205,13 +205,14 @@ Types : `Active | Passive | Ultimate`
 - ✅ M2 — Composants (SetCard, SkillBar, icônes UESP)
 - ✅ M3 — Polish & SEO (404, contraste WCAG, TOC sticky, Lighthouse 99)
 - ✅ M4 — Decap CMS (`/admin`, OAuth proxy Worker, workflow Draft→Publish, Cloudflare Access)
+- ✅ M5 — Données skills complètes (389 morphs avec `morph_rationale`, audit intégrité)
 
 ### Contenu publié
 - **1 build :** SUPERSTAR (MagDK PvP) — seul build complet, sert de template
 - **2 guides :** Penetration Caps Explained · Critical Resistance & Critical Damage in PvP
 - **6 builds placeholder :** Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist (à remplacer avant lancement public)
 - **5 sets :** Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee
-- **14 skills :** tous les skills du build SUPERSTAR + quelques anciens (icônes PNG depuis UESP)
+- **389 morphs skills** avec `morph_rationale` complet — toutes classes, Alliance War, World (Vampire/Werewolf/Soul Magic)
 
 ### Decap CMS
 - Panel : `https://kozy-eso-pvp-builds.simbad14100.workers.dev/admin/`
@@ -219,5 +220,14 @@ Types : `Active | Passive | Ultimate`
 - Auth : GitHub login → branche PR créée à chaque "Save Draft", merge auto à "Publish"
 - Protection `/admin` : Cloudflare Access (email/OTP) — activation complète sur domaine custom
 
+### Scripts disponibles
+| Script | Rôle |
+|---|---|
+| `scripts/fetch-skill-icons.mjs` | Télécharge les icônes PNG depuis UESP MediaWiki |
+| `scripts/gen-morph-rationale.mjs` | Génère les `morph_rationale` manquants via UESP API (classe/weapon/guild/armor) |
+| `scripts/fix-morph-rationale.mjs` | Corrections batch #1 — 64 rationales (mauvais labels, fallbacks vagues) |
+| `scripts/fix-morph-rationale-2.mjs` | Corrections batch #2 — 103 rationales (paires miroir, doublons exacts) |
+| `scripts/fix-morph-rationale-3.mjs` | Corrections batch #3 — 47 rationales (Alliance War, World/Vampire/Werewolf) |
+
 ### Prochaine étape
-Peaufiner **SUPERSTAR** comme template canonique, puis tester un cycle complet Decap (Draft → Publish).
+Peaufiner **SUPERSTAR** comme template canonique, puis commencer la rédaction de nouveaux builds.
