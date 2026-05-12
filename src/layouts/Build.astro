@@ -79,9 +79,10 @@ interface Props {
     fitness: CPStar[];
   };
   consumables?: {
-    food:    { name: string; stats: string; note: string; alt: string };
+    food:    { name: string; stats: string; note: string; alt?: string };
     potion:  { name: string; ingredients: string[]; note: string };
     poison?: { name: string; note: string };
+    mundus?: { stone: string; effect: string; note: string; alt?: { stone: string; effect: string; note: string } };
   };
 }
 

@@ -25,3 +25,9 @@ pnpm-debug.log*
 
 # Cloudflare Pages local cache
 .wrangler
+
+# Claude Code local settings
+.claude/
+
+# Netlify local cache
+.netlify/

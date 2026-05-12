@@ -1,5 +1,5 @@
 # Kozy ESO PvP Builds — Project Roadmap
-**For Claude Code | Version 6.0**
+**For Claude Code | Version 8.0**
 **Owner:** Kozy | **Developer:** Claude Code
 **Note:** This is both a real project and a learning experience for the owner. Claude Code must explain its decisions, not just execute them. Each task is an opportunity to build understanding.
 
@@ -16,6 +16,7 @@
 | v5.0 | M2 terminé ; SetCard + SkillBar construits ; icônes auto-téléchargées via UESP API ; morphs vérifiés et corrigés ; vigor → resolving-vigor ; data integrity check ; workflow post-patch documenté |
 | v6.0 | M3 terminé ; page 404 custom ; contraste text-muted #6b6585 → #7d77a0 (WCAG AA) ; preconnect Google Fonts ; SkillBar tooltips accessibles au clavier (tabindex + :focus-within) |
 | v7.0 | Stats/Champion Points/Consumables sur les pages de build ; dropdown nav CSS-only avec 7 classes + Subclass ; index Builds avec pills et compteurs ; 6 builds placeholder ; "Articles" renommé "Guides" (collection, pages, layout, nav, RSS) ; 2 nouveaux guides (crit res/dmg) ; Google Fonts @import → link tag (Lighthouse 89→99) ; correction liens cassés homepage + 404 |
+| v8.0 | M4 terminé : Decap CMS configuré (`/public/admin/`) ; OAuth proxy GitHub déployé sur Cloudflare Workers (`kozy-eso-oauth.simbad14100.workers.dev`) ; workflow éditorial Draft→Ready→Publish via branches PR GitHub ; Cloudflare Access Zero Trust configuré pour `/admin` (activation complète sur domaine custom) ; bugfixes TypeScript : `updatedAt` accepte `string\|Date`, champs `note/target/stats/food.alt/mundus` rendus optionnels |
 
 ---
 
@@ -437,14 +438,20 @@ Tasks:
 
 ---
 
-### 🔲 Milestone 4 — Contributor Support (deferred)
+### ✅ Milestone 4 — Contributor Support
 **Goal:** Allow occasional guest contributors without technical knowledge.
 
-Options à évaluer :
-- Decap CMS (web UI Git-based pour Markdown)
-- GitHub web editor workflow avec conventions documentées
+**Solution choisie : Decap CMS** (web UI Git-based pour Markdown)
 
-Tasks: TBD.
+- [x] `/public/admin/index.html` — panneau admin Decap CMS
+- [x] `/public/admin/config.yml` — configuration CMS (collections builds + guides, workflow éditorial)
+- [x] OAuth proxy déployé sur Cloudflare Workers (`kozy-eso-oauth.simbad14100.workers.dev`) — authentification GitHub
+- [x] `wrangler.toml` créé pour le déploiement du Worker
+- [x] Workflow éditorial activé : **Draft → Ready → Publish** (branches PR GitHub automatiques)
+- [x] Cloudflare Access (Zero Trust) configuré pour protéger `/admin` par email/OTP
+  - ⚠️ Activation complète sur domaine custom uniquement (pas disponible sur `*.workers.dev`)
+
+**État :** Fonctionnel — Save Draft crée une branche PR, Publish merge → déploiement automatique.
 
 ---
 

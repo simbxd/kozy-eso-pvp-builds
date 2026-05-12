@@ -26,10 +26,10 @@ Site statique dédié aux builds PvP ESO. Builds optimisés, guides de rotation,
 | Tailwind CSS v4 | Styles (tokens via `@theme` dans global.css) |
 | Astro Content Layer | Collections Markdown + JSON avec validation Zod |
 | `@astrojs/sitemap` | Génération automatique du sitemap |
-| `@astrojs/rss` | Flux RSS des articles |
+| `@astrojs/rss` | Flux RSS |
 | `sharp` | Conversion SVG → PNG pour les images OG |
-| Cloudflare Workers | Hébergement + CD depuis GitHub (via `wrangler` / dashboard) |
-| Cloudflare Worker proxy | `eso-status-proxy.simbad14100.workers.dev` — relay CORS pour le statut des serveurs ESO |
+| Cloudflare Workers | Hébergement + CD depuis GitHub |
+| Cloudflare Worker proxy | `eso-status-proxy.simbad14100.workers.dev` — relay CORS statut serveurs ESO |
 | Git / GitHub | Contrôle de version |
 
 ---
@@ -59,7 +59,7 @@ Site statique dédié aux builds PvP ESO. Builds optimisés, guides de rotation,
 - **Display/Titres :** Cormorant Garamond (serif)
 - **Corps :** Crimson Pro (serif)
 - **Stats/Code :** JetBrains Mono
-- **Chargement :** Google Fonts via `<link rel="stylesheet">` dans `Base.astro` (preconnect + stylesheet, plus de `@import` CSS)
+- **Chargement :** Google Fonts via `<link rel="stylesheet">` dans `Base.astro` (preconnect + stylesheet — pas de `@import` CSS, render-blocking)
 
 ---
 
@@ -73,25 +73,30 @@ src/
 │   ├── sets/            ← Fichiers .json (un par set ESO)
 │   └── skills/          ← Fichiers .json (un par skill ESO)
 ├── components/
-│   ├── Header.astro
+│   ├── Header.astro     ← Nav + dropdown classes + statut serveurs ESO
 │   ├── Footer.astro
 │   ├── BuildCard.astro  ← Carte pour l'index des builds
 │   ├── Callout.astro    ← Annotations (formula/note/warning)
 │   ├── SetCard.astro    ← Carte d'un set ESO avec bonus et liens
-│   └── SkillBar.astro   ← Double barre de skills avec icônes et tooltip morph
+│   ├── SkillBar.astro   ← Double barre de skills avec icônes et tooltip morph
+│   ├── StatBlock.astro  ← 3 cartes HP/Mag/Sta
+│   ├── ChampionPoints.astro
+│   └── Consumables.astro
 ├── layouts/
 │   ├── Base.astro       ← Layout universel (SEO, OG, a11y)
-│   ├── Build.astro      ← Layout page de build
+│   ├── Build.astro      ← Layout page de build (masthead → TOC → sections)
 │   └── Guide.astro      ← Layout page de guide
 ├── pages/
 │   ├── index.astro
 │   ├── builds/
-│   │   ├── index.astro
-│   │   ├── [slug].astro
-│   │   └── class/[class].astro
+│   │   ├── index.astro           ← Pills par classe + compteurs
+│   │   ├── [slug].astro          ← Résolution IDs + assertIds()
+│   │   ├── class/[class].astro   ← Filtrage statique par classe
+│   │   └── subclass/index.astro  ← Placeholder
 │   ├── guides/
 │   │   ├── index.astro
 │   │   └── [slug].astro
+│   ├── 404.astro
 │   └── rss.xml.ts
 ├── styles/
 │   └── global.css
@@ -113,11 +118,10 @@ scripts/
 ### Build (`src/content/builds/*.md`)
 Champs obligatoires : `title`, `class`, `role`, `resource`, `gamemode`, `patch`, `difficulty`, `featured`, `sets[]`, `skills.bar1[]`, `skills.bar2[]`, `summary`
 
+Champs optionnels : `updatedAt`, `pullquote`, `og_image`, `gear{}`, `stats{}`, `champion_points{}`, `consumables{}`
+
 Classes valides : `Dragonknight | Sorcerer | Nightblade | Templar | Warden | Necromancer | Arcanist`
-Rôles : `DPS | Healer | Tank`
-Resources : `Stamina | Magicka | Hybrid`
-Gamemodes : `PvP | PvE | Both`
-Difficultés : `Beginner | Intermediate | Advanced`
+Rôles : `DPS | Healer | Tank` — Resources : `Stamina | Magicka | Hybrid` — Gamemodes : `PvP | PvE | Both` — Difficultés : `Beginner | Intermediate | Advanced`
 
 ### Set (`src/content/sets/*.json`)
 Types valides : `Light Armor | Medium Armor | Heavy Armor | Jewelry | Weapon | Mixed | Monster | Mythic`
@@ -126,98 +130,94 @@ Acquisitions : `Overland | Dungeon | Trial | PvP | Crafted | Mythic | Monster | 
 ### Skill (`src/content/skills/*.json`)
 Classes valides : idem builds + `Guild | World | Alliance War | Craft | Racial`
 Types : `Active | Passive | Ultimate`
+`morph_of` / `morph_sibling` acceptent `null` (skills non documentés sur UESP post-patch)
+
+---
+
+## Points techniques importants
+
+### Astro / Content Layer
+- Config dans `src/content.config.ts`, utiliser `glob()` loader, `entry.id` (plus `entry.slug`), `render()` importé depuis `astro:content`
+- `[slug].astro` appelle `assertIds()` au build time — si un ID dans `sets[]` ou `skills.bar1/bar2` n'a pas de JSON correspondant, le build échoue avec un message explicite
+- Filtre par classe : pages pré-rendues statiquement via `getStaticPaths()` dans `builds/class/[class].astro` — aucun JS client
+
+### CSS / Layout
+- **Tailwind v4 :** tokens définis avec `@theme {}` dans le CSS, pas de `tailwind.config.js`
+- **Build layout :** `display: grid; grid-template-columns: 1fr 220px` — grid strict, ne pas passer en flex. Ne pas mettre `overflow: clip` sur `.build-content` (coupe le contenu des cartes)
+- **CSS scoping :** les règles de layout (`.build-layout`, `.build-content`, `.build-toc`) sont dans `<style is:global>` dans `Build.astro`. Les styles visuels restent dans `<style>` scopé
+- **SetCard :** ne pas remettre `white-space: nowrap` sur `.bonus__val` — les longues valeurs doivent pouvoir wrapper (ex : Markyn Ring)
+
+### Déploiement / Runtime
+- **Hébergement :** Cloudflare Workers (pas Pages)
+- **Statut serveurs ESO :** `Header.astro` fetch `eso-status-proxy.simbad14100.workers.dev` toutes les 60s. Structure JSON : `data.zos_platform_response.response["The Elder Scrolls Online (EU/NA/PTS)"]`. Worker dédié nécessaire (API ESO sans CORS)
+- **Image OG :** SVG source dans `public/assets/og/og-default.svg`, PNG généré via `node -e "require('sharp')..."`
+- **Icônes de skills :** dans `public/assets/skills/{id}.png`, téléchargées depuis UESP via `node scripts/fetch-skill-icons.mjs`
+
+### TOC / Navigation
+- **Sticky TOC desktop :** `position: sticky; top: 80px; align-self: start` dans la colonne grid
+- **Mobile :** TOC caché (`display: none`) à ≤1024px, FAB + drawer à la place
+- **IntersectionObserver :** `rootMargin: '-10% 0px -75% 0px'` pour l'état actif
+- **Dropdown nav :** CSS-only sur "Builds" — `opacity 0→1` + `pointer-events` sur `:hover`/`:focus-within`. Pseudo-élément `::after` sur le wrapper pour combler le gap entre trigger et panneau
+
+> **Note UESP :** UESP peut être en retard de 1-2 semaines après un patch majeur. En cas de doute, faire confiance au jeu.
 
 ---
 
 ## Workflow auteur
 
 ### Publier un guide
-1. Créer `src/content/guides/mon-guide.md` avec le frontmatter : `title`, `category`, `tags`, `published`, `summary`
-2. Push → Cloudflare Pages déploie, le guide apparaît sur `/guides` et dans le flux RSS
+1. Créer `src/content/guides/mon-guide.md` avec : `title`, `category`, `tags`, `published`, `summary`
+2. Push → Cloudflare déploie, le guide apparaît sur `/guides` et dans le flux RSS
 
 ### Publier un build
 1. Créer `src/content/builds/mon-build.md` avec le frontmatter complet
 2. S'assurer que tous les IDs dans `sets[]` et `skills.bar1/bar2[]` ont un fichier JSON correspondant
-3. `git add . && git commit -m "..." && git push` → Cloudflare Pages déploie en ~30s
+3. Push → déploie en ~30s
 
 ### Ajouter un set
 1. Créer `src/content/sets/nom-du-set.json` (référencer UESP pour les bonus)
 2. Ajouter l'ID dans le frontmatter du build concerné
-3. Push
 
 ### Ajouter un skill
 1. Créer `src/content/skills/nom-du-skill.json`
-2. Ajouter l'ID dans `skills.bar1` ou `skills.bar2` du build
-3. Lancer `node scripts/fetch-skill-icons.mjs` pour télécharger l'icône automatiquement depuis UESP
+2. Ajouter l'ID dans `skills.bar1` ou `skills.bar2`
+3. Lancer `node scripts/fetch-skill-icons.mjs` pour télécharger l'icône depuis UESP
 4. Push
 
 ### Après un patch ESO
-1. Consulter les patch notes officielles (ESO site) et UESP pour les changements de sets/skills
-2. Pour chaque build affecté :
-   - Mettre à jour les valeurs dans les JSON `src/content/sets/` et `src/content/skills/` concernés
-   - Mettre à jour `patch_verified` sur chaque fichier modifié
-   - Si un skill est renommé : renommer le fichier JSON ET mettre à jour l'ID dans le build `.md`
-3. Pour les skills dont l'icône a changé : relancer `node scripts/fetch-skill-icons.mjs`
-4. Lancer `npm run build` localement pour vérifier qu'aucun ID n'est cassé
-5. Push
-
-> **Note UESP :** UESP est parfois en retard de 1-2 semaines sur les patches récents (ex : Update 49). En cas de doute, faire confiance au jeu plutôt qu'à UESP.
-
----
-
-## Points techniques importants
-
-- **Astro 6 Content Layer :** config dans `src/content.config.ts` (pas dans `src/content/`), utiliser `glob()` loader, `entry.id` au lieu de `entry.slug`, `render()` importé depuis `astro:content`
-- **Tailwind v4 :** tokens définis avec `@theme {}` dans le CSS, pas de `tailwind.config.js`
-- **Google Fonts :** le `@import url(...)` doit être placé **avant** `@import "tailwindcss"` dans global.css
-- **Image OG :** SVG source dans `public/assets/og/og-default.svg`, PNG généré via `node -e "require('sharp')..."` avec le script dans ce fichier
-- **Filtre par classe :** pages pré-rendues statiquement via `getStaticPaths()` dans `builds/class/[class].astro` — aucun JS client
-- **Data integrity :** `[slug].astro` appelle `assertIds()` au build time — si un ID dans `sets[]` ou `skills.bar1/bar2` n'a pas de JSON correspondant, le build échoue avec un message explicite
-- **Icônes de skills :** stockées dans `public/assets/skills/{id}.png`, récupérées depuis UESP via `node scripts/fetch-skill-icons.mjs`
-- **CSS scoping Astro :** les règles de layout critiques (`.build-layout`, `.build-content`, `.build-toc`) sont dans `<style is:global>` dans `Build.astro` pour éviter les edge cases de scoping. Les styles visuels restent dans `<style>` scopé.
-- **Build layout :** `display: grid; grid-template-columns: 1fr 220px` — grid strict pour que le contenu ne puisse jamais déborder dans la colonne TOC. Ne pas utiliser `overflow: clip` sur `.build-content` (coupe le contenu des cartes).
-- **SetCard overflow :** ne pas remettre `white-space: nowrap` sur `.bonus__val` — les longues valeurs de bonus (ex : Markyn Ring) doivent pouvoir wrapper.
-- **ESO server status :** `Header.astro` fetch `eso-status-proxy.simbad14100.workers.dev` (Worker dédié, nécessaire car l'API ESO n'a pas de headers CORS). Structure JSON : `data.zos_platform_response.response["The Elder Scrolls Online (EU/NA/PTS)"]`. Refresh toutes les 60s.
-- **Sticky TOC :** `position: sticky; top: 80px; align-self: start` dans la colonne grid. Mobile : TOC caché (`display: none`) à ≤1024px, FAB + drawer à la place. IntersectionObserver pour l'état actif (`rootMargin: '-10% 0px -75% 0px'`).
+1. Consulter patch notes ESO + UESP pour les changements
+2. Mettre à jour les JSON concernés et `patch_verified`
+3. Si un skill est renommé : renommer le JSON ET mettre à jour l'ID dans le build `.md`
+4. Relancer `node scripts/fetch-skill-icons.mjs` si des icônes ont changé
+5. `npm run build` localement pour vérifier l'integrity check
+6. Push
 
 ---
 
 ## État du projet
 
-**Dernière session :** 2026-05-11
+**Dernière session :** 2026-05-12
 **Milestone actuel :** Polish SUPERSTAR — template canonique avant de créer d'autres builds
 
+### Milestones
+- ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
+- ✅ M1 — Infrastructure contenu (Content Layer, schémas Zod)
+- ✅ M2 — Composants (SetCard, SkillBar, icônes UESP)
+- ✅ M3 — Polish & SEO (404, contraste WCAG, TOC sticky, Lighthouse 99)
+- ✅ M4 — Decap CMS (`/admin`, OAuth proxy Worker, workflow Draft→Publish, Cloudflare Access)
+
 ### Contenu publié
-- 1 build : SUPERSTAR (MagDK PvP)
-- 2 guides : Penetration Caps Explained, Critical Resistance & Critical Damage in PvP
-- 5 sets : Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee
-- 12 skills : barre offensive + défensive du build SUPERSTAR (icônes PNG depuis UESP)
+- **1 build :** SUPERSTAR (MagDK PvP) — seul build complet, sert de template
+- **2 guides :** Penetration Caps Explained · Critical Resistance & Critical Damage in PvP
+- **6 builds placeholder :** Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist (à remplacer avant lancement public)
+- **5 sets :** Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee
+- **14 skills :** tous les skills du build SUPERSTAR + quelques anciens (icônes PNG depuis UESP)
 
-### M2 — Terminé (2026-05-10)
-- `SetCard.astro` : bonus colorés, badge type, acquisition, DLC, liens UESP/ESOHub, grille 2 colonnes
-- `SkillBar.astro` : double barre, icône 36px avec bordure colorée par classe, badge R sur ultimate, tooltip morph au hover
-- `[slug].astro` : résolution des IDs → objets JSON au build time (plus de strings bruts dans le layout)
-- `scripts/fetch-skill-icons.mjs` : script UESP MediaWiki API, télécharge toutes les icônes en une commande
-- `assertIds()` : data integrity check — build échoue avec message explicite si un ID n'a pas de JSON
-- Morphs vérifiés et corrigés pour 7 skills ; `soul-of-flame` U49 = morph chain null
-- Schéma Zod : `morph_of` / `morph_sibling` acceptent `null`
-
-### M3 — Terminé (2026-05-11)
-- `src/pages/404.astro` : page 404 custom on-brand
-- `--color-text-muted` : #6b6585 → #7d77a0 (WCAG AA)
-- `Base.astro` : preconnect Google Fonts
-- `SkillBar.astro` : `tabindex="0"` + `:focus-within` — tooltips accessibles au clavier
-
-### Session 2026-05-11 (suite) — Polish template SUPERSTAR
-- **Consumables** : Bewitched Sugar Skulls, Essence of Weapon Power (Dragonthorn + Blessed Thistle + Water Hyacinth/Wormwood), Mundus Stone (The Lady / alt: The Warrior)
-- **Champion Points** : Warfare (Cleansing Revival, Master-at-Arms, Ironclad, Fighting Finesse) + Fitness (Celerity, Slippery, Fortified, Pain's Refuge)
-- **Skills** : `morph_rationale` ajouté pour quick-cloak, race-against-time, heart-of-flame ; heart-of-flame corrigé (base = Core of Flame, sibling = soul-of-flame)
-- **Header** : masthead rail réduit à `KOZY · ESO PvP` ; statut serveurs ESO (EU/NA/PTS) en temps réel via Worker proxy
-- **SkillBar** : tabs `01/02` → `I/II`
-- **Gear sheet** : police slot → body 14px ; légende couleurs (Heavy/Medium/Light)
-- **TOC sidebar** : sticky, CSS grid 2 colonnes, IntersectionObserver, FAB mobile + drawer
-- **Layout fix** : `<style is:global>` pour les règles de layout ; `display: grid` (pas flex) pour `.build-layout` ; `white-space: nowrap` retiré de `.bonus__val` dans SetCard
-- **Déploiement** : Cloudflare Workers (pas Pages) ; proxy ESO status = Worker séparé `eso-status-proxy.simbad14100.workers.dev`
+### Decap CMS
+- Panel : `https://kozy-eso-pvp-builds.simbad14100.workers.dev/admin/`
+- OAuth proxy : `kozy-eso-oauth.simbad14100.workers.dev`
+- Auth : GitHub login → branche PR créée à chaque "Save Draft", merge auto à "Publish"
+- Protection `/admin` : Cloudflare Access (email/OTP) — activation complète sur domaine custom
 
 ### Prochaine étape
-SUPERSTAR est le template canonique — le perfectionner avant de créer d'autres builds.
+Peaufiner **SUPERSTAR** comme template canonique, puis tester un cycle complet Decap (Draft → Publish).
