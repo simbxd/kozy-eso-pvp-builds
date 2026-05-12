@@ -1,0 +1,5 @@
+name = "kozy-eso-pvp-builds"
+compatibility_date = "2026-05-12"
+
+[assets]
+directory = "./dist"
