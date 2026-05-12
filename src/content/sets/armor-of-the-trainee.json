@@ -6,12 +6,32 @@
   "location": "Starter zones (Bal Foyen, Betnikh, Bleakrock Isle, Khenarthi's Roost, Stros M'Kai)",
   "dlc": "Base Game",
   "pieces": 3,
-  "slots": ["head", "shoulders", "chest", "hands", "waist", "legs", "feet"],
-  "patch_verified": "Gold Road (Q2 2024)",
+  "slots": [
+    "head",
+    "shoulders",
+    "chest",
+    "hands",
+    "waist",
+    "legs",
+    "feet"
+  ],
+  "patch_verified": "U49",
   "bonuses": [
-    { "count": 1, "stat": "Max Health", "value": 1454 },
-    { "count": 2, "stat": "Max Magicka", "value": 1454 },
-    { "count": 3, "stat": "Max Stamina", "value": 1454 }
+    {
+      "count": 1,
+      "stat": "Max Health",
+      "value": 1454
+    },
+    {
+      "count": 2,
+      "stat": "Max Magicka",
+      "value": 1454
+    },
+    {
+      "count": 3,
+      "stat": "Max Stamina",
+      "value": 1454
+    }
   ],
   "uesp_url": "https://en.uesp.net/wiki/Online:Armor_of_the_Trainee",
   "esohub_url": "https://eso-hub.com/en/sets/armor-of-the-trainee"

@@ -6,11 +6,22 @@
   "location": "Ruins of Mazzatun",
   "dlc": "Shadows of the Hist",
   "pieces": 2,
-  "slots": ["head", "shoulders"],
-  "patch_verified": "Gold Road (Q2 2024)",
+  "slots": [
+    "head",
+    "shoulders"
+  ],
+  "patch_verified": "U49",
   "bonuses": [
-    { "count": 1, "stat": "Armor", "value": 1487 },
-    { "count": 2, "stat": "Max Health + Major Resolve", "value": "1206 HP / +5948 Physical & Spell Resistance" }
+    {
+      "count": 1,
+      "stat": "Armor",
+      "value": 1487
+    },
+    {
+      "count": 2,
+      "stat": "Max Health + Major Resolve",
+      "value": "1206 HP / +5948 Physical & Spell Resistance"
+    }
   ],
   "uesp_url": "https://en.uesp.net/wiki/Online:Mighty_Chudan",
   "esohub_url": "https://eso-hub.com/en/sets/mighty-chudan"

@@ -6,10 +6,16 @@
   "location": "Deadlands",
   "dlc": "Deadlands",
   "pieces": 1,
-  "slots": ["ring"],
-  "patch_verified": "Gold Road (Q2 2024)",
+  "slots": [
+    "ring"
+  ],
+  "patch_verified": "U49",
   "bonuses": [
-    { "count": 1, "stat": "Weapon & Spell Damage and Armor per active set with 3+ pieces worn", "value": "+100 Damage / +1157 Armor per qualifying set" }
+    {
+      "count": 1,
+      "stat": "Weapon & Spell Damage and Armor per active set with 3+ pieces worn",
+      "value": "+100 Damage / +1157 Armor per qualifying set"
+    }
   ],
   "uesp_url": "https://en.uesp.net/wiki/Online:Markyn_Ring_of_Majesty",
   "esohub_url": "https://eso-hub.com/en/sets/markyn-ring-of-majesty"
