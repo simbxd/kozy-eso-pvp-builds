@@ -200,11 +200,14 @@ gear:
       enchant: Multi-Effect
 playstyle:
   buffs:
-    - skill: "PLACEHOLDER — Skill name"
-      note: "PLACEHOLDER — when/why to refresh"
+    - skill: Hearth and Home
+      note: '"Major Protection" source, decent HoT — keep it below you. '
   combo:
-    - "PLACEHOLDER — combo step 1"
-    - "PLACEHOLDER — combo step 2"
+    - Incinerate - Delayed AoE Burst
+    - Heart of Flame — Delayed AoE Burst
+    - Disintegrating Dragon Fire - Debuff
+    - Shattering Rocks - Stun your target
+    - Molten whip or Take Flight - Final Burst
   rules:
     - title: Don't rush the kill
       body: Two-Fanged Serpent stacks compound over time. The longer the fight, the
