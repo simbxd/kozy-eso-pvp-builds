@@ -5508,13 +5508,20 @@ collections:
         collapsed: false
         hint: "Rotation et conseils affichés sous les Skill Bars."
         fields:
-          - name: steps
-            label: "Étapes d'ouverture"
+          - name: buffs
+            label: "Buffs & uptimes"
             widget: list
             required: false
+            hint: "Skills à maintenir actifs. Un item = nom du skill + note courte."
             fields:
-              - { name: title, label: Titre, widget: string }
-              - { name: desc,  label: Description, widget: text }
+              - { name: skill, label: "Skill", widget: string }
+              - { name: note,  label: "Note (quand/pourquoi refresh)", widget: string }
+          - name: combo
+            label: "Burst combo"
+            widget: list
+            required: false
+            hint: "Séquence de burst numérotée. 3 à 6 étapes max, une ligne par étape."
+            field: { name: step, label: Étape, widget: string }
           - name: rules
             label: "Règles clés"
             widget: list

@@ -3,10 +3,11 @@ import { glob } from 'astro/loaders';
 
 const cpStar = z.object({ star: z.string(), points: z.number(), priority: z.number() });
 
-const playstyleStep = z.object({ title: z.string(), desc: z.string() });
-const playstyleRule = z.object({ title: z.string(), body: z.string() });
+const playstyleRule    = z.object({ title: z.string(), body: z.string() });
+const playstyleBuffItem = z.object({ skill: z.string(), note: z.string() });
 const playstyle = z.object({
-  steps: z.array(playstyleStep).optional(),
+  buffs: z.array(playstyleBuffItem).optional(),
+  combo: z.array(z.string()).optional(),
   rules: z.array(playstyleRule).optional(),
 }).optional();
 

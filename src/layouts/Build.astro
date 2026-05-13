@@ -86,10 +86,9 @@ interface Props {
     mundus?: { stone: string; effect: string; note: string; alt?: { stone: string; effect: string; note: string } };
   };
   playstyle?: {
-    steps?:      { title: string; desc: string }[];
-    bar1_notes?: string[];
-    bar2_notes?: string[];
-    rules?:      { title: string; body: string }[];
+    buffs?: { skill: string; note: string }[];
+    combo?: string[];
+    rules?: { title: string; body: string }[];
   };
 }
 
@@ -101,7 +100,8 @@ const {
 
 const hasPlaystyle = !!(
   playstyle && (
-    playstyle.steps?.length ||
+    playstyle.buffs?.length ||
+    playstyle.combo?.length ||
     playstyle.rules?.length
   )
 );
@@ -242,17 +242,33 @@ const railItems = [`KOZY · ESO PvP`];
       </div>
 
       <div class="prose">
-      {playstyle!.steps && playstyle!.steps.length > 0 && (
-        <div class="ps-sequence">
-          {playstyle!.steps.map((step, i) => (
-            <div class="ps-step">
-              <div class="ps-step__num">{i + 1}</div>
-              <div class="ps-step__body">
-                <div class="ps-step__title">{step.title}</div>
-                <div class="ps-step__desc">{step.desc}</div>
+      {playstyle!.buffs && playstyle!.buffs.length > 0 && (
+        <div class="ps-subsection">
+          <div class="ps-sub-title">Buffs &amp; uptimes</div>
+          <div class="ps-buffs">
+            {playstyle!.buffs.map(item => (
+              <div class="ps-buff">
+                <span class="ps-buff__skill">{item.skill}</span>
+                <span class="ps-buff__note">{item.note}</span>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+      )}
+
+      {playstyle!.combo && playstyle!.combo.length > 0 && (
+        <div class="ps-subsection">
+          <div class="ps-sub-title">Burst combo</div>
+          <div class="ps-sequence">
+            {playstyle!.combo.map((step, i) => (
+              <div class="ps-step">
+                <div class="ps-step__num">{i + 1}</div>
+                <div class="ps-step__body">
+                  <div class="ps-step__desc">{step}</div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
@@ -821,12 +837,58 @@ const railItems = [`KOZY · ESO PvP`];
     .kz-stat__v { font-size: 30px; }
   }
 
-  /* ── playstyle — step sequence ─────────────────────── */
+  /* ── playstyle — sub-section header ────────────────────── */
+  .prose :global(.ps-subsection) {
+    margin-bottom: 40px;
+  }
+
+  .prose :global(.ps-sub-title) {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+  }
+
+  /* ── playstyle — buffs & uptimes ────────────────────────── */
+  .prose :global(.ps-buffs) {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-border-2);
+  }
+
+  .prose :global(.ps-buff) {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .prose :global(.ps-buff:last-child) { border-bottom: none; }
+
+  .prose :global(.ps-buff__skill) {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-mono);
+    letter-spacing: 0.01em;
+  }
+
+  .prose :global(.ps-buff__note) {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-style: italic;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+  }
+
+  /* ── playstyle — burst combo (numbered sequence) ────────── */
   .prose :global(.ps-sequence) {
     display: flex;
     flex-direction: column;
     gap: 0;
-    margin-bottom: 40px;
     position: relative;
   }
 
@@ -845,7 +907,7 @@ const railItems = [`KOZY · ESO PvP`];
     display: flex;
     gap: 20px;
     align-items: flex-start;
-    padding: 20px 0;
+    padding: 16px 0;
     position: relative;
   }
 
@@ -868,22 +930,13 @@ const railItems = [`KOZY · ESO PvP`];
   }
 
   .prose :global(.ps-step__body) {
-    padding-top: 6px;
-  }
-
-  .prose :global(.ps-step__title) {
-    font-family: var(--font-display);
-    font-size: 19px;
-    font-weight: 500;
-    color: var(--color-text);
-    margin-bottom: 6px;
-    letter-spacing: 0.01em;
+    padding-top: 8px;
   }
 
   .prose :global(.ps-step__desc) {
     font-family: var(--font-body);
-    font-size: 16px;
-    line-height: 1.65;
+    font-size: 15px;
+    line-height: 1.6;
     color: var(--color-text-muted);
   }
 

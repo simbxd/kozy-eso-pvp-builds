@@ -199,18 +199,12 @@ gear:
       trait: Sturdy
       enchant: Multi-Effect
 playstyle:
-  steps:
-    - title: Open on Bar II
-      desc: Pre-cast Heart of Flame before engaging — forces the enemy to react
-        immediately. Follow with Blood of the Elder Dragon for the damage
-        shield, then swap to Bar I and close in.
-    - title: Pressure loop on Bar I
-      desc: Weave Disintegrating Dragonfire and Shattering Rocks to build Seething
-        Fury stacks, then spend them on Molten Whip for burst. Keep Incinerate
-        refreshed at all times — it's your primary sustained damage.
-    - title: Rotate bars on pressure
-      desc: "When burst hits, swap to Bar II: Resolving Vigor then Heart and Home.
-        Return to Bar I immediately — don't linger on the defensive bar."
+  buffs:
+    - skill: "PLACEHOLDER — Skill name"
+      note: "PLACEHOLDER — when/why to refresh"
+  combo:
+    - "PLACEHOLDER — combo step 1"
+    - "PLACEHOLDER — combo step 2"
   rules:
     - title: Don't rush the kill
       body: Two-Fanged Serpent stacks compound over time. The longer the fight, the
