@@ -199,3 +199,33 @@ gear:
       trait: Sturdy
       enchant: Multi-Effect
 ---
+
+## Opening
+
+Engage on **Bar II**. Pre-cast **Heart of Flame** before committing — it applies immediate AoE pressure and forces the enemy to react. Follow immediately with **Blood of the Elder Dragon** to put a damage shield up before the first retaliation lands. Once both are out, swap to **Bar I** and close in.
+
+## Pressure Loop (Bar I)
+
+Bar I is your damage engine. The core loop revolves around **Molten Whip**: weave your other skills on this bar to build Seething Fury stacks, then spend them on a Molten Whip hit for amplified burst. Keep **Incinerate** refreshed — it's your sustained DoT and should never fall off. **Disintegrating Dragonfire** and **Shattering Rocks** fill the gaps and maintain pressure between Whip procs.
+
+**Quick Cloak** is dual-purpose: use it to disengage briefly when you need to let a cooldown reset, or to make the enemy lose target lock while your resources recover.
+
+## Sustain & Recovery (Bar II)
+
+Bar II is your survival window. **Resolving Vigor** is your primary heal — use it *proactively* when health dips below ~60%, not in panic at 20%. **Heart and Home** stacks a shield on top of Vigor's HoT; rotate both on cooldown under sustained burst.
+
+When you feel pressure stacking up, bar-swap to II, land both defensives, then immediately swap back to I to maintain your damage presence. Letting the fight drag is fine — this build is built for it.
+
+## Ultimates
+
+**Take Flight** (Bar I) is your offensive ultimate. Use it when the enemy is commitment-locked: post-dodge, post-break-free, or when a heal is on cooldown. The AoE knockback disrupts clusters in small-scale fights.
+
+**Temporal Guard** (Bar II) is your panic button. Save it for burst windows you cannot otherwise survive. Do not burn it for damage — its value is time bought.
+
+## Two-Fanged Serpent Stacks
+
+The longer the fight, the more Snake stacks accumulate and the harder each proc hits. Resist the urge to force a kill early. If you're holding your own, sustained pressure compounds — the set does increasing work as the fight extends.
+
+## Break-Free Priority
+
+In solo PvP, crowd control is the kill condition. **Break free the moment you are grabbed** — waiting until you're fully stunned and stacked on by follow-up skills is almost always fatal. Keep at least one bar of Stamina reserved for a break free at all times.
