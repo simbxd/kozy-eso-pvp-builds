@@ -4,7 +4,7 @@
   "base_skill": "Lava Whip",
   "morph_of": "lava-whip",
   "morph_sibling": "flame-lash",
-  "morph_rationale": "Preferred for the stacking Molten Armaments buff — each cast increases Weapon and Spell Damage, rewarding continuous pressure.",
+  "morph_rationale": "Seething Fury morph — DK abilities build up to 3 stacks that empower the next cast with bonus Magicka-scaling Flame Damage; rewards active ability weaving over Flame Lash's proc-based sustain.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",
