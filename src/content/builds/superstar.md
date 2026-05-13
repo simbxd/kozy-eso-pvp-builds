@@ -39,7 +39,7 @@ stats:
     target: 32000
     note: "minimum viable "
   magicka:
-    target: 26000
+    target: 27000
     note: ""
   stamina:
     target: 20000
