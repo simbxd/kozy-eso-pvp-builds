@@ -32,5 +32,8 @@ pnpm-debug.log*
 # ESO data is committed — needed for Cloudflare CI builds
 # Regenerate with: npm run update:decap
 
+# Local dev/test data scratch dirs
+src/data/
+
 # Netlify leftover (project runs on Cloudflare Workers)
 .netlify/
