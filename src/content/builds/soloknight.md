@@ -21,7 +21,7 @@ sets:
   - twice-fanged-serpent
 skills:
   bar1:
-    - dizzying-swing
+    - molten-whip
     - disintegrating-dragonfire
     - shattering-rocks
     - quick-cloak
