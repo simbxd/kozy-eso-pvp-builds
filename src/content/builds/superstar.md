@@ -21,7 +21,7 @@ sets:
   - twice-fanged-serpent
 skills:
   bar1:
-    - molten-whip
+    - dizzying-swing
     - disintegrating-dragonfire
     - shattering-rocks
     - quick-cloak
@@ -200,31 +200,39 @@ gear:
       enchant: Multi-Effect
 playstyle:
   steps:
-    - title: "Open on Bar II"
-      desc: "Pre-cast Heart of Flame before engaging — forces the enemy to react immediately. Follow with Blood of the Elder Dragon for the damage shield, then swap to Bar I and close in."
-    - title: "Pressure loop on Bar I"
-      desc: "Weave Disintegrating Dragonfire and Shattering Rocks to build Seething Fury stacks, then spend them on Molten Whip for burst. Keep Incinerate refreshed at all times — it's your primary sustained damage."
-    - title: "Rotate bars on pressure"
-      desc: "When burst hits, swap to Bar II: Resolving Vigor then Heart and Home. Return to Bar I immediately — don't linger on the defensive bar."
+    - title: Open on Bar II
+      desc: Pre-cast Heart of Flame before engaging — forces the enemy to react
+        immediately. Follow with Blood of the Elder Dragon for the damage
+        shield, then swap to Bar I and close in.
+    - title: Pressure loop on Bar I
+      desc: Weave Disintegrating Dragonfire and Shattering Rocks to build Seething
+        Fury stacks, then spend them on Molten Whip for burst. Keep Incinerate
+        refreshed at all times — it's your primary sustained damage.
+    - title: Rotate bars on pressure
+      desc: "When burst hits, swap to Bar II: Resolving Vigor then Heart and Home.
+        Return to Bar I immediately — don't linger on the defensive bar."
   bar1_notes:
-    - "burst — consume Seething Fury stacks"
-    - "sustained DoT — never let it drop"
-    - "stack builder + Major Breach"
-    - "stack builder + AoE pressure"
-    - "disengage + resource reset window"
-    - "offensive — commit when enemy is locked"
+    - burst — consume Seething Fury stacks
+    - sustained DoT — never let it drop
+    - stack builder + Major Breach
+    - stack builder + AoE pressure
+    - disengage + resource reset window
+    - offensive — commit when enemy is locked
   bar2_notes:
-    - "primary heal — use proactively at ~60%"
-    - "shield layer — rotate on cooldown"
-    - "opener AoE, reapply in extended fights"
-    - "damage shield — cast pre-engage"
-    - "filler pressure on Bar II"
-    - "panic button — save for burst windows"
+    - primary heal — use proactively at ~60%
+    - shield layer — rotate on cooldown
+    - opener AoE, reapply in extended fights
+    - damage shield — cast pre-engage
+    - filler pressure on Bar II
+    - panic button — save for burst windows
   rules:
-    - title: "Don't rush the kill"
-      body: "Two-Fanged Serpent stacks compound over time. The longer the fight, the harder each proc hits — sustained pressure beats early aggression."
-    - title: "Break free immediately"
-      body: "CC is the kill condition in solo PvP. Break the moment you're grabbed — waiting until you're fully stacked on is almost always fatal."
-    - title: "Heal before panic"
-      body: "Use Resolving Vigor at ~60% HP, not 20%. Panic heals at critical health are usually too late against burst compositions."
+    - title: Don't rush the kill
+      body: Two-Fanged Serpent stacks compound over time. The longer the fight, the
+        harder each proc hits — sustained pressure beats early aggression.
+    - title: Break free immediately
+      body: CC is the kill condition in solo PvP. Break the moment you're grabbed —
+        waiting until you're fully stacked on is almost always fatal.
+    - title: Heal before panic
+      body: Use Resolving Vigor at ~60% HP, not 20%. Panic heals at critical health
+        are usually too late against burst compositions.
 ---
