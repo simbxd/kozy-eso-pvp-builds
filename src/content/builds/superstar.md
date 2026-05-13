@@ -202,6 +202,13 @@ playstyle:
   buffs:
     - skill: Hearth and Home
       note: '"Major Protection" source, decent HoT — keep it below you. '
+    - skill: Quick Cloak
+      note: '"Major Evasion" source, +30% Movement speed for 4 seconds. —  should be
+        up 24/24.'
+    - skill: Resolving Vigor
+      note: Main HoT — keep high uptime.
+    - skill: Race Against Time
+      note: Minor Force, Major Expedition, speed-scaling — kite, don't camp.
   combo:
     - Incinerate - Delayed AoE Burst
     - Heart of Flame — Delayed AoE Burst
