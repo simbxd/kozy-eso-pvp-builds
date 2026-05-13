@@ -5515,16 +5515,6 @@ collections:
             fields:
               - { name: title, label: Titre, widget: string }
               - { name: desc,  label: Description, widget: text }
-          - name: bar1_notes
-            label: "Notes Bar I (dans l'ordre des skills)"
-            widget: list
-            required: false
-            field: { name: note, label: Note, widget: string }
-          - name: bar2_notes
-            label: "Notes Bar II (dans l'ordre des skills)"
-            widget: list
-            required: false
-            field: { name: note, label: Note, widget: string }
           - name: rules
             label: "Règles clés"
             widget: list

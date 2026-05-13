@@ -6,10 +6,8 @@ const cpStar = z.object({ star: z.string(), points: z.number(), priority: z.numb
 const playstyleStep = z.object({ title: z.string(), desc: z.string() });
 const playstyleRule = z.object({ title: z.string(), body: z.string() });
 const playstyle = z.object({
-  steps:      z.array(playstyleStep).optional(),
-  bar1_notes: z.array(z.string()).optional(),
-  bar2_notes: z.array(z.string()).optional(),
-  rules:      z.array(playstyleRule).optional(),
+  steps: z.array(playstyleStep).optional(),
+  rules: z.array(playstyleRule).optional(),
 }).optional();
 
 const builds = defineCollection({

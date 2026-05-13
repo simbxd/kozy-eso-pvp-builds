@@ -211,20 +211,6 @@ playstyle:
     - title: Rotate bars on pressure
       desc: "When burst hits, swap to Bar II: Resolving Vigor then Heart and Home.
         Return to Bar I immediately — don't linger on the defensive bar."
-  bar1_notes:
-    - burst — consume Seething Fury stacks
-    - sustained DoT — never let it drop
-    - stack builder + Major Breach
-    - stack builder + AoE pressure
-    - disengage + resource reset window
-    - offensive — commit when enemy is locked
-  bar2_notes:
-    - primary heal — use proactively at ~60%
-    - shield layer — rotate on cooldown
-    - opener AoE, reapply in extended fights
-    - damage shield — cast pre-engage
-    - filler pressure on Bar II
-    - panic button — save for burst windows
   rules:
     - title: Don't rush the kill
       body: Two-Fanged Serpent stacks compound over time. The longer the fight, the

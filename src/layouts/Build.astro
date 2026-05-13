@@ -102,7 +102,6 @@ const {
 const hasPlaystyle = !!(
   playstyle && (
     playstyle.steps?.length ||
-    playstyle.bar1_notes?.length ||
     playstyle.rules?.length
   )
 );
@@ -252,34 +251,6 @@ const railItems = [`KOZY · ESO PvP`];
                 <div class="ps-step__title">{step.title}</div>
                 <div class="ps-step__desc">{step.desc}</div>
               </div>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {(playstyle!.bar1_notes?.length || playstyle!.bar2_notes?.length) && (
-        <div class="ps-bars">
-          {[
-            { skills: bar1, notes: playstyle!.bar1_notes ?? [], badge: 'BAR I',  badgeMod: '1', role: 'Offense' },
-            { skills: bar2, notes: playstyle!.bar2_notes ?? [], badge: 'BAR II', badgeMod: '2', role: 'Sustain' },
-          ].map(({ skills, notes, badge, badgeMod, role: barRole }) => (
-            <div class="ps-bar">
-              <div class="ps-bar__header">
-                <span class={`ps-bar__badge ps-bar__badge--${badgeMod}`}>{badge}</span>
-                <span class="ps-bar__role">{barRole}</span>
-              </div>
-              <ul class="ps-bar__skills">
-                {skills.map((skill, i) => {
-                  const note = notes[i] ?? '';
-                  const isUlt = i === 5;
-                  return (
-                    <li data-ps-skill-id={skill.id}>
-                      <span class={`ps-skill${isUlt ? ' ps-skill--ult' : ''}`}>{skill.name}</span>
-                      {note && <span class="ps-bar__note">{note}</span>}
-                    </li>
-                  );
-                })}
-              </ul>
             </div>
           ))}
         </div>
@@ -627,38 +598,6 @@ const railItems = [`KOZY · ESO PvP`];
     });
   });
 
-  // ── Playstyle skill linking ───────────────────────────
-  document.querySelectorAll('[data-ps-skill-id]').forEach(function(row) {
-    var id = (row as HTMLElement).dataset.psSkillId;
-    if (!id) return;
-
-    row.addEventListener('mouseenter', function(e) {
-      // Highlight the matching slot in Skill Bars
-      var slot = document.querySelector('[data-kz-bars] .slot[data-id="' + id + '"]');
-      if (slot) slot.classList.add('slot--ps-linked');
-
-      // Clone & show its tooltip if it has one
-      var tooltipSrc = slot?.querySelector('.tooltip') as HTMLElement | null;
-      if (!tooltipSrc) return;
-      var clone = tooltipSrc.cloneNode(true) as HTMLElement;
-      clone.id = 'ps-floating-tooltip';
-      clone.style.cssText = 'display:block;position:fixed;z-index:200;pointer-events:none;';
-      document.body.appendChild(clone);
-
-      var rect = (row as HTMLElement).getBoundingClientRect();
-      var tw = clone.offsetWidth;
-      var left = Math.min(rect.left, window.innerWidth - tw - 12);
-      clone.style.left = Math.max(8, left) + 'px';
-      clone.style.top  = (rect.bottom + 10) + 'px';
-    });
-
-    row.addEventListener('mouseleave', function() {
-      document.getElementById('ps-floating-tooltip')?.remove();
-      var slot = document.querySelector('[data-kz-bars] .slot[data-id="' + id + '"]');
-      if (slot) slot.classList.remove('slot--ps-linked');
-    });
-  });
-
   // Smooth scroll with reduced-motion respect for sidebar links
   document.querySelectorAll('.toc__link').forEach(link => {
     link.addEventListener('click', e => {
@@ -948,91 +887,6 @@ const railItems = [`KOZY · ESO PvP`];
     color: var(--color-text-muted);
   }
 
-  /* ── playstyle — bar breakdown ──────────────────────── */
-  .prose :global(.ps-bars) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-    margin-bottom: 32px;
-  }
-
-  .prose :global(.ps-bar) {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border-2);
-  }
-
-  .prose :global(.ps-bar__header) {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--color-border);
-    background: rgba(139,92,246,0.04);
-  }
-
-  .prose :global(.ps-bar__badge) {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.22em;
-    font-weight: 600;
-    padding: 3px 8px;
-    border: 1px solid;
-  }
-  .prose :global(.ps-bar__badge--1) {
-    color: var(--color-accent);
-    border-color: var(--color-accent);
-    background: rgba(139,92,246,0.1);
-  }
-  .prose :global(.ps-bar__badge--2) {
-    color: var(--color-text-muted);
-    border-color: var(--color-border-2);
-  }
-
-  .prose :global(.ps-bar__role) {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-  }
-
-  .prose :global(.ps-bar__skills) {
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .prose :global(.ps-bar__skills li) {
-    display: flex;
-    flex-direction: column;
-    padding: 9px 16px;
-    border-bottom: 1px solid var(--color-border);
-    gap: 2px;
-  }
-  .prose :global(.ps-bar__skills li:last-child) { border-bottom: none; }
-
-  .prose :global(.ps-bar__note) {
-    font-family: var(--font-body);
-    font-size: 12px;
-    font-style: italic;
-    color: var(--color-text-muted);
-    line-height: 1.3;
-  }
-
-  /* ── playstyle — skill pill ─────────────────────────── */
-  .prose :global(.ps-skill) {
-    font-family: var(--font-display);
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--color-mono);
-    letter-spacing: 0.01em;
-  }
-
-  .prose :global(.ps-skill--ult) {
-    color: var(--color-mythic);
-  }
 
   /* ── playstyle — key rules ──────────────────────────── */
   .prose :global(.ps-rules) {
@@ -1066,7 +920,6 @@ const railItems = [`KOZY · ESO PvP`];
 
   /* ── playstyle — responsive ─────────────────────────── */
   @media (max-width: 860px) {
-    .prose :global(.ps-bars) { grid-template-columns: 1fr; }
     .prose :global(.ps-rules) { grid-template-columns: 1fr; }
   }
 
@@ -1597,13 +1450,4 @@ const railItems = [`KOZY · ESO PvP`];
     .build-toc    { display: none; }
   }
 
-  /* Highlight skill slot when hovered from Playstyle */
-  .slot--ps-linked {
-    background: var(--color-surface-2) !important;
-    transform: translateY(-2px) !important;
-  }
-  .slot--ps-linked .slot__icon {
-    border-color: var(--color-accent) !important;
-    box-shadow: 0 0 18px rgba(139,92,246,0.25), inset 0 0 18px rgba(139,92,246,0.08) !important;
-  }
 </style>
