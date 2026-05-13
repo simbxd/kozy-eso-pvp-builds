@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-magicka",
+  "name": "Glyph of Magicka",
+  "category": "armor",
+  "effect": "Adds X Maximum Magicka",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Magicka",
+  "rune_prefix": "Makko"
+}

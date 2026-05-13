@@ -1,0 +1,9 @@
+{
+  "id": "the-steed",
+  "name": "The Steed",
+  "effect": "Increases Health Recovery and Movement Speed",
+  "value_base": "238 / 10%",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Steed_(Mundus_Stone)",
+  "value_divines": "389 / 16%"
+}

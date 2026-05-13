@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-reduce-feat-cost",
+  "name": "Glyph of Reduce Feat Cost",
+  "category": "jewelry",
+  "effect": "Reduce Stamina cost of abilities by X",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Reduce_Feat_Cost",
+  "rune_prefix": "Denima"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "well-fitted",
+  "name": "Well-fitted",
+  "category": "armor",
+  "effect": "Reduces the cost of sprinting and Roll Dodging by …",
+  "value_range": "1.2% - 6%",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Well-fitted"
+}

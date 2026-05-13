@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-health-recovery",
+  "name": "Glyph of Health Recovery",
+  "category": "jewelry",
+  "effect": "Adds X Health Recovery",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Health_Recovery",
+  "rune_prefix": "Okoma"
+}

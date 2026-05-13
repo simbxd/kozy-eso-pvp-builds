@@ -1,0 +1,170 @@
+[
+  {
+    "id": "curative-runeforms",
+    "name": "Curative Runeforms",
+    "class": "Arcanist",
+    "class_id": "arcanist",
+    "icon": "/assets/skill-lines/curative-runeforms.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "herald-of-the-tome",
+    "name": "Herald of the Tome",
+    "class": "Arcanist",
+    "class_id": "arcanist",
+    "icon": "/assets/skill-lines/herald-of-the-tome.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "soldier-of-apocrypha",
+    "name": "Soldier of Apocrypha",
+    "class": "Arcanist",
+    "class_id": "arcanist",
+    "icon": "/assets/skill-lines/soldier-of-apocrypha.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "ardent-flame",
+    "name": "Ardent Flame",
+    "class": "Dragonknight",
+    "class_id": "dragonknight",
+    "icon": "/assets/skill-lines/ardent-flame.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "draconic-power",
+    "name": "Draconic Power",
+    "class": "Dragonknight",
+    "class_id": "dragonknight",
+    "icon": "/assets/skill-lines/draconic-power.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "earthen-heart",
+    "name": "Earthen Heart",
+    "class": "Dragonknight",
+    "class_id": "dragonknight",
+    "icon": "/assets/skill-lines/earthen-heart.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "bone-tyrant",
+    "name": "Bone Tyrant",
+    "class": "Necromancer",
+    "class_id": "necromancer",
+    "icon": "/assets/skill-lines/bone-tyrant.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "grave-lord",
+    "name": "Grave Lord",
+    "class": "Necromancer",
+    "class_id": "necromancer",
+    "icon": "/assets/skill-lines/grave-lord.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "living-death",
+    "name": "Living Death",
+    "class": "Necromancer",
+    "class_id": "necromancer",
+    "icon": "/assets/skill-lines/living-death.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "assassination",
+    "name": "Assassination",
+    "class": "Nightblade",
+    "class_id": "nightblade",
+    "icon": "/assets/skill-lines/assassination.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "shadow",
+    "name": "Shadow",
+    "class": "Nightblade",
+    "class_id": "nightblade",
+    "icon": "/assets/skill-lines/shadow.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "siphoning",
+    "name": "Siphoning",
+    "class": "Nightblade",
+    "class_id": "nightblade",
+    "icon": "/assets/skill-lines/siphoning.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "daedric-summoning",
+    "name": "Daedric Summoning",
+    "class": "Sorcerer",
+    "class_id": "sorcerer",
+    "icon": "/assets/skill-lines/daedric-summoning.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "dark-magic",
+    "name": "Dark Magic",
+    "class": "Sorcerer",
+    "class_id": "sorcerer",
+    "icon": "/assets/skill-lines/dark-magic.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "storm-calling",
+    "name": "Storm Calling",
+    "class": "Sorcerer",
+    "class_id": "sorcerer",
+    "icon": "/assets/skill-lines/storm-calling.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "aedric-spear",
+    "name": "Aedric Spear",
+    "class": "Templar",
+    "class_id": "templar",
+    "icon": "/assets/skill-lines/aedric-spear.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "dawns-wrath",
+    "name": "Dawn's Wrath",
+    "class": "Templar",
+    "class_id": "templar",
+    "icon": "/assets/skill-lines/dawns-wrath.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "restoring-light",
+    "name": "Restoring Light",
+    "class": "Templar",
+    "class_id": "templar",
+    "icon": "/assets/skill-lines/restoring-light.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "animal-companions",
+    "name": "Animal Companions",
+    "class": "Warden",
+    "class_id": "warden",
+    "icon": "/assets/skill-lines/animal-companions.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "green-balance",
+    "name": "Green Balance",
+    "class": "Warden",
+    "class_id": "warden",
+    "icon": "/assets/skill-lines/green-balance.png",
+    "patch_verified": "U49"
+  },
+  {
+    "id": "winters-embrace",
+    "name": "Winter's Embrace",
+    "class": "Warden",
+    "class_id": "warden",
+    "icon": "/assets/skill-lines/winters-embrace.png",
+    "patch_verified": "U49"
+  }
+]

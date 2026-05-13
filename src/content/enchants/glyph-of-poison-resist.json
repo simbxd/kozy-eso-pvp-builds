@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-poison-resist",
+  "name": "Glyph of Poison Resist",
+  "category": "jewelry",
+  "effect": "Adds X Poison Resistance",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Poison_Resist",
+  "rune_prefix": "Kuoko"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "redguard",
+  "name": "Redguard",
+  "alliance": "Daggerfall Covenant",
+  "passives": [
+    {
+      "name": "Wayfarer",
+      "description": "Increases your experience gain with the One Hand and Shield skill line by 15%. Increases the duration of any eaten food by 15 minutes."
+    },
+    {
+      "name": "Martial Training",
+      "description": "Reduces the cost of your weapon abilities by 8%. Reduces the effectiveness of snares applied to you by 15%."
+    },
+    {
+      "name": "Conditioning",
+      "description": "Increases your Max Stamina by 2000."
+    },
+    {
+      "name": "Adrenaline Rush",
+      "description": "When you deal damage, you restore 1005 Stamina. This effect can occur once every 5 seconds."
+    }
+  ],
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Redguard"
+}

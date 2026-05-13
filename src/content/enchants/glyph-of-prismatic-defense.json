@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-prismatic-defense",
+  "name": "Glyph of Prismatic Defense",
+  "category": "armor",
+  "effect": "Adds X Maximum Health, Magicka and Stamina",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Prismatic_Defense",
+  "rune_prefix": "Hakeijo"
+}

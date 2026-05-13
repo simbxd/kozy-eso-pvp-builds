@@ -1,0 +1,25 @@
+{
+  "id": "dunmer",
+  "name": "Dunmer",
+  "alliance": "Ebonheart Pact",
+  "passives": [
+    {
+      "name": "Ashlander",
+      "description": "Increases your experience gain with the Dual Wield skill line by 15%. Reduces your damage taken from environmental lava by 50%."
+    },
+    {
+      "name": "Dynamic",
+      "description": "Increases your Max Magicka and Max Stamina by 1910."
+    },
+    {
+      "name": "Resist Flame",
+      "description": "Increases your Flame Resistance by 4620."
+    },
+    {
+      "name": "Ruination",
+      "description": "Increases your Weapon and Spell Damage by 258."
+    }
+  ],
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Dunmer"
+}

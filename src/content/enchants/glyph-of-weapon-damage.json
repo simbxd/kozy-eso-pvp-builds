@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-weapon-damage",
+  "name": "Glyph of Weapon Damage",
+  "category": "weapon",
+  "effect": "Increase your Weapon and Spell Damage by X for 5 seconds",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Weapon_Damage",
+  "rune_prefix": "Okori"
+}

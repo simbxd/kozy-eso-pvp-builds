@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-potion-speed",
+  "name": "Glyph of Potion Speed",
+  "category": "jewelry",
+  "effect": "Reduce the cooldown of Potions below this item's level by X seconds",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Potion_Speed",
+  "rune_prefix": "Oru"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "the-lady",
+  "name": "The Lady",
+  "effect": "Increases Physical and Spell Resistance",
+  "value_base": 2744,
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Lady_(Mundus_Stone)",
+  "value_divines": 4489
+}

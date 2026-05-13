@@ -1,0 +1,25 @@
+{
+  "id": "altmer",
+  "name": "Altmer",
+  "alliance": "Aldmeri Dominion",
+  "passives": [
+    {
+      "name": "Highborn",
+      "description": "Increases your experience gain with the Destruction Staff skill line by 15%. Increases your experience gained by 1%."
+    },
+    {
+      "name": "Spell Recharge",
+      "description": "When you activate an ability, you restore 625 Magicka or Stamina, based on whichever is lowest. This effect can occur once every 6 seconds. When you are using an ability with a channel or cast time, you take 5% less damage."
+    },
+    {
+      "name": "Syrabane's Boon",
+      "description": "Increases your Max Magicka by 2000."
+    },
+    {
+      "name": "Elemental Talent",
+      "description": "Increases your Weapon and Spell Damage by 258."
+    }
+  ],
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Altmer"
+}

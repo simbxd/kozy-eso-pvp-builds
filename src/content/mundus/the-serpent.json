@@ -1,0 +1,9 @@
+{
+  "id": "the-serpent",
+  "name": "The Serpent",
+  "effect": "Increases Stamina Recovery",
+  "value_base": 310,
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Serpent_(Mundus_Stone)",
+  "value_divines": 507
+}

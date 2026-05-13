@@ -1,0 +1,9 @@
+{
+  "id": "harmony",
+  "name": "Harmony",
+  "category": "jewelry",
+  "effect": "Activating a Synergy restores... Health, Magicka, and Stamina.",
+  "value_range": "770 - 880",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Harmony"
+}

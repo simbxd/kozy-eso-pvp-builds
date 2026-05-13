@@ -1,0 +1,25 @@
+{
+  "id": "khajiit",
+  "name": "Khajiit",
+  "alliance": "Aldmeri Dominion",
+  "passives": [
+    {
+      "name": "Cutpurse",
+      "description": "Increases your experience gain with the Medium Armor skill line by 15%. Increases your chance to successfully pickpocket by 5%."
+    },
+    {
+      "name": "Robustness",
+      "description": "Increases your Health, Magicka, and Stamina Recovery by 90."
+    },
+    {
+      "name": "Lunar Blessings",
+      "description": "Increase your Maximum Health, Magicka, and Stamina by 915."
+    },
+    {
+      "name": "Feline Ambush",
+      "description": "Increases your Critical Damage and Critical Healing by 12%. Decreases your detection radius in Stealth by 3 meters."
+    }
+  ],
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Khajiit"
+}

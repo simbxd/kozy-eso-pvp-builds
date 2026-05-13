@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-bashing",
+  "name": "Glyph of Bashing",
+  "category": "jewelry",
+  "effect": "Increase Bash damage by X",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Bashing",
+  "rune_prefix": "Kaderi"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-magicka-recovery",
+  "name": "Glyph of Magicka Recovery",
+  "category": "jewelry",
+  "effect": "Adds X Magicka Recovery",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Magicka_Recovery",
+  "rune_prefix": "Makkoma"
+}

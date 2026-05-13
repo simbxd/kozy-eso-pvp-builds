@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-reduce-skill-cost",
+  "name": "Glyph of Reduce Skill Cost",
+  "category": "jewelry",
+  "effect": "Reduce Health, Magicka and Stamina cost of abilities by X",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Reduce_Skill_Cost",
+  "rune_prefix": "Indeko"
+}

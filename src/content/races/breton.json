@@ -1,0 +1,25 @@
+{
+  "id": "breton",
+  "name": "Breton",
+  "alliance": "Daggerfall Covenant",
+  "passives": [
+    {
+      "name": "Opportunist",
+      "description": "Increases your experience gain with the Light Armor skill line by 15%. Increases your Alliance Points gained by 1%."
+    },
+    {
+      "name": "Gift of Magnus",
+      "description": "Increases your Max Magicka by 2000."
+    },
+    {
+      "name": "Spell Attunement",
+      "description": "Increases your Spell Resistance by 2310. This effect is doubled if you are afflicted with Burning, Chilled, or Concussed. Increases your Magicka Recovery by 130."
+    },
+    {
+      "name": "Magicka Mastery",
+      "description": "Reduces the Magicka cost of your abilities by 7%."
+    }
+  ],
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Breton"
+}

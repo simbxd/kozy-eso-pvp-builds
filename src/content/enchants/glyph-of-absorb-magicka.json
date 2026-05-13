@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-absorb-magicka",
+  "name": "Glyph of Absorb Magicka",
+  "category": "weapon",
+  "effect": "Deals X Magic Damage and recovers Y Magicka",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Absorb_Magicka",
+  "rune_prefix": "Makko"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "argonian",
+  "name": "Argonian",
+  "alliance": "Ebonheart Pact",
+  "passives": [
+    {
+      "name": "Amphibian",
+      "description": "Increases your experience gain with the Restoration Staff skill line by 15%. Increases your swimming speed by 50%."
+    },
+    {
+      "name": "Life Mender",
+      "description": "Increases your healing done by 6%."
+    },
+    {
+      "name": "Argonian Resistance",
+      "description": "Increases your Max Health by 1000 and your Disease and Poison Resistance by 2310."
+    },
+    {
+      "name": "Resourceful",
+      "description": "Increases your Max Magicka and Max Stamina by 1000. When you drink a potion, you restore 3125 Health, Magicka, and Stamina."
+    }
+  ],
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Argonian"
+}

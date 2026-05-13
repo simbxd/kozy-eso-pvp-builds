@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-stamina-recovery",
+  "name": "Glyph of Stamina Recovery",
+  "category": "jewelry",
+  "effect": "Adds X Stamina Recovery",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Stamina_Recovery",
+  "rune_prefix": "Denima"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-weakening",
+  "name": "Glyph of Weakening",
+  "category": "weapon",
+  "effect": "Reduce the target's Weapon and Spell Damage by X for 5 seconds",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Weakening",
+  "rune_prefix": "Okori"
+}

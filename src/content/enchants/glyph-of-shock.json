@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-shock",
+  "name": "Glyph of Shock",
+  "category": "weapon",
+  "effect": "Deals X Shock Damage",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Shock",
+  "rune_prefix": "Meip"
+}

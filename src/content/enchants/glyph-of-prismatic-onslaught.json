@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-prismatic-onslaught",
+  "name": "Glyph of Prismatic Onslaught",
+  "category": "weapon",
+  "effect": "Deals X Magic Damage and recovers Y Health and Z Magicka and Stamina",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Prismatic_Onslaught",
+  "rune_prefix": "Hakeijo"
+}

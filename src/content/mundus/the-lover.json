@@ -1,0 +1,9 @@
+{
+  "id": "the-lover",
+  "name": "The Lover",
+  "effect": "Increases Physical and Spell Penetration",
+  "value_base": 2744,
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Lover_(Mundus_Stone)",
+  "value_divines": 4489
+}

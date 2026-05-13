@@ -1,0 +1,268 @@
+[
+  {
+    "id": "glyph-of-frost",
+    "name": "Glyph of Frost",
+    "category": "weapon",
+    "rune_prefix": "Dekeipa",
+    "effect": "Deals X Frost Damage"
+  },
+  {
+    "id": "glyph-of-absorb-stamina",
+    "name": "Glyph of Absorb Stamina",
+    "category": "weapon",
+    "rune_prefix": "Deni",
+    "effect": "Deals X Physical Damage and recovers Y Stamina"
+  },
+  {
+    "id": "glyph-of-hardening",
+    "name": "Glyph of Hardening",
+    "category": "weapon",
+    "rune_prefix": "Deteri",
+    "effect": "Grants a X point Damage Shield for 5 seconds"
+  },
+  {
+    "id": "glyph-of-crushing",
+    "name": "Glyph of Crushing",
+    "category": "weapon",
+    "rune_prefix": "Deteri",
+    "effect": "Reduce the target's Physical and Spell Resistance by X for 5 seconds"
+  },
+  {
+    "id": "glyph-of-prismatic-onslaught",
+    "name": "Glyph of Prismatic Onslaught",
+    "category": "weapon",
+    "rune_prefix": "Hakeijo",
+    "effect": "Deals X Magic Damage and recovers Y Health and Z Magicka and Stamina"
+  },
+  {
+    "id": "glyph-of-foulness",
+    "name": "Glyph of Foulness",
+    "category": "weapon",
+    "rune_prefix": "Haoko",
+    "effect": "Deals X Disease Damage"
+  },
+  {
+    "id": "glyph-of-poison",
+    "name": "Glyph of Poison",
+    "category": "weapon",
+    "rune_prefix": "Kuoko",
+    "effect": "Deals X Poison Damage"
+  },
+  {
+    "id": "glyph-of-absorb-magicka",
+    "name": "Glyph of Absorb Magicka",
+    "category": "weapon",
+    "rune_prefix": "Makko",
+    "effect": "Deals X Magic Damage and recovers Y Magicka"
+  },
+  {
+    "id": "glyph-of-shock",
+    "name": "Glyph of Shock",
+    "category": "weapon",
+    "rune_prefix": "Meip",
+    "effect": "Deals X Shock Damage"
+  },
+  {
+    "id": "glyph-of-absorb-health",
+    "name": "Glyph of Absorb Health",
+    "category": "weapon",
+    "rune_prefix": "Oko",
+    "effect": "Deals X Magic Damage and recovers Y Health"
+  },
+  {
+    "id": "glyph-of-decrease-health",
+    "name": "Glyph of Decrease Health",
+    "category": "weapon",
+    "rune_prefix": "Okoma",
+    "effect": "Deals X Oblivion Damage"
+  },
+  {
+    "id": "glyph-of-weapon-damage",
+    "name": "Glyph of Weapon Damage",
+    "category": "weapon",
+    "rune_prefix": "Okori",
+    "effect": "Increase your Weapon and Spell Damage by X for 5 seconds"
+  },
+  {
+    "id": "glyph-of-weakening",
+    "name": "Glyph of Weakening",
+    "category": "weapon",
+    "rune_prefix": "Okori",
+    "effect": "Reduce the target's Weapon and Spell Damage by X for 5 seconds"
+  },
+  {
+    "id": "glyph-of-flame",
+    "name": "Glyph of Flame",
+    "category": "weapon",
+    "rune_prefix": "Rakeipa",
+    "effect": "Deals X Fire Damage"
+  },
+  {
+    "id": "glyph-of-stamina",
+    "name": "Glyph of Stamina",
+    "category": "armor",
+    "rune_prefix": "Deni",
+    "effect": "Adds X Maximum Stamina"
+  },
+  {
+    "id": "glyph-of-prismatic-defense",
+    "name": "Glyph of Prismatic Defense",
+    "category": "armor",
+    "rune_prefix": "Hakeijo",
+    "effect": "Adds X Maximum Health, Magicka and Stamina"
+  },
+  {
+    "id": "glyph-of-magicka",
+    "name": "Glyph of Magicka",
+    "category": "armor",
+    "rune_prefix": "Makko",
+    "effect": "Adds X Maximum Magicka"
+  },
+  {
+    "id": "glyph-of-health",
+    "name": "Glyph of Health",
+    "category": "armor",
+    "rune_prefix": "Oko",
+    "effect": "Adds X Maximum Health"
+  },
+  {
+    "id": "glyph-of-frost-resist",
+    "name": "Glyph of Frost Resist",
+    "category": "jewelry",
+    "rune_prefix": "Dekeipa",
+    "effect": "Adds X Frost Resistance"
+  },
+  {
+    "id": "glyph-of-stamina-recovery",
+    "name": "Glyph of Stamina Recovery",
+    "category": "jewelry",
+    "rune_prefix": "Denima",
+    "effect": "Adds X Stamina Recovery"
+  },
+  {
+    "id": "glyph-of-reduce-feat-cost",
+    "name": "Glyph of Reduce Feat Cost",
+    "category": "jewelry",
+    "rune_prefix": "Denima",
+    "effect": "Reduce Stamina cost of abilities by X"
+  },
+  {
+    "id": "glyph-of-disease-resist",
+    "name": "Glyph of Disease Resist",
+    "category": "jewelry",
+    "rune_prefix": "Haoko",
+    "effect": "Adds X Disease Resistance"
+  },
+  {
+    "id": "glyph-of-bashing",
+    "name": "Glyph of Bashing",
+    "category": "jewelry",
+    "rune_prefix": "Kaderi",
+    "effect": "Increase Bash damage by X"
+  },
+  {
+    "id": "glyph-of-bracing",
+    "name": "Glyph of Bracing",
+    "category": "jewelry",
+    "rune_prefix": "Kaderi",
+    "effect": "Reduce cost of Blocking by X"
+  },
+  {
+    "id": "glyph-of-poison-resist",
+    "name": "Glyph of Poison Resist",
+    "category": "jewelry",
+    "rune_prefix": "Kuoko",
+    "effect": "Adds X Poison Resistance"
+  },
+  {
+    "id": "glyph-of-increase-magical-harm",
+    "name": "Glyph of Increase Magical Harm",
+    "category": "jewelry",
+    "rune_prefix": "Makderi",
+    "effect": "Adds X Spell Damage and Weapon Damage and 10 Magicka Recovery"
+  },
+  {
+    "id": "glyph-of-decrease-spell-harm",
+    "name": "Glyph of Decrease Spell Harm",
+    "category": "jewelry",
+    "rune_prefix": "Makderi",
+    "effect": "Adds X Spell Resistance"
+  },
+  {
+    "id": "glyph-of-magicka-recovery",
+    "name": "Glyph of Magicka Recovery",
+    "category": "jewelry",
+    "rune_prefix": "Makkoma",
+    "effect": "Adds X Magicka Recovery"
+  },
+  {
+    "id": "glyph-of-reduce-spell-cost",
+    "name": "Glyph of Reduce Spell Cost",
+    "category": "jewelry",
+    "rune_prefix": "Makkoma",
+    "effect": "Reduce Magicka cost of abilities by X"
+  },
+  {
+    "id": "glyph-of-shock-resist",
+    "name": "Glyph of Shock Resist",
+    "category": "jewelry",
+    "rune_prefix": "Meip",
+    "effect": "Adds X Shock Resistance"
+  },
+  {
+    "id": "glyph-of-health-recovery",
+    "name": "Glyph of Health Recovery",
+    "category": "jewelry",
+    "rune_prefix": "Okoma",
+    "effect": "Adds X Health Recovery"
+  },
+  {
+    "id": "glyph-of-potion-boost",
+    "name": "Glyph of Potion Boost",
+    "category": "jewelry",
+    "rune_prefix": "Oru",
+    "effect": "Increase the duration of Potion effects by X seconds"
+  },
+  {
+    "id": "glyph-of-potion-speed",
+    "name": "Glyph of Potion Speed",
+    "category": "jewelry",
+    "rune_prefix": "Oru",
+    "effect": "Reduce the cooldown of Potions below this item's level by X seconds"
+  },
+  {
+    "id": "glyph-of-flame-resist",
+    "name": "Glyph of Flame Resist",
+    "category": "jewelry",
+    "rune_prefix": "Rakeipa",
+    "effect": "Adds X Fire Resistance"
+  },
+  {
+    "id": "glyph-of-increase-physical-harm",
+    "name": "Glyph of Increase Physical Harm",
+    "category": "jewelry",
+    "rune_prefix": "Taderi",
+    "effect": "Adds X Weapon Damage and Spell Damage and 10 Stamina Recovery"
+  },
+  {
+    "id": "glyph-of-decrease-physical-harm",
+    "name": "Glyph of Decrease Physical Harm",
+    "category": "jewelry",
+    "rune_prefix": "Taderi",
+    "effect": "Adds X Physical Resistance"
+  },
+  {
+    "id": "glyph-of-prismatic-recovery",
+    "name": "Glyph of Prismatic Recovery",
+    "category": "jewelry",
+    "rune_prefix": "Indeko",
+    "effect": "Adds X Health Recovery, Magicka Recovery and Stamina Recovery"
+  },
+  {
+    "id": "glyph-of-reduce-skill-cost",
+    "name": "Glyph of Reduce Skill Cost",
+    "category": "jewelry",
+    "rune_prefix": "Indeko",
+    "effect": "Reduce Health, Magicka and Stamina cost of abilities by X"
+  }
+]

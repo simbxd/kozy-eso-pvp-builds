@@ -1,0 +1,9 @@
+{
+  "id": "infused-armor",
+  "name": "Infused",
+  "category": "armor",
+  "effect": "Increase armor enchantment effect by …",
+  "value_range": "9% - 25%",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Infused"
+}

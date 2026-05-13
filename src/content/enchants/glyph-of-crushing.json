@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-crushing",
+  "name": "Glyph of Crushing",
+  "category": "weapon",
+  "effect": "Reduce the target's Physical and Spell Resistance by X for 5 seconds",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Crushing",
+  "rune_prefix": "Deteri"
+}

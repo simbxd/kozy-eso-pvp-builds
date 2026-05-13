@@ -1,0 +1,25 @@
+{
+  "id": "orc",
+  "name": "Orc",
+  "alliance": "Daggerfall Covenant",
+  "passives": [
+    {
+      "name": "Craftsman",
+      "description": "Increases your experience gain with the Heavy Armor skill line by 15%. Increases your crafting inspiration gained by 10%."
+    },
+    {
+      "name": "Brawny",
+      "description": "Increases your Max Stamina by 1000."
+    },
+    {
+      "name": "Unflinching Rage",
+      "description": "Increases your Max Health by 1000. When you deal damage, you heal for 2125 Health. This can occur once every 4 seconds."
+    },
+    {
+      "name": "Swift Warrior",
+      "description": "Increases your Weapon and Spell Damage by 258. Reduces the cost of Sprint by 12% and increases the Movement Speed bonus of Sprint by 10%."
+    }
+  ],
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Orc"
+}

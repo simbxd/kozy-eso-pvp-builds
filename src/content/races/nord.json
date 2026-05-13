@@ -1,0 +1,25 @@
+{
+  "id": "nord",
+  "name": "Nord",
+  "alliance": "Ebonheart Pact",
+  "passives": [
+    {
+      "name": "Reveler",
+      "description": "Increases your experience gain with the Two Handed skill line by 15%. Increases the duration of any consumed drink by 15 minutes."
+    },
+    {
+      "name": "Resist Frost",
+      "description": "Increases your Max Health by 1000 and Frost Resistance by 4620."
+    },
+    {
+      "name": "Stalwart",
+      "description": "Increases your Max Stamina by 1500. When you take damage, you gain 5 Ultimate. This effect can occur once every 10 seconds."
+    },
+    {
+      "name": "Rugged",
+      "description": "Increases your Physical and Spell Resistance by 2600."
+    }
+  ],
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nord"
+}

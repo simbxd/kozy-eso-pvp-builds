@@ -1,0 +1,9 @@
+{
+  "id": "invigorating",
+  "name": "Invigorating",
+  "category": "armor",
+  "effect": "Increase Health Recovery, Magicka Recovery, and Stamina Recovery by …",
+  "value_range": "8 - 16",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Invigorating"
+}

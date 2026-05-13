@@ -1,0 +1,9 @@
+{
+  "id": "the-thief",
+  "name": "The Thief",
+  "effect": "Increases Weapon and Spell Critical Strike ratings",
+  "value_base": 1212,
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Thief_(Mundus_Stone)",
+  "value_divines": 1982
+}

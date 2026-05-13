@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-decrease-spell-harm",
+  "name": "Glyph of Decrease Spell Harm",
+  "category": "jewelry",
+  "effect": "Adds X Spell Resistance",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Decrease_Spell_Harm",
+  "rune_prefix": "Makderi"
+}

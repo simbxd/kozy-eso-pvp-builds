@@ -1,0 +1,9 @@
+{
+  "id": "the-ritual",
+  "name": "The Ritual",
+  "effect": "Increases Healing Done",
+  "value_base": "8%",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Ritual_(Mundus_Stone)",
+  "value_divines": "13%"
+}

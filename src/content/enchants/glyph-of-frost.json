@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-frost",
+  "name": "Glyph of Frost",
+  "category": "weapon",
+  "effect": "Deals X Frost Damage",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Frost",
+  "rune_prefix": "Dekeipa"
+}

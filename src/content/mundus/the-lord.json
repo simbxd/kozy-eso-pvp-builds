@@ -1,0 +1,9 @@
+{
+  "id": "the-lord",
+  "name": "The Lord",
+  "effect": "Increases Maximum Health",
+  "value_base": 2225,
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Lord_(Mundus_Stone)",
+  "value_divines": 3639
+}

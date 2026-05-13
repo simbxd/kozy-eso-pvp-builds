@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-bracing",
+  "name": "Glyph of Bracing",
+  "category": "jewelry",
+  "effect": "Reduce cost of Blocking by X",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Bracing",
+  "rune_prefix": "Kaderi"
+}

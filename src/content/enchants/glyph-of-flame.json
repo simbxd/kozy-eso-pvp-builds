@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-flame",
+  "name": "Glyph of Flame",
+  "category": "weapon",
+  "effect": "Deals X Fire Damage",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Flame",
+  "rune_prefix": "Rakeipa"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "defending",
+  "name": "Defending",
+  "category": "weapon",
+  "effect": "Increases Physical and Spell Resistance by …",
+  "value_range": "1H: 1428 - 1638 / 2H: 2856 - 3276",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Defending"
+}

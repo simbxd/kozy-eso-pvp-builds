@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-prismatic-recovery",
+  "name": "Glyph of Prismatic Recovery",
+  "category": "jewelry",
+  "effect": "Adds X Health Recovery, Magicka Recovery and Stamina Recovery",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Prismatic_Recovery",
+  "rune_prefix": "Indeko"
+}

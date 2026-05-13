@@ -1,0 +1,9 @@
+{
+  "id": "divines",
+  "name": "Divines",
+  "category": "armor",
+  "effect": "Increases Mundus Stone effects by …",
+  "value_range": "5.1% - 9.1%",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Divines"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-reduce-spell-cost",
+  "name": "Glyph of Reduce Spell Cost",
+  "category": "jewelry",
+  "effect": "Reduce Magicka cost of abilities by X",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Reduce_Spell_Cost",
+  "rune_prefix": "Makkoma"
+}

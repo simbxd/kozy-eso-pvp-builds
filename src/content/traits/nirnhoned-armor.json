@@ -1,0 +1,9 @@
+{
+  "id": "nirnhoned-armor",
+  "name": "Nirnhoned",
+  "category": "armor",
+  "effect": "Increases Physical and Spell Resistance by …",
+  "value_range": "220 - 253",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Nirnhoned"
+}

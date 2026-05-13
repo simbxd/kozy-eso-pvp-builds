@@ -1,0 +1,9 @@
+{
+  "id": "training-armor",
+  "name": "Training",
+  "category": "armor",
+  "effect": "Increase experience gained from kills by …",
+  "value_range": "7% - 11%",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Training"
+}

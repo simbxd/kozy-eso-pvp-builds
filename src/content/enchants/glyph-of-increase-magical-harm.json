@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-increase-magical-harm",
+  "name": "Glyph of Increase Magical Harm",
+  "category": "jewelry",
+  "effect": "Adds X Spell Damage and Weapon Damage and 10 Magicka Recovery",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Increase_Magical_Harm",
+  "rune_prefix": "Makderi"
+}

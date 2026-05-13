@@ -1,0 +1,80 @@
+[
+  {
+    "id": "the-apprentice",
+    "name": "The Apprentice",
+    "effect": "Increases Spell Damage",
+    "value_base": 238
+  },
+  {
+    "id": "the-atronach",
+    "name": "The Atronach",
+    "effect": "Increases Magicka Recovery",
+    "value_base": 310
+  },
+  {
+    "id": "the-lady",
+    "name": "The Lady",
+    "effect": "Increases Physical and Spell Resistance",
+    "value_base": 2744
+  },
+  {
+    "id": "the-lord",
+    "name": "The Lord",
+    "effect": "Increases Maximum Health",
+    "value_base": 2225
+  },
+  {
+    "id": "the-lover",
+    "name": "The Lover",
+    "effect": "Increases Physical and Spell Penetration",
+    "value_base": 2744
+  },
+  {
+    "id": "the-mage",
+    "name": "The Mage",
+    "effect": "Increases Maximum Magicka",
+    "value_base": 2023
+  },
+  {
+    "id": "the-ritual",
+    "name": "The Ritual",
+    "effect": "Increases Healing Done",
+    "value_base": "8%"
+  },
+  {
+    "id": "the-serpent",
+    "name": "The Serpent",
+    "effect": "Increases Stamina Recovery",
+    "value_base": 310
+  },
+  {
+    "id": "the-shadow",
+    "name": "The Shadow",
+    "effect": "Increases Critical Damage and Healing done",
+    "value_base": "11%"
+  },
+  {
+    "id": "the-steed",
+    "name": "The Steed",
+    "effect": "Increases Health Recovery and Movement Speed",
+    "value_base": "238 / 10%"
+  },
+  {
+    "id": "the-thief",
+    "name": "The Thief",
+    "effect": "Increases Weapon and Spell Critical Strike ratings",
+    "value_base": 1212
+  },
+  {
+    "id": "the-tower",
+    "name": "The Tower",
+    "effect": "Increases Maximum Stamina",
+    "value_base": 2023
+  },
+  {
+    "id": "the-warrior",
+    "name": "The Warrior",
+    "effect": "Increases Weapon Damage",
+    "value_base": 238
+  }
+]

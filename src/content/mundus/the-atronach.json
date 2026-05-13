@@ -1,0 +1,9 @@
+{
+  "id": "the-atronach",
+  "name": "The Atronach",
+  "effect": "Increases Magicka Recovery",
+  "value_base": 310,
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Atronach_(Mundus_Stone)",
+  "value_divines": 507
+}

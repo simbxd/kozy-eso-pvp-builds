@@ -1,0 +1,25 @@
+{
+  "id": "bosmer",
+  "name": "Bosmer",
+  "alliance": "Aldmeri Dominion",
+  "passives": [
+    {
+      "name": "Acrobat",
+      "description": "Increases your experience gain with the Bow skill line by 15%. Decreases your fall damage taken by 10%."
+    },
+    {
+      "name": "Hunter's Eye",
+      "description": "Increases your Stealth Detection radius by 3 meters. Increases your Movement Speed by 5% and your Physical and Spell Penetration by 950."
+    },
+    {
+      "name": "Y'ffre's Endurance",
+      "description": "Increases your Stamina Recovery by 258."
+    },
+    {
+      "name": "Resist Affliction",
+      "description": "Increases your Max Stamina by 2000 and your Disease and Poison Resistance by 2310."
+    }
+  ],
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Bosmer"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-poison",
+  "name": "Glyph of Poison",
+  "category": "weapon",
+  "effect": "Deals X Poison Damage",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Poison",
+  "rune_prefix": "Kuoko"
+}

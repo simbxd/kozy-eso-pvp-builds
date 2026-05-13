@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-hardening",
+  "name": "Glyph of Hardening",
+  "category": "weapon",
+  "effect": "Grants a X point Damage Shield for 5 seconds",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Hardening",
+  "rune_prefix": "Deteri"
+}

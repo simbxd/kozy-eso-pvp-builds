@@ -1,0 +1,9 @@
+{
+  "id": "the-mage",
+  "name": "The Mage",
+  "effect": "Increases Maximum Magicka",
+  "value_base": 2023,
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Mage_(Mundus_Stone)",
+  "value_divines": 3309
+}

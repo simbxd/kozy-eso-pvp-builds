@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-health",
+  "name": "Glyph of Health",
+  "category": "armor",
+  "effect": "Adds X Maximum Health",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Health",
+  "rune_prefix": "Oko"
+}

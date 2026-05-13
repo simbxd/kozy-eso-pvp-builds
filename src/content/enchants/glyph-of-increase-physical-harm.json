@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-increase-physical-harm",
+  "name": "Glyph of Increase Physical Harm",
+  "category": "jewelry",
+  "effect": "Adds X Weapon Damage and Spell Damage and 10 Stamina Recovery",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Increase_Physical_Harm",
+  "rune_prefix": "Taderi"
+}

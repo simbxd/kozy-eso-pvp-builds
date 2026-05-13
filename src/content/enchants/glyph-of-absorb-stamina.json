@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-absorb-stamina",
+  "name": "Glyph of Absorb Stamina",
+  "category": "weapon",
+  "effect": "Deals X Physical Damage and recovers Y Stamina",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Absorb_Stamina",
+  "rune_prefix": "Deni"
+}

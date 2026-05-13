@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-potion-boost",
+  "name": "Glyph of Potion Boost",
+  "category": "jewelry",
+  "effect": "Increase the duration of Potion effects by X seconds",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Potion_Boost",
+  "rune_prefix": "Oru"
+}

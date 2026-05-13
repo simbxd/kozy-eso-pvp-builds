@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-absorb-health",
+  "name": "Glyph of Absorb Health",
+  "category": "weapon",
+  "effect": "Deals X Magic Damage and recovers Y Health",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Absorb_Health",
+  "rune_prefix": "Oko"
+}

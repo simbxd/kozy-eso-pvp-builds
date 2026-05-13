@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-decrease-health",
+  "name": "Glyph of Decrease Health",
+  "category": "weapon",
+  "effect": "Deals X Oblivion Damage",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Decrease_Health",
+  "rune_prefix": "Okoma"
+}

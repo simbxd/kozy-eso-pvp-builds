@@ -1,0 +1,52 @@
+[
+  {
+    "id": "altmer",
+    "name": "Altmer",
+    "alliance": "Aldmeri Dominion"
+  },
+  {
+    "id": "argonian",
+    "name": "Argonian",
+    "alliance": "Ebonheart Pact"
+  },
+  {
+    "id": "bosmer",
+    "name": "Bosmer",
+    "alliance": "Aldmeri Dominion"
+  },
+  {
+    "id": "breton",
+    "name": "Breton",
+    "alliance": "Daggerfall Covenant"
+  },
+  {
+    "id": "dunmer",
+    "name": "Dunmer",
+    "alliance": "Ebonheart Pact"
+  },
+  {
+    "id": "imperial",
+    "name": "Imperial",
+    "alliance": "Other"
+  },
+  {
+    "id": "khajiit",
+    "name": "Khajiit",
+    "alliance": "Aldmeri Dominion"
+  },
+  {
+    "id": "nord",
+    "name": "Nord",
+    "alliance": "Ebonheart Pact"
+  },
+  {
+    "id": "orc",
+    "name": "Orc",
+    "alliance": "Daggerfall Covenant"
+  },
+  {
+    "id": "redguard",
+    "name": "Redguard",
+    "alliance": "Daggerfall Covenant"
+  }
+]

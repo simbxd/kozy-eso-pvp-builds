@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-stamina",
+  "name": "Glyph of Stamina",
+  "category": "armor",
+  "effect": "Adds X Maximum Stamina",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Stamina",
+  "rune_prefix": "Deni"
+}

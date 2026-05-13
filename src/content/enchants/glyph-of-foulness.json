@@ -1,0 +1,9 @@
+{
+  "id": "glyph-of-foulness",
+  "name": "Glyph of Foulness",
+  "category": "weapon",
+  "effect": "Deals X Disease Damage",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Glyph_of_Foulness",
+  "rune_prefix": "Haoko"
+}

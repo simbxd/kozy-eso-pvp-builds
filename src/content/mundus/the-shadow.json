@@ -1,0 +1,9 @@
+{
+  "id": "the-shadow",
+  "name": "The Shadow",
+  "effect": "Increases Critical Damage and Healing done",
+  "value_base": "11%",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:The_Shadow_(Mundus_Stone)",
+  "value_divines": "17%"
+}
