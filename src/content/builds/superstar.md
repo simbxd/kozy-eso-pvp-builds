@@ -1,11 +1,11 @@
 ---
-title: SUPERSTAR — Hybrid Dragonknight PvP
+title: The Solo Knight — Hybrid Dragonknight PvP
 class: Dragonknight
 role: DPS
 resource: Hybrid
 gamemode: PvP
 patch: U50
-updatedAt: 2025-05-11
+updatedAt: 2026-05-13
 difficulty: Intermediate
 featured: true
 summary: Dragonknight built to hold the line in solo and small-scale PvP. Hard
@@ -21,7 +21,7 @@ sets:
   - twice-fanged-serpent
 skills:
   bar1:
-    - dizzying-swing
+    - molten-whip
     - disintegrating-dragonfire
     - shattering-rocks
     - quick-cloak
