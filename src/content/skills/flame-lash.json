@@ -4,7 +4,7 @@
   "base_skill": "Lava Whip",
   "morph_of": "lava-whip",
   "morph_sibling": "molten-whip",
-  "morph_rationale": "Self-sustain morph — heals for a portion of the damage dealt, amplified when the target is Off Balance. Preferred over Molten Whip when consistent self-healing matters more than stacking Weapon Damage.",
+  "morph_rationale": "Self-sustain morph — triggers a free Power Lash follow-up that heals when the target is Off Balance. Preferred over Molten Whip when reactive sustain matters more than Seething Fury damage scaling.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
   "type": "Active",
