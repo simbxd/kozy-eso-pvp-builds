@@ -200,32 +200,72 @@ gear:
       enchant: Multi-Effect
 ---
 
-## Opening
+<div class="ps-sequence">
+  <div class="ps-step">
+    <div class="ps-step__num">1</div>
+    <div class="ps-step__body">
+      <div class="ps-step__title">Open on Bar II</div>
+      <div class="ps-step__desc">Pre-cast <span class="ps-skill">Heart of Flame</span> before engaging — forces the enemy to react immediately. Follow with <span class="ps-skill">Blood of the Elder Dragon</span> for the damage shield, then swap to Bar I and close in.</div>
+    </div>
+  </div>
+  <div class="ps-step">
+    <div class="ps-step__num">2</div>
+    <div class="ps-step__body">
+      <div class="ps-step__title">Pressure loop on Bar I</div>
+      <div class="ps-step__desc">Weave <span class="ps-skill">Disintegrating Dragonfire</span> and <span class="ps-skill">Shattering Rocks</span> to build Seething Fury stacks, then spend them on <span class="ps-skill">Molten Whip</span> for burst. Keep <span class="ps-skill">Incinerate</span> refreshed at all times — it's your primary sustained damage.</div>
+    </div>
+  </div>
+  <div class="ps-step">
+    <div class="ps-step__num">3</div>
+    <div class="ps-step__body">
+      <div class="ps-step__title">Rotate bars on pressure</div>
+      <div class="ps-step__desc">When burst hits, swap to Bar II: <span class="ps-skill">Resolving Vigor</span> then <span class="ps-skill">Heart and Home</span>. Return to Bar I immediately — don't linger on the defensive bar.</div>
+    </div>
+  </div>
+</div>
 
-Engage on **Bar II**. Pre-cast **Heart of Flame** before committing — it applies immediate AoE pressure and forces the enemy to react. Follow immediately with **Blood of the Elder Dragon** to put a damage shield up before the first retaliation lands. Once both are out, swap to **Bar I** and close in.
+<div class="ps-bars">
+  <div class="ps-bar">
+    <div class="ps-bar__header">
+      <span class="ps-bar__badge ps-bar__badge--1">BAR I</span>
+      <span class="ps-bar__role">Offense</span>
+    </div>
+    <ul class="ps-bar__skills">
+      <li><span class="ps-skill">Molten Whip</span><span class="ps-bar__note">burst — consume Seething Fury stacks</span></li>
+      <li><span class="ps-skill">Incinerate</span><span class="ps-bar__note">sustained DoT — never let it drop</span></li>
+      <li><span class="ps-skill">Disintegrating Dragonfire</span><span class="ps-bar__note">stack builder + Major Breach</span></li>
+      <li><span class="ps-skill">Shattering Rocks</span><span class="ps-bar__note">stack builder + AoE pressure</span></li>
+      <li><span class="ps-skill">Quick Cloak</span><span class="ps-bar__note">disengage + resource reset window</span></li>
+      <li><span class="ps-skill ps-skill--ult">Take Flight</span><span class="ps-bar__note">offensive — commit when enemy is locked</span></li>
+    </ul>
+  </div>
+  <div class="ps-bar">
+    <div class="ps-bar__header">
+      <span class="ps-bar__badge ps-bar__badge--2">BAR II</span>
+      <span class="ps-bar__role">Sustain</span>
+    </div>
+    <ul class="ps-bar__skills">
+      <li><span class="ps-skill">Resolving Vigor</span><span class="ps-bar__note">primary heal — use proactively at ~60%</span></li>
+      <li><span class="ps-skill">Heart and Home</span><span class="ps-bar__note">shield layer — rotate on cooldown</span></li>
+      <li><span class="ps-skill">Heart of Flame</span><span class="ps-bar__note">opener AoE, reapply in extended fights</span></li>
+      <li><span class="ps-skill">Blood of the Elder Dragon</span><span class="ps-bar__note">damage shield — cast pre-engage</span></li>
+      <li><span class="ps-skill">Biting Jabs</span><span class="ps-bar__note">filler pressure on Bar II</span></li>
+      <li><span class="ps-skill ps-skill--ult">Temporal Guard</span><span class="ps-bar__note">panic button — save for burst windows</span></li>
+    </ul>
+  </div>
+</div>
 
-## Pressure Loop (Bar I)
-
-Bar I is your damage engine. The core loop revolves around **Molten Whip**: weave your other skills on this bar to build Seething Fury stacks, then spend them on a Molten Whip hit for amplified burst. Keep **Incinerate** refreshed — it's your sustained DoT and should never fall off. **Disintegrating Dragonfire** and **Shattering Rocks** fill the gaps and maintain pressure between Whip procs.
-
-**Quick Cloak** is dual-purpose: use it to disengage briefly when you need to let a cooldown reset, or to make the enemy lose target lock while your resources recover.
-
-## Sustain & Recovery (Bar II)
-
-Bar II is your survival window. **Resolving Vigor** is your primary heal — use it *proactively* when health dips below ~60%, not in panic at 20%. **Heart and Home** stacks a shield on top of Vigor's HoT; rotate both on cooldown under sustained burst.
-
-When you feel pressure stacking up, bar-swap to II, land both defensives, then immediately swap back to I to maintain your damage presence. Letting the fight drag is fine — this build is built for it.
-
-## Ultimates
-
-**Take Flight** (Bar I) is your offensive ultimate. Use it when the enemy is commitment-locked: post-dodge, post-break-free, or when a heal is on cooldown. The AoE knockback disrupts clusters in small-scale fights.
-
-**Temporal Guard** (Bar II) is your panic button. Save it for burst windows you cannot otherwise survive. Do not burn it for damage — its value is time bought.
-
-## Two-Fanged Serpent Stacks
-
-The longer the fight, the more Snake stacks accumulate and the harder each proc hits. Resist the urge to force a kill early. If you're holding your own, sustained pressure compounds — the set does increasing work as the fight extends.
-
-## Break-Free Priority
-
-In solo PvP, crowd control is the kill condition. **Break free the moment you are grabbed** — waiting until you're fully stunned and stacked on by follow-up skills is almost always fatal. Keep at least one bar of Stamina reserved for a break free at all times.
+<div class="ps-rules">
+  <div class="ps-rule">
+    <div class="ps-rule__title">Don't rush the kill</div>
+    <div class="ps-rule__body">Two-Fanged Serpent stacks compound over time. The longer the fight, the harder each proc hits — sustained pressure beats early aggression.</div>
+  </div>
+  <div class="ps-rule">
+    <div class="ps-rule__title">Break free immediately</div>
+    <div class="ps-rule__body">CC is the kill condition in solo PvP. Break the moment you're grabbed — waiting until you're fully stacked on is almost always fatal.</div>
+  </div>
+  <div class="ps-rule">
+    <div class="ps-rule__title">Heal before panic</div>
+    <div class="ps-rule__body">Use Resolving Vigor at ~60% HP, not 20%. Panic heals at critical health are usually too late against burst compositions.</div>
+  </div>
+</div>

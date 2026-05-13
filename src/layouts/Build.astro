@@ -784,54 +784,198 @@ const railItems = [`KOZY · ESO PvP`];
     .kz-stat__v { font-size: 30px; }
   }
 
-  /* ── playstyle prose ───────────────────────────────── */
-  .prose :global(h2) {
+  /* ── playstyle — step sequence ─────────────────────── */
+  .prose :global(.ps-sequence) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  /* vertical connecting line */
+  .prose :global(.ps-sequence::before) {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 36px;
+    bottom: 36px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--color-accent), rgba(139,92,246,0.15));
+  }
+
+  .prose :global(.ps-step) {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px 0;
+    position: relative;
+  }
+
+  .prose :global(.ps-step__num) {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 14px rgba(139,92,246,0.45);
+  }
+
+  .prose :global(.ps-step__body) {
+    padding-top: 6px;
+  }
+
+  .prose :global(.ps-step__title) {
     font-family: var(--font-display);
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 500;
     color: var(--color-text);
-    margin: 36px 0 12px;
+    margin-bottom: 6px;
     letter-spacing: 0.01em;
   }
-  .prose :global(h2:first-child) { margin-top: 0; }
 
-  .prose :global(p) {
+  .prose :global(.ps-step__desc) {
     font-family: var(--font-body);
-    font-size: 17px;
-    line-height: 1.72;
-    color: #d8d2f0;
-    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--color-text-muted);
   }
 
-  .prose :global(ul),
-  .prose :global(ol) {
-    font-family: var(--font-body);
-    font-size: 17px;
-    line-height: 1.72;
-    color: #d8d2f0;
-    margin: 0 0 16px;
-    padding-left: 24px;
+  /* ── playstyle — bar breakdown ──────────────────────── */
+  .prose :global(.ps-bars) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 32px;
   }
 
-  .prose :global(li) { margin-bottom: 6px; }
-
-  .prose :global(strong) {
-    color: var(--color-text);
-    font-weight: 600;
+  .prose :global(.ps-bar) {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
   }
 
-  .prose :global(em) {
-    color: var(--color-mono);
-    font-style: normal;
+  .prose :global(.ps-bar__header) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--color-border);
+    background: rgba(139,92,246,0.04);
+  }
+
+  .prose :global(.ps-bar__badge) {
     font-family: var(--font-mono);
-    font-size: 13px;
-    letter-spacing: 0.04em;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    font-weight: 600;
+    padding: 3px 8px;
+    border: 1px solid;
+  }
+  .prose :global(.ps-bar__badge--1) {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    background: rgba(139,92,246,0.1);
+  }
+  .prose :global(.ps-bar__badge--2) {
+    color: var(--color-text-muted);
+    border-color: var(--color-border-2);
   }
 
-  .prose :global(hr) {
-    border: none;
-    border-top: 1px solid var(--color-border);
-    margin: 28px 0;
+  .prose :global(.ps-bar__role) {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .prose :global(.ps-bar__skills) {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prose :global(.ps-bar__skills li) {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 16px;
+    border-bottom: 1px solid var(--color-border);
+    gap: 2px;
+  }
+  .prose :global(.ps-bar__skills li:last-child) { border-bottom: none; }
+
+  .prose :global(.ps-bar__note) {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-style: italic;
+    color: var(--color-text-muted);
+    line-height: 1.3;
+  }
+
+  /* ── playstyle — skill pill ─────────────────────────── */
+  .prose :global(.ps-skill) {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-mono);
+    letter-spacing: 0.01em;
+  }
+
+  .prose :global(.ps-skill--ult) {
+    color: var(--color-mythic);
+  }
+
+  /* ── playstyle — key rules ──────────────────────────── */
+  .prose :global(.ps-rules) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .prose :global(.ps-rule) {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+    border-top: 2px solid var(--color-accent);
+    padding: 18px 18px 20px;
+  }
+
+  .prose :global(.ps-rule__title) {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    letter-spacing: 0.01em;
+  }
+
+  .prose :global(.ps-rule__body) {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+  }
+
+  /* ── playstyle — responsive ─────────────────────────── */
+  @media (max-width: 860px) {
+    .prose :global(.ps-bars) { grid-template-columns: 1fr; }
+    .prose :global(.ps-rules) { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 560px) {
+    .prose :global(.ps-sequence::before) { display: none; }
+    .prose :global(.ps-step) { gap: 14px; }
+    .prose :global(.ps-step__num) { width: 30px; height: 30px; font-size: 12px; }
   }
 
   /* ── sets grid ──────────────────────────────────────── */
