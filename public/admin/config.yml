@@ -30,7 +30,7 @@ collections:
       - name: class
         label: Class
         widget: select
-        options: [Dragonknight, Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist]
+        options: [Dragonknight, Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist, Subclass]
       - name: role
         label: Role
         widget: select
