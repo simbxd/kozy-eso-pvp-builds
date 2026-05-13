@@ -20,6 +20,7 @@
 | v9.0 | M5 terminé : `morph_rationale` généré et audité pour les 389 skills morph du jeu — classes, weapon, guild, armor, Alliance War, World (Vampire/Werewolf/Soul Magic) ; script `gen-morph-rationale.mjs` créé (UESP API + regex) ; 3 scripts de correction batch (214 corrections) ; audit intégrité : `morph_sibling` corrigé sur `quick-cloak` et `reverse-slice` ; classe `Armor` ajoutée au scope du générateur |
 | v10.0 | M6 terminé : `skill_line_id` ajouté sur les 1208 skills + `skill-lines-index.json` (21 entrées, 7 classes × 3 lignes) ; `fetch-eso-meta.mjs` — scraper UESP wiki pour races (10), mundus stones (13), traits (27), enchants/glyphes (38) ; indices plats dans `src/data/eso/` ; migration one-shot `migrate-add-skill-line-id.mjs` (idempotente) |
 | v10.1 | Race ajoutée sur les builds : collection `races` enregistrée dans `content.config.ts` (Zod) ; champ `race` optionnel dans le frontmatter builds ; section Race dans les pages de build (passives) + cellule masthead + entrée TOC ; Imperial `alliance: "Other"` supporté |
+| v10.2 | Champion Points actifs dans Decap : `cp-stars-index.json` (16 étoiles Warfare + 16 Fitness slottables) ; `gen-decap-config.mjs` charge le JSON et génère des `widget: select` pour le champ `star` dans les listes CP Warfare/Fitness |
 
 ---
 

@@ -1,0 +1,39 @@
+{
+  "_note": "Slottable (active) Champion Point stars per constellation. Confirmed from build data + general ESO knowledge. Verify completeness against UESP or in-game for U50+.",
+  "warfare": [
+    "Arcane Well",
+    "Blessed",
+    "Cleansing Revival",
+    "Deadly Aim",
+    "Duelist's Rebuff",
+    "Elemental Aegis",
+    "Elfborn",
+    "Fighting Finesse",
+    "Hardy",
+    "Ironclad",
+    "Master-at-Arms",
+    "Piercing",
+    "Reaving Blows",
+    "Siphoning Spells",
+    "Thaumaturge",
+    "Tireless Discipline"
+  ],
+  "fitness": [
+    "Bloody Renewal",
+    "Boundless Vitality",
+    "Bracing Gusts",
+    "Celerity",
+    "Defiance",
+    "Fortified",
+    "Fortified Brass",
+    "Hasty Retreat",
+    "Hero's Rebuke",
+    "Infused Weapon",
+    "Juggernaut",
+    "Mystic Tenacity",
+    "Pain's Refuge",
+    "Rejuvenation",
+    "Slippery",
+    "Sustained by Suffering"
+  ]
+}

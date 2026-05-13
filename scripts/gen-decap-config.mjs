@@ -32,6 +32,10 @@ const racesIndex = JSON.parse(
   await readFile(join(ESO_DIR, 'races-index.json'), 'utf8')
 );
 
+const cpStarsIndex = JSON.parse(
+  await readFile(join(ESO_DIR, 'cp-stars-index.json'), 'utf8')
+);
+
 // Skills: only curated files in src/content/skills/ (these are the ones assertIds() accepts)
 const skillFiles = (await readdir(SKILLS_DIR)).filter(f => f.endsWith('.json'));
 const skillsIndex = await Promise.all(
@@ -43,7 +47,7 @@ const skillsIndex = await Promise.all(
 );
 skillsIndex.sort((a, b) => a.name.localeCompare(b.name));
 
-log(`Loaded ${setsIndex.length} sets, ${skillsIndex.length} curated skills, ${racesIndex.length} races`);
+log(`Loaded ${setsIndex.length} sets, ${skillsIndex.length} curated skills, ${racesIndex.length} races, ${cpStarsIndex.warfare.length} warfare stars, ${cpStarsIndex.fitness.length} fitness stars`);
 
 // ---------- Build YAML option blocks ----------
 function raceOptions(indent = 10) {
@@ -57,6 +61,13 @@ function setOptions(indent = 10) {
   const pad = ' '.repeat(indent);
   return setsIndex
     .map(s => `${pad}- { label: "${s.name.replace(/"/g, '\\"')}", value: "${s.id}" }`)
+    .join('\n');
+}
+
+function cpStarOptions(constellation, indent = 18) {
+  const pad = ' '.repeat(indent);
+  return cpStarsIndex[constellation]
+    .map(s => `${pad}- "${s.replace(/"/g, '\\"')}"`)
     .join('\n');
 }
 
@@ -203,14 +214,22 @@ ${skillOptions(16)}
             label: Warfare
             widget: list
             fields:
-              - { name: star,     label: Star,     widget: string }
+              - name: star
+                label: Star
+                widget: select
+                options:
+${cpStarOptions('warfare', 18)}
               - { name: points,   label: Points,   widget: number }
               - { name: priority, label: Priority, widget: number }
           - name: fitness
             label: Fitness
             widget: list
             fields:
-              - { name: star,     label: Star,     widget: string }
+              - name: star
+                label: Star
+                widget: select
+                options:
+${cpStarOptions('fitness', 18)}
               - { name: points,   label: Points,   widget: number }
               - { name: priority, label: Priority, widget: number }
 

@@ -124,7 +124,8 @@ src/data/eso/
 ├── races-index.json         ← 10 races (id, name, alliance)
 ├── mundus-index.json        ← 13 pierres (id, name, effect, value_base)
 ├── traits-index.json        ← 27 traits (id, name, category, value_range)
-└── enchants-index.json      ← 38 glyphes (id, name, category, effect…)
+├── enchants-index.json      ← 38 glyphes (id, name, category, effect…)
+└── cp-stars-index.json      ← Étoiles actives (slottable) CP warfare + fitness
 ```
 
 ---
@@ -213,7 +214,7 @@ Types : `Active | Passive | Ultimate`
 ## État du projet
 
 **Dernière session :** 2026-05-13
-**Milestone actuel :** v10.1 — Race ajoutée sur les builds (collection Zod + masthead + section passives + TOC)
+**Milestone actuel :** v10.2 — Champion Points actifs (slottable) : `cp-stars-index.json` + dropdown Decap CMS
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -224,6 +225,7 @@ Types : `Active | Passive | Ultimate`
 - ✅ M5 — Données skills complètes (389 morphs avec `morph_rationale`, audit intégrité)
 - ✅ M6 — Données meta ESO scrapées (races, mundus, traits, enchants + skill_line_id)
 - ✅ v10.1 — Collection `races` enregistrée Zod ; champ `race` optionnel dans builds ; Race UI (masthead + section passives + TOC)
+- ✅ v10.2 — Champion Points actifs : `cp-stars-index.json` (16 warfare + 16 fitness) ; dropdown Decap CMS sur le champ `star` ; `gen-decap-config.mjs` mis à jour
 
 ### Contenu publié
 - **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build complet, sert de template. Race `dunmer` définie — à confirmer par l'auteur.
