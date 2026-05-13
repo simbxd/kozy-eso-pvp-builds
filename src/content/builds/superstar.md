@@ -39,7 +39,7 @@ stats:
     target: 32000
     note: "minimum viable "
   magicka:
-    target: 26000
+    target: 27000
     note: ""
   stamina:
     target: 20000
@@ -217,12 +217,14 @@ playstyle:
     - Molten whip or Take Flight - Final Burst
   rules:
     - title: Don't rush the kill
-      body: Two-Fanged Serpent stacks compound over time. The longer the fight, the
-        harder each proc hits — sustained pressure beats early aggression.
+      body: Every skill you cast outside a window is a tell. Stack your burst, read
+        the opening, release everything at once — if they survive, reset and
+        wait for the next one.
     - title: Break free immediately
-      body: CC is the kill condition in solo PvP. Break the moment you're grabbed —
-        waiting until you're fully stacked on is almost always fatal.
+      body: CC is the kill condition in solo PvP. Break the moment you're grabbed — do
+        not stand still.
     - title: Heal before panic
-      body: Use Resolving Vigor at ~60% HP, not 20%. Panic heals at critical health
-        are usually too late against burst compositions.
+      body: Keep good uptime on Resolving Vigor, use your Burst Heal at ~60% HP, not
+        20%. Panic heals at critical health are usually too late against burst
+        compositions.
 ---
