@@ -26,15 +26,11 @@ collections:
     fields:
 
       # Core metadata
-      - name: title
-        label: Title
-        widget: string
-        hint: "Build name only — e.g. 'Solo Knight', 'Bladedancer'. The full SEO title is generated automatically: [Name] — [Resource] [Class] PvP Build | ESO [Patch]"
-        pattern: ['^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9 ''-]{1,39}$', "Build name only (2–40 characters, no em-dashes or suffixes)"]
+      - { name: title,      label: Title,      widget: string }
       - name: class
         label: Class
         widget: select
-        options: [Dragonknight, Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist, Subclass]
+        options: [Dragonknight, Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist]
       - name: role
         label: Role
         widget: select
@@ -54,6 +50,22 @@ collections:
         widget: select
         options: [Beginner, Intermediate, Advanced]
       - { name: featured,   label: Featured,    widget: boolean, default: false }
+      - name: race
+        label: Race
+        widget: select
+        required: false
+        hint: "Race recommandée pour ce build"
+        options:
+          - { label: "Altmer — Aldmeri Dominion", value: "altmer" }
+          - { label: "Argonian — Ebonheart Pact", value: "argonian" }
+          - { label: "Bosmer — Aldmeri Dominion", value: "bosmer" }
+          - { label: "Breton — Daggerfall Covenant", value: "breton" }
+          - { label: "Dunmer — Ebonheart Pact", value: "dunmer" }
+          - { label: "Imperial — Other", value: "imperial" }
+          - { label: "Khajiit — Aldmeri Dominion", value: "khajiit" }
+          - { label: "Nord — Ebonheart Pact", value: "nord" }
+          - { label: "Orc — Daggerfall Covenant", value: "orc" }
+          - { label: "Redguard — Daggerfall Covenant", value: "redguard" }
       - { name: summary,    label: Summary,     widget: text }
       - { name: pullquote,  label: Pull Quote,  widget: string,  required: false }
 
@@ -3247,17 +3259,6 @@ collections:
         label: Champion Points
         widget: object
         required: false
-        default:
-          warfare:
-            - { star: "Cleansing Revival", points: 50, priority: 1 }
-            - { star: "Master-at-Arms",    points: 50, priority: 2 }
-            - { star: "Ironclad",          points: 50, priority: 3 }
-            - { star: "Fighting Finesse",  points: 50, priority: 4 }
-          fitness:
-            - { star: "Celerity",     points: 50, priority: 1 }
-            - { star: "Slippery",     points: 50, priority: 2 }
-            - { star: "Fortified",    points: 50, priority: 3 }
-            - { star: "Pain's Refuge", points: 30, priority: 4 }
         fields:
           - name: warfare
             label: Warfare
@@ -5514,43 +5515,6 @@ collections:
               - { name: tier,   label: Tier,        widget: string }
               - { name: trait,  label: Trait,       widget: string }
               - { name: enchant, label: Enchantment, widget: string }
-
-      # Playstyle
-      - name: playstyle
-        label: Playstyle
-        widget: object
-        required: false
-        collapsed: false
-        hint: "Rotation et conseils affichés sous les Skill Bars."
-        fields:
-          - name: buffs
-            label: "Buffs & uptimes"
-            widget: list
-            required: false
-            hint: "Skills à maintenir actifs. Un item = nom du skill + note courte."
-            fields:
-              - { name: skill, label: "Skill", widget: string }
-              - { name: note,  label: "Note (quand/pourquoi refresh)", widget: string }
-          - name: combo
-            label: "Burst combo"
-            widget: list
-            required: false
-            hint: "Séquence de burst numérotée. 3 à 6 étapes max, une ligne par étape."
-            field: { name: step, label: Étape, widget: string }
-          - name: rules
-            label: "Règles clés"
-            widget: list
-            required: false
-            default:
-              - title: "Don't rush the kill"
-                body: "Every skill you cast outside a window is a tell. Stack your burst, read the opening, release everything at once — if they survive, reset and wait for the next one."
-              - title: "Break free immediately"
-                body: "CC is the kill condition in solo PvP. Break the moment you're grabbed — do not stand still."
-              - title: "Heal before panic"
-                body: "Keep good uptime on Resolving Vigor, use your Burst Heal at ~60% HP, not 20%. Panic heals at critical health are usually too late against burst compositions."
-            fields:
-              - { name: title, label: Titre, widget: string }
-              - { name: body,  label: Corps, widget: text }
 
   # ── Guides ──────────────────────────────────────────────────────────────────
   - name: guides

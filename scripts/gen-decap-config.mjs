@@ -19,13 +19,17 @@ import { join } from 'node:path';
 const ROOT = new URL('..', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
 const ESO_DIR     = join(ROOT, 'src/data/eso');
 const SKILLS_DIR  = join(ROOT, 'src/content/skills');
-const OUT = join(ROOT, 'public/admin/config.yml');
+const OUT         = join(ROOT, 'public/admin/config.yml');
 
 const log = (...a) => console.log('[gen-decap]', ...a);
 
 // ---------- Load data ----------
 const setsIndex = JSON.parse(
   await readFile(join(ESO_DIR, 'sets-index.json'), 'utf8')
+);
+
+const racesIndex = JSON.parse(
+  await readFile(join(ESO_DIR, 'races-index.json'), 'utf8')
 );
 
 // Skills: only curated files in src/content/skills/ (these are the ones assertIds() accepts)
@@ -39,9 +43,16 @@ const skillsIndex = await Promise.all(
 );
 skillsIndex.sort((a, b) => a.name.localeCompare(b.name));
 
-log(`Loaded ${setsIndex.length} sets, ${skillsIndex.length} curated skills`);
+log(`Loaded ${setsIndex.length} sets, ${skillsIndex.length} curated skills, ${racesIndex.length} races`);
 
 // ---------- Build YAML option blocks ----------
+function raceOptions(indent = 10) {
+  const pad = ' '.repeat(indent);
+  return racesIndex
+    .map(r => `${pad}- { label: "${r.name} — ${r.alliance}", value: "${r.id}" }`)
+    .join('\n');
+}
+
 function setOptions(indent = 10) {
   const pad = ' '.repeat(indent);
   return setsIndex
@@ -112,6 +123,13 @@ collections:
         widget: select
         options: [Beginner, Intermediate, Advanced]
       - { name: featured,   label: Featured,    widget: boolean, default: false }
+      - name: race
+        label: Race
+        widget: select
+        required: false
+        hint: "Race recommandée pour ce build"
+        options:
+${raceOptions(10)}
       - { name: summary,    label: Summary,     widget: text }
       - { name: pullquote,  label: Pull Quote,  widget: string,  required: false }
 
