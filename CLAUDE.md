@@ -71,7 +71,11 @@ src/
 │   ├── builds/          ← Fichiers .md (un par build)
 │   ├── guides/          ← Fichiers .md (un par guide)
 │   ├── sets/            ← Fichiers .json (un par set ESO)
-│   └── skills/          ← Fichiers .json (un par skill ESO)
+│   ├── skills/          ← Fichiers .json (un par skill ESO)
+│   ├── races/           ← Fichiers .json (10 races, scrapées UESP)
+│   ├── mundus/          ← Fichiers .json (13 pierres mundus, scrapées UESP)
+│   ├── traits/          ← Fichiers .json (27 traits weapon/armor/jewelry, scrapés UESP)
+│   └── enchants/        ← Fichiers .json (38 glyphes weapon/armor/jewelry, scrapés UESP)
 ├── components/
 │   ├── Header.astro     ← Nav + dropdown classes + statut serveurs ESO
 │   ├── Footer.astro
@@ -108,7 +112,19 @@ public/
 ├── robots.txt
 └── favicon.svg
 scripts/
-└── fetch-skill-icons.mjs ← Script UESP API pour télécharger les icônes
+├── fetch-eso-data.mjs       ← Scrape esolog API → sets + skills JSON
+├── fetch-eso-meta.mjs       ← Scrape UESP wiki → races/mundus/traits/enchants JSON
+├── fetch-skill-icons.mjs    ← Télécharge les icônes PNG des skills depuis UESP
+├── migrate-add-skill-line-id.mjs ← Migration one-shot : backfill skill_line_id sur 1208 fichiers
+└── gen-morph-rationale.mjs  ← Génère les morph_rationale manquants
+src/data/eso/
+├── sets-index.json          ← Index plat des sets (id, name, type…)
+├── skills-index.json        ← Index plat des skills (id, name, type, icon, morph_of…)
+├── skill-lines-index.json   ← 21 lignes de skills (7 classes × 3)
+├── races-index.json         ← 10 races (id, name, alliance)
+├── mundus-index.json        ← 13 pierres (id, name, effect, value_base)
+├── traits-index.json        ← 27 traits (id, name, category, value_range)
+└── enchants-index.json      ← 38 glyphes (id, name, category, effect…)
 ```
 
 ---
@@ -197,7 +213,7 @@ Types : `Active | Passive | Ultimate`
 ## État du projet
 
 **Dernière session :** 2026-05-13
-**Milestone actuel :** M5 terminé — données skills complètes, prêt pour la création de nouveaux builds
+**Milestone actuel :** M6 terminé — infrastructure données ESO complète (skills + meta)
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -206,13 +222,18 @@ Types : `Active | Passive | Ultimate`
 - ✅ M3 — Polish & SEO (404, contraste WCAG, TOC sticky, Lighthouse 99)
 - ✅ M4 — Decap CMS (`/admin`, OAuth proxy Worker, workflow Draft→Publish, Cloudflare Access)
 - ✅ M5 — Données skills complètes (389 morphs avec `morph_rationale`, audit intégrité)
+- ✅ M6 — Données meta ESO scrapées (races, mundus, traits, enchants + skill_line_id)
 
 ### Contenu publié
 - **1 build :** SUPERSTAR (MagDK PvP) — seul build complet, sert de template
 - **2 guides :** Penetration Caps Explained · Critical Resistance & Critical Damage in PvP
 - **6 builds placeholder :** Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist (à remplacer avant lancement public)
 - **713 sets** — base exhaustive, 707 vérifiés U49, 6 encore en "Gold Road (Q2 2024)" (Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee, Mother's Sorrow) — à re-vérifier contre U49
-- **389 morphs skills** avec `morph_rationale` complet — toutes classes, Alliance War, World (Vampire/Werewolf/Soul Magic)
+- **1208 skills** avec `morph_rationale` complet + `skill_line_id` — toutes classes, Alliance War, World (Vampire/Werewolf/Soul Magic)
+- **10 races** — passives max-rank, alliance, UESP URL — vérifiées U49
+- **13 mundus stones** — valeur base + full-Divines — vérifiées U49
+- **27 traits** (9/catégorie weapon/armor/jewelry) — composite slugs pour Training/Infused/Nirnhoned — vérifiés U49
+- **38 enchants** (glyphes weapon/armor/jewelry) — essence rune prefix — vérifiés U49
 
 ### Decap CMS
 - Panel : `https://kozy-eso-pvp-builds.simbad14100.workers.dev/admin/`
@@ -221,13 +242,24 @@ Types : `Active | Passive | Ultimate`
 - Protection `/admin` : Cloudflare Access (email/OTP) — activation complète sur domaine custom
 
 ### Scripts disponibles
-| Script | Rôle |
-|---|---|
-| `scripts/fetch-skill-icons.mjs` | Télécharge les icônes PNG depuis UESP MediaWiki |
-| `scripts/gen-morph-rationale.mjs` | Génère les `morph_rationale` manquants via UESP API (classe/weapon/guild/armor) |
-| `scripts/fix-morph-rationale.mjs` | Corrections batch #1 — 64 rationales (mauvais labels, fallbacks vagues) |
-| `scripts/fix-morph-rationale-2.mjs` | Corrections batch #2 — 103 rationales (paires miroir, doublons exacts) |
-| `scripts/fix-morph-rationale-3.mjs` | Corrections batch #3 — 47 rationales (Alliance War, World/Vampire/Werewolf) |
+| npm script | Fichier | Rôle |
+|---|---|---|
+| `fetch:eso` | `scripts/fetch-eso-data.mjs` | Scrape esolog API → sets + skills JSON |
+| `fetch:meta` | `scripts/fetch-eso-meta.mjs` | Scrape UESP wiki → races/mundus/traits/enchants JSON |
+| `fetch:icons` | `scripts/fetch-skill-icons.mjs` | Télécharge les icônes PNG des skills depuis UESP |
+| `migrate:skill-line-id` | `scripts/migrate-add-skill-line-id.mjs` | Backfill `skill_line_id` sur les fichiers skills existants (idempotent) |
+| `gen:decap` | `scripts/gen-decap-config.mjs` | Génère la config Decap CMS |
+| — | `scripts/gen-morph-rationale.mjs` | Génère les `morph_rationale` manquants via UESP API |
+| — | `scripts/fix-morph-rationale.mjs` | Corrections batch #1 — 64 rationales |
+| — | `scripts/fix-morph-rationale-2.mjs` | Corrections batch #2 — 103 rationales |
+| — | `scripts/fix-morph-rationale-3.mjs` | Corrections batch #3 — 47 rationales |
+
+### Conventions `fetch-eso-meta.mjs`
+- `DRY_RUN=1` — fetch + log, aucune écriture
+- `SAMPLE=N` — écrit seulement les N premiers par catégorie
+- `SKIP_VALIDATION=1` — ignore les canaries de validation
+- Fichiers existants toujours skippés (curated-safe)
+- Canaries : Imperial (races), The Apprentice (mundus), Divines/armor (traits), Glyph of Magicka (enchants)
 
 ### Prochaine étape
-Peaufiner **SUPERSTAR** comme template canonique, puis commencer la rédaction de nouveaux builds.
+Définir les schémas Zod pour les nouvelles collections (races, mundus, traits, enchants) dans `content.config.ts`, puis créer les composants UI correspondants et les intégrer dans les pages de build.

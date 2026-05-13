@@ -1,5 +1,5 @@
 # Kozy ESO PvP Builds — Project Roadmap
-**For Claude Code | Version 8.0**
+**For Claude Code | Version 10.0**
 **Owner:** Kozy | **Developer:** Claude Code
 **Note:** This is both a real project and a learning experience for the owner. Claude Code must explain its decisions, not just execute them. Each task is an opportunity to build understanding.
 
@@ -18,6 +18,7 @@
 | v7.0 | Stats/Champion Points/Consumables sur les pages de build ; dropdown nav CSS-only avec 7 classes + Subclass ; index Builds avec pills et compteurs ; 6 builds placeholder ; "Articles" renommé "Guides" (collection, pages, layout, nav, RSS) ; 2 nouveaux guides (crit res/dmg) ; Google Fonts @import → link tag (Lighthouse 89→99) ; correction liens cassés homepage + 404 |
 | v8.0 | M4 terminé : Decap CMS configuré (`/public/admin/`) ; OAuth proxy GitHub déployé sur Cloudflare Workers (`kozy-eso-oauth.simbad14100.workers.dev`) ; workflow éditorial Draft→Ready→Publish via branches PR GitHub ; Cloudflare Access Zero Trust configuré pour `/admin` (activation complète sur domaine custom) ; bugfixes TypeScript : `updatedAt` accepte `string\|Date`, champs `note/target/stats/food.alt/mundus` rendus optionnels |
 | v9.0 | M5 terminé : `morph_rationale` généré et audité pour les 389 skills morph du jeu — classes, weapon, guild, armor, Alliance War, World (Vampire/Werewolf/Soul Magic) ; script `gen-morph-rationale.mjs` créé (UESP API + regex) ; 3 scripts de correction batch (214 corrections) ; audit intégrité : `morph_sibling` corrigé sur `quick-cloak` et `reverse-slice` ; classe `Armor` ajoutée au scope du générateur |
+| v10.0 | M6 terminé : `skill_line_id` ajouté sur les 1208 skills + `skill-lines-index.json` (21 entrées, 7 classes × 3 lignes) ; `fetch-eso-meta.mjs` — scraper UESP wiki pour races (10), mundus stones (13), traits (27), enchants/glyphes (38) ; indices plats dans `src/data/eso/` ; migration one-shot `migrate-add-skill-line-id.mjs` (idempotente) |
 
 ---
 
@@ -91,7 +92,11 @@ En Astro 6, la configuration des Content Collections a changé :
 │   │   ├── builds/          ← Build pages (Markdown)
 │   │   ├── guides/          ← Guides et analyses (Markdown)
 │   │   ├── sets/            ← ESO set data, hand-curated JSON (one file per set)
-│   │   └── skills/          ← ESO skill data, hand-curated JSON (one file per skill)
+│   │   ├── skills/          ← ESO skill data, hand-curated JSON (one file per skill)
+│   │   ├── races/           ← 10 races scrapées UESP (passives, alliance) ✅
+│   │   ├── mundus/          ← 13 mundus stones scrapées UESP ✅
+│   │   ├── traits/          ← 27 traits weapon/armor/jewelry scrapés UESP ✅
+│   │   └── enchants/        ← 38 glyphes weapon/armor/jewelry scrapés UESP ✅
 │   ├── components/
 │   │   ├── SetCard.astro    ← Reusable set display card ✅
 │   │   ├── SkillBar.astro   ← Skill display component 2-bar layout ✅
@@ -126,7 +131,18 @@ En Astro 6, la configuration des Content Collections a changé :
 │   │   └── skills/          ← Icônes PNG des skills ({id}.png) ✅
 │   └── robots.txt           ✅
 ├── scripts/
-│   └── fetch-skill-icons.mjs ← Script UESP API pour télécharger les icônes ✅
+│   ├── fetch-eso-data.mjs           ← Scrape esolog API → sets + skills JSON ✅
+│   ├── fetch-eso-meta.mjs           ← Scrape UESP wiki → races/mundus/traits/enchants ✅
+│   ├── fetch-skill-icons.mjs        ← Télécharge les icônes PNG des skills via UESP ✅
+│   └── migrate-add-skill-line-id.mjs ← Migration one-shot skill_line_id (idempotente) ✅
+├── src/data/eso/
+│   ├── sets-index.json              ✅
+│   ├── skills-index.json            ✅  (enrichi: skill_line_id, type, icon, morph_of)
+│   ├── skill-lines-index.json       ✅  (21 entrées: 7 classes × 3 lignes)
+│   ├── races-index.json             ✅
+│   ├── mundus-index.json            ✅
+│   ├── traits-index.json            ✅
+│   └── enchants-index.json          ✅
 ├── CLAUDE.md                ✅
 ├── astro.config.mjs         ✅
 └── package.json
@@ -475,6 +491,30 @@ Deliverable: Base de données skills complète — chaque morph explique sa méc
 
 ---
 
+### ✅ Milestone 6 — Infrastructure données ESO complète
+**Goal:** Toutes les meta-données ESO nécessaires aux pages de build sont disponibles en JSON, scrapées et versionnées.
+**Completed:** 2026-05-13
+
+Tasks:
+- [x] Ajouter `skill_line_id` (slug de la ligne de compétence) à `normaliseToCurated` dans `fetch-eso-data.mjs`
+- [x] Enrichir `skills-index.json` avec `skill_line_id`, `type`, `icon`, `morph_of`
+- [x] Générer `skill-lines-index.json` — 21 entrées (7 classes × 3 skill lines) avec détection de collision
+- [x] Écrire `scripts/migrate-add-skill-line-id.mjs` — backfill idempotent des 1208 fichiers skills existants
+- [x] Écrire `scripts/fetch-eso-meta.mjs` — scraper UESP wiki (cheerio) pour 4 types de données :
+  - [x] **Races** (10) : passives max-rank (parsing rowspan), alliance, UESP URL
+  - [x] **Mundus stones** (13) : valeur base + full-Divines, URL individuelle
+  - [x] **Traits** (27, 9/catégorie) : weapon/armor/jewelry, ranges 1H/2H pour weapon, slugs composites pour Training/Infused/Nirnhoned
+  - [x] **Enchants/glyphes** (38) : weapon/armor/jewelry, essence rune prefix
+- [x] Canaries de validation : Imperial, The Apprentice, Divines (armor), Glyph of Magicka
+- [x] Flags d'exécution : `DRY_RUN=1`, `SAMPLE=N`, `SKIP_VALIDATION=1`
+- [x] Comportement curated-safe : fichiers existants toujours skippés
+- [x] Indices plats dans `src/data/eso/` : races, mundus, traits, enchants
+- [x] Tous les fichiers marqués `patch_verified: "U49"`
+
+Deliverable: Base de données ESO complète — skills, races, mundus, traits, enchants — versionnée et prête pour les composants UI ✅
+
+---
+
 ## 7. Modifications en cours de route
 
 Décisions prises pendant le développement, hors roadmap initiale.
@@ -576,6 +616,16 @@ Décisions prises pendant le développement, hors roadmap initiale.
 **Raison :** "Guides" est plus précis pour le contenu prévu (mécaniques, breakdowns, théorie PvP).
 **Impact :** Collection Astro renommée, `Article.astro` → `Guide.astro`, `/articles` → `/guides`, RSS mis à jour, liens homepage et 404 corrigés, CLAUDE.md et ROADMAP.md mis à jour.
 
+### Scraper UESP wiki pour les meta-données ESO (M6)
+**Décision :** Création de `scripts/fetch-eso-meta.mjs` — scraper HTML cheerio pour 4 pages UESP (Races, Mundus_Stone, Traits, Glyphs) — plutôt que de curating les données à la main.
+**Raison :** Races/mundus/traits/enchants sont des données stables, exhaustives et structurées sur UESP. La curation manuelle de ~90 entrées aurait pris plusieurs heures et introduit des erreurs de saisie.
+**Complexités résolues :**
+- Races : passives multi-rangs via `rowspan` HTML → détection par nombre de `<td>` (≥4 = nouveau passif, 3 = continuation) pour ne stocker que la description max-rank
+- Traits : sous-lignes 1H/2H sur les traits d'arme (`rowspan="2"` sur `<th>`) → format `"1H: X / 2H: Y"` ; Triune jewelry dual-stat → format `"X / Y"` sans label ; colonne "Material Source" en plus sur le tableau bijoux → extraction par filtre (dernier `<td>` non-img, non-esoqc, longueur > 3)
+- Traits multi-catégories : Training/Infused/Nirnhoned existent en weapon ET armor (ET jewelry pour Infused/Nirnhoned) → slugs composites (`infused-weapon`, `infused-armor`, `infused-jewelry`) générés en post-processing, uniquement pour les noms en collision
+- WebFetch (outil Claude) bloqué par UESP sans User-Agent valide → analyse HTML via `curl` + bash ; scripts node exécutés directement sans passer par /tmp (filesystem Windows)
+**Conventions :** `patch_verified: "U49"`, `existsSync` pour skip les fichiers curated, `Promise.all` pour les fetches parallèles, canaries de validation pour détecter les changements de structure UESP.
+
 ### Google Fonts render-blocking (M3+)
 **Décision :** Le `@import url(...)` Google Fonts dans `global.css` a été supprimé et remplacé par `<link rel="preconnect">` + `<link rel="stylesheet">` dans `Base.astro`.
 **Raison :** L'`@import` CSS est render-blocking — le navigateur doit d'abord télécharger et parser le CSS avant de commencer le fetch des fonts. Lighthouse mesurait 2 460 ms bloqués. Avec un `<link>` en `<head>`, le fetch démarre en parallèle avec le reste du parsing HTML.
@@ -645,6 +695,6 @@ Pour chaque décision non triviale, expliquer le *pourquoi*. L'auteur doit compr
 
 ---
 
-*Document version: 9.0*
-*Last updated by: Claude Code — après session 5 (2026-05-13)*
-*Next update: Claude Code, après création de nouveaux builds*
+*Document version: 10.0*
+*Last updated by: Claude Code — après session 6 (2026-05-13)*
+*Next update: Claude Code, après définition des schémas Zod pour les nouvelles collections et création de nouveaux builds*
