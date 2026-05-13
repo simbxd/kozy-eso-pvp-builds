@@ -5500,6 +5500,39 @@ collections:
               - { name: trait,  label: Trait,       widget: string }
               - { name: enchant, label: Enchantment, widget: string }
 
+      # Playstyle
+      - name: playstyle
+        label: Playstyle
+        widget: object
+        required: false
+        collapsed: false
+        hint: "Rotation et conseils affichés sous les Skill Bars."
+        fields:
+          - name: steps
+            label: "Étapes d'ouverture"
+            widget: list
+            required: false
+            fields:
+              - { name: title, label: Titre, widget: string }
+              - { name: desc,  label: Description, widget: text }
+          - name: bar1_notes
+            label: "Notes Bar I (dans l'ordre des skills)"
+            widget: list
+            required: false
+            field: { name: note, label: Note, widget: string }
+          - name: bar2_notes
+            label: "Notes Bar II (dans l'ordre des skills)"
+            widget: list
+            required: false
+            field: { name: note, label: Note, widget: string }
+          - name: rules
+            label: "Règles clés"
+            widget: list
+            required: false
+            fields:
+              - { name: title, label: Titre, widget: string }
+              - { name: body,  label: Corps, widget: text }
+
   # ── Guides ──────────────────────────────────────────────────────────────────
   - name: guides
     label: Guides

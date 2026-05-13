@@ -3,6 +3,15 @@ import { glob } from 'astro/loaders';
 
 const cpStar = z.object({ star: z.string(), points: z.number(), priority: z.number() });
 
+const playstyleStep = z.object({ title: z.string(), desc: z.string() });
+const playstyleRule = z.object({ title: z.string(), body: z.string() });
+const playstyle = z.object({
+  steps:      z.array(playstyleStep).optional(),
+  bar1_notes: z.array(z.string()).optional(),
+  bar2_notes: z.array(z.string()).optional(),
+  rules:      z.array(playstyleRule).optional(),
+}).optional();
+
 const builds = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/builds' }),
   schema: z.object({
@@ -39,6 +48,7 @@ const builds = defineCollection({
       warfare: z.array(cpStar),
       fitness: z.array(cpStar),
     }).optional(),
+    playstyle,
     consumables: z.object({
       food:   z.object({ name: z.string().optional(), stats: z.string().optional(), note: z.string().optional(), alt: z.string().optional() }).optional(),
       potion: z.object({ name: z.string().optional(), ingredients: z.array(z.string()).optional(), note: z.string().optional() }).optional(),

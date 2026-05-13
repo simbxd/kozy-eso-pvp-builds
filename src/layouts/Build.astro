@@ -85,13 +85,27 @@ interface Props {
     poison?: { name: string; note: string };
     mundus?: { stone: string; effect: string; note: string; alt?: { stone: string; effect: string; note: string } };
   };
+  playstyle?: {
+    steps?:      { title: string; desc: string }[];
+    bar1_notes?: string[];
+    bar2_notes?: string[];
+    rules?:      { title: string; body: string }[];
+  };
 }
 
 const {
   title, class: esClass, role, resource, gamemode,
   patch, updatedAt, difficulty, summary, pullquote,
-  sets, bar1, bar2, og_image, gear, stats, champion_points, consumables,
+  sets, bar1, bar2, og_image, gear, stats, champion_points, consumables, playstyle,
 } = Astro.props;
+
+const hasPlaystyle = !!(
+  playstyle && (
+    playstyle.steps?.length ||
+    playstyle.bar1_notes?.length ||
+    playstyle.rules?.length
+  )
+);
 
 // Compute active pieces per set from gear data
 const activePiecesMap = new Map<string, number>();
@@ -220,16 +234,66 @@ const railItems = [`KOZY · ESO PvP`];
   </section>
 
   <!-- PLAYSTYLE -->
-  {Astro.slots.has('playstyle') && (
+  {hasPlaystyle && (
     <section id="playstyle">
       <div class="kz-rule" role="separator">
         <span class="kz-rule__line"></span>
         <span class="kz-rule__label">Playstyle</span>
         <span class="kz-rule__line"></span>
       </div>
-      <div class="prose">
-        <slot name="playstyle" />
-      </div>
+
+      {playstyle!.steps && playstyle!.steps.length > 0 && (
+        <div class="ps-sequence">
+          {playstyle!.steps.map((step, i) => (
+            <div class="ps-step">
+              <div class="ps-step__num">{i + 1}</div>
+              <div class="ps-step__body">
+                <div class="ps-step__title">{step.title}</div>
+                <div class="ps-step__desc">{step.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {(playstyle!.bar1_notes?.length || playstyle!.bar2_notes?.length) && (
+        <div class="ps-bars">
+          {[
+            { skills: bar1, notes: playstyle!.bar1_notes ?? [], badge: 'BAR I',  badgeMod: '1', role: 'Offense' },
+            { skills: bar2, notes: playstyle!.bar2_notes ?? [], badge: 'BAR II', badgeMod: '2', role: 'Sustain' },
+          ].map(({ skills, notes, badge, badgeMod, role: barRole }) => (
+            <div class="ps-bar">
+              <div class="ps-bar__header">
+                <span class={`ps-bar__badge ps-bar__badge--${badgeMod}`}>{badge}</span>
+                <span class="ps-bar__role">{barRole}</span>
+              </div>
+              <ul class="ps-bar__skills">
+                {skills.map((skill, i) => {
+                  const note = notes[i] ?? '';
+                  const isUlt = i === 5;
+                  return (
+                    <li data-ps-skill-id={skill.id}>
+                      <span class={`ps-skill${isUlt ? ' ps-skill--ult' : ''}`}>{skill.name}</span>
+                      {note && <span class="ps-bar__note">{note}</span>}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {playstyle!.rules && playstyle!.rules.length > 0 && (
+        <div class="ps-rules">
+          {playstyle!.rules.map(rule => (
+            <div class="ps-rule">
+              <div class="ps-rule__title">{rule.title}</div>
+              <div class="ps-rule__body">{rule.body}</div>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   )}
 
@@ -471,7 +535,7 @@ const railItems = [`KOZY · ESO PvP`];
     <nav>
       <a href="#overview"        class="toc__link">Overview</a>
       <a href="#skill-bars"      class="toc__link">Skill Bars</a>
-      {Astro.slots.has('playstyle') && <a href="#playstyle" class="toc__link">Playstyle</a>}
+      {hasPlaystyle && <a href="#playstyle" class="toc__link">Playstyle</a>}
       <a href="#gear-logic"      class="toc__link">Gear Logic</a>
       <a href="#gear-sheet"      class="toc__link">Gear Sheet</a>
       <a href="#consumables"     class="toc__link">Consumables</a>
@@ -497,7 +561,7 @@ const railItems = [`KOZY · ESO PvP`];
       <nav>
         <a href="#overview"        class="toc-drawer__link">Overview</a>
         <a href="#skill-bars"      class="toc-drawer__link">Skill Bars</a>
-        {Astro.slots.has('playstyle') && <a href="#playstyle" class="toc-drawer__link">Playstyle</a>}
+        {hasPlaystyle && <a href="#playstyle" class="toc-drawer__link">Playstyle</a>}
         <a href="#gear-logic"      class="toc-drawer__link">Gear Logic</a>
         <a href="#gear-sheet"      class="toc-drawer__link">Gear Sheet</a>
         <a href="#consumables"     class="toc-drawer__link">Consumables</a>
@@ -558,6 +622,38 @@ const railItems = [`KOZY · ESO PvP`];
       if (!target) return;
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+    });
+  });
+
+  // ── Playstyle skill linking ───────────────────────────
+  document.querySelectorAll('[data-ps-skill-id]').forEach(function(row) {
+    var id = (row as HTMLElement).dataset.psSkillId;
+    if (!id) return;
+
+    row.addEventListener('mouseenter', function(e) {
+      // Highlight the matching slot in Skill Bars
+      var slot = document.querySelector('[data-kz-bars] .slot[data-id="' + id + '"]');
+      if (slot) slot.classList.add('slot--ps-linked');
+
+      // Clone & show its tooltip if it has one
+      var tooltipSrc = slot?.querySelector('.tooltip') as HTMLElement | null;
+      if (!tooltipSrc) return;
+      var clone = tooltipSrc.cloneNode(true) as HTMLElement;
+      clone.id = 'ps-floating-tooltip';
+      clone.style.cssText = 'display:block;position:fixed;z-index:200;pointer-events:none;';
+      document.body.appendChild(clone);
+
+      var rect = (row as HTMLElement).getBoundingClientRect();
+      var tw = clone.offsetWidth;
+      var left = Math.min(rect.left, window.innerWidth - tw - 12);
+      clone.style.left = Math.max(8, left) + 'px';
+      clone.style.top  = (rect.bottom + 10) + 'px';
+    });
+
+    row.addEventListener('mouseleave', function() {
+      document.getElementById('ps-floating-tooltip')?.remove();
+      var slot = document.querySelector('[data-kz-bars] .slot[data-id="' + id + '"]');
+      if (slot) slot.classList.remove('slot--ps-linked');
     });
   });
 
@@ -1497,5 +1593,15 @@ const railItems = [`KOZY · ESO PvP`];
   @media (max-width: 1024px) {
     .build-layout { display: block; }
     .build-toc    { display: none; }
+  }
+
+  /* Highlight skill slot when hovered from Playstyle */
+  .slot--ps-linked {
+    background: var(--color-surface-2) !important;
+    transform: translateY(-2px) !important;
+  }
+  .slot--ps-linked .slot__icon {
+    border-color: var(--color-accent) !important;
+    box-shadow: 0 0 18px rgba(139,92,246,0.25), inset 0 0 18px rgba(139,92,246,0.08) !important;
   }
 </style>
