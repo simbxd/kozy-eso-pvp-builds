@@ -37,6 +37,15 @@ interface SkillData {
   icon?: string;
 }
 
+interface RacePassive { name: string; description: string; }
+interface RaceData {
+  id: string;
+  name: string;
+  alliance: string;
+  passives: RacePassive[];
+  uesp_url: string;
+}
+
 interface CPStar { star: string; points: number; priority: number; }
 
 interface GearItem {
@@ -90,12 +99,13 @@ interface Props {
     combo?: string[];
     rules?: { title: string; body: string }[];
   };
+  race?: RaceData | null;
 }
 
 const {
   title, class: esClass, role, resource, gamemode,
   patch, updatedAt, difficulty, summary, pullquote,
-  sets, bar1, bar2, og_image, gear, stats, champion_points, consumables, playstyle,
+  sets, bar1, bar2, og_image, gear, stats, champion_points, consumables, playstyle, race,
 } = Astro.props;
 
 const hasPlaystyle = !!(
@@ -164,13 +174,14 @@ const railItems = [`KOZY · ESO PvP`];
       </div>
     </div>
 
-    <div class="masthead__meta masthead__meta--6">
+    <div class={`masthead__meta ${race ? 'masthead__meta--7' : 'masthead__meta--6'}`}>
       <div class="kz-meta"><div class="kz-meta__label">Class</div><div class="kz-meta__value">{esClass}</div></div>
       <div class="kz-meta"><div class="kz-meta__label">Role</div><div class="kz-meta__value">{role}</div></div>
       <div class="kz-meta"><div class="kz-meta__label">Resource</div><div class="kz-meta__value">{resource}</div></div>
       <div class="kz-meta"><div class="kz-meta__label">Gamemode</div><div class="kz-meta__value">{gamemode}</div></div>
       <div class="kz-meta"><div class="kz-meta__label">Patch</div><div class="kz-meta__value">{patch}</div></div>
       <div class="kz-meta"><div class="kz-meta__label">Difficulty</div><div class="kz-meta__value kz-meta__value--small">{difficulty}</div></div>
+      {race && <div class="kz-meta"><div class="kz-meta__label">Race</div><div class="kz-meta__value kz-meta__value--small">{race.name}</div></div>}
     </div>
   </header>
 
@@ -220,6 +231,35 @@ const railItems = [`KOZY · ESO PvP`];
   </div>
 
   </section>
+
+  <!-- RACE -->
+  {race && (
+    <section id="race">
+      <div class="kz-rule" role="separator">
+        <span class="kz-rule__line"></span>
+        <span class="kz-rule__label">Race</span>
+        <span class="kz-rule__line"></span>
+      </div>
+
+      <div class="race-card">
+        <div class="race-card__header">
+          <div>
+            <span class="race-card__name">{race.name}</span>
+            <span class="race-card__alliance">{race.alliance}</span>
+          </div>
+          <a class="race-card__uesp" href={race.uesp_url} target="_blank" rel="noopener noreferrer">UESP ↗</a>
+        </div>
+        <div class="race-card__passives">
+          {race.passives.map(p => (
+            <div class="race-passive">
+              <span class="race-passive__name">{p.name}</span>
+              <span class="race-passive__desc">{p.description}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- SKILL BARS -->
   <section id="skill-bars">
@@ -523,6 +563,7 @@ const railItems = [`KOZY · ESO PvP`];
     <div class="toc__label">Sections</div>
     <nav>
       <a href="#overview"        class="toc__link">Overview</a>
+      {race && <a href="#race" class="toc__link">Race</a>}
       <a href="#skill-bars"      class="toc__link">Skill Bars</a>
       {hasPlaystyle && <a href="#playstyle" class="toc__link">Playstyle</a>}
       <a href="#gear-logic"      class="toc__link">Gear Logic</a>
@@ -549,6 +590,7 @@ const railItems = [`KOZY · ESO PvP`];
       <div class="toc-drawer__label">Sections</div>
       <nav>
         <a href="#overview"        class="toc-drawer__link">Overview</a>
+        {race && <a href="#race" class="toc-drawer__link">Race</a>}
         <a href="#skill-bars"      class="toc-drawer__link">Skill Bars</a>
         {hasPlaystyle && <a href="#playstyle" class="toc-drawer__link">Playstyle</a>}
         <a href="#gear-logic"      class="toc-drawer__link">Gear Logic</a>
@@ -670,6 +712,7 @@ const railItems = [`KOZY · ESO PvP`];
     text-align: left;
   }
   .masthead__meta--6 { grid-template-columns: repeat(6, 1fr); }
+  .masthead__meta--7 { grid-template-columns: repeat(7, 1fr); }
 
   .kz-meta {
     padding: 16px 14px;
@@ -710,6 +753,86 @@ const railItems = [`KOZY · ESO PvP`];
     }
 
     .masthead__sub { font-size: 18px; }
+  }
+
+  /* ── race card ─────────────────────────────────────── */
+  .race-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+  }
+
+  .race-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 22px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .race-card__name {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-right: 14px;
+  }
+
+  .race-card__alliance {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .race-card__uesp {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 150ms;
+  }
+  .race-card__uesp:hover { color: var(--color-text); }
+
+  .race-card__passives {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .race-passive {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 22px;
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .race-passive:nth-child(even) { border-right: none; }
+  .race-passive:nth-last-child(-n+2) { border-bottom: none; }
+
+  .race-passive__name {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-mono);
+    letter-spacing: 0.01em;
+  }
+
+  .race-passive__desc {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 640px) {
+    .race-card__passives { grid-template-columns: 1fr; }
+    .race-passive { border-right: none; border-bottom: 1px solid var(--color-border); }
+    .race-passive:last-child { border-bottom: none; }
   }
 
   /* ── briefing / overview ────────────────────────────── */

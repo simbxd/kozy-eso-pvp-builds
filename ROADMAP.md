@@ -19,6 +19,7 @@
 | v8.0 | M4 terminé : Decap CMS configuré (`/public/admin/`) ; OAuth proxy GitHub déployé sur Cloudflare Workers (`kozy-eso-oauth.simbad14100.workers.dev`) ; workflow éditorial Draft→Ready→Publish via branches PR GitHub ; Cloudflare Access Zero Trust configuré pour `/admin` (activation complète sur domaine custom) ; bugfixes TypeScript : `updatedAt` accepte `string\|Date`, champs `note/target/stats/food.alt/mundus` rendus optionnels |
 | v9.0 | M5 terminé : `morph_rationale` généré et audité pour les 389 skills morph du jeu — classes, weapon, guild, armor, Alliance War, World (Vampire/Werewolf/Soul Magic) ; script `gen-morph-rationale.mjs` créé (UESP API + regex) ; 3 scripts de correction batch (214 corrections) ; audit intégrité : `morph_sibling` corrigé sur `quick-cloak` et `reverse-slice` ; classe `Armor` ajoutée au scope du générateur |
 | v10.0 | M6 terminé : `skill_line_id` ajouté sur les 1208 skills + `skill-lines-index.json` (21 entrées, 7 classes × 3 lignes) ; `fetch-eso-meta.mjs` — scraper UESP wiki pour races (10), mundus stones (13), traits (27), enchants/glyphes (38) ; indices plats dans `src/data/eso/` ; migration one-shot `migrate-add-skill-line-id.mjs` (idempotente) |
+| v10.1 | Race ajoutée sur les builds : collection `races` enregistrée dans `content.config.ts` (Zod) ; champ `race` optionnel dans le frontmatter builds ; section Race dans les pages de build (passives) + cellule masthead + entrée TOC ; Imperial `alliance: "Other"` supporté |
 
 ---
 
@@ -695,6 +696,6 @@ Pour chaque décision non triviale, expliquer le *pourquoi*. L'auteur doit compr
 
 ---
 
-*Document version: 10.0*
-*Last updated by: Claude Code — après session 6 (2026-05-13)*
-*Next update: Claude Code, après définition des schémas Zod pour les nouvelles collections et création de nouveaux builds*
+*Document version: 10.1*
+*Last updated by: Claude Code — après session 7 (2026-05-13)*
+*Next update: Claude Code, après intégration UI des autres données meta ESO (mundus, traits, enchants)*

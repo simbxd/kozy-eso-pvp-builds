@@ -134,7 +134,7 @@ src/data/eso/
 ### Build (`src/content/builds/*.md`)
 Champs obligatoires : `title`, `class`, `role`, `resource`, `gamemode`, `patch`, `difficulty`, `featured`, `sets[]`, `skills.bar1[]`, `skills.bar2[]`, `summary`
 
-Champs optionnels : `updatedAt`, `pullquote`, `og_image`, `gear{}`, `stats{}`, `champion_points{}`, `consumables{}`
+Champs optionnels : `updatedAt`, `pullquote`, `og_image`, `race`, `gear{}`, `stats{}`, `champion_points{}`, `consumables{}`
 
 Classes valides : `Dragonknight | Sorcerer | Nightblade | Templar | Warden | Necromancer | Arcanist`
 Rôles : `DPS | Healer | Tank` — Resources : `Stamina | Magicka | Hybrid` — Gamemodes : `PvP | PvE | Both` — Difficultés : `Beginner | Intermediate | Advanced`
@@ -213,7 +213,7 @@ Types : `Active | Passive | Ultimate`
 ## État du projet
 
 **Dernière session :** 2026-05-13
-**Milestone actuel :** M6 terminé — infrastructure données ESO complète (skills + meta)
+**Milestone actuel :** M6 terminé — Race ajoutée sur les builds (masthead + section passives + TOC)
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -262,4 +262,4 @@ Types : `Active | Passive | Ultimate`
 - Canaries : Imperial (races), The Apprentice (mundus), Divines/armor (traits), Glyph of Magicka (enchants)
 
 ### Prochaine étape
-Définir les schémas Zod pour les nouvelles collections (races, mundus, traits, enchants) dans `content.config.ts`, puis créer les composants UI correspondants et les intégrer dans les pages de build.
+Continuer l'intégration UI des données meta ESO : mundus (déjà dans `consumables`), traits, enchants dans les pages de build.

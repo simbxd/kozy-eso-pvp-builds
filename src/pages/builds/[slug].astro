@@ -14,9 +14,11 @@ const { build } = Astro.props;
 
 const allSets   = await getCollection('sets');
 const allSkills = await getCollection('skills');
+const allRaces  = await getCollection('races');
 
 const setsMap   = Object.fromEntries(allSets.map(s => [s.id, s.data]));
 const skillsMap = Object.fromEntries(allSkills.map(s => [s.id, s.data]));
+const racesMap  = Object.fromEntries(allRaces.map(r => [r.id, r.data]));
 
 function assertIds(ids: string[], map: Record<string, unknown>, kind: string, buildId: string) {
   const missing = ids.filter(id => !(id in map));
@@ -33,6 +35,7 @@ assertIds(build.data.skills.bar1,   skillsMap, 'skill', build.id);
 assertIds(build.data.skills.bar2,   skillsMap, 'skill', build.id);
 
 const resolvedSets = build.data.sets.map(id => setsMap[id]!);
+const resolvedRace = build.data.race ? (racesMap[build.data.race] ?? null) : null;
 
 function enrichSkill(id: string) {
   const skill = skillsMap[id]!;
@@ -66,4 +69,5 @@ const resolvedBar2 = build.data.skills.bar2.map(enrichSkill);
   champion_points={build.data.champion_points}
   consumables={build.data.consumables}
   playstyle={build.data.playstyle}
+  race={resolvedRace}
 />

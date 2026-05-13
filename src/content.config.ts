@@ -26,6 +26,7 @@ const builds = defineCollection({
     difficulty: z.enum(['Beginner', 'Intermediate', 'Advanced']),
     featured: z.boolean().default(false),
     og_image: z.string().optional(),
+    race: z.string().optional(),
     sets: z.array(z.string()),
     skills: z.object({
       bar1: z.array(z.string()),
@@ -116,4 +117,19 @@ const skills = defineCollection({
   }),
 });
 
-export const collections = { builds, guides, sets, skills };
+const races = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/races' }),
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    alliance: z.enum(['Aldmeri Dominion', 'Daggerfall Covenant', 'Ebonheart Pact', 'Other']),
+    passives: z.array(z.object({
+      name: z.string(),
+      description: z.string(),
+    })),
+    patch_verified: z.string(),
+    uesp_url: z.string().url(),
+  }),
+});
+
+export const collections = { builds, guides, sets, skills, races };
