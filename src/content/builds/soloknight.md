@@ -1,5 +1,5 @@
 ---
-title: SUPERSTAR — Hybrid Dragonknight PvP
+title: SOLOKNIGHT — Hybrid Dragonknight PvP
 class: Dragonknight
 role: DPS
 resource: Hybrid
