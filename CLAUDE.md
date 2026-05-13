@@ -213,7 +213,7 @@ Types : `Active | Passive | Ultimate`
 ## État du projet
 
 **Dernière session :** 2026-05-13
-**Milestone actuel :** M6 terminé — Race ajoutée sur les builds (masthead + section passives + TOC)
+**Milestone actuel :** v10.1 — Race ajoutée sur les builds (collection Zod + masthead + section passives + TOC)
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -223,9 +223,10 @@ Types : `Active | Passive | Ultimate`
 - ✅ M4 — Decap CMS (`/admin`, OAuth proxy Worker, workflow Draft→Publish, Cloudflare Access)
 - ✅ M5 — Données skills complètes (389 morphs avec `morph_rationale`, audit intégrité)
 - ✅ M6 — Données meta ESO scrapées (races, mundus, traits, enchants + skill_line_id)
+- ✅ v10.1 — Collection `races` enregistrée Zod ; champ `race` optionnel dans builds ; Race UI (masthead + section passives + TOC)
 
 ### Contenu publié
-- **1 build :** SUPERSTAR (MagDK PvP) — seul build complet, sert de template
+- **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build complet, sert de template. Race `dunmer` définie — à confirmer par l'auteur.
 - **2 guides :** Penetration Caps Explained · Critical Resistance & Critical Damage in PvP
 - **6 builds placeholder :** Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist (à remplacer avant lancement public)
 - **713 sets** — base exhaustive, 707 vérifiés U49, 6 encore en "Gold Road (Q2 2024)" (Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee, Mother's Sorrow) — à re-vérifier contre U49
