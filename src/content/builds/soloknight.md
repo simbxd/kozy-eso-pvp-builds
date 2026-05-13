@@ -1,5 +1,5 @@
 ---
-title: SOLOKNIGHT — Hybrid Dragonknight PvP
+title: Solo Knight — Hybrid Dragonknight PvP
 class: Dragonknight
 role: DPS
 resource: Hybrid
