@@ -11,8 +11,8 @@ export async function getStaticPaths() {
 }
 
 const { build } = Astro.props;
-// render() is kept for future guide-style prose use; Build.astro no longer uses <slot/>
-const { Content: _Content } = await render(build);
+const { Content } = await render(build);
+const hasPlaystyle = (build.body ?? '').trim().length > 0;
 
 const allSets   = await getCollection('sets');
 const allSkills = await getCollection('skills');
@@ -67,4 +67,6 @@ const resolvedBar2 = build.data.skills.bar2.map(enrichSkill);
   stats={build.data.stats}
   champion_points={build.data.champion_points}
   consumables={build.data.consumables}
-/>
+>
+  {hasPlaystyle && <Content slot="playstyle" />}
+</Build>
