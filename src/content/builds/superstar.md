@@ -1,5 +1,5 @@
 ---
-title: The Solo Knight — Hybrid Dragonknight PvP
+title: SUPERSTAR — Hybrid Dragonknight PvP
 class: Dragonknight
 role: DPS
 resource: Hybrid
