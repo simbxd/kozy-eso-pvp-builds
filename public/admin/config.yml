@@ -3243,6 +3243,17 @@ collections:
         label: Champion Points
         widget: object
         required: false
+        default:
+          warfare:
+            - { star: "Cleansing Revival", points: 50, priority: 1 }
+            - { star: "Master-at-Arms",    points: 50, priority: 2 }
+            - { star: "Ironclad",          points: 50, priority: 3 }
+            - { star: "Fighting Finesse",  points: 50, priority: 4 }
+          fitness:
+            - { star: "Celerity",     points: 50, priority: 1 }
+            - { star: "Slippery",     points: 50, priority: 2 }
+            - { star: "Fortified",    points: 50, priority: 3 }
+            - { star: "Pain's Refuge", points: 30, priority: 4 }
         fields:
           - name: warfare
             label: Warfare
@@ -5526,6 +5537,13 @@ collections:
             label: "Règles clés"
             widget: list
             required: false
+            default:
+              - title: "Don't rush the kill"
+                body: "Every skill you cast outside a window is a tell. Stack your burst, read the opening, release everything at once — if they survive, reset and wait for the next one."
+              - title: "Break free immediately"
+                body: "CC is the kill condition in solo PvP. Break the moment you're grabbed — do not stand still."
+              - title: "Heal before panic"
+                body: "Keep good uptime on Resolving Vigor, use your Burst Heal at ~60% HP, not 20%. Panic heals at critical health are usually too late against burst compositions."
             fields:
               - { name: title, label: Titre, widget: string }
               - { name: body,  label: Corps, widget: text }
