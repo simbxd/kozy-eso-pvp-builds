@@ -26,7 +26,11 @@ collections:
     fields:
 
       # Core metadata
-      - { name: title,      label: Title,      widget: string }
+      - name: title
+        label: Title
+        widget: string
+        hint: "Nom du build uniquement — ex: 'Solo Knight', 'Bladedancer'. Le SEO title complet sera généré automatiquement : [Titre] — [Resource] [Classe] PvP Build | ESO [Patch]"
+        pattern: ['^[A-Za-zÀ-ÿ0-9][A-Za-zÀ-ÿ0-9 ''-]{1,39}$', "Juste le nom du build (2–40 caractères, pas de tirets longs ni de suffixes)"]
       - name: class
         label: Class
         widget: select
