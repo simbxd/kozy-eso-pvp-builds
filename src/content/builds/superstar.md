@@ -28,7 +28,7 @@ skills:
     - incinerate
     - take-flight
   bar2:
-    - biting-jabs
+    - race-against-time
     - resolving-vigor
     - blood-of-the-elder-dragon
     - heart-of-flame
