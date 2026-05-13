@@ -7,6 +7,7 @@
   "morph_rationale": "Summon morph — deploys a persistent companion that attacks autonomously.",
   "class": "Necromancer",
   "skill_line": "Living Death",
+  "skill_line_id": "living-death",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/animate-blastbones.png",

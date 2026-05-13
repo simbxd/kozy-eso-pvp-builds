@@ -7,6 +7,7 @@
   "morph_rationale": "Armor penetration morph — applies Major Breach on hit, reducing enemy Physical and Spell Resistance.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
+  "skill_line_id": "grave-lord",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/unnerving-boneyard.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Self-sustain proc morph — fires the spectral arrow at 5 stacks, healing for 50% of damage dealt in melee range; preferred over Relentless Focus when self-healing on the proc matters more than faster stack consumption.",
   "class": "Nightblade",
   "skill_line": "Assassination",
+  "skill_line_id": "assassination",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/merciless-resolve.png",

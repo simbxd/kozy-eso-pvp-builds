@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
+  "skill_line_id": "dawns-wrath",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/eclipse.png",

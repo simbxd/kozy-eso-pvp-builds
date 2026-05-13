@@ -7,6 +7,7 @@
   "morph_rationale": "Moderate-synergy morph — the Blood Funnel synergy heals allies for 40% of their Max Health; preferred over Overflowing Altar when a less powerful synergy is sufficient or multiple activations are expected.",
   "class": "Guild",
   "skill_line": "Undaunted",
+  "skill_line_id": "undaunted",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/sanguine-altar.png",

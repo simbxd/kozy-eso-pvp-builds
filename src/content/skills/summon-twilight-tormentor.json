@@ -7,6 +7,7 @@
   "morph_rationale": "Offensive summon morph — the Tormentor's active ability deals 60% bonus damage to targets above 50% Health; preferred over Summon Twilight Matriarch when sustained offensive pressure matters more.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
+  "skill_line_id": "daedric-summoning",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/summon-twilight-tormentor.png",

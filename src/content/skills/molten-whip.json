@@ -7,6 +7,7 @@
   "morph_rationale": "Seething Fury morph — DK abilities build up to 3 stacks that empower the next cast with bonus Magicka-scaling Flame Damage; rewards active ability weaving over Flame Lash's proc-based sustain.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
+  "skill_line_id": "ardent-flame",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/molten-whip.png",

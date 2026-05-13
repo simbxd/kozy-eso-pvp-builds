@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Guild",
   "skill_line": "Fighters Guild",
+  "skill_line_id": "fighters-guild",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/slayer.png",

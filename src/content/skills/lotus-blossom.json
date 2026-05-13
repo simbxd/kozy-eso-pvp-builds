@@ -7,6 +7,7 @@
   "morph_rationale": "Uptime morph — lasts 1 minute (3x longer than Green Lotus) for consistent Critical rating uptime; preferred over Green Lotus when reducing rebuff frequency and solo self-sustain matter more than multi-target healing.",
   "class": "Warden",
   "skill_line": "Green Balance",
+  "skill_line_id": "green-balance",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/lotus-blossom.png",

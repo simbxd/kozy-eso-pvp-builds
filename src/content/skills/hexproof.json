@@ -7,6 +7,7 @@
   "morph_rationale": "Deep cleanse morph — removes up to 4 negative effects instead of 2; preferred over Expunge and Modify when clearing more debuffs in one cast matters more than the resource restoration.",
   "class": "Necromancer",
   "skill_line": "Living Death",
+  "skill_line_id": "living-death",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/hexproof.png",

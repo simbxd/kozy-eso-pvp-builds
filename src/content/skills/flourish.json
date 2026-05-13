@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Warden",
   "skill_line": "Animal Companions",
+  "skill_line_id": "animal-companions",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/flourish.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Scale morph — deals upfront damage before forming the shield and scales 20% per enemy hit (up to 120% bonus strength); preferred over Blazing Shield when absorbing as much damage as possible matters more than the expiry explosion.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
+  "skill_line_id": "aedric-spear",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/radiant-ward.png",

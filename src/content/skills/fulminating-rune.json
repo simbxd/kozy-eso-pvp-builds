@@ -7,6 +7,7 @@
   "morph_rationale": "AoE DoT morph — places a rune on the target that detonates after 6 seconds, dealing Frost AoE damage to nearby enemies; preferred over Rune of Displacement when burst AoE damage outweighs enemy grouping.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
+  "skill_line_id": "herald-of-the-tome",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/fulminating-rune.png",

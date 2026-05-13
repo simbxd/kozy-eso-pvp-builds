@@ -7,6 +7,7 @@
   "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Volcanic Ward.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
+  "skill_line_id": "earthen-heart",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/magma-fist.png",

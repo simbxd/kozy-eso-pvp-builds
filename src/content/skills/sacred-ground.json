@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Templar",
   "skill_line": "Restoring Light",
+  "skill_line_id": "restoring-light",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/sacred-ground.png",

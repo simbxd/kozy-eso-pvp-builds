@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Armor",
   "skill_line": "Heavy Armor",
+  "skill_line_id": "heavy-armor",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/rapid-mending.png",

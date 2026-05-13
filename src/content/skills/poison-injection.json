@@ -7,6 +7,7 @@
   "morph_rationale": "DoT morph — deals sustained damage over time in addition to the initial hit.",
   "class": "Weapon",
   "skill_line": "Bow",
+  "skill_line_id": "bow",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/poison-injection.png",

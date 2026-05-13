@@ -7,6 +7,7 @@
   "morph_rationale": "Self-sustain morph — heals you for 1000 Health on hit and generates Crux; preferred over Tentacular Dread when trading burst potential for self-sustain during combat.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
+  "skill_line_id": "herald-of-the-tome",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/cephaliarchs-flail.png",

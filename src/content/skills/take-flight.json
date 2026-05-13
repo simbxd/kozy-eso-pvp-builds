@@ -7,6 +7,7 @@
   "morph_rationale": "Mobility ultimate — gap closer that deals AoE damage on landing and grants a brief CC immunity window.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
+  "skill_line_id": "draconic-power",
   "type": "Ultimate",
   "resource": "Ultimate",
   "icon": "/assets/skills/take-flight.png",

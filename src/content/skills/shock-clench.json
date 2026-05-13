@@ -7,6 +7,7 @@
   "morph_rationale": "Burst morph — deals damage instantly rather than over time like Destructive Reach.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/shock-clench.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Warden",
   "skill_line": "Winter's Embrace",
+  "skill_line_id": "winters-embrace",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/frozen-gate.png",

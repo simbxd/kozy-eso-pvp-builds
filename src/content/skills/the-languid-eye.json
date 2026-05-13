@@ -7,6 +7,7 @@
   "morph_rationale": "Summon morph — deploys a scion for 6 seconds with a manually repositionable beam that ramps up in damage each tick; preferred over The Tide King's Gaze when targeting specific enemies.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
+  "skill_line_id": "herald-of-the-tome",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/the-languid-eye.png",

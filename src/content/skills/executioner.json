@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Nightblade",
   "skill_line": "Assassination",
+  "skill_line_id": "assassination",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/executioner.png",

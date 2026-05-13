@@ -7,6 +7,7 @@
   "morph_rationale": "Stamina DPS morph — converts the cost to Stamina and stores up to 4 light attacks into an empowered heavy attack; chosen on Stamina Sorcerer over the defensive Bound Aegis.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
+  "skill_line_id": "daedric-summoning",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/bound-armaments.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Offensive Ultimate morph — combines Major Protection for allies with sustained AoE damage to trapped enemies; preferred over Bolstering Darkness when both offense and defense are needed.",
   "class": "Nightblade",
   "skill_line": "Shadow",
+  "skill_line_id": "shadow",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/veil-of-blades.png",

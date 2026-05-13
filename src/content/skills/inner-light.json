@@ -7,6 +7,7 @@
   "morph_rationale": "Self-buff morph — grants Major Savagery and Prophecy while slotted, boosting Critical rating by 2629; preferred over Radiant Magelight on builds that do not need the group detection.",
   "class": "Guild",
   "skill_line": "Mages Guild",
+  "skill_line_id": "mages-guild",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/inner-light.png",

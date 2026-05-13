@@ -7,6 +7,7 @@
   "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Guild",
   "skill_line": "Undaunted",
+  "skill_line_id": "undaunted",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/energy-orb.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Armor",
   "skill_line": "Medium Armor",
+  "skill_line_id": "medium-armor",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/medium-armor-bonuses.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Defensive zone morph — grants you Major Protection while inside and slows enemies within by 70%, combining group healing with zone control; preferred over Fire Keeper when personal protection and enemy movement restriction matter more than ult generation outside the area.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
+  "skill_line_id": "ardent-flame",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/hearth-and-home.png",

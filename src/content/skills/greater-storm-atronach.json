@@ -7,6 +7,7 @@
   "morph_rationale": "Sustained DPS atronach — attacks the closest enemy every second for reliable focused damage with an ally synergy granting Major Berserk; preferred over Summon Charged Atronach when consistent single-target output matters more than AoE bursts.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
+  "skill_line_id": "daedric-summoning",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/greater-storm-atronach.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Fire morph — deals Flame Damage and hits Burning enemies for 10% more; preferred over Elemental Blockade when reliable Burning synergy on a Flame staff build matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/blockade-of-fire.png",

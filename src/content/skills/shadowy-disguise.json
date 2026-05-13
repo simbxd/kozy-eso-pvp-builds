@@ -7,6 +7,7 @@
   "morph_rationale": "Burst morph — deals damage instantly rather than over time like Dark Cloak.",
   "class": "Nightblade",
   "skill_line": "Shadow",
+  "skill_line_id": "shadow",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/shadowy-disguise.png",

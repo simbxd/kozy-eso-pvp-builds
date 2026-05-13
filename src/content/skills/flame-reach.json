@@ -7,6 +7,7 @@
   "morph_rationale": "Fire morph — deals Flame Damage and guarantees the Burning status effect on hit; preferred on Flame staff builds when reliable Burning application matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/flame-reach.png",

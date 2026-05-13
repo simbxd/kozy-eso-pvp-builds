@@ -7,6 +7,7 @@
   "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Daedric Refuge.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
+  "skill_line_id": "dark-magic",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/daedric-tomb.png",

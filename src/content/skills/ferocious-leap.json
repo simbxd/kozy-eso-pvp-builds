@@ -7,6 +7,7 @@
   "morph_rationale": "Defensive morph — provides a damage shield on cast.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
+  "skill_line_id": "draconic-power",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/ferocious-leap.png",

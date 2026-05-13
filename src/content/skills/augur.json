@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "World",
   "skill_line": "Excavation",
+  "skill_line_id": "excavation",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/augur.png",

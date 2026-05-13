@@ -7,6 +7,7 @@
   "morph_rationale": "Storm unstable morph — sets Concussed enemies Off Balance and explodes for 1199 Shock AoE on expiry; preferred on Lightning staff builds when Off Balance exploitation and the burst on expiry matter.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/unstable-wall-of-storms.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Nightblade",
   "skill_line": "Shadow",
+  "skill_line_id": "shadow",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/shadow-barrier.png",

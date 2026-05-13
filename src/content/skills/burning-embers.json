@@ -7,6 +7,7 @@
   "morph_rationale": "Self-sustain morph — heals you for a significant amount from the initial hit and on each subsequent tick; preferred over Searing Claw when maintaining Health in sustained combat matters more than escalating damage.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
+  "skill_line_id": "ardent-flame",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/burning-embers.png",

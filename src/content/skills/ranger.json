@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Weapon",
   "skill_line": "Bow",
+  "skill_line_id": "bow",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/ranger.png",

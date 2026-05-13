@@ -7,6 +7,7 @@
   "morph_rationale": "Storm morph — deals Shock Damage and sets Concussed enemies Off Balance for Heavy Attack setups; preferred on Lightning staff builds when Concussion exploitation matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/blockade-of-storms.png",

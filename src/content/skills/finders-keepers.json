@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Guild",
   "skill_line": "Thieves Guild",
+  "skill_line_id": "thieves-guild",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/finders-keepers.png",

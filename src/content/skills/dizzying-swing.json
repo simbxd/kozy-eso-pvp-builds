@@ -7,6 +7,7 @@
   "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Weapon",
   "skill_line": "Two Handed",
+  "skill_line_id": "two-handed",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/dizzying-swing.png",

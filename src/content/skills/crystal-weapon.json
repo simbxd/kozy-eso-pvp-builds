@@ -7,6 +7,7 @@
   "morph_rationale": "Weapon buff morph — enchants the next two Light and Heavy Attacks to deal bonus damage and reduce the target's Armor by 1000; preferred over Crystal Fragments when sustained weapon pressure matters more than proc burst.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
+  "skill_line_id": "dark-magic",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/crystal-weapon.png",

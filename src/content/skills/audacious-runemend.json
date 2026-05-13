@@ -7,6 +7,7 @@
   "morph_rationale": "Support morph — grants Minor Heroism to allies below 50% Health after healing, generating Ultimate; preferred over Evolving Runemend when conditional ult generation on critical targets matters.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
+  "skill_line_id": "curative-runeforms",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/audacious-runemend.png",

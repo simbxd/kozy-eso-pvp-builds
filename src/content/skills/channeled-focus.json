@@ -7,6 +7,7 @@
   "morph_rationale": "Magicka sustain morph — recovers 242 Magicka per second over the duration; preferred over Restoring Focus on Magicka Templar builds where Magicka sustain matters more than Stamina.",
   "class": "Templar",
   "skill_line": "Restoring Light",
+  "skill_line_id": "restoring-light",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/channeled-focus.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Resource recovery morph — converts Health into Magicka and reduces the next ability cost by 33%; preferred over Balance for burst Magicka recovery at the cost of temporary heal reduction.",
   "class": "Guild",
   "skill_line": "Mages Guild",
+  "skill_line_id": "mages-guild",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/spell-symmetry.png",

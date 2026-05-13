@@ -7,6 +7,7 @@
   "morph_rationale": "Double detonation morph — the curse explodes twice (at 3.5 and 12 seconds) for greater total damage; preferred over Daedric Prey when burst without pet support matters.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
+  "skill_line_id": "daedric-summoning",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/haunting-curse.png",

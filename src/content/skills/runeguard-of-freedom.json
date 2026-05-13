@@ -7,6 +7,7 @@
   "morph_rationale": "CC immunity morph — when taken below 50% Health, grants CC Immunity and bonus Armor for 7 seconds; preferred over Runeguard of Still Waters when escaping crowd control on low health matters more than the larger emergency heal.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
+  "skill_line_id": "soldier-of-apocrypha",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/runeguard-of-freedom.png",

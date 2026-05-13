@@ -7,6 +7,7 @@
   "morph_rationale": "AoE spread morph — nearby enemies take Bleed damage every 2 seconds for the duration; preferred over Fetcher Infection when spreading damage to clustered enemies matters more than single-target burst.",
   "class": "Warden",
   "skill_line": "Animal Companions",
+  "skill_line_id": "animal-companions",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/growing-swarm.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
+  "skill_line_id": "daedric-summoning",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/rebate.png",

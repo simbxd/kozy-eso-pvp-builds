@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
+  "skill_line_id": "herald-of-the-tome",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/tome-bearers-inspiration.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Racial",
   "skill_line": "Wood Elf Skills",
+  "skill_line_id": "wood-elf-skills",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/acrobat.png",

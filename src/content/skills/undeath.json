@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "World",
   "skill_line": "Vampire",
+  "skill_line_id": "vampire",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/undeath.png",

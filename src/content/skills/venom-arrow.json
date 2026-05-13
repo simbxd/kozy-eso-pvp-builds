@@ -7,6 +7,7 @@
   "morph_rationale": "Self-buff morph — grants Major Brutality on hit, boosting Weapon and Spell Damage; chosen over Poison Injection when the build lacks another source of Major Brutality.",
   "class": "Weapon",
   "skill_line": "Bow",
+  "skill_line_id": "bow",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/venom-arrow.png",

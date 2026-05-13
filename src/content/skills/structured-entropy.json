@@ -7,6 +7,7 @@
   "morph_rationale": "Self-sustain morph — heals you for a portion of the damage dealt.",
   "class": "Guild",
   "skill_line": "Mages Guild",
+  "skill_line_id": "mages-guild",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/structured-entropy.png",

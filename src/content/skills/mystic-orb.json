@@ -7,6 +7,7 @@
   "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Guild",
   "skill_line": "Undaunted",
+  "skill_line_id": "undaunted",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/mystic-orb.png",

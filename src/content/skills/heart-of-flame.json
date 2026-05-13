@@ -6,6 +6,7 @@
   "morph_sibling": "soul-of-flame",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
+  "skill_line_id": "ardent-flame",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/heart-of-flame.png",

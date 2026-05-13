@@ -7,6 +7,7 @@
   "morph_rationale": "Single-target CC morph — focuses the charge and taunt on one enemy with 7 seconds of Major Protection; preferred over Explosive Charge when single-target burst CC is the priority.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
+  "skill_line_id": "aedric-spear",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/toppling-charge.png",

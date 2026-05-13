@@ -6,6 +6,7 @@
   "morph_sibling": "pack-leader",
   "class": "World",
   "skill_line": "Werewolf",
+  "skill_line_id": "werewolf",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/werewolf-berserker.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Support summon morph — the Matriarch's active ability heals two allies; preferred over Summon Twilight Tormentor in group settings where ally sustain matters more than burst damage.",
   "class": "Sorcerer",
   "skill_line": "Daedric Summoning",
+  "skill_line_id": "daedric-summoning",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/summon-twilight-matriarch.png",

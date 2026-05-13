@@ -7,6 +7,7 @@
   "morph_rationale": "Burst morph — deals damage instantly rather than over time like Cruxweaver Armor.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
+  "skill_line_id": "soldier-of-apocrypha",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/unbreakable-fate.png",

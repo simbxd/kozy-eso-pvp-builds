@@ -7,6 +7,7 @@
   "morph_rationale": "Support morph — grants Major Brutality, increasing your Weapon and Spell Damage.",
   "class": "Guild",
   "skill_line": "Mages Guild",
+  "skill_line_id": "mages-guild",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/degeneration.png",

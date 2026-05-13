@@ -7,6 +7,7 @@
   "morph_rationale": "Offensive Ultimate morph — converts enemy Resistance into Spell and Physical Penetration and grants 100% Critical Chance in PvP; preferred over Berserker Rage when maximum burst on the initial engage matters.",
   "class": "Weapon",
   "skill_line": "Two Handed",
+  "skill_line_id": "two-handed",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/onslaught.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "CC morph — immobilizes the target for 2 seconds in addition to the DoT and 30% slow; preferred over Debilitate when a hard immobilize matters more than a stronger snare.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
+  "skill_line_id": "siphoning",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/crippling-grasp.png",

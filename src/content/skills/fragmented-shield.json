@@ -7,6 +7,7 @@
   "morph_rationale": "Group shield morph — grants equal-strength damage shields to you and nearby allies, scaling off your Max Magicka or Stamina; preferred over Igneous Shield when spreading uniform protection to allies matters more than a larger personal shield.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
+  "skill_line_id": "earthen-heart",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/fragmented-shield.png",

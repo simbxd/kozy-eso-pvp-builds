@@ -7,6 +7,7 @@
   "morph_rationale": "Summon morph — deploys a scion for 8 seconds with a beam that auto-tracks the target and pursues nearby enemies; preferred over The Languid Eye when hands-free sustained damage is the priority.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
+  "skill_line_id": "herald-of-the-tome",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/the-tide-kings-gaze.png",

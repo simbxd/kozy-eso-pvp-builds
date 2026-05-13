@@ -7,6 +7,7 @@
   "morph_rationale": "AoE mage morph — the skeletal mage hits the closest enemy and all nearby enemies with each attack; preferred over Skeletal Archer when AoE minion damage matters more than single-target escalation.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
+  "skill_line_id": "grave-lord",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/skeletal-arcanist.png",

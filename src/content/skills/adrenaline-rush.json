@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Racial",
   "skill_line": "Redguard Skills",
+  "skill_line_id": "redguard-skills",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/adrenaline-rush.png",

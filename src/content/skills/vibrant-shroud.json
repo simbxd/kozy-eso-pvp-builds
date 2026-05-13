@@ -7,6 +7,7 @@
   "morph_rationale": "Hybrid morph — heals you and allies with Minor Vitality while simultaneously applying Major Maim to nearby enemies; preferred over Shattering Spines when combining group sustain with damage mitigation.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
+  "skill_line_id": "dark-magic",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/vibrant-shroud.png",

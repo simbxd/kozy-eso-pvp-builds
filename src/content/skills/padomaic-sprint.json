@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Guild",
   "skill_line": "Dark Brotherhood",
+  "skill_line_id": "dark-brotherhood",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/padomaic-sprint.png",

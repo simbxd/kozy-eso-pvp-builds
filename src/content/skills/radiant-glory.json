@@ -7,6 +7,7 @@
   "morph_rationale": "Self-sustain execute morph — heals you for 15% of all damage dealt and triggers execute bonus below 33% HP; preferred over Radiant Oppression when sustaining Health during the execute phase matters.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
+  "skill_line_id": "dawns-wrath",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/radiant-glory.png",

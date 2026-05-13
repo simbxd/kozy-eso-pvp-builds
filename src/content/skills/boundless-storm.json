@@ -7,6 +7,7 @@
   "morph_rationale": "Magicka morph — converts the cost to Magicka and upgrades to Major Expedition (vs Minor on Hurricane), preferred for Magicka Sorcerer builds.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
+  "skill_line_id": "storm-calling",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/boundless-storm.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
+  "skill_line_id": "ardent-flame",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/dragonknight-standard.png",

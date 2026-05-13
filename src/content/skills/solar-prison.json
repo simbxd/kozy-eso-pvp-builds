@@ -7,6 +7,7 @@
   "morph_rationale": "Synergy CC morph — the Gravity Crush synergy deals 5215 AoE damage and stuns for 5 seconds; preferred over Solar Disturbance when maximum ally synergy damage and stun duration matter.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
+  "skill_line_id": "dawns-wrath",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/solar-prison.png",

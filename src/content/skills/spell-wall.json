@@ -7,6 +7,7 @@
   "morph_rationale": "Projectile reflection morph — reflects all projectiles cast at you while auto-blocking; preferred over Shield Discipline when countering ranged heavy attackers matters more than free ability costs.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
+  "skill_line_id": "one-hand-and-shield",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/spell-wall.png",

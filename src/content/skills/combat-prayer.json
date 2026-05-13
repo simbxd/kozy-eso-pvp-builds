@@ -7,6 +7,7 @@
   "morph_rationale": "Support morph — heals you and allies and adds Minor Berserk alongside Minor Resolve, increasing damage done by 5%; preferred over Blessing of Restoration when boosting group output alongside healing matters.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
+  "skill_line_id": "restoration-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/combat-prayer.png",

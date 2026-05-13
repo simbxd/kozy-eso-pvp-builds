@@ -7,6 +7,7 @@
   "morph_rationale": "Debuff morph — pulls the enemy to you and applies Major Cowardice, reducing their Weapon and Spell Damage; preferred over Chains of Devastation when debuffing and controlling target positioning matters more.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
+  "skill_line_id": "draconic-power",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/chains-of-dominance.png",

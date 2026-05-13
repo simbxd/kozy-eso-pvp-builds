@@ -7,6 +7,7 @@
   "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Templar",
   "skill_line": "Restoring Light",
+  "skill_line_id": "restoring-light",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/ritual-of-retribution.png",

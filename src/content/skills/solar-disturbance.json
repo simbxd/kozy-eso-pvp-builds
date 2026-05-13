@@ -7,6 +7,7 @@
   "morph_rationale": "Synergy CC morph — the Supernova synergy deals 2607 AoE damage and stuns allies for 3 seconds; preferred over Solar Prison when a lighter synergy burst is acceptable alongside Major Maim.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
+  "skill_line_id": "dawns-wrath",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/solar-disturbance.png",

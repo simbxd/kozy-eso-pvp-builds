@@ -7,6 +7,7 @@
   "morph_rationale": "Shock morph — deals Shock Damage and guarantees the Concussion status effect for Off Balance setup; preferred on Lightning staff builds when Concussion exploitation matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/shock-reach.png",

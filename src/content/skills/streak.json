@@ -7,6 +7,7 @@
   "morph_rationale": "Mobility morph — teleports you forward and stuns enemies in your path; preferred over Ball of Lightning when escaping or chasing rather than deflecting projectiles.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
+  "skill_line_id": "storm-calling",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/streak.png",

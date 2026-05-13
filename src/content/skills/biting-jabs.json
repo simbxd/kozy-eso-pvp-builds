@@ -7,6 +7,7 @@
   "morph_rationale": "Stamina morph — converts the cost to Stamina and deals Physical damage, preferred on Stamina Templar over the healing-focused Puncturing Sweep.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
+  "skill_line_id": "aedric-spear",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/biting-jabs.png",

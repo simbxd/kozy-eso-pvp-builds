@@ -7,6 +7,7 @@
   "morph_rationale": "Execute AoE morph — Ring Afterburn deals up to 300% more damage on targets below 50% Health; preferred over Elemental Ring when grouped low-health enemies are the primary target.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/fire-ring.png",

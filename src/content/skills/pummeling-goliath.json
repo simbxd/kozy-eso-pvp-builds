@@ -7,6 +7,7 @@
   "morph_rationale": "Melee burst morph — Bash attacks hit multiple enemies in front for 1799 Physical Damage; preferred over Ravenous Goliath when target-focused melee burst matters more than passive AoE presence.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
+  "skill_line_id": "bone-tyrant",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/pummeling-goliath.png",

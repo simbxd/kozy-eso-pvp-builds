@@ -6,6 +6,7 @@
   "morph_sibling": "channeled-acceleration",
   "class": "Guild",
   "skill_line": "Psijic Order",
+  "skill_line_id": "psijic-order",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/race-against-time.png",

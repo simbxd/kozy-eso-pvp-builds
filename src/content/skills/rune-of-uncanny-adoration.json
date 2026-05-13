@@ -7,6 +7,7 @@
   "morph_rationale": "Crowd control morph — charms the target into moving toward you and applies Minor Vulnerability for 10 seconds, increasing their damage taken; preferred over Rune of the Colorless Pool when soft CC and damage amplification matter more than a hard stun.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
+  "skill_line_id": "soldier-of-apocrypha",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/rune-of-uncanny-adoration.png",

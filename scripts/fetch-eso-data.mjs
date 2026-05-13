@@ -373,6 +373,7 @@ function normaliseToCurated(r, idMap, siblingMap) {
     morph_sibling:  morphSibling,
     class:          skillClass,
     skill_line:     r.skillLine,
+    skill_line_id:  lineSlug,
     type:           deriveType(r.isPassive, r.mechanic),
     resource:       deriveResource(r.mechanic),
     icon:           `/assets/skills/${slug}.png`,
@@ -489,9 +490,46 @@ async function buildSkills() {
   }
   log(`✓ Skills: ${written} written, ${skipped} skipped (curated)`);
 
-  const index = final.map(s => ({ id: s.id, name: s.name, class: s.class, skill_line: s.skill_line }));
+  const index = final.map(s => ({
+    id:            s.id,
+    name:          s.name,
+    class:         s.class,
+    skill_line:    s.skill_line,
+    skill_line_id: s.skill_line_id,
+    type:          s.type,
+    icon:          s.icon,
+    morph_of:      s.morph_of,
+  }));
   await writeJson(join(SKILLS_DIR, 'skills-index.json'), index);
   log(`✓ skills-index.json written`);
+
+  // skill-lines-index.json — class lines only (7 classes × 3 lines = 21 entries)
+  const lineMap = new Map();
+  for (const s of final) {
+    if (!VALID_CLASSES.has(s.class)) continue;
+    if (lineMap.has(s.skill_line_id)) {
+      const existing = lineMap.get(s.skill_line_id);
+      if (existing.class !== s.class) {
+        throw new Error(
+          `skill_line_id collision: "${s.skill_line_id}" used by both "${existing.class}" and "${s.class}"`
+        );
+      }
+      continue;
+    }
+    lineMap.set(s.skill_line_id, {
+      id:             s.skill_line_id,
+      name:           s.skill_line,
+      class:          s.class,
+      class_id:       slugify(s.class),
+      icon:           `/assets/skill-lines/${s.skill_line_id}.png`,
+      patch_verified: 'U49',
+    });
+  }
+  const skillLines = [...lineMap.values()].sort(
+    (a, b) => a.class.localeCompare(b.class) || a.name.localeCompare(b.name)
+  );
+  await writeJson(join(SKILLS_DIR, 'skill-lines-index.json'), skillLines);
+  log(`✓ skill-lines-index.json written (${skillLines.length} entries)`);
 
   return final;
 }

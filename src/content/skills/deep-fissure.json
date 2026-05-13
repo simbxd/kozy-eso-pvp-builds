@@ -7,6 +7,7 @@
   "morph_rationale": "Armor penetration morph — applies Minor Breach on hit, reducing enemy Physical and Spell Resistance.",
   "class": "Warden",
   "skill_line": "Animal Companions",
+  "skill_line_id": "animal-companions",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/deep-fissure.png",

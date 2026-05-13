@@ -7,6 +7,7 @@
   "morph_rationale": "Stack morph — recasting on an already-shielded target grants a 30% stronger shield and generates Crux; preferred over Tidal Chakram when layering shields and generating Crux matter more than converting shields to healing.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
+  "skill_line_id": "curative-runeforms",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/chakram-of-destiny.png",

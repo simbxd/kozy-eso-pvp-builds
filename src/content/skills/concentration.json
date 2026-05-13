@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Armor",
   "skill_line": "Light Armor",
+  "skill_line_id": "light-armor",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/concentration.png",

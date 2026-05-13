@@ -7,6 +7,7 @@
   "morph_rationale": "Resurrection morph — revives up to 3 allies at the target location and restores Magicka and Stamina for each one revived; preferred over Animate Blastbones when group recovery after a wipe matters more than a damage summon.",
   "class": "Necromancer",
   "skill_line": "Living Death",
+  "skill_line_id": "living-death",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/renewing-animation.png",

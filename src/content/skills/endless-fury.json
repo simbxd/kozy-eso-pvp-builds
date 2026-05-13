@@ -7,6 +7,7 @@
   "morph_rationale": "Resource recovery morph — restores 4860 Magicka when an enemy dies within 5 seconds of being struck; preferred over Mages' Wrath when sustaining Magicka in execute windows matters more than cleave damage.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
+  "skill_line_id": "storm-calling",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/endless-fury.png",

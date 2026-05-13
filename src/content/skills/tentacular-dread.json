@@ -7,6 +7,7 @@
   "morph_rationale": "Crux burst morph — consumes all Crux to deal 33% more damage with escalating Abyssal Ink bonus per Crux; preferred over Cephaliarch's Flail when converting Crux into maximum burst damage matters more than self-healing.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
+  "skill_line_id": "herald-of-the-tome",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/tentacular-dread.png",

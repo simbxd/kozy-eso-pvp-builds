@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "World",
   "skill_line": "Scrying",
+  "skill_line_id": "scrying",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/preemptive-power.png",

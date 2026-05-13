@@ -7,6 +7,7 @@
   "morph_rationale": "Burst AoE DoT morph — rains arrows for 8 seconds with higher damage per tick; preferred over Endless Hail when front-loaded burst pressure matters more than prolonged area coverage.",
   "class": "Weapon",
   "skill_line": "Bow",
+  "skill_line_id": "bow",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/arrow-barrage.png",

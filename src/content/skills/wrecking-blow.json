@@ -7,6 +7,7 @@
   "morph_rationale": "Empower morph — grants Major Berserk and Empower after casting, boosting damage done and the next Heavy Attack; preferred over Dizzying Swing when burst setup matters more than crowd control.",
   "class": "Weapon",
   "skill_line": "Two Handed",
+  "skill_line_id": "two-handed",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/wrecking-blow.png",

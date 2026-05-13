@@ -7,6 +7,7 @@
   "morph_rationale": "Ultimate morph — reduces cost or generates Ultimate on use.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
+  "skill_line_id": "storm-calling",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/energy-overload.png",

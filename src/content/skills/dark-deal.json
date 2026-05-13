@@ -7,6 +7,7 @@
   "morph_rationale": "Stamina sustain morph — restores Stamina instantly and over time alongside Minor Berserk; preferred over Dark Conversion on Stamina Sorcerer builds where Stamina sustain matters more than Magicka.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
+  "skill_line_id": "dark-magic",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/dark-deal.png",

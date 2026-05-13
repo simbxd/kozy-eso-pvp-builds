@@ -7,6 +7,7 @@
   "morph_rationale": "Resource recovery morph — restores 1900 Magicka and Stamina per second (vs Introspection's 1500); preferred over Introspection when maximum resource regeneration during the channel matters more than escalating healing.",
   "class": "Guild",
   "skill_line": "Psijic Order",
+  "skill_line_id": "psijic-order",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/deep-thoughts.png",

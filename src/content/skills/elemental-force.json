@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/elemental-force.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Nightblade",
   "skill_line": "Siphoning",
+  "skill_line_id": "siphoning",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/catalyst.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Offensive mobility morph — grants Minor Berserk while slotted, increasing damage done by 5%; preferred over Deceptive Predator when offensive output alongside the mobility matters more than area damage reduction.",
   "class": "Warden",
   "skill_line": "Animal Companions",
+  "skill_line_id": "animal-companions",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/bird-of-prey.png",

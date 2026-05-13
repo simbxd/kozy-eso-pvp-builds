@@ -7,6 +7,7 @@
   "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
+  "skill_line_id": "draconic-power",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/burning-talons.png",

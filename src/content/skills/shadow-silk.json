@@ -7,6 +7,7 @@
   "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Guild",
   "skill_line": "Undaunted",
+  "skill_line_id": "undaunted",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/shadow-silk.png",

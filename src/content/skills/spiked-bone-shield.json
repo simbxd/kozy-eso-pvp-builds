@@ -7,6 +7,7 @@
   "morph_rationale": "Defensive morph — provides a damage shield on cast, with additional utility compared to Bone Surge.",
   "class": "Guild",
   "skill_line": "Undaunted",
+  "skill_line_id": "undaunted",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/spiked-bone-shield.png",

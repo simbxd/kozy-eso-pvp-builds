@@ -7,6 +7,7 @@
   "morph_rationale": "Defensive Ultimate morph — creates a shadow ring granting Major Protection to you and allies without dealing damage; preferred over Veil of Blades in survival-focused situations.",
   "class": "Nightblade",
   "skill_line": "Shadow",
+  "skill_line_id": "shadow",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/bolstering-darkness.png",

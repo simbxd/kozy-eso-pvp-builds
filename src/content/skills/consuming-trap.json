@@ -6,6 +6,7 @@
   "morph_sibling": "soul-splitting-trap",
   "class": "World",
   "skill_line": "Soul Magic",
+  "skill_line_id": "soul-magic",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/consuming-trap.png",

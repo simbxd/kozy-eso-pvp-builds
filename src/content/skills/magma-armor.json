@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
+  "skill_line_id": "earthen-heart",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/magma-armor.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Nightblade",
   "skill_line": "Siphoning",
+  "skill_line_id": "siphoning",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/soul-shred.png",

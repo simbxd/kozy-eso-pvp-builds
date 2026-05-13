@@ -7,6 +7,7 @@
   "morph_rationale": "Status chain morph — applies Burning, Chilled, and Concussion every 7.5 seconds; preferred over Elemental Drain when stacking all three elemental status effects for follow-up abilities matters more than the Magicka leech.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/elemental-susceptibility.png",

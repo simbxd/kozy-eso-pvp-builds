@@ -7,6 +7,7 @@
   "morph_rationale": "Counter morph — reflects the next projectile back at the attacker and passively reduces block cost and increases block damage with a shield equipped; preferred over Absorb Missile when punishing ranged enemies and block efficiency matter.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
+  "skill_line_id": "one-hand-and-shield",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/defensive-stance.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Ultimate generation morph — generates up to 60 Ultimate from the initial blast based on enemies hit; preferred over Ice Comet when rapid Ultimate cycling matters more than the movement slow.",
   "class": "Guild",
   "skill_line": "Mages Guild",
+  "skill_line_id": "mages-guild",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/shooting-star.png",

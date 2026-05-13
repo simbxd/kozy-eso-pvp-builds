@@ -7,6 +7,7 @@
   "morph_rationale": "Stamina morph — converts the cost to Stamina for Stamina Sorcerer; trades Boundless Storm's Major Expedition for a Stamina-friendly cost.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
+  "skill_line_id": "storm-calling",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/hurricane.png",

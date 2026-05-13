@@ -7,6 +7,7 @@
   "morph_rationale": "Escalating damage morph — each attack by the archer deals 15% more than the previous, building in damage over time; preferred over Skeletal Arcanist when focused single-target escalating damage matters more.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
+  "skill_line_id": "grave-lord",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/skeletal-archer.png",

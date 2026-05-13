@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
+  "skill_line_id": "bone-tyrant",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/health-avarice.png",

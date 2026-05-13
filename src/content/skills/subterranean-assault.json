@@ -7,6 +7,7 @@
   "morph_rationale": "Double-hit morph — shalk attack twice in delayed waves, dealing Poison damage; preferred over Deep Fissure when consistent DPS pressure matters more than armor penetration.",
   "class": "Warden",
   "skill_line": "Animal Companions",
+  "skill_line_id": "animal-companions",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/subterranean-assault.png",

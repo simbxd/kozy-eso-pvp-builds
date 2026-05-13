@@ -7,6 +7,7 @@
   "morph_rationale": "Execute reward morph — grants Major Berserk for 10 seconds on kill in addition to the full Health restore; preferred over Piercing Mark when a damage burst after the kill matters more than stealth detection.",
   "class": "Nightblade",
   "skill_line": "Assassination",
+  "skill_line_id": "assassination",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/reapers-mark.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Reduces enemy Physical Resistance on hit — essential for cutting through heavy armor in PvP.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
+  "skill_line_id": "earthen-heart",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/shattering-rocks.png",

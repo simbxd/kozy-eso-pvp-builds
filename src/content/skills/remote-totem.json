@@ -7,6 +7,7 @@
   "morph_rationale": "Ranged placement morph — projects the totem to a target location instead of at your feet; preferred over Agony Totem when controlling a specific distant area matters more than the ally synergy.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
+  "skill_line_id": "bone-tyrant",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/remote-totem.png",

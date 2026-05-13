@@ -7,6 +7,7 @@
   "morph_rationale": "Stamina sustain morph — recovers 242 Stamina per second with a slightly higher baseline heal; preferred over Channeled Focus on Stamina Templar builds where Stamina sustain matters more than Magicka.",
   "class": "Templar",
   "skill_line": "Restoring Light",
+  "skill_line_id": "restoring-light",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/restoring-focus.png",

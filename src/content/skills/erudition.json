@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
+  "skill_line_id": "curative-runeforms",
   "type": "Passive",
   "resource": "None",
   "icon": "/assets/skills/erudition.png",

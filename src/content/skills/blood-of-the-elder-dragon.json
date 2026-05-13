@@ -7,6 +7,7 @@
   "morph_rationale": "Burst self-heal that scales with missing Health — the lower your HP, the more it restores.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
+  "skill_line_id": "draconic-power",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/blood-of-the-elder-dragon.png",

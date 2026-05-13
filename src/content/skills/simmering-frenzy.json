@@ -6,6 +6,7 @@
   "morph_sibling": "sated-fury",
   "class": "World",
   "skill_line": "Vampire",
+  "skill_line_id": "vampire",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/simmering-frenzy.png",

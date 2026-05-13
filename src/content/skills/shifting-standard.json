@@ -7,6 +7,7 @@
   "morph_rationale": "Anti-heal morph — applies Major Defile on hit, reducing enemy healing received.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
+  "skill_line_id": "ardent-flame",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/shifting-standard.png",

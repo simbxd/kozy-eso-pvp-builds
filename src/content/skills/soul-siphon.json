@@ -7,6 +7,7 @@
   "morph_rationale": "Group sustain morph — heals nearby allies and grants Major Vitality, boosting healing received and damage shield strength; preferred over Soul Tether when group survivability matters more than the stun.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
+  "skill_line_id": "siphoning",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/soul-siphon.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Fleetstep Wings.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
+  "skill_line_id": "draconic-power",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/protect-the-brood.png",

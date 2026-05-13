@@ -7,6 +7,7 @@
   "morph_rationale": "Synergy totem morph — summons at your feet with an ally-activatable Pure Agony synergy dealing 2100 Magic Damage; preferred over Remote Totem when staying near the totem and having an ally synergy matter.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
+  "skill_line_id": "bone-tyrant",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/agony-totem.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Sustain DoT morph — grants 150 Health, Magicka, and Stamina Recovery while the siphon is active; preferred over Detonating Siphon when passive recovery during the channel matters more than the final explosion.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
+  "skill_line_id": "grave-lord",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/mystic-siphon.png",

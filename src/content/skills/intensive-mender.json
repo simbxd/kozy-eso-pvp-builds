@@ -7,6 +7,7 @@
   "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Necromancer",
   "skill_line": "Living Death",
+  "skill_line_id": "living-death",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/intensive-mender.png",

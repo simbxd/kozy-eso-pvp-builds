@@ -7,6 +7,7 @@
   "morph_rationale": "Utility morph — creates a twin portal for teleportation that allies can use, generating Crux on each teleport; preferred over Fleet-Footed Gate when portal sharing and Crux generation matter more than the movement speed buff.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
+  "skill_line_id": "curative-runeforms",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/passage-between-worlds.png",

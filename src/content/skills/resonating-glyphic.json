@@ -7,6 +7,7 @@
   "morph_rationale": "Glyphic morph — summons a glyphic that grows stronger as allies attack it, progressively healing nearby allies and boosting Weapon and Spell Damage; preferred over Glyphic of the Tides in combat-focused compositions.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
+  "skill_line_id": "curative-runeforms",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/resonating-glyphic.png",

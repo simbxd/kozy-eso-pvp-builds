@@ -7,6 +7,7 @@
   "morph_rationale": "Grants Major Brutality and Sorcery (Weapon/Spell Damage buff) to self and nearby allies — reliable back bar damage buff.",
   "class": "Dragonknight",
   "skill_line": "Earthen Heart",
+  "skill_line_id": "earthen-heart",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/igneous-weapons.png",

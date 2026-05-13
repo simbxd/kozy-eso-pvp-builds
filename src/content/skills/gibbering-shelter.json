@@ -7,6 +7,7 @@
   "morph_rationale": "Group cascade morph — whenever the main shield absorbs damage it cascades a secondary shield to up to 11 nearby allies; preferred over Sanctum of the Abyssal Sea in group play where spreading protection matters more than damage retaliation.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
+  "skill_line_id": "soldier-of-apocrypha",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/gibbering-shelter.png",

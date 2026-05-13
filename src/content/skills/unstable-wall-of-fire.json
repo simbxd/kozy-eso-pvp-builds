@@ -7,6 +7,7 @@
   "morph_rationale": "Fire unstable morph — hits Burning enemies for 10% more and explodes for 1199 Flame AoE on expiry; preferred on Flame staff builds when Burning synergy and end-of-duration burst matter.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/unstable-wall-of-fire.png",

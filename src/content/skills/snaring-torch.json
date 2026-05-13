@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Guild",
   "skill_line": "Fighters Guild",
+  "skill_line_id": "fighters-guild",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/snaring-torch.png",

@@ -6,6 +6,7 @@
   "morph_sibling": "feral-pounce",
   "class": "World",
   "skill_line": "Werewolf",
+  "skill_line_id": "werewolf",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/brutal-pounce.png",

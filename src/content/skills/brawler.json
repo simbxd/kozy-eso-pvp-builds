@@ -7,6 +7,7 @@
   "morph_rationale": "Scaling shield morph — the damage shield grows by 50% per enemy hit, up to 300% of its base strength; preferred over Carve when fighting multiple enemies to maximize the shield value.",
   "class": "Weapon",
   "skill_line": "Two Handed",
+  "skill_line_id": "two-handed",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/brawler.png",

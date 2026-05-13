@@ -7,6 +7,7 @@
   "morph_rationale": "Self-sustain morph — prioritizes personal healing over Quick Siphon's Minor Expedition.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
+  "skill_line_id": "restoration-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/siphon-spirit.png",

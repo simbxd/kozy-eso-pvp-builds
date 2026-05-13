@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "World",
   "skill_line": "Legerdemain",
+  "skill_line_id": "legerdemain",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/locksmith.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Snare morph — slows enemies by 70% instead of Northern Storm's 40% and applies Chilled; preferred when maximum enemy movement restriction matters more than the damage escalation.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
+  "skill_line_id": "winters-embrace",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/permafrost.png",

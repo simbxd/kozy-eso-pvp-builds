@@ -7,6 +7,7 @@
   "morph_rationale": "Ultimate generation morph — absorbs up to 3 projectiles and grants Major Heroism on each hit, rapidly generating Ultimate; preferred over Crystallized Slab when ult economy matters more than the stun.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
+  "skill_line_id": "winters-embrace",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/shimmering-shield.png",

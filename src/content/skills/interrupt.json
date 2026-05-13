@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Weapon",
   "skill_line": "Two Handed",
+  "skill_line_id": "two-handed",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/interrupt.png",

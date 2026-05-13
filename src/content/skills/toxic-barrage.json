@@ -7,6 +7,7 @@
   "morph_rationale": "Channel morph — you channel the barrage directly while moving freely and immune to disabling effects, then applies a follow-up Poison DoT; preferred over Ballista when higher total damage output and channel immunity matter.",
   "class": "Weapon",
   "skill_line": "Bow",
+  "skill_line_id": "bow",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/toxic-barrage.png",

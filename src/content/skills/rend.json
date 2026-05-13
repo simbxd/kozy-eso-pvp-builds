@@ -7,6 +7,7 @@
   "morph_rationale": "Sustained Bleed morph — deals higher total damage over 16 seconds with consistent self-healing; preferred over Thrive in Chaos when prolonged sustained pressure on a single target matters more than stacking damage bonuses.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
+  "skill_line_id": "dual-wield",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/rend.png",

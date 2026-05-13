@@ -7,6 +7,7 @@
   "morph_rationale": "Multi-target heal morph — Heavy Attacks restore Health to you and 2 nearby allies simultaneously; preferred over Lotus Blossom in group play when multi-target sustain matters more than the longer buff duration.",
   "class": "Warden",
   "skill_line": "Green Balance",
+  "skill_line_id": "green-balance",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/green-lotus.png",

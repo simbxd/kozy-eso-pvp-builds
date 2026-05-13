@@ -7,6 +7,7 @@
   "morph_rationale": "Self-buff morph — heals for more Health at the cost of higher self-drain, then grants Minor Mending after cast; preferred over Shrewd Offering when the healing bonus and post-cast buff outweigh the extra self-damage.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
+  "skill_line_id": "siphoning",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/healthy-offering.png",

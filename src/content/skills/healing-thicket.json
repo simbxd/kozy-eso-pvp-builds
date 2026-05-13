@@ -7,6 +7,7 @@
   "morph_rationale": "Sustained HoT morph — healing persists on allies for 4 extra seconds after they leave the forest; preferred over Enchanted Forest when keeping mobile allies healed matters more than Ultimate generation.",
   "class": "Warden",
   "skill_line": "Green Balance",
+  "skill_line_id": "green-balance",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/healing-thicket.png",

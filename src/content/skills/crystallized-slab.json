@@ -7,6 +7,7 @@
   "morph_rationale": "Crowd control morph — stuns the target on hit.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
+  "skill_line_id": "winters-embrace",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/crystallized-slab.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Group resistance morph — extends Major Resolve to all grouped allies for 20 seconds; preferred over Ice Fortress when spreading resistance across the group matters more than the extra duration and personal Minor Protection.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
+  "skill_line_id": "winters-embrace",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/expansive-frost-cloak.png",

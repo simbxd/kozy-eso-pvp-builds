@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Guild",
   "skill_line": "Psijic Order",
+  "skill_line_id": "psijic-order",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/clairvoyance.png",

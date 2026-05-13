@@ -7,6 +7,7 @@
   "morph_rationale": "Defensive Ultimate morph — grants immunity to disabling and snare effects and converts enemy Resistance into your own defenses; preferred over Onslaught when survivability during the engage matters more than maximum burst.",
   "class": "Weapon",
   "skill_line": "Two Handed",
+  "skill_line_id": "two-handed",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/berserker-rage.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Necromancer",
   "skill_line": "Grave Lord",
+  "skill_line_id": "grave-lord",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/dismember.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Racial",
   "skill_line": "Khajiit Skills",
+  "skill_line_id": "khajiit-skills",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/lunar-blessings.png",

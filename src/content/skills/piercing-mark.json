@@ -7,6 +7,7 @@
   "morph_rationale": "Anti-stealth morph — exposes nearby stealthed enemies when the mark is applied in addition to Major Breach; preferred over Reaper's Mark when tracking invisible targets matters more than the post-kill damage burst.",
   "class": "Nightblade",
   "skill_line": "Assassination",
+  "skill_line_id": "assassination",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/piercing-mark.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Sustain shield morph — restores Magicka each time the shield absorbs damage, up to 3 times; preferred over Dampen Magic when Magicka recovery during combat matters more than a slightly larger shield cap.",
   "class": "Armor",
   "skill_line": "Light Armor",
+  "skill_line_id": "light-armor",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/harness-magicka.png",

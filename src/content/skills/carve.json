@@ -7,6 +7,7 @@
   "morph_rationale": "Sustained Bleed morph — applies a Bleed DoT that extends by 10 seconds with each hit, up to 32 seconds; preferred over Brawler when sustained single-target Bleed pressure matters more than a scaling shield.",
   "class": "Weapon",
   "skill_line": "Two Handed",
+  "skill_line_id": "two-handed",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/carve.png",

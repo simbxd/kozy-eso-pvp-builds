@@ -7,6 +7,7 @@
   "morph_rationale": "Damage mitigation morph — applies Minor Maim on hit, reducing enemy damage output.",
   "class": "Dragonknight",
   "skill_line": "Draconic Power",
+  "skill_line_id": "draconic-power",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/choking-talons.png",

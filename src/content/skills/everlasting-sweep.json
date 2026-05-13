@@ -7,6 +7,7 @@
   "morph_rationale": "Sustained DoT morph — extends the bleed by 2 seconds per enemy hit for prolonged AoE coverage; preferred over Crescent Sweep when fighting multiple enemies and maximizing DoT duration matter more than the directional bonus.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
+  "skill_line_id": "aedric-spear",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/everlasting-sweep.png",

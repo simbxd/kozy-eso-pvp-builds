@@ -7,6 +7,7 @@
   "morph_rationale": "Support morph — grants Major Expedition, increasing your Movement Speed.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
+  "skill_line_id": "winters-embrace",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/frozen-retreat.png",

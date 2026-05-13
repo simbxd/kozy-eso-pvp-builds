@@ -7,6 +7,7 @@
   "morph_rationale": "Hemorrhaging morph — applies the Hemorrhaging status effect in addition to the Bleed and 2-second immobilize, placed at your location; preferred over Lightweight Beast Trap when status effect pressure and a melee-range trap matter.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
+  "skill_line_id": "fighters-guild",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/barbed-trap.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Damage amp morph — ramps damage output by up to +18% over 9 stacks and grants Major Protection to you and allies; preferred over Permafrost when sustained damage scaling matters more than maximum enemy slow.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
+  "skill_line_id": "winters-embrace",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/northern-storm.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Defensive heal morph — grants the healed target Physical and Spell Resistance equal to half the heal amount; preferred over Blood Sacrifice when protecting a single ally with both healing and resistance matters.",
   "class": "Necromancer",
   "skill_line": "Living Death",
+  "skill_line_id": "living-death",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/resistant-flesh.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Double damage morph — every second cast deals 60% more damage; preferred over Growing Swarm when burst on a single target and combo casting matter more than AoE spread.",
   "class": "Warden",
   "skill_line": "Animal Companions",
+  "skill_line_id": "animal-companions",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/fetcher-infection.png",

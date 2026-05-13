@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
+  "skill_line_id": "one-hand-and-shield",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/swift-throw.png",

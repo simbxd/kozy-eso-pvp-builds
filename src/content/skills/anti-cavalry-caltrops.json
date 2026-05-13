@@ -6,6 +6,7 @@
   "morph_sibling": "razor-caltrops",
   "class": "Alliance War",
   "skill_line": "Assault",
+  "skill_line_id": "assault",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/anti-cavalry-caltrops.png",

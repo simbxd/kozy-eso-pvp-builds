@@ -7,6 +7,7 @@
   "morph_rationale": "Pure HoT morph — heals for more total Health over a longer 15-second window; preferred over Healing Springs when maximizing raw group healing throughput matters more than Magicka recovery.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
+  "skill_line_id": "restoration-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/illustrious-healing.png",

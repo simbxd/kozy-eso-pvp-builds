@@ -7,6 +7,7 @@
   "morph_rationale": "Armor penetration morph — applies Major Breach on hit, reducing enemy Physical and Spell Resistance.",
   "class": "Guild",
   "skill_line": "Psijic Order",
+  "skill_line_id": "psijic-order",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/crushing-weapon.png",

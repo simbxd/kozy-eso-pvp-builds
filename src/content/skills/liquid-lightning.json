@@ -7,6 +7,7 @@
   "morph_rationale": "Sustained AoE morph — extends to 15 seconds at a lower per-tick rate; preferred over Lightning Flood when prolonged area denial and DoT uptime matter more than burst.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
+  "skill_line_id": "storm-calling",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/liquid-lightning.png",

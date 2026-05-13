@@ -7,6 +7,7 @@
   "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Nightblade",
   "skill_line": "Shadow",
+  "skill_line_id": "shadow",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/dark-cloak.png",

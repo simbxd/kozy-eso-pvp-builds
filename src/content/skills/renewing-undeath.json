@@ -7,6 +7,7 @@
   "morph_rationale": "Cleanse morph — consumes a corpse to remove up to 3 negative effects alongside the group HoT; preferred over Enduring Undeath when debuff removal matters more than extended healing duration.",
   "class": "Necromancer",
   "skill_line": "Living Death",
+  "skill_line_id": "living-death",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/renewing-undeath.png",

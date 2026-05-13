@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Racial",
   "skill_line": "High Elf Skills",
+  "skill_line_id": "high-elf-skills",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/elemental-talent.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Range-scaling CC morph — knocks the target back 8 meters and deals up to 40% bonus damage based on distance; preferred over Binding Javelin when repositioning and long-range burst damage matter more than holding enemies in place.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
+  "skill_line_id": "aedric-spear",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/aurora-javelin.png",

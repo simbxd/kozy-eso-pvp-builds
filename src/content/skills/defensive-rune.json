@@ -7,6 +7,7 @@
   "morph_rationale": "Reactive CC morph — places a protective rune on yourself that stuns the next enemy to attack you, unblockable; preferred over Rune Cage when punishing incoming aggression matters more than initiating CC.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
+  "skill_line_id": "dark-magic",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/defensive-rune.png",

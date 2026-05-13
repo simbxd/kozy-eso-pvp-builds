@@ -7,6 +7,7 @@
   "morph_rationale": "Damage mitigation morph — applies Major Maim on hit, reducing enemy damage output.",
   "class": "Necromancer",
   "skill_line": "Bone Tyrant",
+  "skill_line_id": "bone-tyrant",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/empowering-grasp.png",

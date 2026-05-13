@@ -7,6 +7,7 @@
   "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Nightblade",
   "skill_line": "Assassination",
+  "skill_line_id": "assassination",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/lotus-fan.png",

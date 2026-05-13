@@ -7,6 +7,7 @@
   "morph_rationale": "Hard CC morph — stuns for 4 seconds and applies Minor Vulnerability and Minor Brittle, increasing damage taken and Critical Damage taken by 5% and 10%; preferred over Rune of Uncanny Adoration when hard CC plus critical damage amplification matter more than the charm.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
+  "skill_line_id": "soldier-of-apocrypha",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/rune-of-the-colorless-pool.png",

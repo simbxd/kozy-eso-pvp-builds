@@ -7,6 +7,7 @@
   "morph_rationale": "Self-protection taunt morph — applies Major Breach and grants Minor Protection, reducing your own damage taken by 5%; preferred over Pierce Armor when personal survivability alongside armor penetration matters more.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
+  "skill_line_id": "one-hand-and-shield",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/ransack.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Alliance War",
   "skill_line": "Support",
+  "skill_line_id": "support",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/shocking-banner.png",

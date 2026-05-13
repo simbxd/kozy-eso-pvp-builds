@@ -7,6 +7,7 @@
   "morph_rationale": "Ramp morph — healing gradually increases up to 192% stronger at the end of the channel; preferred over Cascading Fortune when maximizing total output during a full uninterrupted channel matters.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
+  "skill_line_id": "curative-runeforms",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/curative-surge.png",

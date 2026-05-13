@@ -7,6 +7,7 @@
   "morph_rationale": "Burst morph — deals damage instantly rather than over time like Purifying Light.",
   "class": "Templar",
   "skill_line": "Dawn's Wrath",
+  "skill_line_id": "dawns-wrath",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/power-of-the-light.png",

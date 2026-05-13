@@ -7,6 +7,7 @@
   "morph_rationale": "Damage escalation morph — deals 10% more damage every 2 seconds over the DoT duration; preferred over Burning Embers when maximizing damage output matters more than self-healing.",
   "class": "Dragonknight",
   "skill_line": "Ardent Flame",
+  "skill_line_id": "ardent-flame",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/searing-claw.png",

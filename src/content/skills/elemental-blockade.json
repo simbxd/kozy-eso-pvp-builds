@@ -7,6 +7,7 @@
   "morph_rationale": "Base morph — applies different bonus effects depending on your equipped staff element; preferred when flexibility across multiple elemental builds matters more than a single specialized morph.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/elemental-blockade.png",

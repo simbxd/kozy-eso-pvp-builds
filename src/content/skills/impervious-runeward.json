@@ -7,6 +7,7 @@
   "morph_rationale": "Burst shield morph — provides an enormous initial shield for 1 second before settling into a sustained secondary shield; preferred over Spiteward of the Lucid Mind when absorbing a single large incoming burst matters more than cost efficiency.",
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
+  "skill_line_id": "soldier-of-apocrypha",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/impervious-runeward.png",

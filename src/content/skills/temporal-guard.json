@@ -7,6 +7,7 @@
   "morph_rationale": "Defensive ultimate — rewinds your character's state 4 seconds back in time, restoring HP and resources to what they were before the burst hit.",
   "class": "Guild",
   "skill_line": "Psijic Order",
+  "skill_line_id": "psijic-order",
   "type": "Ultimate",
   "resource": "Ultimate",
   "icon": "/assets/skills/temporal-guard.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
+  "skill_line_id": "winters-embrace",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/gripping-shards.png",

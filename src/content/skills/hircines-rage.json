@@ -6,6 +6,7 @@
   "morph_sibling": "hircines-fortitude",
   "class": "World",
   "skill_line": "Werewolf",
+  "skill_line_id": "werewolf",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/hircines-rage.png",

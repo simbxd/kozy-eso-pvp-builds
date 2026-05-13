@@ -7,6 +7,7 @@
   "morph_rationale": "Execute AoE morph — the execute explosion damages all nearby enemies, not just the initial target; preferred over Endless Fury when cleave during execute windows matters more than resource recovery.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
+  "skill_line_id": "storm-calling",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/mages-wrath.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Base morph — deals Magic damage and always applies your equipped staff's status effect; preferred when element-agnostic damage or staff flexibility matters.",
   "class": "Weapon",
   "skill_line": "Destruction Staff",
+  "skill_line_id": "destruction-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/destructive-reach.png",

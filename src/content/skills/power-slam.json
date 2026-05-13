@@ -7,6 +7,7 @@
   "morph_rationale": "Interrupt morph — deals higher damage and costs 50% less after blocking an attack via Resentment stacking; preferred over Reverberating Bash when blocking into a counterattack matters more than the stun.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
+  "skill_line_id": "one-hand-and-shield",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/power-slam.png",

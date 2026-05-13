@@ -7,6 +7,7 @@
   "morph_rationale": "Resource cleanse morph — restores 515 Magicka and Stamina for each of the 2 effects removed; preferred over Hexproof when resource restoration alongside cleansing matters more than removing more debuffs.",
   "class": "Necromancer",
   "skill_line": "Living Death",
+  "skill_line_id": "living-death",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/expunge-and-modify.png",

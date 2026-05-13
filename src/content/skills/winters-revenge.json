@@ -7,6 +7,7 @@
   "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Gripping Shards.",
   "class": "Warden",
   "skill_line": "Winter's Embrace",
+  "skill_line_id": "winters-embrace",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/winters-revenge.png",

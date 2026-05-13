@@ -7,6 +7,7 @@
   "morph_rationale": "Support morph — applies Minor Endurance, Fortitude, and Intellect to you and nearby group members for 1 minute, boosting all recovery; preferred over Repentance when long-duration passive recovery buffs matter more than burst group healing.",
   "class": "Templar",
   "skill_line": "Restoring Light",
+  "skill_line_id": "restoring-light",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/radiant-aura.png",

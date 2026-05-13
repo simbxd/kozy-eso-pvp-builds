@@ -7,6 +7,7 @@
   "morph_rationale": "DoT morph — applies sustained damage over time rather than a single burst hit.",
   "class": "Arcanist",
   "skill_line": "Curative Runeforms",
+  "skill_line_id": "curative-runeforms",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/reconstructive-domain.png",

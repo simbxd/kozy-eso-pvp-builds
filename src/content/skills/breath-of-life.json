@@ -7,6 +7,7 @@
   "morph_rationale": "Dual heal morph — heals a second injured nearby target in addition to the primary; preferred over Honor the Dead when spreading instant heals to two critical targets simultaneously matters more than Magicka sustain.",
   "class": "Templar",
   "skill_line": "Restoring Light",
+  "skill_line_id": "restoring-light",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/breath-of-life.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Damage stack morph — gains 6% bonus damage per enemy hit, up to 36% with 6 targets; preferred over Rend when fighting multiple enemies and escalating damage from stacks matter more than single-target output.",
   "class": "Weapon",
   "skill_line": "Dual Wield",
+  "skill_line_id": "dual-wield",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/thrive-in-chaos.png",

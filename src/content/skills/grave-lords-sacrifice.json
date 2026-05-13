@@ -7,6 +7,7 @@
   "morph_rationale": "Self-buff morph — sacrifices a summoned skeleton to boost all Necromancer ability and DoT damage by 15% for 20 seconds; preferred over Blighted Blastbones when damage amplification matters more than applying Major Defile.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
+  "skill_line_id": "grave-lord",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/grave-lords-sacrifice.png",

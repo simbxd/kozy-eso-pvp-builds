@@ -7,6 +7,7 @@
   "morph_rationale": "Multi-target heal morph — can consume a nearby corpse to simultaneously heal a second target; preferred over Resistant Flesh when double-heals or burst group sustain matter more.",
   "class": "Necromancer",
   "skill_line": "Living Death",
+  "skill_line_id": "living-death",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/blood-sacrifice.png",

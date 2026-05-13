@@ -7,6 +7,7 @@
   "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Arcanist",
   "skill_line": "Herald of the Tome",
+  "skill_line_id": "herald-of-the-tome",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/escalating-runeblades.png",

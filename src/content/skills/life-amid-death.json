@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Necromancer",
   "skill_line": "Living Death",
+  "skill_line_id": "living-death",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/life-amid-death.png",

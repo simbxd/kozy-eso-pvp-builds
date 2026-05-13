@@ -6,6 +6,7 @@
   "morph_sibling": "exhilarating-drain",
   "class": "World",
   "skill_line": "Vampire",
+  "skill_line_id": "vampire",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/drain-vigor.png",

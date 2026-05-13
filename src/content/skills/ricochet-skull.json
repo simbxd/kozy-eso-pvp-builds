@@ -7,6 +7,7 @@
   "morph_rationale": "AoE morph — extends the effect to all nearby enemies instead of a single target.",
   "class": "Necromancer",
   "skill_line": "Grave Lord",
+  "skill_line_id": "grave-lord",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/ricochet-skull.png",

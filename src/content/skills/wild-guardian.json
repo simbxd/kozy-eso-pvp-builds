@@ -7,6 +7,7 @@
   "morph_rationale": "Bleed summon morph — grizzly deals Bleed damage with increased Hemorrhaging chance; preferred over Eternal Guardian when sustained Bleed pressure and status effects matter more.",
   "class": "Warden",
   "skill_line": "Animal Companions",
+  "skill_line_id": "animal-companions",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/wild-guardian.png",

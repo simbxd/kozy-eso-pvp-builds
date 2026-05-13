@@ -7,6 +7,7 @@
   "morph_rationale": "Offensive morph — deals direct damage to the target.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
+  "skill_line_id": "fighters-guild",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/silver-shards.png",

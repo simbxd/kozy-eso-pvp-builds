@@ -7,6 +7,7 @@
   "morph_rationale": "CC morph — channels for 4 seconds then stuns enemies; preferred over Borrowed Time when a clean stun without the heal absorption mechanic is sufficient.",
   "class": "Guild",
   "skill_line": "Psijic Order",
+  "skill_line_id": "psijic-order",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/time-freeze.png",

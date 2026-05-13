@@ -7,6 +7,7 @@
   "morph_rationale": "Stamina sustain morph — restores Stamina over 25 seconds; functionally identical to Blue Betty but favored on Stamina Warden builds for the Stamina return.",
   "class": "Warden",
   "skill_line": "Animal Companions",
+  "skill_line_id": "animal-companions",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/bull-netch.png",

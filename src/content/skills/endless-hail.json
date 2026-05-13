@@ -7,6 +7,7 @@
   "morph_rationale": "Sustained AoE DoT morph — extends the rain to 13 seconds at a lower per-tick rate; preferred over Arrow Barrage when prolonged area denial matters more than burst.",
   "class": "Weapon",
   "skill_line": "Bow",
+  "skill_line_id": "bow",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/endless-hail.png",

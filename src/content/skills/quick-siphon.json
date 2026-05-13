@@ -7,6 +7,7 @@
   "morph_rationale": "Support morph — grants Minor Expedition, increasing your Movement Speed.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
+  "skill_line_id": "restoration-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/quick-siphon.png",

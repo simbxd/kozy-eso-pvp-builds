@@ -7,6 +7,7 @@
   "morph_rationale": "Mobility heal morph — gap-closes to an ally to heal them and generates Ultimate when the target is below 60% Health; preferred over Nature's Embrace when rapid repositioning and ult generation on critical targets matter.",
   "class": "Warden",
   "skill_line": "Green Balance",
+  "skill_line_id": "green-balance",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/bursting-vines.png",

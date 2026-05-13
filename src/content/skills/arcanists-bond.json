@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Weapon",
   "skill_line": "Restoration Staff",
+  "skill_line_id": "restoration-staff",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/arcanists-bond.png",

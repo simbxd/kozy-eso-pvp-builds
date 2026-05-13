@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
+  "skill_line_id": "storm-calling",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/overload.png",

@@ -7,6 +7,7 @@
   "morph_rationale": "Resource recovery morph — restores Magicka Recovery for each ally healed, stacking up to 20 times; preferred over Illustrious Healing when self-sustaining Magicka for continued healing output matters.",
   "class": "Weapon",
   "skill_line": "Restoration Staff",
+  "skill_line_id": "restoration-staff",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/healing-springs.png",

@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Warden",
   "skill_line": "Green Balance",
+  "skill_line_id": "green-balance",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/lotus-flower.png",

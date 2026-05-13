@@ -7,6 +7,7 @@
   "morph_rationale": "Crit-trigger morph — grants Minor Berserk for 5 seconds after dealing Critical Damage from an enemy's flank; preferred over Evil Hunter when burst windows from ambush position matter.",
   "class": "Guild",
   "skill_line": "Fighters Guild",
+  "skill_line_id": "fighters-guild",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/camouflaged-hunter.png",

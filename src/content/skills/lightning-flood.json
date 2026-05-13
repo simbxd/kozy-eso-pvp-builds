@@ -7,6 +7,7 @@
   "morph_rationale": "Burst AoE morph — deals higher Shock damage per tick over 10 seconds; preferred over Liquid Lightning when front-loaded burst matters more than prolonged area coverage.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
+  "skill_line_id": "storm-calling",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/lightning-flood.png",

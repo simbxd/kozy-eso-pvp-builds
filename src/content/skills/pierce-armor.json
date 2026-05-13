@@ -7,6 +7,7 @@
   "morph_rationale": "Dual breach morph — applies both Minor and Major Breach, reducing enemy Physical and Spell Resistance by a combined 8922; preferred over Ransack when maximum armor penetration on the taunted target matters.",
   "class": "Weapon",
   "skill_line": "One Hand and Shield",
+  "skill_line_id": "one-hand-and-shield",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/pierce-armor.png",

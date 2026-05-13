@@ -7,6 +7,7 @@
   "morph_rationale": "Ultimate generation morph — generates 20 Ultimate when the initial heal lands on a target below 50% Health; preferred over Healing Thicket when ult generation on critical targets matters more than the extended out-of-area HoT.",
   "class": "Warden",
   "skill_line": "Green Balance",
+  "skill_line_id": "green-balance",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/enchanted-forest.png",

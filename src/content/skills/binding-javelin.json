@@ -7,6 +7,7 @@
   "morph_rationale": "Crowd control morph — stuns the target for 4 seconds and ignores Resistances; preferred over Aurora Javelin when holding enemies in place matters more than repositioning them.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
+  "skill_line_id": "aedric-spear",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/binding-javelin.png",

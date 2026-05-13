@@ -7,6 +7,7 @@
   "morph_rationale": "Self-sustain morph — prioritizes personal healing over Remembrance's Major Protection.",
   "class": "Templar",
   "skill_line": "Restoring Light",
+  "skill_line_id": "restoring-light",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/practiced-incantation.png",

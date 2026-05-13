@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Arcanist",
   "skill_line": "Soldier of Apocrypha",
+  "skill_line_id": "soldier-of-apocrypha",
   "type": "Passive",
   "resource": "None",
   "icon": "/assets/skills/wellspring-of-the-abyss.png",

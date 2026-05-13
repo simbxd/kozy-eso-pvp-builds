@@ -7,6 +7,7 @@
   "morph_rationale": "Single-target morph — focuses the full damage on one enemy instead of splitting across targets like Lotus Fan.",
   "class": "Nightblade",
   "skill_line": "Assassination",
+  "skill_line_id": "assassination",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/ambush.png",

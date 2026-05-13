@@ -7,6 +7,7 @@
   "morph_rationale": "Offensive Ultimate morph — replaces Light and Heavy Attacks with high-damage lightning abilities while draining Ultimate; preferred over Energy Overload when sustained offensive output matters more than resource management.",
   "class": "Sorcerer",
   "skill_line": "Storm Calling",
+  "skill_line_id": "storm-calling",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/power-overload.png",

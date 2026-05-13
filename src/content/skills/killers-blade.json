@@ -7,6 +7,7 @@
   "morph_rationale": "Execute heal morph — deals up to 400% more damage below 50% Health and heals you for 2399 if the target dies within 2 seconds; preferred over Impale when an earlier execute threshold and self-healing on kills matter.",
   "class": "Nightblade",
   "skill_line": "Assassination",
+  "skill_line_id": "assassination",
   "type": "Active",
   "resource": "Stamina",
   "icon": "/assets/skills/killers-blade.png",

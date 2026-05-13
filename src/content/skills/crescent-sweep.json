@@ -7,6 +7,7 @@
   "morph_rationale": "Directional burst morph — enemies directly in your path take 60% more damage; preferred over Everlasting Sweep when a front-focused high-damage pass matters more than an extended DoT duration.",
   "class": "Templar",
   "skill_line": "Aedric Spear",
+  "skill_line_id": "aedric-spear",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/crescent-sweep.png",

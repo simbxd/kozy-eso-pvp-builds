@@ -7,6 +7,7 @@
   "morph_rationale": "Summon morph — grizzly deals Magic damage with an execute ultimate that hits 150% harder below 25% HP; preferred over Wild Guardian when the execute burst matters more than sustained Bleed.",
   "class": "Warden",
   "skill_line": "Animal Companions",
+  "skill_line_id": "animal-companions",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/eternal-guardian.png",

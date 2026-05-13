@@ -7,6 +7,7 @@
   "morph_rationale": "Burst proc morph — has a 33% chance to become instant cast at half cost with higher damage after any Magicka ability; preferred over Crystal Weapon for high-spike burst windows.",
   "class": "Sorcerer",
   "skill_line": "Dark Magic",
+  "skill_line_id": "dark-magic",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/crystal-fragments.png",

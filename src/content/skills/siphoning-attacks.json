@@ -7,6 +7,7 @@
   "morph_rationale": "Resource sustain morph — restores more total resources and adds per-hit Magicka and Stamina recovery; preferred over Leeching Strikes when resource sustain outweighs self-healing.",
   "class": "Nightblade",
   "skill_line": "Siphoning",
+  "skill_line_id": "siphoning",
   "type": "Active",
   "resource": "None",
   "icon": "/assets/skills/siphoning-attacks.png",

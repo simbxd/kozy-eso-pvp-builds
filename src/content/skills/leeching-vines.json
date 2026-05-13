@@ -7,6 +7,7 @@
   "morph_rationale": "Group heal morph — extends healing to nearby allies.",
   "class": "Warden",
   "skill_line": "Green Balance",
+  "skill_line_id": "green-balance",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/leeching-vines.png",

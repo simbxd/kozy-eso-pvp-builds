@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Necromancer",
   "skill_line": "Grave Lord",
+  "skill_line_id": "grave-lord",
   "type": "Active",
   "resource": "Magicka",
   "icon": "/assets/skills/flame-skull.png",

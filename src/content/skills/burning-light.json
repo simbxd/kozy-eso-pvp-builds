@@ -6,6 +6,7 @@
   "morph_sibling": null,
   "class": "Templar",
   "skill_line": "Aedric Spear",
+  "skill_line_id": "aedric-spear",
   "type": "Passive",
   "resource": "Magicka",
   "icon": "/assets/skills/burning-light.png",
