@@ -1,0 +1,21 @@
+{
+  "id": "escapist-poison-ix",
+  "name": "Escapist Poison IX",
+  "type": "poison",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ravage_Stamina",
+  "effects": [
+    {
+      "description": "Increases the cost of your victim's Stamina abilities by 10% for 10.0 seconds."
+    }
+  ],
+  "duration_seconds": 10,
+  "reagents": [
+    "Emetic Russula",
+    "Fleshfly Larva",
+    "Imp Stool",
+    "Luminous Russula",
+    "Stinkhorn"
+  ],
+  "crafted": true
+}

@@ -112,6 +112,10 @@ const ITEMS = [
     name: 'Drain Health Poison IX',
     uespUrl: 'https://en.uesp.net/wiki/Online:Restore_Health' },
 
+  { source: 'uesp', section: 'poison', type: 'poison',
+    name: 'Escapist Poison IX',
+    uespUrl: 'https://en.uesp.net/wiki/Online:Ravage_Stamina' },
+
   // Cloudy Damage Health Poison IX: no UESP page found — excluded
   // Add back once a source is located.
 
