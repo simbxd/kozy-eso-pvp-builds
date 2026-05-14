@@ -2,6 +2,7 @@
 import Base from './Base.astro';
 import SetCard from '../components/SetCard.astro';
 import SkillBar from '../components/SkillBar.astro';
+import cpStarsIndex from '../data/eso/cp-stars-index.json';
 
 interface Bonus {
   count: number;
@@ -137,6 +138,11 @@ const {
   patch, author, publishedDate, updatedAt, difficulty, summary, pullquote,
   sets, bar1, bar2, og_image, gear, stats, champion_points, consumables, playstyle, race,
 } = Astro.props;
+
+const cpEffectMap = new Map<string, string>();
+for (const star of [...cpStarsIndex.warfare, ...cpStarsIndex.fitness]) {
+  cpEffectMap.set(star.name, star.effect);
+}
 
 function formatDate(iso: string): string {
   const [y, m, d] = iso.split('-').map(Number);
@@ -687,35 +693,34 @@ const railItems = [`KOZY · ESO PvP`];
       </div>
 
       <div class="cp__grid">
-        {champion_points.warfare && (
+        {[
+          { label: 'Warfare', stars: champion_points.warfare },
+          { label: 'Fitness', stars: champion_points.fitness },
+        ].filter(c => c.stars?.length).map(({ label, stars }) => (
           <div class="supply-card supply-card--cp">
-            <div class="supply-card__kicker">Warfare</div>
+            <div class="supply-card__kicker">{label}</div>
             <ul class="cp-list">
-              {champion_points.warfare.map(s => (
-                <li>
-                  <span class="cp-list__star">{s.star}</span>
-                  <span class="cp-list__dots" aria-hidden="true"></span>
-                  <span class="cp-list__pts">{s.points}</span>
-                </li>
-              ))}
+              {[...stars].sort((a, b) => a.priority - b.priority).map(s => {
+                const effect = cpEffectMap.get(s.star);
+                return (
+                  <li>
+                    <span class="cp-list__rank">{s.priority}</span>
+                    {effect ? (
+                      <span class="cp-list__star cp-list__star--tip" tabindex="0">
+                        {s.star}
+                        <span class="cp-list__tip" role="tooltip">{effect}</span>
+                      </span>
+                    ) : (
+                      <span class="cp-list__star">{s.star}</span>
+                    )}
+                    <span class="cp-list__dots" aria-hidden="true"></span>
+                    <span class="cp-list__pts">{s.points}</span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
-        )}
-
-        {champion_points.fitness && (
-          <div class="supply-card supply-card--cp">
-            <div class="supply-card__kicker">Fitness</div>
-            <ul class="cp-list">
-              {champion_points.fitness.map(s => (
-                <li>
-                  <span class="cp-list__star">{s.star}</span>
-                  <span class="cp-list__dots" aria-hidden="true"></span>
-                  <span class="cp-list__pts">{s.points}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+        ))}
       </div>
     </section>
   )}
@@ -1699,19 +1704,66 @@ const railItems = [`KOZY · ESO PvP`];
 
   .cp-list li {
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: baseline;
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
     gap: 8px;
     padding: 8px 0;
     border-bottom: 1px dashed var(--color-border);
   }
   .cp-list li:last-child { border-bottom: none; }
 
+  .cp-list__rank {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--color-bg);
+    background: var(--color-accent);
+    border-radius: 50%;
+    line-height: 1;
+  }
+
   .cp-list__star {
     font-family: var(--font-display);
     font-size: 17px;
     font-weight: 500;
     color: var(--color-text);
+  }
+
+  .cp-list__star--tip {
+    position: relative;
+    cursor: default;
+    text-decoration: underline dotted var(--color-text-muted);
+    text-underline-offset: 3px;
+  }
+
+  .cp-list__tip {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 6px);
+    width: 230px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+    border-radius: 4px;
+    padding: 0.45rem 0.6rem;
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+    white-space: normal;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .cp-list__star--tip:hover .cp-list__tip,
+  .cp-list__star--tip:focus .cp-list__tip {
+    display: block;
   }
 
   .cp-list__dots {

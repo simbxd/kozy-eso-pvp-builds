@@ -108,7 +108,7 @@ function setOptions(indent = 10) {
 function cpStarOptions(constellation, indent = 18) {
   const pad = ' '.repeat(indent);
   return cpStarsIndex[constellation]
-    .map(s => `${pad}- "${s.replace(/"/g, '\\"')}"`)
+    .map(s => `${pad}- "${s.name.replace(/"/g, '\\"')}"`)
     .join('\n');
 }
 

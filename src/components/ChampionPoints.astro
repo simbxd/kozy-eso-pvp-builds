@@ -1,4 +1,6 @@
 ---
+import cpStarsIndex from '../data/eso/cp-stars-index.json';
+
 interface CPStar {
   star: string;
   points: number;
@@ -13,6 +15,11 @@ interface Props {
 }
 
 const { champion_points } = Astro.props;
+
+const effectMap = new Map<string, string>();
+for (const star of [...cpStarsIndex.warfare, ...cpStarsIndex.fitness]) {
+  effectMap.set(star.name, star.effect);
+}
 
 const constellations = [
   { key: 'warfare', label: 'Warfare',  stars: [...champion_points.warfare].sort((a, b) => a.priority - b.priority) },
@@ -36,13 +43,23 @@ const totalPoints = [
       <div class="cp-constellation">
         <h3 class="cp-constellation-title">{label}</h3>
         <ol class="cp-list">
-          {stars.map((star) => (
-            <li class="cp-star">
-              <span class="cp-priority">{star.priority}</span>
-              <span class="cp-star-name">{star.star}</span>
-              <span class="cp-points">{star.points} pts</span>
-            </li>
-          ))}
+          {stars.map((star) => {
+            const effect = effectMap.get(star.star);
+            return (
+              <li class="cp-star">
+                <span class="cp-priority">{star.priority}</span>
+                {effect ? (
+                  <span class="cp-star-name cp-star-tip-wrap" tabindex="0">
+                    {star.star}
+                    <span class="cp-tip" role="tooltip">{effect}</span>
+                  </span>
+                ) : (
+                  <span class="cp-star-name">{star.star}</span>
+                )}
+                <span class="cp-points">{star.points} pts</span>
+              </li>
+            );
+          })}
         </ol>
       </div>
     ))}
@@ -145,5 +162,35 @@ const totalPoints = [
     font-size: 0.72rem;
     color: var(--color-text-muted);
     white-space: nowrap;
+  }
+
+  .cp-star-tip-wrap {
+    position: relative;
+    cursor: default;
+    text-decoration: underline dotted var(--color-text-muted);
+    text-underline-offset: 3px;
+  }
+
+  .cp-tip {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 6px);
+    width: 220px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+    border-radius: 4px;
+    padding: 0.45rem 0.6rem;
+    font-size: 0.72rem;
+    line-height: 1.45;
+    color: var(--color-text-muted);
+    white-space: normal;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .cp-star-tip-wrap:hover .cp-tip,
+  .cp-star-tip-wrap:focus .cp-tip {
+    display: block;
   }
 </style>

@@ -3,7 +3,7 @@
   "name": "Infused",
   "category": "jewelry",
   "effect": "Increase the effect of the enchantment by …%",
-  "value_range": "24 - 60",
+  "value_range": "24% - 60%",
   "patch_verified": "U49",
   "uesp_url": "https://en.uesp.net/wiki/Online:Infused"
 }
