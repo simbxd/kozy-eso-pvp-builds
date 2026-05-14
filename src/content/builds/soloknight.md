@@ -2,9 +2,12 @@
 title: Solo Knight
 class: Dragonknight
 role: DPS
+resource: Hybrid
 gamemode: PvP
 patch: U50
+author: Kozy
 difficulty: Intermediate
+featured: true
 race: dunmer
 summary: Dragonknight built to hold the line in solo and small-scale PvP. Hard
   to kill while maintaining constant pressure through Molten Whip procs and AoE
@@ -13,10 +16,10 @@ pullquote: Hard to kill. Always relevant. The longer the fight goes, the more
   Snake stacks — and the harder you bite.
 sets:
   - mighty-chudan
-  - rallying-cry
   - markyn-ring-of-majesty
-  - armor-of-the-trainee
+  - rallying-cry
   - twice-fanged-serpent
+  - armor-of-the-trainee
 skills:
   bar1:
     - molten-whip
@@ -32,10 +35,7 @@ skills:
     - heart-of-flame
     - heart-and-home
     - temporal-guard
-author: Kozy
-resource: Hybrid
 updatedAt: 2026-05-14
-featured: true
 champion_points:
   warfare:
     - star: Cleansing Revival
