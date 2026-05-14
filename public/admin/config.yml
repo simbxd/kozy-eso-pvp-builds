@@ -3324,34 +3324,81 @@ collections:
             widget: object
             required: false
             fields:
-              - { name: name,  label: Name,       widget: string, required: false }
-              - { name: stats, label: Stats,       widget: string, required: false }
-              - { name: note,  label: Note,        widget: string, required: false }
-              - { name: alt,   label: Alternative, widget: string, required: false }
+              - name: id
+                label: Item
+                widget: select
+                required: false
+                options:
+                  - { label: "Artaeum Pickled Fish Bowl", value: "artaeum-pickled-fish-bowl" }
+                  - { label: "Bewitched Sugar Skulls", value: "bewitched-sugar-skulls" }
+                  - { label: "Braised Rabbit with Spring Vegetables", value: "braised-rabbit-with-spring-vegetables" }
+                  - { label: "Ghastly Eye Bowl", value: "ghastly-eye-bowl" }
+                  - { label: "Lava Foot Soup-and-Saltrice", value: "lava-foot-soup-and-saltrice" }
+                  - { label: "Orzorga's Smoked Bear Haunch", value: "orzorgas-smoked-bear-haunch" }
+                  - { label: "Witchmother's Potent Brew", value: "witchmothers-potent-brew" }
+              - { name: note, label: Note,        widget: string, required: false }
+              - { name: alt,  label: Alternative, widget: string, required: false }
           - name: potion
             label: Potion
             widget: object
             required: false
             fields:
-              - { name: name, label: Name,        widget: string, required: false }
-              - { name: note, label: Note,        widget: string, required: false }
-              - name: ingredients
-                label: Ingredients
-                widget: list
+              - name: id
+                label: Item
+                widget: select
                 required: false
+                options:
+                  - { label: "Alliance Battle Draught", value: "alliance-battle-draught" }
+                  - { label: "Alliance Health Draught", value: "alliance-health-draught" }
+                  - { label: "Alliance Spell Draught", value: "alliance-spell-draught" }
+                  - { label: "Essence of Detection", value: "essence-of-detection" }
+                  - { label: "Essence of Health", value: "essence-of-health" }
+                  - { label: "Essence of Immovability", value: "essence-of-immovability" }
+                  - { label: "Essence of Invisibility", value: "essence-of-invisibility" }
+                  - { label: "Essence of Speed", value: "essence-of-speed" }
+                  - { label: "Essence of Spell Critical", value: "essence-of-spell-critical" }
+                  - { label: "Essence of Spell Power", value: "essence-of-spell-power" }
+                  - { label: "Essence of Weapon Critical", value: "essence-of-weapon-critical" }
+                  - { label: "Essence of Weapon Power", value: "essence-of-weapon-power" }
+              - { name: note, label: Note, widget: string, required: false }
           - name: poison
             label: Poison
             widget: object
             required: false
             fields:
-              - { name: name, label: Name, widget: string, required: false }
+              - name: id
+                label: Item
+                widget: select
+                required: false
+                options:
+                  - { label: "Creeping Ravage Health", value: "creeping-ravage-health" }
+                  - { label: "Damage Health Poison IX", value: "damage-health-poison-ix" }
+                  - { label: "Drain Health Poison IX", value: "drain-health-poison-ix" }
+                  - { label: "Escapist Poison IX", value: "escapist-poison-ix" }
               - { name: note, label: Note, widget: string, required: false }
           - name: mundus
             label: Mundus Stone
             widget: object
             required: false
             fields:
-              - { name: stone,  label: Stone,  widget: string, required: false }
+              - name: stone
+                label: Stone
+                widget: select
+                required: false
+                options:
+                  - { label: "The Apprentice — Increases Spell Damage", value: "The Apprentice" }
+                  - { label: "The Atronach — Increases Magicka Recovery", value: "The Atronach" }
+                  - { label: "The Lady — Increases Physical and Spell Resistance", value: "The Lady" }
+                  - { label: "The Lord — Increases Maximum Health", value: "The Lord" }
+                  - { label: "The Lover — Increases Physical and Spell Penetration", value: "The Lover" }
+                  - { label: "The Mage — Increases Maximum Magicka", value: "The Mage" }
+                  - { label: "The Ritual — Increases Healing Done", value: "The Ritual" }
+                  - { label: "The Serpent — Increases Stamina Recovery", value: "The Serpent" }
+                  - { label: "The Shadow — Increases Critical Damage and Healing done", value: "The Shadow" }
+                  - { label: "The Steed — Increases Health Recovery and Movement Speed", value: "The Steed" }
+                  - { label: "The Thief — Increases Weapon and Spell Critical Strike ratings", value: "The Thief" }
+                  - { label: "The Tower — Increases Maximum Stamina", value: "The Tower" }
+                  - { label: "The Warrior — Increases Weapon Damage", value: "The Warrior" }
               - { name: effect, label: Effect, widget: string, required: false }
               - { name: note,   label: Note,   widget: string, required: false }
               - name: alt
@@ -3359,7 +3406,24 @@ collections:
                 widget: object
                 required: false
                 fields:
-                  - { name: stone,  label: Stone,  widget: string, required: false }
+                  - name: stone
+                    label: Stone
+                    widget: select
+                    required: false
+                    options:
+                      - { label: "The Apprentice — Increases Spell Damage", value: "The Apprentice" }
+                      - { label: "The Atronach — Increases Magicka Recovery", value: "The Atronach" }
+                      - { label: "The Lady — Increases Physical and Spell Resistance", value: "The Lady" }
+                      - { label: "The Lord — Increases Maximum Health", value: "The Lord" }
+                      - { label: "The Lover — Increases Physical and Spell Penetration", value: "The Lover" }
+                      - { label: "The Mage — Increases Maximum Magicka", value: "The Mage" }
+                      - { label: "The Ritual — Increases Healing Done", value: "The Ritual" }
+                      - { label: "The Serpent — Increases Stamina Recovery", value: "The Serpent" }
+                      - { label: "The Shadow — Increases Critical Damage and Healing done", value: "The Shadow" }
+                      - { label: "The Steed — Increases Health Recovery and Movement Speed", value: "The Steed" }
+                      - { label: "The Thief — Increases Weapon and Spell Critical Strike ratings", value: "The Thief" }
+                      - { label: "The Tower — Increases Maximum Stamina", value: "The Tower" }
+                      - { label: "The Warrior — Increases Weapon Damage", value: "The Warrior" }
                   - { name: effect, label: Effect, widget: string, required: false }
                   - { name: note,   label: Note,   widget: string, required: false }
 

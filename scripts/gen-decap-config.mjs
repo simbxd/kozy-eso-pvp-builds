@@ -17,9 +17,10 @@ import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const ROOT = new URL('..', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
-const ESO_DIR     = join(ROOT, 'src/data/eso');
-const SKILLS_DIR  = join(ROOT, 'src/content/skills');
-const OUT         = join(ROOT, 'public/admin/config.yml');
+const ESO_DIR         = join(ROOT, 'src/data/eso');
+const SKILLS_DIR      = join(ROOT, 'src/content/skills');
+const CONSUMABLES_DIR = join(ROOT, 'src/content/consumables');
+const OUT             = join(ROOT, 'public/admin/config.yml');
 
 const log = (...a) => console.log('[gen-decap]', ...a);
 
@@ -30,6 +31,10 @@ const setsIndex = JSON.parse(
 
 const racesIndex = JSON.parse(
   await readFile(join(ESO_DIR, 'races-index.json'), 'utf8')
+);
+
+const mundusIndex = JSON.parse(
+  await readFile(join(ESO_DIR, 'mundus-index.json'), 'utf8')
 );
 
 const cpStarsIndex = JSON.parse(
@@ -47,9 +52,37 @@ const skillsIndex = await Promise.all(
 );
 skillsIndex.sort((a, b) => a.name.localeCompare(b.name));
 
-log(`Loaded ${setsIndex.length} sets, ${skillsIndex.length} curated skills, ${racesIndex.length} races, ${cpStarsIndex.warfare.length} warfare stars, ${cpStarsIndex.fitness.length} fitness stars`);
+// Consumables: load all JSON, group by type
+const consumableFiles = (await readdir(CONSUMABLES_DIR)).filter(f => f.endsWith('.json'));
+const consumablesIndex = await Promise.all(
+  consumableFiles.map(async f => {
+    const data = JSON.parse(await readFile(join(CONSUMABLES_DIR, f), 'utf8'));
+    return { id: data.id, name: data.name, type: data.type };
+  })
+);
+consumablesIndex.sort((a, b) => a.name.localeCompare(b.name));
+
+const foodIndex   = consumablesIndex.filter(c => c.type === 'food' || c.type === 'drink');
+const potionIndex = consumablesIndex.filter(c => c.type === 'potion');
+const poisonIndex = consumablesIndex.filter(c => c.type === 'poison');
+
+log(`Loaded ${setsIndex.length} sets, ${skillsIndex.length} curated skills, ${racesIndex.length} races, ${cpStarsIndex.warfare.length} warfare stars, ${cpStarsIndex.fitness.length} fitness stars, ${consumablesIndex.length} consumables (${foodIndex.length} food, ${potionIndex.length} potions, ${poisonIndex.length} poisons), ${mundusIndex.length} mundus stones`);
 
 // ---------- Build YAML option blocks ----------
+function consumableOptions(list, indent = 14) {
+  const pad = ' '.repeat(indent);
+  return list
+    .map(c => `${pad}- { label: "${c.name.replace(/"/g, '\\"')}", value: "${c.id}" }`)
+    .join('\n');
+}
+
+function mundusOptions(indent = 14) {
+  const pad = ' '.repeat(indent);
+  return mundusIndex
+    .map(m => `${pad}- { label: "${m.name} — ${m.effect}", value: "${m.name}" }`)
+    .join('\n');
+}
+
 function raceOptions(indent = 10) {
   const pad = ' '.repeat(indent);
   return racesIndex
@@ -244,34 +277,49 @@ ${cpStarOptions('fitness', 18)}
             widget: object
             required: false
             fields:
-              - { name: name,  label: Name,       widget: string, required: false }
-              - { name: stats, label: Stats,       widget: string, required: false }
-              - { name: note,  label: Note,        widget: string, required: false }
-              - { name: alt,   label: Alternative, widget: string, required: false }
+              - name: id
+                label: Item
+                widget: select
+                required: false
+                options:
+${consumableOptions(foodIndex, 18)}
+              - { name: note, label: Note,        widget: string, required: false }
+              - { name: alt,  label: Alternative, widget: string, required: false }
           - name: potion
             label: Potion
             widget: object
             required: false
             fields:
-              - { name: name, label: Name,        widget: string, required: false }
-              - { name: note, label: Note,        widget: string, required: false }
-              - name: ingredients
-                label: Ingredients
-                widget: list
+              - name: id
+                label: Item
+                widget: select
                 required: false
+                options:
+${consumableOptions(potionIndex, 18)}
+              - { name: note, label: Note, widget: string, required: false }
           - name: poison
             label: Poison
             widget: object
             required: false
             fields:
-              - { name: name, label: Name, widget: string, required: false }
+              - name: id
+                label: Item
+                widget: select
+                required: false
+                options:
+${consumableOptions(poisonIndex, 18)}
               - { name: note, label: Note, widget: string, required: false }
           - name: mundus
             label: Mundus Stone
             widget: object
             required: false
             fields:
-              - { name: stone,  label: Stone,  widget: string, required: false }
+              - name: stone
+                label: Stone
+                widget: select
+                required: false
+                options:
+${mundusOptions(18)}
               - { name: effect, label: Effect, widget: string, required: false }
               - { name: note,   label: Note,   widget: string, required: false }
               - name: alt
@@ -279,7 +327,12 @@ ${cpStarOptions('fitness', 18)}
                 widget: object
                 required: false
                 fields:
-                  - { name: stone,  label: Stone,  widget: string, required: false }
+                  - name: stone
+                    label: Stone
+                    widget: select
+                    required: false
+                    options:
+${mundusOptions(22)}
                   - { name: effect, label: Effect, widget: string, required: false }
                   - { name: note,   label: Note,   widget: string, required: false }
 
