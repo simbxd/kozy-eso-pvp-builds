@@ -55,8 +55,9 @@ interface EnchantData { id: string; name: string; category: string; rune_prefix:
 interface GearItem {
   slot: string;
   type: string;
-  item: string;
+  item?: string;
   setId: string;
+  setName?: string;
   tier: string;
   trait: string;
   enchant: string;
@@ -478,8 +479,7 @@ const railItems = [`KOZY · ESO PvP`];
                 <tr class={`gr gr--${row.type}`}>
                   <td class="gr__slot"><span class="gr__pin" aria-hidden="true"></span>{row.slot}</td>
                   <td class="gr__item">
-                    <span class="gr__name">{row.item}</span>
-                    <span class="gr__set">{setLabel(row.setId)} <span class="gr__tier">{row.tier}</span></span>
+                    <span class="gr__name">{row.setName ?? row.setId}</span>
                   </td>
                   <td class="gr__trait">
                     {row.traitData ? (
@@ -518,8 +518,7 @@ const railItems = [`KOZY · ESO PvP`];
                 <tr class={`gr gr--${row.type}`}>
                   <td class="gr__slot"><span class="gr__pin" aria-hidden="true"></span>{row.slot}</td>
                   <td class="gr__item">
-                    <span class="gr__name">{row.item}</span>
-                    <span class="gr__set">{setLabel(row.setId)} <span class="gr__tier">{row.tier}</span></span>
+                    <span class="gr__name">{row.setName ?? row.setId}</span>
                   </td>
                   <td class="gr__trait">
                     {row.traitData ? (
@@ -562,8 +561,7 @@ const railItems = [`KOZY · ESO PvP`];
                     <span class="gr__bar">{row.barLabel}</span>
                   </td>
                   <td class="gr__item">
-                    <span class="gr__name">{row.item}</span>
-                    <span class="gr__set">{setLabel(row.setId)} <span class="gr__tier">{row.tier}</span></span>
+                    <span class="gr__name">{row.setName ?? row.setId}</span>
                   </td>
                   <td class="gr__trait">
                     {row.traitData ? (
@@ -1454,10 +1452,10 @@ const railItems = [`KOZY · ESO PvP`];
   .gr__tier {
     font-family: var(--font-mono);
     font-style: normal;
-    font-size: 10.5px;
-    letter-spacing: 0.1em;
+    font-size: 14px;
+    letter-spacing: 0.08em;
     color: var(--color-mono);
-    margin-left: 4px;
+    margin-left: 6px;
   }
 
   .gr__trait {

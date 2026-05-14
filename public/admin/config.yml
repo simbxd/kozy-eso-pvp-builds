@@ -3444,7 +3444,6 @@ collections:
                 label: Weight
                 widget: select
                 options: [heavy, medium, light]
-              - { name: item,   label: Item Name,   widget: string }
               - name: setId
                 label: Set
                 widget: select
@@ -4192,7 +4191,6 @@ collections:
                 label: Type
                 widget: select
                 options: [jewelry, mythic]
-              - { name: item,   label: Item Name,   widget: string }
               - name: setId
                 label: Set
                 widget: select

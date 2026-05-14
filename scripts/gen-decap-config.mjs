@@ -383,7 +383,6 @@ ${mundusOptions(22)}
                 label: Weight
                 widget: select
                 options: [heavy, medium, light]
-              - { name: item,   label: Item Name,   widget: string }
               - name: setId
                 label: Set
                 widget: select
@@ -409,7 +408,6 @@ ${enchantOptions('armor', 18)}
                 label: Type
                 widget: select
                 options: [jewelry, mythic]
-              - { name: item,   label: Item Name,   widget: string }
               - name: setId
                 label: Set
                 widget: select

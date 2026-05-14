@@ -84,9 +84,10 @@ const resolvedConsumables = rawC ? {
 } : undefined;
 
 // Resolve gear trait/enchant IDs → full data objects
-function resolveGearSlot(item: { trait: string; enchant: string; [key: string]: unknown }) {
+function resolveGearSlot(item: { trait: string; enchant: string; setId: string; [key: string]: unknown }) {
   return {
     ...item,
+    setName:    setsMap[item.setId]?.name ?? item.setId,
     traitData:  traitsMap[item.trait]   ?? null,
     enchantData: enchantsMap[item.enchant] ?? null,
   };

@@ -92,49 +92,42 @@ gear:
   armor:
     - slot: Head
       type: heavy
-      item: Mighty Chudan Visage
       setId: mighty-chudan
       tier: 2/2
       trait: impenetrable
       enchant: glyph-of-prismatic-defense
     - slot: Shoulders
       type: medium
-      item: Mighty Chudan Arm Cops
       setId: mighty-chudan
       tier: 2/2
       trait: impenetrable
       enchant: glyph-of-prismatic-defense
     - slot: Chest
       type: heavy
-      item: Gallant Chain
       setId: armor-of-the-trainee
       tier: 1/3
       trait: reinforced
       enchant: glyph-of-prismatic-defense
     - slot: Hands
       type: light
-      item: Rallying Cry Gloves
       setId: rallying-cry
       tier: 5/5
       trait: impenetrable
       enchant: glyph-of-prismatic-defense
     - slot: Waist
       type: light
-      item: Rallying Cry Sash
       setId: rallying-cry
       tier: 5/5
       trait: impenetrable
       enchant: glyph-of-prismatic-defense
     - slot: Legs
       type: medium
-      item: Guards of the Two-Fanged Snake
       setId: two-fanged-snake
       tier: 5/5
       trait: impenetrable
       enchant: glyph-of-prismatic-defense
     - slot: Feet
       type: medium
-      item: Boots of the Two-Fanged Snake
       setId: two-fanged-snake
       tier: 5/5
       trait: impenetrable
@@ -142,21 +135,18 @@ gear:
   jewelry:
     - slot: Ring I
       type: jewelry
-      item: Ring of the Two-Fanged Snake
       setId: two-fanged-snake
       tier: 5/5
       trait: triune
       enchant: glyph-of-increase-physical-harm
     - slot: Ring II
       type: mythic
-      item: Markyn Ring of Majesty
       setId: markyn-ring-of-majesty
       tier: 1/1
       trait: infused-jewelry
       enchant: glyph-of-increase-physical-harm
     - slot: Neck
       type: jewelry
-      item: Rallying Cry Amulet
       setId: rallying-cry
       tier: 5/5
       trait: triune
@@ -165,7 +155,6 @@ gear:
     - slot: Main Hand
       type: weapon
       barLabel: BAR I
-      item: Mace of the Two-Fanged Snake
       setId: two-fanged-snake
       tier: 5/5
       trait: nirnhoned-weapon
@@ -173,7 +162,6 @@ gear:
     - slot: Off Hand
       type: weapon
       barLabel: BAR I
-      item: Mace of the Two-Fanged Snake
       setId: two-fanged-snake
       tier: 5/5
       trait: sharpened
@@ -181,7 +169,6 @@ gear:
     - slot: Backup Main
       type: weapon
       barLabel: BAR II
-      item: Rallying Cry Dagger
       setId: rallying-cry
       tier: 5/5
       trait: defending
@@ -189,7 +176,6 @@ gear:
     - slot: Backup Off
       type: weapon
       barLabel: BAR II
-      item: Rallying Cry Shield
       setId: rallying-cry
       tier: 5/5
       trait: sturdy
