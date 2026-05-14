@@ -133,6 +133,25 @@ src/data/eso/
 
 ## Content Collections — schémas
 
+### Trait (`src/data/eso/traits-index.json`)
+27 entrées, format : `{ id, name, category, value_range }`
+
+`category` : `weapon | armor | jewelry`
+
+Traits à ID composite (même `name`, IDs distincts par catégorie) :
+- `infused-weapon`, `infused-armor`, `infused-jewelry` → `name: "Infused"`
+- `training-weapon`, `training-armor` → `name: "Training"`
+- `nirnhoned-weapon`, `nirnhoned-armor` → `name: "Nirnhoned"`
+
+**Dans les builds**, `gear.armor[].trait`, `gear.jewelry[].trait`, `gear.weapons[].trait` référencent l'ID composite correct selon la pièce. Le `name` affiché est résolu depuis l'index — "Infused" sans suffixe. Les boucliers (`type: weapon`) utilisent des traits d'armure (ex: `sturdy`).
+
+### Enchant (`src/data/eso/enchants-index.json`)
+38 entrées, format : `{ id, name, category, rune_prefix, effect }`
+
+`category` : `weapon | armor | jewelry`
+
+**Dans les builds**, `gear.armor[].enchant`, `gear.jewelry[].enchant`, `gear.weapons[].enchant` référencent un ID enchant. Les boucliers (`type: weapon`) utilisent des enchants d'armure (ex: `glyph-of-prismatic-defense`).
+
 ### Consumable (`src/content/consumables/*.json`)
 Champs obligatoires : `id`, `name`, `type`, `patch_verified`, `uesp_url`, `effects[]`, `crafted`
 
@@ -249,7 +268,7 @@ Types : `Active | Passive | Ultimate`
 ## État du projet
 
 **Dernière session :** 2026-05-14
-**Milestone actuel :** v10.5 — Dates dérivées du Git log (publishedDate + updatedAt supprimés du frontmatter)
+**Milestone actuel :** v10.6 — Traits & enchants résolus par ID dans la Gear Sheet
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -264,6 +283,7 @@ Types : `Active | Passive | Ultimate`
 - ✅ v10.3 — Collection `consumables` (22 items) : `fetch-consumables.mjs` (esolog API + UESP alchemy pages) ; build schema migré vers IDs ; `Build.astro` enrichi (effets structurés, réactifs, durée, ingrédients)
 - ✅ v10.4 — SEO builds : H1 `{title} — {resource} {class} {gamemode} Build` ; champ `author` (schéma + Decap + masthead) ; `publishedDate` + `updatedAt` affichés en mono sous le H1 ; JSON-LD `Article` + `BreadcrumbList` injectés via `<slot name="head">` dans `Base.astro` ; URLs canoniques depuis `Astro.site`
 - ✅ v10.5 — Dates dérivées du Git log : `src/lib/git-dates.ts` (`getFileDates`) avec cache mémoire et fallback ; `publishedDate`/`updatedAt` supprimés du frontmatter et du schéma Zod ; câblés dans `[slug].astro` builds + guides via `entry.filePath` ; widgets Decap retirés de `config.yml` et `gen-decap-config.mjs`
+- ✅ v10.6 — Traits & enchants résolus par ID dans la Gear Sheet : `trait`/`enchant` migré vers IDs depuis `traits-index.json` et `enchants-index.json` ; validation hard-fail par slot dans `[slug].astro` ; résolution en objets complets avant passage à `Build.astro` ; tooltip CSS-only au survol/focus (nom + `value_range` / `effect`) ; `gen-decap-config.mjs` génère des `widget: select` filtrés par catégorie (armor/jewelry/weapon avec label de catégorie pour boucliers)
 
 ### Contenu publié
 - **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build complet, sert de template. Race `dunmer` définie — à confirmer par l'auteur.

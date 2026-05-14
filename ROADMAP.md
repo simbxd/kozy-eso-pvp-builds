@@ -23,6 +23,8 @@
 | v10.2 | Champion Points actifs dans Decap : `cp-stars-index.json` (16 étoiles Warfare + 16 Fitness slottables) ; `gen-decap-config.mjs` charge le JSON et génère des `widget: select` pour le champ `star` dans les listes CP Warfare/Fitness |
 | v10.3 | Collection `consumables` (22 items) : `scripts/fetch-consumables.mjs` — 2 sources (esolog API pour food/draughts, UESP alchemy pages pour potions/poisons) ; `src/content/consumables/` flat JSON ; schéma build migré vers IDs (`{ id, note? }`) ; résolution dans `[slug].astro` ; `Build.astro` enrichi avec effets structurés, durée auto-formatée, chips ingrédients/réactifs |
 | v10.4 | SEO builds : H1 contextuel `{title} — {resource} {class} {gamemode} Build` ; champ `author` (schéma Zod + Decap widget + masthead + JSON-LD) ; `publishedDate` + `updatedAt` affichés en format mono sous le H1 ; JSON-LD `Article` + `BreadcrumbList` injectés via `<slot name="head">` dans `Base.astro` ; URLs canoniques depuis `Astro.site` (pas de hardcode domaine) |
+| v10.5 | Dates dérivées du Git log : `src/lib/git-dates.ts` (`getFileDates`) avec cache mémoire et fallback ; `publishedDate`/`updatedAt` supprimés du frontmatter et du schéma Zod ; câblés dans `[slug].astro` builds + guides via `entry.filePath` ; widgets Decap retirés |
+| v10.6 | Traits & enchants résolus par ID dans la Gear Sheet : `trait`/`enchant` migré vers IDs (`traits-index.json` / `enchants-index.json`) ; validation hard-fail par slot dans `[slug].astro` ; résolution en objets complets (`traitData`, `enchantData`) ; tooltip CSS-only au survol/focus (nom résolu + `value_range` / `effect`) ; `gen-decap-config.mjs` génère des `widget: select` filtrés par catégorie, avec label `(armor)`/`(weapon)` dans le dropdown weapons pour les boucliers |
 
 ---
 

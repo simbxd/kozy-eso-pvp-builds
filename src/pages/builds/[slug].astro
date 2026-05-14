@@ -2,6 +2,8 @@
 import { getCollection } from 'astro:content';
 import Build from '../../layouts/Build.astro';
 import { getFileDates } from '../../lib/git-dates';
+import traitsIndexRaw from '../../data/eso/traits-index.json';
+import enchantsIndexRaw from '../../data/eso/enchants-index.json';
 
 export async function getStaticPaths() {
   const builds = await getCollection('builds');
@@ -24,6 +26,12 @@ const skillsMap      = Object.fromEntries(allSkills.map(s => [s.id, s.data]));
 const racesMap       = Object.fromEntries(allRaces.map(r => [r.id, r.data]));
 const consumablesMap = Object.fromEntries(allConsumables.map(c => [c.id, c.data]));
 
+interface TraitEntry  { id: string; name: string; category: string; value_range: string; }
+interface EnchantEntry { id: string; name: string; category: string; rune_prefix: string; effect: string; }
+
+const traitsMap  = Object.fromEntries((traitsIndexRaw  as TraitEntry[]).map(t => [t.id, t]));
+const enchantsMap = Object.fromEntries((enchantsIndexRaw as EnchantEntry[]).map(e => [e.id, e]));
+
 function assertIds(ids: string[], map: Record<string, unknown>, kind: string, buildId: string) {
   const missing = ids.filter(id => !(id in map));
   if (missing.length > 0) {
@@ -38,6 +46,31 @@ assertIds(build.data.sets,          setsMap,   'set',   build.id);
 assertIds(build.data.skills.bar1,   skillsMap, 'skill', build.id);
 assertIds(build.data.skills.bar2,   skillsMap, 'skill', build.id);
 
+// Validate gear trait/enchant IDs — hard fail at build time with slot-level detail
+if (build.data.gear) {
+  const gearSections = [
+    { name: 'armor',   items: build.data.gear.armor },
+    { name: 'jewelry', items: build.data.gear.jewelry },
+    { name: 'weapons', items: build.data.gear.weapons },
+  ];
+  for (const { name, items } of gearSections) {
+    for (const item of items) {
+      if (!(item.trait in traitsMap)) {
+        throw new Error(
+          `[build: ${build.id}] gear.${name}[slot="${item.slot}"] unknown trait ID: "${item.trait}"\n` +
+          `Valid IDs: check src/data/eso/traits-index.json`
+        );
+      }
+      if (!(item.enchant in enchantsMap)) {
+        throw new Error(
+          `[build: ${build.id}] gear.${name}[slot="${item.slot}"] unknown enchant ID: "${item.enchant}"\n` +
+          `Valid IDs: check src/data/eso/enchants-index.json`
+        );
+      }
+    }
+  }
+}
+
 const resolvedSets = build.data.sets.map(id => setsMap[id]!);
 const resolvedRace = build.data.race ? (racesMap[build.data.race] ?? null) : null;
 
@@ -48,6 +81,21 @@ const resolvedConsumables = rawC ? {
   potion: rawC.potion ? { data: consumablesMap[rawC.potion.id] ?? null, note: rawC.potion.note                       } : undefined,
   poison: rawC.poison ? { data: consumablesMap[rawC.poison.id] ?? null, note: rawC.poison.note                       } : undefined,
   mundus: rawC.mundus,
+} : undefined;
+
+// Resolve gear trait/enchant IDs → full data objects
+function resolveGearSlot(item: { trait: string; enchant: string; [key: string]: unknown }) {
+  return {
+    ...item,
+    traitData:  traitsMap[item.trait]   ?? null,
+    enchantData: enchantsMap[item.enchant] ?? null,
+  };
+}
+
+const resolvedGear = build.data.gear ? {
+  armor:   build.data.gear.armor.map(resolveGearSlot),
+  jewelry: build.data.gear.jewelry.map(resolveGearSlot),
+  weapons: build.data.gear.weapons.map(resolveGearSlot),
 } : undefined;
 
 function enrichSkill(id: string) {
@@ -79,7 +127,7 @@ const resolvedBar2 = build.data.skills.bar2.map(enrichSkill);
   bar1={resolvedBar1}
   bar2={resolvedBar2}
   og_image={build.data.og_image}
-  gear={build.data.gear}
+  gear={resolvedGear}
   stats={build.data.stats}
   champion_points={build.data.champion_points}
   consumables={resolvedConsumables}

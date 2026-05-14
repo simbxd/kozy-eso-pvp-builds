@@ -44,7 +44,6 @@ collections:
         widget: select
         options: [PvP, PvE, Both]
       - { name: patch,      label: Patch,       widget: string,  hint: "ex: U50" }
-      - { name: author,     label: Author,      widget: string,  default: "Kozy", required: false, hint: "Nom affiché sur la page et dans les balises SEO" }
       - name: difficulty
         label: Difficulty
         widget: select
@@ -4160,8 +4159,27 @@ collections:
                   - { label: "Zaan", value: "zaan" }
                   - { label: "Zoal the Ever-Wakeful", value: "zoal-the-ever-wakeful" }
               - { name: tier,   label: Tier,        widget: string, hint: "ex: 5/5" }
-              - { name: trait,  label: Trait,       widget: string }
-              - { name: enchant, label: Enchantment, widget: string }
+              - name: trait
+                label: Trait
+                widget: select
+                options:
+                  - { label: "Sturdy", value: "sturdy" }
+                  - { label: "Impenetrable", value: "impenetrable" }
+                  - { label: "Reinforced", value: "reinforced" }
+                  - { label: "Well-fitted", value: "well-fitted" }
+                  - { label: "Training", value: "training-armor" }
+                  - { label: "Infused", value: "infused-armor" }
+                  - { label: "Invigorating", value: "invigorating" }
+                  - { label: "Divines", value: "divines" }
+                  - { label: "Nirnhoned", value: "nirnhoned-armor" }
+              - name: enchant
+                label: Enchantment
+                widget: select
+                options:
+                  - { label: "Glyph of Stamina", value: "glyph-of-stamina" }
+                  - { label: "Glyph of Prismatic Defense", value: "glyph-of-prismatic-defense" }
+                  - { label: "Glyph of Magicka", value: "glyph-of-magicka" }
+                  - { label: "Glyph of Health", value: "glyph-of-health" }
           - name: jewelry
             label: Jewelry
             widget: list
@@ -4889,8 +4907,43 @@ collections:
                   - { label: "Zaan", value: "zaan" }
                   - { label: "Zoal the Ever-Wakeful", value: "zoal-the-ever-wakeful" }
               - { name: tier,   label: Tier,        widget: string }
-              - { name: trait,  label: Trait,       widget: string }
-              - { name: enchant, label: Enchantment, widget: string }
+              - name: trait
+                label: Trait
+                widget: select
+                options:
+                  - { label: "Healthy", value: "healthy" }
+                  - { label: "Arcane", value: "arcane" }
+                  - { label: "Robust", value: "robust" }
+                  - { label: "Bloodthirsty", value: "bloodthirsty" }
+                  - { label: "Harmony", value: "harmony" }
+                  - { label: "Infused", value: "infused-jewelry" }
+                  - { label: "Triune", value: "triune" }
+                  - { label: "Protective", value: "protective" }
+                  - { label: "Swift", value: "swift" }
+              - name: enchant
+                label: Enchantment
+                widget: select
+                options:
+                  - { label: "Glyph of Frost Resist", value: "glyph-of-frost-resist" }
+                  - { label: "Glyph of Stamina Recovery", value: "glyph-of-stamina-recovery" }
+                  - { label: "Glyph of Reduce Feat Cost", value: "glyph-of-reduce-feat-cost" }
+                  - { label: "Glyph of Disease Resist", value: "glyph-of-disease-resist" }
+                  - { label: "Glyph of Bashing", value: "glyph-of-bashing" }
+                  - { label: "Glyph of Bracing", value: "glyph-of-bracing" }
+                  - { label: "Glyph of Poison Resist", value: "glyph-of-poison-resist" }
+                  - { label: "Glyph of Increase Magical Harm", value: "glyph-of-increase-magical-harm" }
+                  - { label: "Glyph of Decrease Spell Harm", value: "glyph-of-decrease-spell-harm" }
+                  - { label: "Glyph of Magicka Recovery", value: "glyph-of-magicka-recovery" }
+                  - { label: "Glyph of Reduce Spell Cost", value: "glyph-of-reduce-spell-cost" }
+                  - { label: "Glyph of Shock Resist", value: "glyph-of-shock-resist" }
+                  - { label: "Glyph of Health Recovery", value: "glyph-of-health-recovery" }
+                  - { label: "Glyph of Potion Boost", value: "glyph-of-potion-boost" }
+                  - { label: "Glyph of Potion Speed", value: "glyph-of-potion-speed" }
+                  - { label: "Glyph of Flame Resist", value: "glyph-of-flame-resist" }
+                  - { label: "Glyph of Increase Physical Harm", value: "glyph-of-increase-physical-harm" }
+                  - { label: "Glyph of Decrease Physical Harm", value: "glyph-of-decrease-physical-harm" }
+                  - { label: "Glyph of Prismatic Recovery", value: "glyph-of-prismatic-recovery" }
+                  - { label: "Glyph of Reduce Skill Cost", value: "glyph-of-reduce-skill-cost" }
           - name: weapons
             label: Weapons
             widget: list
@@ -5615,8 +5668,81 @@ collections:
                   - { label: "Zaan", value: "zaan" }
                   - { label: "Zoal the Ever-Wakeful", value: "zoal-the-ever-wakeful" }
               - { name: tier,   label: Tier,        widget: string }
-              - { name: trait,  label: Trait,       widget: string }
-              - { name: enchant, label: Enchantment, widget: string }
+              - name: trait
+                label: Trait
+                widget: select
+                hint: "Shields use armor traits — look for (armor) suffix"
+                options:
+                  - { label: "Powered (weapon)", value: "powered" }
+                  - { label: "Charged (weapon)", value: "charged" }
+                  - { label: "Precise (weapon)", value: "precise" }
+                  - { label: "Infused (weapon)", value: "infused-weapon" }
+                  - { label: "Defending (weapon)", value: "defending" }
+                  - { label: "Training (weapon)", value: "training-weapon" }
+                  - { label: "Sharpened (weapon)", value: "sharpened" }
+                  - { label: "Decisive (weapon)", value: "decisive" }
+                  - { label: "Nirnhoned (weapon)", value: "nirnhoned-weapon" }
+                  - { label: "Sturdy (armor)", value: "sturdy" }
+                  - { label: "Impenetrable (armor)", value: "impenetrable" }
+                  - { label: "Reinforced (armor)", value: "reinforced" }
+                  - { label: "Well-fitted (armor)", value: "well-fitted" }
+                  - { label: "Training (armor)", value: "training-armor" }
+                  - { label: "Infused (armor)", value: "infused-armor" }
+                  - { label: "Invigorating (armor)", value: "invigorating" }
+                  - { label: "Divines (armor)", value: "divines" }
+                  - { label: "Nirnhoned (armor)", value: "nirnhoned-armor" }
+                  - { label: "Healthy (jewelry)", value: "healthy" }
+                  - { label: "Arcane (jewelry)", value: "arcane" }
+                  - { label: "Robust (jewelry)", value: "robust" }
+                  - { label: "Bloodthirsty (jewelry)", value: "bloodthirsty" }
+                  - { label: "Harmony (jewelry)", value: "harmony" }
+                  - { label: "Infused (jewelry)", value: "infused-jewelry" }
+                  - { label: "Triune (jewelry)", value: "triune" }
+                  - { label: "Protective (jewelry)", value: "protective" }
+                  - { label: "Swift (jewelry)", value: "swift" }
+              - name: enchant
+                label: Enchantment
+                widget: select
+                hint: "Shields use armor enchants — look for (armor) suffix"
+                options:
+                  - { label: "Glyph of Frost (weapon)", value: "glyph-of-frost" }
+                  - { label: "Glyph of Absorb Stamina (weapon)", value: "glyph-of-absorb-stamina" }
+                  - { label: "Glyph of Hardening (weapon)", value: "glyph-of-hardening" }
+                  - { label: "Glyph of Crushing (weapon)", value: "glyph-of-crushing" }
+                  - { label: "Glyph of Prismatic Onslaught (weapon)", value: "glyph-of-prismatic-onslaught" }
+                  - { label: "Glyph of Foulness (weapon)", value: "glyph-of-foulness" }
+                  - { label: "Glyph of Poison (weapon)", value: "glyph-of-poison" }
+                  - { label: "Glyph of Absorb Magicka (weapon)", value: "glyph-of-absorb-magicka" }
+                  - { label: "Glyph of Shock (weapon)", value: "glyph-of-shock" }
+                  - { label: "Glyph of Absorb Health (weapon)", value: "glyph-of-absorb-health" }
+                  - { label: "Glyph of Decrease Health (weapon)", value: "glyph-of-decrease-health" }
+                  - { label: "Glyph of Weapon Damage (weapon)", value: "glyph-of-weapon-damage" }
+                  - { label: "Glyph of Weakening (weapon)", value: "glyph-of-weakening" }
+                  - { label: "Glyph of Flame (weapon)", value: "glyph-of-flame" }
+                  - { label: "Glyph of Stamina (armor)", value: "glyph-of-stamina" }
+                  - { label: "Glyph of Prismatic Defense (armor)", value: "glyph-of-prismatic-defense" }
+                  - { label: "Glyph of Magicka (armor)", value: "glyph-of-magicka" }
+                  - { label: "Glyph of Health (armor)", value: "glyph-of-health" }
+                  - { label: "Glyph of Frost Resist (jewelry)", value: "glyph-of-frost-resist" }
+                  - { label: "Glyph of Stamina Recovery (jewelry)", value: "glyph-of-stamina-recovery" }
+                  - { label: "Glyph of Reduce Feat Cost (jewelry)", value: "glyph-of-reduce-feat-cost" }
+                  - { label: "Glyph of Disease Resist (jewelry)", value: "glyph-of-disease-resist" }
+                  - { label: "Glyph of Bashing (jewelry)", value: "glyph-of-bashing" }
+                  - { label: "Glyph of Bracing (jewelry)", value: "glyph-of-bracing" }
+                  - { label: "Glyph of Poison Resist (jewelry)", value: "glyph-of-poison-resist" }
+                  - { label: "Glyph of Increase Magical Harm (jewelry)", value: "glyph-of-increase-magical-harm" }
+                  - { label: "Glyph of Decrease Spell Harm (jewelry)", value: "glyph-of-decrease-spell-harm" }
+                  - { label: "Glyph of Magicka Recovery (jewelry)", value: "glyph-of-magicka-recovery" }
+                  - { label: "Glyph of Reduce Spell Cost (jewelry)", value: "glyph-of-reduce-spell-cost" }
+                  - { label: "Glyph of Shock Resist (jewelry)", value: "glyph-of-shock-resist" }
+                  - { label: "Glyph of Health Recovery (jewelry)", value: "glyph-of-health-recovery" }
+                  - { label: "Glyph of Potion Boost (jewelry)", value: "glyph-of-potion-boost" }
+                  - { label: "Glyph of Potion Speed (jewelry)", value: "glyph-of-potion-speed" }
+                  - { label: "Glyph of Flame Resist (jewelry)", value: "glyph-of-flame-resist" }
+                  - { label: "Glyph of Increase Physical Harm (jewelry)", value: "glyph-of-increase-physical-harm" }
+                  - { label: "Glyph of Decrease Physical Harm (jewelry)", value: "glyph-of-decrease-physical-harm" }
+                  - { label: "Glyph of Prismatic Recovery (jewelry)", value: "glyph-of-prismatic-recovery" }
+                  - { label: "Glyph of Reduce Skill Cost (jewelry)", value: "glyph-of-reduce-skill-cost" }
 
   # ── Guides ──────────────────────────────────────────────────────────────────
   - name: guides

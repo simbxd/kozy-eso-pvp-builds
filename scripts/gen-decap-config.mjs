@@ -41,6 +41,14 @@ const cpStarsIndex = JSON.parse(
   await readFile(join(ESO_DIR, 'cp-stars-index.json'), 'utf8')
 );
 
+const traitsIndex = JSON.parse(
+  await readFile(join(ESO_DIR, 'traits-index.json'), 'utf8')
+);
+
+const enchantsIndex = JSON.parse(
+  await readFile(join(ESO_DIR, 'enchants-index.json'), 'utf8')
+);
+
 // Skills: only curated files in src/content/skills/ (these are the ones assertIds() accepts)
 const skillFiles = (await readdir(SKILLS_DIR)).filter(f => f.endsWith('.json'));
 const skillsIndex = await Promise.all(
@@ -66,7 +74,7 @@ const foodIndex   = consumablesIndex.filter(c => c.type === 'food' || c.type ===
 const potionIndex = consumablesIndex.filter(c => c.type === 'potion');
 const poisonIndex = consumablesIndex.filter(c => c.type === 'poison');
 
-log(`Loaded ${setsIndex.length} sets, ${skillsIndex.length} curated skills, ${racesIndex.length} races, ${cpStarsIndex.warfare.length} warfare stars, ${cpStarsIndex.fitness.length} fitness stars, ${consumablesIndex.length} consumables (${foodIndex.length} food, ${potionIndex.length} potions, ${poisonIndex.length} poisons), ${mundusIndex.length} mundus stones`);
+log(`Loaded ${setsIndex.length} sets, ${skillsIndex.length} curated skills, ${racesIndex.length} races, ${cpStarsIndex.warfare.length} warfare stars, ${cpStarsIndex.fitness.length} fitness stars, ${consumablesIndex.length} consumables (${foodIndex.length} food, ${potionIndex.length} potions, ${poisonIndex.length} poisons), ${mundusIndex.length} mundus stones, ${traitsIndex.length} traits, ${enchantsIndex.length} enchants`);
 
 // ---------- Build YAML option blocks ----------
 function consumableOptions(list, indent = 14) {
@@ -101,6 +109,30 @@ function cpStarOptions(constellation, indent = 18) {
   const pad = ' '.repeat(indent);
   return cpStarsIndex[constellation]
     .map(s => `${pad}- "${s.replace(/"/g, '\\"')}"`)
+    .join('\n');
+}
+
+// For weapons: show all traits/enchants with category label (shields use armor traits/enchants).
+// For armor/jewelry: filter by category — label is the name alone (category is implicit).
+function traitOptions(filterCategory, indent = 18) {
+  const pad = ' '.repeat(indent);
+  const items = filterCategory === 'weapon' ? traitsIndex : traitsIndex.filter(t => t.category === filterCategory);
+  return items
+    .map(t => {
+      const label = filterCategory === 'weapon' ? `${t.name} (${t.category})` : t.name;
+      return `${pad}- { label: "${label.replace(/"/g, '\\"')}", value: "${t.id}" }`;
+    })
+    .join('\n');
+}
+
+function enchantOptions(filterCategory, indent = 18) {
+  const pad = ' '.repeat(indent);
+  const items = filterCategory === 'weapon' ? enchantsIndex : enchantsIndex.filter(e => e.category === filterCategory);
+  return items
+    .map(e => {
+      const label = filterCategory === 'weapon' ? `${e.name} (${e.category})` : e.name;
+      return `${pad}- { label: "${label.replace(/"/g, '\\"')}", value: "${e.id}" }`;
+    })
     .join('\n');
 }
 
@@ -357,8 +389,16 @@ ${mundusOptions(22)}
                 options:
 ${setOptions(18)}
               - { name: tier,   label: Tier,        widget: string, hint: "ex: 5/5" }
-              - { name: trait,  label: Trait,       widget: string }
-              - { name: enchant, label: Enchantment, widget: string }
+              - name: trait
+                label: Trait
+                widget: select
+                options:
+${traitOptions('armor', 18)}
+              - name: enchant
+                label: Enchantment
+                widget: select
+                options:
+${enchantOptions('armor', 18)}
           - name: jewelry
             label: Jewelry
             widget: list
@@ -375,8 +415,16 @@ ${setOptions(18)}
                 options:
 ${setOptions(18)}
               - { name: tier,   label: Tier,        widget: string }
-              - { name: trait,  label: Trait,       widget: string }
-              - { name: enchant, label: Enchantment, widget: string }
+              - name: trait
+                label: Trait
+                widget: select
+                options:
+${traitOptions('jewelry', 18)}
+              - name: enchant
+                label: Enchantment
+                widget: select
+                options:
+${enchantOptions('jewelry', 18)}
           - name: weapons
             label: Weapons
             widget: list
@@ -390,8 +438,18 @@ ${setOptions(18)}
                 options:
 ${setOptions(18)}
               - { name: tier,   label: Tier,        widget: string }
-              - { name: trait,  label: Trait,       widget: string }
-              - { name: enchant, label: Enchantment, widget: string }
+              - name: trait
+                label: Trait
+                widget: select
+                hint: "Shields use armor traits — look for (armor) suffix"
+                options:
+${traitOptions('weapon', 18)}
+              - name: enchant
+                label: Enchantment
+                widget: select
+                hint: "Shields use armor enchants — look for (armor) suffix"
+                options:
+${enchantOptions('weapon', 18)}
 
   # ── Guides ──────────────────────────────────────────────────────────────────
   - name: guides
