@@ -89,6 +89,8 @@ interface Props {
   resource: string;
   gamemode: string;
   patch: string;
+  author: string;
+  publishedDate?: string;
   updatedAt?: string;
   difficulty: string;
   summary: string;
@@ -127,9 +129,50 @@ interface Props {
 
 const {
   title, class: esClass, role, resource, gamemode,
-  patch, updatedAt, difficulty, summary, pullquote,
+  patch, author, publishedDate, updatedAt, difficulty, summary, pullquote,
   sets, bar1, bar2, og_image, gear, stats, champion_points, consumables, playstyle, race,
 } = Astro.props;
+
+function formatDate(iso: string): string {
+  const [y, m, d] = iso.split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+const subtitle = `${resource} ${esClass} ${gamemode} Build`;
+const h1Text   = `${title} — ${subtitle}`;
+
+const siteUrl        = Astro.site ? Astro.site.href.replace(/\/$/, '') : 'https://kozy-eso-pvp-builds.simbad14100.workers.dev';
+const canonical      = new URL(Astro.url.pathname, siteUrl).href;
+const ogImageAbs     = og_image
+  ? (og_image.startsWith('http') ? og_image : `${siteUrl}${og_image}`)
+  : `${siteUrl}/assets/og/og-default.png`;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: h1Text,
+  description: summary,
+  image: ogImageAbs,
+  datePublished: publishedDate ?? updatedAt ?? null,
+  dateModified: updatedAt ?? publishedDate ?? null,
+  author: { '@type': 'Person', name: author },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Kozy ESO PvP Builds',
+    logo: { '@type': 'ImageObject', url: `${siteUrl}/favicon.svg` },
+  },
+  mainEntityOfPage: canonical,
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home',   item: siteUrl + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Builds', item: siteUrl + '/builds/' },
+    { '@type': 'ListItem', position: 3, name: title,    item: canonical },
+  ],
+};
 
 const hasPlaystyle = !!(
   playstyle && (
@@ -153,14 +196,14 @@ function setLabel(setId: string): string {
   return setNameById[setId] ?? setId;
 }
 
-const updatedFormatted = updatedAt
-  ? updatedAt.replace(/-/g, '·')
-  : null;
-
 const railItems = [`KOZY · ESO PvP`];
 ---
 
 <Base title={`${title} — ${resource} ${esClass} PvP Build | ESO ${patch}`} description={summary} ogImage={og_image}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
   <!-- MASTHEAD -->
   <header class="masthead">
     <div class="masthead__rail">
@@ -191,10 +234,23 @@ const railItems = [`KOZY · ESO PvP`];
         </svg>
       </div>
 
-      <h1 class="kz-display kz-display--l">{title}</h1>
-      <div class="masthead__sub">
-        <span class="kz-italic">{resource}</span> {esClass} — {role}
-      </div>
+      <h1 class="kz-display kz-display--l">{h1Text}</h1>
+      <p class="masthead__dates">
+        <span class="masthead__author">By {author}</span>
+        {(publishedDate || updatedAt) && (
+          <span class="masthead__dates-sep" aria-hidden="true"> · </span>
+          <span>
+            {publishedDate
+              ? (updatedAt && updatedAt !== publishedDate
+                  ? `Published ${formatDate(publishedDate)} · Updated ${formatDate(updatedAt)}`
+                  : `Published ${formatDate(publishedDate)}`)
+              : `Updated ${formatDate(updatedAt!)}`
+            }
+          </span>
+        )}
+        <span class="masthead__dates-sep" aria-hidden="true"> · </span>
+        <span>Patch {patch}</span>
+      </p>
     </div>
 
     <div class={`masthead__meta ${race ? 'masthead__meta--7' : 'masthead__meta--6'}`}>
@@ -752,14 +808,17 @@ const railItems = [`KOZY · ESO PvP`];
 
   .masthead__sigil { display: inline-block; margin-bottom: 14px; opacity: 0.85; }
 
-  .masthead__sub {
-    font-family: var(--font-display);
-    font-style: italic;
-    font-weight: 400;
-    font-size: 22px;
+  .masthead__dates {
+    font-family: var(--font-mono);
+    font-size: 12px;
     color: var(--color-text-muted);
-    margin-top: 14px;
-    letter-spacing: 0.02em;
+    margin-top: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .masthead__author {
+    color: var(--color-mono);
   }
 
   .masthead__meta {
@@ -811,7 +870,7 @@ const railItems = [`KOZY · ESO PvP`];
       padding-bottom: 14px;
     }
 
-    .masthead__sub { font-size: 18px; }
+    .masthead__dates { font-size: 11px; }
   }
 
   /* ── race card ─────────────────────────────────────── */

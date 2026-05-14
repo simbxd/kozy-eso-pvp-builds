@@ -5,6 +5,8 @@ role: DPS
 resource: Hybrid
 gamemode: PvP
 patch: U50
+author: Kozy
+# TODO: fill in publishedDate (YYYY-MM-DD) — date the build was first published
 updatedAt: 2025-05-11
 difficulty: Intermediate
 featured: true

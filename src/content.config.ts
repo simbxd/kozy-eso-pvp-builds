@@ -43,6 +43,10 @@ const builds = defineCollection({
     resource: z.enum(['Stamina', 'Magicka', 'Hybrid']),
     gamemode: z.enum(['PvP', 'PvE', 'Both']),
     patch: z.string(),
+    author: z.string().default('Kozy'),
+    publishedDate: z.union([z.string(), z.date()])
+      .transform(v => v instanceof Date ? v.toISOString().split('T')[0] : v)
+      .optional(),
     updatedAt: z.union([z.string(), z.date()])
       .transform(v => v instanceof Date ? v.toISOString().split('T')[0] : v)
       .optional(),
