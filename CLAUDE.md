@@ -159,7 +159,9 @@ consumables:
 ### Build (`src/content/builds/*.md`)
 Champs obligatoires : `title`, `class`, `role`, `resource`, `gamemode`, `patch`, `difficulty`, `featured`, `sets[]`, `skills.bar1[]`, `skills.bar2[]`, `summary`
 
-Champs optionnels : `author` (défaut "Kozy"), `publishedDate`, `updatedAt`, `pullquote`, `og_image`, `race`, `gear{}`, `stats{}`, `champion_points{}`, `consumables{}`
+Champs optionnels : `author` (défaut "Kozy"), `pullquote`, `og_image`, `race`, `gear{}`, `stats{}`, `champion_points{}`, `consumables{}`
+
+> `publishedDate` et `updatedAt` ne sont **plus** des champs frontmatter — ils sont dérivés automatiquement du Git log au build time via `src/lib/git-dates.ts`.
 
 Classes valides : `Dragonknight | Sorcerer | Nightblade | Templar | Warden | Necromancer | Arcanist`
 Rôles : `DPS | Healer | Tank` — Resources : `Stamina | Magicka | Hybrid` — Gamemodes : `PvP | PvE | Both` — Difficultés : `Beginner | Intermediate | Advanced`
@@ -187,6 +189,15 @@ Types : `Active | Passive | Ultimate`
 - **Build layout :** `display: grid; grid-template-columns: 1fr 220px` — grid strict, ne pas passer en flex. Ne pas mettre `overflow: clip` sur `.build-content` (coupe le contenu des cartes)
 - **CSS scoping :** les règles de layout (`.build-layout`, `.build-content`, `.build-toc`) sont dans `<style is:global>` dans `Build.astro`. Les styles visuels restent dans `<style>` scopé
 - **SetCard :** ne pas remettre `white-space: nowrap` sur `.bonus__val` — les longues valeurs doivent pouvoir wrapper (ex : Markyn Ring)
+
+### Dates dérivées du Git log (v10.5)
+- **Helper :** `src/lib/git-dates.ts` — `getFileDates(filePath)` retourne `{ publishedDate, updatedAt }` au build time
+- **`publishedDate`** = `git log --diff-filter=A --follow --format=%aI -- <file> | tail -1` — premier commit qui a créé le fichier ; `--follow` remonte à travers les renommages
+- **`updatedAt`** = `git log -1 --format=%aI -- <file>` — dernier commit qui a touché le fichier
+- **`%aI`** = date ISO 8601 de l'auteur (préféré à `%ct` unix timestamp du committer, invariant au rebase/cherry-pick)
+- **Fallback :** si git absent ou retour vide → `updatedAt` = today, `publishedDate` = `updatedAt`. Ne throw jamais (le build doit passer même pour des fichiers draft non commités)
+- **Cache en mémoire** (Map) — un seul appel git par fichier même si plusieurs pages le référencent
+- **Cloudflare CI (shallow clone, depth=1) :** `updatedAt` est toujours correct. `publishedDate` sera égal à `updatedAt` si le commit de création n'est pas dans l'historique shallow — affichage silencieux "Published [date]" sans doublon. **Fix :** ajouter `git fetch --unshallow || true` comme pre-build command dans le dashboard Cloudflare Workers
 
 ### Déploiement / Runtime
 - **Hébergement :** Cloudflare Workers (pas Pages)
@@ -238,7 +249,7 @@ Types : `Active | Passive | Ultimate`
 ## État du projet
 
 **Dernière session :** 2026-05-14
-**Milestone actuel :** v10.4 — SEO enrichi : H1 contextuel, dates visibles, auteur, JSON-LD Article + BreadcrumbList
+**Milestone actuel :** v10.5 — Dates dérivées du Git log (publishedDate + updatedAt supprimés du frontmatter)
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -252,6 +263,7 @@ Types : `Active | Passive | Ultimate`
 - ✅ v10.2 — Champion Points actifs : `cp-stars-index.json` (16 warfare + 16 fitness) ; dropdown Decap CMS sur le champ `star` ; `gen-decap-config.mjs` mis à jour
 - ✅ v10.3 — Collection `consumables` (22 items) : `fetch-consumables.mjs` (esolog API + UESP alchemy pages) ; build schema migré vers IDs ; `Build.astro` enrichi (effets structurés, réactifs, durée, ingrédients)
 - ✅ v10.4 — SEO builds : H1 `{title} — {resource} {class} {gamemode} Build` ; champ `author` (schéma + Decap + masthead) ; `publishedDate` + `updatedAt` affichés en mono sous le H1 ; JSON-LD `Article` + `BreadcrumbList` injectés via `<slot name="head">` dans `Base.astro` ; URLs canoniques depuis `Astro.site`
+- ✅ v10.5 — Dates dérivées du Git log : `src/lib/git-dates.ts` (`getFileDates`) avec cache mémoire et fallback ; `publishedDate`/`updatedAt` supprimés du frontmatter et du schéma Zod ; câblés dans `[slug].astro` builds + guides via `entry.filePath` ; widgets Decap retirés de `config.yml` et `gen-decap-config.mjs`
 
 ### Contenu publié
 - **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build complet, sert de template. Race `dunmer` définie — à confirmer par l'auteur.
@@ -292,5 +304,5 @@ Types : `Active | Passive | Ultimate`
 - Canaries : Imperial (races), The Apprentice (mundus), Divines/armor (traits), Glyph of Magicka (enchants)
 
 ### Prochaine étape
-- Remplir les `publishedDate` dans les frontmatters des builds existants (TODO laissé dans `soloknight.md`)
+- Configurer le pre-build `git fetch --unshallow || true` dans le dashboard Cloudflare Workers pour que `publishedDate` soit exact (actuellement = `updatedAt` en CI shallow clone)
 - Continuer l'intégration UI des données meta ESO : mundus (déjà dans `consumables`), traits, enchants dans les pages de build

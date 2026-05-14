@@ -45,7 +45,6 @@ collections:
         options: [PvP, PvE, Both]
       - { name: patch,      label: Patch,       widget: string,  hint: "ex: U50" }
       - { name: author,     label: Author,      widget: string,  default: "Kozy", required: false, hint: "Nom affiché sur la page et dans les balises SEO" }
-      - { name: updatedAt,  label: Updated At,  widget: datetime, type: date, required: false, format: YYYY-MM-DD }
       - name: difficulty
         label: Difficulty
         widget: select

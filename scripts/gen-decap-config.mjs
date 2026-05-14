@@ -161,7 +161,6 @@ collections:
         widget: select
         options: [PvP, PvE, Both]
       - { name: patch,      label: Patch,       widget: string,  hint: "ex: U50" }
-      - { name: updatedAt,  label: Updated At,  widget: datetime, type: date, required: false, format: YYYY-MM-DD }
       - name: difficulty
         label: Difficulty
         widget: select

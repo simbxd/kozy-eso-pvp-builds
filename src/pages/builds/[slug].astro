@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Build from '../../layouts/Build.astro';
+import { getFileDates } from '../../lib/git-dates';
 
 export async function getStaticPaths() {
   const builds = await getCollection('builds');
@@ -11,6 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { build } = Astro.props;
+const { publishedDate, updatedAt } = getFileDates(build.filePath ?? `src/content/builds/${build.id}.md`);
 
 const allSets        = await getCollection('sets');
 const allSkills      = await getCollection('skills');
@@ -68,8 +70,8 @@ const resolvedBar2 = build.data.skills.bar2.map(enrichSkill);
   gamemode={build.data.gamemode}
   patch={build.data.patch}
   author={build.data.author}
-  publishedDate={build.data.publishedDate}
-  updatedAt={build.data.updatedAt}
+  publishedDate={publishedDate}
+  updatedAt={updatedAt}
   difficulty={build.data.difficulty}
   summary={build.data.summary}
   pullquote={build.data.pullquote}

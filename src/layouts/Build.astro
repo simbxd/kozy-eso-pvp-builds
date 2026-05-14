@@ -238,15 +238,17 @@ const railItems = [`KOZY · ESO PvP`];
       <p class="masthead__dates">
         <span class="masthead__author">By {author}</span>
         {(publishedDate || updatedAt) && (
-          <span class="masthead__dates-sep" aria-hidden="true"> · </span>
-          <span>
-            {publishedDate
-              ? (updatedAt && updatedAt !== publishedDate
-                  ? `Published ${formatDate(publishedDate)} · Updated ${formatDate(updatedAt)}`
-                  : `Published ${formatDate(publishedDate)}`)
-              : `Updated ${formatDate(updatedAt!)}`
-            }
-          </span>
+          <>
+            <span class="masthead__dates-sep" aria-hidden="true"> · </span>
+            <span>
+              {publishedDate
+                ? (updatedAt && updatedAt !== publishedDate
+                    ? `Published ${formatDate(publishedDate)} · Updated ${formatDate(updatedAt)}`
+                    : `Published ${formatDate(publishedDate)}`)
+                : `Updated ${formatDate(updatedAt!)}`
+              }
+            </span>
+          </>
         )}
         <span class="masthead__dates-sep" aria-hidden="true"> · </span>
         <span>Patch {patch}</span>

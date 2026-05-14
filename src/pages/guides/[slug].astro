@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Guide from '../../layouts/Guide.astro';
+import { getFileDates } from '../../lib/git-dates';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides');
@@ -12,6 +13,7 @@ export async function getStaticPaths() {
 
 const { guide } = Astro.props;
 const { Content } = await render(guide);
+const { updatedAt } = getFileDates(guide.filePath ?? `src/content/guides/${guide.id}.md`);
 
 const allGuides = await getCollection('guides');
 const readNextGuides = allGuides
@@ -29,7 +31,7 @@ const readNextGuides = allGuides
   og_image={guide.data.og_image}
   patch={guide.data.patch}
   readTime={guide.data.readTime}
-  updatedAt={guide.data.updatedAt}
+  updatedAt={updatedAt}
   readNextGuides={readNextGuides}
 >
   <Content />
