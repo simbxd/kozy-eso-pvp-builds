@@ -22,6 +22,7 @@
 | v10.1 | Race ajoutée sur les builds : collection `races` enregistrée dans `content.config.ts` (Zod) ; champ `race` optionnel dans le frontmatter builds ; section Race dans les pages de build (passives) + cellule masthead + entrée TOC ; Imperial `alliance: "Other"` supporté |
 | v10.2 | Champion Points actifs dans Decap : `cp-stars-index.json` (16 étoiles Warfare + 16 Fitness slottables) ; `gen-decap-config.mjs` charge le JSON et génère des `widget: select` pour le champ `star` dans les listes CP Warfare/Fitness |
 | v10.3 | Collection `consumables` (22 items) : `scripts/fetch-consumables.mjs` — 2 sources (esolog API pour food/draughts, UESP alchemy pages pour potions/poisons) ; `src/content/consumables/` flat JSON ; schéma build migré vers IDs (`{ id, note? }`) ; résolution dans `[slug].astro` ; `Build.astro` enrichi avec effets structurés, durée auto-formatée, chips ingrédients/réactifs |
+| v10.4 | SEO builds : H1 contextuel `{title} — {resource} {class} {gamemode} Build` ; champ `author` (schéma Zod + Decap widget + masthead + JSON-LD) ; `publishedDate` + `updatedAt` affichés en format mono sous le H1 ; JSON-LD `Article` + `BreadcrumbList` injectés via `<slot name="head">` dans `Base.astro` ; URLs canoniques depuis `Astro.site` (pas de hardcode domaine) |
 
 ---
 
@@ -333,8 +334,10 @@ summary: "A mathematical breakdown of how armor penetration actually interacts w
 ---
 ```
 
-### Build frontmatter — champs optionnels ajoutés (M3+)
+### Build frontmatter — champs optionnels ajoutés (M3+, v10.4)
 ```yaml
+author: "Kozy"                   # affiché dans masthead ("By Kozy") + JSON-LD Article ; défaut "Kozy" si absent
+# TODO: fill in publishedDate (YYYY-MM-DD) — date de première publication
 updatedAt: "2025-05-11"          # date de mise à jour affichée en haut du build
 stats:
   health:  { target: 30000, note: "priorité absolue" }
@@ -523,6 +526,24 @@ Deliverable: Base de données ESO complète — skills, races, mundus, traits, e
 
 ---
 
+### ✅ v10.4 — SEO enrichi : H1 contextuel, auteur, dates, JSON-LD
+**Goal:** Optimiser le référencement des pages de build sans toucher au contenu ESO.
+**Completed:** 2026-05-14
+
+Tasks:
+- [x] H1 refactorisé : `{title} — {resource} {class} {gamemode} Build`
+- [x] `masthead__sub` remplacé par ligne de métadonnées mono : `By {author} · Published/Updated · Patch`
+- [x] Champ `author` : schéma Zod (`z.string().default('Kozy')`), prop `Build.astro`, widget Decap, JSON-LD
+- [x] Champ `publishedDate` : schéma Zod, logique d'affichage (identique à `updatedAt` → n'afficher que "Published"), format `MMM D, YYYY`
+- [x] JSON-LD `Article` : headline, description, image, datePublished, dateModified, author, publisher+logo, mainEntityOfPage
+- [x] JSON-LD `BreadcrumbList` : Home → Builds → {title}, positions 1/2/3, URLs absolues depuis `Astro.site`
+- [x] `Base.astro` : `<slot name="head" />` pour injection de balises head depuis layouts enfants
+- [x] TODO `publishedDate` laissé dans `soloknight.md` — à remplir par l'auteur
+
+Deliverable: Pages de build avec H1 contextuel, données auteur/dates visibles, schéma JSON-LD valide en `<head>` ✅
+
+---
+
 ## 7. Modifications en cours de route
 
 Décisions prises pendant le développement, hors roadmap initiale.
@@ -634,6 +655,19 @@ Décisions prises pendant le développement, hors roadmap initiale.
 - WebFetch (outil Claude) bloqué par UESP sans User-Agent valide → analyse HTML via `curl` + bash ; scripts node exécutés directement sans passer par /tmp (filesystem Windows)
 **Conventions :** `patch_verified: "U49"`, `existsSync` pour skip les fichiers curated, `Promise.all` pour les fetches parallèles, canaries de validation pour détecter les changements de structure UESP.
 
+### SEO enrichi — H1 contextuel, dates, auteur, JSON-LD (v10.4)
+**Décision :** Refactorisation du H1 et injection de métadonnées structurées sur toutes les pages de build.
+**Raison :** Le H1 `"Solo Knight"` seul est trop générique pour le référencement — un crawler ne peut pas inférer le jeu, la classe ni le gamemode. Les données structurées JSON-LD permettent aux moteurs de recherche d'afficher un résultat enrichi (auteur, dates, fil d'Ariane).
+**Changements :**
+- H1 : `{title}` → `{title} — {resource} {class} {gamemode} Build` (ex : "Solo Knight — Hybrid Dragonknight PvP Build")
+- `masthead__sub` supprimé (info désormais dans le H1) ; remplacé par une ligne mono `By {author} · Published/Updated · Patch`
+- Champ `author` : `z.string().default('Kozy')` dans le schéma Zod, passé en prop à `Build.astro`, widget `string` dans Decap, câblé au JSON-LD `Article.author.name`
+- Champs `publishedDate` (optionnel) + `updatedAt` (existant) : logique d'affichage — si identiques, n'afficher que "Published" ; format `MMM D, YYYY` via `Intl` local
+- JSON-LD `Article` : `headline`, `description`, `image`, `datePublished`, `dateModified`, `author`, `publisher` (avec `logo.@type: ImageObject`), `mainEntityOfPage`
+- JSON-LD `BreadcrumbList` : 3 niveaux (Home → Builds → {title}), positions 1/2/3, URLs absolues
+- `Base.astro` : `<slot name="head" />` ajouté avant `</head>` pour permettre l'injection depuis les layouts enfants
+- URLs canoniques construites depuis `Astro.site` (défini dans `astro.config.mjs`) — aucun domaine hardcodé dans les nouveaux blocs
+
 ### Collection `consumables` — scraper dual-source (v10.3)
 **Décision :** Les consommables ESO (food, potions, poisons) sont scrapés via deux sources distinctes selon le type d'item, pas une seule.
 **Raison :** UESP n'a pas de pages individuelles pour les potions/poisons craftés (`/wiki/Online:Essence_of_Health` → 404 pour tous). L'API esolog (même source que `fetch-eso-data.mjs`) a les IDs pour la food et les Alliance Draughts mais pas pour les potions/poisons craftés. Solution hybride :
@@ -716,6 +750,6 @@ Pour chaque décision non triviale, expliquer le *pourquoi*. L'auteur doit compr
 
 ---
 
-*Document version: 10.3*
-*Last updated by: Claude Code — après session 8 (2026-05-14)*
-*Next update: Claude Code, après intégration UI des données meta ESO restantes (mundus, traits, enchants)*
+*Document version: 10.4*
+*Last updated by: Claude Code — 2026-05-14*
+*Next update: après remplissage des `publishedDate` + intégration UI des données meta ESO restantes (traits, enchants)*
