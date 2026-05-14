@@ -388,7 +388,6 @@ ${mundusOptions(22)}
                 widget: select
                 options:
 ${setOptions(18)}
-              - { name: tier,   label: Tier,        widget: string, hint: "ex: 5/5" }
               - name: trait
                 label: Trait
                 widget: select
@@ -413,7 +412,6 @@ ${enchantOptions('armor', 18)}
                 widget: select
                 options:
 ${setOptions(18)}
-              - { name: tier,   label: Tier,        widget: string }
               - name: trait
                 label: Trait
                 widget: select
@@ -431,13 +429,11 @@ ${enchantOptions('jewelry', 18)}
               - { name: slot,     label: Slot,        widget: string }
               - { name: type,     label: Type,        widget: hidden, default: "weapon" }
               - { name: barLabel, label: Bar,         widget: string, hint: "BAR I ou BAR II" }
-              - { name: item,     label: Item Name,   widget: string }
               - name: setId
                 label: Set
                 widget: select
                 options:
 ${setOptions(18)}
-              - { name: tier,   label: Tier,        widget: string }
               - name: trait
                 label: Trait
                 widget: select

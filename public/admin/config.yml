@@ -4160,7 +4160,6 @@ collections:
                   - { label: "Z'en's Redress", value: "zens-redress" }
                   - { label: "Zaan", value: "zaan" }
                   - { label: "Zoal the Ever-Wakeful", value: "zoal-the-ever-wakeful" }
-              - { name: tier,   label: Tier,        widget: string, hint: "ex: 5/5" }
               - name: trait
                 label: Trait
                 widget: select
@@ -4907,7 +4906,6 @@ collections:
                   - { label: "Z'en's Redress", value: "zens-redress" }
                   - { label: "Zaan", value: "zaan" }
                   - { label: "Zoal the Ever-Wakeful", value: "zoal-the-ever-wakeful" }
-              - { name: tier,   label: Tier,        widget: string }
               - name: trait
                 label: Trait
                 widget: select
@@ -4952,7 +4950,6 @@ collections:
               - { name: slot,     label: Slot,        widget: string }
               - { name: type,     label: Type,        widget: hidden, default: "weapon" }
               - { name: barLabel, label: Bar,         widget: string, hint: "BAR I ou BAR II" }
-              - { name: item,     label: Item Name,   widget: string }
               - name: setId
                 label: Set
                 widget: select
@@ -5669,7 +5666,6 @@ collections:
                   - { label: "Z'en's Redress", value: "zens-redress" }
                   - { label: "Zaan", value: "zaan" }
                   - { label: "Zoal the Ever-Wakeful", value: "zoal-the-ever-wakeful" }
-              - { name: tier,   label: Tier,        widget: string }
               - name: trait
                 label: Trait
                 widget: select
