@@ -56,9 +56,9 @@ const builds = defineCollection({
     summary: z.string(),
     pullquote: z.string().optional(),
     gear: z.object({
-      armor:   z.array(z.object({ slot: z.string(), type: z.enum(['heavy','medium','light']), item: z.string().optional(), setId: z.string(), tier: z.string(), trait: z.string(), enchant: z.string() })),
-      jewelry: z.array(z.object({ slot: z.string(), type: z.enum(['jewelry','mythic']),       item: z.string().optional(), setId: z.string(), tier: z.string(), trait: z.string(), enchant: z.string() })),
-      weapons: z.array(z.object({ slot: z.string(), type: z.literal('weapon'), barLabel: z.string(), item: z.string().optional(), setId: z.string(), tier: z.string(), trait: z.string(), enchant: z.string() })),
+      armor:   z.array(z.object({ slot: z.string(), type: z.enum(['heavy','medium','light']), item: z.string().optional(), setId: z.string(), tier: z.string().optional(), trait: z.string(), enchant: z.string() })),
+      jewelry: z.array(z.object({ slot: z.string(), type: z.enum(['jewelry','mythic']),       item: z.string().optional(), setId: z.string(), tier: z.string().optional(), trait: z.string(), enchant: z.string() })),
+      weapons: z.array(z.object({ slot: z.string(), type: z.literal('weapon'), barLabel: z.string(), item: z.string().optional(), setId: z.string(), tier: z.string().optional(), trait: z.string(), enchant: z.string() })),
     }).optional(),
     stats: z.object({
       health:  z.object({ target: z.number().optional(), note: z.string().optional() }),
