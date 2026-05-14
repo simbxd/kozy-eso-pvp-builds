@@ -159,7 +159,7 @@ consumables:
 ### Build (`src/content/builds/*.md`)
 Champs obligatoires : `title`, `class`, `role`, `resource`, `gamemode`, `patch`, `difficulty`, `featured`, `sets[]`, `skills.bar1[]`, `skills.bar2[]`, `summary`
 
-Champs optionnels : `updatedAt`, `pullquote`, `og_image`, `race`, `gear{}`, `stats{}`, `champion_points{}`, `consumables{}`
+Champs optionnels : `author` (défaut "Kozy"), `publishedDate`, `updatedAt`, `pullquote`, `og_image`, `race`, `gear{}`, `stats{}`, `champion_points{}`, `consumables{}`
 
 Classes valides : `Dragonknight | Sorcerer | Nightblade | Templar | Warden | Necromancer | Arcanist`
 Rôles : `DPS | Healer | Tank` — Resources : `Stamina | Magicka | Hybrid` — Gamemodes : `PvP | PvE | Both` — Difficultés : `Beginner | Intermediate | Advanced`
@@ -238,7 +238,7 @@ Types : `Active | Passive | Ultimate`
 ## État du projet
 
 **Dernière session :** 2026-05-14
-**Milestone actuel :** v10.3 — Collection `consumables` intégrée (22 items, 2 sources, Build.astro enrichi)
+**Milestone actuel :** v10.4 — SEO enrichi : H1 contextuel, dates visibles, auteur, JSON-LD Article + BreadcrumbList
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -251,6 +251,7 @@ Types : `Active | Passive | Ultimate`
 - ✅ v10.1 — Collection `races` enregistrée Zod ; champ `race` optionnel dans builds ; Race UI (masthead + section passives + TOC)
 - ✅ v10.2 — Champion Points actifs : `cp-stars-index.json` (16 warfare + 16 fitness) ; dropdown Decap CMS sur le champ `star` ; `gen-decap-config.mjs` mis à jour
 - ✅ v10.3 — Collection `consumables` (22 items) : `fetch-consumables.mjs` (esolog API + UESP alchemy pages) ; build schema migré vers IDs ; `Build.astro` enrichi (effets structurés, réactifs, durée, ingrédients)
+- ✅ v10.4 — SEO builds : H1 `{title} — {resource} {class} {gamemode} Build` ; champ `author` (schéma + Decap + masthead) ; `publishedDate` + `updatedAt` affichés en mono sous le H1 ; JSON-LD `Article` + `BreadcrumbList` injectés via `<slot name="head">` dans `Base.astro` ; URLs canoniques depuis `Astro.site`
 
 ### Contenu publié
 - **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build complet, sert de template. Race `dunmer` définie — à confirmer par l'auteur.
@@ -291,4 +292,5 @@ Types : `Active | Passive | Ultimate`
 - Canaries : Imperial (races), The Apprentice (mundus), Divines/armor (traits), Glyph of Magicka (enchants)
 
 ### Prochaine étape
-Continuer l'intégration UI des données meta ESO : mundus (déjà dans `consumables`), traits, enchants dans les pages de build.
+- Remplir les `publishedDate` dans les frontmatters des builds existants (TODO laissé dans `soloknight.md`)
+- Continuer l'intégration UI des données meta ESO : mundus (déjà dans `consumables`), traits, enchants dans les pages de build
