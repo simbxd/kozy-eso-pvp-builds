@@ -12,13 +12,15 @@ export async function getStaticPaths() {
 
 const { build } = Astro.props;
 
-const allSets   = await getCollection('sets');
-const allSkills = await getCollection('skills');
-const allRaces  = await getCollection('races');
+const allSets        = await getCollection('sets');
+const allSkills      = await getCollection('skills');
+const allRaces       = await getCollection('races');
+const allConsumables = await getCollection('consumables');
 
-const setsMap   = Object.fromEntries(allSets.map(s => [s.id, s.data]));
-const skillsMap = Object.fromEntries(allSkills.map(s => [s.id, s.data]));
-const racesMap  = Object.fromEntries(allRaces.map(r => [r.id, r.data]));
+const setsMap        = Object.fromEntries(allSets.map(s => [s.id, s.data]));
+const skillsMap      = Object.fromEntries(allSkills.map(s => [s.id, s.data]));
+const racesMap       = Object.fromEntries(allRaces.map(r => [r.id, r.data]));
+const consumablesMap = Object.fromEntries(allConsumables.map(c => [c.id, c.data]));
 
 function assertIds(ids: string[], map: Record<string, unknown>, kind: string, buildId: string) {
   const missing = ids.filter(id => !(id in map));
@@ -36,6 +38,15 @@ assertIds(build.data.skills.bar2,   skillsMap, 'skill', build.id);
 
 const resolvedSets = build.data.sets.map(id => setsMap[id]!);
 const resolvedRace = build.data.race ? (racesMap[build.data.race] ?? null) : null;
+
+// Resolve consumable IDs → full data objects
+const rawC = build.data.consumables;
+const resolvedConsumables = rawC ? {
+  food:   rawC.food   ? { data: consumablesMap[rawC.food.id]   ?? null, note: rawC.food.note,   alt: rawC.food.alt   } : undefined,
+  potion: rawC.potion ? { data: consumablesMap[rawC.potion.id] ?? null, note: rawC.potion.note                       } : undefined,
+  poison: rawC.poison ? { data: consumablesMap[rawC.poison.id] ?? null, note: rawC.poison.note                       } : undefined,
+  mundus: rawC.mundus,
+} : undefined;
 
 function enrichSkill(id: string) {
   const skill = skillsMap[id]!;
@@ -67,7 +78,7 @@ const resolvedBar2 = build.data.skills.bar2.map(enrichSkill);
   gear={build.data.gear}
   stats={build.data.stats}
   champion_points={build.data.champion_points}
-  consumables={build.data.consumables}
+  consumables={resolvedConsumables}
   playstyle={build.data.playstyle}
   race={resolvedRace}
 />

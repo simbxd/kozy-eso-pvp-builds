@@ -1,6 +1,29 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
+// ── Consumables ──────────────────────────────────────────────────────────────
+// An effect is either a named stat + value (food/drink) or a free-text
+// description (potions/poisons from UESP alchemy effect pages).
+const consumableEffect = z.union([
+  z.object({ stat: z.string(), value: z.union([z.number(), z.string()]) }),
+  z.object({ description: z.string() }),
+]);
+
+const consumables = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/consumables' }),
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    type: z.enum(['food', 'drink', 'potion', 'poison']),
+    patch_verified: z.string(),
+    uesp_url: z.string().url(),
+    effects: z.array(consumableEffect),
+    duration_seconds: z.number().optional(),
+    reagents: z.array(z.string()).optional(),
+    crafted: z.boolean(),
+  }),
+});
+
 const cpStar = z.object({ star: z.string(), points: z.number(), priority: z.number() });
 
 const playstyleRule    = z.object({ title: z.string(), body: z.string() });
@@ -50,10 +73,12 @@ const builds = defineCollection({
     }).optional(),
     playstyle,
     consumables: z.object({
-      food:   z.object({ name: z.string().optional(), stats: z.string().optional(), note: z.string().optional(), alt: z.string().optional() }).optional(),
-      potion: z.object({ name: z.string().optional(), ingredients: z.array(z.string()).optional(), note: z.string().optional() }).optional(),
-      poison: z.object({ name: z.string().optional(), note: z.string().optional() }).optional(),
-      mundus: z.object({ stone: z.string().optional(), effect: z.string().optional(), note: z.string().optional(), alt: z.object({ stone: z.string().optional(), effect: z.string().optional(), note: z.string().optional() }).optional() }).optional(),
+      // food/potion/poison reference a consumables collection entry by ID.
+      // mundus stays text-based (not yet a separate collection).
+      food:   z.object({ id: z.string(), note: z.string().optional(), alt: z.string().optional() }).optional(),
+      potion: z.object({ id: z.string(), note: z.string().optional() }).optional(),
+      poison: z.object({ id: z.string(), note: z.string().optional() }).optional(),
+      mundus: z.object({ stone: z.string(), effect: z.string().optional(), note: z.string().optional(), alt: z.object({ stone: z.string(), effect: z.string().optional(), note: z.string().optional() }).optional() }).optional(),
     }).optional(),
   }),
 });
@@ -132,4 +157,4 @@ const races = defineCollection({
   }),
 });
 
-export const collections = { builds, guides, sets, skills, races };
+export const collections = { builds, guides, sets, skills, races, consumables };

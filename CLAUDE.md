@@ -75,7 +75,8 @@ src/
 │   ├── races/           ← Fichiers .json (10 races, scrapées UESP)
 │   ├── mundus/          ← Fichiers .json (13 pierres mundus, scrapées UESP)
 │   ├── traits/          ← Fichiers .json (27 traits weapon/armor/jewelry, scrapés UESP)
-│   └── enchants/        ← Fichiers .json (38 glyphes weapon/armor/jewelry, scrapés UESP)
+│   ├── enchants/        ← Fichiers .json (38 glyphes weapon/armor/jewelry, scrapés UESP)
+│   └── consumables/     ← Fichiers .json (22 consommables PvP — food, potions, poisons)
 ├── components/
 │   ├── Header.astro     ← Nav + dropdown classes + statut serveurs ESO
 │   ├── Footer.astro
@@ -131,6 +132,29 @@ src/data/eso/
 ---
 
 ## Content Collections — schémas
+
+### Consumable (`src/content/consumables/*.json`)
+Champs obligatoires : `id`, `name`, `type`, `patch_verified`, `uesp_url`, `effects[]`, `crafted`
+
+Champs optionnels : `duration_seconds`, `reagents[]`
+
+`effects` = tableau d'union discriminante :
+- Food/drink : `{ "stat": "Maximum Health", "value": 4620 }` (stat + valeur numérique)
+- Potions/poisons UESP : `{ "description": "Grants Major Brutality…" }` (texte libre depuis uesp)
+
+`type` valides : `food | drink | potion | poison`
+
+**Dans les builds**, les consommables sont référencés par ID :
+```yaml
+consumables:
+  food:   { id: bewitched-sugar-skulls, note: "..." }
+  potion: { id: essence-of-weapon-power, note: "..." }
+  poison: { id: drain-health-poison-ix }
+  mundus: { stone: The Lady, effect: "...", note: "..." }   # texte libre, pas dans la collection
+```
+`[slug].astro` résout les IDs → données complètes avant de passer à `Build.astro`.
+
+**Lacunes connues :** `Cloudy Damage Health Poison IX` n'existe pas sur UESP et semble être un item inexistant — omis du dataset.
 
 ### Build (`src/content/builds/*.md`)
 Champs obligatoires : `title`, `class`, `role`, `resource`, `gamemode`, `patch`, `difficulty`, `featured`, `sets[]`, `skills.bar1[]`, `skills.bar2[]`, `summary`
@@ -213,8 +237,8 @@ Types : `Active | Passive | Ultimate`
 
 ## État du projet
 
-**Dernière session :** 2026-05-13
-**Milestone actuel :** v10.2 — Champion Points actifs (slottable) : `cp-stars-index.json` + dropdown Decap CMS
+**Dernière session :** 2026-05-14
+**Milestone actuel :** v10.3 — Collection `consumables` intégrée (22 items, 2 sources, Build.astro enrichi)
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -226,6 +250,7 @@ Types : `Active | Passive | Ultimate`
 - ✅ M6 — Données meta ESO scrapées (races, mundus, traits, enchants + skill_line_id)
 - ✅ v10.1 — Collection `races` enregistrée Zod ; champ `race` optionnel dans builds ; Race UI (masthead + section passives + TOC)
 - ✅ v10.2 — Champion Points actifs : `cp-stars-index.json` (16 warfare + 16 fitness) ; dropdown Decap CMS sur le champ `star` ; `gen-decap-config.mjs` mis à jour
+- ✅ v10.3 — Collection `consumables` (22 items) : `fetch-consumables.mjs` (esolog API + UESP alchemy pages) ; build schema migré vers IDs ; `Build.astro` enrichi (effets structurés, réactifs, durée, ingrédients)
 
 ### Contenu publié
 - **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build complet, sert de template. Race `dunmer` définie — à confirmer par l'auteur.
@@ -250,6 +275,7 @@ Types : `Active | Passive | Ultimate`
 | `fetch:eso` | `scripts/fetch-eso-data.mjs` | Scrape esolog API → sets + skills JSON |
 | `fetch:meta` | `scripts/fetch-eso-meta.mjs` | Scrape UESP wiki → races/mundus/traits/enchants JSON |
 | `fetch:icons` | `scripts/fetch-skill-icons.mjs` | Télécharge les icônes PNG des skills depuis UESP |
+| `fetch:consumables` | `scripts/fetch-consumables.mjs` | Scrape esolog API + UESP alchemy pages → consumables JSON dans `src/content/consumables/` |
 | `migrate:skill-line-id` | `scripts/migrate-add-skill-line-id.mjs` | Backfill `skill_line_id` sur les fichiers skills existants (idempotent) |
 | `gen:decap` | `scripts/gen-decap-config.mjs` | Génère la config Decap CMS |
 | — | `scripts/gen-morph-rationale.mjs` | Génère les `morph_rationale` manquants via UESP API |

@@ -1,0 +1,24 @@
+{
+  "id": "damage-health-poison-ix",
+  "name": "Damage Health Poison IX",
+  "type": "poison",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Ravage_Health",
+  "effects": [
+    {
+      "description": "Deals 1266 Poison Damage per second for 6.8 seconds."
+    }
+  ],
+  "duration_seconds": 7,
+  "reagents": [
+    "Blessed Thistle",
+    "Corn Flower",
+    "Emetic Russula",
+    "Nightshade",
+    "Nirnroot",
+    "Stinkhorn",
+    "Vile Coagulant",
+    "Violet Coprinus"
+  ],
+  "crafted": true
+}

@@ -1,0 +1,23 @@
+{
+  "id": "orzorgas-smoked-bear-haunch",
+  "name": "Orzorga's Smoked Bear Haunch",
+  "type": "food",
+  "patch_verified": "U49",
+  "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=71059&quality=5&lang=en",
+  "effects": [
+    {
+      "stat": "Maximum Health",
+      "value": 4312
+    },
+    {
+      "stat": "Health Recovery",
+      "value": 406
+    },
+    {
+      "stat": "Magicka Recovery",
+      "value": 369
+    }
+  ],
+  "duration_seconds": 7200,
+  "crafted": true
+}

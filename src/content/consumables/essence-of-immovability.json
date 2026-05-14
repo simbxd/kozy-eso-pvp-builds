@@ -1,0 +1,18 @@
+{
+  "id": "essence-of-immovability",
+  "name": "Essence of Immovability",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Unstoppable",
+  "effects": [
+    {
+      "description": "Become immune to knockback and disabling effects for 15.7 seconds."
+    }
+  ],
+  "reagents": [
+    "Columbine",
+    "Namira's Rot",
+    "Wormwood"
+  ],
+  "crafted": true
+}

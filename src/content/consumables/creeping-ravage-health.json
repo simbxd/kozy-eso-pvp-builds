@@ -1,0 +1,19 @@
+{
+  "id": "creeping-ravage-health",
+  "name": "Creeping Ravage Health",
+  "type": "poison",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Gradual_Ravage_Health",
+  "effects": [
+    {
+      "description": "Deals 10.0 Poison Damage per second for 10.0 seconds."
+    }
+  ],
+  "duration_seconds": 10,
+  "reagents": [
+    "Crimson Nirnroot",
+    "Fleshfly Larva",
+    "Nightshade"
+  ],
+  "crafted": true
+}

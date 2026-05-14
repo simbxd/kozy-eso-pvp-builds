@@ -1,0 +1,18 @@
+{
+  "id": "essence-of-spell-power",
+  "name": "Essence of Spell Power",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Increase_Spell_Power",
+  "effects": [
+    {
+      "description": "Grants Major Sorcery which increases your Spell Damage by 20% for 36.6 seconds."
+    }
+  ],
+  "reagents": [
+    "Corn Flower",
+    "Lady's Smock",
+    "Violet Coprinus"
+  ],
+  "crafted": true
+}

@@ -74,16 +74,11 @@ champion_points:
       priority: 4
 consumables:
   food:
-    name: Bewitched Sugar Skulls
-    stats: Max Health + Max Magicka + Max Stamina
+    id: bewitched-sugar-skulls
     note: Tri-stat food — covers all three resource pools in one slot
   potion:
-    name: Essence of Weapon Power
-    ingredients:
-      - Dragonthorn
-      - Blessed Thistle
-      - Water Hyacinth or Wormwood
-    note: "Grants Major Brutality + restore Stamina "
+    id: essence-of-weapon-power
+    note: Grants Major Brutality + restores Stamina
   mundus:
     stone: The Lady
     effect: Increases Physical and Spell Resistance

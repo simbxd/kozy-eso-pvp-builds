@@ -1,0 +1,19 @@
+{
+  "id": "ghastly-eye-bowl",
+  "name": "Ghastly Eye Bowl",
+  "type": "drink",
+  "patch_verified": "U49",
+  "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=87695&quality=3&lang=en",
+  "effects": [
+    {
+      "stat": "Maximum Magicka",
+      "value": 4592
+    },
+    {
+      "stat": "Magicka Recovery",
+      "value": 459
+    }
+  ],
+  "duration_seconds": 7200,
+  "crafted": true
+}

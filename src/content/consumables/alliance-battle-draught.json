@@ -1,0 +1,14 @@
+{
+  "id": "alliance-battle-draught",
+  "name": "Alliance Battle Draught",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=71073&quality=1&lang=en",
+  "effects": [
+    {
+      "description": "Restore 298 Stamina immediately.\nGrants Major Endurance which increases your Stamina Recovery by 30% for 36.3 seconds.\nAlso grants Major Brutality and Major Savagery, increasing your Weapon Damage by 20% and Weapon Critical by 2629 for 36.3 seconds."
+    }
+  ],
+  "duration_seconds": 36,
+  "crafted": false
+}

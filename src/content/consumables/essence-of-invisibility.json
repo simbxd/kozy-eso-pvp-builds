@@ -1,0 +1,20 @@
+{
+  "id": "essence-of-invisibility",
+  "name": "Essence of Invisibility",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Invisible",
+  "effects": [
+    {
+      "description": "Vanish for [X] seconds."
+    }
+  ],
+  "reagents": [
+    "Blue Entoloma",
+    "Dragon's Bile",
+    "Namira's Rot",
+    "Nirnroot",
+    "Spider Egg"
+  ],
+  "crafted": true
+}

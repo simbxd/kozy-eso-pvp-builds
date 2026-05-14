@@ -1,0 +1,22 @@
+{
+  "id": "essence-of-health",
+  "name": "Essence of Health",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Restore_Health",
+  "effects": [
+    {
+      "description": "Restore 8369 Health immediately. Grants Major Fortitude which increases your Health Recovery by 30% for 36.6 seconds."
+    }
+  ],
+  "reagents": [
+    "Blue Entoloma",
+    "Bugloss",
+    "Butterfly Wing",
+    "Columbine",
+    "Luminous Russula",
+    "Mountain Flower",
+    "Water Hyacinth"
+  ],
+  "crafted": true
+}

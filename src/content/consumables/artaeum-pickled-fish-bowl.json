@@ -1,0 +1,19 @@
+{
+  "id": "artaeum-pickled-fish-bowl",
+  "name": "Artaeum Pickled Fish Bowl",
+  "type": "food",
+  "patch_verified": "U49",
+  "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=139016&quality=4&lang=en",
+  "effects": [
+    {
+      "stat": "Maximum Health",
+      "value": 5414
+    },
+    {
+      "stat": "Maximum Magicka",
+      "value": 4938
+    }
+  ],
+  "duration_seconds": 7200,
+  "crafted": true
+}

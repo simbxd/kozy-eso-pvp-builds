@@ -59,6 +59,29 @@ interface GearItem {
   barLabel?: string;
 }
 
+// Consumable data shape (resolved from collection)
+type ConsumableEffect =
+  | { stat: string; value: number | string }
+  | { description: string };
+
+interface ConsumableData {
+  id: string;
+  name: string;
+  type: string;
+  patch_verified: string;
+  uesp_url: string;
+  effects: ConsumableEffect[];
+  duration_seconds?: number;
+  reagents?: string[];
+  crafted: boolean;
+}
+
+interface ResolvedConsumable {
+  data: ConsumableData | null;
+  note?: string;
+  alt?: string;
+}
+
 interface Props {
   title: string;
   class: string;
@@ -89,10 +112,10 @@ interface Props {
     fitness: CPStar[];
   };
   consumables?: {
-    food:    { name: string; stats: string; note: string; alt?: string };
-    potion:  { name: string; ingredients: string[]; note: string };
-    poison?: { name: string; note: string };
-    mundus?: { stone: string; effect: string; note: string; alt?: { stone: string; effect: string; note: string } };
+    food?:   ResolvedConsumable;
+    potion?: ResolvedConsumable;
+    poison?: ResolvedConsumable;
+    mundus?: { stone: string; effect?: string; note?: string; alt?: { stone: string; effect?: string; note?: string } };
   };
   playstyle?: {
     buffs?: { skill: string; note: string }[];
@@ -466,40 +489,76 @@ const railItems = [`KOZY · ESO PvP`];
       </div>
 
       <div class="supplies__grid">
-        {consumables.food && (
+        {/* ── Food ── */}
+        {consumables.food?.data && (
           <div class="supply-card">
             <div class="supply-card__kicker">Food</div>
-            <h4 class="supply-card__name">{consumables.food.name}</h4>
-            <p class="supply-card__body">{consumables.food.stats}</p>
+            <h4 class="supply-card__name">{consumables.food.data.name}</h4>
+            {/* Stat effects (food/drink: { stat, value } objects) */}
+            <ul class="supply-card__effects">
+              {consumables.food.data.effects.map(fx => (
+                'stat' in fx
+                  ? <li><span class="supply-card__fx-stat">{fx.stat}</span><span class="supply-card__fx-val">{fx.value.toLocaleString()}</span></li>
+                  : <li class="supply-card__fx-desc">{fx.description}</li>
+              ))}
+            </ul>
+            {consumables.food.data.duration_seconds && (
+              <p class="supply-card__meta">
+                Duration · {consumables.food.data.duration_seconds >= 3600
+                  ? `${consumables.food.data.duration_seconds / 3600}h`
+                  : `${Math.round(consumables.food.data.duration_seconds / 60)}m`}
+              </p>
+            )}
+            {consumables.food.note && <p class="supply-card__note">{consumables.food.note}</p>}
             {consumables.food.alt && <p class="supply-card__alt">Alt · {consumables.food.alt}</p>}
           </div>
         )}
 
-        {consumables.potion && (
+        {/* ── Potion ── */}
+        {consumables.potion?.data && (
           <div class="supply-card">
             <div class="supply-card__kicker">Potion</div>
-            <h4 class="supply-card__name">{consumables.potion.name}</h4>
-            <p class="supply-card__body">{consumables.potion.note}</p>
-            <ul class="supply-card__ingredients">
-              {consumables.potion.ingredients.map(ing => <li>{ing}</li>)}
-            </ul>
+            <h4 class="supply-card__name">{consumables.potion.data.name}</h4>
+            {consumables.potion.data.effects.map(fx => (
+              'description' in fx
+                ? <p class="supply-card__body">{fx.description}</p>
+                : <p class="supply-card__body">{fx.stat} · {fx.value}</p>
+            ))}
+            {consumables.potion.data.reagents && consumables.potion.data.reagents.length > 0 && (
+              <ul class="supply-card__ingredients">
+                {consumables.potion.data.reagents.map(r => <li>{r}</li>)}
+              </ul>
+            )}
+            {consumables.potion.note && <p class="supply-card__note">{consumables.potion.note}</p>}
           </div>
         )}
 
-        {consumables.poison && (
+        {/* ── Poison ── */}
+        {consumables.poison?.data && (
           <div class="supply-card">
             <div class="supply-card__kicker">Poison</div>
-            <h4 class="supply-card__name">{consumables.poison.name}</h4>
-            <p class="supply-card__body">{consumables.poison.note}</p>
+            <h4 class="supply-card__name">{consumables.poison.data.name}</h4>
+            {consumables.poison.data.effects.map(fx => (
+              'description' in fx
+                ? <p class="supply-card__body">{fx.description}</p>
+                : <p class="supply-card__body">{fx.stat} · {fx.value}</p>
+            ))}
+            {consumables.poison.data.reagents && consumables.poison.data.reagents.length > 0 && (
+              <ul class="supply-card__ingredients">
+                {consumables.poison.data.reagents.map(r => <li>{r}</li>)}
+              </ul>
+            )}
+            {consumables.poison.note && <p class="supply-card__note">{consumables.poison.note}</p>}
           </div>
         )}
 
+        {/* ── Mundus (text-based, not yet a collection) ── */}
         {consumables.mundus && (
           <div class="supply-card supply-card--mundus">
             <div class="supply-card__kicker">Mundus Stone</div>
             <h4 class="supply-card__name">{consumables.mundus.stone}</h4>
-            <p class="supply-card__body">{consumables.mundus.effect}</p>
-            <p class="supply-card__note">{consumables.mundus.note}</p>
+            {consumables.mundus.effect && <p class="supply-card__body">{consumables.mundus.effect}</p>}
+            {consumables.mundus.note && <p class="supply-card__note">{consumables.mundus.note}</p>}
             {consumables.mundus.alt && (
               <div class="supply-card__alt-block">
                 <span class="supply-card__alt-label">Alt</span>
@@ -1420,6 +1479,57 @@ const railItems = [`KOZY · ESO PvP`];
     line-height: 1.5;
   }
 
+  /* Effects list (food stat chips) */
+  .supply-card__effects {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .supply-card__effects li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    padding: 4px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .supply-card__effects li:last-child { border-bottom: none; }
+
+  .supply-card__fx-stat {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text-muted);
+  }
+
+  .supply-card__fx-val {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--color-mono);
+    white-space: nowrap;
+  }
+
+  .supply-card__fx-desc {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+  }
+
+  .supply-card__meta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+    margin: 0 0 8px;
+    text-transform: uppercase;
+  }
+
+  /* Reagent / ingredient chips */
   .supply-card__ingredients {
     list-style: none;
     padding: 0;

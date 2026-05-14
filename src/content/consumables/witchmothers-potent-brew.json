@@ -1,0 +1,23 @@
+{
+  "id": "witchmothers-potent-brew",
+  "name": "Witchmother's Potent Brew",
+  "type": "drink",
+  "patch_verified": "U49",
+  "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=87697&quality=4&lang=en",
+  "effects": [
+    {
+      "stat": "Maximum Health",
+      "value": 3094
+    },
+    {
+      "stat": "Maximum Magicka",
+      "value": 2856
+    },
+    {
+      "stat": "Magicka Recovery",
+      "value": 315
+    }
+  ],
+  "duration_seconds": 7200,
+  "crafted": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "essence-of-detection",
+  "name": "Essence of Detection",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Detection",
+  "effects": [
+    {
+      "description": "Increase your Stealth Detection by 20 meters for 15.7 seconds."
+    }
+  ],
+  "reagents": [
+    "Corn Flower",
+    "Torchbug Thorax",
+    "White Cap",
+    "Wormwood"
+  ],
+  "crafted": true
+}

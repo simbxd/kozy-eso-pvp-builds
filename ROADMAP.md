@@ -21,6 +21,7 @@
 | v10.0 | M6 terminé : `skill_line_id` ajouté sur les 1208 skills + `skill-lines-index.json` (21 entrées, 7 classes × 3 lignes) ; `fetch-eso-meta.mjs` — scraper UESP wiki pour races (10), mundus stones (13), traits (27), enchants/glyphes (38) ; indices plats dans `src/data/eso/` ; migration one-shot `migrate-add-skill-line-id.mjs` (idempotente) |
 | v10.1 | Race ajoutée sur les builds : collection `races` enregistrée dans `content.config.ts` (Zod) ; champ `race` optionnel dans le frontmatter builds ; section Race dans les pages de build (passives) + cellule masthead + entrée TOC ; Imperial `alliance: "Other"` supporté |
 | v10.2 | Champion Points actifs dans Decap : `cp-stars-index.json` (16 étoiles Warfare + 16 Fitness slottables) ; `gen-decap-config.mjs` charge le JSON et génère des `widget: select` pour le champ `star` dans les listes CP Warfare/Fitness |
+| v10.3 | Collection `consumables` (22 items) : `scripts/fetch-consumables.mjs` — 2 sources (esolog API pour food/draughts, UESP alchemy pages pour potions/poisons) ; `src/content/consumables/` flat JSON ; schéma build migré vers IDs (`{ id, note? }`) ; résolution dans `[slug].astro` ; `Build.astro` enrichi avec effets structurés, durée auto-formatée, chips ingrédients/réactifs |
 
 ---
 
@@ -98,7 +99,8 @@ En Astro 6, la configuration des Content Collections a changé :
 │   │   ├── races/           ← 10 races scrapées UESP (passives, alliance) ✅
 │   │   ├── mundus/          ← 13 mundus stones scrapées UESP ✅
 │   │   ├── traits/          ← 27 traits weapon/armor/jewelry scrapés UESP ✅
-│   │   └── enchants/        ← 38 glyphes weapon/armor/jewelry scrapés UESP ✅
+│   │   ├── enchants/        ← 38 glyphes weapon/armor/jewelry scrapés UESP ✅
+│   │   └── consumables/     ← 22 consommables PvP (food/potions/poisons) ✅
 │   ├── components/
 │   │   ├── SetCard.astro    ← Reusable set display card ✅
 │   │   ├── SkillBar.astro   ← Skill display component 2-bar layout ✅
@@ -136,6 +138,7 @@ En Astro 6, la configuration des Content Collections a changé :
 │   ├── fetch-eso-data.mjs           ← Scrape esolog API → sets + skills JSON ✅
 │   ├── fetch-eso-meta.mjs           ← Scrape UESP wiki → races/mundus/traits/enchants ✅
 │   ├── fetch-skill-icons.mjs        ← Télécharge les icônes PNG des skills via UESP ✅
+│   ├── fetch-consumables.mjs        ← esolog API + UESP alchemy pages → consumables JSON ✅
 │   └── migrate-add-skill-line-id.mjs ← Migration one-shot skill_line_id (idempotente) ✅
 ├── src/data/eso/
 │   ├── sets-index.json              ✅
@@ -343,9 +346,12 @@ champion_points:
   fitness:
     - { star: "Boundless Vitality", points: 50, priority: 1 }
 consumables:
-  food:   { name: "Bewitched Sugar Skulls", stats: "+4621 HP / +4250 Mag / +4250 Stam", note: "BiS survivability", alt: "Artaeum Pickled Fish Bowl" }
-  potion: { name: "Essence of Spell Power", ingredients: ["Cornflower", "Ladys Smock", "Water Hyacinth"], note: "Major Sorcery + Prophecy + restore Mag" }
-  poison: { name: "Drain Health Poison", note: "optionnel" }   # optionnel, omissible
+  # food/potion/poison référencent un ID dans src/content/consumables/
+  # [slug].astro résout les IDs → données complètes (effects, reagents, duration)
+  food:   { id: bewitched-sugar-skulls, note: "BiS survivability", alt: "Artaeum Pickled Fish Bowl" }
+  potion: { id: essence-of-spell-power, note: "Major Sorcery + Prophecy + restore Mag" }
+  poison: { id: drain-health-poison-ix }     # optionnel, omissible
+  mundus: { stone: The Warrior, effect: "Increases Weapon and Spell Damage", note: "..." }
 ```
 
 ---
@@ -628,6 +634,19 @@ Décisions prises pendant le développement, hors roadmap initiale.
 - WebFetch (outil Claude) bloqué par UESP sans User-Agent valide → analyse HTML via `curl` + bash ; scripts node exécutés directement sans passer par /tmp (filesystem Windows)
 **Conventions :** `patch_verified: "U49"`, `existsSync` pour skip les fichiers curated, `Promise.all` pour les fetches parallèles, canaries de validation pour détecter les changements de structure UESP.
 
+### Collection `consumables` — scraper dual-source (v10.3)
+**Décision :** Les consommables ESO (food, potions, poisons) sont scrapés via deux sources distinctes selon le type d'item, pas une seule.
+**Raison :** UESP n'a pas de pages individuelles pour les potions/poisons craftés (`/wiki/Online:Essence_of_Health` → 404 pour tous). L'API esolog (même source que `fetch-eso-data.mjs`) a les IDs pour la food et les Alliance Draughts mais pas pour les potions/poisons craftés. Solution hybride :
+- **Food + Alliance Draughts** : `esolog.uesp.net/exportJson.php?table=minedItem&id={itemId}` → `abilityDesc` parsé (effets stat/valeur, durée)
+- **Potions/poisons craftés** : pages d'effet alchemy UESP (`Online:Restore_Health`, `Online:Ravage_Health`, etc.) → parsing HTML cheerio (last row tier table + section infobox pour les réactifs)
+**Complexités résolues :**
+- Codes couleur ESO dans `abilityDesc` (`|cRRGGBBtext|r`) → strippés par regex
+- Noms UESP non-évidents : Essence of Immovability → `Online:Unstoppable`, Creeping Ravage Health → `Online:Gradual_Ravage_Health`
+- Réactifs contaminés par les noms d'effets dans les tables alchemy → lus depuis l'infobox (`$('table').first()`) plutôt que les tables de formule
+- `Cloudy Damage Health Poison IX` introuvable sur UESP et possiblement inexistant → omis (commenté dans le manifeste ITEMS)
+**Architecture output :** Fichiers flat dans `src/content/consumables/{id}.json` (sans sous-répertoires) — Content Collection Astro direct.
+**Intégration build :** Schéma migré de texte libre (`name`, `stats`, `ingredients`) vers `{ id, note? }` — résolution dans `[slug].astro` comme les sets/skills.
+
 ### Google Fonts render-blocking (M3+)
 **Décision :** Le `@import url(...)` Google Fonts dans `global.css` a été supprimé et remplacé par `<link rel="preconnect">` + `<link rel="stylesheet">` dans `Base.astro`.
 **Raison :** L'`@import` CSS est render-blocking — le navigateur doit d'abord télécharger et parser le CSS avant de commencer le fetch des fonts. Lighthouse mesurait 2 460 ms bloqués. Avec un `<link>` en `<head>`, le fetch démarre en parallèle avec le reste du parsing HTML.
@@ -697,6 +716,6 @@ Pour chaque décision non triviale, expliquer le *pourquoi*. L'auteur doit compr
 
 ---
 
-*Document version: 10.1*
-*Last updated by: Claude Code — après session 7 (2026-05-13)*
-*Next update: Claude Code, après intégration UI des autres données meta ESO (mundus, traits, enchants)*
+*Document version: 10.3*
+*Last updated by: Claude Code — après session 8 (2026-05-14)*
+*Next update: Claude Code, après intégration UI des données meta ESO restantes (mundus, traits, enchants)*

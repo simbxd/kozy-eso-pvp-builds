@@ -1,0 +1,18 @@
+{
+  "id": "essence-of-weapon-critical",
+  "name": "Essence of Weapon Critical",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Weapon_Critical",
+  "effects": [
+    {
+      "description": "Grants you Major Savagery which gives you 2629 Weapon Critical Rating for 36.6 seconds."
+    }
+  ],
+  "reagents": [
+    "Dragonthorn",
+    "Water Hyacinth",
+    "Wormwood"
+  ],
+  "crafted": true
+}

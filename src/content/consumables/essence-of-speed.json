@@ -1,0 +1,20 @@
+{
+  "id": "essence-of-speed",
+  "name": "Essence of Speed",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Speed",
+  "effects": [
+    {
+      "description": "Grants Major Expedition which increases your Movement Speed by 30% for 12 seconds."
+    }
+  ],
+  "reagents": [
+    "Blessed Thistle",
+    "Dragon Rheum",
+    "Namira's Rot",
+    "Powdered Mother of Pearl",
+    "Scrib Jelly"
+  ],
+  "crafted": true
+}

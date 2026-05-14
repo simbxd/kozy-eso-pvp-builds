@@ -1,0 +1,14 @@
+{
+  "id": "alliance-health-draught",
+  "name": "Alliance Health Draught",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=71071&quality=1&lang=en",
+  "effects": [
+    {
+      "description": "Restore 329 Health immediately.\nGrants Major Fortitude which increases your Health Recovery by 30% for 36.3 seconds.\nAlso grants Invisibility and Unstoppable for 8 seconds, granting you immunity to knockback and disabling effects."
+    }
+  ],
+  "duration_seconds": 36,
+  "crafted": false
+}

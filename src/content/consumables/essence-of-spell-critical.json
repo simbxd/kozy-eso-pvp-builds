@@ -1,0 +1,18 @@
+{
+  "id": "essence-of-spell-critical",
+  "name": "Essence of Spell Critical",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Spell_Critical",
+  "effects": [
+    {
+      "description": "Grants Major Prophecy which gives you 2629 Spell Critical Rating for 36.6 seconds."
+    }
+  ],
+  "reagents": [
+    "Lady's Smock",
+    "Namira's Rot",
+    "Water Hyacinth"
+  ],
+  "crafted": true
+}

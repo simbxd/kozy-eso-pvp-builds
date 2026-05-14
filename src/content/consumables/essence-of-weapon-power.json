@@ -1,0 +1,18 @@
+{
+  "id": "essence-of-weapon-power",
+  "name": "Essence of Weapon Power",
+  "type": "potion",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Increase_Weapon_Power",
+  "effects": [
+    {
+      "description": "Grants Major Brutality which increases your Weapon Damage by 20% for 36.6 seconds."
+    }
+  ],
+  "reagents": [
+    "Blessed Thistle",
+    "Dragonthorn",
+    "Stinkhorn"
+  ],
+  "crafted": true
+}

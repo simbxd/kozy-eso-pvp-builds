@@ -1,0 +1,23 @@
+{
+  "id": "drain-health-poison-ix",
+  "name": "Drain Health Poison IX",
+  "type": "poison",
+  "patch_verified": "U49",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Restore_Health",
+  "effects": [
+    {
+      "description": "Drains Health from your target, dealing 1266 Poison Damage to your target and restoring 1266 Health to you per second for 4.9 seconds."
+    }
+  ],
+  "duration_seconds": 5,
+  "reagents": [
+    "Blue Entoloma",
+    "Bugloss",
+    "Butterfly Wing",
+    "Columbine",
+    "Luminous Russula",
+    "Mountain Flower",
+    "Water Hyacinth"
+  ],
+  "crafted": true
+}

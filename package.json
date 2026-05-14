@@ -16,7 +16,8 @@
     "update:decap": "npm run fetch:eso && npm run gen:decap",
     "test": "node --test tests/*.test.mjs",
     "migrate:skill-line-id": "node scripts/migrate-add-skill-line-id.mjs",
-    "fetch:meta": "node scripts/fetch-eso-meta.mjs"
+    "fetch:meta": "node scripts/fetch-eso-meta.mjs",
+    "fetch:consumables": "node scripts/fetch-consumables.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
