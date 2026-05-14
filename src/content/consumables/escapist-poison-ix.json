@@ -3,19 +3,17 @@
   "name": "Escapist Poison IX",
   "type": "poison",
   "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Ravage_Stamina",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Unstoppable",
   "effects": [
     {
-      "description": "Increases the cost of your victim's Stamina abilities by 10% for 10.0 seconds."
+      "description": "Immobilizes your target and grants you Unstoppable, rendering you immune to control effects for 3.9 seconds. This poison will also break you free of ongoing control effects."
     }
   ],
-  "duration_seconds": 10,
+  "duration_seconds": 4,
   "reagents": [
-    "Emetic Russula",
-    "Fleshfly Larva",
-    "Imp Stool",
-    "Luminous Russula",
-    "Stinkhorn"
+    "Columbine",
+    "Namira's Rot",
+    "Wormwood"
   ],
   "crafted": true
 }

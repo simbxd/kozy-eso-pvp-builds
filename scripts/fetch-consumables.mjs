@@ -114,7 +114,7 @@ const ITEMS = [
 
   { source: 'uesp', section: 'poison', type: 'poison',
     name: 'Escapist Poison IX',
-    uespUrl: 'https://en.uesp.net/wiki/Online:Ravage_Stamina' },
+    uespUrl: 'https://en.uesp.net/wiki/Online:Unstoppable' },
 
   // Cloudy Damage Health Poison IX: no UESP page found — excluded
   // Add back once a source is located.
