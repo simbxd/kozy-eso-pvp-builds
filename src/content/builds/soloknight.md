@@ -2,18 +2,15 @@
 title: Solo Knight
 class: Dragonknight
 role: DPS
-resource: Hybrid
 gamemode: PvP
 patch: U50
-author: Kozy
 difficulty: Intermediate
-featured: true
+race: dunmer
 summary: Dragonknight built to hold the line in solo and small-scale PvP. Hard
   to kill while maintaining constant pressure through Molten Whip procs and AoE
   pressure with Incinerate and Heart of Flame.
 pullquote: Hard to kill. Always relevant. The longer the fight goes, the more
   Snake stacks — and the harder you bite.
-race: dunmer
 sets:
   - mighty-chudan
   - rallying-cry
@@ -35,16 +32,10 @@ skills:
     - heart-of-flame
     - heart-and-home
     - temporal-guard
-stats:
-  health:
-    target: 32000
-    note: "minimum viable "
-  magicka:
-    target: 27000
-    note: ""
-  stamina:
-    target: 20000
-    note: needed to break free & roll dodge
+author: Kozy
+resource: Hybrid
+updatedAt: 2026-05-14
+featured: true
 champion_points:
   warfare:
     - star: Cleansing Revival
@@ -92,94 +83,108 @@ gear:
   armor:
     - slot: Head
       type: heavy
+      item: Mighty Chudan Visage
       setId: mighty-chudan
       tier: 2/2
-      trait: impenetrable
-      enchant: glyph-of-prismatic-defense
+      trait: Impenetrable
+      enchant: Multi-Effect
     - slot: Shoulders
       type: medium
+      item: Mighty Chudan Arm Cops
       setId: mighty-chudan
       tier: 2/2
-      trait: impenetrable
-      enchant: glyph-of-prismatic-defense
+      trait: Impenetrable
+      enchant: Multi-Effect
     - slot: Chest
       type: heavy
+      item: Gallant Chain
       setId: armor-of-the-trainee
       tier: 1/3
-      trait: reinforced
-      enchant: glyph-of-prismatic-defense
+      trait: Reinforced
+      enchant: Multi-Effect
     - slot: Hands
       type: light
+      item: Rallying Cry Gloves
       setId: rallying-cry
       tier: 5/5
-      trait: impenetrable
-      enchant: glyph-of-prismatic-defense
+      trait: Impenetrable
+      enchant: Multi-Effect
     - slot: Waist
       type: light
+      item: Rallying Cry Sash
       setId: rallying-cry
       tier: 5/5
-      trait: impenetrable
-      enchant: glyph-of-prismatic-defense
+      trait: Impenetrable
+      enchant: Multi-Effect
     - slot: Legs
       type: medium
+      item: Guards of the Two-Fanged Snake
       setId: two-fanged-snake
       tier: 5/5
-      trait: impenetrable
-      enchant: glyph-of-prismatic-defense
+      trait: Impenetrable
+      enchant: Multi-Effect
     - slot: Feet
       type: medium
+      item: Boots of the Two-Fanged Snake
       setId: two-fanged-snake
       tier: 5/5
-      trait: impenetrable
-      enchant: glyph-of-prismatic-defense
+      trait: Impenetrable
+      enchant: Multi-Effect
   jewelry:
     - slot: Ring I
       type: jewelry
+      item: Ring of the Two-Fanged Snake
       setId: two-fanged-snake
       tier: 5/5
-      trait: triune
-      enchant: glyph-of-increase-physical-harm
+      trait: Triune
+      enchant: Multi-Effect
     - slot: Ring II
       type: mythic
+      item: Markyn Ring of Majesty
       setId: markyn-ring-of-majesty
       tier: 1/1
-      trait: infused-jewelry
-      enchant: glyph-of-increase-physical-harm
+      trait: Infused
+      enchant: Multi-Effect
     - slot: Neck
       type: jewelry
+      item: Rallying Cry Amulet
       setId: rallying-cry
       tier: 5/5
-      trait: triune
-      enchant: glyph-of-increase-physical-harm
+      trait: Triune
+      enchant: Multi-Effect
   weapons:
     - slot: Main Hand
       type: weapon
       barLabel: BAR I
+      item: Mace of the Two-Fanged Snake
       setId: two-fanged-snake
       tier: 5/5
-      trait: nirnhoned-weapon
-      enchant: glyph-of-absorb-magicka
+      trait: Nirnhoned
+      enchant: Absorb Magicka
     - slot: Off Hand
       type: weapon
       barLabel: BAR I
+      item: Mace of the Two-Fanged Snake
       setId: two-fanged-snake
       tier: 5/5
-      trait: sharpened
-      enchant: glyph-of-shock
+      trait: Sharpened
+      enchant: Charged Weapon
     - slot: Backup Main
       type: weapon
       barLabel: BAR II
+      item: Rallying Cry Dagger
       setId: rallying-cry
       tier: 5/5
-      trait: defending
-      enchant: glyph-of-weapon-damage
+      trait: Defending
+      enchant: Weapon Damage
     - slot: Backup Off
       type: weapon
       barLabel: BAR II
+      item: Rallying Cry Shield
       setId: rallying-cry
       tier: 5/5
-      trait: sturdy
-      enchant: glyph-of-prismatic-defense
+      trait: Sturdy
+      enchant: Multi-Effect
 playstyle:
   buffs:
     - skill: Hearth and Home
@@ -209,4 +214,14 @@ playstyle:
       body: Keep good uptime on Resolving Vigor, use your Burst Heal at ~60% HP, not
         20%. Panic heals at critical health are usually too late against burst
         compositions.
+stats:
+  health:
+    target: 32000
+    note: "minimum viable "
+  magicka:
+    target: 27000
+    note: ""
+  stamina:
+    target: 20000
+    note: needed to break free & roll dodge
 ---
