@@ -207,9 +207,10 @@ const pips = Array.from({ length: MAX_PIPS }, (_, i) => i < activePieces);
 
   .bonus {
     display: grid;
-    grid-template-columns: 24px 1fr auto;
+    grid-template-columns: 24px 1fr;
     align-items: baseline;
-    gap: 14px;
+    column-gap: 14px;
+    row-gap: 3px;
     padding: 7px 0;
     border-bottom: 1px solid var(--color-border);
     font-family: var(--font-body);
@@ -229,6 +230,7 @@ const pips = Array.from({ length: MAX_PIPS }, (_, i) => i < activePieces);
   .bonus__stat { color: var(--color-text-muted); }
 
   .bonus__val {
+    grid-column: 2;
     font-family: var(--font-mono);
     font-size: 12px;
     color: var(--color-text-muted);
