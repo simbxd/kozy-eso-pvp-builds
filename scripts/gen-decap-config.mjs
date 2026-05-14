@@ -193,6 +193,7 @@ collections:
         widget: select
         options: [PvP, PvE, Both]
       - { name: patch,      label: Patch,       widget: string,  hint: "ex: U50" }
+      - { name: author,     label: Author,      widget: string,  default: "Kozy", required: false }
       - name: difficulty
         label: Difficulty
         widget: select
@@ -430,6 +431,7 @@ ${enchantOptions('jewelry', 18)}
             widget: list
             fields:
               - { name: slot,     label: Slot,        widget: string }
+              - { name: type,     label: Type,        widget: hidden, default: "weapon" }
               - { name: barLabel, label: Bar,         widget: string, hint: "BAR I ou BAR II" }
               - { name: item,     label: Item Name,   widget: string }
               - name: setId

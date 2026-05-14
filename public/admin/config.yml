@@ -44,6 +44,7 @@ collections:
         widget: select
         options: [PvP, PvE, Both]
       - { name: patch,      label: Patch,       widget: string,  hint: "ex: U50" }
+      - { name: author,     label: Author,      widget: string,  default: "Kozy", required: false }
       - name: difficulty
         label: Difficulty
         widget: select
@@ -3267,22 +3268,28 @@ collections:
                 label: Star
                 widget: select
                 options:
-                  - "Arcane Well"
-                  - "Blessed"
-                  - "Cleansing Revival"
-                  - "Deadly Aim"
-                  - "Duelist's Rebuff"
-                  - "Elemental Aegis"
-                  - "Elfborn"
-                  - "Fighting Finesse"
-                  - "Hardy"
-                  - "Ironclad"
                   - "Master-at-Arms"
-                  - "Piercing"
-                  - "Reaving Blows"
-                  - "Siphoning Spells"
+                  - "Deadly Aim"
+                  - "Biting Aura"
                   - "Thaumaturge"
-                  - "Tireless Discipline"
+                  - "Fighting Finesse"
+                  - "Wrathful Strikes"
+                  - "Exploiter"
+                  - "Force of Nature"
+                  - "Untamed Aggression"
+                  - "Backstabber"
+                  - "Occult Overload"
+                  - "Arcane Supremacy"
+                  - "Endless Endurance"
+                  - "Ironclad"
+                  - "Resilience"
+                  - "Duelist's Rebuff"
+                  - "Unassailable"
+                  - "Enduring Resolve"
+                  - "Cleansing Revival"
+                  - "Focused Mending"
+                  - "Soothing Tide"
+                  - "Swift Renewal"
               - { name: points,   label: Points,   widget: number }
               - { name: priority, label: Priority, widget: number }
           - name: fitness
@@ -3293,21 +3300,17 @@ collections:
                 label: Star
                 widget: select
                 options:
-                  - "Bloody Renewal"
                   - "Boundless Vitality"
-                  - "Bracing Gusts"
-                  - "Celerity"
-                  - "Defiance"
                   - "Fortified"
-                  - "Fortified Brass"
-                  - "Hasty Retreat"
-                  - "Hero's Rebuke"
-                  - "Infused Weapon"
-                  - "Juggernaut"
-                  - "Mystic Tenacity"
-                  - "Pain's Refuge"
                   - "Rejuvenation"
+                  - "Celerity"
+                  - "Bracing Anchor"
+                  - "Bastion"
+                  - "Juggernaut"
+                  - "Survival Instincts"
                   - "Slippery"
+                  - "Pain's Refuge"
+                  - "Relentlessness"
                   - "Sustained by Suffering"
               - { name: points,   label: Points,   widget: number }
               - { name: priority, label: Priority, widget: number }
@@ -4949,6 +4952,7 @@ collections:
             widget: list
             fields:
               - { name: slot,     label: Slot,        widget: string }
+              - { name: type,     label: Type,        widget: hidden, default: "weapon" }
               - { name: barLabel, label: Bar,         widget: string, hint: "BAR I ou BAR II" }
               - { name: item,     label: Item Name,   widget: string }
               - name: setId
