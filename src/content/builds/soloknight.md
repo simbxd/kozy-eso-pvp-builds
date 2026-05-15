@@ -18,7 +18,7 @@ sets:
   - mighty-chudan
   - markyn-ring-of-majesty
   - rallying-cry
-  - twice-fanged-serpent
+  - two-fanged-snake
   - armor-of-the-trainee
 skills:
   bar1:
