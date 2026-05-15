@@ -4,6 +4,7 @@ import Build from '../../layouts/Build.astro';
 import { getFileDates } from '../../lib/git-dates';
 import traitsIndexRaw from '../../data/eso/traits-index.json';
 import enchantsIndexRaw from '../../data/eso/enchants-index.json';
+import mundusIndexRaw from '../../data/eso/mundus-index.json';
 
 export async function getStaticPaths() {
   const builds = await getCollection('builds');
@@ -31,6 +32,7 @@ interface EnchantEntry { id: string; name: string; category: string; rune_prefix
 
 const traitsMap  = Object.fromEntries((traitsIndexRaw  as TraitEntry[]).map(t => [t.id, t]));
 const enchantsMap = Object.fromEntries((enchantsIndexRaw as EnchantEntry[]).map(e => [e.id, e]));
+const mundusEffectMap = new Map((mundusIndexRaw as { name: string; effect: string }[]).map(m => [m.name, m.effect]));
 
 function assertIds(ids: string[], map: Record<string, unknown>, kind: string, buildId: string) {
   const missing = ids.filter(id => !(id in map));
@@ -80,7 +82,16 @@ const resolvedConsumables = rawC ? {
   food:   rawC.food   ? { data: consumablesMap[rawC.food.id]   ?? null, note: rawC.food.note,   alt: rawC.food.alt   } : undefined,
   potion: rawC.potion ? { data: consumablesMap[rawC.potion.id] ?? null, note: rawC.potion.note                       } : undefined,
   poison: rawC.poison ? { data: consumablesMap[rawC.poison.id] ?? null, note: rawC.poison.note                       } : undefined,
-  mundus: rawC.mundus,
+  mundus: rawC.mundus ? {
+    stone:  rawC.mundus.stone,
+    effect: mundusEffectMap.get(rawC.mundus.stone),
+    note:   rawC.mundus.note,
+    alt: rawC.mundus.alt ? {
+      stone:  rawC.mundus.alt.stone,
+      effect: mundusEffectMap.get(rawC.mundus.alt.stone),
+      note:   rawC.mundus.alt.note,
+    } : undefined,
+  } : undefined,
 } : undefined;
 
 // Resolve gear trait/enchant IDs → full data objects

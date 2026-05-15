@@ -91,7 +91,7 @@ const builds = defineCollection({
       food:   z.object({ id: z.string(), note: z.string().optional(), alt: z.string().optional() }).optional(),
       potion: z.object({ id: z.string(), note: z.string().optional() }).optional(),
       poison: z.object({ id: z.string(), note: z.string().optional() }).optional(),
-      mundus: z.object({ stone: z.string(), effect: z.string().optional(), note: z.string().optional(), alt: z.object({ stone: z.string(), effect: z.string().optional(), note: z.string().optional() }).optional() }).optional(),
+      mundus: z.object({ stone: z.string(), note: z.string().optional(), alt: z.object({ stone: z.string(), note: z.string().optional() }).optional() }).optional(),
     }).optional(),
   }),
 });

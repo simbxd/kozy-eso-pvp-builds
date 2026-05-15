@@ -71,11 +71,9 @@ consumables:
     note: Grants Major Brutality + restores Stamina
   mundus:
     stone: The Lady
-    effect: Increases Physical and Spell Resistance
     note: Recommended default for this build
     alt:
       stone: The Warrior
-      effect: Increases Weapon and Spell Damage
       note: Decent damage and healing increase — swap in if survivability is already
         covered
 gear:

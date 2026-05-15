@@ -419,7 +419,6 @@ ${consumableOptions(poisonIndex, 18)}
                 required: false
                 options:
 ${mundusOptions(18)}
-              - { name: effect, label: Effect, widget: string, required: false }
               - { name: note,   label: Note,   widget: string, required: false }
               - name: alt
                 label: Alternative Stone
@@ -432,7 +431,6 @@ ${mundusOptions(18)}
                     required: false
                     options:
 ${mundusOptions(22)}
-                  - { name: effect, label: Effect, widget: string, required: false }
                   - { name: note,   label: Note,   widget: string, required: false }
 
       # Playstyle

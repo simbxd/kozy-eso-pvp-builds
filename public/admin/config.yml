@@ -3401,7 +3401,6 @@ collections:
                   - { label: "The Thief — Increases Weapon and Spell Critical Strike ratings", value: "The Thief" }
                   - { label: "The Tower — Increases Maximum Stamina", value: "The Tower" }
                   - { label: "The Warrior — Increases Weapon Damage", value: "The Warrior" }
-              - { name: effect, label: Effect, widget: string, required: false }
               - { name: note,   label: Note,   widget: string, required: false }
               - name: alt
                 label: Alternative Stone
@@ -3426,7 +3425,6 @@ collections:
                       - { label: "The Thief — Increases Weapon and Spell Critical Strike ratings", value: "The Thief" }
                       - { label: "The Tower — Increases Maximum Stamina", value: "The Tower" }
                       - { label: "The Warrior — Increases Weapon Damage", value: "The Warrior" }
-                  - { name: effect, label: Effect, widget: string, required: false }
                   - { name: note,   label: Note,   widget: string, required: false }
 
       # Playstyle
