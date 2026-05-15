@@ -504,7 +504,11 @@ ${skillNameOptions(18)}
               - name: type
                 label: Weight
                 widget: select
-                options: [heavy, medium, light]
+                options:
+                  - { label: Heavy,   value: heavy }
+                  - { label: Medium,  value: medium }
+                  - { label: Light,   value: light }
+                  - { label: Mythic,  value: mythic }
               - name: setId
                 label: Set
                 widget: select
