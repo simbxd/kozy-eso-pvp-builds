@@ -4652,11 +4652,54 @@ collections:
                   - { label: "Writhing Runeblades — Herald of the Tome", value: "Writhing Runeblades" }
                   - { label: "Y'ffre's Endurance — Wood Elf Skills", value: "Y'ffre's Endurance" }
                   - { label: "Zenas' Empowering Disc — Curative Runeforms", value: "Zenas' Empowering Disc" }
-              - { name: stat,   label: "Stat / Source",  widget: string, hint: "ex: Major Protection, Minor Force · Major Expedition" }
+              - name: stat
+                label: "Stat / Source"
+                widget: select
+                options:
+                  - { label: "Major Brutality", value: "Major Brutality" }
+                  - { label: "Major Sorcery", value: "Major Sorcery" }
+                  - { label: "Major Savagery", value: "Major Savagery" }
+                  - { label: "Major Prophecy", value: "Major Prophecy" }
+                  - { label: "Major Force", value: "Major Force" }
+                  - { label: "Major Berserk", value: "Major Berserk" }
+                  - { label: "Major Protection", value: "Major Protection" }
+                  - { label: "Major Evasion", value: "Major Evasion" }
+                  - { label: "Major Resolve", value: "Major Resolve" }
+                  - { label: "Major Mending", value: "Major Mending" }
+                  - { label: "Major Vitality", value: "Major Vitality" }
+                  - { label: "Major Heroism", value: "Major Heroism" }
+                  - { label: "Major Expedition", value: "Major Expedition" }
+                  - { label: "Minor Brutality", value: "Minor Brutality" }
+                  - { label: "Minor Sorcery", value: "Minor Sorcery" }
+                  - { label: "Minor Savagery", value: "Minor Savagery" }
+                  - { label: "Minor Prophecy", value: "Minor Prophecy" }
+                  - { label: "Minor Force", value: "Minor Force" }
+                  - { label: "Minor Berserk", value: "Minor Berserk" }
+                  - { label: "Minor Courage", value: "Minor Courage" }
+                  - { label: "Minor Protection", value: "Minor Protection" }
+                  - { label: "Minor Resolve", value: "Minor Resolve" }
+                  - { label: "Minor Mending", value: "Minor Mending" }
+                  - { label: "Minor Vitality", value: "Minor Vitality" }
+                  - { label: "Minor Heroism", value: "Minor Heroism" }
+                  - { label: "Minor Expedition", value: "Minor Expedition" }
+                  - { label: "Minor Endurance", value: "Minor Endurance" }
+                  - { label: "Minor Fortitude", value: "Minor Fortitude" }
+                  - { label: "Minor Force · Major Expedition", value: "Minor Force · Major Expedition" }
+                  - { label: "Major Brutality · Minor Expedition", value: "Major Brutality · Minor Expedition" }
+                  - { label: "Minor Berserk · Minor Courage", value: "Minor Berserk · Minor Courage" }
+                  - { label: "Major Brutality · Major Sorcery", value: "Major Brutality · Major Sorcery" }
+                  - { label: "Minor Force · Minor Berserk", value: "Minor Force · Minor Berserk" }
+                  - { label: "Main HoT", value: "Main HoT" }
+                  - { label: "Off HoT", value: "Off HoT" }
+                  - { label: "Ultimate Regen", value: "Ultimate Regen" }
+                  - { label: "Damage Shield", value: "Damage Shield" }
+                  - { label: "Empower", value: "Empower" }
               - { name: note,   label: Note,              widget: string, hint: "Courte note mécanique + consigne d'usage" }
               - name: uptime
                 label: Uptime
                 widget: select
+                required: false
+                default: full
                 options:
                   - { label: "Full — up 24/24",            value: full }
                   - { label: "High — uptime élevé",        value: high }

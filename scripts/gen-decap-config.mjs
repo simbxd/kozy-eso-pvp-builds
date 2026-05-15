@@ -147,6 +147,61 @@ function skillOptions(indent = 12) {
     .join('\n');
 }
 
+// Playstyle stat/source dropdown — covers all Major/Minor buffs + common combos
+const STAT_OPTIONS = [
+  // ── Major — offensif ──────────────────────────────────────────
+  'Major Brutality',
+  'Major Sorcery',
+  'Major Savagery',
+  'Major Prophecy',
+  'Major Force',
+  'Major Berserk',
+  // ── Major — défensif / utilitaire ────────────────────────────
+  'Major Protection',
+  'Major Evasion',
+  'Major Resolve',
+  'Major Mending',
+  'Major Vitality',
+  'Major Heroism',
+  'Major Expedition',
+  // ── Minor — offensif ──────────────────────────────────────────
+  'Minor Brutality',
+  'Minor Sorcery',
+  'Minor Savagery',
+  'Minor Prophecy',
+  'Minor Force',
+  'Minor Berserk',
+  'Minor Courage',
+  // ── Minor — défensif / utilitaire ────────────────────────────
+  'Minor Protection',
+  'Minor Resolve',
+  'Minor Mending',
+  'Minor Vitality',
+  'Minor Heroism',
+  'Minor Expedition',
+  'Minor Endurance',
+  'Minor Fortitude',
+  // ── Combos courants ──────────────────────────────────────────
+  'Minor Force · Major Expedition',
+  'Major Brutality · Minor Expedition',
+  'Minor Berserk · Minor Courage',
+  'Major Brutality · Major Sorcery',
+  'Minor Force · Minor Berserk',
+  // ── Spéciaux ─────────────────────────────────────────────────
+  'Main HoT',
+  'Off HoT',
+  'Ultimate Regen',
+  'Damage Shield',
+  'Empower',
+];
+
+function statOptions(indent = 18) {
+  const pad = ' '.repeat(indent);
+  return STAT_OPTIONS
+    .map(s => `${pad}- { label: "${s}", value: "${s}" }`)
+    .join('\n');
+}
+
 // Playstyle skill select: value = skill name (for icon lookup), label = name + skill line
 function skillNameOptions(indent = 18) {
   const pad = ' '.repeat(indent);
@@ -396,7 +451,11 @@ ${mundusOptions(22)}
                 widget: select
                 options:
 ${skillNameOptions(18)}
-              - { name: stat,   label: "Stat / Source",  widget: string, hint: "ex: Major Protection, Minor Force · Major Expedition" }
+              - name: stat
+                label: "Stat / Source"
+                widget: select
+                options:
+${statOptions(18)}
               - { name: note,   label: Note,              widget: string, hint: "Courte note mécanique + consigne d'usage" }
               - name: uptime
                 label: Uptime

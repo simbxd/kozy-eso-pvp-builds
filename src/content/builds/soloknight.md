@@ -165,7 +165,7 @@ playstyle:
     - skill: Hearth and Home
       stat: Major Protection
       note: decent HoT — keep it below you.
-      uptime: high
+      uptime: full
     - skill: Quick Cloak
       stat: Major Evasion
       note: +30% Move Speed 4s — should be up 24/24.
@@ -173,11 +173,11 @@ playstyle:
     - skill: Resolving Vigor
       stat: Main HoT
       note: keep high uptime.
-      uptime: high
+      uptime: full
     - skill: Race Against Time
       stat: Minor Force · Major Expedition
       note: speed-scaling — kite, don't camp.
-      uptime: situational
+      uptime: full
   combo:
     - skill: Incinerate
       role: Delayed AoE Burst
