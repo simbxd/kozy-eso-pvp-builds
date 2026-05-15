@@ -86,7 +86,8 @@ src/
 │   ├── SkillBar.astro   ← Double barre de skills avec icônes et tooltip morph
 │   ├── StatBlock.astro  ← 3 cartes HP/Mag/Sta
 │   ├── ChampionPoints.astro
-│   └── Consumables.astro
+│   ├── Consumables.astro
+│   └── Playstyle.astro
 ├── layouts/
 │   ├── Base.astro       ← Layout universel (SEO, OG, a11y)
 │   ├── Build.astro      ← Layout page de build (masthead → TOC → sections)
@@ -267,8 +268,8 @@ Types : `Active | Passive | Ultimate`
 
 ## État du projet
 
-**Dernière session :** 2026-05-14
-**Milestone actuel :** v10.6 — Traits & enchants résolus par ID dans la Gear Sheet
+**Dernière session :** 2026-05-15
+**Milestone actuel :** v10.7 — Refonte section Playstyle (Marginalia + iconographic)
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -284,6 +285,7 @@ Types : `Active | Passive | Ultimate`
 - ✅ v10.4 — SEO builds : H1 `{title} — {resource} {class} {gamemode} Build` ; champ `author` (schéma + Decap + masthead) ; `publishedDate` + `updatedAt` affichés en mono sous le H1 ; JSON-LD `Article` + `BreadcrumbList` injectés via `<slot name="head">` dans `Base.astro` ; URLs canoniques depuis `Astro.site`
 - ✅ v10.5 — Dates dérivées du Git log : `src/lib/git-dates.ts` (`getFileDates`) avec cache mémoire et fallback ; `publishedDate`/`updatedAt` supprimés du frontmatter et du schéma Zod ; câblés dans `[slug].astro` builds + guides via `entry.filePath` ; widgets Decap retirés de `config.yml` et `gen-decap-config.mjs`
 - ✅ v10.6 — Traits & enchants résolus par ID dans la Gear Sheet : `trait`/`enchant` migré vers IDs depuis `traits-index.json` et `enchants-index.json` ; validation hard-fail par slot dans `[slug].astro` ; résolution en objets complets avant passage à `Build.astro` ; tooltip CSS-only au survol/focus (nom + `value_range` / `effect`) ; `gen-decap-config.mjs` génère des `widget: select` filtrés par catégorie (armor/jewelry/weapon avec label de catégorie pour boucliers)
+- ✅ v10.7 — Refonte section Playstyle : composant `Playstyle.astro` (buffs avec anneaux SVG uptime full/high/situational + icônes clippées `circle(50%)`, burst combo avec connecteur vertical + badges 01–0N + step final accentué, rules inchangées) ; schema Zod étendu (`playstyleBuffItem` : `+stat +uptime`, `playstyleComboStep` : `skill + skill_alt? + role`) ; `soloknight.md` migré ; `gen-decap-config.mjs` : section playstyle complète (selects skill/skill_alt, uptime enum), `skillNameOptions()`, flag `--local` → `local_backend: true` ; script `gen:decap:local` ajouté
 
 ### Contenu publié
 - **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build complet, sert de template. Race `dunmer` définie — à confirmer par l'auteur.
@@ -310,7 +312,8 @@ Types : `Active | Passive | Ultimate`
 | `fetch:icons` | `scripts/fetch-skill-icons.mjs` | Télécharge les icônes PNG des skills depuis UESP |
 | `fetch:consumables` | `scripts/fetch-consumables.mjs` | Scrape esolog API + UESP alchemy pages → consumables JSON dans `src/content/consumables/` |
 | `migrate:skill-line-id` | `scripts/migrate-add-skill-line-id.mjs` | Backfill `skill_line_id` sur les fichiers skills existants (idempotent) |
-| `gen:decap` | `scripts/gen-decap-config.mjs` | Génère la config Decap CMS |
+| `gen:decap` | `scripts/gen-decap-config.mjs` | Génère la config Decap CMS (production) |
+| `gen:decap:local` | `scripts/gen-decap-config.mjs --local` | Génère la config avec `local_backend: true` (dev local sans OAuth) |
 | — | `scripts/gen-morph-rationale.mjs` | Génère les `morph_rationale` manquants via UESP API |
 | — | `scripts/fix-morph-rationale.mjs` | Corrections batch #1 — 64 rationales |
 | — | `scripts/fix-morph-rationale-2.mjs` | Corrections batch #2 — 103 rationales |
@@ -322,6 +325,19 @@ Types : `Active | Passive | Ultimate`
 - `SKIP_VALIDATION=1` — ignore les canaries de validation
 - Fichiers existants toujours skippés (curated-safe)
 - Canaries : Imperial (races), The Apprentice (mundus), Divines/armor (traits), Glyph of Magicka (enchants)
+
+### Decap CMS — dev local
+Pour accéder au panel Decap sans OAuth en local :
+```powershell
+# Terminal 1
+npx decap-server       # proxy local port 8081
+
+# Terminal 2
+npm run gen:decap:local   # active local_backend: true dans config.yml
+npm run dev
+# → http://localhost:4321/admin/
+```
+Avant commit/deploy : `npm run gen:decap` (remet en mode production).
 
 ### Prochaine étape
 - Configurer le pre-build `git fetch --unshallow || true` dans le dashboard Cloudflare Workers pour que `publishedDate` soit exact (actuellement = `updatedAt` en CI shallow clone)
