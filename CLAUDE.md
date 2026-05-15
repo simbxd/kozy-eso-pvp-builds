@@ -170,7 +170,7 @@ consumables:
   food:   { id: bewitched-sugar-skulls, note: "..." }
   potion: { id: essence-of-weapon-power, note: "..." }
   poison: { id: drain-health-poison-ix }
-  mundus: { stone: The Lady, effect: "...", note: "..." }   # texte libre, pas dans la collection
+  mundus: { stone: The Lady, note: "..." }   # effect résolu automatiquement depuis mundus-index.json au build time
 ```
 `[slug].astro` résout les IDs → données complètes avant de passer à `Build.astro`.
 
@@ -185,6 +185,13 @@ Champs optionnels : `author` (défaut "Kozy"), `pullquote`, `og_image`, `race`, 
 
 Classes valides : `Dragonknight | Sorcerer | Nightblade | Templar | Warden | Necromancer | Arcanist`
 Rôles : `DPS | Healer | Tank` — Resources : `Stamina | Magicka | Hybrid` — Gamemodes : `PvP | PvE | Both` — Difficultés : `Beginner | Intermediate | Advanced`
+
+### Gear — types par section
+- `armor[].type` : `heavy | medium | light | mythic`
+- `jewelry[].type` : `jewelry | mythic`
+- `weapons[].type` : `weapon` (fixe)
+
+La class CSS `gr--{type}` est appliquée automatiquement → `gr--mythic` donne le pin doré + nom en `--color-mythic` pour les deux sections.
 
 ### Set (`src/content/sets/*.json`)
 Types valides : `Light Armor | Medium Armor | Heavy Armor | Jewelry | Weapon | Mixed | Monster | Mythic`
@@ -269,7 +276,7 @@ Types : `Active | Passive | Ultimate`
 ## État du projet
 
 **Dernière session :** 2026-05-15
-**Milestone actuel :** v10.7 — Refonte section Playstyle (Marginalia + iconographic)
+**Milestone actuel :** v10.8 — Decap UX polish + mundus effect auto-résolu + mythic armor
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -286,6 +293,7 @@ Types : `Active | Passive | Ultimate`
 - ✅ v10.5 — Dates dérivées du Git log : `src/lib/git-dates.ts` (`getFileDates`) avec cache mémoire et fallback ; `publishedDate`/`updatedAt` supprimés du frontmatter et du schéma Zod ; câblés dans `[slug].astro` builds + guides via `entry.filePath` ; widgets Decap retirés de `config.yml` et `gen-decap-config.mjs`
 - ✅ v10.6 — Traits & enchants résolus par ID dans la Gear Sheet : `trait`/`enchant` migré vers IDs depuis `traits-index.json` et `enchants-index.json` ; validation hard-fail par slot dans `[slug].astro` ; résolution en objets complets avant passage à `Build.astro` ; tooltip CSS-only au survol/focus (nom + `value_range` / `effect`) ; `gen-decap-config.mjs` génère des `widget: select` filtrés par catégorie (armor/jewelry/weapon avec label de catégorie pour boucliers)
 - ✅ v10.7 — Refonte section Playstyle : composant `Playstyle.astro` (buffs avec anneaux SVG uptime full/high/situational + icônes clippées `circle(50%)`, burst combo avec connecteur vertical + badges 01–0N + step final accentué, rules inchangées) ; schema Zod étendu (`playstyleBuffItem` : `+stat +uptime`, `playstyleComboStep` : `skill + skill_alt? + role`) ; `soloknight.md` migré ; `gen-decap-config.mjs` : section playstyle complète (selects skill/skill_alt, uptime enum), `skillNameOptions()`, flag `--local` → `local_backend: true` ; script `gen:decap:local` ajouté
+- ✅ v10.8 — Decap UX polish + données auto-résolues : `uptime` optionnel avec défaut `full` (Zod `.default('full')`) ; champ `stat` playstyle → `widget: select` (41 options Major/Minor + combos) ; mundus `effect` supprimé du frontmatter et du schema — résolu au build time depuis `mundus-index.json` via `mundusEffectMap` dans `[slug].astro` ; `armor[].type` supporte désormais `mythic` (Zod + Decap select)
 
 ### Contenu publié
 - **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build complet, sert de template. Race `dunmer` définie — à confirmer par l'auteur.

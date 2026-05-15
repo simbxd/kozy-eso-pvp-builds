@@ -1,5 +1,5 @@
 # Kozy ESO PvP Builds — Project Roadmap
-**For Claude Code | Version 10.0**
+**For Claude Code | Version 10.8**
 **Owner:** Kozy | **Developer:** Claude Code
 **Note:** This is both a real project and a learning experience for the owner. Claude Code must explain its decisions, not just execute them. Each task is an opportunity to build understanding.
 
@@ -26,6 +26,7 @@
 | v10.5 | Dates dérivées du Git log : `src/lib/git-dates.ts` (`getFileDates`) avec cache mémoire et fallback ; `publishedDate`/`updatedAt` supprimés du frontmatter et du schéma Zod ; câblés dans `[slug].astro` builds + guides via `entry.filePath` ; widgets Decap retirés |
 | v10.6 | Traits & enchants résolus par ID dans la Gear Sheet : `trait`/`enchant` migré vers IDs (`traits-index.json` / `enchants-index.json`) ; validation hard-fail par slot dans `[slug].astro` ; résolution en objets complets (`traitData`, `enchantData`) ; tooltip CSS-only au survol/focus (nom résolu + `value_range` / `effect`) ; `gen-decap-config.mjs` génère des `widget: select` filtrés par catégorie, avec label `(armor)`/`(weapon)` dans le dropdown weapons pour les boucliers |
 | v10.7 | Refonte section Playstyle — Marginalia + iconographic : `Playstyle.astro` (buffs + anneaux SVG uptime, combo + connecteur vertical + step final accentué, rules inchangées) ; schema Zod étendu (`stat`, `uptime`, `skill_alt?`) ; `gen-decap-config.mjs` section playstyle complète + `skillNameOptions()` + flag `--local` (`local_backend: true`) ; script `gen:decap:local` |
+| v10.8 | Decap UX polish + données auto-résolues : `uptime` optionnel `.default('full')` ; `stat` playstyle → select 41 options (Major/Minor buffs + combos) ; mundus `effect` supprimé du frontmatter, résolu au build time depuis `mundus-index.json` ; `armor[].type` supporte `mythic` |
 
 ---
 
