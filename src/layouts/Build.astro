@@ -2,6 +2,7 @@
 import Base from './Base.astro';
 import SetCard from '../components/SetCard.astro';
 import SkillBar from '../components/SkillBar.astro';
+import Playstyle from '../components/Playstyle.astro';
 import cpStarsIndex from '../data/eso/cp-stars-index.json';
 
 interface Bonus {
@@ -127,8 +128,8 @@ interface Props {
     mundus?: { stone: string; effect?: string; note?: string; alt?: { stone: string; effect?: string; note?: string } };
   };
   playstyle?: {
-    buffs?: { skill: string; note: string }[];
-    combo?: string[];
+    buffs?: { skill: string; stat: string; note: string; uptime: 'full' | 'high' | 'situational' }[];
+    combo?: { skill: string; skill_alt?: string; role: string }[];
     rules?: { title: string; body: string }[];
   };
   race?: RaceData | null;
@@ -375,46 +376,7 @@ const railItems = [`KOZY · ESO PvP`];
       </div>
 
       <div class="prose">
-      {playstyle!.buffs && playstyle!.buffs.length > 0 && (
-        <div class="ps-subsection">
-          <div class="ps-sub-title">Buffs &amp; uptimes</div>
-          <div class="ps-buffs">
-            {playstyle!.buffs.map(item => (
-              <div class="ps-buff">
-                <span class="ps-buff__skill">{item.skill}</span>
-                <span class="ps-buff__note">{item.note}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {playstyle!.combo && playstyle!.combo.length > 0 && (
-        <div class="ps-subsection">
-          <div class="ps-sub-title">Burst combo</div>
-          <div class="ps-sequence">
-            {playstyle!.combo.map((step, i) => (
-              <div class="ps-step">
-                <div class="ps-step__num">{i + 1}</div>
-                <div class="ps-step__body">
-                  <div class="ps-step__desc">{step}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {playstyle!.rules && playstyle!.rules.length > 0 && (
-        <div class="ps-rules">
-          {playstyle!.rules.map(rule => (
-            <div class="ps-rule">
-              <div class="ps-rule__title">{rule.title}</div>
-              <div class="ps-rule__body">{rule.body}</div>
-            </div>
-          ))}
-        </div>
-      )}
+        <Playstyle buffs={playstyle!.buffs} combo={playstyle!.combo} rules={playstyle!.rules} />
       </div>{/* /.prose */}
     </section>
   )}
@@ -1130,110 +1092,6 @@ const railItems = [`KOZY · ESO PvP`];
     .kz-stat__v { font-size: 30px; }
   }
 
-  /* ── playstyle — sub-section header ────────────────────── */
-  .prose :global(.ps-subsection) {
-    margin-bottom: 40px;
-  }
-
-  .prose :global(.ps-sub-title) {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-    margin-bottom: 16px;
-  }
-
-  /* ── playstyle — buffs & uptimes ────────────────────────── */
-  .prose :global(.ps-buffs) {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--color-border-2);
-  }
-
-  .prose :global(.ps-buff) {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    padding: 10px 16px;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .prose :global(.ps-buff:last-child) { border-bottom: none; }
-
-  .prose :global(.ps-buff__skill) {
-    font-family: var(--font-display);
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--color-mono);
-    letter-spacing: 0.01em;
-  }
-
-  .prose :global(.ps-buff__note) {
-    font-family: var(--font-body);
-    font-size: 13px;
-    font-style: italic;
-    color: var(--color-text-muted);
-    line-height: 1.4;
-  }
-
-  /* ── playstyle — burst combo (numbered sequence) ────────── */
-  .prose :global(.ps-sequence) {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    position: relative;
-  }
-
-  /* vertical connecting line */
-  .prose :global(.ps-sequence::before) {
-    content: '';
-    position: absolute;
-    left: 18px;
-    top: 36px;
-    bottom: 36px;
-    width: 1px;
-    background: linear-gradient(to bottom, var(--color-accent), rgba(139,92,246,0.15));
-  }
-
-  .prose :global(.ps-step) {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    padding: 16px 0;
-    position: relative;
-  }
-
-  .prose :global(.ps-step__num) {
-    flex-shrink: 0;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: var(--color-accent);
-    color: #fff;
-    font-family: var(--font-mono);
-    font-size: 14px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    box-shadow: 0 0 14px rgba(139,92,246,0.45);
-  }
-
-  .prose :global(.ps-step__body) {
-    padding-top: 8px;
-  }
-
-  .prose :global(.ps-step__desc) {
-    font-family: var(--font-body);
-    font-size: 15px;
-    line-height: 1.6;
-    color: var(--color-text-muted);
-  }
-
-
   /* ── playstyle — key rules ──────────────────────────── */
   .prose :global(.ps-rules) {
     display: grid;
@@ -1267,12 +1125,6 @@ const railItems = [`KOZY · ESO PvP`];
   /* ── playstyle — responsive ─────────────────────────── */
   @media (max-width: 860px) {
     .prose :global(.ps-rules) { grid-template-columns: 1fr; }
-  }
-
-  @media (max-width: 560px) {
-    .prose :global(.ps-sequence::before) { display: none; }
-    .prose :global(.ps-step) { gap: 14px; }
-    .prose :global(.ps-step__num) { width: 30px; height: 30px; font-size: 12px; }
   }
 
   /* ── sets grid ──────────────────────────────────────── */

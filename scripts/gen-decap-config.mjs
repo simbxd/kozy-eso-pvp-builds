@@ -23,6 +23,7 @@ const CONSUMABLES_DIR = join(ROOT, 'src/content/consumables');
 const OUT             = join(ROOT, 'public/admin/config.yml');
 
 const log = (...a) => console.log('[gen-decap]', ...a);
+const isLocal = process.argv.includes('--local');
 
 // ---------- Load data ----------
 const setsIndex = JSON.parse(
@@ -146,8 +147,19 @@ function skillOptions(indent = 12) {
     .join('\n');
 }
 
+// Playstyle skill select: value = skill name (for icon lookup), label = name + skill line
+function skillNameOptions(indent = 18) {
+  const pad = ' '.repeat(indent);
+  return skillsIndex
+    .map(s => {
+      const label = s.skill_line ? `${s.name} — ${s.skill_line}` : s.name;
+      return `${pad}- { label: "${label.replace(/"/g, '\\"')}", value: "${s.name.replace(/"/g, '\\"')}" }`;
+    })
+    .join('\n');
+}
+
 // ---------- Config template ----------
-const config = `backend:
+const config = `${isLocal ? 'local_backend: true\n\n' : ''}backend:
   name: github
   repo: simbxd/kozy-eso-pvp-builds
   branch: main
@@ -368,6 +380,57 @@ ${mundusOptions(22)}
                   - { name: effect, label: Effect, widget: string, required: false }
                   - { name: note,   label: Note,   widget: string, required: false }
 
+      # Playstyle
+      - name: playstyle
+        label: Playstyle
+        widget: object
+        required: false
+        fields:
+          - name: buffs
+            label: Buffs & Uptimes
+            widget: list
+            required: false
+            fields:
+              - name: skill
+                label: Skill
+                widget: select
+                options:
+${skillNameOptions(18)}
+              - { name: stat,   label: "Stat / Source",  widget: string, hint: "ex: Major Protection, Minor Force · Major Expedition" }
+              - { name: note,   label: Note,              widget: string, hint: "Courte note mécanique + consigne d'usage" }
+              - name: uptime
+                label: Uptime
+                widget: select
+                options:
+                  - { label: "Full — up 24/24",            value: full }
+                  - { label: "High — uptime élevé",        value: high }
+                  - { label: "Situational — kite / burst", value: situational }
+          - name: combo
+            label: Burst Combo
+            widget: list
+            required: false
+            fields:
+              - name: skill
+                label: Skill
+                widget: select
+                options:
+${skillNameOptions(18)}
+              - name: skill_alt
+                label: "Skill alternatif (optionnel)"
+                widget: select
+                required: false
+                hint: "Renseigner si le joueur a le choix entre deux skills pour ce step"
+                options:
+${skillNameOptions(18)}
+              - { name: role, label: Role, widget: string, hint: "ex: Delayed AoE Burst, Final Burst, Debuff" }
+          - name: rules
+            label: Key Rules
+            widget: list
+            required: false
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: body,  label: Body,  widget: text }
+
       # Gear Sheet
       - name: gear
         label: Gear Sheet
@@ -469,4 +532,4 @@ ${enchantOptions('weapon', 18)}
 `;
 
 await writeFile(OUT, config, 'utf8');
-log(`✓ Written ${OUT} (${(config.length / 1024).toFixed(1)} KB)`);
+log(`✓ Written ${OUT} (${(config.length / 1024).toFixed(1)} KB)${isLocal ? ' [local_backend: true]' : ''}`);

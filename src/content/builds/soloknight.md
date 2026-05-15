@@ -159,20 +159,33 @@ gear:
 playstyle:
   buffs:
     - skill: Hearth and Home
-      note: '"Major Protection" source, decent HoT — keep it below you. '
+      stat: Major Protection
+      note: decent HoT — keep it below you.
+      uptime: high
     - skill: Quick Cloak
-      note: '"Major Evasion" source, +30% Movement speed for 4 seconds. —  should be
-        up 24/24.'
+      stat: Major Evasion
+      note: +30% Move Speed 4s — should be up 24/24.
+      uptime: full
     - skill: Resolving Vigor
-      note: Main HoT — keep high uptime.
+      stat: Main HoT
+      note: keep high uptime.
+      uptime: high
     - skill: Race Against Time
-      note: Minor Force, Major Expedition, speed-scaling — kite, don't camp.
+      stat: Minor Force · Major Expedition
+      note: speed-scaling — kite, don't camp.
+      uptime: situational
   combo:
-    - Incinerate - Delayed AoE Burst
-    - Heart of Flame — Delayed AoE Burst
-    - Disintegrating Dragon Fire - Debuff
-    - Shattering Rocks - Stun your target
-    - Molten whip or Take Flight - Final Burst
+    - skill: Incinerate
+      role: Delayed AoE Burst
+    - skill: Heart of Flame
+      role: Delayed AoE Burst
+    - skill: Disintegrating Dragonfire
+      role: Debuff
+    - skill: Shattering Rocks
+      role: Stun your target
+    - skill: Molten Whip
+      skill_alt: Take Flight
+      role: Final Burst
   rules:
     - title: Don't rush the kill
       body: Every skill you cast outside a window is a tell. Stack your burst, read

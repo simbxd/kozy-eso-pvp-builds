@@ -26,11 +26,26 @@ const consumables = defineCollection({
 
 const cpStar = z.object({ star: z.string(), points: z.number(), priority: z.number() });
 
-const playstyleRule    = z.object({ title: z.string(), body: z.string() });
-const playstyleBuffItem = z.object({ skill: z.string(), note: z.string() });
+const playstyleRule = z.object({ title: z.string(), body: z.string() });
+
+const uptimeCategory = z.enum(['full', 'high', 'situational']);
+
+const playstyleBuffItem = z.object({
+  skill: z.string(),
+  stat: z.string(),
+  note: z.string(),
+  uptime: uptimeCategory,
+});
+
+const playstyleComboStep = z.object({
+  skill: z.string(),
+  skill_alt: z.string().optional(),
+  role: z.string(),
+});
+
 const playstyle = z.object({
   buffs: z.array(playstyleBuffItem).optional(),
-  combo: z.array(z.string()).optional(),
+  combo: z.array(playstyleComboStep).optional(),
   rules: z.array(playstyleRule).optional(),
 }).optional();
 
