@@ -492,6 +492,24 @@ ${enchantOptions('jewelry', 18)}
               - { name: slot,     label: Slot,        widget: string }
               - { name: type,     label: Type,        widget: hidden, default: "weapon" }
               - { name: barLabel, label: Bar,         widget: string, hint: "BAR I ou BAR II" }
+              - name: weapon_type
+                label: Weapon Type
+                widget: select
+                required: false
+                options:
+                  - Sword
+                  - Axe
+                  - Mace
+                  - Dagger
+                  - Greatsword
+                  - Battle Axe
+                  - Maul
+                  - Shield
+                  - Bow
+                  - Inferno Staff
+                  - Ice Staff
+                  - Lightning Staff
+                  - Restoration Staff
               - name: setId
                 label: Set
                 widget: select

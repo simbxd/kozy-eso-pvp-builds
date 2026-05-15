@@ -65,6 +65,7 @@ interface GearItem {
   traitData?: TraitData | null;
   enchantData?: EnchantData | null;
   barLabel?: string;
+  weapon_type?: string;
 }
 
 // Consumable data shape (resolved from collection)
@@ -527,6 +528,7 @@ const railItems = [`KOZY · ESO PvP`];
                     <span class="gr__pin" aria-hidden="true"></span>
                     {row.slot}
                     <span class="gr__bar">{row.barLabel}</span>
+                    {row.weapon_type && <span class="gr__wtype">{row.weapon_type}</span>}
                   </td>
                   <td class="gr__item">
                     <span class="gr__name">{row.setName ?? row.setId}</span>
@@ -1287,6 +1289,17 @@ const railItems = [`KOZY · ESO PvP`];
     color: var(--color-text-muted);
     padding: 2px 6px;
     border: 1px solid var(--color-border-2);
+  }
+
+  .gr__wtype {
+    display: block;
+    margin-top: 3px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    opacity: 0.75;
   }
 
   .gr__item { line-height: 1.3; }

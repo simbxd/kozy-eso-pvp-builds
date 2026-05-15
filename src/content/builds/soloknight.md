@@ -135,24 +135,28 @@ gear:
     - slot: Main Hand
       type: weapon
       barLabel: BAR I
+      weapon_type: Mace
       setId: two-fanged-snake
       trait: nirnhoned-weapon
       enchant: glyph-of-absorb-magicka
     - slot: Off Hand
       type: weapon
       barLabel: BAR I
+      weapon_type: Mace
       setId: two-fanged-snake
       trait: sharpened
       enchant: glyph-of-shock
     - slot: Backup Main
       type: weapon
       barLabel: BAR II
+      weapon_type: Sword
       setId: rallying-cry
       trait: defending
       enchant: glyph-of-weapon-damage
     - slot: Backup Off
       type: weapon
       barLabel: BAR II
+      weapon_type: Shield
       setId: rallying-cry
       trait: sturdy
       enchant: glyph-of-prismatic-defense

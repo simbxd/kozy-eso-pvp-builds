@@ -7839,7 +7839,7 @@ collections:
                   - { label: "Sturdy", value: "sturdy" }
                   - { label: "Impenetrable", value: "impenetrable" }
                   - { label: "Reinforced", value: "reinforced" }
-                  - { label: "Well-fitted", value: "well-fitted" }
+                  - { label: "Well-Fitted", value: "well-fitted" }
                   - { label: "Training", value: "training-armor" }
                   - { label: "Infused", value: "infused-armor" }
                   - { label: "Invigorating", value: "invigorating" }
@@ -8622,6 +8622,24 @@ collections:
               - { name: slot,     label: Slot,        widget: string }
               - { name: type,     label: Type,        widget: hidden, default: "weapon" }
               - { name: barLabel, label: Bar,         widget: string, hint: "BAR I ou BAR II" }
+              - name: weapon_type
+                label: Weapon Type
+                widget: select
+                required: false
+                options:
+                  - Sword
+                  - Axe
+                  - Mace
+                  - Dagger
+                  - Greatsword
+                  - Battle Axe
+                  - Maul
+                  - Shield
+                  - Bow
+                  - Inferno Staff
+                  - Ice Staff
+                  - Lightning Staff
+                  - Restoration Staff
               - name: setId
                 label: Set
                 widget: select
@@ -9355,7 +9373,7 @@ collections:
                   - { label: "Sturdy (armor)", value: "sturdy" }
                   - { label: "Impenetrable (armor)", value: "impenetrable" }
                   - { label: "Reinforced (armor)", value: "reinforced" }
-                  - { label: "Well-fitted (armor)", value: "well-fitted" }
+                  - { label: "Well-Fitted (armor)", value: "well-fitted" }
                   - { label: "Training (armor)", value: "training-armor" }
                   - { label: "Infused (armor)", value: "infused-armor" }
                   - { label: "Invigorating (armor)", value: "invigorating" }
