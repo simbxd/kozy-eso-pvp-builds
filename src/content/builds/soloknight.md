@@ -35,6 +35,16 @@ skills:
     - heart-of-flame
     - heart-and-home
     - temporal-guard
+stats:
+  health:
+    target: 32000
+    note: "minimum viable "
+  magicka:
+    target: 27000
+    note: ""
+  stamina:
+    target: 20000
+    note: needed to break free & roll dodge
 champion_points:
   warfare:
     - star: Cleansing Revival
@@ -70,12 +80,54 @@ consumables:
     id: essence-of-weapon-power
     note: Grants Major Brutality + restores Stamina
   mundus:
-    stone: The Lady
+    stone: The Atronach
     note: Recommended default for this build
     alt:
       stone: The Warrior
       note: Decent damage and healing increase — swap in if survivability is already
         covered
+playstyle:
+  buffs:
+    - skill: Hearth and Home
+      stat: Major Protection
+      note: decent HoT — keep it below you.
+      uptime: full
+    - skill: Quick Cloak
+      stat: Major Evasion
+      note: +30% Move Speed 4s — should be up 24/24.
+      uptime: full
+    - skill: Resolving Vigor
+      stat: Main HoT
+      note: keep high uptime.
+      uptime: full
+    - skill: Race Against Time
+      stat: Minor Force · Major Expedition
+      note: speed-scaling — kite, don't camp.
+      uptime: full
+  combo:
+    - skill: Incinerate
+      role: Delayed AoE Burst
+    - skill: Heart of Flame
+      role: Delayed AoE Burst
+    - skill: Disintegrating Dragonfire
+      role: Debuff
+    - skill: Shattering Rocks
+      role: Stun your target
+    - skill: Molten Whip
+      skill_alt: Take Flight
+      role: Final Burst
+  rules:
+    - title: Don't rush the kill
+      body: Every skill you cast outside a window is a tell. Stack your burst, read
+        the opening, release everything at once — if they survive, reset and
+        wait for the next one.
+    - title: Break free immediately
+      body: CC is the kill condition in solo PvP. Break the moment you're grabbed — do
+        not stand still.
+    - title: Heal before panic
+      body: Keep good uptime on Resolving Vigor, use your Burst Heal at ~60% HP, not
+        20%. Panic heals at critical health are usually too late against burst
+        compositions.
 gear:
   armor:
     - slot: Head
@@ -158,56 +210,4 @@ gear:
       setId: rallying-cry
       trait: sturdy
       enchant: glyph-of-prismatic-defense
-playstyle:
-  buffs:
-    - skill: Hearth and Home
-      stat: Major Protection
-      note: decent HoT — keep it below you.
-      uptime: full
-    - skill: Quick Cloak
-      stat: Major Evasion
-      note: +30% Move Speed 4s — should be up 24/24.
-      uptime: full
-    - skill: Resolving Vigor
-      stat: Main HoT
-      note: keep high uptime.
-      uptime: full
-    - skill: Race Against Time
-      stat: Minor Force · Major Expedition
-      note: speed-scaling — kite, don't camp.
-      uptime: full
-  combo:
-    - skill: Incinerate
-      role: Delayed AoE Burst
-    - skill: Heart of Flame
-      role: Delayed AoE Burst
-    - skill: Disintegrating Dragonfire
-      role: Debuff
-    - skill: Shattering Rocks
-      role: Stun your target
-    - skill: Molten Whip
-      skill_alt: Take Flight
-      role: Final Burst
-  rules:
-    - title: Don't rush the kill
-      body: Every skill you cast outside a window is a tell. Stack your burst, read
-        the opening, release everything at once — if they survive, reset and
-        wait for the next one.
-    - title: Break free immediately
-      body: CC is the kill condition in solo PvP. Break the moment you're grabbed — do
-        not stand still.
-    - title: Heal before panic
-      body: Keep good uptime on Resolving Vigor, use your Burst Heal at ~60% HP, not
-        20%. Panic heals at critical health are usually too late against burst
-        compositions.
-stats:
-  health:
-    target: 32000
-    note: "minimum viable "
-  magicka:
-    target: 27000
-    note: ""
-  stamina:
-    target: 20000
-    note: needed to break free & roll dodge
 ---
