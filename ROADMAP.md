@@ -25,6 +25,7 @@
 | v10.4 | SEO builds : H1 contextuel `{title} — {resource} {class} {gamemode} Build` ; champ `author` (schéma Zod + Decap widget + masthead + JSON-LD) ; `publishedDate` + `updatedAt` affichés en format mono sous le H1 ; JSON-LD `Article` + `BreadcrumbList` injectés via `<slot name="head">` dans `Base.astro` ; URLs canoniques depuis `Astro.site` (pas de hardcode domaine) |
 | v10.5 | Dates dérivées du Git log : `src/lib/git-dates.ts` (`getFileDates`) avec cache mémoire et fallback ; `publishedDate`/`updatedAt` supprimés du frontmatter et du schéma Zod ; câblés dans `[slug].astro` builds + guides via `entry.filePath` ; widgets Decap retirés |
 | v10.6 | Traits & enchants résolus par ID dans la Gear Sheet : `trait`/`enchant` migré vers IDs (`traits-index.json` / `enchants-index.json`) ; validation hard-fail par slot dans `[slug].astro` ; résolution en objets complets (`traitData`, `enchantData`) ; tooltip CSS-only au survol/focus (nom résolu + `value_range` / `effect`) ; `gen-decap-config.mjs` génère des `widget: select` filtrés par catégorie, avec label `(armor)`/`(weapon)` dans le dropdown weapons pour les boucliers |
+| v10.7 | Refonte section Playstyle — Marginalia + iconographic : `Playstyle.astro` (buffs + anneaux SVG uptime, combo + connecteur vertical + step final accentué, rules inchangées) ; schema Zod étendu (`stat`, `uptime`, `skill_alt?`) ; `gen-decap-config.mjs` section playstyle complète + `skillNameOptions()` + flag `--local` (`local_backend: true`) ; script `gen:decap:local` |
 
 ---
 
@@ -112,6 +113,7 @@ En Astro 6, la configuration des Content Collections a changé :
 │   │   ├── StatBlock.astro  ← 3 stat cards (Health/Magicka/Stamina) ✅
 │   │   ├── ChampionPoints.astro ← Grille constellations avec priorités ✅
 │   │   ├── Consumables.astro ← Food / Potion / Poison ✅
+│   │   ├── Playstyle.astro   ← Buffs + anneaux SVG uptime, Burst Combo, Rules ✅
 │   │   ├── Header.astro     ← Dropdown CSS-only Builds + nav Guides ✅
 │   │   └── Footer.astro     ✅
 │   ├── layouts/
@@ -752,6 +754,6 @@ Pour chaque décision non triviale, expliquer le *pourquoi*. L'auteur doit compr
 
 ---
 
-*Document version: 10.4*
-*Last updated by: Claude Code — 2026-05-14*
-*Next update: après remplissage des `publishedDate` + intégration UI des données meta ESO restantes (traits, enchants)*
+*Document version: 10.7*
+*Last updated by: Claude Code — 2026-05-15*
+*Next update: intégration UI des données meta ESO restantes (traits, enchants) ; rédaction de nouveaux builds*
