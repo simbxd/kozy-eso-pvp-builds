@@ -287,8 +287,8 @@ Types : `Active | Passive | Ultimate`
 - ✅ M5 — Données skills complètes (389 morphs avec `morph_rationale`, audit intégrité)
 - ✅ M6 — Données meta ESO scrapées (races, mundus, traits, enchants + skill_line_id)
 - ✅ v10.1 — Collection `races` enregistrée Zod ; champ `race` optionnel dans builds ; Race UI (masthead + section passives + TOC)
-- ✅ v10.2 — Champion Points actifs : `cp-stars-index.json` (16 warfare + 16 fitness) ; dropdown Decap CMS sur le champ `star` ; `gen-decap-config.mjs` mis à jour
-- ✅ v10.3 — Collection `consumables` (22 items) : `fetch-consumables.mjs` (esolog API + UESP alchemy pages) ; build schema migré vers IDs ; `Build.astro` enrichi (effets structurés, réactifs, durée, ingrédients)
+- ✅ v10.2 — Champion Points actifs : `cp-stars-index.json` (22 warfare + 12 fitness) ; dropdown Decap CMS sur le champ `star` ; `gen-decap-config.mjs` mis à jour
+- ✅ v10.3 — Collection `consumables` (23 items) : `fetch-consumables.mjs` (esolog API + UESP alchemy pages) ; build schema migré vers IDs ; `Build.astro` enrichi (effets structurés, réactifs, durée, ingrédients)
 - ✅ v10.4 — SEO builds : H1 `{title} — {resource} {class} {gamemode} Build` ; champ `author` (schéma + Decap + masthead) ; `publishedDate` + `updatedAt` affichés en mono sous le H1 ; JSON-LD `Article` + `BreadcrumbList` injectés via `<slot name="head">` dans `Base.astro` ; URLs canoniques depuis `Astro.site`
 - ✅ v10.5 — Dates dérivées du Git log : `src/lib/git-dates.ts` (`getFileDates`) avec cache mémoire et fallback ; `publishedDate`/`updatedAt` supprimés du frontmatter et du schéma Zod ; câblés dans `[slug].astro` builds + guides via `entry.filePath` ; widgets Decap retirés de `config.yml` et `gen-decap-config.mjs`
 - ✅ v10.6 — Traits & enchants résolus par ID dans la Gear Sheet : `trait`/`enchant` migré vers IDs depuis `traits-index.json` et `enchants-index.json` ; validation hard-fail par slot dans `[slug].astro` ; résolution en objets complets avant passage à `Build.astro` ; tooltip CSS-only au survol/focus (nom + `value_range` / `effect`) ; `gen-decap-config.mjs` génère des `widget: select` filtrés par catégorie (armor/jewelry/weapon avec label de catégorie pour boucliers)
@@ -296,9 +296,8 @@ Types : `Active | Passive | Ultimate`
 - ✅ v10.8 — Decap UX polish + données auto-résolues : `uptime` optionnel avec défaut `full` (Zod `.default('full')`) ; champ `stat` playstyle → `widget: select` (41 options Major/Minor + combos) ; mundus `effect` supprimé du frontmatter et du schema — résolu au build time depuis `mundus-index.json` via `mundusEffectMap` dans `[slug].astro` ; `armor[].type` supporte désormais `mythic` (Zod + Decap select) ; bug fix soloknight : `twice-fanged-serpent` → `two-fanged-snake` dans `sets[]` (deux sets distincts, gear utilisait déjà le bon ID)
 
 ### Contenu publié
-- **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build complet, sert de template. Race `dunmer` définie — à confirmer par l'auteur.
+- **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build, sert de template canonique. Race `dunmer` — à confirmer par l'auteur. Patch `U50`.
 - **2 guides :** Penetration Caps Explained · Critical Resistance & Critical Damage in PvP
-- **6 builds placeholder :** Sorcerer, Nightblade, Templar, Warden, Necromancer, Arcanist (à remplacer avant lancement public)
 - **713 sets** — base exhaustive, 707 vérifiés U49, 6 encore en "Gold Road (Q2 2024)" (Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee, Mother's Sorrow) — à re-vérifier contre U49
 - **1208 skills** avec `morph_rationale` complet + `skill_line_id` — toutes classes, Alliance War, World (Vampire/Werewolf/Soul Magic)
 - **10 races** — passives max-rank, alliance, UESP URL — vérifiées U49
@@ -322,6 +321,7 @@ Types : `Active | Passive | Ultimate`
 | `migrate:skill-line-id` | `scripts/migrate-add-skill-line-id.mjs` | Backfill `skill_line_id` sur les fichiers skills existants (idempotent) |
 | `gen:decap` | `scripts/gen-decap-config.mjs` | Génère la config Decap CMS (production) |
 | `gen:decap:local` | `scripts/gen-decap-config.mjs --local` | Génère la config avec `local_backend: true` (dev local sans OAuth) |
+| `update:decap` | `fetch:eso && gen:decap` | Shortcut — rafraîchit les données ESO puis régénère la config Decap |
 | — | `scripts/gen-morph-rationale.mjs` | Génère les `morph_rationale` manquants via UESP API |
 | — | `scripts/fix-morph-rationale.mjs` | Corrections batch #1 — 64 rationales |
 | — | `scripts/fix-morph-rationale-2.mjs` | Corrections batch #2 — 103 rationales |
