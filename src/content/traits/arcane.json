@@ -1,9 +1,1 @@
-{
-  "id": "arcane",
-  "name": "Arcane",
-  "category": "jewelry",
-  "effect": "Increase Maximum Magicka by …",
-  "value_range": "767 - 877",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Arcane"
-}
+{"id":"arcane","name":"Arcane","category":"jewelry","effect":"Increases your Maximum Magicka.","value_range":"767 - 877","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Arcane"}

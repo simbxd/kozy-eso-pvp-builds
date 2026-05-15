@@ -1,9 +1,1 @@
-{
-  "id": "bloodthirsty",
-  "name": "Bloodthirsty",
-  "category": "jewelry",
-  "effect": "Increase Weapon and Spell Damage against enemies under 90% health by up to …",
-  "value_range": "210 - 350",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Bloodthirsty"
-}
+{"id":"bloodthirsty","name":"Bloodthirsty","category":"jewelry","effect":"Increases your damage against enemies below 90% Health.","value_range":"210 - 350","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Bloodthirsty"}

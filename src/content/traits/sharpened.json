@@ -1,9 +1,1 @@
-{
-  "id": "sharpened",
-  "name": "Sharpened",
-  "category": "weapon",
-  "effect": "Increase Physical and Spell Penetration by …",
-  "value_range": "1H: 1428 - 1638 / 2H: 2856 - 3276",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Sharpened"
-}
+{"id":"sharpened","name":"Sharpened","category":"weapon","effect":"Increases your Physical and Spell Penetration.","value_range":"1H: 1428 - 1638 / 2H: 2856 - 3276","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Sharpened"}

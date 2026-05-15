@@ -2,7 +2,7 @@
   "id": "infused-weapon",
   "name": "Infused",
   "category": "weapon",
-  "effect": "Increase weapon enchantment effect by … and reduces enchantment cooldown by 50%",
+  "effect": "Increases weapon enchantment effect and reduces its cooldown by 50%.",
   "value_range": "10% - 30%",
   "patch_verified": "U49",
   "uesp_url": "https://en.uesp.net/wiki/Online:Infused"

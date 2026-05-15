@@ -1,9 +1,1 @@
-{
-  "id": "protective",
-  "name": "Protective",
-  "category": "jewelry",
-  "effect": "Increase Spell Resistance and Physical Resistance by …",
-  "value_range": "1053 - 1190",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Protective"
-}
+{"id":"protective","name":"Protective","category":"jewelry","effect":"Increases your Physical and Spell Resistance.","value_range":"1053 - 1190","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Protective"}

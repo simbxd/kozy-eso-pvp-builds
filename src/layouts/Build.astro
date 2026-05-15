@@ -50,7 +50,7 @@ interface RaceData {
 
 interface CPStar { star: string; points: number; priority: number; }
 
-interface TraitData  { id: string; name: string; category: string; value_range: string; }
+interface TraitData  { id: string; name: string; category: string; effect?: string; value_range: string; }
 interface EnchantData { id: string; name: string; category: string; rune_prefix: string; effect: string; }
 
 interface GearItem {
@@ -447,7 +447,10 @@ const railItems = [`KOZY · ESO PvP`];
                     {row.traitData ? (
                       <span class="gr__meta-wrap">
                         <span class="gr__meta-name">{row.traitData.name}</span>
-                        <span class="gr__meta-tip" role="tooltip">{row.traitData.value_range}</span>
+                        <span class="gr__meta-tip" role="tooltip">
+                          {row.traitData.effect && <span class="gr__tip-effect">{row.traitData.effect}</span>}
+                          <span class="gr__tip-range">{row.traitData.value_range}</span>
+                        </span>
                       </span>
                     ) : row.trait}
                   </td>
@@ -486,7 +489,10 @@ const railItems = [`KOZY · ESO PvP`];
                     {row.traitData ? (
                       <span class="gr__meta-wrap">
                         <span class="gr__meta-name">{row.traitData.name}</span>
-                        <span class="gr__meta-tip" role="tooltip">{row.traitData.value_range}</span>
+                        <span class="gr__meta-tip" role="tooltip">
+                          {row.traitData.effect && <span class="gr__tip-effect">{row.traitData.effect}</span>}
+                          <span class="gr__tip-range">{row.traitData.value_range}</span>
+                        </span>
                       </span>
                     ) : row.trait}
                   </td>
@@ -529,7 +535,10 @@ const railItems = [`KOZY · ESO PvP`];
                     {row.traitData ? (
                       <span class="gr__meta-wrap">
                         <span class="gr__meta-name">{row.traitData.name}</span>
-                        <span class="gr__meta-tip" role="tooltip">{row.traitData.value_range}</span>
+                        <span class="gr__meta-tip" role="tooltip">
+                          {row.traitData.effect && <span class="gr__tip-effect">{row.traitData.effect}</span>}
+                          <span class="gr__tip-range">{row.traitData.value_range}</span>
+                        </span>
                       </span>
                     ) : row.trait}
                   </td>
@@ -1356,7 +1365,20 @@ const railItems = [`KOZY · ESO PvP`];
   }
 
   .gr__meta-wrap:hover .gr__meta-tip,
-  .gr__meta-wrap:focus-within .gr__meta-tip { display: block; }
+  .gr__meta-wrap:focus-within .gr__meta-tip { display: flex; flex-direction: column; gap: 4px; }
+
+  .gr__tip-effect {
+    color: var(--color-text-muted);
+    font-size: 11px;
+    line-height: 1.45;
+  }
+
+  .gr__tip-range {
+    color: var(--color-mono);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+  }
 
   @media (max-width: 700px) {
     .gear__tbl thead { display: none; }

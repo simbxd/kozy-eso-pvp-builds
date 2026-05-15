@@ -1,9 +1,1 @@
-{
-  "id": "decisive",
-  "name": "Decisive",
-  "category": "weapon",
-  "effect": "When you gain Ultimate you have a … chance to gain 1 additional ultimate.",
-  "value_range": "1H: 19.1% - 27.5% / 2H: 38.2% - 55%",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Decisive"
-}
+{"id":"decisive","name":"Decisive","category":"weapon","effect":"Chance to gain 1 Ultimate on a Light or Heavy Attack.","value_range":"1H: 19.1% - 27.5% / 2H: 38.2% - 55%","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Decisive"}

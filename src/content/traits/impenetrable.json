@@ -1,9 +1,1 @@
-{
-  "id": "impenetrable",
-  "name": "Impenetrable",
-  "category": "armor",
-  "effect": "Increase your Critical Resistance by … and this item takes 50% less durability damage.",
-  "value_range": "121 - 132",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Impenetrable"
-}
+{"id":"impenetrable","name":"Impenetrable","category":"armor","effect":"Increases your Critical Resistance.","value_range":"121 - 132","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Impenetrable"}

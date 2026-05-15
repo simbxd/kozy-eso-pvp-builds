@@ -1,9 +1,1 @@
-{
-  "id": "robust",
-  "name": "Robust",
-  "category": "jewelry",
-  "effect": "Increase Maximum Stamina by …",
-  "value_range": "767 - 877",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Robust"
-}
+{"id":"robust","name":"Robust","category":"jewelry","effect":"Increases your Maximum Stamina.","value_range":"767 - 877","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Robust"}

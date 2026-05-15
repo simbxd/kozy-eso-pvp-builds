@@ -1,9 +1,1 @@
-{
-  "id": "precise",
-  "name": "Precise",
-  "category": "weapon",
-  "effect": "Increases Weapon and Spell Critical values by …",
-  "value_range": "1H: 1.6% - 3.6% / 2H: 3.2% - 7.2%",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Precise"
-}
+{"id":"precise","name":"Precise","category":"weapon","effect":"Increases your Weapon and Spell Critical rating.","value_range":"1H: 1.6% - 3.6% / 2H: 3.2% - 7.2%","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Precise"}

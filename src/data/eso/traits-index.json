@@ -3,162 +3,189 @@
     "id": "powered",
     "name": "Powered",
     "category": "weapon",
+    "effect": "Reduces the cooldown of your weapon enchantments.",
     "value_range": "1H: 2.5% - 4.5% / 2H: 5% - 9%"
   },
   {
     "id": "charged",
     "name": "Charged",
     "category": "weapon",
+    "effect": "Increases the chance to apply status effects.",
     "value_range": "1H: 97.5% - 117.5% / 2H: 195% - 235%"
   },
   {
     "id": "precise",
     "name": "Precise",
     "category": "weapon",
+    "effect": "Increases your Weapon and Spell Critical rating.",
     "value_range": "1H: 1.6% - 3.6% / 2H: 3.2% - 7.2%"
   },
   {
     "id": "infused-weapon",
     "name": "Infused",
     "category": "weapon",
+    "effect": "Increases weapon enchantment effect and reduces its cooldown by 50%.",
     "value_range": "10% - 30%"
   },
   {
     "id": "defending",
     "name": "Defending",
     "category": "weapon",
+    "effect": "Increases your Physical and Spell Resistance.",
     "value_range": "1H: 1428 - 1638 / 2H: 2856 - 3276"
   },
   {
     "id": "training-weapon",
     "name": "Training",
     "category": "weapon",
+    "effect": "Increases experience gained from kills.",
     "value_range": "1H: 2.5% - 4.5% / 2H: 5% - 9%"
   },
   {
     "id": "sharpened",
     "name": "Sharpened",
     "category": "weapon",
+    "effect": "Increases your Physical and Spell Penetration.",
     "value_range": "1H: 1428 - 1638 / 2H: 2856 - 3276"
   },
   {
     "id": "decisive",
     "name": "Decisive",
     "category": "weapon",
+    "effect": "Chance to gain 1 Ultimate on a Light or Heavy Attack.",
     "value_range": "1H: 19.1% - 27.5% / 2H: 38.2% - 55%"
   },
   {
     "id": "nirnhoned-weapon",
     "name": "Nirnhoned",
     "category": "weapon",
+    "effect": "Increases your Weapon and Spell Damage.",
     "value_range": "11% - 15%"
   },
   {
     "id": "sturdy",
     "name": "Sturdy",
     "category": "armor",
+    "effect": "Reduces the cost of your Block.",
     "value_range": "2% - 4%"
   },
   {
     "id": "impenetrable",
     "name": "Impenetrable",
     "category": "armor",
+    "effect": "Increases your Critical Resistance.",
     "value_range": "121 - 132"
   },
   {
     "id": "reinforced",
     "name": "Reinforced",
     "category": "armor",
+    "effect": "Increases this armor piece's Armor value.",
     "value_range": "12% - 16%"
   },
   {
     "id": "well-fitted",
-    "name": "Well-fitted",
+    "name": "Well-Fitted",
     "category": "armor",
+    "effect": "Reduces the cost of Dodge Roll and Sprint.",
     "value_range": "1.2% - 6%"
   },
   {
     "id": "training-armor",
     "name": "Training",
     "category": "armor",
+    "effect": "Increases experience gained from kills.",
     "value_range": "7% - 11%"
   },
   {
     "id": "infused-armor",
     "name": "Infused",
     "category": "armor",
+    "effect": "Increases armor enchantment effect.",
     "value_range": "9% - 25%"
   },
   {
     "id": "invigorating",
     "name": "Invigorating",
     "category": "armor",
+    "effect": "Increases your Health, Magicka, and Stamina Recovery.",
     "value_range": "8 - 16"
   },
   {
     "id": "divines",
     "name": "Divines",
     "category": "armor",
+    "effect": "Increases the effectiveness of your Mundus Stone bonus.",
     "value_range": "5.1% - 9.1%"
   },
   {
     "id": "nirnhoned-armor",
     "name": "Nirnhoned",
     "category": "armor",
+    "effect": "Increases your Physical and Spell Resistance.",
     "value_range": "220 - 253"
   },
   {
     "id": "healthy",
     "name": "Healthy",
     "category": "jewelry",
+    "effect": "Increases your Maximum Health.",
     "value_range": "844 - 965"
   },
   {
     "id": "arcane",
     "name": "Arcane",
     "category": "jewelry",
+    "effect": "Increases your Maximum Magicka.",
     "value_range": "767 - 877"
   },
   {
     "id": "robust",
     "name": "Robust",
     "category": "jewelry",
+    "effect": "Increases your Maximum Stamina.",
     "value_range": "767 - 877"
   },
   {
     "id": "bloodthirsty",
     "name": "Bloodthirsty",
     "category": "jewelry",
+    "effect": "Increases your damage against enemies below 90% Health.",
     "value_range": "210 - 350"
   },
   {
     "id": "harmony",
     "name": "Harmony",
     "category": "jewelry",
+    "effect": "Activating a synergy restores Health, Magicka, and Stamina.",
     "value_range": "770 - 880"
   },
   {
     "id": "infused-jewelry",
     "name": "Infused",
     "category": "jewelry",
+    "effect": "Increases jewelry enchantment effect.",
     "value_range": "24% - 60%"
   },
   {
     "id": "triune",
     "name": "Triune",
     "category": "jewelry",
+    "effect": "Increases your Maximum Health, Magicka, and Stamina.",
     "value_range": "422 - 482 / 384 - 439"
   },
   {
     "id": "protective",
     "name": "Protective",
     "category": "jewelry",
+    "effect": "Increases your Physical and Spell Resistance.",
     "value_range": "1053 - 1190"
   },
   {
     "id": "swift",
     "name": "Swift",
     "category": "jewelry",
-    "value_range": "3 - 7"
+    "effect": "Increases your Movement Speed.",
+    "value_range": "3% - 7%"
   }
 ]

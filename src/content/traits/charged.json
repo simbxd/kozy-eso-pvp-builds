@@ -1,9 +1,1 @@
-{
-  "id": "charged",
-  "name": "Charged",
-  "category": "weapon",
-  "effect": "Increase your chance to apply status effects by …",
-  "value_range": "1H: 97.5% - 117.5% / 2H: 195% - 235%",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Charged"
-}
+{"id":"charged","name":"Charged","category":"weapon","effect":"Increases the chance to apply status effects.","value_range":"1H: 97.5% - 117.5% / 2H: 195% - 235%","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Charged"}

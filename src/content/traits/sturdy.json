@@ -1,9 +1,1 @@
-{
-  "id": "sturdy",
-  "name": "Sturdy",
-  "category": "armor",
-  "effect": "Reduce block cost by …",
-  "value_range": "2% - 4%",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Sturdy"
-}
+{"id":"sturdy","name":"Sturdy","category":"armor","effect":"Reduces the cost of your Block.","value_range":"2% - 4%","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Sturdy"}

@@ -1,9 +1,1 @@
-{
-  "id": "swift",
-  "name": "Swift",
-  "category": "jewelry",
-  "effect": "Increase Movement Speed by …%",
-  "value_range": "3 - 7",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Swift"
-}
+{"id":"swift","name":"Swift","category":"jewelry","effect":"Increases your Movement Speed.","value_range":"3% - 7%","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Swift"}

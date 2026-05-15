@@ -1,9 +1,1 @@
-{
-  "id": "nirnhoned-weapon",
-  "name": "Nirnhoned",
-  "category": "weapon",
-  "effect": "Increases Damage of this weapon by …",
-  "value_range": "11% - 15%",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Nirnhoned"
-}
+{"id":"nirnhoned-weapon","name":"Nirnhoned","category":"weapon","effect":"Increases your Weapon and Spell Damage.","value_range":"11% - 15%","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Nirnhoned"}

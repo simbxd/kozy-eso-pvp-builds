@@ -1,9 +1,1 @@
-{
-  "id": "reinforced",
-  "name": "Reinforced",
-  "category": "armor",
-  "effect": "Increases this item's armor value by …",
-  "value_range": "12% - 16%",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Reinforced_(trait)"
-}
+{"id":"reinforced","name":"Reinforced","category":"armor","effect":"Increases the Armor value of this piece.","value_range":"12% - 16%","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Reinforced"}

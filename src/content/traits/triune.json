@@ -1,9 +1,1 @@
-{
-  "id": "triune",
-  "name": "Triune",
-  "category": "jewelry",
-  "effect": "Increase Maximum Health by … and Maximum Magicka and Maximum Stamina by …",
-  "value_range": "422 - 482 / 384 - 439",
-  "patch_verified": "U49",
-  "uesp_url": "https://en.uesp.net/wiki/Online:Triune"
-}
+{"id":"triune","name":"Triune","category":"jewelry","effect":"Increases your Maximum Health, Magicka, and Stamina.","value_range":"422 - 482 / 384 - 439","patch_verified":"U49","uesp_url":"https://en.uesp.net/wiki/Online:Triune"}
