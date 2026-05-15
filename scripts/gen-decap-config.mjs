@@ -401,6 +401,8 @@ ${skillNameOptions(18)}
               - name: uptime
                 label: Uptime
                 widget: select
+                required: false
+                default: full
                 options:
                   - { label: "Full — up 24/24",            value: full }
                   - { label: "High — uptime élevé",        value: high }

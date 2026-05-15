@@ -34,7 +34,7 @@ const playstyleBuffItem = z.object({
   skill: z.string(),
   stat: z.string(),
   note: z.string(),
-  uptime: uptimeCategory,
+  uptime: uptimeCategory.default('full'),
 });
 
 const playstyleComboStep = z.object({
