@@ -1,63 +1,75 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg-glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#09090f" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Logo diamond gradient — userSpaceOnUse so it maps to actual pixel coords after transform -->
+    <!-- Diamond center at (600,220), scale 5x; outer spans y 140→300 -->
+    <linearGradient id="logo-grad" x1="0" y1="140" x2="0" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ede8ff"/>
+      <stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+    <!-- Title gradient -->
+    <linearGradient id="title-grad" x1="0" y1="320" x2="0" y2="395" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ede8ff"/>
+      <stop offset="0.55" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
   <!-- Background -->
   <rect width="1200" height="630" fill="#09090f"/>
+  <rect width="1200" height="630" fill="url(#bg-glow)"/>
 
-  <!-- Subtle glow -->
-  <radialGradient id="glow" cx="50%" cy="0%" r="60%">
-    <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.15"/>
-    <stop offset="100%" stop-color="#09090f" stop-opacity="0"/>
-  </radialGradient>
-  <rect width="1200" height="630" fill="url(#glow)"/>
-
-  <!-- Top accent line -->
+  <!-- Top accent bar -->
   <rect x="0" y="0" width="1200" height="2" fill="#8b5cf6"/>
 
-  <!-- Logo mark -->
-  <rect x="80" y="180" width="48" height="48" rx="10" fill="#8b5cf6"/>
-  <text x="104" y="213" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" font-weight="700" fill="#fff" text-anchor="middle">K</text>
+  <!-- Diamond logo mark — paths from Header.astro, scaled 5× centered at (600, 220) -->
+  <g transform="translate(600, 220) scale(5) translate(-19, -19)">
+    <path d="M19 3 L33 19 L19 35 L5 19 Z" stroke="url(#logo-grad)" stroke-width="1.2" fill="none"/>
+    <path d="M19 9 L28 19 L19 29 L10 19 Z" stroke="#6d28d9" stroke-width="1" fill="none" opacity="0.6"/>
+    <circle cx="19" cy="19" r="2.6" fill="#8b5cf6"/>
+  </g>
 
   <!-- Main title -->
   <text
-    x="148"
-    y="218"
+    x="600"
+    y="390"
     font-family="'Cormorant Garamond', Georgia, serif"
-    font-size="52"
-    font-weight="700"
-    fill="#ede8ff"
-    letter-spacing="-0.5"
+    font-size="76"
+    font-weight="600"
+    font-style="italic"
+    fill="url(#title-grad)"
+    text-anchor="middle"
+    letter-spacing="-1"
   >Kozy ESO PvP Builds</text>
 
   <!-- Tagline -->
   <text
-    x="80"
-    y="290"
+    x="600"
+    y="438"
     font-family="'JetBrains Mono', 'Courier New', monospace"
-    font-size="18"
-    fill="#6b6585"
-    letter-spacing="3"
+    font-size="14"
+    fill="#7d77a0"
+    text-anchor="middle"
+    letter-spacing="3.5"
   >OPTIMIZED BUILDS · ROTATION GUIDES · ESO PVP</text>
 
-  <!-- Divider -->
-  <rect x="80" y="330" width="420" height="1" fill="#1e1c2e"/>
+  <!-- Separator -->
+  <line x1="480" y1="482" x2="720" y2="482" stroke="#1e1c2e" stroke-width="1"/>
 
-  <!-- Sub-tagline -->
+  <!-- URL -->
   <text
-    x="80"
-    y="375"
-    font-family="'Cormorant Garamond', Georgia, serif"
-    font-size="26"
-    font-style="italic"
-    fill="#ede8ff"
-    opacity="0.5"
-  >For players who want to understand why a build works.</text>
-
-  <!-- Bottom URL -->
-  <text
-    x="80"
-    y="510"
+    x="600"
+    y="548"
     font-family="'JetBrains Mono', 'Courier New', monospace"
-    font-size="16"
+    font-size="14"
     fill="#6d28d9"
-    letter-spacing="1"
-  >kozy-eso-pvp-builds.pages.dev</text>
+    text-anchor="middle"
+    letter-spacing="0.5"
+  >kozy-eso-pvp-builds.simbad14100.workers.dev</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="628" width="1200" height="2" fill="#8b5cf6" opacity="0.35"/>
 </svg>
