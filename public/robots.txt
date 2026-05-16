@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
 
 Sitemap: https://kozy-eso-pvp-builds.simbad14100.workers.dev/sitemap-index.xml

@@ -24,12 +24,24 @@ const classes = ['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 
 const countByClass = Object.fromEntries(
   classes.map(c => [c, allBuilds.filter(b => b.data.class === c).length])
 );
+
+const siteUrl = 'https://kozy-eso-pvp-builds.simbad14100.workers.dev';
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Kozy ESO PvP Builds',
+  url: siteUrl,
+  description: 'Optimized PvP builds, rotation guides, and ESO mechanics breakdowns.',
+};
 ---
 
 <Base
   title="Home"
   description="Kozy ESO PvP — Optimized builds, rotation guides, and mechanic breakdowns for Elder Scrolls Online PvP."
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  </Fragment>
 
   <!-- Hero -->
   <section class="hero">
