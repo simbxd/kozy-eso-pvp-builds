@@ -9,6 +9,7 @@ interface Props {
   ogImage?: string;
   canonicalUrl?: string;
   ogType?: string;
+  noindex?: boolean;
 }
 
 const {
@@ -17,6 +18,7 @@ const {
   ogImage = '/assets/og/og-default.png',
   canonicalUrl,
   ogType = 'website',
+  noindex = false,
 } = Astro.props;
 
 const siteUrl = 'https://kozy-eso-pvp-builds.simbad14100.workers.dev';
@@ -45,6 +47,7 @@ const fullTitle = title === 'Home' ? 'Kozy ESO PvP Builds' : `${title} — Kozy 
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
 
     <!-- Open Graph -->
     <meta property="og:type" content={ogType} />
