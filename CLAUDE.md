@@ -276,7 +276,7 @@ Types : `Active | Passive | Ultimate`
 ## État du projet
 
 **Dernière session :** 2026-05-16
-**Milestone actuel :** v10.9 — SEO guides + og:type + published guides → git dates
+**Milestone actuel :** v10.10 — Infra SEO polish + UX mobile
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -295,6 +295,7 @@ Types : `Active | Passive | Ultimate`
 - ✅ v10.7 — Refonte section Playstyle : composant `Playstyle.astro` (buffs avec anneaux SVG uptime full/high/situational + icônes clippées `circle(50%)`, burst combo avec connecteur vertical + badges 01–0N + step final accentué, rules inchangées) ; schema Zod étendu (`playstyleBuffItem` : `+stat +uptime`, `playstyleComboStep` : `skill + skill_alt? + role`) ; `soloknight.md` migré ; `gen-decap-config.mjs` : section playstyle complète (selects skill/skill_alt, uptime enum), `skillNameOptions()`, flag `--local` → `local_backend: true` ; script `gen:decap:local` ajouté
 - ✅ v10.8 — Decap UX polish + données auto-résolues : `uptime` optionnel avec défaut `full` (Zod `.default('full')`) ; champ `stat` playstyle → `widget: select` (41 options Major/Minor + combos) ; mundus `effect` supprimé du frontmatter et du schema — résolu au build time depuis `mundus-index.json` via `mundusEffectMap` dans `[slug].astro` ; `armor[].type` supporte désormais `mythic` (Zod + Decap select) ; bug fix soloknight : `twice-fanged-serpent` → `two-fanged-snake` dans `sets[]` (deux sets distincts, gear utilisait déjà le bon ID)
 - ✅ v10.9 — SEO guides + cohérence og:type : JSON-LD `Article` + `BreadcrumbList` pour les pages guides (parité v10.4 builds) ; `og:type` corrigé → `"article"` pour builds et guides (`Base.astro` accepte prop `ogType`, défaut `"website"`) ; `published` supprimé du frontmatter guides et du schéma Zod — dérivé du git log via `getFileDates` (parité v10.5 builds) ; toutes les pages consommant `guide.data.published` migrées (`index.astro`, `[slug].astro`, `rss.xml.ts`, `pages/index.astro`) ; widget Decap `published` retiré de `gen-decap-config.mjs` ; pre-build Cloudflare configuré (`git fetch --unshallow || true && npm run build`)
+- ✅ v10.10 — Infra SEO polish + UX mobile : `robots.txt` Disallow `/admin/` ; sitemap `lastmod` précis par page via `git log` dans `astro.config.mjs` (builds/guides → date du fichier contenu, pages statiques → date du template, fallback build date) + `changefreq` weekly/monthly ; JSON-LD `WebSite` sur la home ; lien RSS retiré du footer ; lien GitHub retiré du footer ; section Stack supprimée de `/about` ; ESO server status visible sur mobile (texte "PATCH U50" masqué, dots EU/NA/PTS affichés) ; barre d'underline nav masquée sur mobile (évite le chevauchement avec la rangée de statut)
 
 ### Contenu publié
 - **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build, sert de template canonique. Race `dunmer` — à confirmer par l'auteur. Patch `U50`.
@@ -349,5 +350,4 @@ npm run dev
 Avant commit/deploy : `npm run gen:decap` (remet en mode production).
 
 ### Prochaine étape
-- Sitemap `lastmod` : câbler les dates git dans `@astrojs/sitemap` via l'option `serialize` dans `astro.config.mjs` (à discuter avant implémentation)
 - Continuer l'intégration UI des données meta ESO : mundus (déjà dans `consumables`), traits, enchants dans les pages de build
