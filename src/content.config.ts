@@ -53,7 +53,7 @@ const builds = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/builds' }),
   schema: z.object({
     title: z.string(),
-    class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Subclass']),
+    class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf', 'Subclass']),
     role: z.enum(['DPS', 'Healer', 'Tank']),
     resource: z.enum(['Stamina', 'Magicka', 'Hybrid']),
     gamemode: z.enum(['PvP', 'PvE', 'Both']),

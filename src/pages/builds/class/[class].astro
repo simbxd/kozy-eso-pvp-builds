@@ -4,7 +4,7 @@ import Base from '../../../layouts/Base.astro';
 import BuildCard from '../../../components/BuildCard.astro';
 
 export async function getStaticPaths() {
-  const ALL_CLASSES = ['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Subclass'] as const;
+  const ALL_CLASSES = ['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf', 'Subclass'] as const;
   const builds = await getCollection('builds');
 
   return ALL_CLASSES.map(esClass => ({
