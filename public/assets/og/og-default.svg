@@ -54,21 +54,7 @@
     fill="#7d77a0"
     text-anchor="middle"
     letter-spacing="3.5"
-  >OPTIMIZED BUILDS · ROTATION GUIDES · ESO PVP</text>
-
-  <!-- Separator -->
-  <line x1="480" y1="482" x2="720" y2="482" stroke="#1e1c2e" stroke-width="1"/>
-
-  <!-- URL -->
-  <text
-    x="600"
-    y="548"
-    font-family="'JetBrains Mono', 'Courier New', monospace"
-    font-size="14"
-    fill="#6d28d9"
-    text-anchor="middle"
-    letter-spacing="0.5"
-  >kozy-eso-pvp-builds.simbad14100.workers.dev</text>
+  >OPTIMIZED BUILDS · ESO PVP</text>
 
   <!-- Bottom accent bar -->
   <rect x="0" y="628" width="1200" height="2" fill="#8b5cf6" opacity="0.35"/>
