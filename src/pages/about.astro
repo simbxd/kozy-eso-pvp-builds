@@ -51,36 +51,6 @@ import Base from '../layouts/Base.astro';
       </section>
 
       <section class="ab__sec">
-        <h2 class="ab__h2">Stack</h2>
-        <div class="ab__stack">
-          <div class="ab__row">
-            <span class="ab__k">Framework</span>
-            <span class="ab__v">Astro 6 — static output, zero client JS except UI micro-interactions</span>
-          </div>
-          <div class="ab__row">
-            <span class="ab__k">Styles</span>
-            <span class="ab__v">Tailwind CSS v4 with a custom dark-fantasy design system</span>
-          </div>
-          <div class="ab__row">
-            <span class="ab__k">Content</span>
-            <span class="ab__v">Markdown + JSON with Zod validation at build time</span>
-          </div>
-          <div class="ab__row">
-            <span class="ab__k">Hosting</span>
-            <span class="ab__v">Cloudflare Pages — CD from GitHub on every push</span>
-          </div>
-          <div class="ab__row">
-            <span class="ab__k">Source</span>
-            <span class="ab__v">
-              <a href="https://github.com/simbxd/kozy-eso-pvp-builds" target="_blank" rel="noopener">
-                github.com/simbxd/kozy-eso-pvp-builds
-              </a>
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <section class="ab__sec">
         <h2 class="ab__h2">Data attribution</h2>
         <p>
           Set bonuses and skill descriptions sourced from
@@ -174,38 +144,6 @@ import Base from '../layouts/Base.astro';
   .ab__sec a:hover {
     text-decoration-color: var(--color-accent);
     color: var(--color-text);
-  }
-
-  /* ── Stack table ── */
-  .ab__stack {
-    border: 1px solid var(--color-border-2);
-    background: var(--color-surface);
-  }
-
-  .ab__row {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 16px;
-    padding: 14px 18px;
-    border-bottom: 1px solid var(--color-border);
-    align-items: baseline;
-  }
-
-  .ab__row:last-child { border-bottom: none; }
-
-  .ab__k {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-  }
-
-  .ab__v {
-    font-family: var(--font-body);
-    font-size: 16px;
-    color: var(--color-text);
-    line-height: 1.5;
   }
 
   @media (max-width: 640px) {
