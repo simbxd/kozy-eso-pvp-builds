@@ -3,10 +3,10 @@ import Base from './Base.astro';
 
 interface GuideEntry {
   id: string;
+  publishedDate: string | null;
   data: {
     title: string;
     category: string;
-    published: Date;
     summary: string;
     readTime?: string;
   };
@@ -16,30 +16,67 @@ interface Props {
   title: string;
   category: string;
   tags: string[];
-  published: Date;
+  publishedDate: string | null;
   summary: string;
   og_image?: string;
   patch?: string;
   readTime?: string;
-  updatedAt?: string;
+  updatedAt?: string | null;
   readNextGuides?: GuideEntry[];
 }
 
 const {
-  title, category, tags, published, summary, og_image,
+  title, category, tags, publishedDate, summary, og_image,
   patch, readTime, updatedAt, readNextGuides = [],
 } = Astro.props;
 
-const formattedDate = published.toLocaleDateString('en-GB', {
-  day: 'numeric', month: 'long', year: 'numeric',
-});
+const formattedDate = publishedDate
+  ? new Date(publishedDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+  : null;
 
-const formattedUpdated = updatedAt
+const formattedUpdated = updatedAt && updatedAt !== publishedDate
   ? new Date(updatedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
   : null;
+
+const siteUrl    = Astro.site ? Astro.site.href.replace(/\/$/, '') : 'https://kozy-eso-pvp-builds.simbad14100.workers.dev';
+const canonical  = new URL(Astro.url.pathname, siteUrl).href;
+const ogImageAbs = og_image
+  ? (og_image.startsWith('http') ? og_image : `${siteUrl}${og_image}`)
+  : `${siteUrl}/assets/og/og-default.png`;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: summary,
+  image: ogImageAbs,
+  datePublished: publishedDate,
+  dateModified: updatedAt ?? publishedDate,
+  author: { '@type': 'Person', name: 'Kozy' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Kozy ESO PvP Builds',
+    logo: { '@type': 'ImageObject', url: `${siteUrl}/favicon.svg` },
+  },
+  mainEntityOfPage: canonical,
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home',   item: siteUrl + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: siteUrl + '/guides/' },
+    { '@type': 'ListItem', position: 3, name: title,    item: canonical },
+  ],
+};
 ---
 
-<Base title={title} description={summary} ogImage={og_image}>
+<Base title={title} description={summary} ogImage={og_image} ogType="article">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
   <article class="art">
 
     <header class="art__head">
@@ -54,7 +91,9 @@ const formattedUpdated = updatedAt
       <p  class="art__dek">{summary}</p>
 
       <div class="art__byline">
-        <time datetime={published.toISOString()} class="art__date">{formattedDate}</time>
+        {formattedDate && publishedDate && (
+          <time datetime={publishedDate} class="art__date">{formattedDate}</time>
+        )}
         {tags.length > 0 && (
           <div class="art__tags">
             {tags.map(tag => <span class="art__tag">#{tag}</span>)}
@@ -86,9 +125,11 @@ const formattedUpdated = updatedAt
               <a href={`/guides/${g.id}`} class="art__rn-item">
                 <div class="art__rn-meta">
                   <span class="art__rn-cat">{g.data.category.toUpperCase()}</span>
-                  <span class="art__rn-date">
-                    {g.data.published.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
-                  </span>
+                  {g.publishedDate && (
+                    <span class="art__rn-date">
+                      {new Date(g.publishedDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    </span>
+                  )}
                   {g.data.readTime && <span class="art__rn-rt">{g.data.readTime}</span>}
                 </div>
                 <div class="art__rn-title">{g.data.title}</div>

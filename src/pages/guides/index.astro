@@ -1,11 +1,15 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { getFileDates } from '../../lib/git-dates';
 
 const allGuides = await getCollection('guides');
-const sorted = allGuides.sort((a, b) =>
-  b.data.published.getTime() - a.data.published.getTime()
-);
+const sorted = allGuides
+  .map(g => {
+    const { publishedDate } = getFileDates(g.filePath ?? `src/content/guides/${g.id}.md`);
+    return { guide: g, publishedDate };
+  })
+  .sort((a, b) => (b.publishedDate ?? '').localeCompare(a.publishedDate ?? ''));
 ---
 
 <Base title="Guides" description="ESO mechanic breakdowns, PvP theory, and deep-dives by Kozy.">
@@ -25,17 +29,19 @@ const sorted = allGuides.sort((a, b) =>
     </div>
 
     <ol class="gi__list">
-      {sorted.map((guide, i) => {
-        const date = guide.data.published.toLocaleDateString('en-GB', {
-          day: 'numeric', month: 'short', year: 'numeric',
-        });
+      {sorted.map(({ guide, publishedDate }, i) => {
+        const date = publishedDate
+          ? new Date(publishedDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+          : null;
         return (
           <li class="gi__item">
             <a href={`/guides/${guide.id}`} class="gi__link">
               <div class="gi__meta">
                 <span class="gi__idx">{String(i + 1).padStart(2, '0')}</span>
                 <span class="gi__cat">{guide.data.category.toUpperCase()}</span>
-                <time datetime={guide.data.published.toISOString()} class="gi__date">{date}</time>
+                {date && publishedDate && (
+                  <time datetime={publishedDate} class="gi__date">{date}</time>
+                )}
                 {guide.data.readTime && <span class="gi__rt">{guide.data.readTime}</span>}
               </div>
               <h2 class="gi__art-title">{guide.data.title}</h2>

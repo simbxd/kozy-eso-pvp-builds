@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import BuildCard from '../components/BuildCard.astro';
+import { getFileDates } from '../lib/git-dates';
 
 const allBuilds = await getCollection('builds');
 const allGuides = await getCollection('guides');
@@ -12,7 +13,11 @@ const featuredBuilds = allBuilds
   .slice(0, 3);
 
 const latestGuides = allGuides
-  .sort((a, b) => b.data.published.getTime() - a.data.published.getTime())
+  .map(g => {
+    const { publishedDate } = getFileDates(g.filePath ?? `src/content/guides/${g.id}.md`);
+    return { guide: g, publishedDate };
+  })
+  .sort((a, b) => (b.publishedDate ?? '').localeCompare(a.publishedDate ?? ''))
   .slice(0, 3);
 
 const classes = ['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Subclass'];
@@ -118,14 +123,16 @@ const countByClass = Object.fromEntries(
           <div class="hp-rule__l"></div>
         </div>
         <ol class="hp-guides">
-          {latestGuides.map(guide => (
+          {latestGuides.map(({ guide, publishedDate }) => (
             <li class="hp-guide">
               <a href={`/guides/${guide.id}`} class="hp-guide__link">
                 <div class="hp-guide__meta">
                   <span class="hp-guide__cat">{guide.data.category.toUpperCase()}</span>
-                  <time datetime={guide.data.published.toISOString()} class="hp-guide__date">
-                    {guide.data.published.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
-                  </time>
+                  {publishedDate && (
+                    <time datetime={publishedDate} class="hp-guide__date">
+                      {new Date(publishedDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                    </time>
+                  )}
                 </div>
                 <h3 class="hp-guide__title">{guide.data.title}</h3>
                 <p class="hp-guide__sum">{guide.data.summary}</p>

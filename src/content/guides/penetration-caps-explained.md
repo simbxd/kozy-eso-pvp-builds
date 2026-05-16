@@ -2,7 +2,6 @@
 title: "Penetration Caps Explained — And Why Most Guides Get It Wrong"
 category: Mechanics
 tags: [penetration, damage, math, PvP]
-published: 2026-05-15
 summary: "A mathematical breakdown of how armor penetration actually interacts with resistances in ESO — and why the common advice of 'stack as much as possible' is wrong."
 ---
 

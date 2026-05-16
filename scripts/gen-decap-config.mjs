@@ -605,7 +605,6 @@ ${enchantOptions('weapon', 18)}
       - name: tags
         label: Tags
         widget: list
-      - { name: published, label: Published, widget: datetime, type: date, format: YYYY-MM-DD }
       - { name: summary,   label: Summary,   widget: text }
       - { name: patch,     label: Patch,     widget: string, required: false, hint: "ex: U50" }
       - { name: readTime,  label: Read Time, widget: string, required: false, hint: "ex: 8 min" }

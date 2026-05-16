@@ -8,6 +8,7 @@ interface Props {
   description?: string;
   ogImage?: string;
   canonicalUrl?: string;
+  ogType?: string;
 }
 
 const {
@@ -15,6 +16,7 @@ const {
   description = 'Kozy ESO PvP Builds — Optimized PvP builds, rotation guides, and ESO mechanics breakdowns.',
   ogImage = '/assets/og/og-default.png',
   canonicalUrl,
+  ogType = 'website',
 } = Astro.props;
 
 const siteUrl = 'https://kozy-eso-pvp-builds.simbad14100.workers.dev';
@@ -45,7 +47,7 @@ const fullTitle = title === 'Home' ? 'Kozy ESO PvP Builds' : `${title} — Kozy 
     <link rel="canonical" href={canonical} />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />

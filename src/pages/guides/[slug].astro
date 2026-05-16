@@ -13,12 +13,16 @@ export async function getStaticPaths() {
 
 const { guide } = Astro.props;
 const { Content } = await render(guide);
-const { updatedAt } = getFileDates(guide.filePath ?? `src/content/guides/${guide.id}.md`);
+const { publishedDate, updatedAt } = getFileDates(guide.filePath ?? `src/content/guides/${guide.id}.md`);
 
 const allGuides = await getCollection('guides');
 const readNextGuides = allGuides
   .filter(g => g.id !== guide.id)
-  .sort((a, b) => b.data.published.getTime() - a.data.published.getTime())
+  .map(g => {
+    const { publishedDate: pd } = getFileDates(g.filePath ?? `src/content/guides/${g.id}.md`);
+    return { ...g, publishedDate: pd };
+  })
+  .sort((a, b) => (b.publishedDate ?? '').localeCompare(a.publishedDate ?? ''))
   .slice(0, 2);
 ---
 
@@ -26,7 +30,7 @@ const readNextGuides = allGuides
   title={guide.data.title}
   category={guide.data.category}
   tags={guide.data.tags}
-  published={guide.data.published}
+  publishedDate={publishedDate}
   summary={guide.data.summary}
   og_image={guide.data.og_image}
   patch={guide.data.patch}

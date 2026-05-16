@@ -102,7 +102,6 @@ const guides = defineCollection({
     title: z.string(),
     category: z.string(),
     tags: z.array(z.string()),
-    published: z.coerce.date(),
     og_image: z.string().optional(),
     summary: z.string(),
     patch: z.string().optional(),
