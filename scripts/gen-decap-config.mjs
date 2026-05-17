@@ -147,6 +147,22 @@ function skillOptions(indent = 12) {
     .join('\n');
 }
 
+// Scribing Grimoires — no distinguishing flag in skill data, list is stable
+// (grimoires are added per chapter). Update when ZOS ships new ones.
+const GRIMOIRE_IDS = new Set([
+  'wield-soul', 'vault', 'ulfsilds-contingency', 'trample', 'torchbearer',
+  'soul-burst', 'smash', 'shield-throw', 'menders-bond', 'elemental-explosion',
+  'banner-bearer',
+]);
+
+function grimoireOptions(indent = 16) {
+  const pad = ' '.repeat(indent);
+  return skillsIndex
+    .filter(s => GRIMOIRE_IDS.has(s.id))
+    .map(s => `${pad}- { label: "${s.name.replace(/"/g, '\\"')}", value: "${s.id}" }`)
+    .join('\n');
+}
+
 // Playstyle stat/source dropdown — covers all Major/Minor buffs + common combos
 const STAT_OPTIONS = [
   // ── Major — offensif ──────────────────────────────────────────
@@ -312,6 +328,23 @@ ${skillOptions(16)}
               widget: select
               options:
 ${skillOptions(16)}
+
+      # Scribing — Grimoire + 3 scripts (free text)
+      - name: scribing
+        label: Scribing
+        widget: list
+        required: false
+        label_singular: Scribed Skill
+        summary: "{{fields.skill}}"
+        fields:
+          - name: skill
+            label: Grimoire
+            widget: select
+            options:
+${grimoireOptions(14)}
+          - { name: focus,     label: Focus Script,     widget: string }
+          - { name: signature, label: Signature Script, widget: string }
+          - { name: affix,     label: Affix Script,     widget: string }
 
       # Stats targets
       - name: stats

@@ -69,6 +69,14 @@ const builds = defineCollection({
       bar1: z.array(z.string()),
       bar2: z.array(z.string()),
     }),
+    // Scribing: maps a Grimoire skill ID (referenced in bar1/bar2) to its 3 chosen scripts.
+    // Scripts are free-text — no dataset to maintain, author controls exact wording.
+    scribing: z.array(z.object({
+      skill: z.string(),
+      focus: z.string(),
+      signature: z.string(),
+      affix: z.string(),
+    })).optional(),
     summary: z.string(),
     pullquote: z.string().optional(),
     gear: z.object({

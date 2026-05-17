@@ -110,11 +110,16 @@ const resolvedGear = build.data.gear ? {
   weapons: build.data.gear.weapons.map(resolveGearSlot),
 } : undefined;
 
+const scribingMap = Object.fromEntries(
+  (build.data.scribing ?? []).map(s => [s.skill, { focus: s.focus, signature: s.signature, affix: s.affix }])
+);
+
 function enrichSkill(id: string) {
   const skill = skillsMap[id]!;
   return {
     ...skill,
     morph_sibling_name: skill.morph_sibling ? (skillsMap[skill.morph_sibling]?.name ?? null) : null,
+    scribing: scribingMap[id] ?? null,
   };
 }
 

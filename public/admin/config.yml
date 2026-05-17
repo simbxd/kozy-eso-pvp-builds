@@ -3231,6 +3231,33 @@ collections:
                 - { label: "Y'ffre's Endurance — Wood Elf Skills", value: "yffres-endurance" }
                 - { label: "Zenas' Empowering Disc — Curative Runeforms", value: "zenas-empowering-disc" }
 
+      # Scribing — Grimoire + 3 scripts (free text)
+      - name: scribing
+        label: Scribing
+        widget: list
+        required: false
+        label_singular: Scribed Skill
+        summary: "{{fields.skill}}"
+        fields:
+          - name: skill
+            label: Grimoire
+            widget: select
+            options:
+              - { label: "Banner Bearer", value: "banner-bearer" }
+              - { label: "Elemental Explosion", value: "elemental-explosion" }
+              - { label: "Mender's Bond", value: "menders-bond" }
+              - { label: "Shield Throw", value: "shield-throw" }
+              - { label: "Smash", value: "smash" }
+              - { label: "Soul Burst", value: "soul-burst" }
+              - { label: "Torchbearer", value: "torchbearer" }
+              - { label: "Trample", value: "trample" }
+              - { label: "Ulfsild's Contingency", value: "ulfsilds-contingency" }
+              - { label: "Vault", value: "vault" }
+              - { label: "Wield Soul", value: "wield-soul" }
+          - { name: focus,     label: Focus Script,     widget: string }
+          - { name: signature, label: Signature Script, widget: string }
+          - { name: affix,     label: Affix Script,     widget: string }
+
       # Stats targets
       - name: stats
         label: Stats Targets

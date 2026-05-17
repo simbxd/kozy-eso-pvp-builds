@@ -12,6 +12,7 @@ interface Skill {
   type: string;
   resource?: string;
   icon?: string;
+  scribing?: { focus: string; signature: string; affix: string } | null;
 }
 
 interface Props {
@@ -47,9 +48,10 @@ function slotIndex(i: number) {
   {bars.map(({ skills }, barIdx) => (
     <div class="bars__row" data-bar-row hidden={barIdx !== 0 || undefined}>
       {skills.map((skill, i) => {
-        const isUlt    = i === 5;
-        const hasImg   = !!skill.icon;
-        const hasMorph = !!skill.morph_of;
+        const isUlt       = i === 5;
+        const hasImg      = !!skill.icon;
+        const hasMorph    = !!skill.morph_of;
+        const hasScribing = !!skill.scribing;
 
         return (
           <div
@@ -72,13 +74,14 @@ function slotIndex(i: number) {
             <div class="slot__name">{skill.name}</div>
             <div class="slot__line">{skill.skill_line.toUpperCase()}</div>
 
-            {hasMorph && (
+            {(hasMorph || hasScribing) && (
               <div class="tooltip" role="tooltip">
                 <div class="tooltip__head">
                   <div class="tooltip__title">{skill.name}</div>
                   <div class="tooltip__meta">
                     <span class="tooltip__line">{skill.skill_line.toUpperCase()}</span>
                     <div class="tooltip__tags">
+                      {hasScribing && <span class="tag tag--scribing">Scribed</span>}
                       <span class:list={['tag', `tag--${skill.type.toLowerCase()}`]}>{skill.type}</span>
                       {skill.resource && skill.resource !== 'None' && (
                         <span class:list={['tag', `tag--${skill.resource.toLowerCase()}`]}>{skill.resource}</span>
@@ -87,17 +90,36 @@ function slotIndex(i: number) {
                   </div>
                 </div>
 
-                <div class="morph">
-                  <span class="morph__base">{skill.base_skill}</span>
-                  <span class="morph__arrow">→</span>
-                  <span class="morph__chosen">{skill.name}</span>
-                  {skill.morph_sibling_name && (
-                    <>
-                      <span class="morph__or">/</span>
-                      <span class="morph__sibling">{skill.morph_sibling_name}</span>
-                    </>
-                  )}
-                </div>
+                {hasMorph && (
+                  <div class="morph">
+                    <span class="morph__base">{skill.base_skill}</span>
+                    <span class="morph__arrow">→</span>
+                    <span class="morph__chosen">{skill.name}</span>
+                    {skill.morph_sibling_name && (
+                      <>
+                        <span class="morph__or">/</span>
+                        <span class="morph__sibling">{skill.morph_sibling_name}</span>
+                      </>
+                    )}
+                  </div>
+                )}
+
+                {hasScribing && skill.scribing && (
+                  <div class="scripts">
+                    <div class="scripts__row">
+                      <span class="scripts__k">Focus</span>
+                      <span class="scripts__v">{skill.scribing.focus}</span>
+                    </div>
+                    <div class="scripts__row">
+                      <span class="scripts__k">Signature</span>
+                      <span class="scripts__v">{skill.scribing.signature}</span>
+                    </div>
+                    <div class="scripts__row">
+                      <span class="scripts__k">Affix</span>
+                      <span class="scripts__v">{skill.scribing.affix}</span>
+                    </div>
+                  </div>
+                )}
 
                 {skill.morph_rationale && (
                   <p class="tooltip__rationale">{skill.morph_rationale}</p>
@@ -480,6 +502,7 @@ function slotIndex(i: number) {
   .tag--stamina  { color: #86efac; border-color: rgba(134,239,172,0.25); }
   .tag--health   { color: #fca5a5; border-color: rgba(252,165,165,0.25); }
   .tag--ultimate-resource { display: none; }
+  .tag--scribing { color: var(--color-mythic); border-color: rgba(212,164,74,0.35); }
 
   /* Morph chain */
   .morph {
@@ -517,6 +540,40 @@ function slotIndex(i: number) {
     color: var(--color-text-muted);
     font-style: italic;
     letter-spacing: 0.02em;
+  }
+
+  /* Scribing scripts */
+  .scripts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    margin-bottom: 12px;
+  }
+
+  .scripts__row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .scripts__k {
+    flex-shrink: 0;
+    width: 64px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .scripts__v {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    color: var(--color-mono);
   }
 
   .tooltip__rationale {
