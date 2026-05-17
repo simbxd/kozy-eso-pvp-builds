@@ -96,7 +96,7 @@ interface Props {
   class: string;
   role: string;
   resource: string;
-  gamemode: string;
+  gamemode: string[];
   patch: string;
   author: string;
   publishedDate?: string;
@@ -153,7 +153,8 @@ function formatDate(iso: string): string {
   return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 }
 
-const subtitle = `${resource} ${esClass} ${gamemode} Build`;
+const gamemodeLabel = gamemode.length === 1 ? gamemode[0] : 'PvP';
+const subtitle = `${resource} ${esClass} ${gamemodeLabel} Build`;
 const h1Text   = `${title} — ${subtitle}`;
 
 const siteUrl        = Astro.site ? Astro.site.href.replace(/\/$/, '') : 'https://kozy-eso.com';
@@ -274,7 +275,7 @@ const railItems = [`KOZY · ESO PvP`];
       <div class="kz-meta"><div class="kz-meta__label">Class</div><div class="kz-meta__value">{esClass}</div></div>
       <div class="kz-meta"><div class="kz-meta__label">Role</div><div class="kz-meta__value">{role}</div></div>
       <div class="kz-meta"><div class="kz-meta__label">Resource</div><div class="kz-meta__value">{resource}</div></div>
-      <div class="kz-meta"><div class="kz-meta__label">Gamemode</div><div class="kz-meta__value">{gamemode}</div></div>
+      <div class="kz-meta"><div class="kz-meta__label">Gamemode</div><div class="kz-meta__value kz-meta__value--small">{gamemode.join(' · ')}</div></div>
       <div class="kz-meta"><div class="kz-meta__label">Patch</div><div class="kz-meta__value">{patch}</div></div>
       <div class="kz-meta"><div class="kz-meta__label">Difficulty</div><div class="kz-meta__value kz-meta__value--small">{difficulty}</div></div>
       {race && <div class="kz-meta"><div class="kz-meta__label">Race</div><div class="kz-meta__value kz-meta__value--small">{race.name}</div></div>}

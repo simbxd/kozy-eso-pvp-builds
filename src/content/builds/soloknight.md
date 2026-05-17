@@ -3,7 +3,8 @@ title: Solo Knight
 class: Dragonknight
 role: DPS
 resource: Hybrid
-gamemode: Cyrodiil / Imperial City
+gamemode:
+  - Cyrodiil / Imperial City
 patch: U50
 author: Kozy
 difficulty: Intermediate

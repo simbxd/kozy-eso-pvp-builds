@@ -5,7 +5,7 @@ interface Props {
   class: string;
   role: string;
   resource: string;
-  gamemode: string;
+  gamemode: string[];
   patch: string;
   difficulty: string;
   summary: string;
@@ -20,7 +20,8 @@ const {
   index, setsLine,
 } = Astro.props;
 
-const meta = `${resource.toUpperCase()} ${esClass.toUpperCase()} · ${gamemode.toUpperCase()}`;
+const gmLabel = gamemode.length === 1 ? gamemode[0] : 'PvP';
+const meta = `${resource.toUpperCase()} ${esClass.toUpperCase()} · ${gmLabel.toUpperCase()}`;
 const idxLabel = index !== undefined ? String(index).padStart(2, '0') : undefined;
 ---
 

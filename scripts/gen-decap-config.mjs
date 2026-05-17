@@ -258,6 +258,7 @@ collections:
       - name: gamemode
         label: Gamemode
         widget: select
+        multiple: true
         options: ["Cyrodiil / Imperial City", Battlegrounds, Duels]
       - { name: patch,      label: Patch,       widget: string,  hint: "ex: U50" }
       - { name: author,     label: Author,      widget: string,  default: "Kozy", required: false }
