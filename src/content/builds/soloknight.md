@@ -35,6 +35,11 @@ skills:
     - heart-of-flame
     - heart-and-home
     - temporal-guard
+scribing:
+  - skill: smash
+    focus: "111"
+    signature: "111"
+    affix: "111"
 stats:
   health:
     target: 32000
