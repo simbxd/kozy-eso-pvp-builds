@@ -155,7 +155,7 @@ function formatDate(iso: string): string {
 const subtitle = `${resource} ${esClass} ${gamemode} Build`;
 const h1Text   = `${title} — ${subtitle}`;
 
-const siteUrl        = Astro.site ? Astro.site.href.replace(/\/$/, '') : 'https://kozy-eso-pvp-builds.simbad14100.workers.dev';
+const siteUrl        = Astro.site ? Astro.site.href.replace(/\/$/, '') : 'https://kozy-eso.com';
 const canonical      = new URL(Astro.url.pathname, siteUrl).href;
 const ogImageAbs     = og_image
   ? (og_image.startsWith('http') ? og_image : `${siteUrl}${og_image}`)

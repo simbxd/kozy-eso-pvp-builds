@@ -45,7 +45,7 @@ function resolveLastmod(urlPath) {
 }
 
 export default defineConfig({
-  site: 'https://kozy-eso-pvp-builds.simbad14100.workers.dev',
+  site: 'https://kozy-eso.com',
   integrations: [
     sitemap({
       serialize(item) {

@@ -21,7 +21,7 @@ const {
   noindex = false,
 } = Astro.props;
 
-const siteUrl = 'https://kozy-eso-pvp-builds.simbad14100.workers.dev';
+const siteUrl = 'https://kozy-eso.com';
 const canonical = canonicalUrl ?? new URL(Astro.url.pathname, siteUrl).href;
 const ogImageAbsolute = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 const fullTitle = title === 'Home' ? 'Kozy ESO PvP Builds' : `${title} — Kozy ESO PvP Builds`;

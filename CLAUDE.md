@@ -13,7 +13,7 @@
 Site statique dédié aux builds PvP ESO. Builds optimisés, guides de rotation, breakdowns de mécaniques pour Elder Scrolls Online.
 
 **Repo :** https://github.com/simbxd/kozy-eso-pvp-builds
-**Site :** https://kozy-eso-pvp-builds.simbad14100.workers.dev
+**Site :** https://kozy-eso.com
 **Dossier local :** `D:\Dev\kozy-eso-pvp-builds`
 
 ---
