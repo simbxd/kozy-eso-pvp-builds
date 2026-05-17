@@ -328,6 +328,25 @@ const railItems = [`KOZY · ESO PvP`];
 
   </section>
 
+  {video_id && (
+    <section id="video-gameplay">
+      <div class="kz-rule" role="separator">
+        <span class="kz-rule__line"></span>
+        <span class="kz-rule__label">Video Gameplay</span>
+        <span class="kz-rule__line"></span>
+      </div>
+      <div class="video-embed">
+        <iframe
+          src={`https://www.youtube.com/embed/${video_id}?rel=0&modestbranding=1`}
+          title="Video Gameplay"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+  )}
+
   <!-- RACE -->
   {race && (
     <section id="race">
@@ -697,25 +716,6 @@ const railItems = [`KOZY · ESO PvP`];
     </section>
   )}
 
-  {video_id && (
-    <section id="video-gameplay">
-      <div class="kz-rule" role="separator">
-        <span class="kz-rule__line"></span>
-        <span class="kz-rule__label">Video Gameplay</span>
-        <span class="kz-rule__line"></span>
-      </div>
-      <div class="video-embed">
-        <iframe
-          src={`https://www.youtube.com/embed/${video_id}?rel=0&modestbranding=1`}
-          title="Video Gameplay"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
-  )}
-
   </div><!-- /.build-content -->
 
   <!-- STICKY TOC SIDEBAR -->
@@ -723,6 +723,7 @@ const railItems = [`KOZY · ESO PvP`];
     <div class="toc__label">Sections</div>
     <nav>
       <a href="#overview"        class="toc__link">Overview</a>
+      {video_id && <a href="#video-gameplay" class="toc__link">Video</a>}
       {race && <a href="#race" class="toc__link">Race</a>}
       <a href="#skill-bars"      class="toc__link">Skill Bars</a>
       {hasPlaystyle && <a href="#playstyle" class="toc__link">Playstyle</a>}
@@ -730,7 +731,6 @@ const railItems = [`KOZY · ESO PvP`];
       <a href="#gear-sheet"      class="toc__link">Gear Sheet</a>
       <a href="#consumables"     class="toc__link">Consumables</a>
       <a href="#champion-points" class="toc__link">Champion Points</a>
-      {video_id && <a href="#video-gameplay" class="toc__link">Video</a>}
 </nav>
   </aside>
 
@@ -751,6 +751,7 @@ const railItems = [`KOZY · ESO PvP`];
       <div class="toc-drawer__label">Sections</div>
       <nav>
         <a href="#overview"        class="toc-drawer__link">Overview</a>
+        {video_id && <a href="#video-gameplay" class="toc-drawer__link">Video</a>}
         {race && <a href="#race" class="toc-drawer__link">Race</a>}
         <a href="#skill-bars"      class="toc-drawer__link">Skill Bars</a>
         {hasPlaystyle && <a href="#playstyle" class="toc-drawer__link">Playstyle</a>}
@@ -758,7 +759,6 @@ const railItems = [`KOZY · ESO PvP`];
         <a href="#gear-sheet"      class="toc-drawer__link">Gear Sheet</a>
         <a href="#consumables"     class="toc-drawer__link">Consumables</a>
         <a href="#champion-points" class="toc-drawer__link">Champion Points</a>
-        {video_id && <a href="#video-gameplay" class="toc-drawer__link">Video</a>}
       </nav>
     </div>
   </div>
