@@ -308,18 +308,18 @@ const railItems = [`KOZY · ESO PvP`];
       <div class="briefing__stats">
         <div class="kz-stat">
           <div class="kz-stat__k">HP</div>
-          <div class="kz-stat__v">{stats.health.target.toLocaleString()}</div>
-          <div class="kz-stat__note">{stats.health.note}</div>
+          {stats.health.target != null && <div class="kz-stat__v">{stats.health.target.toLocaleString()}</div>}
+          {stats.health.note && <div class="kz-stat__note">{stats.health.note}</div>}
         </div>
         <div class="kz-stat">
           <div class="kz-stat__k">MAG</div>
-          <div class="kz-stat__v">{stats.magicka.target.toLocaleString()}</div>
-          <div class="kz-stat__note">{stats.magicka.note}</div>
+          {stats.magicka.target != null && <div class="kz-stat__v">{stats.magicka.target.toLocaleString()}</div>}
+          {stats.magicka.note && <div class="kz-stat__note">{stats.magicka.note}</div>}
         </div>
         <div class="kz-stat">
           <div class="kz-stat__k">STA</div>
-          <div class="kz-stat__v">{stats.stamina.target.toLocaleString()}</div>
-          <div class="kz-stat__note">{stats.stamina.note}</div>
+          {stats.stamina.target != null && <div class="kz-stat__v">{stats.stamina.target.toLocaleString()}</div>}
+          {stats.stamina.note && <div class="kz-stat__note">{stats.stamina.note}</div>}
         </div>
       </div>
     )}
