@@ -3,13 +3,11 @@ title: Solo Knight
 class: Dragonknight
 role: DPS
 resource: Hybrid
-gamemode:
-  - Cyrodiil / Imperial City
+gamemode: PvP
 patch: U50
 author: Kozy
 difficulty: Intermediate
 featured: true
-video_id: _paQrQeRtzg
 race: dunmer
 summary: Dragonknight built to hold the line in solo and small-scale PvP. Hard
   to kill while maintaining constant pressure through Molten Whip procs and AoE
@@ -20,7 +18,7 @@ sets:
   - mighty-chudan
   - markyn-ring-of-majesty
   - rallying-cry
-  - two-fanged-snake
+  - twice-fanged-serpent
   - armor-of-the-trainee
 skills:
   bar1:
@@ -37,6 +35,11 @@ skills:
     - heart-of-flame
     - heart-and-home
     - temporal-guard
+scribing:
+  - skill: smash
+    focus: "111"
+    signature: "111"
+    affix: "111"
 stats:
   health:
     target: 32000
@@ -82,7 +85,7 @@ consumables:
     id: essence-of-weapon-power
     note: Grants Major Brutality + restores Stamina
   mundus:
-    stone: The Atronach
+    stone: The Lady
     note: Recommended default for this build
     alt:
       stone: The Warrior
