@@ -3,7 +3,7 @@ title: Solo Knight
 class: Dragonknight
 role: DPS
 resource: Hybrid
-gamemode: PvP
+gamemode: Cyrodiil
 patch: U50
 author: Kozy
 difficulty: Intermediate
