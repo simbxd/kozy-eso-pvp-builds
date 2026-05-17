@@ -134,12 +134,13 @@ interface Props {
     rules?: { title: string; body: string }[];
   };
   race?: RaceData | null;
+  video_id?: string;
 }
 
 const {
   title, class: esClass, role, resource, gamemode,
   patch, author, publishedDate, updatedAt, difficulty, summary, pullquote,
-  sets, bar1, bar2, og_image, gear, stats, champion_points, consumables, playstyle, race,
+  sets, bar1, bar2, og_image, gear, stats, champion_points, consumables, playstyle, race, video_id,
 } = Astro.props;
 
 const cpEffectMap = new Map<string, string>();
@@ -696,6 +697,25 @@ const railItems = [`KOZY · ESO PvP`];
     </section>
   )}
 
+  {video_id && (
+    <section id="video-gameplay">
+      <div class="kz-rule" role="separator">
+        <span class="kz-rule__line"></span>
+        <span class="kz-rule__label">Video Gameplay</span>
+        <span class="kz-rule__line"></span>
+      </div>
+      <div class="video-embed">
+        <iframe
+          src={`https://www.youtube.com/embed/${video_id}?rel=0&modestbranding=1`}
+          title="Video Gameplay"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+  )}
+
   </div><!-- /.build-content -->
 
   <!-- STICKY TOC SIDEBAR -->
@@ -710,7 +730,8 @@ const railItems = [`KOZY · ESO PvP`];
       <a href="#gear-sheet"      class="toc__link">Gear Sheet</a>
       <a href="#consumables"     class="toc__link">Consumables</a>
       <a href="#champion-points" class="toc__link">Champion Points</a>
-    </nav>
+      {video_id && <a href="#video-gameplay" class="toc__link">Video</a>}
+</nav>
   </aside>
 
   </div><!-- /.build-layout -->
@@ -737,6 +758,7 @@ const railItems = [`KOZY · ESO PvP`];
         <a href="#gear-sheet"      class="toc-drawer__link">Gear Sheet</a>
         <a href="#consumables"     class="toc-drawer__link">Consumables</a>
         <a href="#champion-points" class="toc-drawer__link">Champion Points</a>
+        {video_id && <a href="#video-gameplay" class="toc-drawer__link">Video</a>}
       </nav>
     </div>
   </div>
@@ -1418,6 +1440,24 @@ const railItems = [`KOZY · ESO PvP`];
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
+  }
+
+  /* ── Video Gameplay ── */
+  .video-embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    background: var(--color-surface);
+  }
+
+  .video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 
   .supply-card {

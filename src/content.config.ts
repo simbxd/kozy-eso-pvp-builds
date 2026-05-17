@@ -62,6 +62,7 @@ const builds = defineCollection({
     difficulty: z.enum(['Beginner', 'Intermediate', 'Advanced']),
     featured: z.boolean().default(false),
     og_image: z.string().optional(),
+    video_id: z.string().optional(),
     race: z.string().optional(),
     sets: z.array(z.string()),
     skills: z.object({
