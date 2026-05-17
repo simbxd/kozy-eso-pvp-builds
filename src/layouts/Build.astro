@@ -250,7 +250,10 @@ const railItems = [`KOZY · ESO PvP`];
         </svg>
       </div>
 
-      <h1 class="kz-display kz-display--l">{h1Text}</h1>
+      <h1 class="masthead__h1">
+        <span class="masthead__h1-name kz-display kz-display--l">{title}</span>
+        <span class="masthead__h1-sub">{subtitle}</span>
+      </h1>
       <p class="masthead__dates">
         <span class="masthead__author">By {author}</span>
         {(publishedDate || updatedAt) && (
@@ -855,6 +858,22 @@ const railItems = [`KOZY · ESO PvP`];
   .masthead__rail-sep { opacity: 0.4; }
 
   .masthead__sigil { display: inline-block; margin-bottom: 14px; opacity: 0.85; }
+
+  .masthead__h1 { margin: 0; }
+
+  .masthead__h1-name { display: block; }
+
+  .masthead__h1-sub {
+    display: block;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(17px, 2.3vw, 26px);
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    color: var(--color-text-muted);
+    margin-top: 16px;
+  }
 
   .masthead__dates {
     font-family: var(--font-mono);
