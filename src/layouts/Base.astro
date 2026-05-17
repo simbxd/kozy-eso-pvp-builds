@@ -42,9 +42,9 @@ const fullTitle = title === 'Home' ? 'kozy-eso.com — Builds, Guides & Mechanic
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <!-- Favicon — ?v bumped with OG_VERSION to bust aggressive browser favicon cache -->
+    <link rel="icon" type="image/svg+xml" href={`/favicon.svg?v=${OG_VERSION}`} />
+    <link rel="icon" href={`/favicon.ico?v=${OG_VERSION}`} />
     <meta name="theme-color" content="#8b5cf6" />
 
     <!-- SEO -->
