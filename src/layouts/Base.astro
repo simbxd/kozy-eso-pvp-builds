@@ -23,7 +23,10 @@ const {
 
 const siteUrl = 'https://kozy-eso.com';
 const canonical = canonicalUrl ?? new URL(Astro.url.pathname, siteUrl).href;
-const ogImageAbsolute = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+// Bump when the default OG image content changes — forces Discord/Twitter to drop their cached copy
+const OG_VERSION = '2';
+const ogImageBase = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+const ogImageAbsolute = ogImage === '/assets/og/og-default.png' ? `${ogImageBase}?v=${OG_VERSION}` : ogImageBase;
 const fullTitle = title === 'Home' ? 'kozy-eso.com — Builds, Guides & Mechanics for ESO PvP' : `${title} — Kozy ESO PvP Builds`;
 ---
 
