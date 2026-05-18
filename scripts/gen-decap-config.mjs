@@ -541,7 +541,10 @@ ${skillNameOptions(18)}
             label: Armor
             widget: list
             fields:
-              - { name: slot,   label: Slot,        widget: string }
+              - name: slot
+                label: Slot
+                widget: select
+                options: [Head, Shoulders, Chest, Hands, Waist, Legs, Feet]
               - name: type
                 label: Weight
                 widget: select
@@ -569,7 +572,10 @@ ${enchantOptions('armor', 18)}
             label: Jewelry
             widget: list
             fields:
-              - { name: slot,   label: Slot,        widget: string }
+              - name: slot
+                label: Slot
+                widget: select
+                options: [Ring I, Ring II, Neck]
               - name: type
                 label: Type
                 widget: select
@@ -593,7 +599,10 @@ ${enchantOptions('jewelry', 18)}
             label: Weapons
             widget: list
             fields:
-              - { name: slot,     label: Slot,        widget: string }
+              - name: slot
+                label: Slot
+                widget: select
+                options: [Main Hand, Off Hand, Backup Main, Backup Off]
               - { name: type,     label: Type,        widget: hidden, default: "weapon" }
               - { name: barLabel, label: Bar,         widget: string, hint: "BAR I ou BAR II" }
               - name: weapon_type
