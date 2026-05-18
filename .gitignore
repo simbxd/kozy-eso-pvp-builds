@@ -34,6 +34,8 @@ pnpm-debug.log*
 
 # Local dev/test data scratch dirs
 src/data/
+# fetch-consumables.mjs scratch output (real collection is src/content/consumables/)
+data/
 
 # Netlify leftover (project runs on Cloudflare Workers)
 .netlify/

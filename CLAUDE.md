@@ -300,7 +300,7 @@ Types : `Active | Passive | Ultimate`
 ### Contenu publié
 - **1 build :** Solo Knight (Hybrid DK PvP, `soloknight.md`) — seul build, sert de template canonique. Race `dunmer` — à confirmer par l'auteur. Patch `U50`.
 - **2 guides :** Penetration Caps Explained · Critical Resistance & Critical Damage in PvP
-- **713 sets** — base exhaustive, 707 vérifiés U49, 6 encore en "Gold Road (Q2 2024)" (Mighty Chudan, Rallying Cry, Two-Fanged Snake, Markyn Ring of Majesty, Armor of the Trainee, Mother's Sorrow) — à re-vérifier contre U49
+- **713 sets** — base exhaustive, tous vérifiés U49
 - **1208 skills** avec `morph_rationale` complet + `skill_line_id` — toutes classes, Alliance War, World (Vampire/Werewolf/Soul Magic)
 - **10 races** — passives max-rank, alliance, UESP URL — vérifiées U49
 - **13 mundus stones** — valeur base + full-Divines — vérifiées U49
