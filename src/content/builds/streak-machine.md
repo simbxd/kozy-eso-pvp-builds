@@ -61,8 +61,8 @@ champion_points:
       points: 50
       priority: 3
     - star: Cleansing Revival
-      points: 4
-      priority: 50
+      points: 50
+      priority: 4
   fitness:
     - star: Pain's Refuge
       points: 50
