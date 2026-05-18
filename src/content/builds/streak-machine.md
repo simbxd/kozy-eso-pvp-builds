@@ -103,10 +103,12 @@ playstyle:
     - skill: Haunting Curse
       role: Delayed Burst
     - skill: Bound Armaments
-      skill_alt: Streak
-      role: High DPS Burst or Stun
+      skill_alt: null
+      role: High DPS Burst
     - skill: Crystal Fragments
       role: Final Burst — hard hitting
+    - skill: Streak
+      role: Stun
   rules:
     - body: Every skill you cast outside a window is a tell. Stack your burst, read
         the opening, release everything at once — if they survive, reset and
