@@ -11,10 +11,10 @@ author: Kozy
 difficulty: Advanced
 featured: true
 race: breton
-summary: Sorcerer built to kite and pressure from range. in solo and small-scale
-  PvP. high movement speed while maintaining constant range pressure. through
+summary: Sorcerer built to kite and pressure from range, in solo and small-scale
+  PvP, high movement speed while maintaining constant range pressure, through
   Crystal Frags procs for high burst damage.
-pullquote: high mobility, range pressure. The longer the fight goes, the more
+pullquote: high mobility, range pressure. — The longer the fight goes, the more
   Bound armaments stacks.
 sets:
   - roksa-the-warped
