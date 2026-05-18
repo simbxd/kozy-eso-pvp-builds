@@ -27,7 +27,7 @@ skills:
     - bound-armaments
     - crystal-fragments
     - streak
-    - healing-soul
+    - wield-soul
     - blinding-flare
   bar2:
     - elemental-susceptibility
