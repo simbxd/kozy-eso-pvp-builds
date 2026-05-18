@@ -604,7 +604,10 @@ ${enchantOptions('jewelry', 18)}
                 widget: select
                 options: [Main Hand, Off Hand, Backup Main, Backup Off]
               - { name: type,     label: Type,        widget: hidden, default: "weapon" }
-              - { name: barLabel, label: Bar,         widget: string, hint: "BAR I ou BAR II" }
+              - name: barLabel
+                label: Bar
+                widget: select
+                options: [BAR I, BAR II]
               - name: weapon_type
                 label: Weapon Type
                 widget: select
