@@ -46,7 +46,14 @@ const consumables = defineCollection({
   }),
 });
 
-const cpStar = z.object({ star: z.string(), points: z.number(), priority: z.number() });
+// Bounds catch the recurring Decap data-entry error of swapping the two
+// (e.g. points:4 / priority:50). Points: slottable CP cap is 50. Priority is
+// an ordering 1..N (builds use ~4 stars); 12 is generous, 50 clearly a swap.
+const cpStar = z.object({
+  star: z.string(),
+  points: z.number().int().min(1).max(50),
+  priority: z.number().int().min(1).max(12),
+});
 
 const playstyleRule = z.object({ title: z.string(), body: z.string() });
 
@@ -88,8 +95,9 @@ const builds = defineCollection({
     race: z.string().optional(),
     sets: z.array(z.string()),
     skills: z.object({
-      bar1: z.array(z.string()),
-      bar2: z.array(z.string()),
+      // ESO action bar = exactly 6 slots (5 actives + 1 ultimate).
+      bar1: z.array(z.string()).length(6),
+      bar2: z.array(z.string()).length(6),
     }),
     // Scribing: maps a Grimoire skill ID (referenced in bar1/bar2) to its 3 chosen scripts.
     // Scripts are free-text — no dataset to maintain, author controls exact wording.
