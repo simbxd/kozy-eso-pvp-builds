@@ -85,6 +85,7 @@ consumables:
     stone: The Shadow
     alt:
       stone: The Thief
+      note: Bruh
 playstyle:
   buffs:
     - uptime: full
