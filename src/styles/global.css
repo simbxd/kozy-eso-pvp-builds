@@ -28,9 +28,13 @@ html {
   font-size: 17px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
 
-body { min-height: 100vh; margin: 0; }
+/* overflow-x: clip (not hidden) contains the full-bleed hero's 100vw breakout
+   without enabling horizontal scroll AND without creating a scroll container —
+   so the sticky build TOC keeps working. */
+body { min-height: 100vh; margin: 0; overflow-x: clip; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
