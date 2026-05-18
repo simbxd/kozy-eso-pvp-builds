@@ -56,7 +56,7 @@ const skillsIndex = await Promise.all(
   skillFiles.map(async f => {
     const id   = f.replace('.json', '');
     const data = JSON.parse(await readFile(join(SKILLS_DIR, f), 'utf8'));
-    return { id, name: data.name, skill_line: data.skill_line ?? '' };
+    return { id, name: data.name, skill_line: data.skill_line ?? '', type: data.type ?? '' };
   })
 );
 skillsIndex.sort((a, b) => a.name.localeCompare(b.name));
@@ -137,9 +137,14 @@ function enchantOptions(filterCategory, indent = 18) {
     .join('\n');
 }
 
+// Bars hold only Active/Ultimate skills — exclude Passives so an author
+// can't accidentally slot one (builds fine but is wrong content).
+const isBarSkill = s => s.type === 'Active' || s.type === 'Ultimate';
+
 function skillOptions(indent = 12) {
   const pad = ' '.repeat(indent);
   return skillsIndex
+    .filter(isBarSkill)
     .map(s => {
       const label = s.skill_line ? `${s.name} — ${s.skill_line}` : s.name;
       return `${pad}- { label: "${label.replace(/"/g, '\\"')}", value: "${s.id}" }`;
@@ -222,6 +227,7 @@ function statOptions(indent = 18) {
 function skillNameOptions(indent = 18) {
   const pad = ' '.repeat(indent);
   return skillsIndex
+    .filter(isBarSkill)
     .map(s => {
       const label = s.skill_line ? `${s.name} — ${s.skill_line}` : s.name;
       return `${pad}- { label: "${label.replace(/"/g, '\\"')}", value: "${s.name.replace(/"/g, '\\"')}" }`;

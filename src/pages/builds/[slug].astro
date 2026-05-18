@@ -5,6 +5,8 @@ import { getFileDates } from '../../lib/git-dates';
 import traitsIndexRaw from '../../data/eso/traits-index.json';
 import enchantsIndexRaw from '../../data/eso/enchants-index.json';
 import mundusIndexRaw from '../../data/eso/mundus-index.json';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 export async function getStaticPaths() {
   const builds = await getCollection('builds');
@@ -114,10 +116,20 @@ const scribingMap = Object.fromEntries(
   (build.data.scribing ?? []).map(s => [s.skill, { focus: s.focus, signature: s.signature, affix: s.affix }])
 );
 
+// ~278 active skills (Arcanist/Scribing permutations) have a JSON `icon` path
+// but no PNG on disk — UESP doesn't serve them. Blank the icon when the file
+// is missing so SkillBar's existing glyph fallback renders instead of a
+// broken <img>. Degrades gracefully without blocking the author.
+function resolveIcon(icon: string | undefined): string {
+  if (!icon) return '';
+  return existsSync(join(process.cwd(), 'public', icon)) ? icon : '';
+}
+
 function enrichSkill(id: string) {
   const skill = skillsMap[id]!;
   return {
     ...skill,
+    icon: resolveIcon(skill.icon),
     morph_sibling_name: skill.morph_sibling ? (skillsMap[skill.morph_sibling]?.name ?? null) : null,
     scribing: scribingMap[id] ?? null,
   };
