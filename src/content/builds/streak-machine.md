@@ -8,7 +8,7 @@ gamemode:
   - Duels
 patch: U50
 author: Kozy
-difficulty: Intermediate
+difficulty: Advanced
 featured: true
 race: breton
 summary: Sorcerer built to kite and pressure from range. in solo and small-scale
