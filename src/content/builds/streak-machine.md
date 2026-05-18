@@ -14,8 +14,8 @@ race: breton
 summary: Sorcerer built to kite and pressure from range. in solo and small-scale
   PvP. high movement speed while maintaining constant range pressure. through
   Crystal Frags procs for high burst damage.
-pullquote: high movement speed. Maintaining constant range pressure. The longer
-  the fight goes, the more Bound armaments stacks.
+pullquote: high mobility, range pressure. The longer the fight goes, the more
+  Bound armaments stacks.
 sets:
   - roksa-the-warped
   - monomyth-reforged
