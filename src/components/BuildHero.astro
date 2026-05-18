@@ -1,0 +1,739 @@
+---
+import type { ImageMetadata } from 'astro';
+
+// Auto-discovery: any PNG sitting next to a build .md file is eligible.
+// Slug → ImageMetadata map, built once at module load.
+const characterByConvention = import.meta.glob<{ default: ImageMetadata }>(
+  '../content/builds/*.png',
+  { eager: true }
+);
+const characterMap = new Map<string, ImageMetadata>();
+for (const [path, mod] of Object.entries(characterByConvention)) {
+  // path is like '../content/builds/soloknight.png' → slug 'soloknight'
+  const slug = path.split('/').pop()!.replace(/\.png$/, '');
+  characterMap.set(slug, mod.default);
+}
+
+interface SkillRef {
+  id: string;
+  name: string;
+  icon?: string;
+  skill_line?: string;
+  type?: string;
+  resource?: string;
+  base_skill?: string | null;
+  morph_of?: string | null;
+  morph_sibling_name?: string | null;
+  morph_rationale?: string | null;
+  scribing?: { focus: string; signature: string; affix: string } | null;
+}
+
+interface Props {
+  slug: string;
+  title: string;
+  className: string;     // ex: "Dragonknight"
+  role: string;          // ex: "DPS"
+  resource: string;      // ex: "Hybrid"
+  gamemode: string[];    // ex: ["Cyrodiil / Imperial City"]
+  patch: string;         // ex: "U50"
+  difficulty: string;    // ex: "Intermediate"
+  author: string;        // ex: "Kozy"
+  race?: string;         // resolved race name, ex: "Dunmer" (optional)
+  featured: boolean;
+  summary: string;
+  publishedDate?: string; // YYYY-MM-DD (git-derived)
+  updatedAt?: string;     // YYYY-MM-DD (git-derived)
+  stats?: {
+    health:  { target?: number };
+    magicka: { target?: number };
+    stamina: { target?: number };
+  };
+  mundus?: { stone: string };
+  /** Explicit frontmatter character image — wins over convention. */
+  character?: ImageMetadata;
+  bar1: SkillRef[];
+  bar2: SkillRef[];
+  /** Aggregated armor weight split derived from gear array, ex: "Heavy · Medium · Light". */
+  armorSplit?: string;
+  /** Aggregated weapon types, ex: "Mace / Sword & Shield". */
+  weaponTypes?: string;
+}
+
+const {
+  slug, title, className, role, resource, gamemode, patch, difficulty,
+  author, race, featured, summary, publishedDate, updatedAt,
+  stats, mundus, character, bar1, bar2, armorSplit, weaponTypes,
+} = Astro.props;
+
+// Resolve character image: explicit frontmatter > convention by slug > null.
+const characterImg = character ?? characterMap.get(slug) ?? null;
+
+const eyebrowText = `${className} · ${role} · ${gamemode.join(' · ')}`;
+
+function formatDate(iso: string): string {
+  const [y, m, d] = iso.split('-').map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+// Discreet byline preserving the v10.5 git-derived dates (the masthead is gone).
+let datesLabel = '';
+if (publishedDate) {
+  datesLabel = (updatedAt && updatedAt !== publishedDate)
+    ? `Published ${formatDate(publishedDate)} · Updated ${formatDate(updatedAt)}`
+    : `Published ${formatDate(publishedDate)}`;
+} else if (updatedAt) {
+  datesLabel = `Updated ${formatDate(updatedAt)}`;
+}
+
+const altText = race
+  ? `${title} character — ${race} ${className}`
+  : `${title} character — ${className}`;
+
+function k(n: number) {
+  return n.toLocaleString('en-US');
+}
+
+const statItems = stats
+  ? ([
+      { label: 'Health',  value: stats.health.target },
+      { label: 'Magicka', value: stats.magicka.target },
+      { label: 'Stamina', value: stats.stamina.target },
+      ...(mundus ? [{ label: 'Mundus', value: mundus.stone }] : []),
+    ] as { label: string; value: number | string | undefined }[])
+      .filter(s => s.value != null && s.value !== '')
+  : [];
+
+const bars = [
+  { label: 'Bar I · Front Bar', skills: bar1 },
+  { label: 'Bar II · Back Bar', skills: bar2 },
+];
+---
+
+<section class="bh">
+  <div class="bh__inner">
+
+    <!-- LEFT — overview + stats + skill bars -->
+    <div class="bh__main">
+      <p class="bh__eyebrow">{eyebrowText}</p>
+
+      <h1 class="bh__title">{title}</h1>
+
+      <ul class="bh__tags" aria-label="Build tags">
+        {featured && <li class="bh__tag bh__tag--solid">Featured</li>}
+        <li class="bh__tag">Patch {patch}</li>
+        <li class="bh__tag">{difficulty}</li>
+        <li class="bh__tag">{resource}</li>
+        <li class="bh__tag bh__tag--ghost">by {author}</li>
+      </ul>
+
+      {datesLabel && <p class="bh__dates">{datesLabel}</p>}
+
+      <p class="bh__summary">{summary}</p>
+
+      {statItems.length > 0 && (
+        <div class="bh__stats" role="group" aria-label="Resource targets">
+          {statItems.map((s, i) => (
+            <>
+              {i > 0 && <span class="bh__stat-divider" aria-hidden="true"></span>}
+              <div class="bh__stat">
+                <span class="bh__stat-label">{s.label}</span>
+                <span class="bh__stat-value">{typeof s.value === 'number' ? k(s.value) : s.value}</span>
+              </div>
+            </>
+          ))}
+        </div>
+      )}
+
+      {bars.map(({ label, skills }) => (
+        <div class="bh__bar">
+          <div class="bh__bar-head">
+            <span class="bh__eyebrow bh__eyebrow--sub">{label}</span>
+            <span class="bh__bar-rule" aria-hidden="true"></span>
+          </div>
+          <ol class="bh__bar-row" aria-label={`${label} skills`}>
+            {skills.map(skill => {
+              const hasMorph = !!skill.morph_of;
+              const hasScribing = !!skill.scribing;
+              const hasTip = hasMorph || hasScribing;
+              return (
+                <li class="bh__sk">
+                  <div
+                    class="bh__sk-btn"
+                    tabindex={hasTip ? 0 : undefined}
+                    role={hasTip ? 'button' : undefined}
+                    aria-label={skill.name}
+                  >
+                    {skill.icon
+                      ? <img class="bh__skill" src={skill.icon} alt={skill.name} width="54" height="54" loading="lazy" />
+                      : <span class="bh__skill bh__skill--glyph" role="img" aria-label={skill.name}>{skill.name[0]}</span>
+                    }
+                  </div>
+
+                  {hasTip && (
+                    <div class="bh__sk-tip" role="tooltip">
+                      <div class="bh__sk-tip-head">
+                        <span class="bh__sk-tip-name">{skill.name}</span>
+                        <span class="bh__sk-tip-tags">
+                          {hasScribing && <span class="bh__sk-tag bh__sk-tag--scribed">Scribed</span>}
+                          {skill.type && <span class="bh__sk-tag">{skill.type}</span>}
+                          {skill.resource && skill.resource !== 'None' && (
+                            <span class="bh__sk-tag">{skill.resource}</span>
+                          )}
+                        </span>
+                      </div>
+
+                      {skill.skill_line && (
+                        <div class="bh__sk-tip-line">{skill.skill_line.toUpperCase()}</div>
+                      )}
+
+                      {hasMorph && (
+                        <div class="bh__sk-morph">
+                          <span class="bh__sk-morph-base">{skill.base_skill}</span>
+                          <span class="bh__sk-morph-arrow" aria-hidden="true">→</span>
+                          <span class="bh__sk-morph-chosen">{skill.name}</span>
+                          {skill.morph_sibling_name && (
+                            <>
+                              <span class="bh__sk-morph-or" aria-hidden="true">/</span>
+                              <span class="bh__sk-morph-sib">{skill.morph_sibling_name}</span>
+                            </>
+                          )}
+                        </div>
+                      )}
+
+                      {hasScribing && skill.scribing && (
+                        <div class="bh__sk-scripts">
+                          <div class="bh__sk-script"><span>Focus</span><span>{skill.scribing.focus}</span></div>
+                          <div class="bh__sk-script"><span>Signature</span><span>{skill.scribing.signature}</span></div>
+                          <div class="bh__sk-script"><span>Affix</span><span>{skill.scribing.affix}</span></div>
+                        </div>
+                      )}
+
+                      {skill.morph_rationale && (
+                        <p class="bh__sk-rationale">{skill.morph_rationale}</p>
+                      )}
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      ))}
+    </div>
+
+    <!-- RIGHT — character rail -->
+    <aside class="bh__rail" aria-label="Character portrait">
+      <svg class="bh__runic" viewBox="0 0 360 360" aria-hidden="true">
+        <circle cx="180" cy="180" r="170" fill="none" stroke="currentColor" stroke-opacity="0.35" />
+        <circle cx="180" cy="180" r="140" fill="none" stroke="currentColor" stroke-opacity="0.18" stroke-dasharray="2 6" />
+        {Array.from({ length: 24 }).map((_, i) => {
+          const a = (i / 24) * Math.PI * 2;
+          const x1 = 180 + Math.cos(a) * 170;
+          const y1 = 180 + Math.sin(a) * 170;
+          const r2 = i % 3 === 0 ? 155 : 162;
+          const x2 = 180 + Math.cos(a) * r2;
+          const y2 = 180 + Math.sin(a) * r2;
+          return (
+            <line x1={x1} y1={y1} x2={x2} y2={y2}
+                  stroke="currentColor"
+                  stroke-opacity={i % 3 === 0 ? 0.6 : 0.3} />
+          );
+        })}
+      </svg>
+
+      <span class="bh__plinth" aria-hidden="true"></span>
+
+      {characterImg ? (
+        <img
+          class="bh__character"
+          src={characterImg.src}
+          width={characterImg.width}
+          height={characterImg.height}
+          alt={altText}
+          loading="eager"
+        />
+      ) : (
+        <div class="bh__character-placeholder" aria-hidden="true">
+          <svg viewBox="0 0 200 200" width="160" height="160">
+            <polygon points="100,12 188,100 100,188 12,100"
+                     fill="none" stroke="currentColor" stroke-width="2.4" />
+            <polygon points="100,46 154,100 100,154 46,100"
+                     fill="none" stroke="currentColor" stroke-width="2" />
+            <circle cx="100" cy="100" r="14" fill="currentColor" />
+          </svg>
+          <p>No character screenshot yet — drop a <code>{slug}.png</code> in <code>src/content/builds/</code></p>
+        </div>
+      )}
+
+      <p class="bh__caption">
+        {race && <span>◆ {race}</span>}
+        {armorSplit && <span>◆ {armorSplit}</span>}
+        {weaponTypes && <span>◆ {weaponTypes}</span>}
+      </p>
+    </aside>
+
+  </div>
+</section>
+
+<style>
+  .bh {
+    position: relative;
+    /* Full-bleed breakout of the 1240px / 64px-padded .kz-page__inner so the
+       hero gradient and right rail reach the viewport edges like the mockup. */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background:
+      radial-gradient(ellipse at 80% 50%,
+        #1d0e44 0%,
+        var(--color-bg) 55%,
+        #06030f 100%);
+    color: var(--color-text);
+    overflow: hidden;
+  }
+
+  .bh__inner {
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    min-height: 860px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* LEFT */
+  .bh__main {
+    padding: 64px 56px 56px;
+    max-width: 880px;
+  }
+
+  .bh__eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--color-accent-soft, #a78bfa);
+    margin: 0 0 14px;
+  }
+  .bh__eyebrow--sub { color: var(--color-text-muted); }
+
+  .bh__title {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: clamp(56px, 6.5vw, 92px);
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    margin: 0;
+    background: linear-gradient(180deg,
+      #f4eeff 0%,
+      var(--color-accent-soft, #a78bfa) 70%,
+      #6d4ac9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bh__tags {
+    list-style: none;
+    padding: 0;
+    margin: 22px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .bh__tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 11px;
+    border: 1px solid rgba(139,92,246,0.35);
+    background: rgba(139,92,246,0.10);
+    color: var(--color-accent-soft, #cdb4ff);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    border-radius: 2px;
+  }
+  .bh__tag--solid {
+    background: var(--color-accent, #8b5cf6);
+    border-color: var(--color-accent, #8b5cf6);
+    color: #fff;
+  }
+  .bh__tag--ghost {
+    background: transparent;
+    border-color: rgba(205,180,255,0.25);
+    color: rgba(205,180,255,0.55);
+  }
+
+  .bh__dates {
+    margin: 16px 0 0;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .bh__summary {
+    margin: 26px 0 0;
+    font-family: var(--font-display);
+    font-size: 19px;
+    line-height: 1.5;
+    color: rgba(232,222,255,0.78);
+    max-width: 620px;
+  }
+
+  /* Stat strip */
+  .bh__stats {
+    margin-top: 36px;
+    padding: 22px 28px;
+    border: 1px solid rgba(205,180,255,0.28);
+    background: rgba(20,10,46,0.55);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 56px;
+    align-items: center;
+  }
+  .bh__stat { display: flex; flex-direction: column; gap: 4px; }
+  .bh__stat-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    color: rgba(205,180,255,0.55);
+    text-transform: uppercase;
+  }
+  .bh__stat-value {
+    /* Spec called for Cinzel; substituted with the already-loaded display
+       face (Cormorant Garamond) at weight 600, non-italic, to avoid a 4th
+       render-blocking webfont. */
+    font-family: var(--font-display);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+    color: var(--color-text, #f4eeff);
+  }
+  .bh__stat-divider {
+    width: 1px;
+    height: 36px;
+    background: linear-gradient(180deg, var(--color-accent, #8b5cf6), transparent);
+  }
+
+  /* Skill bars */
+  .bh__bar { margin-top: 36px; }
+  .bh__bar-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .bh__bar-rule {
+    flex: 0 0 140px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-accent, #8b5cf6), transparent);
+  }
+  .bh__bar-row {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .bh__skill {
+    display: block;
+    width: 54px;
+    height: 54px;
+    border: 1px solid rgba(205,180,255,0.28);
+    box-shadow: inset 0 0 0 1px rgba(205,180,255,0.18);
+    /* Striped fallback when an icon path is missing/broken */
+    background:
+      repeating-linear-gradient(135deg,
+        rgba(205,180,255,0.10) 0 2px,
+        rgba(20,10,46,0.6) 2px 6px);
+    border-radius: 2px;
+  }
+  .bh__skill--glyph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-accent-soft, #cdb4ff);
+  }
+
+  /* Skill icon + morph/scribing tooltip */
+  .bh__sk { position: relative; list-style: none; }
+  .bh__sk-btn {
+    display: block;
+    outline: none;
+    transition: transform 200ms;
+  }
+  .bh__sk:hover .bh__sk-btn,
+  .bh__sk-btn:focus-visible { transform: translateY(-2px); }
+  .bh__sk-btn:focus-visible {
+    outline: 2px solid var(--color-accent, #8b5cf6);
+    outline-offset: 2px;
+  }
+  .bh__sk-btn[tabindex] .bh__skill { cursor: help; }
+
+  .bh__sk-tip {
+    display: none;
+    position: absolute;
+    /* Opens upward — the .bh wrapper is overflow:hidden, and the bars sit low
+       in the hero, so downward tooltips would be clipped. */
+    bottom: calc(100% + 12px);
+    left: 0;
+    width: 300px;
+    max-width: min(300px, calc(100vw - 48px));
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border-2);
+    border-bottom: 1px solid var(--color-accent, #8b5cf6);
+    padding: 16px 16px 14px;
+    text-align: left;
+    z-index: 40;
+    pointer-events: none;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.6), 0 0 24px var(--color-accent-glow, rgba(139,92,246,0.18));
+  }
+  .bh__sk:hover .bh__sk-tip,
+  .bh__sk:focus-within .bh__sk-tip { display: block; }
+
+  /* Last two icons in a 6-slot row: anchor right to avoid running off-column. */
+  .bh__sk:nth-child(5) .bh__sk-tip,
+  .bh__sk:nth-child(6) .bh__sk-tip { left: auto; right: 0; }
+
+  .bh__sk-tip-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 9px;
+    margin-bottom: 9px;
+  }
+  .bh__sk-tip-name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.15;
+    color: var(--color-text);
+  }
+  .bh__sk-tip-tags { display: flex; gap: 4px; flex-shrink: 0; }
+  .bh__sk-tag {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border: 1px solid var(--color-border-2);
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+  .bh__sk-tag--scribed {
+    color: var(--color-mythic, #d4a44a);
+    border-color: rgba(212,164,74,0.35);
+  }
+  .bh__sk-tip-line {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 10px;
+  }
+  .bh__sk-morph {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    margin-bottom: 10px;
+  }
+  .bh__sk-morph-base { color: var(--color-text-muted); }
+  .bh__sk-morph-arrow { color: var(--color-accent, #8b5cf6); }
+  .bh__sk-morph-chosen {
+    color: var(--color-mono, #c4b5fd);
+    background: rgba(139,92,246,0.12);
+    padding: 1px 6px;
+  }
+  .bh__sk-morph-or { color: var(--color-text-muted); opacity: 0.5; }
+  .bh__sk-morph-sib {
+    color: var(--color-text-muted);
+    text-decoration: line-through;
+    text-decoration-color: rgba(125,119,160,0.4);
+  }
+  .bh__sk-scripts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    margin-bottom: 10px;
+  }
+  .bh__sk-script { display: flex; align-items: baseline; gap: 10px; }
+  .bh__sk-script span:first-child {
+    flex-shrink: 0;
+    width: 64px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+  .bh__sk-script span:last-child {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-mono, #c4b5fd);
+  }
+  .bh__sk-rationale {
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: rgba(232,222,255,0.82);
+    margin: 0;
+  }
+
+  /* RIGHT — character rail */
+  .bh__rail {
+    position: relative;
+    border-left: 1px solid rgba(205,180,255,0.14);
+    background: linear-gradient(180deg,
+      rgba(139,92,246,0.10) 0%,
+      transparent 60%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .bh__runic {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px;
+    height: 360px;
+    color: rgba(205,180,255,0.7);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .bh__plinth {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 60px;
+    background: radial-gradient(ellipse at center,
+      rgba(139,92,246,0.55) 0%,
+      transparent 70%);
+    filter: blur(8px);
+    pointer-events: none;
+  }
+
+  .bh__character {
+    position: relative;
+    z-index: 2;
+    height: 760px;
+    max-height: calc(100% - 40px);
+    width: auto;
+    object-fit: contain;
+    object-position: bottom center;
+    filter: drop-shadow(0 30px 40px rgba(0,0,0,0.6));
+  }
+
+  .bh__character-placeholder {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 80px;
+    color: rgba(205,180,255,0.4);
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    line-height: 1.5;
+    max-width: 280px;
+    text-transform: uppercase;
+  }
+  .bh__character-placeholder p { margin: 16px 0 0; }
+  .bh__character-placeholder code {
+    color: var(--color-accent-soft, #cdb4ff);
+    font-size: 11px;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  .bh__caption {
+    position: absolute;
+    top: 56px;
+    right: 28px;
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: rgba(205,180,255,0.55);
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    z-index: 3;
+    margin: 0;
+  }
+
+  /* ── Responsive ─────────────────────────────────────────── */
+
+  @media (max-width: 1180px) {
+    .bh__inner { grid-template-columns: 1fr 400px; }
+    .bh__character { height: 640px; }
+    .bh__runic { width: 300px; height: 300px; top: 110px; }
+    .bh__plinth { width: 260px; }
+  }
+
+  /* Tablet: stack — character on top, content below.
+     The figure remains the visual anchor; rail becomes a band. */
+  @media (max-width: 900px) {
+    .bh__inner {
+      grid-template-columns: 1fr;
+      min-height: 0;
+    }
+    .bh__rail {
+      order: -1;
+      height: 520px;
+      border-left: none;
+      border-bottom: 1px solid rgba(205,180,255,0.14);
+    }
+    .bh__main {
+      padding: 40px 32px 48px;
+      max-width: 100%;
+    }
+    .bh__character { height: 500px; }
+    .bh__runic { top: 60px; width: 320px; height: 320px; }
+    .bh__caption {
+      top: 24px;
+      right: 24px;
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .bh__rail { height: 420px; }
+    .bh__character { height: 400px; }
+    .bh__runic { width: 280px; height: 280px; top: 40px; }
+    .bh__title { font-size: clamp(44px, 12vw, 64px); }
+    .bh__stats { padding: 18px 20px; gap: 20px 28px; }
+    .bh__stat-divider { display: none; }
+    .bh__bar-rule { display: none; }
+    .bh__bar-row { flex-wrap: wrap; }
+    .bh__caption { display: none; }
+  }
+</style>

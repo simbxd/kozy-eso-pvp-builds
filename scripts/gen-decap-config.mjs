@@ -341,7 +341,6 @@ collections:
         options:
 ${raceOptions(10)}
       - { name: summary,    label: Summary,     widget: text }
-      - { name: pullquote,  label: Pull Quote,  widget: string,  required: false }
       - { name: video_id,   label: Video Gameplay (YouTube ID), widget: string, required: false, hint: "ID only — ex: dQw4w9WgXcQ" }
 
       # Sets

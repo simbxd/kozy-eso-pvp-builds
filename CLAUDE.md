@@ -179,7 +179,7 @@ consumables:
 ### Build (`src/content/builds/*.md`)
 Champs obligatoires : `title`, `class`, `role`, `resource`, `gamemode`, `patch`, `difficulty`, `featured`, `sets[]`, `skills.bar1[]`, `skills.bar2[]`, `summary`
 
-Champs optionnels : `author` (défaut "Kozy"), `pullquote`, `og_image`, `race`, `gear{}`, `stats{}`, `champion_points{}`, `consumables{}`
+Champs optionnels : `author` (défaut "Kozy"), `og_image`, `video_id`, `race`, `character` (cutout PNG du perso, voir `src/content/builds/README.md`), `gear{}`, `stats{}`, `champion_points{}`, `consumables{}`
 
 > `publishedDate` et `updatedAt` ne sont **plus** des champs frontmatter — ils sont dérivés automatiquement du Git log au build time via `src/lib/git-dates.ts`.
 

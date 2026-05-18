@@ -140,8 +140,10 @@ const resolvedBar2 = build.data.skills.bar2.map(enrichSkill);
 ---
 
 <Build
+  slug={build.id}
   title={build.data.title}
   class={build.data.class}
+  featured={build.data.featured}
   role={build.data.role}
   resource={build.data.resource}
   gamemode={build.data.gamemode}
@@ -151,7 +153,6 @@ const resolvedBar2 = build.data.skills.bar2.map(enrichSkill);
   updatedAt={updatedAt}
   difficulty={build.data.difficulty}
   summary={build.data.summary}
-  pullquote={build.data.pullquote}
   sets={resolvedSets}
   bar1={resolvedBar1}
   bar2={resolvedBar2}
@@ -163,4 +164,5 @@ const resolvedBar2 = build.data.skills.bar2.map(enrichSkill);
   playstyle={build.data.playstyle}
   race={resolvedRace}
   video_id={build.data.video_id}
+  character={build.data.character}
 />

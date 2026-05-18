@@ -79,8 +79,13 @@ const playstyle = z.object({
 }).optional();
 
 const builds = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/builds' }),
-  schema: decapSafe(z.object({
+  // README.md documents the character-screenshot convention for authors — it is
+  // not a build entry, so exclude it or the glob loader fails schema validation.
+  loader: glob({ pattern: ['**/*.md', '!**/README.md'], base: './src/content/builds' }),
+  // Function form so Astro injects the `image()` helper. `image()` resolves a
+  // path relative to the .md file and validates the asset exists at build time,
+  // so it's only set when the cutout PNG is actually present (see README).
+  schema: ({ image }) => decapSafe(z.object({
     title: z.string(),
     class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf']),
     role: z.enum(['DPS', 'Healer', 'Tank']),
@@ -93,6 +98,10 @@ const builds = defineCollection({
     og_image: z.string().optional(),
     video_id: z.string().optional(),
     race: z.string().optional(),
+    // Transparent-PNG character cutout for the build hero. Explicit override of
+    // the slug-convention auto-discovery (a `{slug}.png` next to the .md).
+    // Absent on most builds → hero shows the placeholder sigil. See README.
+    character: image().optional(),
     sets: z.array(z.string()),
     skills: z.object({
       // ESO action bar = exactly 6 slots (5 actives + 1 ultimate).
@@ -108,7 +117,6 @@ const builds = defineCollection({
       affix: z.string(),
     })).optional(),
     summary: z.string(),
-    pullquote: z.string().optional(),
     gear: z.object({
       armor:   z.array(z.object({ slot: z.string(), type: z.enum(['heavy','medium','light','mythic']), item: z.string().optional(), setId: z.string(), tier: z.string().optional(), trait: z.string(), enchant: z.string() })),
       jewelry: z.array(z.object({ slot: z.string(), type: z.enum(['jewelry','mythic']),       item: z.string().optional(), setId: z.string(), tier: z.string().optional(), trait: z.string(), enchant: z.string() })),

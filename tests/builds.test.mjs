@@ -71,7 +71,8 @@ function parseFrontmatter(src) {
   };
 }
 
-const buildFiles = (await readdir(BUILDS_DIR)).filter(f => f.endsWith('.md'));
+// README.md documents the character-screenshot convention — not a build entry.
+const buildFiles = (await readdir(BUILDS_DIR)).filter(f => f.endsWith('.md') && f !== 'README.md');
 const builds = await Promise.all(
   buildFiles.map(async f => ({
     file: f,
