@@ -10,7 +10,7 @@ const sorted = allBuilds.sort((a, b) => {
   return a.data.title.localeCompare(b.data.title);
 });
 
-const classes = ['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf', 'Subclass'];
+const classes = ['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf'];
 const countByClass = Object.fromEntries(
   classes.map(c => [c, allBuilds.filter(b => b.data.class === c).length])
 );
