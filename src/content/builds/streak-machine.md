@@ -103,7 +103,6 @@ playstyle:
     - skill: Haunting Curse
       role: Delayed Burst
     - skill: Bound Armaments
-      skill_alt: null
       role: High DPS Burst
     - skill: Crystal Fragments
       role: Final Burst — hard hitting

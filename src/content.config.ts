@@ -39,7 +39,8 @@ const playstyleBuffItem = z.object({
 
 const playstyleComboStep = z.object({
   skill: z.string(),
-  skill_alt: z.string().optional(),
+  // Decap emits `null` (not absent) for an empty optional select — must tolerate it.
+  skill_alt: z.string().optional().nullable(),
   role: z.string(),
 });
 
