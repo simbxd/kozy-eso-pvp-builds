@@ -7,6 +7,7 @@ tags:
   - crit-damage
   - PvP
   - math
+patch: U50
 summary: Why there is no universal Crit Resistance cap in PvP — and how the arms
   race between Crit Res and Crit Damage shifts the value of each stat depending
   on your opponent.
