@@ -8,7 +8,7 @@ gamemode:
 patch: U50
 author: Kozy
 difficulty: Advanced
-featured: false
+featured: true
 race: khajiit
 summary: sssss
 sets:
@@ -38,12 +38,12 @@ scribing:
     affix: Vitality
 stats:
   health:
-    target: 21678
+    target: 21500
     note: "28000"
   magicka:
-    target: 15403
+    target: 15000
   stamina:
-    target: 35899
+    target: 35000
 champion_points:
   warfare:
     - star: Focused Mending
@@ -79,7 +79,7 @@ consumables:
       stone: The Lover
   food:
     id: lava-foot-soup-and-saltrice
-    alt: bewitched sugar skulls
+    alt: Bewitched Sugar Skulls
   potion:
     id: essence-of-health
   poison:
