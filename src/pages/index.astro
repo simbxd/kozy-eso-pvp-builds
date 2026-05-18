@@ -20,7 +20,7 @@ const latestGuides = allGuides
   .sort((a, b) => (b.publishedDate ?? '').localeCompare(a.publishedDate ?? ''))
   .slice(0, 3);
 
-const classes = ['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf', 'Subclass'];
+const classes = ['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf'];
 const countByClass = Object.fromEntries(
   classes.map(c => [c, allBuilds.filter(b => b.data.class === c).length])
 );

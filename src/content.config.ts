@@ -82,7 +82,7 @@ const builds = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/builds' }),
   schema: decapSafe(z.object({
     title: z.string(),
-    class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf', 'Subclass']),
+    class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf']),
     role: z.enum(['DPS', 'Healer', 'Tank']),
     resource: z.enum(['Stamina', 'Magicka', 'Hybrid']),
     gamemode: z.array(z.enum(['Cyrodiil / Imperial City', 'Battlegrounds', 'Duels'])).min(1),
