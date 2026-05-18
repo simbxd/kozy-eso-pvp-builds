@@ -50,6 +50,16 @@ const enchantsIndex = JSON.parse(
   await readFile(join(ESO_DIR, 'enchants-index.json'), 'utf8')
 );
 
+// Scribing permutation skill IDs (e.g. "healing-soul", "arcanists-soul") —
+// the named combos a grimoire becomes once scripted. They clutter the skill-bar
+// dropdown and confuse authors (you slot the grimoire "Wield Soul", not its
+// permutation "Healing Soul"). Derived from UESP real-skill lists; see
+// scribing-permutations.json. Excluded from the bar dropdown only — the JSON
+// files stay so existing pages/links keep working.
+const scribingPermutationIds = new Set(JSON.parse(
+  await readFile(join(ESO_DIR, 'scribing-permutations.json'), 'utf8')
+));
+
 // Skills: only curated files in src/content/skills/ (these are the ones assertIds() accepts)
 const skillFiles = (await readdir(SKILLS_DIR)).filter(f => f.endsWith('.json'));
 const skillsIndex = await Promise.all(
@@ -145,6 +155,7 @@ function skillOptions(indent = 12) {
   const pad = ' '.repeat(indent);
   return skillsIndex
     .filter(isBarSkill)
+    .filter(s => !scribingPermutationIds.has(s.id))
     .map(s => {
       const label = s.skill_line ? `${s.name} — ${s.skill_line}` : s.name;
       return `${pad}- { label: "${label.replace(/"/g, '\\"')}", value: "${s.id}" }`;
