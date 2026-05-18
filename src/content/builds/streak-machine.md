@@ -107,10 +107,10 @@ playstyle:
     - skill: Bound Armaments
       skill_alt: null
       role: High DPS Burst
-    - skill: Crystal Fragments
-      role: Final Burst — hard hitting
     - skill: Streak
       role: Stun
+    - skill: Crystal Fragments
+      role: Final Burst — hard hitting
   rules:
     - body: Every skill you cast outside a window is a tell. Stack your burst, read
         the opening, release everything at once — if they survive, reset and
