@@ -24,7 +24,7 @@ sets:
   - armor-of-the-trainee
 skills:
   bar1:
-    - bound-armaments
+    - cruxweaver-armor
     - crystal-fragments
     - streak
     - wield-soul
@@ -61,8 +61,8 @@ champion_points:
       points: 50
       priority: 3
     - star: Cleansing Revival
-      points: 50
-      priority: 4
+      points: 4
+      priority: 50
   fitness:
     - star: Pain's Refuge
       points: 50
