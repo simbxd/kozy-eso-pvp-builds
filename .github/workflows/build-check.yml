@@ -1,0 +1,39 @@
+name: Build Check
+
+# Safety gate for autonomous (incl. third-party) Decap CMS publishing.
+# Decap's editorial_workflow opens a PR per draft and merges it on "Publish".
+# This runs the real static build on every PR; with branch protection
+# requiring the "build" check, a broken draft (empty required field, bad
+# skill/set ID, malformed data) CANNOT be merged — production stays up.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+# A newer commit on the same branch/PR cancels the in-flight run.
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history — src/lib/git-dates.ts derives publishedDate/updatedAt
+          # from `git log`; a shallow clone would degrade those dates.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          # Pinned to Cloudflare's runtime (nodejs@22) to avoid CI/prod drift.
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build

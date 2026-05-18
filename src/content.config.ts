@@ -1,6 +1,28 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
+// ── Decap-safety preprocessor ────────────────────────────────────────────────
+// Decap CMS writes `null` (not an absent key) when an optional field — select,
+// number, string — is left empty. Zod `.optional()` accepts `undefined`, never
+// `null`, so a single empty optional field fails the whole static build and
+// takes the site down. This recursively rewrites `null` → `undefined` before
+// validation, neutralising that entire class of authoring errors at once.
+// Genuinely-required fields left empty still fail (correct) — the CI build gate
+// catches those on the PR before they can reach production.
+function stripNull(value: unknown): unknown {
+  if (value === null) return undefined;
+  if (Array.isArray(value)) return value.map(stripNull);
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value as Record<string, unknown>).map(([k, v]) => [k, stripNull(v)])
+    );
+  }
+  return value;
+}
+
+// Wrap a Decap-authored collection's object schema so `null` is tolerated.
+const decapSafe = <T extends z.ZodTypeAny>(schema: T) => z.preprocess(stripNull, schema);
+
 // ── Consumables ──────────────────────────────────────────────────────────────
 // An effect is either a named stat + value (food/drink) or a free-text
 // description (potions/poisons from UESP alchemy effect pages).
@@ -39,8 +61,7 @@ const playstyleBuffItem = z.object({
 
 const playstyleComboStep = z.object({
   skill: z.string(),
-  // Decap emits `null` (not absent) for an empty optional select — must tolerate it.
-  skill_alt: z.string().optional().nullable(),
+  skill_alt: z.string().optional(),
   role: z.string(),
 });
 
@@ -52,7 +73,7 @@ const playstyle = z.object({
 
 const builds = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/builds' }),
-  schema: z.object({
+  schema: decapSafe(z.object({
     title: z.string(),
     class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf', 'Subclass']),
     role: z.enum(['DPS', 'Healer', 'Tank']),
@@ -103,12 +124,12 @@ const builds = defineCollection({
       poison: z.object({ id: z.string(), note: z.string().optional() }).optional(),
       mundus: z.object({ stone: z.string(), note: z.string().optional(), alt: z.object({ stone: z.string(), note: z.string().optional() }).optional() }).optional(),
     }).optional(),
-  }),
+  })),
 });
 
 const guides = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
-  schema: z.object({
+  schema: decapSafe(z.object({
     title: z.string(),
     category: z.string(),
     tags: z.array(z.string()),
@@ -116,7 +137,7 @@ const guides = defineCollection({
     summary: z.string(),
     patch: z.string().optional(),
     readTime: z.string().optional(),
-  }),
+  })),
 });
 
 const sets = defineCollection({
