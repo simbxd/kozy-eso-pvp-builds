@@ -29,12 +29,14 @@ skills:
     - streak
     - wield-soul
     - blinding-flare
+    - dawnbreaker-of-smiting
   bar2:
     - elemental-susceptibility
     - resolving-vigor
     - haunting-curse
     - critical-surge
     - hurricane
+    - temporal-guard
 scribing:
   - skill: wield-soul
     focus: Healing
@@ -73,7 +75,7 @@ champion_points:
       priority: 3
     - star: Fortified
       points: 50
-      priority: 1
+      priority: 4
 consumables:
   food:
     id: bewitched-sugar-skulls
@@ -103,6 +105,7 @@ playstyle:
     - skill: Haunting Curse
       role: Delayed Burst
     - skill: Bound Armaments
+      skill_alt: null
       role: High DPS Burst
     - skill: Crystal Fragments
       role: Final Burst — hard hitting
