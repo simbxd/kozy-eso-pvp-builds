@@ -8,14 +8,14 @@ gamemode:
   - Duels
 patch: U50
 author: Kozy
-difficulty: Intermediate
+difficulty: Advanced
 featured: true
 race: breton
 summary: Sorcerer built to kite and pressure from range. in solo and small-scale
   PvP. high movement speed while maintaining constant range pressure. through
   Crystal Frags procs for high burst damage.
-pullquote: high movement speed. Maintaining constant range pressure. The longer
-  the fight goes, the more Bound armaments stacks.
+pullquote: high mobility, range pressure. The longer the fight goes, the more
+  Bound armaments stacks.
 sets:
   - roksa-the-warped
   - monomyth-reforged
@@ -103,10 +103,12 @@ playstyle:
     - skill: Haunting Curse
       role: Delayed Burst
     - skill: Bound Armaments
-      skill_alt: Streak
-      role: High DPS Burst or Stun
+      skill_alt: null
+      role: High DPS Burst
     - skill: Crystal Fragments
       role: Final Burst — hard hitting
+    - skill: Streak
+      role: Stun
   rules:
     - body: Every skill you cast outside a window is a tell. Stack your burst, read
         the opening, release everything at once — if they survive, reset and
