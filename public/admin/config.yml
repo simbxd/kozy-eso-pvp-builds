@@ -2756,9 +2756,85 @@ collections:
               - { label: "Ulfsild's Contingency", value: "ulfsilds-contingency" }
               - { label: "Vault", value: "vault" }
               - { label: "Wield Soul", value: "wield-soul" }
-          - { name: focus,     label: Focus Script,     widget: string }
-          - { name: signature, label: Signature Script, widget: string }
-          - { name: affix,     label: Affix Script,     widget: string }
+          - name: focus
+            label: Focus Script
+            widget: select
+            options:
+              - { label: "Bleed Damage", value: "Bleed Damage" }
+              - { label: "Damage Shield", value: "Damage Shield" }
+              - { label: "Disease Damage", value: "Disease Damage" }
+              - { label: "Dispel", value: "Dispel" }
+              - { label: "Flame Damage", value: "Flame Damage" }
+              - { label: "Frost Damage", value: "Frost Damage" }
+              - { label: "Generate Ultimate", value: "Generate Ultimate" }
+              - { label: "Healing", value: "Healing" }
+              - { label: "Immobilize", value: "Immobilize" }
+              - { label: "Knockback", value: "Knockback" }
+              - { label: "Magic Damage", value: "Magic Damage" }
+              - { label: "Mitigation", value: "Mitigation" }
+              - { label: "Multi-Target", value: "Multi-Target" }
+              - { label: "Physical Damage", value: "Physical Damage" }
+              - { label: "Poison Damage", value: "Poison Damage" }
+              - { label: "Pull", value: "Pull" }
+              - { label: "Restore Resources", value: "Restore Resources" }
+              - { label: "Shock Damage", value: "Shock Damage" }
+              - { label: "Stun", value: "Stun" }
+              - { label: "Taunt", value: "Taunt" }
+              - { label: "Trauma", value: "Trauma" }
+          - name: signature
+            label: Signature Script
+            widget: select
+            options:
+              - { label: "Anchorite's Cruelty", value: "Anchorite's Cruelty" }
+              - { label: "Anchorite's Potency", value: "Anchorite's Potency" }
+              - { label: "Assassin's Misery", value: "Assassin's Misery" }
+              - { label: "Cavalier's Charge", value: "Cavalier's Charge" }
+              - { label: "Class Flourish", value: "Class Flourish" }
+              - { label: "Crusader's Defiance", value: "Crusader's Defiance" }
+              - { label: "Druid's Resurgence", value: "Druid's Resurgence" }
+              - { label: "Fencer's Parry", value: "Fencer's Parry" }
+              - { label: "Gladiator's Tenacity", value: "Gladiator's Tenacity" }
+              - { label: "Growing Impact", value: "Growing Impact" }
+              - { label: "Hunter's Snare", value: "Hunter's Snare" }
+              - { label: "Immobilizing Strike", value: "Immobilizing Strike" }
+              - { label: "Knight's Valor", value: "Knight's Valor" }
+              - { label: "Leeching Thirst", value: "Leeching Thirst" }
+              - { label: "Lingering Torment", value: "Lingering Torment" }
+              - { label: "Sage's Remedy", value: "Sage's Remedy" }
+              - { label: "Thief's Swiftness", value: "Thief's Swiftness" }
+              - { label: "Warmage's Defense", value: "Warmage's Defense" }
+              - { label: "Warrior's Opportunity", value: "Warrior's Opportunity" }
+              - { label: "Wayfarer's Mastery", value: "Wayfarer's Mastery" }
+          - name: affix
+            label: Affix Script
+            widget: select
+            options:
+              - { label: "Berserk", value: "Berserk" }
+              - { label: "Breach", value: "Breach" }
+              - { label: "Brittle", value: "Brittle" }
+              - { label: "Brutality and Sorcery", value: "Brutality and Sorcery" }
+              - { label: "Courage", value: "Courage" }
+              - { label: "Cowardice", value: "Cowardice" }
+              - { label: "Defile", value: "Defile" }
+              - { label: "Empower", value: "Empower" }
+              - { label: "Enervation", value: "Enervation" }
+              - { label: "Evasion", value: "Evasion" }
+              - { label: "Expedition", value: "Expedition" }
+              - { label: "Force", value: "Force" }
+              - { label: "Heroism", value: "Heroism" }
+              - { label: "Intellect and Endurance", value: "Intellect and Endurance" }
+              - { label: "Interrupt", value: "Interrupt" }
+              - { label: "Lifesteal", value: "Lifesteal" }
+              - { label: "Magickasteal", value: "Magickasteal" }
+              - { label: "Maim", value: "Maim" }
+              - { label: "Mangle", value: "Mangle" }
+              - { label: "Off Balance", value: "Off Balance" }
+              - { label: "Protection", value: "Protection" }
+              - { label: "Resolve", value: "Resolve" }
+              - { label: "Savagery and Prophecy", value: "Savagery and Prophecy" }
+              - { label: "Uncertainty", value: "Uncertainty" }
+              - { label: "Vitality", value: "Vitality" }
+              - { label: "Vulnerability", value: "Vulnerability" }
 
       # Stats targets
       - name: stats

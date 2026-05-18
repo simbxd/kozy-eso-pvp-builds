@@ -223,6 +223,39 @@ function statOptions(indent = 18) {
     .join('\n');
 }
 
+// Scribing scripts — extracted from UESP Online:Scribing (Focus/Signature/Affix
+// tables). Scripts are grimoire-specific in-game, but Decap select can't do
+// conditional options, so each is a flat list of every script of that type.
+const FOCUS_SCRIPTS = [
+  'Bleed Damage', 'Damage Shield', 'Disease Damage', 'Dispel', 'Flame Damage',
+  'Frost Damage', 'Generate Ultimate', 'Healing', 'Immobilize', 'Knockback',
+  'Magic Damage', 'Mitigation', 'Multi-Target', 'Physical Damage',
+  'Poison Damage', 'Pull', 'Restore Resources', 'Shock Damage', 'Stun',
+  'Taunt', 'Trauma',
+];
+const SIGNATURE_SCRIPTS = [
+  "Anchorite's Cruelty", "Anchorite's Potency", "Assassin's Misery",
+  "Cavalier's Charge", 'Class Flourish', "Crusader's Defiance",
+  "Druid's Resurgence", "Fencer's Parry", "Gladiator's Tenacity",
+  'Growing Impact', "Hunter's Snare", 'Immobilizing Strike', "Knight's Valor",
+  'Leeching Thirst', 'Lingering Torment', "Sage's Remedy", "Thief's Swiftness",
+  "Warmage's Defense", "Warrior's Opportunity", "Wayfarer's Mastery",
+];
+const AFFIX_SCRIPTS = [
+  'Berserk', 'Breach', 'Brittle', 'Brutality and Sorcery', 'Courage',
+  'Cowardice', 'Defile', 'Empower', 'Enervation', 'Evasion', 'Expedition',
+  'Force', 'Heroism', 'Intellect and Endurance', 'Interrupt', 'Lifesteal',
+  'Magickasteal', 'Maim', 'Mangle', 'Off Balance', 'Protection', 'Resolve',
+  'Savagery and Prophecy', 'Uncertainty', 'Vitality', 'Vulnerability',
+];
+
+function scriptOptions(list, indent = 12) {
+  const pad = ' '.repeat(indent);
+  return list
+    .map(s => `${pad}- { label: "${s}", value: "${s}" }`)
+    .join('\n');
+}
+
 // Playstyle skill select: value = skill name (for icon lookup), label = name + skill line
 function skillNameOptions(indent = 18) {
   const pad = ' '.repeat(indent);
@@ -348,9 +381,21 @@ ${skillOptions(16)}
             widget: select
             options:
 ${grimoireOptions(14)}
-          - { name: focus,     label: Focus Script,     widget: string }
-          - { name: signature, label: Signature Script, widget: string }
-          - { name: affix,     label: Affix Script,     widget: string }
+          - name: focus
+            label: Focus Script
+            widget: select
+            options:
+${scriptOptions(FOCUS_SCRIPTS, 14)}
+          - name: signature
+            label: Signature Script
+            widget: select
+            options:
+${scriptOptions(SIGNATURE_SCRIPTS, 14)}
+          - name: affix
+            label: Affix Script
+            widget: select
+            options:
+${scriptOptions(AFFIX_SCRIPTS, 14)}
 
       # Stats targets
       - name: stats
