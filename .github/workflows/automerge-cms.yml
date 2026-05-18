@@ -1,0 +1,25 @@
+name: Auto-merge CMS PRs
+
+# Decap CMS opens a PR for every "Publish" action on a cms/* branch.
+# This workflow enables GitHub's native auto-merge on those PRs so they
+# land on main automatically once the required "build" check passes.
+# If the build fails, auto-merge is never triggered — the safety gate holds.
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
+
+jobs:
+  automerge:
+    if: startsWith(github.head_ref, 'cms/')
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - name: Enable auto-merge
+        run: gh pr merge --auto --merge "${{ github.event.pull_request.number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
