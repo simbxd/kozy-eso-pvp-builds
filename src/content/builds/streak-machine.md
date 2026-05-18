@@ -24,7 +24,7 @@ sets:
   - armor-of-the-trainee
 skills:
   bar1:
-    - cruxweaver-armor
+    - bound-armaments
     - crystal-fragments
     - streak
     - wield-soul
