@@ -108,6 +108,7 @@ playstyle:
       role: High DPS Burst
     - skill: Streak
       role: Stun
+      skill_alt: Dawnbreaker of Smiting
     - skill: Crystal Fragments
       role: Final Burst — hard hitting
   rules:
