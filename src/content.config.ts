@@ -41,6 +41,8 @@ const consumables = defineCollection({
     uesp_url: z.string().url(),
     // Short editorial blurb — gives the otherwise stat-only food card some prose.
     description: z.string().optional(),
+    // Hand-corrected entry the scraper must never overwrite (see fetch-consumables.mjs).
+    curated: z.boolean().optional(),
     effects: z.array(consumableEffect),
     duration_seconds: z.number().optional(),
     reagents: z.array(z.string()).optional(),

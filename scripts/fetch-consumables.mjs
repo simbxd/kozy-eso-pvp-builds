@@ -18,7 +18,7 @@
  */
 
 import * as cheerio from 'cheerio';
-import { writeFile, mkdir } from 'node:fs/promises';
+import { writeFile, readFile, mkdir } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 
 // ---------- Config ----------
@@ -175,6 +175,14 @@ async function fetchHtml(url) {
 async function writeJson(filePath, obj) {
   await mkdir(dirname(filePath), { recursive: true });
   await writeFile(filePath, JSON.stringify(obj, null, 2) + '\n', 'utf8');
+}
+
+async function readJson(filePath) {
+  try {
+    return JSON.parse(await readFile(filePath, 'utf8'));
+  } catch {
+    return null; // missing or unparseable → treat as no prior file
+  }
 }
 
 function subdirFor(type) {
@@ -356,6 +364,18 @@ async function main() {
   const failures = [];
 
   for (const cfg of ITEMS) {
+    const dest     = join(OUT_DIR, `${toId(cfg.name)}.json`);
+    const existing = await readJson(dest);
+
+    // Curated lock: a file with "curated": true was hand-corrected because
+    // the scrape source is wrong for it (e.g. essence-of-health is the
+    // tri-restoration potion, but UESP's Restore_Health page only documents
+    // the single-stat variant). Never overwrite it — skip before the fetch.
+    if (existing && existing.curated === true) {
+      console.log(`↷ ${cfg.name} — curated, kept as-is`);
+      continue;
+    }
+
     try {
       let item;
       if (cfg.source === 'esolog') {
@@ -364,7 +384,13 @@ async function main() {
         item = await parseUespEffectPage(cfg);
       }
 
-      const dest = join(OUT_DIR, `${item.id}.json`);
+      // Preserve the editorial "description" blurb: it is authored by hand
+      // (not produced by either scrape source) and would otherwise be lost on
+      // every refresh.
+      if (existing && existing.description && !item.description) {
+        item.description = existing.description;
+      }
+
       await writeJson(dest, item);
       console.log(`✓ ${item.name} [${cfg.source}] → ${item.id}.json`);
     } catch (err) {

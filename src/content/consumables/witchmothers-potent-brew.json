@@ -4,7 +4,6 @@
   "type": "drink",
   "patch_verified": "U49",
   "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=87697&quality=4&lang=en",
-  "description": "Blue-quality three-stat drink granting Maximum Health, Maximum Magicka and Magicka Recovery. Balanced sustain and survivability for magicka builds.",
   "effects": [
     {
       "stat": "Maximum Health",
@@ -20,5 +19,6 @@
     }
   ],
   "duration_seconds": 7200,
-  "crafted": true
+  "crafted": true,
+  "description": "Blue-quality three-stat drink granting Maximum Health, Maximum Magicka and Magicka Recovery. Balanced sustain and survivability for magicka builds."
 }

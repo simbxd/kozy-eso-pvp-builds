@@ -4,7 +4,6 @@
   "type": "food",
   "patch_verified": "U49",
   "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=112425&quality=3&lang=en",
-  "description": "Green-quality drink granting Maximum Stamina and Stamina Recovery. A sustain pick for stamina builds running resource-hungry kits.",
   "effects": [
     {
       "stat": "Maximum Stamina",
@@ -16,5 +15,6 @@
     }
   ],
   "duration_seconds": 7200,
-  "crafted": true
+  "crafted": true,
+  "description": "Green-quality drink granting Maximum Stamina and Stamina Recovery. A sustain pick for stamina builds running resource-hungry kits."
 }

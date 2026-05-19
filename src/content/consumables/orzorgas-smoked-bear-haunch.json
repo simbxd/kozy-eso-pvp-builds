@@ -4,7 +4,6 @@
   "type": "food",
   "patch_verified": "U49",
   "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=71059&quality=5&lang=en",
-  "description": "Purple-quality recovery food granting Maximum Health, Health Recovery and Magicka Recovery. A survivability-focused option for sustain-heavy magicka builds.",
   "effects": [
     {
       "stat": "Maximum Health",
@@ -20,5 +19,6 @@
     }
   ],
   "duration_seconds": 7200,
-  "crafted": true
+  "crafted": true,
+  "description": "Purple-quality recovery food granting Maximum Health, Health Recovery and Magicka Recovery. A survivability-focused option for sustain-heavy magicka builds."
 }

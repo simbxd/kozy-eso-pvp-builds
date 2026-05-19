@@ -4,6 +4,7 @@
   "type": "potion",
   "patch_verified": "U49",
   "uesp_url": "https://en.uesp.net/wiki/Online:Restore_Health",
+  "curated": true,
   "effects": [
     {
       "description": "Restore Health, Magicka, and Stamina immediately."
