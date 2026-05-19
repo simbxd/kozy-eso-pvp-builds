@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "sync": "git pull --ff-only origin main && npm run build",
     "preview": "astro preview",
     "astro": "astro",
     "fetch:eso": "node scripts/fetch-eso-data.mjs",
