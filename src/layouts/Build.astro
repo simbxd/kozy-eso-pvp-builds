@@ -80,6 +80,7 @@ interface ConsumableData {
   type: string;
   patch_verified: string;
   uesp_url: string;
+  description?: string;
   effects: ConsumableEffect[];
   duration_seconds?: number;
   reagents?: string[];
@@ -503,6 +504,9 @@ const raceLabel = race?.name;
           <div class="supply-card">
             <div class="supply-card__kicker">Food</div>
             <h4 class="supply-card__name">{consumables.food.data.name}</h4>
+            {consumables.food.data.description && (
+              <p class="supply-card__body">{consumables.food.data.description}</p>
+            )}
             {/* Stat effects (food/drink: { stat, value } objects) */}
             <ul class="supply-card__effects">
               {consumables.food.data.effects.map(fx => (

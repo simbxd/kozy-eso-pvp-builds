@@ -39,6 +39,8 @@ const consumables = defineCollection({
     type: z.enum(['food', 'drink', 'potion', 'poison']),
     patch_verified: z.string(),
     uesp_url: z.string().url(),
+    // Short editorial blurb — gives the otherwise stat-only food card some prose.
+    description: z.string().optional(),
     effects: z.array(consumableEffect),
     duration_seconds: z.number().optional(),
     reagents: z.array(z.string()).optional(),

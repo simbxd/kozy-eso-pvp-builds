@@ -4,6 +4,7 @@
   "type": "food",
   "patch_verified": "U49",
   "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=139016&quality=4&lang=en",
+  "description": "Blue-quality two-stat food granting Maximum Health and Maximum Magicka. A raw-pool option for magicka builds that want a survivability buffer over recovery.",
   "effects": [
     {
       "stat": "Maximum Health",
