@@ -228,6 +228,16 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
       dragSrcId = id;
       dragSrcSlot = img.closest('.sbb__slot');
     });
+    // dragend fires on the dragged element regardless of where it's dropped.
+    // If dragSrcSlot is still set here, no slot received the drop → void drop → clear.
+    img.addEventListener('dragend', () => {
+      if (dragSrcSlot) {
+        clearSlot(dragSrcSlot);
+        sync();
+      }
+      dragSrcId = null;
+      dragSrcSlot = null;
+    });
     enableTouch(img, img.closest('.sbb__slot'));
     return img;
   }
@@ -403,6 +413,9 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
       } else if (touch.id && lookup[touch.id]) {
         fillSlot(target, touch.id);
       }
+    } else if (touch.fromSlot) {
+      // Dropped outside any slot — clear the source slot.
+      clearSlot(touch.fromSlot);
     }
     touch.clone.remove();
     touch.clone = null;
