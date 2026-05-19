@@ -1,16 +1,18 @@
 ---
-title: Plarcro
+title: Dueling "Plarcro"
 class: Templar
 role: DPS
 resource: Hybrid
 gamemode:
   - Duels
 patch: U50
-author: Kozy
+author: MoistBro
 difficulty: Advanced
 featured: true
 race: khajiit
-summary: sssss
+summary: Plarcro built to pressure and high burst in duels, squishy but deadly
+  while maintaining high pressure, with a good burst potential through Blighted
+  Blastbones and Thrive in Chaos.
 sets:
   - maarselok
   - perfected-wrath-of-elements
@@ -86,18 +88,31 @@ consumables:
     id: escapist-poison-ix
 playstyle:
   buffs: []
-  rules: []
+  rules:
+    - body: Every skill you cast outside a window is a tell. Stack your burst, read
+        the opening, release everything at once — if they survive, reset and
+        wait for the next one.
+      title: Don't rush the kill
+    - body: CC is the kill condition in solo PvP. Break the moment you're grabbed — do
+        not stand still.
+      title: Break free immediately
+    - body: Keep a really high uptime on Resolving Vigor, use your Burst Heal at ~60%
+        HP, not 20%. Panic heals at critical health are usually too late against
+        burst compositions.
+      title: Heal before panic
   combo:
     - skill: Blighted Blastbones
-      role: aoe
+      role: Delayed AoE Burst
     - skill: Elemental Susceptibility
-      role: debuff
+      role: Debuff
     - skill: Thrive in Chaos
-      role: damage
+      role: Massive AoE DoT
     - skill: Binding Javelin
-      role: stun
+      role: Stun
+    - skill: Blighted Blastbones
+      role: Delayed AoE Burst
     - skill: Rending Slashes
-      role: finisher
+      role: Finisher
 gear:
   weapons:
     - type: weapon
