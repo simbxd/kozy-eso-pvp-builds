@@ -1,0 +1,676 @@
+---
+import { readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import Base from '../../layouts/Base.astro';
+import skillsIndex from '../../data/eso/skills-index.json';
+
+// ── Why server-render the pool ──
+// The reference tool fetches skills.json client-side and builds the whole DOM in
+// JS. On an Astro static site the idiomatic move is the opposite: do the data
+// work at build time so the HTML ships complete (better SEO, no fetch flash,
+// zero JS just to draw the pool). The client script only handles interaction.
+
+type IndexSkill = {
+  id: string;
+  name: string;
+  class: string;
+  skill_line: string;
+  skill_line_id: string;
+  type: string;
+  icon: string;
+  morph_of: string | null;
+};
+
+// Only skills whose icon PNG actually exists get into the pool — avoids broken
+// images. 320 active skills have no icon yet (mostly weapon/world/guild lines
+// not scraped); they can be backfilled later with `npm run fetch:icons`.
+const iconFiles = new Set(
+  readdirSync(join(process.cwd(), 'public/assets/skills')),
+);
+
+const CLASS_SKILL_LINES = [
+  'Arcanist',
+  'Nightblade',
+  'Templar',
+  'Dragonknight',
+  'Sorcerer',
+  'Warden',
+  'Necromancer',
+];
+// Pool ordering: the 7 class lines first (build-relevant), then shared lines.
+const CLASS_ORDER = [
+  ...CLASS_SKILL_LINES,
+  'Weapon',
+  'World',
+  'Guild',
+  'Alliance War',
+  'Armor',
+];
+
+const slotable = (skillsIndex as IndexSkill[]).filter(
+  (s) => s.type === 'Active' && iconFiles.has(`${s.id}.png`),
+);
+
+// Group: class -> skill line -> skills (sorted by name for a stable order).
+type Group = { skillLine: string; key: string; isClass: boolean; skills: IndexSkill[] };
+const groups: Group[] = [];
+
+for (const cls of CLASS_ORDER) {
+  const inClass = slotable.filter((s) => s.class === cls);
+  if (inClass.length === 0) continue;
+
+  const lines = new Map<string, IndexSkill[]>();
+  for (const s of inClass) {
+    if (!lines.has(s.skill_line)) lines.set(s.skill_line, []);
+    lines.get(s.skill_line)!.push(s);
+  }
+
+  for (const [skillLine, skills] of lines) {
+    skills.sort((a, b) => a.name.localeCompare(b.name));
+    groups.push({
+      skillLine,
+      key: `${cls}:${skillLine}`,
+      isClass: CLASS_SKILL_LINES.includes(cls),
+      skills,
+    });
+  }
+}
+
+// Compact lookup the client script reads back to rebuild slots from ?skills=.
+const lookup: Record<string, { n: string; i: string; k: string }> = {};
+for (const s of slotable) {
+  lookup[s.id] = { n: s.name, i: s.icon, k: `${s.class}:${s.skill_line}` };
+}
+
+const SLOT_LAYOUT = [0, 1, 2, 3, 4]; // 5 actives; 6th (ultimate) rendered apart
+const hiddenCount = (skillsIndex as IndexSkill[]).filter(
+  (s) => s.type === 'Active' && !iconFiles.has(`${s.id}.png`),
+).length;
+
+const esoHub = (cls: string, lineId: string) =>
+  `https://eso-hub.com/en/skills/${cls.toLowerCase()}/${lineId}`;
+const classOf = (key: string) => key.split(':')[0];
+const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
+---
+
+<Base
+  title="Skill Bar Builder"
+  description="Build and share ESO skill bar setups — drag skills onto two bars, then copy a shareable link. Supports the 3-class subclassing system."
+>
+  <div class="sbb">
+    <header class="sbb__head">
+      <span class="sbb__eyebrow">KOZY · ESO PvP · TOOLS</span>
+      <h1 class="sbb__title">Skill Bar Builder</h1>
+      <p class="sbb__sub">
+        Drag skills onto the two bars. Slot 6 is the ultimate. Once you slot
+        three different class skill lines, the others hide — mirroring the
+        subclassing system. Your setup lives in the URL: copy the link to share.
+      </p>
+    </header>
+
+    <div class="sbb__rule" aria-hidden="true"></div>
+
+    <div class="sbb__toolbar">
+      <button id="sbb-copy" class="sbb__btn" type="button">Copy share link</button>
+      <button
+        id="sbb-reset"
+        class="sbb__btn sbb__btn--ghost"
+        type="button"
+        title="Clear both bars"
+      >Reset</button>
+      <span id="sbb-copied" class="sbb__copied" role="status" aria-live="polite"></span>
+    </div>
+
+    <div class="sbb__bars">
+      {[1, 2].map((bar) => (
+        <div class="sbb__bar">
+          <span class="sbb__bar-label">{bar === 1 ? 'Front bar' : 'Back bar'}</span>
+          <div class="sbb__slots" data-bar={bar}>
+            {SLOT_LAYOUT.map((i) => (
+              <div class="sbb__slot" data-bar={bar} data-index={i}></div>
+            ))}
+            <div class="sbb__slot-gap" aria-hidden="true"></div>
+            <div class="sbb__slot sbb__slot--ult" data-bar={bar} data-index={5}></div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="sbb__pool" id="sbb-pool">
+      {groups.map((g) => (
+        <>
+          <div class="sbb__line">
+            {g.isClass ? (
+              <a
+                class="sbb__line-link"
+                href={esoHub(classOf(g.key), lineIdOf(g.skills[0]))}
+                target="_blank"
+                rel="noopener"
+              >
+                {g.skillLine}
+              </a>
+            ) : (
+              <span class="sbb__line-link sbb__line-link--plain">{g.skillLine}</span>
+            )}
+            <span class="sbb__line-tag">{classOf(g.key)}</span>
+          </div>
+          <div class="sbb__row" data-skill-line={g.key}>
+            {g.skills.map((s) => (
+              <img
+                class="sbb__skill"
+                src={s.icon}
+                alt={s.name}
+                title={s.name}
+                draggable="true"
+                loading="lazy"
+                decoding="async"
+                data-id={s.id}
+                data-info={`${s.class}:${s.skill_line}`}
+              />
+            ))}
+          </div>
+        </>
+      ))}
+    </div>
+
+    <p class="sbb__note">
+      Showing {slotable.length} slotable skills. {hiddenCount} active skills are
+      hidden because their icon hasn’t been fetched yet. Drag-and-drop is
+      mouse/touch only — no keyboard reordering yet.
+    </p>
+  </div>
+
+  <script
+    type="application/json"
+    id="sbb-data"
+    set:html={JSON.stringify(lookup)}
+  ></script>
+</Base>
+
+<script>
+  type SkillMeta = { n: string; i: string; k: string };
+  const lookup: Record<string, SkillMeta> = JSON.parse(
+    document.getElementById('sbb-data')?.textContent || '{}',
+  );
+
+  const CLASS_LINES = new Set([
+    'Arcanist',
+    'Nightblade',
+    'Templar',
+    'Dragonknight',
+    'Sorcerer',
+    'Warden',
+    'Necromancer',
+  ]);
+
+  const slots = () =>
+    Array.from(document.querySelectorAll<HTMLElement>('.sbb__slot'));
+
+  // Stable slot order for the URL: bar1 idx0..5, then bar2 idx0..5.
+  const orderedSlots = () =>
+    slots().sort((a, b) => {
+      const ba = +a.dataset.bar! - +b.dataset.bar!;
+      return ba !== 0 ? ba : +a.dataset.index! - +b.dataset.index!;
+    });
+
+  let dragSrcId: string | null = null; // dragging from the pool
+  let dragSrcSlot: HTMLElement | null = null; // dragging between slots
+
+  function makeSlotImg(id: string): HTMLImageElement {
+    const meta = lookup[id];
+    const img = document.createElement('img');
+    img.src = meta.i;
+    img.alt = meta.n;
+    img.title = meta.n;
+    img.draggable = true;
+    img.dataset.id = id;
+    img.addEventListener('dragstart', () => {
+      dragSrcId = id;
+      dragSrcSlot = img.closest('.sbb__slot');
+    });
+    enableTouch(img, img.closest('.sbb__slot'));
+    return img;
+  }
+
+  function fillSlot(slot: HTMLElement, id: string) {
+    slot.innerHTML = '';
+    slot.appendChild(makeSlotImg(id));
+    slot.dataset.id = id;
+    slot.dataset.info = lookup[id].k;
+    slot.classList.add('is-filled');
+  }
+
+  function clearSlot(slot: HTMLElement) {
+    slot.innerHTML = '';
+    delete slot.dataset.id;
+    delete slot.dataset.info;
+    slot.classList.remove('is-filled');
+  }
+
+  function swapSlots(a: HTMLElement, b: HTMLElement) {
+    const aid = a.dataset.id;
+    const bid = b.dataset.id;
+    if (bid) fillSlot(a, bid);
+    else clearSlot(a);
+    if (aid) fillSlot(b, aid);
+    else clearSlot(b);
+  }
+
+  // ── URL sync ──
+  function writeURL() {
+    const ids = orderedSlots().map((s) => s.dataset.id || '');
+    const url = new URL(window.location.href);
+    if (ids.some(Boolean)) url.searchParams.set('skills', ids.join(','));
+    else url.searchParams.delete('skills');
+    history.replaceState({}, '', url);
+  }
+
+  function readURL() {
+    const raw = new URLSearchParams(window.location.search).get('skills');
+    if (!raw) return;
+    const ids = raw.split(',');
+    orderedSlots().forEach((slot, i) => {
+      const id = ids[i];
+      if (id && lookup[id]) fillSlot(slot, id);
+      else clearSlot(slot);
+    });
+  }
+
+  // ── Subclassing filter: once 3 distinct class skill lines are slotted,
+  // hide the class lines that aren't in use (other classes' shared lines stay).
+  function applySubclassFilter() {
+    const used = new Set<string>();
+    for (const s of slots()) {
+      const info = s.dataset.info;
+      if (!info) continue;
+      const [cls] = info.split(':');
+      if (CLASS_LINES.has(cls)) used.add(info);
+    }
+    const restrict = used.size >= 3;
+    document
+      .querySelectorAll<HTMLElement>('.sbb__row')
+      .forEach((row) => {
+        const key = row.dataset.skillLine!;
+        const [cls] = key.split(':');
+        if (!CLASS_LINES.has(cls)) return;
+        const show = !restrict || used.has(key);
+        row.style.display = show ? '' : 'none';
+        const label = row.previousElementSibling as HTMLElement | null;
+        if (label?.classList.contains('sbb__line'))
+          label.style.display = show ? '' : 'none';
+      });
+  }
+
+  function sync() {
+    writeURL();
+    applySubclassFilter();
+    const reset = document.getElementById('sbb-reset');
+    const any = slots().some((s) => s.dataset.id);
+    reset?.classList.toggle('is-active', any);
+  }
+
+  // ── Mouse drag/drop ──
+  function bindPool() {
+    document.querySelectorAll<HTMLImageElement>('.sbb__skill').forEach((img) => {
+      img.addEventListener('dragstart', () => {
+        dragSrcId = img.dataset.id!;
+        dragSrcSlot = null;
+      });
+      enableTouch(img, null);
+    });
+  }
+
+  function bindSlots() {
+    slots().forEach((slot) => {
+      slot.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        slot.classList.add('is-over');
+      });
+      slot.addEventListener('dragleave', () =>
+        slot.classList.remove('is-over'),
+      );
+      slot.addEventListener('drop', (e) => {
+        e.preventDefault();
+        slot.classList.remove('is-over');
+        if (dragSrcSlot && dragSrcSlot !== slot) {
+          swapSlots(dragSrcSlot, slot);
+        } else if (dragSrcId) {
+          fillSlot(slot, dragSrcId);
+        }
+        dragSrcId = null;
+        dragSrcSlot = null;
+        sync();
+      });
+    });
+  }
+
+  // ── Touch drag/drop (ports the reference's clone-follows-finger approach) ──
+  const touch: {
+    clone: HTMLElement | null;
+    id: string | null;
+    fromSlot: HTMLElement | null;
+  } = { clone: null, id: null, fromSlot: null };
+
+  function enableTouch(img: HTMLImageElement, fromSlot: HTMLElement | null) {
+    img.addEventListener(
+      'touchstart',
+      (ev) => {
+        if (ev.touches.length > 1) return;
+        ev.preventDefault();
+        const t = ev.touches[0];
+        touch.id = img.dataset.id || null;
+        touch.fromSlot = fromSlot;
+        const clone = img.cloneNode(true) as HTMLElement;
+        const r = img.getBoundingClientRect();
+        Object.assign(clone.style, {
+          position: 'fixed',
+          left: `${t.clientX - r.width / 2}px`,
+          top: `${t.clientY - r.height / 2}px`,
+          width: `${r.width}px`,
+          height: `${r.height}px`,
+          pointerEvents: 'none',
+          zIndex: '9999',
+          opacity: '0.85',
+        });
+        document.body.appendChild(clone);
+        touch.clone = clone;
+      },
+      { passive: false },
+    );
+  }
+
+  document.addEventListener(
+    'touchmove',
+    (ev) => {
+      if (!touch.clone) return;
+      ev.preventDefault();
+      const t = ev.touches[0];
+      const r = touch.clone.getBoundingClientRect();
+      touch.clone.style.left = `${t.clientX - r.width / 2}px`;
+      touch.clone.style.top = `${t.clientY - r.height / 2}px`;
+    },
+    { passive: false },
+  );
+
+  document.addEventListener('touchend', (ev) => {
+    if (!touch.clone) return;
+    const t = ev.changedTouches[0];
+    const el = document.elementFromPoint(t.clientX, t.clientY);
+    const target = el?.closest<HTMLElement>('.sbb__slot') || null;
+    if (target) {
+      if (touch.fromSlot && touch.fromSlot !== target) {
+        swapSlots(touch.fromSlot, target);
+      } else if (touch.id && lookup[touch.id]) {
+        fillSlot(target, touch.id);
+      }
+    }
+    touch.clone.remove();
+    touch.clone = null;
+    touch.id = null;
+    touch.fromSlot = null;
+    sync();
+  });
+
+  document.addEventListener('touchcancel', () => {
+    touch.clone?.remove();
+    touch.clone = null;
+    touch.id = null;
+    touch.fromSlot = null;
+  });
+
+  // ── Toolbar ──
+  document.getElementById('sbb-reset')?.addEventListener('click', () => {
+    slots().forEach(clearSlot);
+    sync();
+  });
+
+  document.getElementById('sbb-copy')?.addEventListener('click', async () => {
+    writeURL();
+    const note = document.getElementById('sbb-copied');
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      if (note) note.textContent = 'Link copied';
+    } catch {
+      if (note) note.textContent = 'Copy failed — URL is in the address bar';
+    }
+    setTimeout(() => note && (note.textContent = ''), 2500);
+  });
+
+  bindPool();
+  bindSlots();
+  readURL();
+  sync();
+</script>
+
+<style>
+  .sbb {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 0 96px;
+  }
+
+  .sbb__eyebrow {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.26em;
+    color: var(--color-text-muted);
+  }
+
+  .sbb__title {
+    font-family: var(--font-display);
+    font-size: clamp(44px, 7vw, 80px);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 0.95;
+    margin: 14px 0 0;
+    background: linear-gradient(160deg, #ede8ff 0%, #a78bfa 60%, #6d28d9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .sbb__sub {
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    max-width: 640px;
+    margin: 18px 0 0;
+  }
+
+  .sbb__rule {
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-accent), transparent);
+    opacity: 0.3;
+    margin: 36px 0 28px;
+  }
+
+  /* ── Toolbar ── */
+  .sbb__toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+
+  .sbb__btn {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-bg);
+    background: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+    padding: 9px 16px;
+    cursor: pointer;
+    transition: background 160ms, color 160ms;
+  }
+  .sbb__btn:hover { background: var(--color-accent-dim); border-color: var(--color-accent-dim); }
+
+  .sbb__btn--ghost {
+    color: var(--color-text-muted);
+    background: transparent;
+    border-color: var(--color-border-2);
+  }
+  .sbb__btn--ghost:hover {
+    color: var(--color-text);
+    background: var(--color-surface);
+    border-color: var(--color-accent);
+  }
+  .sbb__btn--ghost.is-active { color: var(--color-text); border-color: var(--color-accent); }
+
+  .sbb__copied {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--color-mono);
+  }
+
+  /* ── Bars ── */
+  .sbb__bars {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+
+  .sbb__bar {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .sbb__bar-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    width: 64px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .sbb__slots {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sbb__slot-gap { width: 18px; }
+
+  .sbb__slot {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border: 1px solid var(--color-border-2);
+    border-radius: 6px;
+    background: var(--color-surface);
+    position: relative;
+    box-sizing: border-box;
+    transition: border-color 140ms, box-shadow 140ms;
+  }
+
+  .sbb__slot--ult {
+    border-color: var(--color-mythic-dim);
+    box-shadow: inset 0 0 0 1px rgba(212, 164, 74, 0.15);
+  }
+
+  .sbb__slot.is-over {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px var(--color-accent-glow);
+  }
+
+  .sbb__slot.is-filled { background: var(--color-bg); }
+
+  .sbb__slot :global(img) {
+    position: absolute;
+    inset: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 4px;
+    cursor: grab;
+  }
+
+  /* ── Pool ── */
+  .sbb__pool {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 8px 24px 28px;
+    max-height: 62vh;
+    overflow-y: auto;
+  }
+
+  .sbb__line {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 22px 0 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .sbb__line-link {
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  a.sbb__line-link:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .sbb__line-link--plain { color: var(--color-text); }
+
+  .sbb__line-tag {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .sbb__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .sbb__skill {
+    width: 52px;
+    height: 52px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: grab;
+    transition: border-color 120ms, transform 120ms;
+  }
+  .sbb__skill:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+  }
+
+  .sbb__note {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    margin-top: 22px;
+  }
+
+  @media (max-width: 760px) {
+    .sbb { padding: 36px 0 72px; }
+    .sbb__bar { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .sbb__bar-label { width: auto; text-align: left; }
+    .sbb__slots { gap: 6px; }
+    .sbb__slot { width: 48px; height: 48px; }
+    .sbb__slot-gap { width: 10px; }
+    .sbb__pool { padding: 8px 14px 22px; max-height: 70vh; }
+    .sbb__skill { width: 46px; height: 46px; }
+  }
+</style>
