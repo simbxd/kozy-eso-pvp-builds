@@ -286,6 +286,8 @@ const config = `${isLocal ? 'local_backend: true\n\n' : ''}backend:
   branch: main
   base_url: https://kozy-eso-oauth.simbad14100.workers.dev
 
+publish_mode: editorial_workflow
+
 media_folder: public/assets/og
 public_folder: /assets/og
 
