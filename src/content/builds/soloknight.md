@@ -75,10 +75,10 @@ champion_points:
 consumables:
   food:
     id: bewitched-sugar-skulls
-    note: Tri-stat food — covers all three resource pools in one slot
+    note: ""
   potion:
     id: essence-of-weapon-power
-    note: Grants Major Brutality + restores Stamina
+    note: ""
   mundus:
     stone: The Lady
     note: Recommended default for this build
