@@ -13,6 +13,7 @@ race: dunmer
 summary: Dragonknight built to hold the line in solo and small-scale PvP. Hard
   to kill while maintaining constant pressure through Molten Whip procs and AoE
   pressure with Incinerate and Heart of Flame.
+video_id: _paQrQeRtzg
 sets:
   - mighty-chudan
   - markyn-ring-of-majesty
