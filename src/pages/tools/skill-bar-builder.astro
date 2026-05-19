@@ -48,7 +48,7 @@ const CLASS_ORDER = [
 ];
 
 const slotable = (skillsIndex as IndexSkill[]).filter(
-  (s) => s.type === 'Active' && iconFiles.has(`${s.id}.png`),
+  (s) => (s.type === 'Active' || s.type === 'Ultimate') && iconFiles.has(`${s.id}.png`),
 );
 
 // Group: class -> skill line -> skills (sorted by name for a stable order).
@@ -84,7 +84,7 @@ for (const s of slotable) {
 
 const SLOT_LAYOUT = [0, 1, 2, 3, 4]; // 5 actives; 6th (ultimate) rendered apart
 const hiddenCount = (skillsIndex as IndexSkill[]).filter(
-  (s) => s.type === 'Active' && !iconFiles.has(`${s.id}.png`),
+  (s) => (s.type === 'Active' || s.type === 'Ultimate') && !iconFiles.has(`${s.id}.png`),
 ).length;
 
 const esoHub = (cls: string, lineId: string) =>
@@ -174,7 +174,7 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
     </div>
 
     <p class="sbb__note">
-      Showing {slotable.length} slotable skills. {hiddenCount} active skills are
+      Showing {slotable.length} slotable skills (actives + ultimates). {hiddenCount} are
       hidden because their icon hasn’t been fetched yet. Drag-and-drop is
       mouse/touch only — no keyboard reordering yet.
     </p>
