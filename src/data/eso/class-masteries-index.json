@@ -1,0 +1,247 @@
+[
+  {
+    "id": "dk-lead-from-the-front",
+    "name": "Lead From the Front",
+    "class_id": "dragonknight",
+    "description": "Activating rank 2 of The Storm Voice grants you and nearby group members Major Berserk and Protection for 1 second per 15 Ultimate spent.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "dk-resolute-defense",
+    "name": "Resolute Defense",
+    "class_id": "dragonknight",
+    "description": "Each second you remain Bracing, increase the damage you block by 6%, up to 30%. 20% chance to restore 500 Stamina per second while Bracing.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "dk-wildfire-embers",
+    "name": "Wildfire Embers",
+    "class_id": "dragonknight",
+    "description": "When your Dragonknight damage over time effects end, apply Wildfire Embers to the target, dealing 2499 Flame Damage over 12 seconds.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "dk-booming-voice",
+    "name": "Booming Voice",
+    "class_id": "dragonknight",
+    "description": "Activating rank 2 of The Storm Voice also grants 5 Health, Magicka and Stamina Recovery for every Ultimate spent for 10 seconds.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "dk-inexorable-descent",
+    "name": "Inexorable Descent",
+    "class_id": "dragonknight",
+    "description": "Improves your Landslide passive to increase the potency of your damage done, healing done, and damage shield strength by 1% per stack.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "sorc-conservation-of-energy",
+    "name": "Conservation of Energy",
+    "class_id": "sorcerer",
+    "description": "Upgrades rank 2 of Blood Magic to trigger with any ability that has a cost, also restoring 400 Magicka and 389 Stamina when it activates.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "sorc-font-of-power",
+    "name": "Font of Power",
+    "class_id": "sorcerer",
+    "description": "Upgrades rank 2 of Exploitation to work with any Sorcerer ability and increases your Weapon and Spell Damage by 11% for 10 seconds.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "sorc-static-reverberation",
+    "name": "Static Reverberation",
+    "class_id": "sorcerer",
+    "description": "5% base chance to deal bonus Shock damage on hit, increasing as the target's Health drops. Scales up toward 100% at 0 Health.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "sorc-calculated-defense",
+    "name": "Calculated Defense",
+    "class_id": "sorcerer",
+    "description": "When beginning a Sorcerer ability or cast-time ability, gain a 0.5s shield absorbing 7127 damage. If it holds, nearby allies gain 3% Weapon and Spell Damage for 20 seconds.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "sorc-sphere-of-influence",
+    "name": "Sphere of Influence",
+    "class_id": "sorcerer",
+    "description": "Casting a damage shield on yourself or an ally grants 150 Health, Magicka and Stamina Recovery and an additional shield absorbing 3239 damage for 4 seconds.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "nb-nocturnal-inspiration",
+    "name": "Nocturnal Inspiration",
+    "class_id": "nightblade",
+    "description": "Upgrades rank 2 of Hemorrhage: each hit can generate 2 Ultimate (up to once every 0.3s), with a chance equal to your Weapon Critical chance.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "nb-an-eye-for-exploitation",
+    "name": "An Eye for Exploitation",
+    "class_id": "nightblade",
+    "description": "Increases your Weapon and Spell Damage by up to 1250 based on your target's missing Health. Reduces your damage taken by up to 12% based on your attacker's missing Health.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "nb-above-and-beyond",
+    "name": "Above and Beyond",
+    "class_id": "nightblade",
+    "description": "Increases your Critical Damage and Healing by 15% (halved against players). Raises your Critical Damage cap beyond the normal limit.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "nb-cutthroats-focus",
+    "name": "Cutthroat's Focus",
+    "class_id": "nightblade",
+    "description": "Activating a Nightblade ability while Bracing causes you to dodge attacks for 0.3 seconds. Each dodge increases your attacker's damage taken by 5% for 5 seconds.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "nb-share-the-spoils",
+    "name": "Share the Spoils",
+    "class_id": "nightblade",
+    "description": "Upgrades rank 2 of Transfer: grants the closest 4 group members 250 Magicka and Stamina and 1 Ultimate, and doubles the Ultimate you gain (4 instead of 2).",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "tpl-bastion-of-light",
+    "name": "Bastion of Light",
+    "class_id": "templar",
+    "description": "Sacred Ground now applies while in your own Nova and Spear Shards. While Radial Sweep or Solar Barrage is active, heal 1498 Health per second, gaining 2 Ultimate if at full Health.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "tpl-devout-guardian",
+    "name": "Devout Guardian",
+    "class_id": "templar",
+    "description": "While Sacred Ground is active, gain a damage shield absorbing 3747 damage for 6 seconds (once every 6 seconds) and 300 Health, Magicka and Stamina Recovery.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "tpl-bright-harbinger",
+    "name": "Bright Harbinger",
+    "class_id": "templar",
+    "description": "Upgrades rank 2 of Illuminate: also grants Bright Harbinger for the duration, giving allies 300 Weapon and Spell Damage (doubled to 600 for you).",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "tpl-judgments-brand",
+    "name": "Judgment's Brand",
+    "class_id": "templar",
+    "description": "When rank 2 of Burning Light deals damage, your Templar abilities gain 1250 damage done for 3.1 seconds.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "tpl-steadfast-candescence",
+    "name": "Steadfast Candescence",
+    "class_id": "templar",
+    "description": "Sacred Ground activates and refreshes itself while Bracing, increasing the amount of damage you can block by 20% while stationary.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "wdn-tundras-maw",
+    "name": "Tundra's Maw",
+    "class_id": "warden",
+    "description": "Applying Chill to an enemy also applies Major Brittle for 2 seconds, increasing their Critical Damage taken by 20%.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "wdn-wild-adaptation",
+    "name": "Wild Adaptation",
+    "class_id": "warden",
+    "description": "Gain 333 Weapon and Spell Damage for each status effect on your target, up to 1665 (5 stacks). Can also apply when targeting friendly players.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "wdn-glacial-obstinance",
+    "name": "Glacial Obstinance",
+    "class_id": "warden",
+    "description": "Upgrades Bond with Nature to also trigger when casting Winter's Embrace abilities, granting 15% Weapon and Spell Damage for 10 seconds if you are at full Health after the heal.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "wdn-green-keepers-hide",
+    "name": "Green-Keeper's Hide",
+    "class_id": "warden",
+    "description": "Reduce your damage taken by 3% for every status effect active on your attacker, up to a maximum of 15% (5 status effects).",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "wdn-natures-bounty",
+    "name": "Nature's Bounty",
+    "class_id": "warden",
+    "description": "Upgrades rank 2 of Nature's Gift to grant the healed target Major Heroism for 4.5 seconds and restore an additional 250 Magicka and Stamina.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "necro-cycle-unending",
+    "name": "Cycle Unending",
+    "class_id": "necromancer",
+    "description": "Upgrades rank 2 of Reusable Parts: grants Cycle Unending for 25 seconds, increasing your damage done by 1% per 1% Health advantage over the target, capping at 25% (12% vs players).",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "necro-pound-of-flesh",
+    "name": "Pound of Flesh",
+    "class_id": "necromancer",
+    "description": "When you take damage, 1% chance (up to once per second) to heal 2745 Health and restore 5% missing Stamina. Chance increases by 1% per missing Health percent.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "necro-veils-forfeit",
+    "name": "Veil's Forfeit",
+    "class_id": "necromancer",
+    "description": "In combat, directly healing a target below 50% Health lets you use a corpse consuming ability on them for 10 seconds (once per second). Consuming this effect grants the target 2 Ultimate.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "necro-nothing-wasted",
+    "name": "Nothing Wasted",
+    "class_id": "necromancer",
+    "description": "Upgrades rank 2 of Corpse Consumption: each use grants a stack of Nothing Wasted for 10 seconds, increasing Max Health and Weapon/Spell Damage by 2% per stack (up to 10). Stacks decay 3 at a time.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "necro-malevolent-promise",
+    "name": "Malevolent Promise",
+    "class_id": "necromancer",
+    "description": "Upgrades rank 2 of Corpse Consumption: marks the nearest non-player enemy with death's touch for 6 seconds, enabling corpse consuming abilities on them. Consuming the mark triggers rank 2 of Death Gleaning (once every 2 seconds).",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "arc-abyssal-emergence",
+    "name": "Abyssal Emergence",
+    "class_id": "arcanist",
+    "description": "Activating an Arcanist Ultimate immediately generates maximum Crux (3 stacks) and grants 666 Weapon and Spell Damage for 15 seconds.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "arc-fate-realigned",
+    "name": "Fate Realigned",
+    "class_id": "arcanist",
+    "description": "Upgrades rank 2 of Implacable Outcome: generates maximum Crux up to once every 15 seconds. After triggering, gain 300 Weapon and Spell Damage for 25 seconds.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "arc-unbound-potential",
+    "name": "Unbound Potential",
+    "class_id": "arcanist",
+    "description": "Upgrades rank 2 of Fated Fortune to also increase your damage done by 30% (halved against players) for the duration.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "arc-fleshborne-fate",
+    "name": "Fleshborne Fate",
+    "class_id": "arcanist",
+    "description": "While in combat, healing an ally generates Crux. Can trigger repeatedly throughout the fight.",
+    "patch_verified": "U50-PTS"
+  },
+  {
+    "id": "arc-mind-over-matter",
+    "name": "Mind Over Matter",
+    "class_id": "arcanist",
+    "description": "Upgrades Fatewoven Armor: when you take damage, restore Magicka and Stamina based on the damage taken.",
+    "patch_verified": "U50-PTS"
+  }
+]
