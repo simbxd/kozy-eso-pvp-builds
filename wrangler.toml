@@ -1,5 +1,11 @@
 name = "kozy-eso-pvp-builds"
 compatibility_date = "2026-05-12"
+main = "worker.ts"
 
 [assets]
 directory = "./dist"
+
+[[kv_namespaces]]
+binding = "BUILDS_KV"
+id = "1a94aeded4654dacbce21ac4f4683ed9"
+preview_id = "1a94aeded4654dacbce21ac4f4683ed9"
