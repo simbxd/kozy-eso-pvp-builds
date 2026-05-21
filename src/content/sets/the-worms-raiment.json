@@ -31,8 +31,8 @@
     },
     {
       "count": 5,
-      "stat": "Grants 3-145 Magicka Recovery to you and up to 11 other group members within 28 meters of you. This bonus persists through death.",
-      "value": ""
+      "stat": "Magicka Recovery",
+      "value": 145
     }
   ],
   "uesp_url": "https://en.uesp.net/wiki/Online:The_Worm's_Raiment",

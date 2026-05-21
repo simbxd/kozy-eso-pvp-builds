@@ -16,7 +16,23 @@
   --color-mythic:       #d4a44a;
   --color-mythic-dim:   #6b4f1a;
 
+  /* CP constellations — exception aux tokens de base : couleurs canoniques ESO
+     pour distinguer Warfare/Fitness dans le builder. Usage limité au tab CP. */
+  --color-cp-warfare:   #5b8fd6;
+  --color-cp-fitness:   #d65656;
+
+  /* Build Editor extended palette */
+  --color-text-dim:     #cdb4ff;                    /* inkDim — labels, inactive sidebar */
+  --color-text-faint:   rgba(205,180,255,0.30);     /* inkFaint — col headers, placeholders */
+  --color-accent-soft:  #a78bfa;                    /* accentSoft — sigils, active hints */
+  --color-edge:         rgba(205,180,255,0.14);     /* editor panel borders */
+  --color-edge-strong:  rgba(205,180,255,0.28);     /* FieldShell dashed border */
+  --color-armor-heavy:  #e6b56a;
+  --color-armor-medium: #a78bfa;
+  --color-armor-light:  #a8d8f0;
+
   --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-cinzel:  'Cinzel', Georgia, serif;
   --font-body:    'Crimson Pro', Georgia, serif;
   --font-mono:    'JetBrains Mono', 'Courier New', monospace;
 }

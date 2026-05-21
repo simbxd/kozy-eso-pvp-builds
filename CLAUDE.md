@@ -240,6 +240,11 @@ Types : `Active | Passive | Ultimate`
 
 > **Note UESP :** UESP peut être en retard de 1-2 semaines après un patch majeur. En cas de doute, faire confiance au jeu.
 
+### Build Editor — pièges Zustand / React
+- **`?? []` dans un sélecteur = boucle infinie.** `useBuilderStore((s) => s.build.bx ?? [])` crée un nouveau tableau à chaque appel de `getSnapshot` → React 19 détecte une référence instable et re-render à l'infini. **Fix :** déclarer la constante au niveau module : `const EMPTY: T[] = []; ... useBuilderStore((s) => s.build.bx ?? EMPTY)`. Même règle pour les objets fallback `?? {}` ou les tuples `?? [0, 0, 64]`.
+- **Cache `.astro` corrompu sur Windows :** en cas d'erreur EPERM sur `data-store.json` au démarrage du dev server, supprimer `.astro/` puis relancer. L'island ne reçoit pas son HTML SSR sans ce cache, ce qui empêche `hydrateRoot` de fonctionner.
+- **`build.pa` = passifs DÉSACTIVÉS** (absent = actif). `build.bx` = buffs ACTIFS (absent = inactif). Conventions inverses intentionnelles : `pa` garde le payload minimal pour les builds sans désactivation.
+
 ---
 
 ## Workflow auteur
@@ -275,8 +280,8 @@ Types : `Active | Passive | Ultimate`
 
 ## État du projet
 
-**Dernière session :** 2026-05-16
-**Milestone actuel :** v10.10 — Infra SEO polish + UX mobile
+**Dernière session :** 2026-05-20
+**Milestone actuel :** Build Editor M9 — Buffs tab complet
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -349,5 +354,21 @@ npm run dev
 ```
 Avant commit/deploy : `npm run gen:decap` (remet en mode production).
 
+### Build Editor — milestones
+Le Build Editor (`/builder`, `src/components/builder/`) est une React island (`client:load`) avec store Zustand + URL persistence (`?b=` via lz-string).
+
+- ✅ M1–M5 — Fondations : types, codec, store, composants React, page builder
+- ✅ M2 — SubclassPicker (skill lines)
+- ✅ M3 — GearTab (SetSelect popover, slots armure/bijoux/armes, traits/enchants)
+- ✅ M4 — SkillsTab (SkillBar dual-bar, SkillSelect, slots Ultimate)
+- ✅ M5 — PassivesSection (togglePassive — `build.pa` liste les passifs DÉSACTIVÉS)
+- ✅ M6 — CpTab (CpTree × 3, CpStarSelect, 4 slots/arbre)
+- ✅ M7 — AttrTab (64 points HP/Mag/Stam, presets)
+- ✅ M8 — Sidebar ComputedStats (redesign The Hist : 3 cartes ressources colorées, sections Offense/Recovery/Defense, toggles BS+Procs, footer contextuel) + ActiveSets
+- ✅ M8b — Moteur de calcul complet : base stats, set bonuses, traits/enchants, armes/armure, CP slottables, passifs classe/race/guilde, DK passifs corrigés (`elder-dragon` +700 HR ajouté, `blessing-at-the-peak` supprimé), Battle Spirit ×0.5, bonuses conditionnels 5pc
+- ✅ M9 — BuffsTab (15 buffs en 3 groupes Defense/Offense/Resources, toggle avec hints, `build.bx`, `BUFF_DEFS`+`BUFF_DEF_MAP`, étape 13 dans `compute-stats.ts`)
+
+**Prochain milestone :** M10 — Share tab (encoder/décoder le build en URL lisible, copier le lien)
+
 ### Prochaine étape
-- Continuer l'intégration UI des données meta ESO : mundus (déjà dans `consumables`), traits, enchants dans les pages de build
+- Build Editor M10 — Share tab

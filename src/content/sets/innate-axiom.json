@@ -12,7 +12,7 @@
     "weapon",
     "off-hand"
   ],
-  "patch_verified": "U49",
+  "patch_verified": "U50",
   "bonuses": [
     {
       "count": 2,
@@ -25,19 +25,14 @@
       "value": 1096
     },
     {
-      "count": 3,
+      "count": 4,
       "stat": "Maximum Stamina",
       "value": 1096
     },
     {
-      "count": 4,
+      "count": 5,
       "stat": "Critical Chance",
       "value": 657
-    },
-    {
-      "count": 5,
-      "stat": "Weapon and Spell Damage to your Class abilities.",
-      "value": 400
     }
   ],
   "uesp_url": "https://en.uesp.net/wiki/Online:Innate_Axiom",

@@ -12,7 +12,7 @@
     "weapon",
     "off-hand"
   ],
-  "patch_verified": "U49",
+  "patch_verified": "U50",
   "bonuses": [
     {
       "count": 2,
@@ -20,16 +20,6 @@
       "value": 731
     },
     {
-      "count": 2,
-      "stat": "Maximum Stamina",
-      "value": 731
-    },
-    {
-      "count": 3,
-      "stat": "Maximum Magicka",
-      "value": 731
-    },
-    {
       "count": 3,
       "stat": "Maximum Stamina",
       "value": 731
@@ -37,17 +27,12 @@
     {
       "count": 4,
       "stat": "Maximum Magicka",
-      "value": 731
-    },
-    {
-      "count": 4,
-      "stat": "Maximum Stamina",
       "value": 731
     },
     {
       "count": 5,
-      "stat": "Casting a non-Ultimate Curative Runeform ability grants an effect for 6 seconds to your affected allies based on how many Crux you had.\n\nAt 1 Crux, allies gain a damage shield that absorbs 3618 damage. At 2 Crux, allies gain Minor Heroism, granting 1 Ultimate every 1.5 seconds. At 3 Crux, allies gain Major Protection, reducing damage taken by 10%.",
-      "value": ""
+      "stat": "Maximum Stamina",
+      "value": 731
     }
   ],
   "uesp_url": "https://en.uesp.net/wiki/Online:Reawakened_Hierophant",

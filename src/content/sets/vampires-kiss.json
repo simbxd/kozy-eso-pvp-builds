@@ -12,7 +12,7 @@
     "weapon",
     "off-hand"
   ],
-  "patch_verified": "U49",
+  "patch_verified": "U50",
   "bonuses": [
     {
       "count": 2,
@@ -30,19 +30,9 @@
       "value": 1096
     },
     {
-      "count": 4,
+      "count": 5,
       "stat": "Maximum Magicka",
       "value": 1096
-    },
-    {
-      "count": 5,
-      "stat": "Weapon and Spell Damage",
-      "value": 129
-    },
-    {
-      "count": 5,
-      "stat": "When you kill an enemy, you heal for 10512 Health over 10 seconds.  This effect scales off the higher of your Max Magicka or Stamina.",
-      "value": ""
     }
   ],
   "uesp_url": "https://en.uesp.net/wiki/Online:Vampire's_Kiss",

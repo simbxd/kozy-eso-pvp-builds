@@ -35,7 +35,7 @@
     "class": "Sorcerer",
     "skill_line": "Dark Magic",
     "skill_line_id": "dark-magic",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/absorption-field.png",
     "morph_of": "negate-magic"
   },
@@ -145,7 +145,7 @@
     "class": "Alliance War",
     "skill_line": "Assault",
     "skill_line_id": "assault",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/aggressive-horn.png",
     "morph_of": "war-horn"
   },
@@ -215,7 +215,7 @@
     "class": "Necromancer",
     "skill_line": "Living Death",
     "skill_line_id": "living-death",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/animate-blastbones.png",
     "morph_of": "reanimate"
   },
@@ -595,7 +595,7 @@
     "class": "Weapon",
     "skill_line": "Bow",
     "skill_line_id": "bow",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/ballista.png",
     "morph_of": "rapid-fire"
   },
@@ -645,7 +645,7 @@
     "class": "Alliance War",
     "skill_line": "Support",
     "skill_line_id": "support",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/barrier.png",
     "morph_of": null
   },
@@ -725,7 +725,7 @@
     "class": "Weapon",
     "skill_line": "Two Handed",
     "skill_line_id": "two-handed",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/berserker-rage.png",
     "morph_of": "berserker-strike"
   },
@@ -735,7 +735,7 @@
     "class": "Weapon",
     "skill_line": "Two Handed",
     "skill_line_id": "two-handed",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/berserker-strike.png",
     "morph_of": null
   },
@@ -1085,7 +1085,7 @@
     "class": "World",
     "skill_line": "Vampire",
     "skill_line_id": "vampire",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/blood-scion.png",
     "morph_of": null
   },
@@ -1145,7 +1145,7 @@
     "class": "Nightblade",
     "skill_line": "Shadow",
     "skill_line_id": "shadow",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/bolstering-darkness.png",
     "morph_of": "consuming-darkness"
   },
@@ -1195,7 +1195,7 @@
     "class": "Necromancer",
     "skill_line": "Bone Tyrant",
     "skill_line_id": "bone-tyrant",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/bone-goliath-transformation.png",
     "morph_of": null
   },
@@ -1835,7 +1835,7 @@
     "class": "Nightblade",
     "skill_line": "Shadow",
     "skill_line_id": "shadow",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/consuming-darkness.png",
     "morph_of": null
   },
@@ -1915,7 +1915,7 @@
     "class": "Dragonknight",
     "skill_line": "Earthen Heart",
     "skill_line_id": "earthen-heart",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/corrosive-armor.png",
     "morph_of": "magma-armor"
   },
@@ -1945,7 +1945,7 @@
     "class": "Templar",
     "skill_line": "Aedric Spear",
     "skill_line_id": "aedric-spear",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/crescent-sweep.png",
     "morph_of": "radial-sweep"
   },
@@ -2325,7 +2325,7 @@
     "class": "Guild",
     "skill_line": "Fighters Guild",
     "skill_line_id": "fighters-guild",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/dawnbreaker.png",
     "morph_of": null
   },
@@ -2335,7 +2335,7 @@
     "class": "Guild",
     "skill_line": "Fighters Guild",
     "skill_line_id": "fighters-guild",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/dawnbreaker-of-smiting.png",
     "morph_of": "dawnbreaker"
   },
@@ -2475,7 +2475,7 @@
     "class": "Nightblade",
     "skill_line": "Assassination",
     "skill_line_id": "assassination",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/death-stroke.png",
     "morph_of": null
   },
@@ -2875,7 +2875,7 @@
     "class": "Dragonknight",
     "skill_line": "Draconic Power",
     "skill_line_id": "draconic-power",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/dragon-leap.png",
     "morph_of": null
   },
@@ -2895,7 +2895,7 @@
     "class": "Dragonknight",
     "skill_line": "Ardent Flame",
     "skill_line_id": "ardent-flame",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/dragonknight-standard.png",
     "morph_of": null
   },
@@ -3185,7 +3185,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/elemental-rage.png",
     "morph_of": "elemental-storm"
   },
@@ -3205,7 +3205,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/elemental-storm.png",
     "morph_of": null
   },
@@ -3290,16 +3290,6 @@
     "morph_of": null
   },
   {
-    "id": "empower",
-    "name": "Empower",
-    "class": "World",
-    "skill_line": "Soul Magic",
-    "skill_line_id": "soul-magic",
-    "type": "Active",
-    "icon": "/assets/skills/empower.png",
-    "morph_of": null
-  },
-  {
     "id": "empowering-grasp",
     "name": "Empowering Grasp",
     "class": "Necromancer",
@@ -3325,7 +3315,7 @@
     "class": "Warden",
     "skill_line": "Green Balance",
     "skill_line_id": "green-balance",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/enchanted-forest.png",
     "morph_of": "secluded-grove"
   },
@@ -3405,7 +3395,7 @@
     "class": "Sorcerer",
     "skill_line": "Storm Calling",
     "skill_line_id": "storm-calling",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/energy-overload.png",
     "morph_of": "overload"
   },
@@ -3475,7 +3465,7 @@
     "class": "Warden",
     "skill_line": "Animal Companions",
     "skill_line_id": "animal-companions",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/eternal-guardian.png",
     "morph_of": "feral-guardian"
   },
@@ -3505,7 +3495,7 @@
     "class": "Templar",
     "skill_line": "Aedric Spear",
     "skill_line_id": "aedric-spear",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/everlasting-sweep.png",
     "morph_of": "radial-sweep"
   },
@@ -3568,16 +3558,6 @@
     "type": "Passive",
     "icon": "/assets/skills/executioner.png",
     "morph_of": null
-  },
-  {
-    "id": "executioner",
-    "name": "Executioner",
-    "class": "Weapon",
-    "skill_line": "Two Handed",
-    "skill_line_id": "two-handed",
-    "type": "Active",
-    "icon": "/assets/skills/executioner.png",
-    "morph_of": "reverse-slash"
   },
   {
     "id": "exhausting-fatecarver",
@@ -3695,7 +3675,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/eye-of-flame.png",
     "morph_of": "elemental-storm"
   },
@@ -3705,7 +3685,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/eye-of-frost.png",
     "morph_of": "elemental-storm"
   },
@@ -3715,7 +3695,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/eye-of-lightning.png",
     "morph_of": "elemental-storm"
   },
@@ -3725,7 +3705,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/eye-of-the-storm.png",
     "morph_of": "elemental-storm"
   },
@@ -3815,7 +3795,7 @@
     "class": "Warden",
     "skill_line": "Animal Companions",
     "skill_line_id": "animal-companions",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/feral-guardian.png",
     "morph_of": null
   },
@@ -3835,7 +3815,7 @@
     "class": "Dragonknight",
     "skill_line": "Draconic Power",
     "skill_line_id": "draconic-power",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/ferocious-leap.png",
     "morph_of": "dragon-leap"
   },
@@ -3875,7 +3855,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/fiery-rage.png",
     "morph_of": "elemental-storm"
   },
@@ -3955,7 +3935,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/fire-storm.png",
     "morph_of": null
   },
@@ -4025,7 +4005,7 @@
     "class": "Guild",
     "skill_line": "Fighters Guild",
     "skill_line_id": "fighters-guild",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/flawless-dawnbreaker.png",
     "morph_of": "dawnbreaker"
   },
@@ -4295,7 +4275,7 @@
     "class": "Necromancer",
     "skill_line": "Grave Lord",
     "skill_line_id": "grave-lord",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/frozen-colossus.png",
     "morph_of": null
   },
@@ -4385,7 +4365,7 @@
     "class": "Arcanist",
     "skill_line": "Soldier of Apocrypha",
     "skill_line_id": "soldier-of-apocrypha",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/gibbering-shelter.png",
     "morph_of": "gibbering-shield"
   },
@@ -4395,7 +4375,7 @@
     "class": "Arcanist",
     "skill_line": "Soldier of Apocrypha",
     "skill_line_id": "soldier-of-apocrypha",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/gibbering-shield.png",
     "morph_of": null
   },
@@ -4415,7 +4395,7 @@
     "class": "Necromancer",
     "skill_line": "Grave Lord",
     "skill_line_id": "grave-lord",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/glacial-colossus.png",
     "morph_of": "frozen-colossus"
   },
@@ -4435,7 +4415,7 @@
     "class": "Arcanist",
     "skill_line": "Curative Runeforms",
     "skill_line_id": "curative-runeforms",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/glyphic-of-the-tides.png",
     "morph_of": "vitalizing-glyphic"
   },
@@ -4515,7 +4495,7 @@
     "class": "Sorcerer",
     "skill_line": "Daedric Summoning",
     "skill_line_id": "daedric-summoning",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/greater-storm-atronach.png",
     "morph_of": "summon-storm-atronach"
   },
@@ -4755,7 +4735,7 @@
     "class": "Warden",
     "skill_line": "Green Balance",
     "skill_line_id": "green-balance",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/healing-thicket.png",
     "morph_of": "secluded-grove"
   },
@@ -4838,6 +4818,16 @@
     "type": "Passive",
     "icon": "/assets/skills/heart-of-stone.png",
     "morph_of": null
+  },
+  {
+    "id": "heart-and-home",
+    "name": "Hearth and Home",
+    "class": "Dragonknight",
+    "skill_line": "Ardent Flame",
+    "skill_line_id": "ardent-flame",
+    "type": "Active",
+    "icon": "/assets/skills/heart-and-home.png",
+    "morph_of": "hearthfire"
   },
   {
     "id": "hearth-and-home",
@@ -5085,7 +5075,7 @@
     "class": "Guild",
     "skill_line": "Mages Guild",
     "skill_line_id": "mages-guild",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/ice-comet.png",
     "morph_of": "meteor"
   },
@@ -5105,7 +5095,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/ice-storm.png",
     "morph_of": null
   },
@@ -5125,7 +5115,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/icy-rage.png",
     "morph_of": "elemental-storm"
   },
@@ -5305,7 +5295,7 @@
     "class": "Nightblade",
     "skill_line": "Assassination",
     "skill_line_id": "assassination",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/incapacitating-strike.png",
     "morph_of": "death-stroke"
   },
@@ -5515,7 +5505,7 @@
     "class": "Weapon",
     "skill_line": "Dual Wield",
     "skill_line_id": "dual-wield",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/lacerate.png",
     "morph_of": null
   },
@@ -5655,7 +5645,7 @@
     "class": "Weapon",
     "skill_line": "Restoration Staff",
     "skill_line_id": "restoration-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/life-giver.png",
     "morph_of": "panacea"
   },
@@ -5715,7 +5705,7 @@
     "class": "Weapon",
     "skill_line": "Restoration Staff",
     "skill_line_id": "restoration-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/lights-champion.png",
     "morph_of": "panacea"
   },
@@ -6175,7 +6165,7 @@
     "class": "Dragonknight",
     "skill_line": "Earthen Heart",
     "skill_line_id": "earthen-heart",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/magma-armor.png",
     "morph_of": null
   },
@@ -6195,7 +6185,7 @@
     "class": "Dragonknight",
     "skill_line": "Earthen Heart",
     "skill_line_id": "earthen-heart",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/magma-shell.png",
     "morph_of": "magma-armor"
   },
@@ -6225,16 +6215,6 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
-    "icon": "/assets/skills/major-brutality.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-brutality",
-    "name": "Major Brutality",
-    "class": "World",
-    "skill_line": "Soul Magic",
-    "skill_line_id": "soul-magic",
     "type": "Active",
     "icon": "/assets/skills/major-brutality.png",
     "morph_of": null
@@ -6290,86 +6270,6 @@
     "morph_of": null
   },
   {
-    "id": "major-prophecy",
-    "name": "Major Prophecy",
-    "class": "Weapon",
-    "skill_line": "Dual Wield",
-    "skill_line_id": "dual-wield",
-    "type": "Active",
-    "icon": "/assets/skills/major-prophecy.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-prophecy",
-    "name": "Major Prophecy",
-    "class": "Alliance War",
-    "skill_line": "Assault",
-    "skill_line_id": "assault",
-    "type": "Active",
-    "icon": "/assets/skills/major-prophecy.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-prophecy",
-    "name": "Major Prophecy",
-    "class": "Weapon",
-    "skill_line": "Two Handed",
-    "skill_line_id": "two-handed",
-    "type": "Active",
-    "icon": "/assets/skills/major-prophecy.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-prophecy",
-    "name": "Major Prophecy",
-    "class": "World",
-    "skill_line": "Soul Magic",
-    "skill_line_id": "soul-magic",
-    "type": "Active",
-    "icon": "/assets/skills/major-prophecy.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-prophecy",
-    "name": "Major Prophecy",
-    "class": "Guild",
-    "skill_line": "Mages Guild",
-    "skill_line_id": "mages-guild",
-    "type": "Active",
-    "icon": "/assets/skills/major-prophecy.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-prophecy",
-    "name": "Major Prophecy",
-    "class": "Weapon",
-    "skill_line": "One Hand and Shield",
-    "skill_line_id": "one-hand-and-shield",
-    "type": "Active",
-    "icon": "/assets/skills/major-prophecy.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-prophecy",
-    "name": "Major Prophecy",
-    "class": "Guild",
-    "skill_line": "Fighters Guild",
-    "skill_line_id": "fighters-guild",
-    "type": "Active",
-    "icon": "/assets/skills/major-prophecy.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-prophecy",
-    "name": "Major Prophecy",
-    "class": "Alliance War",
-    "skill_line": "Support",
-    "skill_line_id": "support",
-    "type": "Active",
-    "icon": "/assets/skills/major-prophecy.png",
-    "morph_of": null
-  },
-  {
     "id": "major-prophecy-and-savagery",
     "name": "Major Prophecy and Savagery",
     "class": "Alliance War",
@@ -6400,16 +6300,6 @@
     "morph_of": null
   },
   {
-    "id": "major-resolve",
-    "name": "Major Resolve",
-    "class": "Weapon",
-    "skill_line": "One Hand and Shield",
-    "skill_line_id": "one-hand-and-shield",
-    "type": "Active",
-    "icon": "/assets/skills/major-resolve.png",
-    "morph_of": null
-  },
-  {
     "id": "major-savagery",
     "name": "Major Savagery",
     "class": "Weapon",
@@ -6420,91 +6310,11 @@
     "morph_of": null
   },
   {
-    "id": "major-savagery",
-    "name": "Major Savagery",
-    "class": "Weapon",
-    "skill_line": "Dual Wield",
-    "skill_line_id": "dual-wield",
-    "type": "Active",
-    "icon": "/assets/skills/major-savagery.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-savagery",
-    "name": "Major Savagery",
-    "class": "Alliance War",
-    "skill_line": "Assault",
-    "skill_line_id": "assault",
-    "type": "Active",
-    "icon": "/assets/skills/major-savagery.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-savagery",
-    "name": "Major Savagery",
-    "class": "Weapon",
-    "skill_line": "Two Handed",
-    "skill_line_id": "two-handed",
-    "type": "Active",
-    "icon": "/assets/skills/major-savagery.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-savagery",
-    "name": "Major Savagery",
-    "class": "World",
-    "skill_line": "Soul Magic",
-    "skill_line_id": "soul-magic",
-    "type": "Active",
-    "icon": "/assets/skills/major-savagery.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-savagery",
-    "name": "Major Savagery",
-    "class": "Guild",
-    "skill_line": "Mages Guild",
-    "skill_line_id": "mages-guild",
-    "type": "Active",
-    "icon": "/assets/skills/major-savagery.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-savagery",
-    "name": "Major Savagery",
-    "class": "Guild",
-    "skill_line": "Fighters Guild",
-    "skill_line_id": "fighters-guild",
-    "type": "Active",
-    "icon": "/assets/skills/major-savagery.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-savagery",
-    "name": "Major Savagery",
-    "class": "Alliance War",
-    "skill_line": "Support",
-    "skill_line_id": "support",
-    "type": "Active",
-    "icon": "/assets/skills/major-savagery.png",
-    "morph_of": null
-  },
-  {
     "id": "major-sorcery",
     "name": "Major Sorcery",
     "class": "World",
     "skill_line": "Soul Magic",
     "skill_line_id": "soul-magic",
-    "type": "Active",
-    "icon": "/assets/skills/major-sorcery.png",
-    "morph_of": null
-  },
-  {
-    "id": "major-sorcery",
-    "name": "Major Sorcery",
-    "class": "Weapon",
-    "skill_line": "Destruction Staff",
-    "skill_line_id": "destruction-staff",
     "type": "Active",
     "icon": "/assets/skills/major-sorcery.png",
     "morph_of": null
@@ -6695,7 +6505,7 @@
     "class": "Guild",
     "skill_line": "Mages Guild",
     "skill_line_id": "mages-guild",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/meteor.png",
     "morph_of": null
   },
@@ -6720,31 +6530,11 @@
     "morph_of": null
   },
   {
-    "id": "minor-berserk",
-    "name": "Minor Berserk",
-    "class": "Weapon",
-    "skill_line": "Dual Wield",
-    "skill_line_id": "dual-wield",
-    "type": "Active",
-    "icon": "/assets/skills/minor-berserk.png",
-    "morph_of": null
-  },
-  {
     "id": "minor-breach",
     "name": "Minor Breach",
     "class": "Weapon",
     "skill_line": "Two Handed",
     "skill_line_id": "two-handed",
-    "type": "Active",
-    "icon": "/assets/skills/minor-breach.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-breach",
-    "name": "Minor Breach",
-    "class": "Guild",
-    "skill_line": "Mages Guild",
-    "skill_line_id": "mages-guild",
     "type": "Active",
     "icon": "/assets/skills/minor-breach.png",
     "morph_of": null
@@ -6770,16 +6560,6 @@
     "morph_of": null
   },
   {
-    "id": "minor-cowardice",
-    "name": "Minor Cowardice",
-    "class": "Guild",
-    "skill_line": "Fighters Guild",
-    "skill_line_id": "fighters-guild",
-    "type": "Active",
-    "icon": "/assets/skills/minor-cowardice.png",
-    "morph_of": null
-  },
-  {
     "id": "minor-defile",
     "name": "Minor Defile",
     "class": "Weapon",
@@ -6800,41 +6580,11 @@
     "morph_of": null
   },
   {
-    "id": "minor-endurance",
-    "name": "Minor Endurance",
-    "class": "Alliance War",
-    "skill_line": "Support",
-    "skill_line_id": "support",
-    "type": "Active",
-    "icon": "/assets/skills/minor-endurance.png",
-    "morph_of": null
-  },
-  {
     "id": "minor-enervation",
     "name": "Minor Enervation",
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
-    "icon": "/assets/skills/minor-enervation.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-enervation",
-    "name": "Minor Enervation",
-    "class": "Guild",
-    "skill_line": "Mages Guild",
-    "skill_line_id": "mages-guild",
-    "type": "Active",
-    "icon": "/assets/skills/minor-enervation.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-enervation",
-    "name": "Minor Enervation",
-    "class": "Weapon",
-    "skill_line": "One Hand and Shield",
-    "skill_line_id": "one-hand-and-shield",
     "type": "Active",
     "icon": "/assets/skills/minor-enervation.png",
     "morph_of": null
@@ -6850,31 +6600,11 @@
     "morph_of": null
   },
   {
-    "id": "minor-expedition",
-    "name": "Minor Expedition",
-    "class": "Weapon",
-    "skill_line": "Dual Wield",
-    "skill_line_id": "dual-wield",
-    "type": "Active",
-    "icon": "/assets/skills/minor-expedition.png",
-    "morph_of": null
-  },
-  {
     "id": "minor-force",
     "name": "Minor Force",
     "class": "Weapon",
     "skill_line": "Bow",
     "skill_line_id": "bow",
-    "type": "Active",
-    "icon": "/assets/skills/minor-force.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-force",
-    "name": "Minor Force",
-    "class": "Weapon",
-    "skill_line": "Two Handed",
-    "skill_line_id": "two-handed",
     "type": "Active",
     "icon": "/assets/skills/minor-force.png",
     "morph_of": null
@@ -6890,51 +6620,11 @@
     "morph_of": null
   },
   {
-    "id": "minor-intellect",
-    "name": "Minor Intellect",
-    "class": "Weapon",
-    "skill_line": "Restoration Staff",
-    "skill_line_id": "restoration-staff",
-    "type": "Active",
-    "icon": "/assets/skills/minor-intellect.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-intellect",
-    "name": "Minor Intellect",
-    "class": "Alliance War",
-    "skill_line": "Support",
-    "skill_line_id": "support",
-    "type": "Active",
-    "icon": "/assets/skills/minor-intellect.png",
-    "morph_of": null
-  },
-  {
     "id": "minor-lifesteal",
     "name": "Minor Lifesteal",
     "class": "Weapon",
     "skill_line": "Bow",
     "skill_line_id": "bow",
-    "type": "Active",
-    "icon": "/assets/skills/minor-lifesteal.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-lifesteal",
-    "name": "Minor Lifesteal",
-    "class": "Weapon",
-    "skill_line": "Destruction Staff",
-    "skill_line_id": "destruction-staff",
-    "type": "Active",
-    "icon": "/assets/skills/minor-lifesteal.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-lifesteal",
-    "name": "Minor Lifesteal",
-    "class": "Weapon",
-    "skill_line": "Dual Wield",
-    "skill_line_id": "dual-wield",
     "type": "Active",
     "icon": "/assets/skills/minor-lifesteal.png",
     "morph_of": null
@@ -6950,16 +6640,6 @@
     "morph_of": null
   },
   {
-    "id": "minor-magickasteal",
-    "name": "Minor Magickasteal",
-    "class": "Guild",
-    "skill_line": "Mages Guild",
-    "skill_line_id": "mages-guild",
-    "type": "Active",
-    "icon": "/assets/skills/minor-magickasteal.png",
-    "morph_of": null
-  },
-  {
     "id": "minor-maim",
     "name": "Minor Maim",
     "class": "Weapon",
@@ -6970,61 +6650,11 @@
     "morph_of": null
   },
   {
-    "id": "minor-maim",
-    "name": "Minor Maim",
-    "class": "Weapon",
-    "skill_line": "Bow",
-    "skill_line_id": "bow",
-    "type": "Active",
-    "icon": "/assets/skills/minor-maim.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-maim",
-    "name": "Minor Maim",
-    "class": "Weapon",
-    "skill_line": "Two Handed",
-    "skill_line_id": "two-handed",
-    "type": "Active",
-    "icon": "/assets/skills/minor-maim.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-maim",
-    "name": "Minor Maim",
-    "class": "Weapon",
-    "skill_line": "Dual Wield",
-    "skill_line_id": "dual-wield",
-    "type": "Active",
-    "icon": "/assets/skills/minor-maim.png",
-    "morph_of": null
-  },
-  {
     "id": "minor-mangle",
     "name": "Minor Mangle",
     "class": "Weapon",
     "skill_line": "Two Handed",
     "skill_line_id": "two-handed",
-    "type": "Active",
-    "icon": "/assets/skills/minor-mangle.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-mangle",
-    "name": "Minor Mangle",
-    "class": "Guild",
-    "skill_line": "Fighters Guild",
-    "skill_line_id": "fighters-guild",
-    "type": "Active",
-    "icon": "/assets/skills/minor-mangle.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-mangle",
-    "name": "Minor Mangle",
-    "class": "Alliance War",
-    "skill_line": "Assault",
-    "skill_line_id": "assault",
     "type": "Active",
     "icon": "/assets/skills/minor-mangle.png",
     "morph_of": null
@@ -7065,36 +6695,6 @@
     "class": "Weapon",
     "skill_line": "Bow",
     "skill_line_id": "bow",
-    "type": "Active",
-    "icon": "/assets/skills/minor-vulnerability.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-vulnerability",
-    "name": "Minor Vulnerability",
-    "class": "Guild",
-    "skill_line": "Mages Guild",
-    "skill_line_id": "mages-guild",
-    "type": "Active",
-    "icon": "/assets/skills/minor-vulnerability.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-vulnerability",
-    "name": "Minor Vulnerability",
-    "class": "Alliance War",
-    "skill_line": "Assault",
-    "skill_line_id": "assault",
-    "type": "Active",
-    "icon": "/assets/skills/minor-vulnerability.png",
-    "morph_of": null
-  },
-  {
-    "id": "minor-vulnerability",
-    "name": "Minor Vulnerability",
-    "class": "Weapon",
-    "skill_line": "Dual Wield",
-    "skill_line_id": "dual-wield",
     "type": "Active",
     "icon": "/assets/skills/minor-vulnerability.png",
     "morph_of": null
@@ -7370,16 +6970,6 @@
     "morph_of": null
   },
   {
-    "id": "necromancers-soul",
-    "name": "Necromancer's Soul",
-    "class": "Alliance War",
-    "skill_line": "Support",
-    "skill_line_id": "support",
-    "type": "Active",
-    "icon": "/assets/skills/necromancers-soul.png",
-    "morph_of": null
-  },
-  {
     "id": "necromancers-throw",
     "name": "Necromancer's Throw",
     "class": "Weapon",
@@ -7445,7 +7035,7 @@
     "class": "Sorcerer",
     "skill_line": "Dark Magic",
     "skill_line_id": "dark-magic",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/negate-magic.png",
     "morph_of": null
   },
@@ -7575,7 +7165,7 @@
     "class": "Warden",
     "skill_line": "Winter's Embrace",
     "skill_line_id": "winters-embrace",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/northern-storm.png",
     "morph_of": "sleet-storm"
   },
@@ -7585,7 +7175,7 @@
     "class": "Templar",
     "skill_line": "Dawn's Wrath",
     "skill_line_id": "dawns-wrath",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/nova.png",
     "morph_of": null
   },
@@ -7605,7 +7195,7 @@
     "class": "Weapon",
     "skill_line": "Two Handed",
     "skill_line_id": "two-handed",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/onslaught.png",
     "morph_of": "berserker-strike"
   },
@@ -7675,7 +7265,7 @@
     "class": "Sorcerer",
     "skill_line": "Storm Calling",
     "skill_line_id": "storm-calling",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/overload.png",
     "morph_of": null
   },
@@ -7685,7 +7275,7 @@
     "class": "World",
     "skill_line": "Werewolf",
     "skill_line_id": "werewolf",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/pack-leader.png",
     "morph_of": "werewolf-transformation"
   },
@@ -7705,7 +7295,7 @@
     "class": "Weapon",
     "skill_line": "Restoration Staff",
     "skill_line_id": "restoration-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/panacea.png",
     "morph_of": null
   },
@@ -7785,7 +7375,7 @@
     "class": "World",
     "skill_line": "Vampire",
     "skill_line_id": "vampire",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/perfect-scion.png",
     "morph_of": "blood-scion"
   },
@@ -7795,7 +7385,7 @@
     "class": "Warden",
     "skill_line": "Winter's Embrace",
     "skill_line_id": "winters-embrace",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/permafrost.png",
     "morph_of": "sleet-storm"
   },
@@ -7825,7 +7415,7 @@
     "class": "Necromancer",
     "skill_line": "Grave Lord",
     "skill_line_id": "grave-lord",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/pestilent-colossus.png",
     "morph_of": "frozen-colossus"
   },
@@ -8015,7 +7605,7 @@
     "class": "Sorcerer",
     "skill_line": "Storm Calling",
     "skill_line_id": "storm-calling",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/power-overload.png",
     "morph_of": "overload"
   },
@@ -8055,7 +7645,7 @@
     "class": "Templar",
     "skill_line": "Restoring Light",
     "skill_line_id": "restoring-light",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/practiced-incantation.png",
     "morph_of": "rite-of-passage"
   },
@@ -8075,7 +7665,7 @@
     "class": "Guild",
     "skill_line": "Psijic Order",
     "skill_line_id": "psijic-order",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/precognition.png",
     "morph_of": "undo"
   },
@@ -8175,7 +7765,7 @@
     "class": "Necromancer",
     "skill_line": "Bone Tyrant",
     "skill_line_id": "bone-tyrant",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/pummeling-goliath.png",
     "morph_of": "bone-goliath-transformation"
   },
@@ -8275,7 +7865,7 @@
     "class": "Templar",
     "skill_line": "Aedric Spear",
     "skill_line_id": "aedric-spear",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/radial-sweep.png",
     "morph_of": null
   },
@@ -8385,7 +7975,7 @@
     "class": "Weapon",
     "skill_line": "Bow",
     "skill_line_id": "bow",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/rapid-fire.png",
     "morph_of": null
   },
@@ -8445,7 +8035,7 @@
     "class": "Necromancer",
     "skill_line": "Bone Tyrant",
     "skill_line_id": "bone-tyrant",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/ravenous-goliath.png",
     "morph_of": "bone-goliath-transformation"
   },
@@ -8475,7 +8065,7 @@
     "class": "Necromancer",
     "skill_line": "Living Death",
     "skill_line_id": "living-death",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/reanimate.png",
     "morph_of": null
   },
@@ -8685,7 +8275,7 @@
     "class": "Templar",
     "skill_line": "Restoring Light",
     "skill_line_id": "restoring-light",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/remembrance.png",
     "morph_of": "rite-of-passage"
   },
@@ -8705,7 +8295,7 @@
     "class": "Weapon",
     "skill_line": "Dual Wield",
     "skill_line_id": "dual-wield",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/rend.png",
     "morph_of": "lacerate"
   },
@@ -8735,7 +8325,7 @@
     "class": "Necromancer",
     "skill_line": "Living Death",
     "skill_line_id": "living-death",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/renewing-animation.png",
     "morph_of": "reanimate"
   },
@@ -8805,7 +8395,7 @@
     "class": "Alliance War",
     "skill_line": "Support",
     "skill_line_id": "support",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/replenishing-barrier.png",
     "morph_of": "barrier"
   },
@@ -8875,7 +8465,7 @@
     "class": "Arcanist",
     "skill_line": "Curative Runeforms",
     "skill_line_id": "curative-runeforms",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/resonating-glyphic.png",
     "morph_of": "vitalizing-glyphic"
   },
@@ -9135,7 +8725,7 @@
     "class": "Alliance War",
     "skill_line": "Support",
     "skill_line_id": "support",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/reviving-barrier.png",
     "morph_of": "barrier"
   },
@@ -9165,7 +8755,7 @@
     "class": "Templar",
     "skill_line": "Restoring Light",
     "skill_line_id": "restoring-light",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/rite-of-passage.png",
     "morph_of": null
   },
@@ -9255,7 +8845,7 @@
     "class": "Alliance War",
     "skill_line": "Volendrung",
     "skill_line_id": "volendrung",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/ruinous-cyclone.png",
     "morph_of": null
   },
@@ -9465,7 +9055,7 @@
     "class": "Arcanist",
     "skill_line": "Soldier of Apocrypha",
     "skill_line_id": "soldier-of-apocrypha",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/sanctum-of-the-abyssal-sea.png",
     "morph_of": "gibbering-shield"
   },
@@ -9615,7 +9205,7 @@
     "class": "Warden",
     "skill_line": "Green Balance",
     "skill_line_id": "green-balance",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/secluded-grove.png",
     "morph_of": null
   },
@@ -9705,7 +9295,7 @@
     "class": "World",
     "skill_line": "Soul Magic",
     "skill_line_id": "soul-magic",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/shatter-soul.png",
     "morph_of": "soul-strike"
   },
@@ -9785,7 +9375,7 @@
     "class": "Weapon",
     "skill_line": "One Hand and Shield",
     "skill_line_id": "one-hand-and-shield",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/shield-discipline.png",
     "morph_of": "shield-wall"
   },
@@ -9805,7 +9395,7 @@
     "class": "Weapon",
     "skill_line": "One Hand and Shield",
     "skill_line_id": "one-hand-and-shield",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/shield-wall.png",
     "morph_of": null
   },
@@ -9825,7 +9415,7 @@
     "class": "Dragonknight",
     "skill_line": "Ardent Flame",
     "skill_line_id": "ardent-flame",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/shifting-standard.png",
     "morph_of": "dragonknight-standard"
   },
@@ -9915,7 +9505,7 @@
     "class": "Guild",
     "skill_line": "Mages Guild",
     "skill_line_id": "mages-guild",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/shooting-star.png",
     "morph_of": "meteor"
   },
@@ -10105,7 +9695,7 @@
     "class": "Warden",
     "skill_line": "Winter's Embrace",
     "skill_line_id": "winters-embrace",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/sleet-storm.png",
     "morph_of": null
   },
@@ -10225,7 +9815,7 @@
     "class": "Templar",
     "skill_line": "Dawn's Wrath",
     "skill_line_id": "dawns-wrath",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/solar-disturbance.png",
     "morph_of": "nova"
   },
@@ -10245,7 +9835,7 @@
     "class": "Templar",
     "skill_line": "Dawn's Wrath",
     "skill_line_id": "dawns-wrath",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/solar-prison.png",
     "morph_of": "nova"
   },
@@ -10340,16 +9930,6 @@
     "morph_of": null
   },
   {
-    "id": "sorcerers-soul",
-    "name": "Sorcerer's Soul",
-    "class": "World",
-    "skill_line": "Soul Magic",
-    "skill_line_id": "soul-magic",
-    "type": "Active",
-    "icon": "/assets/skills/sorcerers-soul.png",
-    "morph_of": null
-  },
-  {
     "id": "sorcerers-throw",
     "name": "Sorcerer's Throw",
     "class": "Weapon",
@@ -10395,7 +9975,7 @@
     "class": "World",
     "skill_line": "Soul Magic",
     "skill_line_id": "soul-magic",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/soul-assault.png",
     "morph_of": "soul-strike"
   },
@@ -10425,7 +10005,7 @@
     "class": "Nightblade",
     "skill_line": "Assassination",
     "skill_line_id": "assassination",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/soul-harvest.png",
     "morph_of": "death-stroke"
   },
@@ -10465,7 +10045,7 @@
     "class": "Nightblade",
     "skill_line": "Siphoning",
     "skill_line_id": "siphoning",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/soul-shred.png",
     "morph_of": null
   },
@@ -10475,7 +10055,7 @@
     "class": "Nightblade",
     "skill_line": "Siphoning",
     "skill_line_id": "siphoning",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/soul-siphon.png",
     "morph_of": "soul-shred"
   },
@@ -10505,7 +10085,7 @@
     "class": "World",
     "skill_line": "Soul Magic",
     "skill_line_id": "soul-magic",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/soul-strike.png",
     "morph_of": null
   },
@@ -10525,7 +10105,7 @@
     "class": "Nightblade",
     "skill_line": "Siphoning",
     "skill_line_id": "siphoning",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/soul-tether.png",
     "morph_of": "soul-shred"
   },
@@ -10615,7 +10195,7 @@
     "class": "Weapon",
     "skill_line": "One Hand and Shield",
     "skill_line_id": "one-hand-and-shield",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/spell-wall.png",
     "morph_of": "shield-wall"
   },
@@ -10715,7 +10295,7 @@
     "class": "Dragonknight",
     "skill_line": "Ardent Flame",
     "skill_line_id": "ardent-flame",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/standard-of-might.png",
     "morph_of": "dragonknight-standard"
   },
@@ -10805,7 +10385,7 @@
     "class": "Alliance War",
     "skill_line": "Assault",
     "skill_line_id": "assault",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/sturdy-horn.png",
     "morph_of": "war-horn"
   },
@@ -10825,7 +10405,7 @@
     "class": "Sorcerer",
     "skill_line": "Daedric Summoning",
     "skill_line_id": "daedric-summoning",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/summon-charged-atronach.png",
     "morph_of": "summon-storm-atronach"
   },
@@ -10845,7 +10425,7 @@
     "class": "Sorcerer",
     "skill_line": "Daedric Summoning",
     "skill_line_id": "daedric-summoning",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/summon-storm-atronach.png",
     "morph_of": null
   },
@@ -11065,7 +10645,7 @@
     "class": "Sorcerer",
     "skill_line": "Dark Magic",
     "skill_line_id": "dark-magic",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/suppression-field.png",
     "morph_of": "negate-magic"
   },
@@ -11115,7 +10695,7 @@
     "class": "World",
     "skill_line": "Vampire",
     "skill_line_id": "vampire",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/swarming-scion.png",
     "morph_of": "blood-scion"
   },
@@ -11225,7 +10805,7 @@
     "class": "Dragonknight",
     "skill_line": "Draconic Power",
     "skill_line_id": "draconic-power",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/take-flight.png",
     "morph_of": "dragon-leap"
   },
@@ -11375,9 +10955,9 @@
     "class": "Guild",
     "skill_line": "Psijic Order",
     "skill_line_id": "psijic-order",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/temporal-guard.png",
-    "morph_of": "undo"
+    "morph_of": "time-stop"
   },
   {
     "id": "tenacious-contingency",
@@ -11425,7 +11005,7 @@
     "class": "Arcanist",
     "skill_line": "Herald of the Tome",
     "skill_line_id": "herald-of-the-tome",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/the-languid-eye.png",
     "morph_of": "the-unblinking-eye"
   },
@@ -11445,7 +11025,7 @@
     "class": "Arcanist",
     "skill_line": "Herald of the Tome",
     "skill_line_id": "herald-of-the-tome",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/the-tide-kings-gaze.png",
     "morph_of": "the-unblinking-eye"
   },
@@ -11455,7 +11035,7 @@
     "class": "Arcanist",
     "skill_line": "Herald of the Tome",
     "skill_line_id": "herald-of-the-tome",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/the-unblinking-eye.png",
     "morph_of": null
   },
@@ -11465,7 +11045,7 @@
     "class": "Weapon",
     "skill_line": "Dual Wield",
     "skill_line_id": "dual-wield",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/thrive-in-chaos.png",
     "morph_of": "lacerate"
   },
@@ -11475,7 +11055,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/thunder-storm.png",
     "morph_of": null
   },
@@ -11485,7 +11065,7 @@
     "class": "Weapon",
     "skill_line": "Destruction Staff",
     "skill_line_id": "destruction-staff",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/thunderous-rage.png",
     "morph_of": "elemental-storm"
   },
@@ -11585,7 +11165,7 @@
     "class": "Weapon",
     "skill_line": "Bow",
     "skill_line_id": "bow",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/toxic-barrage.png",
     "morph_of": "rapid-fire"
   },
@@ -11805,7 +11385,7 @@
     "class": "Guild",
     "skill_line": "Psijic Order",
     "skill_line_id": "psijic-order",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/undo.png",
     "morph_of": null
   },
@@ -11985,7 +11565,7 @@
     "class": "Nightblade",
     "skill_line": "Shadow",
     "skill_line_id": "shadow",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/veil-of-blades.png",
     "morph_of": "consuming-darkness"
   },
@@ -12065,7 +11645,7 @@
     "class": "Arcanist",
     "skill_line": "Curative Runeforms",
     "skill_line_id": "curative-runeforms",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/vitalizing-glyphic.png",
     "morph_of": null
   },
@@ -12145,7 +11725,7 @@
     "class": "Alliance War",
     "skill_line": "Assault",
     "skill_line_id": "assault",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/war-horn.png",
     "morph_of": null
   },
@@ -12365,7 +11945,7 @@
     "class": "World",
     "skill_line": "Werewolf",
     "skill_line_id": "werewolf",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/werewolf-berserker.png",
     "morph_of": "werewolf-transformation"
   },
@@ -12375,7 +11955,7 @@
     "class": "World",
     "skill_line": "Werewolf",
     "skill_line_id": "werewolf",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/werewolf-transformation.png",
     "morph_of": null
   },
@@ -12415,7 +11995,7 @@
     "class": "Warden",
     "skill_line": "Animal Companions",
     "skill_line_id": "animal-companions",
-    "type": "Active",
+    "type": "Ultimate",
     "icon": "/assets/skills/wild-guardian.png",
     "morph_of": "feral-guardian"
   },

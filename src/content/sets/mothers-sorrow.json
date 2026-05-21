@@ -17,27 +17,27 @@
     "ring",
     "necklace"
   ],
-  "patch_verified": "U49",
+  "patch_verified": "U50",
   "bonuses": [
     {
       "count": 2,
-      "stat": "Max Magicka",
+      "stat": "Maximum Magicka",
       "value": 1096
     },
     {
       "count": 3,
-      "stat": "Spell Damage",
-      "value": 129
+      "stat": "Critical Chance",
+      "value": 657
     },
     {
       "count": 4,
-      "stat": "Max Magicka",
-      "value": 1096
+      "stat": "Critical Chance",
+      "value": 657
     },
     {
       "count": 5,
-      "stat": "Spell Critical",
-      "value": "12%"
+      "stat": "Critical Chance",
+      "value": 1528
     }
   ],
   "uesp_url": "https://en.uesp.net/wiki/Online:Mother%27s_Sorrow",
