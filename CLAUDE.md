@@ -29,8 +29,11 @@ Site statique dédié aux builds PvP ESO. Builds optimisés, guides de rotation,
 | `@astrojs/rss` | Flux RSS |
 | `sharp` | Conversion SVG → PNG pour les images OG |
 | Cloudflare Workers | Hébergement + CD depuis GitHub |
+| Cloudflare KV | Stockage builds partagés (short URLs) — namespace `kozy-eso-builds` |
+| `worker.ts` | Worker script à la racine — intercept `/api/builds` avant les assets statiques |
 | Cloudflare Worker proxy | `eso-status-proxy.simbad14100.workers.dev` — relay CORS statut serveurs ESO |
 | Git / GitHub | Contrôle de version |
+| `wrangler` | CLI Cloudflare (devDependency) — gestion KV + dev Worker local |
 
 ---
 
@@ -94,6 +97,8 @@ src/
 │   └── Guide.astro      ← Layout page de guide
 ├── pages/
 │   ├── index.astro
+│   ├── builder.astro             ← Page Build Editor (React island client:load)
+│   ├── share.astro               ← Page viewer des builds partagés (décode ?b= ou fetch ?id=)
 │   ├── builds/
 │   │   ├── index.astro           ← Pills par classe + compteurs
 │   │   ├── [slug].astro          ← Résolution IDs + assertIds()
@@ -104,15 +109,36 @@ src/
 │   │   └── [slug].astro
 │   ├── 404.astro
 │   └── rss.xml.ts
+├── lib/
+│   ├── git-dates.ts              ← Dates dérivées du git log (publishedDate, updatedAt)
+│   ├── editor-codec.ts           ← encode/decode build → lz-string base64 (param ?b=)
+│   └── esohub-api.ts             ← Module ESO-Hub API : fetchSkillTip, fetchSetTip, types, caches
 ├── styles/
 │   └── global.css
 └── content.config.ts    ← Schémas Zod pour toutes les collections
+src/components/builder/          ← React island Build Editor
+├── BuildEditor.tsx               ← Composant racine (tabs + sidebar)
+├── BuildViewer.tsx               ← Viewer en lecture seule (page share.astro)
+├── atoms.tsx                     ← Design tokens (T, F) + composants atoms
+├── state.ts                      ← Store Zustand (useEditorStore)
+├── types.ts                      ← Types TypeScript du build
+├── compute-stats.ts              ← Moteur de calcul des stats
+└── tabs/
+    ├── GearTab.tsx
+    ├── SkillsTab.tsx
+    ├── PassivesTab.tsx
+    ├── CpTab.tsx
+    ├── AttrTab.tsx
+    ├── BuffsTab.tsx
+    └── ShareTab.tsx              ← Short link (KV) + Full URL + Import + Reset
 public/
 ├── assets/
 │   ├── og/              ← og-default.svg + og-default.png
 │   └── skills/          ← Icônes PNG des skills ({id}.png)
 ├── robots.txt
 └── favicon.svg
+worker.ts                         ← Cloudflare Worker : intercept /api/builds avant assets
+wrangler.toml                     ← Config Worker + binding BUILDS_KV
 scripts/
 ├── fetch-eso-data.mjs       ← Scrape esolog API → sets + skills JSON
 ├── fetch-eso-meta.mjs       ← Scrape UESP wiki → races/mundus/traits/enchants JSON
@@ -240,6 +266,84 @@ Types : `Active | Passive | Ultimate`
 
 > **Note UESP :** UESP peut être en retard de 1-2 semaines après un patch majeur. En cas de doute, faire confiance au jeu.
 
+### ESO-Hub API (hover tooltips — skills et sets)
+
+Module : `src/lib/esohub-api.ts` — zero dependencies, utilisable dans Astro + React + vanilla scripts.
+
+**Endpoints :**
+```
+GET https://eso-hub.com/api/skills/tooltip/{slug}?lang=en
+GET https://eso-hub.com/api/armor-sets/tooltip/{slug}?lang=en
+```
+Header requis : `X-Requested-With: XMLHttpRequest`  
+CORS : `Access-Control-Allow-Origin: *` — appel direct depuis le navigateur OK.
+
+**Format de réponse skills :**
+```typescript
+{ name: string; effect_1: string; effect_2: string | null;
+  icon: string; passive: boolean; header: string | null }
+```
+`effect_1` / `effect_2` contiennent du HTML avec des `<span class="...">` pour la colorisation.  
+Classes CSS dans le HTML : `buff`, `debuff`, `magic-damage`, `physical-damage`, `fire-damage`, `frost-damage`, `shock-damage`, `bleed-damage`, `health`, `oblivion`.
+
+**Format de réponse sets :**
+```typescript
+{ name: string; category: string; icon: string; icon_webp?: string;
+  bonus_1: string | null; …; bonus_12: string | null }
+```
+Les bonus sont numérotés `bonus_1`…`bonus_12` (pas un tableau). HTML avec classes CSS : `stamina`, `magicka`, `health`, `flame-damage`.
+
+**Utilisation dans `esohub-api.ts` :**
+```typescript
+import { fetchSkillTip, fetchSetTip, setTipBonuses, skillCache, setCache } from "@/lib/esohub-api";
+
+const tip = await fetchSkillTip("merciless-resolve"); // EsoHubSkillTip | null
+const tip = await fetchSetTip("vicious-death");       // EsoHubSetTip | null
+const bonuses = setTipBonuses(tip);                   // { count: number; html: string }[]
+```
+Module-level Maps `skillCache` et `setCache` évitent les fetches redondants sur la durée de vie de la page.
+
+**CSS global requis pour la colorisation (`<style is:global>`) :**
+```css
+.eso-tip-body span.buff         { color: #d4a44a; }
+.eso-tip-body span.debuff       { color: #a78bfa; }
+.eso-tip-body span.health       { color: #e07070; }
+.eso-tip-body span.stamina      { color: #86c47e; }
+.eso-tip-body span.magicka      { color: #7ab0e0; }
+.eso-tip-body span.magic-damage { color: #a78bfa; }
+.eso-tip-body span.fire-damage,
+.eso-tip-body span.flame-damage { color: #e07032; }
+.eso-tip-body span.frost-damage { color: #7ab0e0; }
+.eso-tip-body span.shock-damage { color: #d4d44a; }
+.eso-tip-body span.physical-damage,
+.eso-tip-body span.bleed-damage { color: #c47e7e; }
+.eso-tip-body span.oblivion     { color: #9e5cf6; }
+```
+Déjà câblé dans `share.astro`. À copier sur les futures pages de builds.
+
+**⚠️ Endpoint incorrect :** `/api/sets/tooltip/` → 404. Le bon chemin est `/api/armor-sets/tooltip/`.
+
+---
+
+### Short URLs (Cloudflare KV + Worker)
+
+**Architecture :**
+1. `POST /api/builds` — Worker reçoit `{ v: 1, meta, setups }`, génère un ID 8 chars, stocke en KV avec TTL 180 jours, retourne `{ id, url: "https://kozy-eso.com/share?id=XXXXXXXX" }`
+2. `GET /api/builds/:id` — Worker lit KV par ID, retourne le JSON brut ou `{ error: "not_found" }` 404
+3. Tout le reste → `env.ASSETS.fetch(request)` (assets statiques Astro)
+
+**Fichiers concernés :**
+- `worker.ts` — script Worker à la racine (pas dans `src/`)
+- `wrangler.toml` — `main = "worker.ts"`, binding `BUILDS_KV` → namespace `kozy-eso-builds` (ID `1a94aeded4654dacbce21ac4f4683ed9`)
+
+**Binding Cloudflare :** Workers & Pages → kozy-eso-pvp-builds → Settings → Bindings → `BUILDS_KV` → `kozy-eso-builds`. Sans ce binding dashboard, `env.BUILDS_KV` est `undefined` à l'exécution.
+
+**Charset ID :** `ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789` — sans caractères ambigus 0/O/I/l.
+
+**Limites KV Free tier :** 1 000 writes/day, 100 000 reads/day. Pour ~100 users/jour avec 5 saves chacun = 500 writes → OK pour la beta. Passer au plan Workers Paid ($5/mois) avant le lancement public.
+
+---
+
 ### Build Editor — pièges Zustand / React
 - **`?? []` dans un sélecteur = boucle infinie.** `useBuilderStore((s) => s.build.bx ?? [])` crée un nouveau tableau à chaque appel de `getSnapshot` → React 19 détecte une référence instable et re-render à l'infini. **Fix :** déclarer la constante au niveau module : `const EMPTY: T[] = []; ... useBuilderStore((s) => s.build.bx ?? EMPTY)`. Même règle pour les objets fallback `?? {}` ou les tuples `?? [0, 0, 64]`.
 - **Cache `.astro` corrompu sur Windows :** en cas d'erreur EPERM sur `data-store.json` au démarrage du dev server, supprimer `.astro/` puis relancer. L'island ne reçoit pas son HTML SSR sans ce cache, ce qui empêche `hydrateRoot` de fonctionner.
@@ -280,8 +384,8 @@ Types : `Active | Passive | Ultimate`
 
 ## État du projet
 
-**Dernière session :** 2026-05-20
-**Milestone actuel :** Build Editor M9 — Buffs tab complet
+**Dernière session :** 2026-05-21
+**Milestone actuel :** Build Editor M10 — Share tab + Short URLs (KV) ✅
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -367,8 +471,9 @@ Le Build Editor (`/builder`, `src/components/builder/`) est une React island (`c
 - ✅ M8 — Sidebar ComputedStats (redesign The Hist : 3 cartes ressources colorées, sections Offense/Recovery/Defense, toggles BS+Procs, footer contextuel) + ActiveSets
 - ✅ M8b — Moteur de calcul complet : base stats, set bonuses, traits/enchants, armes/armure, CP slottables, passifs classe/race/guilde, DK passifs corrigés (`elder-dragon` +700 HR ajouté, `blessing-at-the-peak` supprimé), Battle Spirit ×0.5, bonuses conditionnels 5pc
 - ✅ M9 — BuffsTab (15 buffs en 3 groupes Defense/Offense/Resources, toggle avec hints, `build.bx`, `BUFF_DEFS`+`BUFF_DEF_MAP`, étape 13 dans `compute-stats.ts`)
+- ✅ M10 — Share tab : Short Link (Cloudflare KV, ID 8 chars, TTL 180j, `POST /api/builds`) + Full URL (lz-string `?b=`) + Import (short ou full) + Reset. `BuildViewer.tsx` supporte `?id=` en plus de `?b=`. Hover tooltips sets/skills via `esohub-api.ts` (icônes supprimées). Nav "Build Editor" cliquable + badge "beta". Module `src/lib/esohub-api.ts` créé pour réutilisation sur les pages de builds.
 
-**Prochain milestone :** M10 — Share tab (encoder/décoder le build en URL lisible, copier le lien)
+**Prochain milestone :** M11 — Pages de builds enrichies (intégrer `esohub-api.ts` pour les hover tooltips sets/skills dans les composants Astro existants)
 
 ### Prochaine étape
-- Build Editor M10 — Share tab
+- Intégrer les hover tooltips ESO-Hub sur les pages de builds statiques (SetCard, SkillBar) via `esohub-api.ts`
