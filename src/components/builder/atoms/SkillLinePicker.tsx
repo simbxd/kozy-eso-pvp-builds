@@ -103,15 +103,17 @@ const overlay: React.CSSProperties = {
   position: "fixed", inset: 0,
   background: "rgba(0,0,0,0.72)",
   zIndex: 9000,
-  display: "flex", alignItems: "center", justifyContent: "center",
 };
 const panel: React.CSSProperties = {
+  position: "fixed",
+  top: "50%", left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 480, maxHeight: "80vh",
   background: "#0e0b1a",
   border: `1px solid ${T.edgeStrong}`,
   boxShadow: "0 16px 48px rgba(0,0,0,0.8)",
   display: "flex", flexDirection: "column",
-  overflow: "hidden", zIndex: 9001, position: "relative",
+  overflow: "hidden", zIndex: 9001,
 };
 
 function TitleBar({ title, onBack, onClose }: {
