@@ -8,7 +8,7 @@ const skillBarActive = currentPath.startsWith('/tools/skill-bar-builder');
 <header>
   <div class="rail">
     <a href="/" class="brand" aria-label="Kozy ESO PvP — Home">
-      <svg width="30" height="30" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+      <svg width="36" height="36" viewBox="0 0 38 38" fill="none" aria-hidden="true">
         <path d="M19 3 L33 19 L19 35 L5 19 Z" stroke="url(#hg)" stroke-width="1.2" fill="none"/>
         <path d="M19 9 L28 19 L19 29 L10 19 Z" stroke="#6d28d9" stroke-width="1" fill="none" opacity="0.6"/>
         <circle cx="19" cy="19" r="2.6" fill="#8b5cf6"/>
@@ -104,10 +104,10 @@ const skillBarActive = currentPath.startsWith('/tools/skill-bar-builder');
     gap: 18px;
     max-width: 1240px;
     margin: 0 auto;
-    padding: 14px 64px 16px;
+    padding: 20px 64px 22px;
     font-family: var(--font-mono);
-    font-size: 10.5px;
-    letter-spacing: 0.28em;
+    font-size: 12px;
+    letter-spacing: 0.2em;
     color: var(--color-text-muted);
     text-transform: uppercase;
   }
@@ -115,28 +115,28 @@ const skillBarActive = currentPath.startsWith('/tools/skill-bar-builder');
   .brand {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     color: var(--color-text);
     text-decoration: none;
-    letter-spacing: 0.34em;
+    letter-spacing: 0.24em;
     flex-shrink: 0;
   }
   .brand:hover { color: var(--color-text); }
 
   nav {
     display: flex;
-    gap: 22px;
+    gap: 28px;
     align-items: center;
   }
 
   .nav-link {
     font-family: var(--font-mono);
-    font-size: 10.5px;
-    letter-spacing: 0.28em;
+    font-size: 12px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--color-text-muted);
     text-decoration: none;
-    padding: 6px 2px;
+    padding: 8px 2px;
     position: relative;
     transition: color 200ms;
   }
@@ -149,7 +149,7 @@ const skillBarActive = currentPath.startsWith('/tools/skill-bar-builder');
   }
   .nav-soon em {
     font-style: normal;
-    font-size: 8px;
+    font-size: 9px;
     letter-spacing: 0.1em;
     color: var(--color-accent-dim);
     border: 1px solid var(--color-accent-dim);
@@ -191,8 +191,8 @@ const skillBarActive = currentPath.startsWith('/tools/skill-bar-builder');
   .srv__sep { color: var(--color-border); }
 
   .srv__dot {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: var(--color-text-muted);
     flex-shrink: 0;
