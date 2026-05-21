@@ -98,7 +98,8 @@ function SkillCell({
           title={skill?.name ?? (ult ? "Set ultimate" : `Set slot ${idx + 1}`)}
           style={{
             position: "relative", width: 64, height: 64,
-            border: `1px solid ${slotted ? T.accent : T.edgeStrong}`,
+            borderRadius: "50%",
+            border: `2px solid ${slotted ? T.accent : T.edgeStrong}`,
             background: slotted
               ? "linear-gradient(135deg, #321a73 0%, #150a30 100%)"
               : "linear-gradient(135deg, #1a0e3d 0%, #0e0626 100%)",
@@ -108,16 +109,15 @@ function SkillCell({
             outline: "none",
           }}
         >
-          <span style={{ position: "absolute", inset: 4, border: `1px solid rgba(205,180,255,0.16)`, zIndex: 1 }} />
           {skill?.icon ? (
             <img
               src={skill.icon} alt={skill.name}
-              style={{ width: 56, height: 56, clipPath: "circle(50%)" }}
+              style={{ width: 64, height: 64, borderRadius: "50%" }}
               onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
             />
           ) : (
-            <span style={{ fontFamily: F.cinzel, fontSize: 26, color: slotted ? T.accentSoft : T.inkFaint }}>
-              {slotted ? "◆" : "◇"}
+            <span style={{ fontFamily: F.cinzel, fontSize: 22, color: slotted ? T.accentSoft : T.edgeStrong }}>
+              ◇
             </span>
           )}
           {/* Hover overlay */}
