@@ -1,10 +1,14 @@
 import { useEffect } from "react";
 import { useEditorStore, type TabKey } from "./state";
+import { decodeEditor } from "@/lib/editor-codec";
 import { T, F, Diamond, PanelHeader, PillBtn } from "./atoms";
 import BuildSidebar from "./BuildSidebar";
 
 // Tab panel imports
-import CharacterTab    from "./tabs/CharacterTab";
+import GeneralTab      from "./tabs/GeneralTab";
+import GuideTab        from "./tabs/GuideTab";
+import ProsTab         from "./tabs/ProsTab";
+import ShareTab        from "./tabs/ShareTab";
 import EquipmentTab    from "./tabs/EquipmentTab";
 import SkillsTab       from "./tabs/SkillsTab";
 import PassivesTab     from "./tabs/PassivesTab";
@@ -12,30 +16,21 @@ import MasteriesTab    from "./tabs/MasteriesTab";
 import CpTab           from "./tabs/CpTab";
 import AttributesTab   from "./tabs/AttributesTab";
 import ConsumablesTab  from "./tabs/ConsumablesTab";
-import ShareTab        from "./tabs/ShareTab";
-import GeneralTab      from "./tabs/GeneralTab";
-import GuideTab        from "./tabs/GuideTab";
-import ProsTab         from "./tabs/ProsTab";
-import SettingsTab     from "./tabs/SettingsTab";
-import PlaceholderTab  from "./tabs/PlaceholderTab";
 
 // ── Tab panel info (title + info caption shown in PanelHeader) ────────────────
 
 const PANEL_INFO: Record<TabKey, [string, string]> = {
-  character:   ["Character",   "identity & display"],
-  equipment:   ["Equipment",   "armor · jewelry · weapons"],
-  skills:      ["Skills",      "bar 1 · bar 2"],
-  passives:    ["Passives",    "skill line ranks"],
-  masteries:   ["Masteries",   "class mastery passives · U50"],
-  cp:          ["Champion Points", "warfare · fitness"],
-  attributes:  ["Attributes",  "64 pts total"],
-  consumables: ["Consumables", "mundus · food · potion"],
-  screenshots: ["Screenshots", "coming soon"],
-  general:     ["General",     "build overview"],
-  guide:       ["Guide",       "written rotation & tips"],
-  pros:        ["Pros & Cons", "strengths & weaknesses"],
-  settings:    ["Settings",    "editor preferences"],
-  share:       ["Share",       "copy link · import · reset"],
+  general:     ["General",          "identity · class · race · mode"],
+  guide:       ["Guide",            "written rotation & tips"],
+  pros:        ["Pros & Cons",      "strengths & weaknesses"],
+  share:       ["Share",            "copy link · import · reset"],
+  equipment:   ["Equipment",        "armor · jewelry · weapons"],
+  skills:      ["Skills",           "bar 1 · bar 2"],
+  passives:    ["Passives",         "skill line ranks"],
+  masteries:   ["Masteries",        "class mastery passives · U50"],
+  cp:          ["Champion Points",  "warfare · fitness"],
+  attributes:  ["Attributes",       "64 pts total"],
+  consumables: ["Consumables",      "mundus · food · potion"],
 };
 
 // ── MetaHeader ────────────────────────────────────────────────────────────────
@@ -138,7 +133,10 @@ function MetaHeader() {
 
 function TabBody({ tab }: { tab: TabKey }) {
   switch (tab) {
-    case "character":   return <CharacterTab />;
+    case "general":     return <GeneralTab />;
+    case "guide":       return <GuideTab />;
+    case "pros":        return <ProsTab />;
+    case "share":       return <ShareTab />;
     case "equipment":   return <EquipmentTab />;
     case "skills":      return <SkillsTab />;
     case "passives":    return <PassivesTab />;
@@ -146,12 +144,6 @@ function TabBody({ tab }: { tab: TabKey }) {
     case "cp":          return <CpTab />;
     case "attributes":  return <AttributesTab />;
     case "consumables": return <ConsumablesTab />;
-    case "share":       return <ShareTab />;
-    case "general":     return <GeneralTab />;
-    case "guide":       return <GuideTab />;
-    case "pros":        return <ProsTab />;
-    case "settings":    return <SettingsTab />;
-    default:            return <PlaceholderTab />;
   }
 }
 
@@ -162,14 +154,21 @@ export default function Builder() {
   const loadState = useEditorStore((s) => s.loadState);
   const [panelTitle, panelInfo] = PANEL_INFO[activeTab];
 
-  // Restore build from `?b=` on first mount.
+  const setActiveTab = useEditorStore((s) => s.setActiveTab);
+
+  // On first mount: restore build from `?b=` and honour `?tab=` deep-link.
   useEffect(() => {
-    const raw = new URLSearchParams(window.location.search).get("b");
+    const params = new URLSearchParams(window.location.search);
+
+    // Deep-link to a specific tab (e.g. ?tab=share)
+    const tabParam = params.get("tab") as TabKey | null;
+    if (tabParam) setActiveTab(tabParam);
+
+    // Restore encoded build state
+    const raw = params.get("b");
     if (!raw) return;
-    import("@/lib/editor-codec").then(({ decodeEditor }) => {
-      const snap = decodeEditor(raw);
-      if (snap) loadState(snap.meta, snap.setups);
-    });
+    const snap = decodeEditor(raw);
+    if (snap) loadState(snap.meta, snap.setups);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

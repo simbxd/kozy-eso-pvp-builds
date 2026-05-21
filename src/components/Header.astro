@@ -38,7 +38,7 @@ const skillBarActive = currentPath.startsWith('/tools/skill-bar-builder');
         class:list={['nav-link', { on: skillBarActive }]}
         aria-current={skillBarActive ? 'page' : undefined}
       >Skill Bar Builder</a>
-      <span class="nav-link nav-soon" aria-disabled="true">Build Editor <em>soon</em></span>
+      <a href="/builder" class="nav-link nav-soon">Build Editor <em>beta</em></a>
       <a href="/about" class="nav-link">About</a>
     </nav>
 
@@ -143,13 +143,10 @@ const skillBarActive = currentPath.startsWith('/tools/skill-bar-builder');
   .nav-link:hover { color: var(--color-text); }
 
   .nav-soon {
-    color: var(--color-border-2);
-    cursor: default;
     display: inline-flex;
     align-items: center;
     gap: 6px;
   }
-  .nav-soon:hover { color: var(--color-border-2); }
   .nav-soon em {
     font-style: normal;
     font-size: 8px;

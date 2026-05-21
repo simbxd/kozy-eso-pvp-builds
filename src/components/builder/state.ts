@@ -3,9 +3,9 @@ import { create } from "zustand";
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 export type TabKey =
-  | "character" | "equipment" | "skills" | "passives" | "masteries"
-  | "cp" | "attributes" | "consumables"
-  | "screenshots" | "general" | "guide" | "pros" | "settings" | "share";
+  | "general" | "guide" | "pros" | "share"
+  | "equipment" | "skills" | "passives" | "masteries"
+  | "cp" | "attributes" | "consumables";
 
 export type ArmorWeight = "heavy" | "medium" | "light";
 
@@ -256,6 +256,8 @@ export const useEditorStore = create<EditorState>((set, get) => ({
   }),
 }));
 
+// ── Dev helper ────────────────────────────────────────────────────────────────
+// Expose the store on window in development so preview tools can drive the UI.
 // ── URL persistence ───────────────────────────────────────────────────────────
 // Write `?b=` 300ms after the last state change (debounced, no history entry).
 // Only `meta` and `setups` are encoded — activeTab is ephemeral.
