@@ -49,7 +49,7 @@ export type Setup = {
     mundus?: string;
     food?: string;
     potion?: string;
-    companion?: string;
+    poison?: string;
   };
 };
 
