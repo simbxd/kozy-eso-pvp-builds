@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 import { execSync } from 'child_process';
 import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 
 const buildDate = new Date();
 
@@ -65,8 +66,14 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
-    // Astro's React island + zustand/radix/lucide can otherwise resolve to
-    // separate React copies in dev pre-bundling → "Invalid hook call".
-    resolve: { dedupe: ['react', 'react-dom'] },
+    resolve: {
+      // Astro's React island + zustand/radix/lucide can otherwise resolve to
+      // separate React copies in dev pre-bundling → "Invalid hook call".
+      dedupe: ['react', 'react-dom'],
+      // Mirror tsconfig paths so Rollup resolves @/ in TSX files during build.
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
+      },
+    },
   },
 });
