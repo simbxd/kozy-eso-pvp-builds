@@ -146,33 +146,37 @@ export function PillBtn({ children, active, onClick, color = T.accent, mono = tr
 }
 
 // ── CompactWeight ─────────────────────────────────────────────────────────────
+// Colors hardcodées ici (pas en CSS variable) pour pouvoir dériver le faded rgba.
+// H=rouge · M=vert · L=bleu — convention couleur ESO in-game.
+
+const WEIGHT_ITEMS = [
+  { key: "heavy",  letter: "H", color: "#e06060", faint: "rgba(224,96,96,0.32)"   },
+  { key: "medium", letter: "M", color: "#72c472", faint: "rgba(114,196,114,0.32)" },
+  { key: "light",  letter: "L", color: "#7ab0e0", faint: "rgba(122,176,224,0.32)" },
+] as const;
 
 export function CompactWeight({ active, onChange }: {
   active: string;
   onChange?: (w: string) => void;
 }) {
-  const items = [
-    ["heavy",  "H", T.heavy],
-    ["medium", "M", T.medium],
-    ["light",  "L", T.light],
-  ] as const;
   return (
     <div style={{ display: "flex", gap: 3 }}>
-      {items.map(([k, letter, col]) => {
-        const on = active === k;
+      {WEIGHT_ITEMS.map(({ key, letter, color, faint }) => {
+        const on = active === key;
         return (
           <button
-            key={k} type="button"
-            onClick={() => onChange?.(k)}
+            key={key} type="button"
+            onClick={() => onChange?.(key)}
             style={{
               width: 30, height: 26,
               display: "inline-flex", alignItems: "center", justifyContent: "center",
-              border: `1px solid ${on ? col : T.edge}`,
-              color: on ? col : T.inkMute,
-              background: on ? `${col}1a` : "transparent",
+              border: `1px solid ${on ? color : faint}`,
+              color: on ? color : faint,
+              background: on ? `${color}1a` : "transparent",
               fontFamily: F.mono, fontSize: 10, fontWeight: 600,
               letterSpacing: "0.12em", textTransform: "uppercase",
               borderRadius: 2, cursor: "pointer",
+              transition: "border-color 0.12s, color 0.12s",
             }}
           >{letter}</button>
         );

@@ -1,6 +1,7 @@
 import { useEditorStore, type ArmorPiece, type JewelryPiece, type WeaponPiece } from "../state";
 import { T, F, CompactWeight, SectionHead } from "../atoms";
 import { SearchSelect, type SelectItem } from "../atoms/SearchSelect";
+import type { CSSProperties } from "react";
 import { setsIndex, traitsForCategory, enchantsForCategory } from "@/lib/eso-data";
 
 // ── Static lists (built once outside render) ──────────────────────────────────
@@ -151,14 +152,85 @@ function WeaponRow({ piece }: { piece: WeaponPiece }) {
   );
 }
 
+// ── BulkApplyBar ──────────────────────────────────────────────────────────────
+// Ligne "Apply to all" : sélectionner un trait ou enchant l'applique d'un coup
+// à toutes les pièces du groupe. Valeur toujours vide → reset automatique après apply.
+
+function BulkApplyBar({
+  traits,
+  enchants,
+  onApplyTrait,
+  onApplyEnchant,
+  hasWeight = false,
+}: {
+  traits:          SelectItem[];
+  enchants:        SelectItem[];
+  onApplyTrait:   (id: string) => void;
+  onApplyEnchant: (id: string) => void;
+  hasWeight?:      boolean;
+}) {
+  const rowStyle: CSSProperties = {
+    display: "grid", gridTemplateColumns: COLS, gap: 6,
+    alignItems: "center", padding: "4px 8px 5px",
+    background: "rgba(139,92,246,0.06)",
+    borderBottom: `1px solid rgba(139,92,246,0.18)`,
+    marginBottom: 2,
+  };
+  const labelStyle: CSSProperties = {
+    fontFamily: F.mono, fontSize: 8, letterSpacing: "0.28em",
+    color: "rgba(167,139,250,0.65)", textTransform: "uppercase",
+  };
+  return (
+    <div style={rowStyle}>
+      {/* icon col */}
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center",
+        fontFamily: F.mono, fontSize: 10, color: "rgba(167,139,250,0.5)" }}>⊕</div>
+      {/* slot-label col */}
+      <div style={labelStyle}>All</div>
+      {/* set col — pas de bulk-set */}
+      <div />
+      {/* trait */}
+      <SearchSelect
+        value=""
+        onChange={(id) => id && onApplyTrait(id)}
+        items={traits}
+        placeholder="Trait → all"
+        searchable={false}
+        height={24}
+        popoverWidth={180}
+      />
+      {/* enchant */}
+      <SearchSelect
+        value=""
+        onChange={(id) => id && onApplyEnchant(id)}
+        items={enchants}
+        placeholder="Enchant → all"
+        searchable={false}
+        height={24}
+        popoverWidth={260}
+      />
+      {/* last col (weight ou vide) */}
+      <div />
+    </div>
+  );
+}
+
 // ── EquipmentTab ──────────────────────────────────────────────────────────────
 
 export default function EquipmentTab() {
-  const setup = useEditorStore((s) => s.setups[s.activeSetupIdx]);
+  const setup            = useEditorStore((s) => s.setups[s.activeSetupIdx]);
+  const patchArmorPiece  = useEditorStore((s) => s.patchArmorPiece);
+  const patchJewelryPiece = useEditorStore((s) => s.patchJewelryPiece);
 
   const armor   = ARMOR_SLOTS .map((sl) => setup.armor  .find((p) => p.slot === sl)!).filter(Boolean);
   const jewelry = JEWEL_SLOTS .map((sl) => setup.jewelry.find((p) => p.slot === sl)!).filter(Boolean);
   const weapons = WEAPON_SLOTS.map((sl) => setup.weapons.find((p) => p.slot === sl)!).filter(Boolean);
+
+  // Bulk apply — applique trait ou enchant à toutes les pièces du groupe
+  const bulkArmorTrait    = (id: string) => ARMOR_SLOTS.forEach((sl) => patchArmorPiece(sl,   { trait:   id }));
+  const bulkArmorEnchant  = (id: string) => ARMOR_SLOTS.forEach((sl) => patchArmorPiece(sl,   { enchant: id }));
+  const bulkJewelTrait    = (id: string) => JEWEL_SLOTS.forEach((sl) => patchJewelryPiece(sl, { trait:   id }));
+  const bulkJewelEnchant  = (id: string) => JEWEL_SLOTS.forEach((sl) => patchJewelryPiece(sl, { enchant: id }));
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 18, height: "100%", overflow: "auto" }}>
@@ -166,12 +238,21 @@ export default function EquipmentTab() {
       <div>
         <SectionHead title="Armor" count="7 pieces" />
         <ColHead last="Weight" />
+        <BulkApplyBar
+          traits={TRAIT_ARMOR} enchants={ENCHANT_ARMOR}
+          onApplyTrait={bulkArmorTrait} onApplyEnchant={bulkArmorEnchant}
+          hasWeight
+        />
         {armor.map((p)   => <ArmorRow   key={p.slot} piece={p} />)}
       </div>
 
       <div>
         <SectionHead title="Jewelry" count="3 pieces" />
         <ColHead last="" />
+        <BulkApplyBar
+          traits={TRAIT_JEWEL} enchants={ENCHANT_JEWEL}
+          onApplyTrait={bulkJewelTrait} onApplyEnchant={bulkJewelEnchant}
+        />
         {jewelry.map((p) => <JewelryRow key={p.slot} piece={p} />)}
       </div>
 

@@ -10,6 +10,7 @@ interface Props {
   canonicalUrl?: string;
   ogType?: string;
   noindex?: boolean;
+  fullWidth?: boolean;
 }
 
 const {
@@ -19,6 +20,7 @@ const {
   canonicalUrl,
   ogType = 'website',
   noindex = false,
+  fullWidth = false,
 } = Astro.props;
 
 const siteUrl = 'https://kozy-eso.com';
@@ -76,7 +78,7 @@ const fullTitle = title === 'Home' ? 'kozy-eso.com — Builds, Guides & Mechanic
     <div class="kz-page">
       <div class="kz-page__vignette" aria-hidden="true"></div>
       <Header />
-      <div class="kz-page__inner">
+      <div class={`kz-page__inner${fullWidth ? " kz-page__inner--full" : ""}`}>
         <main id="main-content">
           <slot />
         </main>

@@ -27,9 +27,9 @@
   --color-accent-soft:  #a78bfa;                    /* accentSoft — sigils, active hints */
   --color-edge:         rgba(205,180,255,0.14);     /* editor panel borders */
   --color-edge-strong:  rgba(205,180,255,0.28);     /* FieldShell dashed border */
-  --color-armor-heavy:  #e6b56a;
-  --color-armor-medium: #a78bfa;
-  --color-armor-light:  #a8d8f0;
+  --color-armor-heavy:  #e06060;   /* Heavy — rouge */
+  --color-armor-medium: #72c472;   /* Medium — vert */
+  --color-armor-light:  #7ab0e0;   /* Light — bleu */
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-cinzel:  'Cinzel', Georgia, serif;
@@ -95,6 +95,10 @@ hr { border-color: var(--color-border); }
 }
 
 @media (max-width: 760px) { .kz-page__inner { padding: 24px 24px 80px; } }
+
+/* Full-width variant — utilisé par le Build Editor */
+.kz-page__inner.kz-page__inner--full { max-width: none; padding: 0; }
+@media (max-width: 760px) { .kz-page__inner.kz-page__inner--full { padding: 0; } }
 
 /* ── section rules ───────────────────────────────────────── */
 .kz-rule {
