@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import react from '@astrojs/react';
 import { execSync } from 'child_process';
 import { existsSync } from 'node:fs';
 
@@ -47,6 +48,7 @@ function resolveLastmod(urlPath) {
 export default defineConfig({
   site: 'https://kozy-eso.com',
   integrations: [
+    react(),
     sitemap({
       serialize(item) {
         const urlPath = new URL(item.url).pathname;
@@ -63,5 +65,16 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
+    // Astro's React island + zustand/radix/lucide can otherwise resolve to
+    // separate React copies in dev pre-bundling → "Invalid hook call".
+    resolve: { dedupe: ['react', 'react-dom'] },
+    // Force-bundle these ESM packages instead of externalizing them during
+    // the static SSR pass — fixes "Rollup failed to resolve" on Cloudflare CI.
+    ssr: {
+      noExternal: ['zustand', 'lz-string', 'lucide-react'],
+    },
+    optimizeDeps: {
+      include: ['zustand', 'lz-string'],
+    },
   },
 });
