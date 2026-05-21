@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { decodeEditor } from "@/lib/editor-codec";
+import { decodeEditor, encodeEditor } from "@/lib/editor-codec";
 import type { BuildMeta, Setup, ArmorPiece, JewelryPiece, WeaponPiece } from "./state";
 import { getSet, getTrait, getEnchant, skillsIndex } from "@/lib/eso-data";
 import { ALL_CLASS_LINES } from "./atoms/SkillLinePicker";
@@ -792,7 +792,25 @@ export default function BuildViewer() {
   const [state, setState] = useState<ViewState>({ kind: "loading" });
 
   useEffect(() => {
-    const raw = new URLSearchParams(window.location.search).get("b");
+    const params = new URLSearchParams(window.location.search);
+    const shortId = params.get("id");
+    const raw     = params.get("b");
+
+    // Short URL: ?id=xxx — fetch from KV API
+    if (shortId) {
+      fetch(`/api/builds/${shortId}`)
+        .then((r) => { if (!r.ok) throw new Error("not_found"); return r.json(); })
+        .then((snap: { v: 1; meta: BuildMeta; setups: Setup[] }) => {
+          if (!snap || snap.v !== 1 || !snap.setups[0]) { setState({ kind: "invalid" }); return; }
+          // Reconstruct a ?b= param so "Open in editor" works
+          const encoded = encodeEditor(snap.meta, snap.setups);
+          setState({ kind: "ok", meta: snap.meta, setup: snap.setups[0], raw: encoded });
+        })
+        .catch(() => setState({ kind: "invalid" }));
+      return;
+    }
+
+    // Long URL: ?b=xxx
     if (!raw) { setState({ kind: "empty" }); return; }
     const snap = decodeEditor(raw);
     if (!snap || !snap.setups[0]) { setState({ kind: "invalid" }); return; }
