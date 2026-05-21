@@ -68,13 +68,5 @@ export default defineConfig({
     // Astro's React island + zustand/radix/lucide can otherwise resolve to
     // separate React copies in dev pre-bundling → "Invalid hook call".
     resolve: { dedupe: ['react', 'react-dom'] },
-    // Force-bundle these ESM packages instead of externalizing them during
-    // the static SSR pass — fixes "Rollup failed to resolve" on Cloudflare CI.
-    ssr: {
-      noExternal: ['zustand', 'lz-string', 'lucide-react'],
-    },
-    optimizeDeps: {
-      include: ['zustand', 'lz-string'],
-    },
   },
 });
