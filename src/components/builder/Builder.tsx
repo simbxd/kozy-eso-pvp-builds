@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useEditorStore, type TabKey } from "./state";
 import { T, F, Diamond, PanelHeader, PillBtn } from "./atoms";
 import BuildSidebar from "./BuildSidebar";
@@ -11,6 +12,7 @@ import MasteriesTab    from "./tabs/MasteriesTab";
 import CpTab           from "./tabs/CpTab";
 import AttributesTab   from "./tabs/AttributesTab";
 import ConsumablesTab  from "./tabs/ConsumablesTab";
+import ShareTab        from "./tabs/ShareTab";
 import GeneralTab      from "./tabs/GeneralTab";
 import GuideTab        from "./tabs/GuideTab";
 import ProsTab         from "./tabs/ProsTab";
@@ -33,6 +35,7 @@ const PANEL_INFO: Record<TabKey, [string, string]> = {
   guide:       ["Guide",       "written rotation & tips"],
   pros:        ["Pros & Cons", "strengths & weaknesses"],
   settings:    ["Settings",    "editor preferences"],
+  share:       ["Share",       "copy link · import · reset"],
 };
 
 // ── MetaHeader ────────────────────────────────────────────────────────────────
@@ -143,6 +146,7 @@ function TabBody({ tab }: { tab: TabKey }) {
     case "cp":          return <CpTab />;
     case "attributes":  return <AttributesTab />;
     case "consumables": return <ConsumablesTab />;
+    case "share":       return <ShareTab />;
     case "general":     return <GeneralTab />;
     case "guide":       return <GuideTab />;
     case "pros":        return <ProsTab />;
@@ -155,7 +159,19 @@ function TabBody({ tab }: { tab: TabKey }) {
 
 export default function Builder() {
   const activeTab = useEditorStore((s) => s.activeTab);
+  const loadState = useEditorStore((s) => s.loadState);
   const [panelTitle, panelInfo] = PANEL_INFO[activeTab];
+
+  // Restore build from `?b=` on first mount.
+  useEffect(() => {
+    const raw = new URLSearchParams(window.location.search).get("b");
+    if (!raw) return;
+    import("@/lib/editor-codec").then(({ decodeEditor }) => {
+      const snap = decodeEditor(raw);
+      if (snap) loadState(snap.meta, snap.setups);
+    });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>

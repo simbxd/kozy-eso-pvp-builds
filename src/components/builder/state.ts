@@ -5,7 +5,7 @@ import { create } from "zustand";
 export type TabKey =
   | "character" | "equipment" | "skills" | "passives" | "masteries"
   | "cp" | "attributes" | "consumables"
-  | "screenshots" | "general" | "guide" | "pros" | "settings";
+  | "screenshots" | "general" | "guide" | "pros" | "settings" | "share";
 
 export type ArmorWeight = "heavy" | "medium" | "light";
 
@@ -139,6 +139,8 @@ type EditorState = {
   setCpStar: (tree: "warfare" | "fitness", slotIdx: number, entry: [string, number] | null) => void;
   setAttr: (key: "health" | "magicka" | "stamina", val: number) => void;
   patchConsumables: (patch: Partial<Setup["consumables"]>) => void;
+  loadState: (meta: BuildMeta, setups: Setup[]) => void;
+  reset: () => void;
 };
 
 export const useEditorStore = create<EditorState>((set, get) => ({
@@ -238,4 +240,44 @@ export const useEditorStore = create<EditorState>((set, get) => ({
     const setups = s.setups.map((su, i) => i === s.activeSetupIdx ? { ...su, consumables } : su);
     return { setups };
   }),
+
+  loadState: (meta, setups) => set({
+    meta,
+    setups,
+    activeSetupIdx: 0,
+    activeTab: "equipment",
+  }),
+
+  reset: () => set({
+    meta: defaultMeta(),
+    setups: [defaultSetup()],
+    activeSetupIdx: 0,
+    activeTab: "equipment",
+  }),
 }));
+
+// ── URL persistence ───────────────────────────────────────────────────────────
+// Write `?b=` 300ms after the last state change (debounced, no history entry).
+// Only `meta` and `setups` are encoded — activeTab is ephemeral.
+if (typeof window !== "undefined") {
+  // Lazy import to avoid pulling lz-string into the SSR bundle.
+  import("@/lib/editor-codec").then(({ encodeEditor }) => {
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    let prevMeta   = useEditorStore.getState().meta;
+    let prevSetups = useEditorStore.getState().setups;
+
+    useEditorStore.subscribe((state) => {
+      if (state.meta === prevMeta && state.setups === prevSetups) return;
+      prevMeta   = state.meta;
+      prevSetups = state.setups;
+
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        const { meta, setups } = useEditorStore.getState();
+        const url = new URL(window.location.href);
+        url.searchParams.set("b", encodeEditor(meta, setups));
+        window.history.replaceState(window.history.state, "", url);
+      }, 300);
+    });
+  });
+}

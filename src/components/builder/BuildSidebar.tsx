@@ -55,6 +55,7 @@ function SectionHead({ children }: { children: string }) {
 // ── BuildSidebar ──────────────────────────────────────────────────────────────
 
 const BUILD_ITEMS: Array<[TabKey, string]> = [
+  ["share",    "Share"     ],
   ["general",  "General"   ],
   ["guide",    "Guide"     ],
   ["pros",     "Pros & Cons"],
