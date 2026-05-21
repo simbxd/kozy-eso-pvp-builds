@@ -212,6 +212,10 @@ function setLabel(setId: string): string {
   return setNameById[setId] ?? setId;
 }
 
+// Set bonus lookup — local fallback for the gear sheet ESO-Hub tooltip
+const setBonusById = new Map<string, Bonus[]>();
+for (const s of sets) setBonusById.set(s.id, s.bonuses);
+
 // ── BuildHero derived props ──────────────────────────────────────────────────
 // Armor weight split for the rail caption — fixed heavy→light order, deduped.
 const armorTypes = new Set((gear?.armor ?? []).map(p => p.type));
@@ -370,7 +374,21 @@ const raceLabel = race?.name;
                 <tr class={`gr gr--${row.type}`}>
                   <td class="gr__slot"><span class="gr__pin" aria-hidden="true"></span>{row.slot}</td>
                   <td class="gr__item">
-                    <span class="gr__name">{row.setName ?? row.setId}</span>
+                    <span class="gr__set-wrap" data-set-id={row.setId} tabindex="0">
+                      <span class="gr__name">{row.setName ?? row.setId}</span>
+                      <span class="gr__set-tip" role="tooltip">
+                        <span class="gr__set-tip-name">{row.setName ?? row.setId}</span>
+                        <span class="gr__set-tip-eso eso-tip-body" data-eso-body hidden></span>
+                        <span class="gr__set-tip-fb" data-fallback>
+                          {(setBonusById.get(row.setId) ?? []).map(b => (
+                            <span class="gr__set-tip-row">
+                              <span class="gr__set-tip-n">{b.count}pc</span>
+                              <span class="gr__set-tip-txt">{b.stat} {b.value}</span>
+                            </span>
+                          ))}
+                        </span>
+                      </span>
+                    </span>
                   </td>
                   <td class="gr__trait">
                     {row.traitData ? (
@@ -412,7 +430,21 @@ const raceLabel = race?.name;
                 <tr class={`gr gr--${row.type}`}>
                   <td class="gr__slot"><span class="gr__pin" aria-hidden="true"></span>{row.slot}</td>
                   <td class="gr__item">
-                    <span class="gr__name">{row.setName ?? row.setId}</span>
+                    <span class="gr__set-wrap" data-set-id={row.setId} tabindex="0">
+                      <span class="gr__name">{row.setName ?? row.setId}</span>
+                      <span class="gr__set-tip" role="tooltip">
+                        <span class="gr__set-tip-name">{row.setName ?? row.setId}</span>
+                        <span class="gr__set-tip-eso eso-tip-body" data-eso-body hidden></span>
+                        <span class="gr__set-tip-fb" data-fallback>
+                          {(setBonusById.get(row.setId) ?? []).map(b => (
+                            <span class="gr__set-tip-row">
+                              <span class="gr__set-tip-n">{b.count}pc</span>
+                              <span class="gr__set-tip-txt">{b.stat} {b.value}</span>
+                            </span>
+                          ))}
+                        </span>
+                      </span>
+                    </span>
                   </td>
                   <td class="gr__trait">
                     {row.traitData ? (
@@ -459,7 +491,21 @@ const raceLabel = race?.name;
                     {row.weapon_type && <span class="gr__wtype">{row.weapon_type}</span>}
                   </td>
                   <td class="gr__item">
-                    <span class="gr__name">{row.setName ?? row.setId}</span>
+                    <span class="gr__set-wrap" data-set-id={row.setId} tabindex="0">
+                      <span class="gr__name">{row.setName ?? row.setId}</span>
+                      <span class="gr__set-tip" role="tooltip">
+                        <span class="gr__set-tip-name">{row.setName ?? row.setId}</span>
+                        <span class="gr__set-tip-eso eso-tip-body" data-eso-body hidden></span>
+                        <span class="gr__set-tip-fb" data-fallback>
+                          {(setBonusById.get(row.setId) ?? []).map(b => (
+                            <span class="gr__set-tip-row">
+                              <span class="gr__set-tip-n">{b.count}pc</span>
+                              <span class="gr__set-tip-txt">{b.stat} {b.value}</span>
+                            </span>
+                          ))}
+                        </span>
+                      </span>
+                    </span>
                   </td>
                   <td class="gr__trait">
                     {row.traitData ? (
@@ -735,6 +781,40 @@ const raceLabel = race?.name;
       target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
       history.pushState(null, '', `#${id}`);
     });
+  });
+</script>
+
+<script>
+  // ── Gear sheet — ESO-Hub set tooltips, lazy fetch on hover/focus ──
+  import { fetchSetTip, setTipBonuses } from "@/lib/esohub-api";
+
+  document.querySelectorAll<HTMLElement>(".gr__set-wrap[data-set-id]").forEach((wrap) => {
+    const id  = wrap.dataset.setId;
+    const tip = wrap.querySelector(".gr__set-tip");
+    if (!id || !tip) return;
+    const body     = tip.querySelector<HTMLElement>("[data-eso-body]");
+    const fallback = tip.querySelector<HTMLElement>("[data-fallback]");
+    if (!body) return;
+
+    let loaded = false;
+    const load = async () => {
+      if (loaded) return;
+      loaded = true;
+      const data = await fetchSetTip(id);
+      if (!data) return; // keep local fallback on failure
+      let html = "";
+      for (const { count, html: bonusHtml } of setTipBonuses(data)) {
+        html += `<span class="gr__set-tip-row"><span class="gr__set-tip-n">${count}pc</span>`
+              + `<span class="gr__set-tip-txt">${bonusHtml}</span></span>`;
+      }
+      html += `<span class="gr__set-tip-credit">Tooltips by ESO-Hub</span>`;
+      body.innerHTML = html;
+      body.hidden = false;
+      if (fallback) fallback.hidden = true;
+    };
+
+    wrap.addEventListener("mouseenter", load);
+    wrap.addEventListener("focusin", load);
   });
 </script>
 
@@ -1027,6 +1107,86 @@ const raceLabel = race?.name;
     font-family: var(--font-mono);
     font-size: 11px;
     letter-spacing: 0.05em;
+  }
+
+  /* Gear sheet — ESO-Hub set tooltip */
+  .gr__set-wrap {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    outline: none;
+  }
+  .gr__set-wrap:focus-visible .gr__name {
+    text-decoration: underline dotted var(--color-accent);
+    text-underline-offset: 3px;
+  }
+
+  .gr__set-tip {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 0;
+    width: 300px;
+    max-width: min(300px, calc(100vw - 48px));
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border-2);
+    border-bottom: 1px solid var(--color-accent);
+    padding: 12px 14px;
+    z-index: 30;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 20px var(--color-accent-glow);
+    pointer-events: none;
+    text-align: left;
+    white-space: normal;
+  }
+  .gr__set-wrap:hover .gr__set-tip,
+  .gr__set-wrap:focus-within .gr__set-tip { display: block; }
+
+  .gr__set-tip-name {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--color-mythic);
+    line-height: 1.15;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 9px;
+    margin-bottom: 9px;
+  }
+
+  .gr__set-tip-eso { display: block; }
+  .gr__set-tip-eso[hidden] { display: none; }
+  .gr__set-tip-fb { display: block; }
+
+  /* :global — rows are server-rendered (fallback) AND injected at runtime */
+  .gr__set-tip :global(.gr__set-tip-row) {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    padding: 3px 0;
+  }
+  .gr__set-tip :global(.gr__set-tip-n) {
+    flex-shrink: 0;
+    min-width: 32px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--color-accent);
+  }
+  .gr__set-tip :global(.gr__set-tip-txt) {
+    font-family: var(--font-body);
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #cfc0e8;
+  }
+  .gr__set-tip :global(.gr__set-tip-credit) {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: rgba(139,92,246,0.4);
   }
 
   @media (max-width: 700px) {

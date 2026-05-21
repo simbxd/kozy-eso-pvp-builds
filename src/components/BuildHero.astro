@@ -154,13 +154,12 @@ const bars = [
             {skills.map(skill => {
               const hasMorph = !!skill.morph_of;
               const hasScribing = !!skill.scribing;
-              const hasTip = hasMorph || hasScribing;
               return (
-                <li class="bh__sk">
+                <li class="bh__sk" data-id={skill.id}>
                   <div
                     class="bh__sk-btn"
-                    tabindex={hasTip ? 0 : undefined}
-                    role={hasTip ? 'button' : undefined}
+                    tabindex={0}
+                    role="button"
                     aria-label={skill.name}
                   >
                     {skill.icon
@@ -169,7 +168,7 @@ const bars = [
                     }
                   </div>
 
-                  {hasTip && (
+                  {(
                     <div class="bh__sk-tip" role="tooltip">
                       <div class="bh__sk-tip-head">
                         <span class="bh__sk-tip-name">{skill.name}</span>
@@ -208,9 +207,13 @@ const bars = [
                         </div>
                       )}
 
+                      {/* Fallback — local rationale, shown until ESO-Hub loads */}
                       {skill.morph_rationale && (
-                        <p class="bh__sk-rationale">{skill.morph_rationale}</p>
+                        <p class="bh__sk-rationale" data-fallback>{skill.morph_rationale}</p>
                       )}
+
+                      {/* ESO-Hub effect — populated client-side, primary content */}
+                      <div class="bh__sk-eso eso-tip-body" data-eso-body hidden></div>
                     </div>
                   )}
                 </li>
@@ -274,6 +277,41 @@ const bars = [
 
   </div>
 </section>
+
+<script>
+  // ── ESO-Hub skill tooltips — lazy fetch on hover/focus ────────
+  import { fetchSkillTip } from "@/lib/esohub-api";
+
+  document.querySelectorAll<HTMLElement>(".bh__sk[data-id]").forEach((sk) => {
+    const id  = sk.dataset.id;
+    const tip = sk.querySelector(".bh__sk-tip");
+    if (!id || !tip) return;
+    const body     = tip.querySelector<HTMLElement>("[data-eso-body]");
+    const fallback = tip.querySelector<HTMLElement>("[data-fallback]");
+    if (!body) return;
+
+    let loaded = false;
+    const load = async () => {
+      if (loaded) return;
+      loaded = true;
+      const data = await fetchSkillTip(id);
+      if (!data) return; // keep local fallback on failure
+      let html = `<div class="bh__sk-fx-label">${data.header || "Effect"}</div>`;
+      html += `<div class="bh__sk-fx">${data.effect_1}</div>`;
+      if (data.effect_2) {
+        html += `<div class="bh__sk-fx-label bh__sk-fx-label--new">New Effect</div>`;
+        html += `<div class="bh__sk-fx">${data.effect_2}</div>`;
+      }
+      html += `<div class="bh__sk-credit">Tooltips by ESO-Hub</div>`;
+      body.innerHTML = html;
+      body.hidden = false;
+      if (fallback) fallback.hidden = true;
+    };
+
+    sk.addEventListener("mouseenter", load);
+    sk.addEventListener("focusin", load);
+  });
+</script>
 
 <style>
   .bh {
@@ -598,6 +636,36 @@ const bars = [
     line-height: 1.5;
     color: rgba(232,222,255,0.82);
     margin: 0;
+  }
+
+  /* ESO-Hub effect body — :global because injected at runtime */
+  .bh__sk-eso[hidden] { display: none; }
+
+  .bh__sk-eso :global(.bh__sk-fx-label) {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-mythic, #d4a44a);
+    margin-bottom: 6px;
+  }
+  .bh__sk-eso :global(.bh__sk-fx-label--new) {
+    color: #65d6ad;
+    margin-top: 12px;
+  }
+  .bh__sk-eso :global(.bh__sk-fx) {
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: rgba(232,222,255,0.82);
+  }
+  .bh__sk-eso :global(.bh__sk-credit) {
+    margin-top: 10px;
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: rgba(139,92,246,0.4);
   }
 
   /* RIGHT — character rail */
