@@ -1,0 +1,24 @@
+{
+  "id": "jewels-of-misrule",
+  "name": "Jewels of Misrule",
+  "type": "food",
+  "patch_verified": "U49",
+  "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=120764&quality=4&lang=en",
+  "effects": [
+    {
+      "stat": "Maximum Health",
+      "value": 3927
+    },
+    {
+      "stat": "Stamina Recovery",
+      "value": 357
+    },
+    {
+      "stat": "Magicka Recovery",
+      "value": 357
+    }
+  ],
+  "duration_seconds": 7200,
+  "crafted": true,
+  "curated": true
+}

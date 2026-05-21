@@ -10,13 +10,22 @@ const MUNDUS_LIST = [
 ];
 
 const FOOD_ITEMS: SelectItem[] = [
-  { id: "bewitched-sugar-skulls",               label: "Bewitched Sugar Skulls",               badge: "Food",  sub: "+Max Health · +Max Stamina · Health Rec"  },
-  { id: "artaeum-pickled-fish-bowl",             label: "Artaeum Pickled Fish Bowl",             badge: "Food",  sub: "+Max Health · +Max Magicka"               },
-  { id: "braised-rabbit-with-spring-vegetables", label: "Braised Rabbit with Spring Vegetables", badge: "Food",  sub: "+Max Health · +Max Stamina"               },
-  { id: "lava-foot-soup-and-saltrice",           label: "Lava Foot Soup-and-Saltrice",           badge: "Food",  sub: "+Max Stamina · Stamina Rec"               },
-  { id: "orzorgas-smoked-bear-haunch",           label: "Orzorga's Smoked Bear Haunch",          badge: "Food",  sub: "+Max Health · Health Rec · Magicka Rec"   },
-  { id: "witchmothers-potent-brew",              label: "Witchmother's Potent Brew",             badge: "Drink", sub: "+Max Health · +Max Magicka · Magicka Rec" },
-  { id: "ghastly-eye-bowl",                      label: "Ghastly Eye Bowl",                      badge: "Drink", sub: "+Max Magicka · Magicka Rec"               },
+  // ── Tri-stat ──────────────────────────────────────────────────────────────────
+  { id: "bewitched-sugar-skulls",               label: "Bewitched Sugar Skulls",               badge: "Food",  sub: "+Max Health · +Max Stamina · Health Rec"            },
+  { id: "longfin-pasty-with-melon-sauce",        label: "Longfin Pasty with Melon Sauce",        badge: "Food",  sub: "+Max Health · +Max Magicka · +Max Stamina"          },
+  // ── Health + Stamina ──────────────────────────────────────────────────────────
+  { id: "braised-rabbit-with-spring-vegetables", label: "Braised Rabbit with Spring Vegetables", badge: "Food",  sub: "+Max Health · +Max Stamina"                         },
+  { id: "dubious-camoran-throne",                label: "Dubious Camoran Throne",                badge: "Drink", sub: "+Max Health · +Max Stamina · Stamina Rec"           },
+  { id: "lava-foot-soup-and-saltrice",           label: "Lava Foot Soup-and-Saltrice",           badge: "Food",  sub: "+Max Stamina · Stamina Rec"                         },
+  // ── Health + Magicka ──────────────────────────────────────────────────────────
+  { id: "artaeum-pickled-fish-bowl",             label: "Artaeum Pickled Fish Bowl",             badge: "Food",  sub: "+Max Health · +Max Magicka"                         },
+  { id: "solitude-salmon-millet-soup",           label: "Solitude Salmon-Millet Soup",           badge: "Food",  sub: "+Max Health · +Max Magicka"                         },
+  { id: "clockwork-citrus-filet",                label: "Clockwork Citrus Filet",                badge: "Food",  sub: "+Max Health · Health Rec · +Max Magicka · Magicka Rec"},
+  // ── Recovery builds ───────────────────────────────────────────────────────────
+  { id: "orzorgas-smoked-bear-haunch",           label: "Orzorga's Smoked Bear Haunch",          badge: "Food",  sub: "+Max Health · Health Rec · Magicka Rec"             },
+  { id: "jewels-of-misrule",                     label: "Jewels of Misrule",                     badge: "Food",  sub: "+Max Health · Stamina Rec · Magicka Rec"            },
+  { id: "witchmothers-potent-brew",              label: "Witchmother's Potent Brew",             badge: "Drink", sub: "+Max Health · +Max Magicka · Magicka Rec"           },
+  { id: "ghastly-eye-bowl",                      label: "Ghastly Eye Bowl",                      badge: "Drink", sub: "+Max Magicka · Magicka Rec"                         },
 ];
 
 const POTION_ITEMS: SelectItem[] = [

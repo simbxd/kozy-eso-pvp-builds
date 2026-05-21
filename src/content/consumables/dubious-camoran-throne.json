@@ -1,0 +1,23 @@
+{
+  "id": "dubious-camoran-throne",
+  "name": "Dubious Camoran Throne",
+  "type": "drink",
+  "patch_verified": "U49",
+  "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=120763&quality=4&lang=en",
+  "effects": [
+    {
+      "stat": "Maximum Health",
+      "value": 3094
+    },
+    {
+      "stat": "Maximum Stamina",
+      "value": 2856
+    },
+    {
+      "stat": "Stamina Recovery",
+      "value": 315
+    }
+  ],
+  "duration_seconds": 7200,
+  "crafted": true
+}

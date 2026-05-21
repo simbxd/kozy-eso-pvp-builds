@@ -129,6 +129,13 @@ const ITEMS = [
   // ── Drinks (esolog) ──────────────────────────────────────────────────────────
   { source: 'esolog', type: 'drink', name: "Witchmother's Potent Brew",  esologId: '87697' },
   { source: 'esolog', type: 'drink', name: 'Ghastly Eye Bowl',           esologId: '87695' },
+  { source: 'esolog', type: 'drink', name: 'Dubious Camoran Throne',     esologId: '120763' },
+
+  // ── Delicacy / Gourmet food (esolog) ─────────────────────────────────────────
+  { source: 'esolog', type: 'food',  name: 'Clockwork Citrus Filet',         esologId: '133556' },
+  { source: 'esolog', type: 'food',  name: 'Longfin Pasty with Melon Sauce', esologId: '68253'  },
+  { source: 'esolog', type: 'food',  name: 'Jewels of Misrule',              esologId: '120764' },
+  { source: 'esolog', type: 'food',  name: 'Solitude Salmon-Millet Soup',    esologId: '68244'  },
 ];
 
 // ---------- Utils ----------

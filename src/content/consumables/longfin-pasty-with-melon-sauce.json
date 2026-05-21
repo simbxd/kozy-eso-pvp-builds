@@ -1,0 +1,23 @@
+{
+  "id": "longfin-pasty-with-melon-sauce",
+  "name": "Longfin Pasty with Melon Sauce",
+  "type": "food",
+  "patch_verified": "U49",
+  "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=68253&quality=4&lang=en",
+  "effects": [
+    {
+      "stat": "Maximum Health",
+      "value": 4462
+    },
+    {
+      "stat": "Maximum Stamina",
+      "value": 4105
+    },
+    {
+      "stat": "Maximum Magicka",
+      "value": 4105
+    }
+  ],
+  "duration_seconds": 7200,
+  "crafted": true
+}

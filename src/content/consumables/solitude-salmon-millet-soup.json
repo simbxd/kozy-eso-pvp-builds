@@ -1,0 +1,19 @@
+{
+  "id": "solitude-salmon-millet-soup",
+  "name": "Solitude Salmon-Millet Soup",
+  "type": "food",
+  "patch_verified": "U49",
+  "uesp_url": "https://esoitem.uesp.net/itemLink.php?itemid=68244&quality=3&lang=en",
+  "effects": [
+    {
+      "stat": "Maximum Health",
+      "value": 5395
+    },
+    {
+      "stat": "Maximum Magicka",
+      "value": 4936
+    }
+  ],
+  "duration_seconds": 3600,
+  "crafted": true
+}
