@@ -404,7 +404,7 @@ export const SET_BONUS_OVERRIDES: Record<string, Array<{ count: number; contrib:
 };
 
 export const SET_CONDITIONAL_BONUSES: Record<string, Array<{ count: number; contrib: Partial<ComputedStats>; note: string }>> = {
-  "two-fanged-snake": [
+  "twice-fanged-serpent": [
     { count: 5, contrib: { physPen: 5440, spellPen: 5440 }, note: "10 stacks × +544 pen (5s)" },
   ],
   "rallying-cry": [

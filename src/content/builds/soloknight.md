@@ -157,18 +157,18 @@ gear:
       enchant: glyph-of-prismatic-defense
     - slot: Legs
       type: medium
-      setId: two-fanged-snake
+      setId: twice-fanged-serpent
       trait: impenetrable
       enchant: glyph-of-prismatic-defense
     - slot: Feet
       type: medium
-      setId: two-fanged-snake
+      setId: twice-fanged-serpent
       trait: impenetrable
       enchant: glyph-of-prismatic-defense
   jewelry:
     - slot: Ring I
       type: jewelry
-      setId: two-fanged-snake
+      setId: twice-fanged-serpent
       trait: triune
       enchant: glyph-of-increase-physical-harm
     - slot: Ring II
@@ -186,14 +186,14 @@ gear:
       type: weapon
       barLabel: BAR I
       weapon_type: Mace
-      setId: two-fanged-snake
+      setId: twice-fanged-serpent
       trait: nirnhoned-weapon
       enchant: glyph-of-absorb-magicka
     - slot: Off Hand
       type: weapon
       barLabel: BAR I
       weapon_type: Mace
-      setId: two-fanged-snake
+      setId: twice-fanged-serpent
       trait: sharpened
       enchant: glyph-of-shock
     - slot: Backup Main

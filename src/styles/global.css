@@ -131,3 +131,21 @@ hr { border-color: var(--color-border); }
 /* ── inline utilities ────────────────────────────────────── */
 .kz-mono   { font-family: var(--font-mono); color: var(--color-mono); font-size: 0.86em; }
 .kz-italic { font-style: italic; font-family: var(--font-display); font-weight: 500; }
+
+/* ── ESO-Hub tooltip HTML colorisation ───────────────────────
+   Applied to .eso-tip-body containers — colors the <span class="...">
+   markup returned by the ESO-Hub tooltip API (see src/lib/esohub-api.ts). */
+.eso-tip-body span.buff            { color: #d4a44a; }
+.eso-tip-body span.debuff          { color: #a78bfa; }
+.eso-tip-body span.health          { color: #e07070; }
+.eso-tip-body span.stamina         { color: #86c47e; }
+.eso-tip-body span.magicka         { color: #7ab0e0; }
+.eso-tip-body span.magic-damage    { color: #a78bfa; }
+.eso-tip-body span.fire-damage,
+.eso-tip-body span.flame-damage    { color: #e07032; }
+.eso-tip-body span.frost-damage    { color: #7ab0e0; }
+.eso-tip-body span.shock-damage    { color: #d4d44a; }
+.eso-tip-body span.physical-damage,
+.eso-tip-body span.bleed-damage    { color: #c47e7e; }
+.eso-tip-body span.oblivion        { color: #9e5cf6; }
+.eso-tip-body a { color: inherit; text-decoration: none; pointer-events: none; }

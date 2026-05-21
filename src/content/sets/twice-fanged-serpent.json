@@ -3,12 +3,19 @@
   "name": "Twice-Fanged Serpent",
   "type": "Mixed",
   "acquisition": "Trial",
-  "location": "Craglorn, Sanctum Ophidia",
+  "location": "Sanctum Ophidia",
   "dlc": "Base Game",
   "pieces": 5,
   "slots": [
-    "necklace",
+    "head",
+    "shoulders",
+    "chest",
+    "hands",
+    "waist",
+    "legs",
+    "feet",
     "ring",
+    "necklace",
     "weapon",
     "off-hand"
   ],
@@ -21,8 +28,8 @@
     },
     {
       "count": 3,
-      "stat": "Offensive Penetration",
-      "value": 1487
+      "stat": "Max Stamina",
+      "value": 1096
     },
     {
       "count": 4,
@@ -31,15 +38,10 @@
     },
     {
       "count": 5,
-      "stat": "Offensive Penetration",
-      "value": 2305
-    },
-    {
-      "count": 5,
-      "stat": "When you deal damage, your Offensive Penetration is increased by 15-660 for 5 seconds, stacking up to 5 times. This effect can occur once every half second.",
-      "value": ""
+      "stat": "Offensive Penetration per stack (up to 10 stacks, 5s duration)",
+      "value": 544
     }
   ],
-  "uesp_url": "https://en.uesp.net/wiki/Online:Twice-Fanged_Serpent",
+  "uesp_url": "https://en.uesp.net/wiki/Online:Two-Fanged_Snake",
   "esohub_url": "https://eso-hub.com/en/sets/twice-fanged-serpent"
 }
