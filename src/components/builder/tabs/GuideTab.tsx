@@ -11,7 +11,7 @@ export default function GuideTab() {
       <textarea
         value={guide}
         onChange={(e) => patchMeta({ guide: e.target.value })}
-        placeholder={"Write your rotation, tips, and playstyle notes here…\n\nExample:\n— Opening burst: Igneous Shield → Eruption → Standard of Might\n— Sustain: Block-cancel Heavy Attacks on Earthen Heart skills\n— vs tanky enemies: switch to Two-Handed bar for execute range"}
+        placeholder="Write your rotation, tips, and playstyle notes here…"
         style={{
           flex: 1,
           padding: "14px 16px",

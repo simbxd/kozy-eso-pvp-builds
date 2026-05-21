@@ -1,0 +1,27 @@
+---
+import Base from "../layouts/Base.astro";
+import BuildViewer from "../components/builder/BuildViewer";
+---
+
+<Base title="Shared Build" noindex={true}>
+  <BuildViewer client:load />
+</Base>
+
+<style is:global>
+  /* ESO-Hub tooltip HTML class styling */
+  .eso-tip-body span.buff            { color: #d4a44a; }
+  .eso-tip-body span.debuff          { color: #d4a44a; }
+  .eso-tip-body span.magic-damage    { color: #e05252; }
+  .eso-tip-body span.physical-damage { color: #e05252; }
+  .eso-tip-body span.fire-damage     { color: #e07032; }
+  .eso-tip-body span.frost-damage    { color: #6ab0e0; }
+  .eso-tip-body span.shock-damage    { color: #c8a0e8; }
+  .eso-tip-body span.bleed-damage    { color: #e05252; }
+  .eso-tip-body span.health          { color: #86a86e; }
+  .eso-tip-body span.oblivion        { color: #a855f7; }
+  /* ESO-Hub set tooltip classes */
+  .eso-tip-body span.stamina         { color: #86c47e; }
+  .eso-tip-body span.magicka         { color: #7ab0e0; }
+  .eso-tip-body span.flame-damage    { color: #e07032; }
+  .eso-tip-body a { color: inherit; text-decoration: none; pointer-events: none; }
+</style>

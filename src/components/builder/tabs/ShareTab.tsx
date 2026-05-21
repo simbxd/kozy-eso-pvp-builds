@@ -7,7 +7,9 @@ import { encodeEditor, decodeEditor } from "@/lib/editor-codec";
 
 function buildShareUrl(meta: ReturnType<typeof useEditorStore.getState>["meta"],
                        setups: ReturnType<typeof useEditorStore.getState>["setups"]): string {
-  const url = new URL(window.location.href);
+  if (typeof window === "undefined") return "";
+  // Share links point at the read-only viewer (/share), not the editor.
+  const url = new URL("/share", window.location.origin);
   url.searchParams.set("b", encodeEditor(meta, setups));
   return url.toString();
 }
