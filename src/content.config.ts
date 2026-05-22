@@ -99,6 +99,7 @@ const builds = defineCollection({
     author: z.string().default('Kozy'),
     difficulty: z.enum(['Beginner', 'Intermediate', 'Advanced']),
     featured: z.boolean().default(false),
+    subclass: z.boolean().optional(),
     og_image: z.string().optional(),
     video_id: z.string().optional(),
     race: z.string().optional(),
