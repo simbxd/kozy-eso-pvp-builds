@@ -241,12 +241,19 @@ export const useEditorStore = create<EditorState>((set, get) => ({
     return { setups };
   }),
 
-  loadState: (meta, setups) => set({
-    meta,
-    setups,
-    activeSetupIdx: 0,
-    activeTab: "equipment",
-  }),
+  loadState: (meta, setups) => {
+    // Normalize legacy CP pts: old default was 10, correct value is 50
+    const normalizeCp = (stars: Array<[string, number]>) =>
+      stars.map(([id, pts]) => [id, pts === 10 ? 50 : pts] as [string, number]);
+    const normalizedSetups = setups.map((s) => ({
+      ...s,
+      cp: {
+        warfare: normalizeCp(s.cp.warfare),
+        fitness: normalizeCp(s.cp.fitness),
+      },
+    }));
+    set({ meta, setups: normalizedSetups, activeSetupIdx: 0, activeTab: "equipment" });
+  },
 
   reset: () => set({
     meta: defaultMeta(),

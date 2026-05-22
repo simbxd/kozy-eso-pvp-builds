@@ -890,7 +890,15 @@ export default function BuildViewer() {
     if (!raw) { setState({ kind: "empty" }); return; }
     const snap = decodeEditor(raw);
     if (!snap || !snap.setups[0]) { setState({ kind: "invalid" }); return; }
-    setState({ kind: "ok", meta: snap.meta, setup: snap.setups[0], raw });
+    // Normalize legacy CP pts (old default was 10, correct is 50)
+    const normCp = (stars: Array<[string, number]>) =>
+      stars.map(([id, pts]) => [id, pts === 10 ? 50 : pts] as [string, number]);
+    const setup = snap.setups[0];
+    const normalizedSetup = {
+      ...setup,
+      cp: { warfare: normCp(setup.cp.warfare), fitness: normCp(setup.cp.fitness) },
+    };
+    setState({ kind: "ok", meta: snap.meta, setup: normalizedSetup, raw });
   }, []);
 
   const shell: React.CSSProperties = {
