@@ -49,9 +49,15 @@ collections:
       - name: difficulty
         label: Difficulty
         widget: select
-        options: [Beginner, Intermediate, Advanced]
+        options: [Easy, Intermediate, Advanced]
       - { name: featured,   label: Featured,    widget: boolean, default: false }
-      - { name: subclass,   label: Subclass,    widget: boolean, default: false, required: false, hint: "Ce build utilise-t-il une sous-classe ?" }
+      - { name: subclass,       label: Subclass,      widget: boolean, default: false, required: false, hint: "Ce build utilise-t-il une sous-classe ?" }
+      - name: playstyle_tag
+        label: Playstyle Tag
+        widget: select
+        required: false
+        hint: "Style de jeu affiché sur la carte du build"
+        options: [Melee, Range, Ganking, Bomber]
       - name: race
         label: Race
         widget: select

@@ -555,23 +555,99 @@ function Skills({ setup }: { setup: Setup }) {
 
 // ── Passives ──────────────────────────────────────────────────────────────────
 
+function PassiveChip({ id }: { id: string }) {
+  const name = masteryMap.get(id) ?? skillMap.get(id)?.name ?? prettyId(id);
+  const [show,    setShow]    = useState(false);
+  const [tipData, setTipData] = useState<EsoHubSkillTip | "loading" | null>(null);
+
+  const handleMouseEnter = () => {
+    setShow(true);
+    if (esoHubSkillCache.has(id)) { setTipData(esoHubSkillCache.get(id) ?? null); return; }
+    setTipData("loading");
+    fetchSkillTip(id).then(setTipData);
+  };
+
+  return (
+    <div
+      style={{ position: "relative", display: "inline-block" }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={() => setShow(false)}
+    >
+      <span style={{
+        display: "inline-block",
+        padding: "5px 10px",
+        border: `1px solid ${show ? T.accentSoft + "88" : T.edge}`,
+        background: show ? "rgba(139,92,246,0.14)" : "rgba(139,92,246,0.07)",
+        fontFamily: F.display, fontSize: 13, color: T.inkDim,
+        cursor: "default",
+        transition: "background 0.12s, border-color 0.12s",
+      }}>{name}</span>
+
+      {/* Loading state */}
+      {show && tipData === "loading" && (
+        <div style={{
+          position: "absolute", bottom: "calc(100% + 8px)", left: "50%", transform: "translateX(-50%)",
+          zIndex: 200, width: 200, padding: "10px 12px",
+          background: "#0e0619", border: `1px solid ${T.accent}55`,
+          fontFamily: F.mono, fontSize: 11, color: T.inkMute, letterSpacing: "0.1em",
+          textAlign: "center", pointerEvents: "none",
+        }}>Loading…</div>
+      )}
+
+      {/* ESO-Hub tooltip */}
+      {show && tipData && tipData !== "loading" && (
+        <div style={{
+          position: "absolute", bottom: "calc(100% + 8px)", left: "50%", transform: "translateX(-50%)",
+          zIndex: 200, width: 300,
+          background: "linear-gradient(160deg, #160830 0%, #0e0520 100%)",
+          border: "1px solid rgba(139,92,246,0.55)",
+          boxShadow: "0 0 24px rgba(139,92,246,0.2), 0 4px 16px rgba(0,0,0,0.6)",
+          padding: "12px 14px",
+          pointerEvents: "none",
+        }}>
+          <div style={{ marginBottom: 10, paddingBottom: 10, borderBottom: "1px solid rgba(139,92,246,0.25)" }}>
+            <div style={{ fontFamily: F.cinzel, fontWeight: 700, fontSize: 15, color: "#d4a44a", lineHeight: 1.2 }}>
+              {tipData.name}
+            </div>
+          </div>
+          <div style={{ fontFamily: F.mono, fontSize: 9, letterSpacing: "0.22em", color: "#d4a44a", textTransform: "uppercase", marginBottom: 6 }}>
+            {tipData.header ?? "Passive"}
+          </div>
+          <div
+            className="eso-tip-body"
+            style={{ fontFamily: F.display, fontSize: 13, color: "#cfc0e8", lineHeight: 1.55 }}
+            dangerouslySetInnerHTML={{ __html: tipData.effect_1 }}
+          />
+          {tipData.effect_2 && (
+            <>
+              <div style={{ margin: "10px 0 6px", height: 1, background: "rgba(139,92,246,0.25)" }} />
+              <div style={{ fontFamily: F.mono, fontSize: 9, letterSpacing: "0.22em", color: "#65d6ad", textTransform: "uppercase", marginBottom: 6 }}>
+                New effect
+              </div>
+              <div
+                className="eso-tip-body"
+                style={{ fontFamily: F.display, fontSize: 13, color: "#cfc0e8", lineHeight: 1.55 }}
+                dangerouslySetInnerHTML={{ __html: tipData.effect_2 }}
+              />
+            </>
+          )}
+          <div style={{ marginTop: 10, textAlign: "right", fontFamily: F.mono, fontSize: 9, letterSpacing: "0.1em", color: "rgba(139,92,246,0.4)" }}>
+            Tooltips by ESO-Hub
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Passives({ setup }: { setup: Setup }) {
   const ids = Object.keys(setup.passives).filter((k) => setup.passives[k]);
   if (ids.length === 0) return null;
 
-  const names = ids.map((id) => masteryMap.get(id) ?? skillMap.get(id)?.name ?? prettyId(id));
-
   return (
     <Section title="Passives & Masteries" count={`${ids.length} selected`}>
       <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-        {names.map((n, i) => (
-          <span key={i} style={{
-            padding: "5px 10px",
-            border: `1px solid ${T.edge}`,
-            background: "rgba(139,92,246,0.07)",
-            fontFamily: F.display, fontSize: 13, color: T.inkDim,
-          }}>{n}</span>
-        ))}
+        {ids.map((id) => <PassiveChip key={id} id={id} />)}
       </div>
     </Section>
   );
@@ -846,12 +922,12 @@ export default function BuildViewer() {
         display: "flex", flexDirection: "column", gap: 30,
       }}>
         <Header meta={meta} rawParam={raw} />
+        <Attributes setup={setup} />
+        <Consumables setup={setup} />
         <Equipment setup={setup} />
         <Skills setup={setup} />
         <Passives setup={setup} />
         <ChampionPoints setup={setup} />
-        <Attributes setup={setup} />
-        <Consumables setup={setup} />
         <ProsCons pros={meta.pros} cons={meta.cons} />
         <Guide text={meta.guide} />
       </div>

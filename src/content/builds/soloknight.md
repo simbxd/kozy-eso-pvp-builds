@@ -9,6 +9,7 @@ patch: U50
 author: Kozy
 difficulty: Intermediate
 featured: true
+playstyle_tag: Melee
 race: dunmer
 summary: Dragonknight built to hold the line in solo and small-scale PvP. Hard
   to kill while maintaining constant pressure through Molten Whip procs and AoE

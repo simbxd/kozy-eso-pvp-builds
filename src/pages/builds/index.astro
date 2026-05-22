@@ -65,7 +65,8 @@ const countByClass = Object.fromEntries(
           summary={build.data.summary}
           featured={build.data.featured}
           index={i + 1}
-          weapons={[...new Set((build.data.gear?.weapons ?? []).map(w => w.weapon_type).filter(Boolean) as string[])]}
+          patch={build.data.patch}
+          playstyle_tag={build.data.playstyle_tag}
           subclass={build.data.subclass}
         />
       ))}

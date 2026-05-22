@@ -11,6 +11,7 @@ author: Kozy
 difficulty: Advanced
 featured: true
 subclass: true
+playstyle_tag: Range
 race: breton
 summary: Sorcerer built to kite and pressure from range, in solo and small-scale
   PvP, high movement speed while maintaining constant range pressure, through
