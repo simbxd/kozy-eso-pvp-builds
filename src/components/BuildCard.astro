@@ -38,7 +38,8 @@ const CLASS_COLOR: Record<string, string> = {
   Werewolf:     '#c0792b',
 };
 
-const meta = `${resource.toUpperCase()} ${CLASS_ABBR[esClass] ?? esClass} · PVP`;
+const gmLabel = gamemode.length === 1 ? gamemode[0] : 'PvP';
+const meta = `${resource.toUpperCase()} ${CLASS_ABBR[esClass] ?? esClass} · ${gmLabel.toUpperCase()}`;
 const idxLabel = index !== undefined ? String(index).padStart(2, '0') : undefined;
 const clsColor = CLASS_COLOR[esClass] ?? 'var(--color-accent)';
 ---

@@ -4,7 +4,7 @@ class: Dragonknight
 role: DPS
 resource: Hybrid
 gamemode:
-  - Cyrodiil / Imperial City
+  - Openworld
 patch: U50
 author: Kozy
 difficulty: Intermediate

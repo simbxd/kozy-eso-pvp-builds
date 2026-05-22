@@ -94,7 +94,7 @@ const builds = defineCollection({
     class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf']),
     role: z.enum(['DPS', 'Healer', 'Tank']),
     resource: z.enum(['Stamina', 'Magicka', 'Hybrid']),
-    gamemode: z.array(z.enum(['Cyrodiil / Imperial City', 'Battlegrounds', 'Duels'])).min(1),
+    gamemode: z.array(z.enum(['Openworld', 'Battlegrounds', 'Duels'])).min(1),
     patch: z.string(),
     author: z.string().default('Kozy'),
     difficulty: z.enum(['Beginner', 'Intermediate', 'Advanced']),
