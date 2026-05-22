@@ -660,6 +660,10 @@ const raceLabel = race?.name;
         ].filter(c => c.stars?.length).map(({ label, stars }) => (
           <div class="supply-card supply-card--cp">
             <div class="supply-card__kicker">{label}</div>
+            <div class="cp-list__header">
+              <span>Priority order</span>
+              <span>Pts</span>
+            </div>
             <ul class="cp-list">
               {[...stars].sort((a, b) => a.priority - b.priority).map(s => {
                 const effect = cpEffectMap.get(s.star);
@@ -1412,6 +1416,19 @@ const raceLabel = race?.name;
     background: rgba(139,92,246,0.08);
     border: 1px solid var(--color-border-2);
     padding: 3px 8px;
+  }
+
+  .cp-list__header {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    padding-bottom: 6px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--color-border-2);
   }
 
   .cp-list {

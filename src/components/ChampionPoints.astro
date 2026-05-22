@@ -42,6 +42,10 @@ const totalPoints = [
     {constellations.map(({ label, stars }) => (
       <div class="cp-constellation">
         <h3 class="cp-constellation-title">{label}</h3>
+        <div class="cp-list-header">
+          <span class="cp-list-header-priority">Priority order</span>
+          <span class="cp-list-header-pts">Pts</span>
+        </div>
         <ol class="cp-list">
           {stars.map((star) => {
             const effect = effectMap.get(star.star);
@@ -133,6 +137,23 @@ const totalPoints = [
     align-items: center;
     gap: 0.6rem;
   }
+
+  .cp-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    border-bottom: 1px solid var(--color-border-2);
+  }
+
+  .cp-list-header-priority { }
+  .cp-list-header-pts { }
 
   .cp-priority {
     flex-shrink: 0;
