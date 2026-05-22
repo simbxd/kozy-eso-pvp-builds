@@ -31,10 +31,13 @@ import Base from '../layouts/Base.astro';
 
       <section class="ab__sec">
         <h2 class="ab__h2">Who</h2>
-        <p>
-          Kozy — PC EU player, mostly Warden but playing every classes in the game.
-          Not affiliated with ZeniMax or Bethesda.
-        </p>
+        <ul class="ab__who">
+          <li><span class="ab__handle">Kozy</span> · PC EU · Known for 1vX, mostly Warden but plays every class.</li>
+          <li><span class="ab__handle">Virtual_ESO</span> · PC &amp; Console · Known 1vX player.</li>
+          <li><span class="ab__handle">MoistBro</span> · PC EU · One of the best Necromancer players on the server.</li>
+          <li><span class="ab__handle">Paart</span> · Provides unique and stunning character screenshots.</li>
+        </ul>
+        <p class="ab__disclaimer">Not affiliated with ZeniMax or Bethesda.</p>
       </section>
 
       <section class="ab__sec">
@@ -112,6 +115,34 @@ import Base from '../layouts/Base.astro';
   }
 
   .ab__sec { }
+
+  .ab__who {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ab__who li {
+    font-size: 1rem;
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+
+  .ab__handle {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+  }
+
+  .ab__disclaimer {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
 
   .ab__h2 {
     font-family: var(--font-display);
