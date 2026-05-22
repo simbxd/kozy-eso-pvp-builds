@@ -4,7 +4,7 @@ class: Sorcerer
 role: DPS
 resource: Magicka
 gamemode:
-  - Openworld
+  - Cyrodiil / Imperial City
   - Duels
 patch: U50
 author: Kozy
