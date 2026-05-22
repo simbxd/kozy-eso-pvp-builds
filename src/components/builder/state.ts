@@ -147,7 +147,7 @@ export const useEditorStore = create<EditorState>((set, get) => ({
   meta: defaultMeta(),
   setups: [defaultSetup()],
   activeSetupIdx: 0,
-  activeTab: "equipment",
+  activeTab: "general",
 
   setActiveTab: (tab) => set({ activeTab: tab }),
   setActiveSetup: (idx) => set({ activeSetupIdx: idx }),
@@ -252,14 +252,14 @@ export const useEditorStore = create<EditorState>((set, get) => ({
         fitness: normalizeCp(s.cp.fitness),
       },
     }));
-    set({ meta, setups: normalizedSetups, activeSetupIdx: 0, activeTab: "equipment" });
+    set({ meta, setups: normalizedSetups, activeSetupIdx: 0, activeTab: "general" });
   },
 
   reset: () => set({
     meta: defaultMeta(),
     setups: [defaultSetup()],
     activeSetupIdx: 0,
-    activeTab: "equipment",
+    activeTab: "general",
   }),
 }));
 
