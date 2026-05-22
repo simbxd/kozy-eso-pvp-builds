@@ -94,7 +94,7 @@ const builds = defineCollection({
     class: z.enum(['Dragonknight', 'Sorcerer', 'Nightblade', 'Templar', 'Warden', 'Necromancer', 'Arcanist', 'Werewolf']),
     role: z.enum(['DPS', 'Healer', 'Tank']),
     resource: z.enum(['Stamina', 'Magicka', 'Hybrid']),
-    gamemode: z.array(z.enum(['Openworld', 'Battlegrounds', 'Duels'])).min(1),
+    gamemode: z.array(z.enum(['Openworld', 'Cyrodiil / Imperial City', 'Battlegrounds', 'Duels'])).min(1),
     patch: z.string(),
     author: z.string().default('Kozy'),
     difficulty: z.enum(['Easy', 'Intermediate', 'Advanced']),
@@ -141,9 +141,9 @@ const builds = defineCollection({
     consumables: z.object({
       // food/potion/poison reference a consumables collection entry by ID.
       // mundus stays text-based (not yet a separate collection).
-      food:   z.object({ id: z.string(), note: z.string().optional(), alt: z.string().optional() }).optional(),
-      potion: z.object({ id: z.string(), note: z.string().optional() }).optional(),
-      poison: z.object({ id: z.string(), note: z.string().optional() }).optional(),
+      food:   z.object({ id: z.string().optional(), note: z.string().optional(), alt: z.string().optional() }).optional().transform(v => v?.id ? v : undefined),
+      potion: z.object({ id: z.string().optional(), note: z.string().optional() }).optional().transform(v => v?.id ? v : undefined),
+      poison: z.object({ id: z.string().optional(), note: z.string().optional() }).optional().transform(v => v?.id ? v : undefined),
       mundus: z.object({ stone: z.string(), note: z.string().optional(), alt: z.object({ stone: z.string(), note: z.string().optional() }).optional() }).optional(),
     }).optional(),
   })),
