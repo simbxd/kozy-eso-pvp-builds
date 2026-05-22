@@ -9,6 +9,7 @@ patch: U50
 author: MoistBro
 difficulty: Advanced
 featured: true
+subclass: true
 race: khajiit
 summary: Plarcro built to pressure and high burst in duels, squishy but deadly
   while maintaining high pressure, with a good burst potential through Blighted
