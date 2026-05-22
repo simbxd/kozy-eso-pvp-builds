@@ -9,6 +9,7 @@ interface Props {
   patch: string;
   difficulty: string;
   summary: string;
+  weapons?: string[];
   featured?: boolean;
   index?: number;
   setsLine?: string;
@@ -16,8 +17,8 @@ interface Props {
 
 const {
   title, slug, class: esClass, role, resource,
-  gamemode, patch, difficulty, summary, featured,
-  index, setsLine,
+  gamemode, patch, difficulty, summary, weapons,
+  featured, index, setsLine,
 } = Astro.props;
 
 const CLASS_ABBR: Record<string, string> = {
@@ -65,9 +66,11 @@ const clsColor = CLASS_COLOR[esClass] ?? 'var(--color-accent)';
 
   <div class="bcard__rule"></div>
   <div class="bcard__foot">
-    <span><strong>PATCH</strong> {patch}</span>
-    <span><strong>{difficulty.slice(0, 3).toUpperCase()}</strong></span>
-    <span><strong>{role.toUpperCase()}</strong></span>
+    {weapons && weapons.length > 0
+      ? <span class="bcard__weapons">{weapons.join(' · ')}</span>
+      : <span></span>
+    }
+    <span class="bcard__diff">{difficulty}</span>
   </div>
 </a>
 
@@ -175,21 +178,26 @@ const clsColor = CLASS_COLOR[esClass] ?? 'var(--color-accent)';
 
   .bcard__foot {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
     font-family: var(--font-mono);
-    font-size: 11.5px;
-    letter-spacing: 0.18em;
+    font-size: 11px;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--color-text-muted);
   }
 
-  .bcard__foot span {
-    display: inline-flex;
-    gap: 6px;
+  .bcard__weapons {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--color-text);
   }
 
-  .bcard__foot strong {
-    color: var(--color-text);
-    font-weight: 400;
+  .bcard__diff {
+    flex-shrink: 0;
+    color: var(--cls-clr);
+    font-size: 10.5px;
   }
 </style>
