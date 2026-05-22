@@ -74,7 +74,7 @@ const clsColor = CLASS_COLOR[esClass] ?? 'var(--color-accent)';
     }
     <div class="bcard__foot-right">
       {patch && <span class="bcard__patch">Patch · {patch}</span>}
-      {subclass && <span class="bcard__subclass">Subclass</span>}
+      <span class="bcard__subclass">{subclass ? 'Subclass' : 'Pureclass'}</span>
       <span class="bcard__diff">{difficulty}</span>
     </div>
   </div>
