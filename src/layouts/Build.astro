@@ -212,7 +212,7 @@ if (gear) {
     activePiecesMap.set(item.setId, (activePiecesMap.get(item.setId) ?? 0) + 1);
   }
   for (const item of gear.weapons) {
-    if (item.weapon_type === 'Shield') continue;
+    // Shields count as 1, two-handed weapons count as 2, one-handed count as 1
     const count = item.weapon_type && TWO_HANDED_TYPES.has(item.weapon_type) ? 2 : 1;
     activePiecesMap.set(item.setId, (activePiecesMap.get(item.setId) ?? 0) + count);
   }
