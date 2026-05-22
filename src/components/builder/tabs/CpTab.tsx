@@ -59,9 +59,7 @@ function CpStarSlot({ tree, slotIdx, star, tint, allItems, takenIds }: {
             if (!id) {
               setCpStar(tree, slotIdx, null);
             } else {
-              // Default point value 50 when adding new star (max slottable CP)
-              const pts = star?.[1] ?? 50;
-              setCpStar(tree, slotIdx, [id, pts]);
+              setCpStar(tree, slotIdx, [id, 50]);
             }
           }}
           items={available}
@@ -72,26 +70,14 @@ function CpStarSlot({ tree, slotIdx, star, tint, allItems, takenIds }: {
         />
       </div>
 
-      {/* Point value */}
+      {/* Fixed 50 pts display */}
       {slotted && (
-        <input
-          type="number"
-          min={1}
-          max={160}
-          value={star![1]}
-          onChange={(e) => {
-            const v = Math.max(1, Math.min(160, Number(e.target.value)));
-            setCpStar(tree, slotIdx, [star![0], v]);
-          }}
-          style={{
-            width: 52, height: 36, padding: "0 6px",
-            border: `1px solid ${T.edge}`,
-            background: "rgba(10,6,18,0.55)",
-            color: tint,
-            fontFamily: F.cinzel, fontWeight: 600, fontSize: 15,
-            textAlign: "center", outline: "none", flexShrink: 0,
-          }}
-        />
+        <div style={{
+          width: 42, height: 36, flexShrink: 0,
+          display: "flex", alignItems: "center", justifyContent: "center",
+          fontFamily: F.cinzel, fontWeight: 600, fontSize: 15,
+          color: tint,
+        }}>50</div>
       )}
     </div>
   );
