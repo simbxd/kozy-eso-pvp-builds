@@ -29,7 +29,7 @@ const canonical = canonicalUrl ?? new URL(Astro.url.pathname, siteUrl).href;
 const OG_VERSION = '2';
 const ogImageBase = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 const ogImageAbsolute = ogImage === '/assets/og/og-default.png' ? `${ogImageBase}?v=${OG_VERSION}` : ogImageBase;
-const fullTitle = title === 'Home' ? 'kozy-eso.com — Builds, Guides & Mechanics for ESO PvP' : `${title} — Kozy ESO PvP Builds`;
+const fullTitle = title === 'Home' ? 'Builds, Guides & Mechanics for ESO PvP' : `${title} — Kozy ESO PvP Builds`;
 ---
 
 <!doctype html>
