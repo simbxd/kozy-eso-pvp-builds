@@ -58,7 +58,6 @@ const BUILD_ITEMS: Array<[TabKey, string]> = [
   ["general",  "General"    ],
   ["guide",    "Guide"      ],
   ["pros",     "Pros & Cons"],
-  ["share",    "Share"      ],
 ];
 
 const SETUP_ITEMS: Array<[TabKey, string]> = [
@@ -94,12 +93,17 @@ export default function BuildSidebar() {
       </div>
 
       {/* ◆ Setup */}
-      <div style={{ flex: 1, minHeight: 0, overflow: "hidden" }}>
+      <div style={{ minHeight: 0, overflow: "hidden" }}>
         <SectionHead>◆ Setup</SectionHead>
         <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
           {SETUP_ITEMS.map(([k, label]) => (
             <SidebarItem key={k} tabKey={k} label={label} activeTab={activeTab} onSelect={setActiveTab} />
           ))}
+        </div>
+        {/* Export — final step, slightly separated */}
+        <div style={{ marginTop: 14, borderTop: `1px solid ${T.edge}44`, paddingTop: 10 }}>
+          <SectionHead>◆ Export</SectionHead>
+          <SidebarItem tabKey="share" label="Share" activeTab={activeTab} onSelect={setActiveTab} />
         </div>
       </div>
     </div>

@@ -926,8 +926,8 @@ export default function BuildViewer() {
         <Consumables setup={setup} />
         <Equipment setup={setup} />
         <Skills setup={setup} />
-        <Passives setup={setup} />
         <ChampionPoints setup={setup} />
+        <Passives setup={setup} />
         <ProsCons pros={meta.pros} cons={meta.cons} />
         <Guide text={meta.guide} />
       </div>

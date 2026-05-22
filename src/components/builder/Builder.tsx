@@ -215,6 +215,17 @@ export default function Builder() {
             padding: "20px 24px",
             overflow: "hidden",
           }}>
+            {/* Coming soon banner */}
+            <div style={{
+              marginBottom: 12,
+              padding: "7px 14px",
+              background: "rgba(139,92,246,0.07)",
+              border: `1px solid ${T.accent}33`,
+              fontFamily: F.mono, fontSize: 10, letterSpacing: "0.18em",
+              color: T.inkMute, textTransform: "uppercase",
+            }}>
+              ◆ Calculated stats — coming soon
+            </div>
             <PanelHeader title={panelTitle} info={panelInfo} />
             <div style={{ flex: 1, minHeight: 0, overflow: "auto" }}>
               <TabBody tab={activeTab} />

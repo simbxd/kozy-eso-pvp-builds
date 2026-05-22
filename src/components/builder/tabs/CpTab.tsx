@@ -59,8 +59,8 @@ function CpStarSlot({ tree, slotIdx, star, tint, allItems, takenIds }: {
             if (!id) {
               setCpStar(tree, slotIdx, null);
             } else {
-              // Default point value 10 when adding new star
-              const pts = star?.[1] ?? 10;
+              // Default point value 50 when adding new star (max slottable CP)
+              const pts = star?.[1] ?? 50;
               setCpStar(tree, slotIdx, [id, pts]);
             }
           }}
