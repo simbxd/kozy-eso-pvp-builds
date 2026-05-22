@@ -1,5 +1,5 @@
 ---
-title: Solo Knight
+title: Worldbreaker
 class: Dragonknight
 role: DPS
 resource: Hybrid
