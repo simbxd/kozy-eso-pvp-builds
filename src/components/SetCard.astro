@@ -57,8 +57,6 @@ const pips = Array.from({ length: MAX_PIPS }, (_, i) => i < activePieces);
     <div>
       <div class="set__name">{name}</div>
       <div class="set__line">
-        <span>{type.toUpperCase()}</span>
-        <span>·</span>
         <span>{acqLabel[acquisition] ?? acquisition.toUpperCase()}</span>
         <span>·</span>
         <span>{location}</span>
@@ -66,26 +64,9 @@ const pips = Array.from({ length: MAX_PIPS }, (_, i) => i < activePieces);
     </div>
 
     <div class="set__pieces">
-      <div class="set__num">{activePieces}</div>
-      <span class="set__den">/ {pieces} pc</span>
+      <span class="set__num">{activePieces}</span><span class="set__den"> / {pieces} pc</span>
     </div>
   </div>
-
-  <div class="ladder__pips">
-    {pips.map(on => (
-      <div class:list={['pip', on ? 'pip--on' : 'pip--off']}></div>
-    ))}
-  </div>
-
-  <ul class="ladder__list">
-    {bonuses.map(b => (
-      <li class:list={['bonus', b.count <= activePieces ? 'bonus--on' : '']}>
-        <span class="bonus__n">{b.count}</span>
-        <span class="bonus__stat">{b.stat}</span>
-        <span class="bonus__val">{b.value}</span>
-      </li>
-    ))}
-  </ul>
 
   {role && <p class="set__role">{role}</p>}
 
@@ -114,8 +95,8 @@ const pips = Array.from({ length: MAX_PIPS }, (_, i) => i < activePieces);
     grid-template-columns: auto 1fr auto;
     align-items: start;
     gap: 16px;
-    padding-bottom: 18px;
-    margin-bottom: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
     border-bottom: 1px solid var(--color-border);
   }
 
@@ -151,98 +132,20 @@ const pips = Array.from({ length: MAX_PIPS }, (_, i) => i < activePieces);
 
   .set__pieces {
     text-align: right;
-    font-family: var(--font-display);
-    line-height: 1;
+    white-space: nowrap;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    color: var(--color-mono);
+    padding-top: 4px;
   }
 
-  .set__num {
-    font-size: 42px;
-    font-weight: 500;
-    color: var(--color-mono);
-  }
-  .set--mythic .set__num { color: var(--color-mythic); }
+  .set__num { }
+  .set--mythic .set__pieces { color: var(--color-mythic); }
 
   .set__den {
-    display: block;
-    font-size: 11px;
-    font-family: var(--font-mono);
-    letter-spacing: 0.2em;
-    color: var(--color-text-muted);
-    margin-top: 4px;
-  }
-
-  /* 5-pip ladder */
-  .ladder__pips {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 4px;
-    margin-bottom: 16px;
-  }
-
-  .pip {
-    height: 4px;
-  }
-
-  .pip--on {
-    background: var(--color-accent);
-    box-shadow: 0 0 12px var(--color-accent-glow);
-  }
-  .set--mythic .pip--on {
-    background: var(--color-mythic);
-    box-shadow: 0 0 12px rgba(212,164,74,0.3);
-  }
-
-  .pip--off {
-    background: transparent;
-    border-bottom: 1px dashed var(--color-border);
-  }
-
-  /* Bonus list */
-  .ladder__list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 16px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bonus {
-    display: grid;
-    grid-template-columns: 24px 1fr;
-    align-items: baseline;
-    column-gap: 14px;
-    row-gap: 3px;
-    padding: 7px 0;
-    border-bottom: 1px solid var(--color-border);
-    font-family: var(--font-body);
-    font-size: 14.5px;
-    line-height: 1.4;
-  }
-  .bonus:last-child { border-bottom: none; }
-
-  .bonus__n {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    color: var(--color-text-muted);
-    text-align: right;
-  }
-
-  .bonus__stat { color: var(--color-text-muted); }
-
-  .bonus__val {
-    grid-column: 2;
-    font-family: var(--font-mono);
-    font-size: 12px;
     color: var(--color-text-muted);
   }
-
-  .bonus--on .bonus__n  { color: var(--color-accent); }
-  .bonus--on .bonus__stat { color: var(--color-text); }
-  .bonus--on .bonus__val  { color: var(--color-mono); }
-
-  .set--mythic .bonus--on .bonus__n,
-  .set--mythic .bonus--on .bonus__val { color: var(--color-mythic); }
 
   /* Role line */
   .set__role {

@@ -198,11 +198,23 @@ const hasPlaystyle = !!(
   )
 );
 
-// Compute active pieces per set from gear data
+// Compute active pieces per set from gear data.
+// Two-handed weapons (staves, bows, 2H) count as 2 set pieces in ESO.
+// Shields count as 0 (they use armor set bonuses, not weapon set bonuses).
+const TWO_HANDED_TYPES = new Set([
+  'Lightning Staff', 'Ice Staff', 'Restoration Staff',
+  'Bow', 'Two Handed Sword', 'Two Handed Axe', 'Two Handed Mace',
+  'Greatsword', 'Battle Axe', 'Maul',
+]);
 const activePiecesMap = new Map<string, number>();
 if (gear) {
-  for (const item of [...gear.armor, ...gear.jewelry, ...gear.weapons]) {
+  for (const item of [...gear.armor, ...gear.jewelry]) {
     activePiecesMap.set(item.setId, (activePiecesMap.get(item.setId) ?? 0) + 1);
+  }
+  for (const item of gear.weapons) {
+    if (item.weapon_type === 'Shield') continue;
+    const count = item.weapon_type && TWO_HANDED_TYPES.has(item.weapon_type) ? 2 : 1;
+    activePiecesMap.set(item.setId, (activePiecesMap.get(item.setId) ?? 0) + count);
   }
 }
 
