@@ -20,15 +20,34 @@ const {
   index, setsLine,
 } = Astro.props;
 
+const CLASS_ABBR: Record<string, string> = {
+  Dragonknight: 'DK', Sorcerer: 'Sorc', Nightblade: 'NB',
+  Templar: 'Temp', Warden: 'Ward', Necromancer: 'Necro',
+  Arcanist: 'Arc', Werewolf: 'WW',
+};
+
+const CLASS_COLOR: Record<string, string> = {
+  Dragonknight: '#e05c3a',
+  Sorcerer:     '#5b8fd6',
+  Nightblade:   '#9b59b6',
+  Templar:      '#d4a44a',
+  Warden:       '#5ebd6a',
+  Necromancer:  '#7ecac0',
+  Arcanist:     '#3cb371',
+  Werewolf:     '#c0792b',
+};
+
 const gmLabel = gamemode.length === 1 ? gamemode[0] : 'PvP';
-const meta = `${resource.toUpperCase()} ${esClass.toUpperCase()} · ${gmLabel.toUpperCase()}`;
+const meta = `${resource.toUpperCase()} ${CLASS_ABBR[esClass] ?? esClass} · ${gmLabel.toUpperCase()}`;
 const idxLabel = index !== undefined ? String(index).padStart(2, '0') : undefined;
+const clsColor = CLASS_COLOR[esClass] ?? 'var(--color-accent)';
 ---
 
 <a
   href={`/builds/${slug}`}
   class:list={['bcard', { 'bcard--featured': featured }]}
   aria-label={`Open build: ${title}`}
+  style={`--cls-clr: ${clsColor};`}
 >
   <div class="bcard__top">
     {idxLabel && <span class="bcard__idx">{idxLabel}</span>}
@@ -54,10 +73,12 @@ const idxLabel = index !== undefined ? String(index).padStart(2, '0') : undefine
 
 <style>
   .bcard {
+    --cls-clr: var(--color-accent);
     display: flex;
     flex-direction: column;
     background: var(--color-surface);
     border: 1px solid var(--color-border-2);
+    border-top: 2px solid var(--cls-clr);
     padding: 20px 26px;
     position: relative;
     overflow: hidden;
@@ -71,20 +92,22 @@ const idxLabel = index !== undefined ? String(index).padStart(2, '0') : undefine
     position: absolute;
     left: 0; top: 0; bottom: 0;
     width: 3px;
-    background: var(--color-accent);
-    box-shadow: 0 0 12px var(--color-accent-glow);
+    background: var(--cls-clr);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--cls-clr) 40%, transparent);
     transform: translateX(-3px);
     transition: transform 220ms;
   }
 
   .bcard:hover {
     background: var(--color-surface-2);
-    border-color: #34304d;
+    border-color: var(--cls-clr);
     transform: translateY(-2px);
   }
   .bcard:hover::before { transform: translateX(0); }
 
-  .bcard--featured { border-top: 1px solid var(--color-accent); }
+  .bcard--featured {
+    background: color-mix(in srgb, var(--cls-clr) 5%, var(--color-surface));
+  }
 
   .bcard__top {
     display: flex;
@@ -106,7 +129,7 @@ const idxLabel = index !== undefined ? String(index).padStart(2, '0') : undefine
     text-overflow: ellipsis;
   }
 
-  .bcard__idx { color: var(--color-accent); }
+  .bcard__idx { color: var(--cls-clr); }
 
   .bcard__name {
     font-family: var(--font-display);
