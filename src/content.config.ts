@@ -122,7 +122,7 @@ const builds = defineCollection({
       signature: z.string(),
       affix: z.string(),
     })).optional(),
-    summary: z.string(),
+    summary: z.string().optional(),
     gear: z.object({
       armor:   z.array(z.object({ slot: z.string(), type: z.enum(['heavy','medium','light','mythic']), item: z.string().optional(), setId: z.string(), tier: z.string().optional(), trait: z.string(), enchant: z.string() })),
       jewelry: z.array(z.object({ slot: z.string(), type: z.enum(['jewelry','mythic']),       item: z.string().optional(), setId: z.string(), tier: z.string().optional(), trait: z.string(), enchant: z.string() })),

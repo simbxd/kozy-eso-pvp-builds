@@ -340,7 +340,7 @@ collections:
         hint: "Race recommandée pour ce build"
         options:
 ${raceOptions(10)}
-      - { name: summary,    label: Summary,     widget: text }
+      - { name: summary,    label: Summary,     widget: text, required: false }
       - { name: video_id,   label: Video Gameplay (YouTube ID), widget: string, required: false, hint: "ID only — ex: dQw4w9WgXcQ" }
 
       # Sets

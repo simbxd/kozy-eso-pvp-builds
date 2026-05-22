@@ -49,15 +49,8 @@ collections:
       - name: difficulty
         label: Difficulty
         widget: select
-        options: [Easy, Intermediate, Advanced]
+        options: [Beginner, Intermediate, Advanced]
       - { name: featured,   label: Featured,    widget: boolean, default: false }
-      - { name: subclass,       label: Subclass,      widget: boolean, default: false, required: false, hint: "Ce build utilise-t-il une sous-classe ?" }
-      - name: playstyle_tag
-        label: Playstyle Tag
-        widget: select
-        required: false
-        hint: "Style de jeu affiché sur la carte du build"
-        options: [Melee, Range, Ganking, Bomber]
       - name: race
         label: Race
         widget: select
@@ -74,7 +67,7 @@ collections:
           - { label: "Nord — Ebonheart Pact", value: "nord" }
           - { label: "Orc — Daggerfall Covenant", value: "orc" }
           - { label: "Redguard — Daggerfall Covenant", value: "redguard" }
-      - { name: summary,    label: Summary,     widget: text }
+      - { name: summary,    label: Summary,     widget: text, required: false }
       - { name: video_id,   label: Video Gameplay (YouTube ID), widget: string, required: false, hint: "ID only — ex: dQw4w9WgXcQ" }
 
       # Sets
@@ -2419,9 +2412,14 @@ collections:
                   - { label: "Artaeum Pickled Fish Bowl", value: "artaeum-pickled-fish-bowl" }
                   - { label: "Bewitched Sugar Skulls", value: "bewitched-sugar-skulls" }
                   - { label: "Braised Rabbit with Spring Vegetables", value: "braised-rabbit-with-spring-vegetables" }
+                  - { label: "Clockwork Citrus Filet", value: "clockwork-citrus-filet" }
+                  - { label: "Dubious Camoran Throne", value: "dubious-camoran-throne" }
                   - { label: "Ghastly Eye Bowl", value: "ghastly-eye-bowl" }
+                  - { label: "Jewels of Misrule", value: "jewels-of-misrule" }
                   - { label: "Lava Foot Soup-and-Saltrice", value: "lava-foot-soup-and-saltrice" }
+                  - { label: "Longfin Pasty with Melon Sauce", value: "longfin-pasty-with-melon-sauce" }
                   - { label: "Orzorga's Smoked Bear Haunch", value: "orzorgas-smoked-bear-haunch" }
+                  - { label: "Solitude Salmon-Millet Soup", value: "solitude-salmon-millet-soup" }
                   - { label: "Witchmother's Potent Brew", value: "witchmothers-potent-brew" }
               - { name: note, label: Note,        widget: string, required: false }
               - { name: alt,  label: Alternative, widget: string, required: false }
