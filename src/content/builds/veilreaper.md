@@ -102,7 +102,7 @@ playstyle:
     - uptime: full
       skill: Skeletal Archer
       stat: Major Brutality
-      note: "Decent DoT — "
+      note: Decent DoT — keep it 24/24.
     - uptime: full
       skill: Resolving Vigor
       stat: Main HoT
