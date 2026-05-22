@@ -1,5 +1,5 @@
 ---
-title: Dueling "Plarcro"
+title: Aedric Lord
 class: Templar
 role: DPS
 resource: Hybrid
