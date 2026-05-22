@@ -32,7 +32,7 @@ const idxLabel = index !== undefined ? String(index).padStart(2, '0') : undefine
 >
   <div class="bcard__top">
     {idxLabel && <span class="bcard__idx">{idxLabel}</span>}
-    <span class="bcard__meta">{meta}</span>
+    <span class="bcard__meta" title={meta}>{meta}</span>
   </div>
 
   <div class="bcard__name">{title}</div>
@@ -90,12 +90,20 @@ const idxLabel = index !== undefined ? String(index).padStart(2, '0') : undefine
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    gap: 10px;
     font-family: var(--font-mono);
     font-size: 11.5px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--color-text-muted);
     margin-bottom: 16px;
+    overflow: hidden;
+  }
+
+  .bcard__meta {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .bcard__idx { color: var(--color-accent); }
