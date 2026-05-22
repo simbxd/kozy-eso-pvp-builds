@@ -1,5 +1,5 @@
 ---
-title: Streak Machine
+title: Stormcaller
 class: Sorcerer
 role: DPS
 resource: Magicka
