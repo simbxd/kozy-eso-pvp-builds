@@ -7,7 +7,7 @@ gamemode:
   - Cyrodiil / Imperial City
 patch: U50
 author: Kozy
-difficulty: Easy
+difficulty: Intermediate
 featured: false
 subclass: true
 playstyle_tag: Melee
@@ -114,7 +114,7 @@ playstyle:
       role: Debuff
     - skill: Surprise Attack
       role: Single Target Burst — you can medium weave to stun off-balanced targets.
-    - skill: Dawnbreaker
+    - skill: Dawnbreaker of Smiting
       role: Huge Burst — Also Dawnbreaker stun if you didnt medium weave.
       skill_alt: Merciless Resolve
     - skill: Surprise Attack
