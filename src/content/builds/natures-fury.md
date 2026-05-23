@@ -111,7 +111,7 @@ playstyle:
     - uptime: full
       skill: Bull Netch
       stat: Major Brutality
-      note: around 170 stam recovery per sec + free cleanse — keep it 24/24.
+      note: ~200 stam recovery per sec + free cleanse — keep it 24/24.
   combo:
     - skill: Deep Fissure
       role: Delayed AoE Burst + Debuff
