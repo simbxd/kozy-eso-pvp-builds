@@ -87,7 +87,7 @@ consumables:
     id: essence-of-health
   poison:
     id: escapist-poison-ix
-    note: on your backbar.
+    note: ""
   mundus:
     stone: The Thief
     alt:
