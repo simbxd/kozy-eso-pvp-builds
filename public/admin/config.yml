@@ -51,6 +51,7 @@ collections:
         widget: select
         options: [Beginner, Intermediate, Advanced]
       - { name: featured,   label: Featured,    widget: boolean, default: false }
+      - { name: subclass,   label: Subclass,    widget: boolean, default: false, required: false, hint: "Activer la section Subclass (skill lines)" }
       - name: race
         label: Race
         widget: select
