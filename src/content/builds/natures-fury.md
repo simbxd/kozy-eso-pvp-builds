@@ -5,6 +5,7 @@ role: DPS
 resource: Stamina
 gamemode:
   - Cyrodiil / Imperial City
+  - Battlegrounds
 patch: U50
 author: Kozy
 difficulty: Intermediate
