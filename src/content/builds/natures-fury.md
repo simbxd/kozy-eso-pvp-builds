@@ -121,6 +121,8 @@ playstyle:
     - skill: Onslaught
       skill_alt: Merciless Resolve
       role: Final Burst — you need to Bash after this for Gorethief Burst.
+    - skill: Merciless Resolve
+      role: if your target is not down.
   rules:
     - body: Every skill you cast outside a window is a tell. Stack your burst, read
         the opening, release everything at once — if they survive, reset and
