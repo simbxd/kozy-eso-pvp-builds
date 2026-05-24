@@ -9,11 +9,10 @@ patch: U50
 author: Kozy
 difficulty: Intermediate
 featured: true
-playstyle_tag: Melee
 race: dunmer
-summary: Dragonknight built to hold the line in solo and small-scale PvP. Hard
-  to kill while maintaining constant pressure through Molten Whip procs and AoE
-  pressure with Incinerate and Heart of Flame.
+summary: Dragonknight built to hold the line in solo and small-scale PvP.
+  Extremely durable while maintaining constant pressure through Molten Whip
+  procs, with strong AoE damage from Incinerate and Heart of Flame.
 video_id: _paQrQeRtzg
 sets:
   - mighty-chudan
@@ -46,33 +45,6 @@ stats:
   stamina:
     target: 20000
     note: needed to break free & roll dodge
-champion_points:
-  warfare:
-    - star: Cleansing Revival
-      points: 50
-      priority: 1
-    - star: Master-at-Arms
-      points: 50
-      priority: 2
-    - star: Ironclad
-      points: 50
-      priority: 3
-    - star: Fighting Finesse
-      points: 50
-      priority: 4
-  fitness:
-    - star: Celerity
-      points: 50
-      priority: 1
-    - star: Slippery
-      points: 50
-      priority: 2
-    - star: Fortified
-      points: 50
-      priority: 3
-    - star: Pain's Refuge
-      points: 50
-      priority: 4
 consumables:
   food:
     id: bewitched-sugar-skulls
@@ -211,4 +183,32 @@ gear:
       setId: rallying-cry
       trait: sturdy
       enchant: glyph-of-prismatic-defense
+playstyle_tag: Melee
+champion_points:
+  warfare:
+    - star: Cleansing Revival
+      points: 50
+      priority: 1
+    - star: Master-at-Arms
+      points: 50
+      priority: 2
+    - star: Ironclad
+      points: 50
+      priority: 3
+    - star: Fighting Finesse
+      points: 50
+      priority: 4
+  fitness:
+    - star: Celerity
+      points: 50
+      priority: 1
+    - star: Slippery
+      points: 50
+      priority: 2
+    - star: Fortified
+      points: 50
+      priority: 3
+    - star: Pain's Refuge
+      points: 50
+      priority: 4
 ---
