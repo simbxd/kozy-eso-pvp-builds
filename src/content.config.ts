@@ -64,9 +64,9 @@ const playstyleRule = z.object({ title: z.string(), body: z.string() });
 const uptimeCategory = z.enum(['full', 'high', 'situational']);
 
 const playstyleBuffItem = z.object({
-  skill: z.string(),
-  stat: z.string(),
-  note: z.string(),
+  skill: z.string().optional(),
+  stat: z.string().optional(),
+  note: z.string().optional(),
   uptime: uptimeCategory.default('full'),
 });
 
@@ -97,7 +97,7 @@ const builds = defineCollection({
     gamemode: z.array(z.enum(['Openworld', 'Cyrodiil / Imperial City', 'Battlegrounds', 'Duels'])).min(1),
     patch: z.string(),
     author: z.string().default('Kozy'),
-    difficulty: z.enum(['Easy', 'Intermediate', 'Advanced']),
+    difficulty: z.enum(['Beginner', 'Easy', 'Intermediate', 'Advanced']),
     featured: z.boolean().default(false),
     subclass: z.boolean().optional(),
     playstyle_tag: z.enum(['Melee', 'Range', 'Ganking', 'Bomber']).optional(),
