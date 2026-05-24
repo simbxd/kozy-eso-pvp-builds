@@ -11,9 +11,10 @@ author: Kozy
 featured: false
 subclass: true
 race: breton
-summary: Sorcerer built to kite and pressure from range, in solo and small-scale
-  PvP, high movement speed while maintaining constant range pressure, through
-  Crystal Frags procs for high burst damage.
+summary: Sorcerer built for kiting and ranged pressure in solo and small-scale
+  PvP. High mobility and movement speed allow constant distance control while
+  maintaining relentless pressure, with devastating burst damage through Crystal
+  Fragments procs.
 sets:
   - roksa-the-warped
   - monomyth-reforged
