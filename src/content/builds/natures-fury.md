@@ -10,6 +10,7 @@ author: Kozy
 difficulty: Intermediate
 featured: true
 subclass: true
+playstyle_tag: Melee
 race: dunmer
 summary: Warden paired with Nightblade and Templar, built for massive burst
   damage while playing like a tanky brawler in Cyrodiil and Battlegrounds.
