@@ -23,7 +23,9 @@ interface Props {
   rules?: PlaystyleRule[];
 }
 
-const { buffs, combo, rules } = Astro.props;
+const { combo, rules } = Astro.props;
+// Filter out incomplete buff entries (e.g. Decap saves an empty list item)
+const buffs = Astro.props.buffs?.filter(b => b.skill && b.stat);
 
 const skillEntries = await getCollection('skills');
 const iconByName = new Map<string, string>();
