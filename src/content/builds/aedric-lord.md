@@ -8,7 +8,7 @@ gamemode:
 patch: U50
 author: MoistBro
 difficulty: Advanced
-featured: true
+featured: false
 subclass: true
 playstyle_tag: Melee
 race: khajiit
