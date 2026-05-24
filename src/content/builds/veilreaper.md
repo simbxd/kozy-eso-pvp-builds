@@ -8,7 +8,7 @@ gamemode:
 patch: U50
 author: Kozy
 difficulty: Intermediate
-featured: false
+featured: true
 subclass: true
 playstyle_tag: Melee
 race: dunmer
