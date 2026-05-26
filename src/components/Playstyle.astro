@@ -104,9 +104,21 @@ const hasRules = !!(rules && rules.length);
                   <span class="ps2-step-badge" aria-hidden="true">{stepIdx}</span>
                 </div>
                 <div>
-                  <div class="ps2-pb-name">
-                    {step.skill}{step.skill_alt && <span class="ps2-pb-alt"> or {step.skill_alt}</span>}
-                  </div>
+                  <div class="ps2-pb-name">{step.skill}</div>
+                  {step.skill_alt && (
+                    <div class="ps2-pb-alt-row">
+                      <span class="ps2-pb-or">or</span>
+                      <img
+                        class="ps2-icon ps2-alt-icon"
+                        src={resolveIcon(step.skill_alt)}
+                        alt=""
+                        loading="lazy"
+                        width="28"
+                        height="28"
+                      />
+                      <span class="ps2-pb-alt">{step.skill_alt}</span>
+                    </div>
+                  )}
                   <div class="ps2-pb-role">Step {stepIdx} · {step.role}</div>
                 </div>
               </li>
@@ -346,10 +358,32 @@ const hasRules = !!(rules && rules.length);
     line-height: 1.1;
     color: var(--color-text);
   }
+  .ps2-pb-alt-row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+  .ps2-pb-or {
+    font-family: var(--font-body, inherit);
+    font-size: 13px;
+    font-style: italic;
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+  }
+  .ps2-alt-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 3px;
+  }
   .ps2-pb-alt {
-    font-size: 14px;
+    font-family: var(--font-display);
+    font-size: 16px;
     color: var(--color-text-muted);
     font-style: italic;
+    line-height: 1.2;
   }
 
   .ps2-pb-role {
