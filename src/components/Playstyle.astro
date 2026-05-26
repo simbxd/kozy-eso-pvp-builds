@@ -1,12 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 
-interface PlaystyleBuff {
-  skill: string;
-  stat: string;
-  note: string;
-  uptime: 'full' | 'high' | 'situational';
-}
 interface PlaystyleComboStep {
   skill: string;
   skill_alt?: string;
@@ -18,14 +12,11 @@ interface PlaystyleRule {
 }
 
 interface Props {
-  buffs?: PlaystyleBuff[];
   combo?: PlaystyleComboStep[];
   rules?: PlaystyleRule[];
 }
 
 const { combo, rules } = Astro.props;
-// Filter out incomplete buff entries (e.g. Decap saves an empty list item)
-const buffs = Astro.props.buffs?.filter(b => b.skill && b.stat);
 
 const skillEntries = await getCollection('skills');
 const iconByName = new Map<string, string>();
@@ -37,97 +28,58 @@ function resolveIcon(skillName: string): string {
   return iconByName.get(skillName.toLowerCase().trim()) ?? '';
 }
 
-const hasBuffs = !!(buffs && buffs.length);
 const hasCombo = !!(combo && combo.length);
 const hasRules = !!(rules && rules.length);
 ---
 
-{(hasBuffs || hasCombo) && (
-  <>
-    {hasBuffs && (
-      <div class="ps2-block">
-        <p class="ps2-eyebrow">
-          Buffs &amp; Uptimes
-          <span class="ps2-count">{String(buffs!.length).padStart(2, '0')}</span>
-        </p>
-        <ul class="ps2-buffs" aria-label="Buffs to maintain">
-          {buffs!.map(buff => (
-            <li>
-              <div class="ps2-icon-wrap" data-uptime={buff.uptime}>
-                <img
-                  class="ps2-icon"
-                  src={resolveIcon(buff.skill)}
-                  alt=""
-                  loading="lazy"
-                  width="36"
-                  height="36"
-                />
-                <svg class="ps2-uptime-ring" viewBox="0 0 44 44" aria-hidden="true">
-                  <circle cx="22" cy="22" r="20" />
-                </svg>
-              </div>
-              <div>
-                <span class="ps2-name">{buff.skill}</span>
-                <span class="ps2-note">
-                  <span class="ps2-stat">{buff.stat}</span>{buff.note}
-                </span>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-    )}
-
-    {hasCombo && (
-      <section class="ps2-playbook" aria-label="Burst combo playbook">
-        <header class="ps2-pb-head">
-          <span class="ps2-pb-eyebrow">Burst Combo</span>
-          <span class="ps2-pb-meta">
-            {String(combo!.length).padStart(2, '0')} STEPS · CONVERGES ON FINAL
-          </span>
-        </header>
-        <ol class="ps2-pb-steps">
-          {combo!.map((step, i) => {
-            const isFinal = i === combo!.length - 1;
-            const stepIdx = String(i + 1).padStart(2, '0');
-            return (
-              <li class={`ps2-pb-step ${isFinal ? 'is-final' : ''}`}>
-                <div class="ps2-step-node">
+{hasCombo && (
+  <section class="ps2-playbook" aria-label="Burst combo playbook">
+    <header class="ps2-pb-head">
+      <span class="ps2-pb-eyebrow">Burst Combo</span>
+      <span class="ps2-pb-meta">
+        {String(combo!.length).padStart(2, '0')} STEPS · CONVERGES ON FINAL
+      </span>
+    </header>
+    <ol class="ps2-pb-steps">
+      {combo!.map((step, i) => {
+        const isFinal = i === combo!.length - 1;
+        const stepIdx = String(i + 1).padStart(2, '0');
+        return (
+          <li class={`ps2-pb-step ${isFinal ? 'is-final' : ''}`}>
+            <div class="ps2-step-node">
+              <img
+                class="ps2-icon"
+                src={resolveIcon(step.skill)}
+                alt=""
+                loading="lazy"
+                width="56"
+                height="56"
+              />
+              <span class="ps2-step-badge" aria-hidden="true">{stepIdx}</span>
+            </div>
+            <div>
+              <div class="ps2-pb-name">{step.skill}</div>
+              {step.skill_alt && (
+                <div class="ps2-pb-alt-row">
+                  <span class="ps2-pb-or">or</span>
                   <img
-                    class="ps2-icon"
-                    src={resolveIcon(step.skill)}
+                    class="ps2-icon ps2-alt-icon"
+                    src={resolveIcon(step.skill_alt)}
                     alt=""
                     loading="lazy"
-                    width="56"
-                    height="56"
+                    width="28"
+                    height="28"
                   />
-                  <span class="ps2-step-badge" aria-hidden="true">{stepIdx}</span>
+                  <span class="ps2-pb-alt">{step.skill_alt}</span>
                 </div>
-                <div>
-                  <div class="ps2-pb-name">{step.skill}</div>
-                  {step.skill_alt && (
-                    <div class="ps2-pb-alt-row">
-                      <span class="ps2-pb-or">or</span>
-                      <img
-                        class="ps2-icon ps2-alt-icon"
-                        src={resolveIcon(step.skill_alt)}
-                        alt=""
-                        loading="lazy"
-                        width="28"
-                        height="28"
-                      />
-                      <span class="ps2-pb-alt">{step.skill_alt}</span>
-                    </div>
-                  )}
-                  <div class="ps2-pb-role">Step {stepIdx} · {step.role}</div>
-                </div>
-              </li>
-            );
-          })}
-        </ol>
-      </section>
-    )}
-  </>
+              )}
+              <div class="ps2-pb-role">Step {stepIdx} · {step.role}</div>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  </section>
 )}
 
 {hasRules && (
@@ -142,61 +94,6 @@ const hasRules = !!(rules && rules.length);
 )}
 
 <style>
-  /* ── Buffs ───────────────────────────────────────────────── */
-  .ps2-block { margin-bottom: 36px; }
-
-  .ps2-eyebrow {
-    font-family: var(--font-mono);
-    font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-    margin: 0 0 14px;
-  }
-  .ps2-count { color: var(--color-mono); margin-left: 6px; }
-
-  .ps2-buffs {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid var(--color-border);
-  }
-  .ps2-buffs li {
-    display: grid;
-    grid-template-columns: 48px 1fr;
-    column-gap: 16px;
-    align-items: center;
-    padding: 12px 6px;
-    border-bottom: 1px solid var(--color-border);
-    transition: background 0.12s ease;
-  }
-  .ps2-buffs li:hover { background: rgba(139, 92, 246, 0.035); }
-
-  .ps2-name {
-    font-family: var(--font-display);
-    font-size: 19px;
-    line-height: 1.15;
-    color: var(--color-text);
-    display: block;
-  }
-  .ps2-note {
-    font-style: italic;
-    color: var(--color-text-muted);
-    font-size: 14.5px;
-    display: block;
-    margin-top: 2px;
-  }
-  .ps2-stat {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--color-mono);
-    margin-right: 8px;
-    font-style: normal;
-  }
-
   /* ── Shared skill icon — ESO-style framing + striped fallback ── */
   .ps2-icon {
     display: block;
@@ -209,50 +106,6 @@ const hasRules = !!(rules && rules.length);
         var(--color-surface-2) 2px 6px);
     transition: filter 0.15s ease, box-shadow 0.15s ease;
   }
-
-  /* ── Buff icon wrap + uptime ring overlay ──────────────────── */
-  .ps2-icon-wrap {
-    position: relative;
-    width: 44px;
-    height: 44px;
-    flex-shrink: 0;
-  }
-  .ps2-icon-wrap .ps2-icon {
-    position: absolute;
-    inset: 4px;
-    width: 36px;
-    height: 36px;
-    /* clip to r=18, clearly inside the SVG ring at r=20 */
-    clip-path: circle(50%);
-  }
-  .ps2-uptime-ring {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    transform: rotate(-90deg);
-    pointer-events: none;
-  }
-  .ps2-uptime-ring circle { fill: none; stroke-width: 1.5; }
-
-  /* The ring is purely decorative — uptime info is also in the .ps2-note text
-     (WCAG: no information by colour alone). */
-  [data-uptime="full"] .ps2-uptime-ring circle {
-    stroke: var(--color-accent);
-  }
-  [data-uptime="high"] .ps2-uptime-ring circle {
-    stroke: var(--color-accent);
-    /* circumference = 2πr ≈ 125.66 ; 75% filled ≈ 94 */
-    stroke-dasharray: 94 125.7;
-    opacity: 0.95;
-  }
-  [data-uptime="situational"] .ps2-uptime-ring circle {
-    stroke: var(--color-mono);
-    stroke-width: 1.25;
-    stroke-dasharray: 2 4;
-    opacity: 0.7;
-  }
-  .ps2-buffs li:hover .ps2-icon { filter: brightness(1.15); }
 
   /* ── Combo playbook ─────────────────────────────────────── */
   .ps2-playbook {
@@ -427,6 +280,5 @@ const hasRules = !!(rules && rules.length);
     .ps2-pb-step.is-final { margin-left: 0; padding-left: 6px; padding-right: 6px; }
     .ps2-pb-step.is-final::before { left: calc(6px + 28px - 0.25px); }
     .ps2-pb-name { font-size: 18px; }
-    .ps2-name { font-size: 17px; }
   }
 </style>

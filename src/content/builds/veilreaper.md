@@ -90,23 +90,6 @@ consumables:
     alt:
       stone: The Lady
 playstyle:
-  buffs:
-    - uptime: full
-      skill: Restoring Focus
-      stat: Major Resolve
-      note: keep it 24/24 for sustain and tankyness.
-    - uptime: full
-      skill: Extended Ritual
-      stat: Off HoT
-      note: Keep this below you.
-    - uptime: full
-      skill: Skeletal Archer
-      stat: Major Brutality
-      note: Decent DoT — keep it 24/24.
-    - uptime: full
-      skill: Resolving Vigor
-      stat: Main HoT
-      note: keep high uptime.
   combo:
     - skill: Blighted Blastbones
       role: Delayed AoE Burst

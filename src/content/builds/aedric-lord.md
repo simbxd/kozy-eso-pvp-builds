@@ -89,7 +89,6 @@ consumables:
   poison:
     id: escapist-poison-ix
 playstyle:
-  buffs: []
   rules:
     - body: Every skill you cast outside a window is a tell. Stack your burst, read
         the opening, release everything at once — if they survive, reset and

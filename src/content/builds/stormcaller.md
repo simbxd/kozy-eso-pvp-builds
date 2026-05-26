@@ -156,19 +156,6 @@ champion_points:
       points: 50
       priority: 4
 playstyle:
-  buffs:
-    - uptime: full
-      skill: Critical Surge
-      stat: Major Brutality
-      note: one of your best hot.
-    - uptime: full
-      skill: Hurricane
-      stat: Major Resolve
-      note: keep it 24/24 for speed and tankyness.
-    - uptime: full
-      skill: Resolving Vigor
-      stat: Main HoT
-      note: keep high uptime.
   combo:
     - skill: Elemental Susceptibility
       role: Debuff

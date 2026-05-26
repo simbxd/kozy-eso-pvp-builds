@@ -82,8 +82,6 @@ consumables:
     alt:
       stone: The Shadow
 playstyle:
-  buffs:
-    - uptime: full
   combo:
     - skill: Critical Surge
       role: buff

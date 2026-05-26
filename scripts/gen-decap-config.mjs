@@ -569,31 +569,6 @@ ${mundusOptions(22)}
         widget: object
         required: false
         fields:
-          - name: buffs
-            label: Buffs & Uptimes
-            widget: list
-            required: false
-            fields:
-              - name: skill
-                label: Skill
-                widget: select
-                options:
-${skillNameOptions(18)}
-              - name: stat
-                label: "Stat / Source"
-                widget: select
-                options:
-${statOptions(18)}
-              - { name: note,   label: Note,              widget: string, hint: "Short mechanical note + usage instruction" }
-              - name: uptime
-                label: Uptime
-                widget: select
-                required: false
-                default: full
-                options:
-                  - { label: "Full — up 24/24",            value: full }
-                  - { label: "High — uptime élevé",        value: high }
-                  - { label: "Situational — kite / burst", value: situational }
           - name: combo
             label: Burst Combo
             widget: list

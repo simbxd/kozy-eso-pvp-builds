@@ -96,23 +96,6 @@ consumables:
       stone: The Shadow
       note: if you want more burst potential.
 playstyle:
-  buffs:
-    - uptime: full
-      skill: Restoring Focus
-      stat: Minor Resolve
-      note: keep it 24/24 for sustain and tankyness.
-    - uptime: full
-      skill: Extended Ritual
-      note: keep this below you.
-      stat: Off HoT
-    - uptime: full
-      skill: Resolving Vigor
-      stat: Main HoT
-      note: keep high uptime.
-    - uptime: full
-      skill: Bull Netch
-      stat: Major Brutality
-      note: ~200 stam recovery per sec + free cleanse — keep it 24/24.
   combo:
     - skill: Deep Fissure
       role: Delayed AoE Burst + Debuff

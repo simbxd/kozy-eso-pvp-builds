@@ -60,23 +60,6 @@ consumables:
       note: Decent damage and healing increase — swap in if survivability is already
         covered
 playstyle:
-  buffs:
-    - skill: Hearth and Home
-      stat: Major Protection
-      note: decent HoT — keep it below you.
-      uptime: full
-    - skill: Quick Cloak
-      stat: Major Evasion
-      note: +30% Move Speed 4s — should be up 24/24.
-      uptime: full
-    - skill: Resolving Vigor
-      stat: Main HoT
-      note: keep high uptime.
-      uptime: full
-    - skill: Race Against Time
-      stat: Minor Force · Major Expedition
-      note: speed-scaling — kite, don't camp.
-      uptime: full
   combo:
     - skill: Incinerate
       role: Delayed AoE Burst
