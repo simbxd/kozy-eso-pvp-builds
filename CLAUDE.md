@@ -380,6 +380,31 @@ Déjà câblé dans `share.astro`. À copier sur les futures pages de builds.
 5. `npm run build` localement pour vérifier l'integrity check
 6. Push
 
+### Mettre à jour les Class Masteries (`src/data/eso/class-masteries-index.json`)
+
+Les Class Masteries sont une feature U50 — ZOS peut ajuster les valeurs ou descriptions à chaque patch majeur.
+
+**Fichier :** `src/data/eso/class-masteries-index.json` — tableau plat de 35 entrées (5 par classe).
+
+Format d'une entrée :
+```json
+{
+  "id": "dk-lead-from-the-front",
+  "name": "Lead From the Front",
+  "class_id": "dragonknight",
+  "description": "...",
+  "patch_verified": "U50-PTS"
+}
+```
+
+**Pour mettre à jour :**
+- Vérifier les nouvelles valeurs sur UESP ou ESO-Hub après les patch notes
+- Modifier `description` et `patch_verified` pour les entrées affectées
+- **Option 1 — GitHub** : éditer directement dans l'éditeur web, commit, déploiement automatique
+- **Option 2 — local** : `git add src/data/eso/class-masteries-index.json && git commit -m "update class masteries U51" && git push`
+
+> Pas de script de scraping automatique — ESO-Hub retourne 403 sur les requêtes non-browser. Mise à jour manuelle uniquement.
+
 ---
 
 ## État du projet

@@ -657,6 +657,27 @@ const raceLabel = race?.name;
     </section>
   )}
 
+  <!-- CLASS MASTERIES (pureclass only) -->
+  {resolvedMasteries.length > 0 && (
+    <section id="class-masteries">
+      <div class="kz-rule" role="separator">
+        <span class="kz-rule__line"></span>
+        <span class="kz-rule__label">Class Masteries Passives</span>
+        <span class="kz-rule__line"></span>
+      </div>
+
+      <div class="cm-grid">
+        {resolvedMasteries.map(m => (
+          <div class="supply-card cm-card">
+            <div class="supply-card__kicker">Mastery</div>
+            <h4 class="supply-card__name">{m.name}</h4>
+            <p class="supply-card__body">{m.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
   <!-- CHAMPION POINTS -->
   {champion_points && (
     <section id="champion-points">
@@ -703,27 +724,6 @@ const raceLabel = race?.name;
     </section>
   )}
 
-  <!-- CLASS MASTERIES (pureclass only) -->
-  {resolvedMasteries.length > 0 && (
-    <section id="class-masteries">
-      <div class="kz-rule" role="separator">
-        <span class="kz-rule__line"></span>
-        <span class="kz-rule__label">Class Masteries Passives</span>
-        <span class="kz-rule__line"></span>
-      </div>
-
-      <div class="cm-grid">
-        {resolvedMasteries.map(m => (
-          <div class="supply-card cm-card">
-            <div class="supply-card__kicker">Mastery</div>
-            <h4 class="supply-card__name">{m.name}</h4>
-            <p class="supply-card__body">{m.description}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-  )}
-
   </div><!-- /.build-content -->
 
   <!-- STICKY TOC SIDEBAR -->
@@ -735,8 +735,8 @@ const raceLabel = race?.name;
       <a href="#set-choices"      class="toc__link">Set Choices</a>
       <a href="#gear-sheet"      class="toc__link">Gear Sheet</a>
       <a href="#consumables"     class="toc__link">Consumables</a>
-      <a href="#champion-points" class="toc__link">Champion Points</a>
       {resolvedMasteries.length > 0 && <a href="#class-masteries" class="toc__link">Class Masteries</a>}
+      <a href="#champion-points" class="toc__link">Champion Points</a>
 </nav>
   </aside>
 
@@ -761,8 +761,8 @@ const raceLabel = race?.name;
         <a href="#set-choices"      class="toc-drawer__link">Set Choices</a>
         <a href="#gear-sheet"      class="toc-drawer__link">Gear Sheet</a>
         <a href="#consumables"     class="toc-drawer__link">Consumables</a>
-        <a href="#champion-points" class="toc-drawer__link">Champion Points</a>
         {resolvedMasteries.length > 0 && <a href="#class-masteries" class="toc-drawer__link">Class Masteries</a>}
+        <a href="#champion-points" class="toc-drawer__link">Champion Points</a>
       </nav>
     </div>
   </div>
