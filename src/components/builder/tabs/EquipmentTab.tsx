@@ -130,6 +130,18 @@ const WEAPON_LABELS: Record<WeaponPiece["slot"], string> = {
   bar2_main: "Bar II · Main", bar2_off: "Bar II · Off",
 };
 
+const WEAPON_TYPES: SelectItem[] = [
+  { id: "one-hand-and-shield", label: "Sword & Shield" },
+  { id: "dual-wield",          label: "Dual Wield"     },
+  { id: "two-handed",          label: "Two Handed"     },
+  { id: "bow",                 label: "Bow"            },
+  { id: "inferno-staff",       label: "Inferno Staff"  },
+  { id: "lightning-staff",     label: "Lightning Staff"},
+  { id: "ice-staff",           label: "Ice Staff"      },
+  { id: "restoration-staff",   label: "Resto Staff"    },
+  { id: "shield",              label: "Shield"         },
+];
+
 function WeaponRow({ piece }: { piece: WeaponPiece }) {
   const patch = useEditorStore((s) => s.patchWeaponPiece);
   return (
@@ -147,7 +159,8 @@ function WeaponRow({ piece }: { piece: WeaponPiece }) {
         items={TRAIT_WEAPON}  placeholder="Trait"  searchable={false} height={28} popoverWidth={180} />
       <SearchSelect value={piece.enchant} onChange={(id) => patch(piece.slot, { enchant: id })}
         items={ENCHANT_WEAPON} placeholder="Enchant" searchable={false} height={28} popoverWidth={260} />
-      <div /> {/* no weight for weapons */}
+      <SearchSelect value={piece.type}   onChange={(id) => patch(piece.slot, { type: id })}
+        items={WEAPON_TYPES}  placeholder="Type"  searchable={false} height={28} popoverWidth={200} />
     </div>
   );
 }
@@ -258,7 +271,7 @@ export default function EquipmentTab() {
 
       <div>
         <SectionHead title="Weapons" count="2 bars" />
-        <ColHead last="" />
+        <ColHead last="Type" />
         {weapons.map((p) => <WeaponRow  key={p.slot} piece={p} />)}
       </div>
     </div>
