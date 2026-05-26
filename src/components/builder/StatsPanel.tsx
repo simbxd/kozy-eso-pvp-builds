@@ -1,7 +1,9 @@
-import { useMemo } from "react";
-import { useEditorStore, type Setup, type BuildMeta } from "./state";
+import { useMemo, useState } from "react";
+import { useEditorStore, type Setup } from "./state";
 import { T, F, Diamond } from "./atoms";
 import { setsIndex } from "@/lib/eso-data";
+import { computeStatsFromEditor }  from "@/lib/editor-compute";
+import { critPercent, resistPercent } from "@/lib/compute-stats";
 
 // ── Set name lookup ───────────────────────────────────────────────────────────
 
@@ -327,11 +329,170 @@ function SetupSelector() {
   );
 }
 
+// ── Computed stats section ────────────────────────────────────────────────────
+
+function StatRow({
+  label, value, sub, color = T.inkDim,
+}: { label: string; value: string | number; sub?: string; color?: string }) {
+  return (
+    <div style={{
+      display: "flex", alignItems: "baseline", justifyContent: "space-between",
+      padding: "2px 0",
+    }}>
+      <span style={{
+        fontFamily: F.mono, fontSize: 9, letterSpacing: "0.16em",
+        color: T.inkFaint, textTransform: "uppercase",
+      }}>{label}</span>
+      <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
+        <span style={{
+          fontFamily: F.mono, fontSize: 11, fontWeight: 600,
+          color,
+        }}>{value}</span>
+        {sub && (
+          <span style={{
+            fontFamily: F.mono, fontSize: 9, color: T.inkFaint,
+          }}>{sub}</span>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function BigPoolRow({
+  label, value, color,
+}: { label: string; value: number; color: string }) {
+  return (
+    <div style={{
+      display: "flex", alignItems: "center", justifyContent: "space-between",
+      padding: "4px 6px",
+      background: `${color}0c`,
+      border: `1px solid ${color}30`,
+    }}>
+      <span style={{
+        fontFamily: F.mono, fontSize: 8, letterSpacing: "0.22em",
+        color: `${color}aa`, textTransform: "uppercase",
+      }}>{label}</span>
+      <span style={{
+        fontFamily: F.mono, fontSize: 13, fontWeight: 700,
+        color,
+        letterSpacing: "0.04em",
+      }}>{value.toLocaleString()}</span>
+    </div>
+  );
+}
+
+function ComputedStatsSection({ setup, battleSpirit }: {
+  setup: Setup;
+  battleSpirit: boolean;
+}) {
+  const meta = useEditorStore((s) => s.meta);
+
+  const result = useMemo(
+    () => computeStatsFromEditor(meta, setup, battleSpirit),
+    [meta, setup, battleSpirit],
+  );
+
+  const s = result.stats;
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+
+      {/* Resource pools */}
+      <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+        <BigPoolRow label="Health"  value={s.maxHealth}  color="#e07070" />
+        <BigPoolRow label="Magicka" value={s.maxMagicka} color="#818cf8" />
+        <BigPoolRow label="Stamina" value={s.maxStamina} color="#4ade80" />
+      </div>
+
+      {/* Damage */}
+      <div style={{
+        display: "grid", gridTemplateColumns: "1fr 1fr", gap: 4,
+      }}>
+        {[
+          { label: "WD", value: s.weaponDmg, color: "#f59e0b" },
+          { label: "SD", value: s.spellDmg,  color: "#a78bfa" },
+        ].map(({ label, value, color }) => (
+          <div key={label} style={{
+            display: "flex", flexDirection: "column", alignItems: "center",
+            padding: "5px 0",
+            background: `${color}0c`,
+            border: `1px solid ${color}30`,
+          }}>
+            <span style={{
+              fontFamily: F.mono, fontSize: 7, letterSpacing: "0.22em",
+              color: `${color}99`, textTransform: "uppercase",
+            }}>{label}</span>
+            <span style={{
+              fontFamily: F.mono, fontSize: 14, fontWeight: 700,
+              color, lineHeight: 1, marginTop: 2,
+            }}>{value}</span>
+          </div>
+        ))}
+      </div>
+
+      {/* Resistances */}
+      <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+        <StatRow
+          label="Phys Resist"
+          value={s.physResist.toLocaleString()}
+          sub={`${resistPercent(s.physResist)}%`}
+          color={T.inkDim}
+        />
+        <StatRow
+          label="Spell Resist"
+          value={s.spellResist.toLocaleString()}
+          sub={`${resistPercent(s.spellResist)}%`}
+          color={T.inkDim}
+        />
+        {s.critResistance > 0 && (
+          <StatRow
+            label="Crit Resist"
+            value={s.critResistance.toLocaleString()}
+            color={T.inkDim}
+          />
+        )}
+      </div>
+
+      {/* Crit */}
+      <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+        <StatRow
+          label="Crit Chance"
+          value={`${critPercent(s.critRating)}%`}
+          color="#f0c060"
+        />
+        <StatRow
+          label="Crit Damage"
+          value={`+${s.critDamage}%`}
+          color="#f0c060"
+        />
+      </div>
+
+      {/* Penetration (only if non-zero) */}
+      {(s.physPen > 0 || s.spellPen > 0) && (
+        <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          {s.physPen  > 0 && <StatRow label="Phys Pen"  value={s.physPen.toLocaleString()}  color={T.inkDim} />}
+          {s.spellPen > 0 && <StatRow label="Spell Pen" value={s.spellPen.toLocaleString()} color={T.inkDim} />}
+        </div>
+      )}
+
+      {/* Recovery (only if non-zero) */}
+      {(s.healthRecovery > 0 || s.magickaRecovery > 0 || s.staminaRecovery > 0) && (
+        <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          {s.healthRecovery  > 0 && <StatRow label="HP Rec"  value={s.healthRecovery}  color={T.inkDim} />}
+          {s.magickaRecovery > 0 && <StatRow label="Mag Rec" value={s.magickaRecovery} color={T.inkDim} />}
+          {s.staminaRecovery > 0 && <StatRow label="Sta Rec" value={s.staminaRecovery} color={T.inkDim} />}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── StatsPanel ────────────────────────────────────────────────────────────────
 
 export default function StatsPanel() {
   const setup  = useEditorStore((s) => s.setups[s.activeSetupIdx]);
   const setups = useEditorStore((s) => s.setups);
+  const [battleSpirit, setBattleSpirit] = useState(true);
 
   return (
     <div style={{
@@ -377,17 +538,37 @@ export default function StatsPanel() {
           <Attributes setup={setup} />
         </PanelSection>
 
+        {/* Computed stats */}
+        <PanelSection title="Computed Stats">
+          <ComputedStatsSection setup={setup} battleSpirit={battleSpirit} />
+        </PanelSection>
+
       </div>
 
-      {/* Footer */}
+      {/* Footer — Battle Spirit toggle */}
       <div style={{
         borderTop: `1px solid ${T.edge}`,
         padding: "8px 14px",
-        fontFamily: F.mono, fontSize: 8,
-        letterSpacing: "0.22em", color: T.inkFaint,
-        textTransform: "uppercase",
+        display: "flex", alignItems: "center", justifyContent: "space-between",
       }}>
-        ◆ Computed stats — coming soon
+        <span style={{
+          fontFamily: F.mono, fontSize: 8,
+          letterSpacing: "0.22em", color: T.inkFaint,
+          textTransform: "uppercase",
+        }}>Battle Spirit</span>
+        <button
+          type="button"
+          onClick={() => setBattleSpirit((v) => !v)}
+          style={{
+            height: 18, padding: "0 8px",
+            fontFamily: F.mono, fontSize: 8, letterSpacing: "0.18em",
+            textTransform: "uppercase",
+            background: battleSpirit ? "rgba(139,92,246,0.15)" : "transparent",
+            border: `1px solid ${battleSpirit ? T.accent + "88" : T.edge}`,
+            color: battleSpirit ? T.accentSoft : T.inkFaint,
+            cursor: "pointer",
+          }}
+        >{battleSpirit ? "ON" : "OFF"}</button>
       </div>
     </div>
   );
