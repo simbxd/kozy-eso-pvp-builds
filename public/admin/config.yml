@@ -5524,6 +5524,13 @@ collections:
             label: Key Rules
             widget: list
             required: false
+            default:
+              - title: "Don't rush the kill"
+                body: "Every skill you cast outside a window is a tell. Stack your burst, read the opening, release everything at once — if they survive, reset and wait for the next one."
+              - title: "Break free immediately"
+                body: "CC is the kill condition in solo PvP. Break the moment you're grabbed — do not stand still."
+              - title: "Heal before panic"
+                body: "Keep good uptime on Resolving Vigor, use your Burst Heal at ~60% HP, not 20%. Panic heals at critical health are usually too late against burst compositions."
             fields:
               - { name: title, label: Title, widget: string }
               - { name: body,  label: Body,  widget: text }
