@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/rename-sitemap.mjs",
     "sync": "git pull --ff-only origin main && npm run build",
     "preview": "astro preview",
     "astro": "astro",
