@@ -101,6 +101,8 @@ const builds = defineCollection({
     featured: z.boolean().default(false),
     subclass: z.boolean().optional(),
     playstyle_tag: z.enum(['Melee', 'Range', 'Ganking', 'Bomber']).optional(),
+    // Class Masteries — up to 2 active passives, only meaningful when subclass is false (pureclass build).
+    class_masteries: z.array(z.string()).max(2).optional(),
     og_image: z.string().optional(),
     video_id: z.string().optional(),
     race: z.string().optional(),

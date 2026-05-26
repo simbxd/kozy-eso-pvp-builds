@@ -5,6 +5,7 @@ import BuildHero from '../components/BuildHero.astro';
 import SetCard from '../components/SetCard.astro';
 import Playstyle from '../components/Playstyle.astro';
 import cpStarsIndex from '../data/eso/cp-stars-index.json';
+import classMasteriesIndex from '../data/eso/class-masteries-index.json';
 
 interface Bonus {
   count: number;
@@ -139,19 +140,31 @@ interface Props {
   race?: RaceData | null;
   video_id?: string;
   character?: ImageMetadata;
+  subclass?: boolean;
+  class_masteries?: string[];
 }
 
 const {
   slug, title, class: esClass, featured, role, resource, gamemode,
   patch, author, publishedDate, updatedAt, difficulty, summary,
   sets, bar1, bar2, og_image, gear, stats, champion_points, consumables, playstyle, race, video_id,
-  character,
+  character, subclass, class_masteries,
 } = Astro.props;
 
 const cpEffectMap = new Map<string, string>();
 for (const star of [...cpStarsIndex.warfare, ...cpStarsIndex.fitness]) {
   cpEffectMap.set(star.name, star.effect);
 }
+
+// Class Masteries — resolved only on pureclass builds.
+// Falsy `subclass` (undefined or false) → pureclass → show section if IDs are set.
+type ClassMastery = { id: string; name: string; class_id: string; description: string };
+const masteryById = new Map<string, ClassMastery>(
+  (classMasteriesIndex as ClassMastery[]).map(m => [m.id, m]),
+);
+const resolvedMasteries: ClassMastery[] = !subclass && class_masteries?.length
+  ? class_masteries.map(id => masteryById.get(id)).filter((m): m is ClassMastery => !!m)
+  : [];
 
 const gamemodeLabel = gamemode.length === 1 ? gamemode[0] : 'PvP';
 const subtitle = `${resource} ${esClass} ${gamemodeLabel} Build`;
@@ -690,6 +703,27 @@ const raceLabel = race?.name;
     </section>
   )}
 
+  <!-- CLASS MASTERIES (pureclass only) -->
+  {resolvedMasteries.length > 0 && (
+    <section id="class-masteries">
+      <div class="kz-rule" role="separator">
+        <span class="kz-rule__line"></span>
+        <span class="kz-rule__label">Class Masteries Passives</span>
+        <span class="kz-rule__line"></span>
+      </div>
+
+      <div class="cm-grid">
+        {resolvedMasteries.map(m => (
+          <div class="supply-card cm-card">
+            <div class="supply-card__kicker">Mastery</div>
+            <h4 class="supply-card__name">{m.name}</h4>
+            <p class="supply-card__body">{m.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
   </div><!-- /.build-content -->
 
   <!-- STICKY TOC SIDEBAR -->
@@ -702,6 +736,7 @@ const raceLabel = race?.name;
       <a href="#gear-sheet"      class="toc__link">Gear Sheet</a>
       <a href="#consumables"     class="toc__link">Consumables</a>
       <a href="#champion-points" class="toc__link">Champion Points</a>
+      {resolvedMasteries.length > 0 && <a href="#class-masteries" class="toc__link">Class Masteries</a>}
 </nav>
   </aside>
 
@@ -727,6 +762,7 @@ const raceLabel = race?.name;
         <a href="#gear-sheet"      class="toc-drawer__link">Gear Sheet</a>
         <a href="#consumables"     class="toc-drawer__link">Consumables</a>
         <a href="#champion-points" class="toc-drawer__link">Champion Points</a>
+        {resolvedMasteries.length > 0 && <a href="#class-masteries" class="toc-drawer__link">Class Masteries</a>}
       </nav>
     </div>
   </div>
@@ -1231,6 +1267,16 @@ const raceLabel = race?.name;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
   }
+
+  .cm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  @media (max-width: 720px) {
+    .cm-grid { grid-template-columns: 1fr; }
+  }
+  .cm-card .supply-card__name { color: var(--color-accent); }
 
   /* ── Video Gameplay ── */
   .video-embed {

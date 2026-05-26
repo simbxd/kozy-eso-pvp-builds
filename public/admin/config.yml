@@ -52,6 +52,50 @@ collections:
         options: [Beginner, Intermediate, Advanced]
       - { name: featured,   label: Featured,    widget: boolean, default: false }
       - { name: subclass,   label: Subclass,    widget: boolean, default: false, required: false, hint: "Activer la section Subclass (skill lines)" }
+      - name: class_masteries
+        label: Class Masteries Passives
+        widget: select
+        multiple: true
+        min: 0
+        max: 2
+        required: false
+        hint: "Pureclass uniquement — choisir jusqu'à 2 passifs de maîtrise (ignoré si Subclass est coché)"
+        options:
+              - { label: "DK — Lead From the Front", value: "dk-lead-from-the-front" }
+              - { label: "DK — Resolute Defense", value: "dk-resolute-defense" }
+              - { label: "DK — Wildfire Embers", value: "dk-wildfire-embers" }
+              - { label: "DK — Booming Voice", value: "dk-booming-voice" }
+              - { label: "DK — Inexorable Descent", value: "dk-inexorable-descent" }
+              - { label: "Sorc — Conservation of Energy", value: "sorc-conservation-of-energy" }
+              - { label: "Sorc — Font of Power", value: "sorc-font-of-power" }
+              - { label: "Sorc — Static Reverberation", value: "sorc-static-reverberation" }
+              - { label: "Sorc — Calculated Defense", value: "sorc-calculated-defense" }
+              - { label: "Sorc — Sphere of Influence", value: "sorc-sphere-of-influence" }
+              - { label: "NB — Nocturnal Inspiration", value: "nb-nocturnal-inspiration" }
+              - { label: "NB — An Eye for Exploitation", value: "nb-an-eye-for-exploitation" }
+              - { label: "NB — Above and Beyond", value: "nb-above-and-beyond" }
+              - { label: "NB — Cutthroat's Focus", value: "nb-cutthroats-focus" }
+              - { label: "NB — Share the Spoils", value: "nb-share-the-spoils" }
+              - { label: "Tmp — Bastion of Light", value: "tpl-bastion-of-light" }
+              - { label: "Tmp — Devout Guardian", value: "tpl-devout-guardian" }
+              - { label: "Tmp — Bright Harbinger", value: "tpl-bright-harbinger" }
+              - { label: "Tmp — Judgment's Brand", value: "tpl-judgments-brand" }
+              - { label: "Tmp — Steadfast Candescence", value: "tpl-steadfast-candescence" }
+              - { label: "Wdn — Tundra's Maw", value: "wdn-tundras-maw" }
+              - { label: "Wdn — Wild Adaptation", value: "wdn-wild-adaptation" }
+              - { label: "Wdn — Glacial Obstinance", value: "wdn-glacial-obstinance" }
+              - { label: "Wdn — Green-Keeper's Hide", value: "wdn-green-keepers-hide" }
+              - { label: "Wdn — Nature's Bounty", value: "wdn-natures-bounty" }
+              - { label: "Necro — Cycle Unending", value: "necro-cycle-unending" }
+              - { label: "Necro — Pound of Flesh", value: "necro-pound-of-flesh" }
+              - { label: "Necro — Veil's Forfeit", value: "necro-veils-forfeit" }
+              - { label: "Necro — Nothing Wasted", value: "necro-nothing-wasted" }
+              - { label: "Necro — Malevolent Promise", value: "necro-malevolent-promise" }
+              - { label: "Arc — Abyssal Emergence", value: "arc-abyssal-emergence" }
+              - { label: "Arc — Fate Realigned", value: "arc-fate-realigned" }
+              - { label: "Arc — Unbound Potential", value: "arc-unbound-potential" }
+              - { label: "Arc — Fleshborne Fate", value: "arc-fleshborne-fate" }
+              - { label: "Arc — Mind Over Matter", value: "arc-mind-over-matter" }
       - name: playstyle_tag
         label: Playstyle Tag
         widget: select

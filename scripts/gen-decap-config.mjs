@@ -50,6 +50,10 @@ const enchantsIndex = JSON.parse(
   await readFile(join(ESO_DIR, 'enchants-index.json'), 'utf8')
 );
 
+const classMasteriesIndex = JSON.parse(
+  await readFile(join(ESO_DIR, 'class-masteries-index.json'), 'utf8')
+);
+
 // Scribing permutation skill IDs (e.g. "healing-soul", "arcanists-soul") —
 // the named combos a grimoire becomes once scripted. They clutter the skill-bar
 // dropdown and confuse authors (you slot the grimoire "Wield Soul", not its
@@ -99,6 +103,20 @@ function mundusOptions(indent = 14) {
   const pad = ' '.repeat(indent);
   return mundusIndex
     .map(m => `${pad}- { label: "${m.name} — ${m.effect}", value: "${m.name}" }`)
+    .join('\n');
+}
+
+// Class Masteries — labels prefixed with class abbreviation so authors can spot
+// the right ones. No way to filter Decap select by another field's value, so
+// we surface all 35 and rely on naming clarity.
+const CLASS_ABBR = {
+  dragonknight: 'DK', sorcerer: 'Sorc', nightblade: 'NB', templar: 'Tmp',
+  warden: 'Wdn', necromancer: 'Necro', arcanist: 'Arc',
+};
+function classMasteryOptions(indent = 14) {
+  const pad = ' '.repeat(indent);
+  return classMasteriesIndex
+    .map(m => `${pad}- { label: "${CLASS_ABBR[m.class_id] ?? m.class_id} — ${m.name.replace(/"/g, '\\"')}", value: "${m.id}" }`)
     .join('\n');
 }
 
@@ -334,6 +352,16 @@ collections:
         options: [Beginner, Intermediate, Advanced]
       - { name: featured,   label: Featured,    widget: boolean, default: false }
       - { name: subclass,   label: Subclass,    widget: boolean, default: false, required: false, hint: "Activer la section Subclass (skill lines)" }
+      - name: class_masteries
+        label: Class Masteries Passives
+        widget: select
+        multiple: true
+        min: 0
+        max: 2
+        required: false
+        hint: "Pureclass uniquement — choisir jusqu'à 2 passifs de maîtrise (ignoré si Subclass est coché)"
+        options:
+${classMasteryOptions(14)}
       - name: playstyle_tag
         label: Playstyle Tag
         widget: select
