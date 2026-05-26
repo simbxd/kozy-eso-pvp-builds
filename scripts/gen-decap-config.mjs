@@ -351,7 +351,7 @@ collections:
         widget: select
         options: [Beginner, Intermediate, Advanced]
       - { name: featured,   label: Featured,    widget: boolean, default: false }
-      - { name: subclass,   label: Subclass,    widget: boolean, default: false, required: false, hint: "Activer la section Subclass (skill lines)" }
+      - { name: subclass,   label: Subclass,    widget: boolean, default: false, required: false, hint: "Enable the Subclass section (skill lines)" }
       - name: class_masteries
         label: Class Masteries Passives
         widget: select
@@ -359,7 +359,7 @@ collections:
         min: 0
         max: 2
         required: false
-        hint: "Pureclass uniquement — choisir jusqu'à 2 passifs de maîtrise (ignoré si Subclass est coché)"
+        hint: "Pureclass only — pick up to 2 mastery passives (ignored if Subclass is enabled)"
         options:
 ${classMasteryOptions(14)}
       - name: playstyle_tag
@@ -371,7 +371,7 @@ ${classMasteryOptions(14)}
         label: Race
         widget: select
         required: false
-        hint: "Race recommandée pour ce build"
+        hint: "Recommended race for this build"
         options:
 ${raceOptions(10)}
       - { name: summary,    label: Summary,     widget: text, required: false }
@@ -584,7 +584,7 @@ ${skillNameOptions(18)}
                 widget: select
                 options:
 ${statOptions(18)}
-              - { name: note,   label: Note,              widget: string, hint: "Courte note mécanique + consigne d'usage" }
+              - { name: note,   label: Note,              widget: string, hint: "Short mechanical note + usage instruction" }
               - name: uptime
                 label: Uptime
                 widget: select
@@ -608,7 +608,7 @@ ${skillNameOptions(18)}
                 label: "Skill alternatif (optionnel)"
                 widget: select
                 required: false
-                hint: "Renseigner si le joueur a le choix entre deux skills pour ce step"
+                hint: "Fill in if the player can choose between two skills for this step"
                 options:
 ${skillNameOptions(18)}
               - { name: role, label: Role, widget: string, hint: "ex: Delayed AoE Burst, Final Burst, Debuff" }

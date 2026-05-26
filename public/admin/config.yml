@@ -51,7 +51,7 @@ collections:
         widget: select
         options: [Beginner, Intermediate, Advanced]
       - { name: featured,   label: Featured,    widget: boolean, default: false }
-      - { name: subclass,   label: Subclass,    widget: boolean, default: false, required: false, hint: "Activer la section Subclass (skill lines)" }
+      - { name: subclass,   label: Subclass,    widget: boolean, default: false, required: false, hint: "Enable the Subclass section (skill lines)" }
       - name: class_masteries
         label: Class Masteries Passives
         widget: select
@@ -59,7 +59,7 @@ collections:
         min: 0
         max: 2
         required: false
-        hint: "Pureclass uniquement — choisir jusqu'à 2 passifs de maîtrise (ignoré si Subclass est coché)"
+        hint: "Pureclass only — pick up to 2 mastery passives (ignored if Subclass is enabled)"
         options:
               - { label: "DK — Lead From the Front", value: "dk-lead-from-the-front" }
               - { label: "DK — Resolute Defense", value: "dk-resolute-defense" }
@@ -105,7 +105,7 @@ collections:
         label: Race
         widget: select
         required: false
-        hint: "Race recommandée pour ce build"
+        hint: "Recommended race for this build"
         options:
           - { label: "Altmer — Aldmeri Dominion", value: "altmer" }
           - { label: "Argonian — Ebonheart Pact", value: "argonian" }
@@ -3576,7 +3576,7 @@ collections:
                   - { label: "Ultimate Regen", value: "Ultimate Regen" }
                   - { label: "Damage Shield", value: "Damage Shield" }
                   - { label: "Empower", value: "Empower" }
-              - { name: note,   label: Note,              widget: string, hint: "Courte note mécanique + consigne d'usage" }
+              - { name: note,   label: Note,              widget: string, hint: "Short mechanical note + usage instruction" }
               - name: uptime
                 label: Uptime
                 widget: select
@@ -4558,7 +4558,7 @@ collections:
                 label: "Skill alternatif (optionnel)"
                 widget: select
                 required: false
-                hint: "Renseigner si le joueur a le choix entre deux skills pour ce step"
+                hint: "Fill in if the player can choose between two skills for this step"
                 options:
                   - { label: "Absorb Missile — One Hand and Shield", value: "Absorb Missile" }
                   - { label: "Absorption Field — Dark Magic", value: "Absorption Field" }
