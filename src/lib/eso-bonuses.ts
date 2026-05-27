@@ -41,7 +41,12 @@ export const ATTR_PER_POINT_HEALTH  = 122;
 export const ATTR_PER_POINT_MAGSAM  = 111;
 
 // ── Weapon type bonus (bar 1) ───────────────────────────────────────────────
-// Source: The Hist /api/weapons — weapon_types section.
+// These values are the base Weapon Damage of the equipped weapon at CP160 gold.
+// UESP stores them in esoitem.uesp.net (private item DB, no public API).
+// The wiki skill-line pages show sub-type passives (Twin Blade: +129/sword,
+// Sword and Board: +5% WD…) which are separate and already in WEAPON_LINE_PASSIVE.
+// Values below come from The Hist /api/weapons and are community-verified stable
+// across multiple patches. Kept as-is — cannot be sourced from UESP wiki pages.
 export const WEAPON_TYPE_BONUS: Record<string, number> = {
   dual_wield:        1335,
   one_hand_shield:   1335,
@@ -378,6 +383,10 @@ export const ARMOR_PASSIVE_WEIGHT: Record<string, ArmorWeight> = {
 export const UNDAUNTED_METTLE_PCT = 0.02;
 
 // ── Armor base values (CP160 gold) ──────────────────────────────────────────
+// Per-slot armor ratings (Physical + Spell Resistance contribution).
+// UESP does not publish these in any accessible wiki page — they live in
+// esoitem.uesp.net (private item DB). Values below come from The Hist and
+// match community consensus across multiple patches. Kept as-is.
 export const ARMOR_BASE: Record<ArmorWeight, Record<string, number>> = {
   heavy: {
     head: 1320, shoulders: 1320, chest: 3110,
