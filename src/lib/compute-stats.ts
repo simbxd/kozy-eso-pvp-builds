@@ -3,7 +3,8 @@ import { getSet } from "@/lib/eso-data";
 import {
   BUFF_DEF_MAP,
   BASE,
-  ATTR_PER_POINT,
+  ATTR_PER_POINT_HEALTH,
+  ATTR_PER_POINT_MAGSAM,
   RACIAL,
   WEAPON_TYPE_BONUS,
   STAFF_TYPES,
@@ -39,7 +40,7 @@ import {
   MUNDUS_STONES,
   MUNDUS_SLUG_MAP,
   FOOD_VALUES,
-  BATTLE_SPIRIT_RESIST_MULT,
+  BATTLE_SPIRIT_RECOVERY_MULT,
   resolveStatKey,
   type ArmorWeight,
 } from "@/lib/eso-bonuses";
@@ -273,12 +274,13 @@ export function computeStats(build: Build): ComputeResult {
   const racial  = RACIAL[raceKey];
   if (racial) acc.add(`Race: ${build.r}`, racial);
 
-  // ── 2. Attribute points (111/pt, all resources) ───────────────────
+  // ── 2. Attribute points — Health: 122/pt, Magicka/Stamina: 111/pt ──
+  // Source: UESP g_EsoBuildRules.stats formulas.
   const ap = build.a.attrPoints ?? [0, 0, 64];
   const attrContrib: Partial<ComputedStats> = {};
-  if (ap[0]) attrContrib.maxHealth  = ap[0] * ATTR_PER_POINT;
-  if (ap[1]) attrContrib.maxMagicka = ap[1] * ATTR_PER_POINT;
-  if (ap[2]) attrContrib.maxStamina = ap[2] * ATTR_PER_POINT;
+  if (ap[0]) attrContrib.maxHealth  = ap[0] * ATTR_PER_POINT_HEALTH;
+  if (ap[1]) attrContrib.maxMagicka = ap[1] * ATTR_PER_POINT_MAGSAM;
+  if (ap[2]) attrContrib.maxStamina = ap[2] * ATTR_PER_POINT_MAGSAM;
   if (Object.keys(attrContrib).length)
     acc.add(`Attributes (${ap[0]}/${ap[1]}/${ap[2]} pts)`, attrContrib);
 
@@ -468,10 +470,12 @@ export function computeStats(build: Build): ComputeResult {
   }
 
   // ── 14. Battle Spirit ─────────────────────────────────────────────────
+  // Source: UESP g_EsoBuildRules.buff["Battle Spirit"]
   // build.bs === undefined → default true (PvP context).
-  // Halves Physical and Spell Resistance. Does NOT affect Critical Resistance.
+  // Resistances show raw stat-sheet values — Battle Spirit is a -50% Damage Taken
+  // combat modifier, NOT a resistance halving. Only Health Recovery is reduced.
   if (build.bs !== false) {
-    acc.multiply("Battle Spirit (×0.5)", ["physResist", "spellResist"], BATTLE_SPIRIT_RESIST_MULT);
+    acc.multiply("Battle Spirit (HP Rec ×0.5)", ["healthRecovery"], BATTLE_SPIRIT_RECOVERY_MULT);
   }
 
   return { stats: acc.s, sources: acc.src };

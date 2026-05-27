@@ -1,14 +1,18 @@
 // Numeric constants for ESO stat computation.
-// Source: The Hist optimizer (hist.britt0nia.com/api/*) — verified U50.
-// Endpoints used: /api/races, /api/weapons, /api/enchantments, /api/mundus, /api/cp-stars
+// Source: UESP (en.uesp.net) — verified U50.
+// Primary references: Special:ESO_BuildEditor JS globals (g_EsoBuildRules, g_EsoCpData),
+// Online:Races, Online:Mundus_Stones, Online:Champion, Online:Traits, Online:Enchanting.
 // All values at CP160 gold quality unless otherwise noted.
 
 import type { ComputedStats } from "@/lib/compute-stats";
 import { getSet } from "@/lib/eso-data";
 
 // ── Base character stats (CP160, no gear, no race, no food) ────────────────
-// Source: The Hist /api/derive-stats baseline.
-// "Base Health Bonus: 4000" is a universal always-active mechanic.
+// Source: UESP g_EsoBuildRules.stats formulas at level 50.
+// Health   = 300×50 + 1000 = 16 000
+// Mag/Stam = 220×50 + 1000 = 12 000
+// WD/SD    = 20×50          =  1 000
+// Base CritResist = 1320 (UESP formula: "1320 + Item.CritResist + …")
 export const BASE: ComputedStats = {
   maxHealth:       16000,
   maxMagicka:      12000,
@@ -20,9 +24,8 @@ export const BASE: ComputedStats = {
   staminaRecovery: 514,
   physResist:      0,
   spellResist:     0,
-  critResistance:  0,
-  // 10% base critical strike chance, universal at CP160.
-  // Source: The Hist /api/derive-stats — "Base: 0.1" in spell_crit and weapon_crit stat_sources.
+  critResistance:  1320,  // UESP: base 1320 always present
+  // 10% base critical strike chance (UESP baseline).
   // 10% × 219 rating/% = 2190 critRating.
   critRating:      2190,
   critDamage:      50,
@@ -32,8 +35,10 @@ export const BASE: ComputedStats = {
 };
 
 // ── Attribute points ────────────────────────────────────────────────────────
-// All resources (Health, Magicka, Stamina) yield 111 per point.
-export const ATTR_PER_POINT = 111;
+// Source: UESP g_EsoBuildRules.stats formulas.
+// Health yields 122 per point; Magicka and Stamina yield 111 per point.
+export const ATTR_PER_POINT_HEALTH  = 122;
+export const ATTR_PER_POINT_MAGSAM  = 111;
 
 // ── Weapon type bonus (bar 1) ───────────────────────────────────────────────
 // Source: The Hist /api/weapons — weapon_types section.
@@ -157,10 +162,17 @@ export const FOOD_VALUES: Record<string, Partial<ComputedStats>> = {
 };
 
 // ── Battle Spirit ───────────────────────────────────────────────────────────
-// In PvP zones (Cyrodiil, Battlegrounds, Imperial City), Battle Spirit halves
-// all Physical and Spell Resistance. Does NOT affect Critical Resistance.
-// Applied as the final step when build.bs !== false (default: active in PvP).
-export const BATTLE_SPIRIT_RESIST_MULT = 0.5;
+// Source: UESP g_EsoBuildRules.buff["Battle Spirit"]
+// In PvP zones (Cyrodiil, Battlegrounds, IC), Battle Spirit applies:
+//   • Damage Taken:       -50%  (combat multiplier — not a raw stat-sheet entry)
+//   • Healing Received:   -55%  (combat multiplier)
+//   • Health Recovery:    -50%  (applied to the recovery stat)
+//   • Damage Shield:      -50%  (combat multiplier)
+//
+// IMPORTANT: Battle Spirit does NOT modify Physical or Spell Resistance on the
+// stat sheet. Resistances are displayed at their raw character-sheet values.
+// The -50% damage taken is a separate combat modifier applied during damage calc.
+export const BATTLE_SPIRIT_RECOVERY_MULT = 0.5;   // ×0.5 on Health Recovery
 
 // ── Mundus stones ───────────────────────────────────────────────────────────
 // Source: The Hist /api/mundus — U50.
@@ -176,30 +188,31 @@ type MundusStone = {
 };
 
 export const MUNDUS_STONES: Record<string, MundusStone> = {
+  // Source: UESP Special:ESO_BuildEditor — ESO_MUNDUS_BUFF_DATA.description (U50)
   // The Lady: Physical + Spell Resistance 2744 each
   "the-lady":        { statKey: "physResist",      value: 2744, statKey2: "spellResist",  value2: 2744 },
   // The Lover: Physical + Spell Penetration 2744 each
   "the-lover":       { statKey: "physPen",          value: 2744, statKey2: "spellPen",     value2: 2744 },
-  // The Thief: Weapon + Spell Crit (unified in our schema as critRating)
-  "the-thief":       { statKey: "critRating",       value: 1548 },
-  // The Shadow: +12% Critical Damage (is_percentage: true in The Hist)
-  "the-shadow":      { statKey: "critDamage",       value: 12,   isPct: true },
-  // The Warrior: Weapon Damage
+  // The Thief: Weapon + Spell Crit (+1333 critRating — UESP confirmed)
+  "the-thief":       { statKey: "critRating",       value: 1333 },
+  // The Shadow: +11% Critical Damage (UESP confirmed)
+  "the-shadow":      { statKey: "critDamage",       value: 11,   isPct: true },
+  // The Warrior: Weapon Damage +238 (UESP confirmed)
   "the-warrior":     { statKey: "weaponDmg",        value: 238 },
-  // The Apprentice: Spell Damage
+  // The Apprentice: Spell Damage +238 (UESP confirmed)
   "the-apprentice":  { statKey: "spellDmg",         value: 238 },
-  // The Mage: Max Magicka
-  "the-mage":        { statKey: "maxMagicka",       value: 2025 },
-  // The Tower: Max Stamina
-  "the-tower":       { statKey: "maxStamina",       value: 2025 },
-  // The Lord: Max Health
-  "the-lord":        { statKey: "maxHealth",        value: 2231 },
-  // The Atronach: Magicka Recovery
+  // The Mage: Max Magicka +2023 (UESP confirmed)
+  "the-mage":        { statKey: "maxMagicka",       value: 2023 },
+  // The Tower: Max Stamina +2023 (UESP confirmed)
+  "the-tower":       { statKey: "maxStamina",       value: 2023 },
+  // The Lord: Max Health +2225 (UESP confirmed)
+  "the-lord":        { statKey: "maxHealth",        value: 2225 },
+  // The Atronach: Magicka Recovery +310 (UESP confirmed)
   "the-atronach":    { statKey: "magickaRecovery",  value: 310 },
-  // The Serpent: Stamina Recovery
+  // The Serpent: Stamina Recovery +310 (UESP confirmed)
   "the-serpent":     { statKey: "staminaRecovery",  value: 310 },
-  // The Steed: Health Recovery (movement speed component removed in current ESO)
-  "the-steed":       { statKey: "healthRecovery",   value: 310 },
+  // The Steed: Health Recovery +238 (UESP confirmed — NOT 310)
+  "the-steed":       { statKey: "healthRecovery",   value: 238 },
   // The Ritual: Healing Done % — no stat-sheet entry (not tracked in ComputedStats)
   // "the-ritual": not in MUNDUS_STONES; handled gracefully as a no-op
 };
@@ -222,29 +235,54 @@ export const MUNDUS_SLUG_MAP: Record<string, string> = {
 };
 
 // ── Racial bonuses ──────────────────────────────────────────────────────────
-// Source: The Hist /api/races flat bonuses + in-game racial passives for
-// bonuses not exposed via the API (Nord Rugged, Bosmer Hunter's Eye/Y'ffre,
-// Breton Spell Attunement, Khajiit Robustness full set).
+// Source: UESP Online:Races + Special:ESO_BuildEditor auto-purchase passives (U50).
+// Only flat stat-sheet bonuses are included; combat procs, cost reductions,
+// conditional regeneration, and speed bonuses are noted but excluded.
 export const RACIAL: Record<string, Partial<ComputedStats>> = {
+  // High Elf: +2000 Max Magicka; +258 WD & SD (Spellcharge / Highborn).
+  // Excluded: +625 Mag/Stam restore every 6s (Syrabane's Boon), -5% dmg taken during cast.
   altmer:   { maxMagicka: 2000, spellDmg: 258, weaponDmg: 258 },
+
+  // Argonian: +1000 Max Health + Max Magicka + Max Stamina (Resourceful / Life Mender).
+  // Excluded: potion restore 3125, +2310 Disease/Poison Resist, +6% healing done.
   argonian: { maxHealth: 1000, maxMagicka: 1000, maxStamina: 1000 },
-  // Bosmer: staminaRecovery (Y'ffre's Endurance) + pen (Hunter's Eye) + speed
-  bosmer:   { maxStamina: 2000, staminaRecovery: 258, physPen: 950, spellPen: 950, moveSpeed: 5 },
-  // Breton: magicka flat + recovery from API; +2310 spell resist from Spell Attunement passive
+
+  // Wood Elf: +2000 Max Stamina (Nimble Climber); +258 WD & SD (Hunter's Eye).
+  // Excluded: +4620 Poison/Disease Resist, physPen from Hunter's Eye (combat), +5% speed.
+  bosmer:   { maxStamina: 2000, weaponDmg: 258, spellDmg: 258 },
+
+  // Breton: +2000 Max Magicka; +2310 Spell Resist (Spell Attunement); +130 Mag Rec.
+  // Excluded: -7% Magicka cost, conditional double-spell-resist on status.
   breton:   { maxMagicka: 2000, spellResist: 2310, magickaRecovery: 130 },
+
+  // Dark Elf: +1910 Max Magicka + Max Stamina; +258 WD & SD (Dynamite Personality / Ancestor's Wrath).
+  // Excluded: +4620 Flame Resist.
   dunmer:   { maxMagicka: 1910, maxStamina: 1910, spellDmg: 258, weaponDmg: 258 },
+
+  // Imperial: +2000 Max Health; +2000 Max Stamina (Tough / Red Diamond).
+  // Excluded: -6% ability cost, small health gain on kill.
   imperial: { maxHealth: 2000, maxStamina: 2000 },
+
+  // Khajiit: +915 all pools (Cutpurse / Lunar Blessings); +90 all recovery (Robustness);
+  // +12% Crit Damage & Crit Healing (Carnage).
   khajiit:  {
     maxHealth: 915, maxMagicka: 915, maxStamina: 915,
-    // Robustness gives +90 to ALL three recoveries (The Hist API shows magicka only —
-    // in-game tooltip confirms all three).
     healthRecovery: 90, magickaRecovery: 90, staminaRecovery: 90,
     critDamage: 12,
   },
-  // Nord: +2600 phys+spell resist from Rugged passive (not in The Hist flat race API but real in-game)
+
+  // Nord: +1000 Max Health; +1500 Max Stamina (Stalwart / Nord's Resolve);
+  // +2600 Phys & Spell Resist (Rugged).
+  // Excluded: +4620 Frost Resist, Ultimate gain on damage taken.
   nord:     { maxHealth: 1000, maxStamina: 1500, physResist: 2600, spellResist: 2600 },
+
+  // Orc: +1000 Max Health; +1000 Max Stamina; +258 WD & SD (Brawny / Craftsman / Swift Warrior).
+  // Excluded: -12% Sprint cost, +10% Sprint speed, heal-on-damage proc.
   orc:      { maxHealth: 1000, maxStamina: 1000, spellDmg: 258, weaponDmg: 258 },
-  redguard: { maxStamina: 2000 },
+
+  // Redguard: +2000 Max Stamina (Wayfarer's Tenacity) + +1650 Max Stamina (Adrenaline Rush) = 3650 total.
+  // Excluded: +1550 Stam on ability use (every 5s), +1500 Stam Regen for 8s after dodge/block.
+  redguard: { maxStamina: 3650 },
 };
 
 // ── CP slottable stars — flat contributions ─────────────────────────────────
