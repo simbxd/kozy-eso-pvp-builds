@@ -32,6 +32,12 @@ export type WeaponPiece = {
   type?: string;
 };
 
+export type ScribingSlot = {
+  grimoire: string;  // grimoire id, "" = unset
+  focus:    string;  // focus id,    "" = unset
+  affix:    string;  // affix id,    "" = unset
+};
+
 export type Setup = {
   name: string;
   armor: ArmorPiece[];
@@ -51,6 +57,7 @@ export type Setup = {
     potion?: string;
     poison?: string;
   };
+  scribing: ScribingSlot[];  // 0–3 grimoire slots
 };
 
 export type BuildMeta = {
@@ -102,6 +109,7 @@ export const defaultSetup = (name = "Default"): Setup => ({
   cp: { warfare: [], fitness: [] },
   attributes: { health: 0, magicka: 0, stamina: 0 },
   consumables: {},
+  scribing: [],
 });
 
 const defaultMeta = (): BuildMeta => ({
@@ -141,6 +149,9 @@ type EditorState = {
   setCpStar: (tree: "warfare" | "fitness", slotIdx: number, entry: [string, number] | null) => void;
   setAttr: (key: "health" | "magicka" | "stamina", val: number) => void;
   patchConsumables: (patch: Partial<Setup["consumables"]>) => void;
+  addScribingSlot: () => void;
+  removeScribingSlot: (idx: number) => void;
+  patchScribingSlot: (idx: number, patch: Partial<ScribingSlot>) => void;
   loadState: (meta: BuildMeta, setups: Setup[]) => void;
   reset: () => void;
 };
@@ -247,11 +258,34 @@ export const useEditorStore = create<EditorState>((set, get) => ({
     return { setups };
   }),
 
+  addScribingSlot: () => set((s) => {
+    const setup = s.setups[s.activeSetupIdx];
+    if (setup.scribing.length >= 3) return s;
+    const scribing = [...setup.scribing, { grimoire: "", focus: "", affix: "" }];
+    const setups = s.setups.map((su, i) => i === s.activeSetupIdx ? { ...su, scribing } : su);
+    return { setups };
+  }),
+
+  removeScribingSlot: (idx) => set((s) => {
+    const setup = s.setups[s.activeSetupIdx];
+    const scribing = setup.scribing.filter((_, i) => i !== idx);
+    const setups = s.setups.map((su, i) => i === s.activeSetupIdx ? { ...su, scribing } : su);
+    return { setups };
+  }),
+
+  patchScribingSlot: (idx, patch) => set((s) => {
+    const setup = s.setups[s.activeSetupIdx];
+    const scribing = setup.scribing.map((sl, i) => i === idx ? { ...sl, ...patch } : sl);
+    const setups = s.setups.map((su, i) => i === s.activeSetupIdx ? { ...su, scribing } : su);
+    return { setups };
+  }),
+
   loadState: (meta, setups) => {
     // Normalize legacy CP pts: old default was 10, correct value is 50
     const normalizeCp = (stars: Array<[string, number]>) =>
       stars.map(([id, pts]) => [id, pts === 10 ? 50 : pts] as [string, number]);
     const normalizedSetups = setups.map((s) => ({
+      scribing: [],   // default for states saved before scribing was added
       ...s,
       cp: {
         warfare: normalizeCp(s.cp.warfare),

@@ -1,8 +1,17 @@
 import { useMemo } from "react";
 import { useEditorStore } from "../state";
 import { T, F, Diamond } from "../atoms";
+import { SearchSelect } from "../atoms/SearchSelect";
 import skillLinesJson from "@/data/eso/skill-lines-index.json";
 import masteriesJson  from "@/data/eso/class-masteries-index.json";
+import {
+  GRIMOIRES, FOCI, AFFIXES,
+  GRIMOIRE_MAP, FOCUS_MAP, AFFIX_MAP,
+  type ScribingSlot as _ScribingSlot,
+} from "@/lib/scribing-defs";
+
+// Re-export for JSX usage
+type ScribingSlot = _ScribingSlot;
 
 // ── Static data ───────────────────────────────────────────────────────────────
 
@@ -28,9 +37,231 @@ const CLASS_DISPLAY: Record<string, string> = {
   arcanist:     "Arcanist",
 };
 
-// ── PassiveRow ────────────────────────────────────────────────────────────────
+// ── Scribing select items ─────────────────────────────────────────────────────
 
-function PassiveRow({ m }: { m: MasteryEntry }) {
+const GRIMOIRE_ITEMS = GRIMOIRES.map((g) => ({
+  id:    g.id,
+  label: g.name,
+  sub:   g.skill_line,
+  icon:  g.icon,
+}));
+
+const FOCUS_ITEMS = FOCI.map((f) => ({
+  id:    f.id,
+  label: f.name,
+  sub:   f.damage_type,
+  icon:  f.icon,
+}));
+
+const AFFIX_ITEMS = AFFIXES.map((a) => ({
+  id:    a.id,
+  label: a.name,
+  sub:   a.hint,
+  icon:  a.icon,
+}));
+
+// ── ScribingSlotRow ───────────────────────────────────────────────────────────
+
+function ScribingSlotRow({ slot, idx }: { slot: ScribingSlot; idx: number }) {
+  const patchSlot  = useEditorStore((s) => s.patchScribingSlot);
+  const removeSlot = useEditorStore((s) => s.removeScribingSlot);
+
+  const affix    = slot.affix ? AFFIX_MAP.get(slot.affix) : undefined;
+  const hasBufRef = !!(affix?.buff_ids?.length);
+
+  return (
+    <div style={{
+      display: "flex", alignItems: "center", gap: 8,
+      padding: "8px 0",
+      borderBottom: `1px solid ${T.edge}`,
+    }}>
+      {/* Slot index */}
+      <div style={{
+        width: 16, flexShrink: 0, textAlign: "center",
+        fontFamily: F.mono, fontSize: 9, color: T.inkFaint,
+      }}>{idx + 1}</div>
+
+      {/* Grimoire */}
+      <div style={{ flex: "0 0 150px" }}>
+        <SearchSelect
+          value={slot.grimoire}
+          onChange={(v) => patchSlot(idx, { grimoire: v })}
+          items={GRIMOIRE_ITEMS}
+          placeholder="Grimoire"
+          searchPlaceholder="Search grimoire…"
+          height={32}
+          popoverWidth={220}
+        />
+      </div>
+
+      {/* Focus */}
+      <div style={{ flex: "0 0 130px" }}>
+        <SearchSelect
+          value={slot.focus}
+          onChange={(v) => patchSlot(idx, { focus: v })}
+          items={FOCUS_ITEMS}
+          placeholder="Focus"
+          searchPlaceholder="Search focus…"
+          searchable={false}
+          height={32}
+          popoverWidth={180}
+        />
+      </div>
+
+      {/* Affix */}
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <SearchSelect
+          value={slot.affix}
+          onChange={(v) => patchSlot(idx, { affix: v })}
+          items={AFFIX_ITEMS}
+          placeholder="Affix"
+          searchPlaceholder="Search affix…"
+          searchable={false}
+          height={32}
+          popoverWidth={240}
+        />
+      </div>
+
+      {/* Buff cross-reference badge */}
+      {hasBufRef && (
+        <div
+          title={`Provides: ${affix!.buff_ids!.join(", ")} — toggle in Buffs tab`}
+          style={{
+            flexShrink: 0,
+            width: 7, height: 7, borderRadius: "50%",
+            background: T.accentSoft,
+            boxShadow: `0 0 6px ${T.accent}`,
+            cursor: "default",
+          }}
+        />
+      )}
+
+      {/* Remove */}
+      <button
+        type="button"
+        onClick={() => removeSlot(idx)}
+        style={{
+          flexShrink: 0, width: 22, height: 22,
+          background: "transparent", border: `1px solid ${T.edge}`,
+          cursor: "pointer",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          fontFamily: F.mono, fontSize: 14, color: T.inkMute,
+          lineHeight: 1,
+        }}
+        onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.borderColor = "#ef4444"; (e.currentTarget as HTMLButtonElement).style.color = "#ef4444"; }}
+        onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.borderColor = T.edge; (e.currentTarget as HTMLButtonElement).style.color = T.inkMute; }}
+      >×</button>
+    </div>
+  );
+}
+
+// ── ScribingSection ───────────────────────────────────────────────────────────
+
+function ScribingSection() {
+  const scribing  = useEditorStore((s) => s.setups[s.activeSetupIdx].scribing);
+  const addSlot   = useEditorStore((s) => s.addScribingSlot);
+
+  // Collect affix buff cross-refs for the summary
+  const buffRefs: string[] = useMemo(() => {
+    const ids: string[] = [];
+    for (const sl of scribing) {
+      const a = sl.affix ? AFFIX_MAP.get(sl.affix) : undefined;
+      if (a?.buff_ids) ids.push(...a.buff_ids);
+    }
+    return [...new Set(ids)];
+  }, [scribing]);
+
+  return (
+    <div style={{
+      padding: "18px 24px 16px",
+      borderBottom: `1px solid ${T.edge}`,
+      flexShrink: 0,
+    }}>
+      {/* Header */}
+      <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", marginBottom: 14, gap: 12 }}>
+        <div>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <div style={{ fontFamily: F.cinzel, fontWeight: 700, fontSize: 17, color: T.accentSoft }}>
+              Scribing
+            </div>
+            <div style={{
+              fontFamily: F.mono, fontSize: 9, letterSpacing: "0.24em",
+              color: "#d4a44a", textTransform: "uppercase",
+              border: "1px solid rgba(212,164,74,0.3)", padding: "2px 6px",
+            }}>Gold Road</div>
+          </div>
+          <div style={{
+            fontFamily: F.mono, fontSize: 10, letterSpacing: "0.12em",
+            color: T.inkMute, marginTop: 4,
+          }}>
+            Grimoire · Focus · Affix — up to 3 scribing skills
+          </div>
+        </div>
+
+        {scribing.length < 3 && (
+          <button
+            type="button"
+            onClick={addSlot}
+            style={{
+              flexShrink: 0,
+              background: "transparent",
+              border: `1px solid ${T.edgeStrong}`,
+              cursor: "pointer",
+              padding: "5px 12px",
+              fontFamily: F.mono, fontSize: 9, letterSpacing: "0.22em",
+              color: T.inkMute, textTransform: "uppercase",
+            }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.borderColor = T.accentSoft; (e.currentTarget as HTMLButtonElement).style.color = T.accentSoft; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.borderColor = T.edgeStrong; (e.currentTarget as HTMLButtonElement).style.color = T.inkMute; }}
+          >+ Add skill</button>
+        )}
+      </div>
+
+      {/* Empty state */}
+      {scribing.length === 0 && (
+        <div style={{
+          padding: "16px 0",
+          fontFamily: F.mono, fontSize: 10, letterSpacing: "0.14em",
+          color: T.inkFaint, textAlign: "center",
+        }}>
+          No scribing skills — click Add skill to configure
+        </div>
+      )}
+
+      {/* Slot rows */}
+      {scribing.map((slot, i) => (
+        <ScribingSlotRow key={i} slot={slot} idx={i} />
+      ))}
+
+      {/* Buff cross-ref hint */}
+      {buffRefs.length > 0 && (
+        <div style={{
+          display: "flex", alignItems: "flex-start", gap: 8,
+          marginTop: 10, padding: "8px 10px",
+          background: "rgba(139,92,246,0.06)",
+          border: `1px solid rgba(139,92,246,0.15)`,
+        }}>
+          <div style={{
+            width: 6, height: 6, borderRadius: "50%", flexShrink: 0,
+            background: T.accentSoft, marginTop: 3,
+            boxShadow: `0 0 5px ${T.accent}`,
+          }} />
+          <div style={{
+            fontFamily: F.mono, fontSize: 9, letterSpacing: "0.14em",
+            color: T.inkMute, lineHeight: 1.6,
+          }}>
+            Selected affixes provide: {buffRefs.join(" · ")} — enable matching toggles in the{" "}
+            <span style={{ color: T.accentSoft }}>Buffs tab</span> to include them in stat calculation.
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Class Mastery components (unchanged logic) ────────────────────────────────
+
+function ClassPassiveRow({ m }: { m: MasteryEntry }) {
   const checked       = useEditorStore((s) => !!s.setups[s.activeSetupIdx].passives[m.id]);
   const togglePassive = useEditorStore((s) => s.togglePassive);
 
@@ -102,8 +333,6 @@ function PassiveRow({ m }: { m: MasteryEntry }) {
   );
 }
 
-// ── MasteryPanel (pure class) ─────────────────────────────────────────────────
-
 function MasteryPanel({ classId }: { classId: string }) {
   const masteries    = useMemo(() => MASTERY_BY_CLASS.get(classId) ?? [], [classId]);
   const classLabel   = CLASS_DISPLAY[classId] ?? classId;
@@ -115,12 +344,12 @@ function MasteryPanel({ classId }: { classId: string }) {
   const overLimit = checkedCount > 2;
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
+    <div style={{ display: "flex", flexDirection: "column", flex: 1, minHeight: 0 }}>
 
       {/* ── Header ── */}
       <div style={{
         display: "flex", alignItems: "center", gap: 14,
-        padding: "18px 24px 14px",
+        padding: "14px 24px 12px",
         borderBottom: `1px solid ${T.edge}`,
         flexShrink: 0,
       }}>
@@ -128,7 +357,7 @@ function MasteryPanel({ classId }: { classId: string }) {
         <div>
           <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
             <div style={{
-              fontFamily: F.cinzel, fontWeight: 700, fontSize: 18,
+              fontFamily: F.cinzel, fontWeight: 700, fontSize: 17,
               letterSpacing: "0.06em", color: T.accentSoft,
             }}>Class Masteries</div>
             <div style={{
@@ -146,7 +375,7 @@ function MasteryPanel({ classId }: { classId: string }) {
             fontFamily: F.mono, fontSize: 10, letterSpacing: "0.14em",
             color: T.inkMute, marginTop: 4,
           }}>
-            Unlocked when all 3 class lines reach rank 50 · Choose 2 of 5
+            Unlocked at rank 50 on all 3 class lines · Choose 2 of 5
           </div>
         </div>
 
@@ -172,7 +401,7 @@ function MasteryPanel({ classId }: { classId: string }) {
 
       {/* ── Passive list ── */}
       <div style={{ flex: 1, overflowY: "auto" }}>
-        {masteries.map((m) => <PassiveRow key={m.id} m={m} />)}
+        {masteries.map((m) => <ClassPassiveRow key={m.id} m={m} />)}
       </div>
 
       {/* ── PTS disclaimer ── */}
@@ -188,8 +417,6 @@ function MasteryPanel({ classId }: { classId: string }) {
   );
 }
 
-// ── LockedPanel ───────────────────────────────────────────────────────────────
-
 function LockedPanel({ reason }: { reason: "no-class" | "subclassing" }) {
   return (
     <div style={{
@@ -197,9 +424,7 @@ function LockedPanel({ reason }: { reason: "no-class" | "subclassing" }) {
       alignItems: "center", justifyContent: "center", gap: 18,
       padding: 40, textAlign: "center",
     }}>
-      <div style={{
-        fontFamily: F.cinzel, fontSize: 28, color: T.edgeStrong,
-      }}>◇</div>
+      <div style={{ fontFamily: F.cinzel, fontSize: 28, color: T.edgeStrong }}>◇</div>
       <div style={{
         fontFamily: F.cinzel, fontWeight: 700, fontSize: 15,
         letterSpacing: "0.08em", color: T.inkDim,
@@ -243,9 +468,26 @@ export default function MasteriesTab() {
     return { pureClassId: classIds[0] as string, reason: null };
   }, [subclasses]);
 
-  if (!pureClassId) {
-    return <LockedPanel reason={reason!} />;
-  }
+  return (
+    <div style={{ display: "flex", flexDirection: "column", height: "100%", overflow: "hidden" }}>
 
-  return <MasteryPanel classId={pureClassId} />;
+      {/* Scribing — always visible */}
+      <div style={{ flexShrink: 0, overflowY: "auto", maxHeight: "45%" }}>
+        <ScribingSection />
+      </div>
+
+      {/* Class Masteries — scrollable */}
+      <div style={{ flex: 1, minHeight: 0, display: "flex", flexDirection: "column" }}>
+        {pureClassId
+          ? <MasteryPanel classId={pureClassId} />
+          : (
+            <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+              <LockedPanel reason={reason!} />
+            </div>
+          )
+        }
+      </div>
+
+    </div>
+  );
 }
