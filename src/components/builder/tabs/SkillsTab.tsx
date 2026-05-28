@@ -70,7 +70,7 @@ function ClassLineColumn() {
     }}>
       {/* Section label */}
       <div style={{
-        fontFamily: F.mono, fontSize: 9, letterSpacing: "0.32em",
+        fontFamily: F.mono, fontSize: 11, letterSpacing: "0.28em",
         color: T.inkMute, textTransform: "uppercase",
       }}>Class lines</div>
 
@@ -80,12 +80,12 @@ function ClassLineColumn() {
         const available = LINE_ITEMS.filter((item) => !taken.has(item.id) || item.id === lineId);
         const raw       = ALL_CLASS_LINES.find((l) => l.id === lineId);
         return (
-          <div key={i} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+          <div key={i} style={{ display: "flex", flexDirection: "column", gap: 5 }}>
             <div style={{
-              fontFamily: F.mono, fontSize: 8, letterSpacing: "0.28em",
+              fontFamily: F.mono, fontSize: 10, letterSpacing: "0.22em",
               color: lineId ? T.accentSoft : T.inkFaint,
               textTransform: "uppercase",
-              display: "flex", alignItems: "center", gap: 4,
+              display: "flex", alignItems: "center", gap: 5,
             }}>
               {lineId && <Diamond size={4} />}
               {raw ? raw.class : `Line ${["I", "II", "III"][i]}`}
@@ -96,8 +96,8 @@ function ClassLineColumn() {
               items={available}
               placeholder={`Line ${["I", "II", "III"][i]}`}
               searchPlaceholder="Search lines…"
-              height={30}
-              popoverWidth={220}
+              height={36}
+              popoverWidth={260}
             />
           </div>
         );
