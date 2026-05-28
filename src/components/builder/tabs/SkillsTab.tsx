@@ -51,7 +51,7 @@ const LINE_ITEMS: SelectItem[] = ALL_CLASS_LINES.map((l) => ({
 
 // ── ClassLinePickers ──────────────────────────────────────────────────────────
 
-function ClassLinePickers() {
+function ClassLineColumn() {
   const subclasses = useEditorStore((s) => s.meta.subclasses);
   const patchMeta  = useEditorStore((s) => s.patchMeta);
 
@@ -63,15 +63,15 @@ function ClassLinePickers() {
 
   return (
     <div style={{
-      display: "flex", gap: 10, alignItems: "flex-end",
-      paddingBottom: 16,
-      borderBottom: `1px solid ${T.edge}`,
-      flexShrink: 0,
+      width: 164, flexShrink: 0,
+      display: "flex", flexDirection: "column", gap: 14,
+      paddingRight: 20,
+      borderRight: `1px solid ${T.edge}`,
     }}>
+      {/* Section label */}
       <div style={{
         fontFamily: F.mono, fontSize: 9, letterSpacing: "0.32em",
         color: T.inkMute, textTransform: "uppercase",
-        flexShrink: 0, alignSelf: "center",
       }}>Class lines</div>
 
       {([0, 1, 2] as const).map((i) => {
@@ -80,7 +80,7 @@ function ClassLinePickers() {
         const available = LINE_ITEMS.filter((item) => !taken.has(item.id) || item.id === lineId);
         const raw       = ALL_CLASS_LINES.find((l) => l.id === lineId);
         return (
-          <div key={i} style={{ display: "flex", flexDirection: "column", gap: 3, flex: 1 }}>
+          <div key={i} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
             <div style={{
               fontFamily: F.mono, fontSize: 8, letterSpacing: "0.28em",
               color: lineId ? T.accentSoft : T.inkFaint,
@@ -96,8 +96,8 @@ function ClassLinePickers() {
               items={available}
               placeholder={`Line ${["I", "II", "III"][i]}`}
               searchPlaceholder="Search lines…"
-              height={28}
-              popoverWidth={240}
+              height={30}
+              popoverWidth={220}
             />
           </div>
         );
@@ -234,10 +234,12 @@ function BarRow({ title, bar, skills, subclasses }: {
           color: T.inkMute, textTransform: "uppercase",
         }}>6 abilities</div>
       </div>
-      <div style={{ display: "flex", gap: 18, justifyContent: "space-between" }}>
+      <div style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
         {[0, 1, 2, 3, 4].map((i) => (
           <SkillCell key={i} id={skills[i] ?? ""} bar={bar} idx={i} subclasses={subclasses} />
         ))}
+        {/* Small gap before ultimate */}
+        <div style={{ width: 8, flexShrink: 0 }} />
         <SkillCell id={skills[5] ?? ""} bar={bar} idx={5} ult subclasses={subclasses} />
       </div>
     </div>
@@ -539,15 +541,21 @@ export default function SkillsTab() {
 
   return (
     <>
-      <div style={{ display: "flex", flexDirection: "column", gap: 28, height: "100%" }}>
-        <ClassLinePickers />
-        <BarRow title="Bar I · Front Bar"  bar={0} skills={bar1} subclasses={subclasses} />
-        <BarRow title="Bar II · Back Bar"  bar={1} skills={bar2} subclasses={subclasses} />
+      <div style={{ display: "flex", gap: 24, height: "100%", alignItems: "flex-start" }}>
 
-        {/* Divider */}
-        <div style={{ height: 1, background: `linear-gradient(90deg, transparent, ${T.edge}, transparent)`, flexShrink: 0 }} />
+        {/* Left column — class lines */}
+        <ClassLineColumn />
 
-        <ScribingRow />
+        {/* Right column — bars + scribing */}
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 28, minWidth: 0 }}>
+          <BarRow title="Bar I · Front Bar"  bar={0} skills={bar1} subclasses={subclasses} />
+          <BarRow title="Bar II · Back Bar"  bar={1} skills={bar2} subclasses={subclasses} />
+
+          {/* Divider */}
+          <div style={{ height: 1, background: `linear-gradient(90deg, rgba(212,164,74,0.15), transparent)`, flexShrink: 0 }} />
+
+          <ScribingRow />
+        </div>
       </div>
 
       <style>{`
