@@ -5,8 +5,8 @@ import { SearchSelect } from "../atoms/SearchSelect";
 import skillLinesJson from "@/data/eso/skill-lines-index.json";
 import masteriesJson  from "@/data/eso/class-masteries-index.json";
 import {
-  GRIMOIRES, FOCI, AFFIXES,
-  GRIMOIRE_MAP, FOCUS_MAP, AFFIX_MAP,
+  GRIMOIRES, FOCI, SIGNATURES, AFFIXES,
+  GRIMOIRE_MAP, FOCUS_MAP, SIGNATURE_MAP, AFFIX_MAP,
   type ScribingSlot as _ScribingSlot,
 } from "@/lib/scribing-defs";
 
@@ -51,6 +51,13 @@ const FOCUS_ITEMS = FOCI.map((f) => ({
   label: f.name,
   sub:   f.damage_type,
   icon:  f.icon,
+}));
+
+const SIGNATURE_ITEMS = SIGNATURES.map((s) => ({
+  id:    s.id,
+  label: s.name,
+  sub:   s.hint,
+  icon:  s.icon,
 }));
 
 const AFFIX_ITEMS = AFFIXES.map((a) => ({
@@ -105,6 +112,20 @@ function ScribingSlotRow({ slot, idx }: { slot: ScribingSlot; idx: number }) {
           searchable={false}
           height={32}
           popoverWidth={180}
+        />
+      </div>
+
+      {/* Signature */}
+      <div style={{ flex: "0 0 140px" }}>
+        <SearchSelect
+          value={slot.signature}
+          onChange={(v) => patchSlot(idx, { signature: v })}
+          items={SIGNATURE_ITEMS}
+          placeholder="Signature"
+          searchPlaceholder="Search signature…"
+          searchable={false}
+          height={32}
+          popoverWidth={210}
         />
       </div>
 
@@ -194,7 +215,7 @@ function ScribingSection() {
             fontFamily: F.mono, fontSize: 10, letterSpacing: "0.12em",
             color: T.inkMute, marginTop: 4,
           }}>
-            Grimoire · Focus · Affix — up to 3 scribing skills
+            Grimoire · Focus · Signature · Affix — up to 3 scribing skills
           </div>
         </div>
 

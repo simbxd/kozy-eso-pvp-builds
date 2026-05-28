@@ -110,8 +110,43 @@ export const AFFIXES: AffixDef[] = [
   { id: "uncertainty",        name: "Minor Uncertainty",          icon: "/assets/scribing/affix-uncertainty.png",        hint: "−6% Crit Rate on target"                                                    },
 ];
 
+// ── Signatures ────────────────────────────────────────────────────────────────
+// A Signature Rune adds a unique scribing-specific mechanic to the grimoire skill
+// (the "signature" effect that makes each permutation distinctive).
+
+export type SignatureDef = {
+  id:   string;
+  name: string;
+  icon: string;
+  hint: string;
+};
+
+export const SIGNATURES: SignatureDef[] = [
+  { id: "battle-technique",     name: "Battle Technique",      icon: "/assets/scribing/sig-battle-technique.png",     hint: "Empower on cast"                },
+  { id: "bladeturn",            name: "Bladeturn",             icon: "/assets/scribing/sig-bladeturn.png",            hint: "Deflect on dodge"               },
+  { id: "break-snare",          name: "Break Snare",           icon: "/assets/scribing/sig-break-snare.png",          hint: "Remove snare on cast"           },
+  { id: "charge-damage",        name: "Charge Damage",         icon: "/assets/scribing/sig-charge-damage.png",        hint: "Bonus dmg on charge"            },
+  { id: "classmod",             name: "Class Modification",    icon: "/assets/scribing/sig-classmod.png",             hint: "Class-specific bonus effect"    },
+  { id: "damage-over-time",     name: "Damage Over Time",      icon: "/assets/scribing/sig-damage-over-time.png",     hint: "Apply DoT on hit"               },
+  { id: "damage-reduction",     name: "Damage Reduction",      icon: "/assets/scribing/sig-damage-reduction.png",     hint: "Reduce dmg taken briefly"       },
+  { id: "damage-shield",        name: "Damage Shield",         icon: "/assets/scribing/sig-damage-shield.png",        hint: "Apply damage shield"            },
+  { id: "give-ultimate",        name: "Give Ultimate",         icon: "/assets/scribing/sig-give-ultimate.png",        hint: "Restore Ultimate on hit"        },
+  { id: "heal-over-time",       name: "Heal Over Time",        icon: "/assets/scribing/sig-heal-over-time.png",       hint: "Apply HoT on cast"              },
+  { id: "immobilize",           name: "Immobilize",            icon: "/assets/scribing/sig-immobilize.png",           hint: "Root target briefly"            },
+  { id: "life-steal",           name: "Life Steal",            icon: "/assets/scribing/sig-live-steal.png",           hint: "Drain HP from target"           },
+  { id: "local-aoe-damage-buff",name: "AoE Damage Buff",       icon: "/assets/scribing/sig-local-aoe-damage-buff.png",hint: "+dmg in area around target"     },
+  { id: "mobility",             name: "Mobility",              icon: "/assets/scribing/sig-mobility.png",             hint: "Speed bonus on cast"            },
+  { id: "opportunism",          name: "Opportunism",           icon: "/assets/scribing/sig-opportunism.png",          hint: "Bonus dmg vs debuffed targets"  },
+  { id: "resource-restore",     name: "Resource Restore",      icon: "/assets/scribing/sig-resource-restore.png",     hint: "Restore Mag or Stam on hit"     },
+  { id: "shield-mastery",       name: "Shield Mastery",        icon: "/assets/scribing/sig-shield-mastery.png",       hint: "Bonus effect vs shields"        },
+  { id: "snare",                name: "Snare",                 icon: "/assets/scribing/sig-snare.png",                hint: "Slow target on hit"             },
+  { id: "soul-collapse",        name: "Soul Collapse",         icon: "/assets/scribing/sig-soul-collapse.png",        hint: "Burst dmg at low soul charge"   },
+  { id: "status-effect",        name: "Status Effect",         icon: "/assets/scribing/sig-status-effect.png",        hint: "Apply elemental status"         },
+];
+
 // ── Lookup maps ───────────────────────────────────────────────────────────────
 
-export const GRIMOIRE_MAP = new Map(GRIMOIRES.map((g) => [g.id, g]));
-export const FOCUS_MAP    = new Map(FOCI.map((f) => [f.id, f]));
-export const AFFIX_MAP    = new Map(AFFIXES.map((a) => [a.id, a]));
+export const GRIMOIRE_MAP  = new Map(GRIMOIRES.map((g) => [g.id, g]));
+export const FOCUS_MAP     = new Map(FOCI.map((f) => [f.id, f]));
+export const AFFIX_MAP     = new Map(AFFIXES.map((a) => [a.id, a]));
+export const SIGNATURE_MAP = new Map(SIGNATURES.map((s) => [s.id, s]));

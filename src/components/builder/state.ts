@@ -33,9 +33,10 @@ export type WeaponPiece = {
 };
 
 export type ScribingSlot = {
-  grimoire: string;  // grimoire id, "" = unset
-  focus:    string;  // focus id,    "" = unset
-  affix:    string;  // affix id,    "" = unset
+  grimoire:  string;  // grimoire id,  "" = unset
+  focus:     string;  // focus id,     "" = unset
+  signature: string;  // signature id, "" = unset
+  affix:     string;  // affix id,     "" = unset
 };
 
 export type Setup = {
@@ -261,7 +262,7 @@ export const useEditorStore = create<EditorState>((set, get) => ({
   addScribingSlot: () => set((s) => {
     const setup = s.setups[s.activeSetupIdx];
     if (setup.scribing.length >= 3) return s;
-    const scribing = [...setup.scribing, { grimoire: "", focus: "", affix: "" }];
+    const scribing = [...setup.scribing, { grimoire: "", focus: "", signature: "", affix: "" }];
     const setups = s.setups.map((su, i) => i === s.activeSetupIdx ? { ...su, scribing } : su);
     return { setups };
   }),
