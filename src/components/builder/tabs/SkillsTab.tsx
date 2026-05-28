@@ -63,7 +63,7 @@ function ClassLineColumn() {
 
   return (
     <div style={{
-      width: 164, flexShrink: 0,
+      width: 300, flexShrink: 0,
       display: "flex", flexDirection: "column", gap: 14,
       paddingRight: 20,
       borderRight: `1px solid ${T.edge}`,
