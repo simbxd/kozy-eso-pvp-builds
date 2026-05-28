@@ -13,6 +13,10 @@ import racesJson     from "@/data/eso/races-index.json";
 import mundusJson    from "@/data/eso/mundus-index.json";
 import masteriesJson from "@/data/eso/class-masteries-index.json";
 import cpStarsJson   from "@/data/eso/cp-stars-index.json";
+import {
+  GRIMOIRE_MAP, FOCUS_MAP, SIGNATURE_MAP, AFFIX_MAP,
+} from "@/lib/scribing-defs";
+import type { ScribingSlot } from "./state";
 
 // ── Resolution maps (built once) ──────────────────────────────────────────────
 
@@ -421,19 +425,31 @@ function Equipment({ setup }: { setup: Setup }) {
 
 // ── Skills ────────────────────────────────────────────────────────────────────
 
-function SkillIcon({ id, ult }: { id: string; ult?: boolean }) {
-  const skill   = id ? skillMap.get(id) : undefined;
+function SkillIcon({ id, ult, scribing = [] }: { id: string; ult?: boolean; scribing?: ScribingSlot[] }) {
+  // Scribing reference — @scr:N
+  const scrIdx   = id.startsWith("@scr:") ? parseInt(id.slice(5), 10) : -1;
+  const scrSlot  = scrIdx >= 0 ? (scribing[scrIdx] ?? null) : null;
+  const grimoire = scrSlot?.grimoire ? GRIMOIRE_MAP.get(scrSlot.grimoire) : null;
+
+  const skill   = scrIdx < 0 ? (id ? skillMap.get(id) : undefined) : undefined;
   const slotted = !!id;
+  const isScribe = scrIdx >= 0;
+
   const [show,    setShow]    = useState(false);
   const [tipData, setTipData] = useState<EsoHubSkillTip | "loading" | null>(null);
 
   const handleMouseEnter = () => {
-    if (!id) return;
+    if (!id || isScribe) return;  // no ESO-Hub tip for scribing
     setShow(true);
     if (esoHubSkillCache.has(id)) { setTipData(esoHubSkillCache.get(id) ?? null); return; }
     setTipData("loading");
     fetchSkillTip(id).then(setTipData);
   };
+
+  const displayIcon = isScribe ? (grimoire?.icon ?? null) : (skill?.icon ?? null);
+  const displayName = isScribe
+    ? (grimoire?.name ?? `Scribe ${scrIdx + 1}`)
+    : (skill?.name ?? (ult ? "Ult." : "—"));
 
   return (
     <div
@@ -444,30 +460,40 @@ function SkillIcon({ id, ult }: { id: string; ult?: boolean }) {
       {/* Icon circle */}
       <div style={{
         width: 58, height: 58, borderRadius: "50%",
-        border: `2px solid ${slotted ? (ult ? T.accentSoft : T.accent) : T.edgeStrong}`,
-        background: slotted
-          ? "linear-gradient(135deg, #321a73 0%, #150a30 100%)"
-          : "linear-gradient(135deg, #1a0e3d 0%, #0e0626 100%)",
+        border: `2px solid ${
+          !slotted ? T.edgeStrong :
+          isScribe ? "#d4a44a" :
+          ult      ? T.accentSoft : T.accent
+        }`,
+        background: !slotted
+          ? "linear-gradient(135deg, #1a0e3d 0%, #0e0626 100%)"
+          : isScribe
+            ? "linear-gradient(135deg, #3d2a0a 0%, #1a1006 100%)"
+            : "linear-gradient(135deg, #321a73 0%, #150a30 100%)",
         display: "flex", alignItems: "center", justifyContent: "center",
         overflow: "hidden",
       }}>
-        {skill?.icon ? (
-          <img src={skill.icon} alt={skill.name}
+        {displayIcon ? (
+          <img src={displayIcon} alt={displayName}
             style={{ width: 58, height: 58, borderRadius: "50%" }}
             onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
         ) : (
-          <span style={{ fontFamily: F.cinzel, fontSize: 20, color: slotted ? T.accentSoft : T.edgeStrong }}>◇</span>
+          <span style={{
+            fontFamily: F.cinzel, fontSize: isScribe ? 16 : 20,
+            color: slotted ? (isScribe ? "#d4a44a" : T.accentSoft) : T.edgeStrong,
+          }}>{isScribe ? "✦" : "◇"}</span>
         )}
       </div>
 
       {/* Name label */}
       <div style={{
         fontFamily: F.mono, fontSize: 9, letterSpacing: "0.14em",
-        color: ult ? T.accentSoft : T.inkMute, textTransform: "uppercase",
+        color: isScribe ? "#d4a44a" : ult ? T.accentSoft : T.inkMute,
+        textTransform: "uppercase",
         textAlign: "center", lineHeight: 1.3,
-      }}>{skill ? skill.name : (ult ? "Ult." : "—")}</div>
+      }}>{displayName}</div>
 
-      {/* ESO-Hub tooltip */}
+      {/* ESO-Hub tooltip (regular skills only) */}
       {show && tipData === "loading" && (
         <div style={{
           position: "absolute", bottom: "calc(100% + 8px)", left: "50%", transform: "translateX(-50%)",
@@ -488,14 +514,11 @@ function SkillIcon({ id, ult }: { id: string; ult?: boolean }) {
           padding: "12px 14px",
           pointerEvents: "none",
         }}>
-          {/* Header: icon + name */}
           <div style={{ marginBottom: 10, paddingBottom: 10, borderBottom: "1px solid rgba(139,92,246,0.25)" }}>
             <div style={{ fontFamily: F.cinzel, fontWeight: 700, fontSize: 15, color: "#d4a44a", lineHeight: 1.2 }}>
               {tipData.name}
             </div>
           </div>
-
-          {/* effect_1 */}
           <div style={{ fontFamily: F.mono, fontSize: 9, letterSpacing: "0.22em", color: "#d4a44a", textTransform: "uppercase", marginBottom: 6 }}>
             {tipData.header ?? "Effect"}
           </div>
@@ -504,8 +527,6 @@ function SkillIcon({ id, ult }: { id: string; ult?: boolean }) {
             style={{ fontFamily: F.display, fontSize: 13, color: "#cfc0e8", lineHeight: 1.55 }}
             dangerouslySetInnerHTML={{ __html: tipData.effect_1 }}
           />
-
-          {/* effect_2 — morph "New effect" */}
           {tipData.effect_2 && (
             <>
               <div style={{ margin: "10px 0 6px", height: 1, background: "rgba(139,92,246,0.25)" }} />
@@ -519,8 +540,6 @@ function SkillIcon({ id, ult }: { id: string; ult?: boolean }) {
               />
             </>
           )}
-
-          {/* Watermark */}
           <div style={{ marginTop: 10, textAlign: "right", fontFamily: F.mono, fontSize: 9, letterSpacing: "0.1em", color: "rgba(139,92,246,0.4)" }}>
             Tooltips by ESO-Hub
           </div>
@@ -530,24 +549,110 @@ function SkillIcon({ id, ult }: { id: string; ult?: boolean }) {
   );
 }
 
-function SkillBarView({ title, ids }: { title: string; ids: string[] }) {
+function SkillBarView({ title, ids, scribing }: { title: string; ids: string[]; scribing: ScribingSlot[] }) {
   return (
     <div>
       <div style={{ ...monoLabel, marginBottom: 8 }}>{title}</div>
       <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-        {[0, 1, 2, 3, 4].map((i) => <SkillIcon key={i} id={ids[i] ?? ""} />)}
-        <SkillIcon id={ids[5] ?? ""} ult />
+        {[0, 1, 2, 3, 4].map((i) => <SkillIcon key={i} id={ids[i] ?? ""} scribing={scribing} />)}
+        <SkillIcon id={ids[5] ?? ""} ult scribing={scribing} />
       </div>
     </div>
   );
 }
 
 function Skills({ setup }: { setup: Setup }) {
+  const scribing = setup.scribing ?? [];
   return (
     <Section title="Skills" count="bar 1 · bar 2">
       <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-        <SkillBarView title="Bar I · Front Bar" ids={setup.bar1} />
-        <SkillBarView title="Bar II · Back Bar" ids={setup.bar2} />
+        <SkillBarView title="Bar I · Front Bar" ids={setup.bar1} scribing={scribing} />
+        <SkillBarView title="Bar II · Back Bar" ids={setup.bar2} scribing={scribing} />
+      </div>
+    </Section>
+  );
+}
+
+// ── Scribing ──────────────────────────────────────────────────────────────────
+
+function ScribingSlotCard({ slot, idx }: { slot: ScribingSlot; idx: number }) {
+  const grimoire  = slot.grimoire  ? GRIMOIRE_MAP.get(slot.grimoire)   : undefined;
+  const focus     = slot.focus     ? FOCUS_MAP.get(slot.focus)         : undefined;
+  const signature = slot.signature ? SIGNATURE_MAP.get(slot.signature) : undefined;
+  const affix     = slot.affix     ? AFFIX_MAP.get(slot.affix)         : undefined;
+
+  if (!grimoire) return null;
+
+  const runes = [
+    focus     ? focus.name                          : null,
+    signature ? signature.hint                      : null,
+    affix     ? affix.hint                          : null,
+  ].filter(Boolean);
+
+  return (
+    <div style={{
+      display: "flex", alignItems: "flex-start", gap: 12,
+      padding: "10px 14px",
+      background: "rgba(212,164,74,0.05)",
+      border: "1px solid rgba(212,164,74,0.2)",
+    }}>
+      {/* Grimoire icon */}
+      <div style={{
+        width: 48, height: 48, borderRadius: "50%", flexShrink: 0,
+        border: "1px solid rgba(212,164,74,0.4)",
+        overflow: "hidden",
+        background: "linear-gradient(135deg, #3d2a0a 0%, #1a1006 100%)",
+      }}>
+        {grimoire.icon ? (
+          <img src={grimoire.icon} alt={grimoire.name}
+            style={{ width: 48, height: 48 }}
+            onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
+        ) : (
+          <div style={{ width: 48, height: 48, display: "flex", alignItems: "center", justifyContent: "center",
+            fontFamily: F.cinzel, fontSize: 18, color: "#d4a44a" }}>✦</div>
+        )}
+      </div>
+
+      {/* Info */}
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
+          <div style={{ fontFamily: F.cinzel, fontWeight: 600, fontSize: 15, color: "#d4a44a" }}>
+            {grimoire.name}
+          </div>
+          <div style={{ fontFamily: F.mono, fontSize: 9, letterSpacing: "0.2em", color: T.inkFaint, textTransform: "uppercase" }}>
+            {grimoire.skill_line}
+          </div>
+        </div>
+        {runes.length > 0 && (
+          <div style={{
+            marginTop: 4,
+            fontFamily: F.mono, fontSize: 10, letterSpacing: "0.1em",
+            color: "rgba(212,164,74,0.6)", lineHeight: 1.6,
+          }}>
+            {runes.join("  ·  ")}
+          </div>
+        )}
+      </div>
+
+      {/* Slot number */}
+      <div style={{
+        fontFamily: F.mono, fontSize: 9, letterSpacing: "0.2em",
+        color: T.inkFaint, flexShrink: 0,
+      }}>#{idx + 1}</div>
+    </div>
+  );
+}
+
+function Scribing({ setup }: { setup: Setup }) {
+  const slots = (setup.scribing ?? []).filter((s) => s.grimoire);
+  if (slots.length === 0) return null;
+
+  return (
+    <Section title="Scribing" count={`${slots.length} skill${slots.length > 1 ? "s" : ""}`}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+        {(setup.scribing ?? []).map((slot, i) =>
+          slot.grimoire ? <ScribingSlotCard key={i} slot={slot} idx={i} /> : null
+        )}
       </div>
     </Section>
   );
@@ -895,6 +1000,7 @@ export default function BuildViewer() {
       stars.map(([id, pts]) => [id, pts === 10 ? 50 : pts] as [string, number]);
     const setup = snap.setups[0];
     const normalizedSetup = {
+      scribing: [],  // default for builds saved before scribing
       ...setup,
       cp: { warfare: normCp(setup.cp.warfare), fitness: normCp(setup.cp.fitness) },
     };
@@ -934,6 +1040,7 @@ export default function BuildViewer() {
         <Consumables setup={setup} />
         <Equipment setup={setup} />
         <Skills setup={setup} />
+        <Scribing setup={setup} />
         <ChampionPoints setup={setup} />
         <Passives setup={setup} />
         <ProsCons pros={meta.pros} cons={meta.cons} />
