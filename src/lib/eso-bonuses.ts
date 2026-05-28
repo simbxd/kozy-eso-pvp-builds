@@ -60,7 +60,8 @@ export const STAFF_TYPES = new Set([
   "inferno-staff", "lightning-staff", "ice-staff", "restoration-staff",
 ]);
 
-export const TWO_HANDED_TYPES = new Set(["two-handed"]);
+// Each 2H sub-type gets its own ID; "two-handed" (old category) is no longer used by the editor.
+export const TWO_HANDED_TYPES = new Set(["2h-sword", "2h-axe", "2h-mace"]);
 
 export function deriveBarType(mhType?: string, ohType?: string): string | null {
   if (!mhType) return null;
@@ -109,6 +110,11 @@ export const INFUSED_ARMOR_GOLD   = 0.25;  // +25% to armor piece enchant
 export const INFUSED_JEWELRY_GOLD = 0.60;  // +60% to jewelry piece enchant
 export const REINFORCED_GOLD      = 0.16;  // +16% to armor piece base armor
 
+// ESO armor slot-size mechanic: large slots get full glyph potency,
+// small slots get ~40.5% (ratio of small/large gold glyph values, e.g. 193/477).
+export const LARGE_ARMOR_SLOTS       = new Set(["head", "chest", "legs"]);
+export const SMALL_ARMOR_ENCHANT_FACTOR = 193 / 477; // ≈ 0.4046
+
 // ── Enchant values (CP160 gold) ─────────────────────────────────────────────
 // Source: The Hist /api/enchantments — U50.
 // NOTE on jewelry harm glyphs: The Hist treats spell_damage and weapon_damage
@@ -120,12 +126,14 @@ export const ENCHANT_VALUES: Record<string, Partial<ComputedStats>> = {
   "glyph-of-magicka":           { maxMagicka: 868 },
   "glyph-of-stamina":           { maxStamina: 868 },
   "glyph-of-health":            { maxHealth:  952 },
-  "glyph-of-prismatic-defense": { maxHealth: 868, maxMagicka: 868, maxStamina: 868 },
+  "glyph-of-prismatic-defense": { maxHealth: 477, maxMagicka: 434, maxStamina: 434 }, // UESP item data (Truly Superb): 477/434/434
 
   // ── Jewelry glyphs ─────────────────────────────────────────────────
-  // Harm: each adds only its own damage type (not both)
-  "glyph-of-increase-magical-harm":  { spellDmg: 174 },
-  "glyph-of-increase-physical-harm": { weaponDmg: 174 },
+  // Both harm glyphs add BOTH Weapon Damage AND Spell Damage (gold quality = 174 each),
+  // plus a secondary recovery stat.
+  // Source: enchant JSON descriptions — "Adds X Weapon Damage and Spell Damage and 10 Stamina Recovery"
+  "glyph-of-increase-physical-harm": { weaponDmg: 174, spellDmg: 174, staminaRecovery: 10 },
+  "glyph-of-increase-magical-harm":  { spellDmg: 174, weaponDmg: 174, magickaRecovery: 10 },
   // Recovery glyphs: 169 each (The Hist /api/enchantments confirmed)
   "glyph-of-magicka-recovery":       { magickaRecovery: 169 },
   "glyph-of-stamina-recovery":       { staminaRecovery: 169 },
@@ -291,30 +299,43 @@ export const RACIAL: Record<string, Partial<ComputedStats>> = {
 };
 
 // ── CP slottable stars — flat contributions ─────────────────────────────────
-// Source: The Hist /api/cp-stars — slottable_value × 50 stages or confirmed totals.
-// Stars that give % of pool (arcane_supremacy, untamed_aggression, endless_endurance)
-// are in CP_STAR_PCT below and applied as multipliers instead.
-// Stars that are combat procs or non-stat-sheet (wrathful_strikes, resilience, celerity) are excluded.
+// Source: src/data/eso/cp-stars-index.json — values verified in-game by author (U50).
+// Stars that are combat modifiers (%, procs, conditional) are excluded from the stat sheet:
+//   ironclad (−6% direct dmg taken), master-at-arms (% direct dmg), duelist's-rebuff,
+//   unassailable, enduring-resolve, cleansing-revival (proc), celerity (+10% speed — no
+//   stat-sheet entry in our model), slippery (auto break-free), pain's-refuge (conditional
+//   % dmg per negative effect), force-of-nature, backstabber, exploiter, occult-overload.
 export const CP_STAR_VALUES: Record<string, Partial<ComputedStats>> = {
   // ── Warfare ──────────────────────────────────────────────────────
-  // fighting_finesse: "+4% crit dmg/healing per stage, max 40% at 10 stages"
+  // fighting-finesse: "+4% crit dmg/healing per stage" — tooltip: 40% at max
   "fighting-finesse":   { critDamage: 40 },
-  // boundless_vitality: 28 per stage × 50 stages = 1400 HP
+  // wrathful-strikes: "Grants 205 Weapon and Spell Damage to your damaging abilities."
+  "wrathful-strikes":   { weaponDmg: 205, spellDmg: 205 },
+  // untamed-aggression: "Increases your Weapon and Spell Damage by 150."
+  "untamed-aggression": { weaponDmg: 150, spellDmg: 150 },
+  // arcane-supremacy: "Increases Maximum Magicka by 1300." (flat, not % pool)
+  "arcane-supremacy":   { maxMagicka: 1300 },
+  // endless-endurance: "Increases Maximum Stamina by 1300." (flat, not % pool)
+  "endless-endurance":  { maxStamina: 1300 },
+  // resilience: "Grants 660 Critical Resistance."
+  "resilience":         { critResistance: 660 },
+
+  // ── Fitness ──────────────────────────────────────────────────────
+  // boundless-vitality: "Grants 1400 Maximum Health."
   "boundless-vitality": { maxHealth: 1400 },
-  // fortified: 34.6 per stage × 50 stages = 1730 armor (both resists)
-  "fortified":          { physResist: 1730, spellResist: 1730 },
-  // rejuvenation: 3 per stage × 50 stages = 150 for each recovery
-  "rejuvenation":       { healthRecovery: 150, magickaRecovery: 150, staminaRecovery: 150 },
-  // celerity: Minor Expedition buff (not a flat stat rating — excluded from sheet)
+  // fortified: "Grants 1731 Armor." (physResist + spellResist each)
+  "fortified":          { physResist: 1731, spellResist: 1731 },
+  // rejuvenation: "Grants 90 Health, Magicka, and Stamina Recovery."
+  "rejuvenation":       { healthRecovery: 90, magickaRecovery: 90, staminaRecovery: 90 },
 };
 
 // CP stars that scale as a % of the current pool.
 // Applied as multipliers AFTER all flat bonuses (including flat CP stars above).
-// Source: The Hist /api/cp-stars — slottable_pct = 0.02 for all three.
+// Note: arcane-supremacy, untamed-aggression, endless-endurance were previously modelled
+// here as 2% pool bonuses (from The Hist API). The in-game tooltip shows flat values —
+// moved to CP_STAR_VALUES above.
 export const CP_STAR_PCT: Record<string, Partial<Record<"maxHealth" | "maxMagicka" | "maxStamina", number>>> = {
-  "arcane-supremacy":   { maxMagicka: 0.02 },
-  "untamed-aggression": { maxStamina: 0.02 },
-  "endless-endurance":  { maxHealth: 0.02 },
+  // (empty — all formerly-% stars are now confirmed flat; kept for future use)
 };
 
 // ── Armor type ──────────────────────────────────────────────────────────────
@@ -402,6 +423,10 @@ export const ARMOR_BASE: Record<ArmorWeight, Record<string, number>> = {
   },
 };
 
+// Source: approximate value — verify in-game.
+// Analysis vs UESP 712953: with Minor Resolve buff active, physResist gap closes to -374.
+// Residual 374 could be SHIELD_BASE_ARMOR = 1985 → 2359 (+374), OR rounding/other.
+// Original estimate of ≈ 2797 was pre-Minor-Resolve analysis. True in-game value TBD.
 export const SHIELD_BASE_ARMOR = 1985;
 
 export function armorWeightFromSetType(setType: string): ArmorWeight | null {
@@ -445,14 +470,12 @@ export function resolveStatKey(stat: string): StatTarget | null {
 
 // ── Set overrides + conditionals ────────────────────────────────────────────
 export const SET_BONUS_OVERRIDES: Record<string, Array<{ count: number; contrib: Partial<ComputedStats> }>> = {
-  "mighty-chudan": [
-    { count: 2, contrib: { maxHealth: 1206, physResist: 5948, spellResist: 5948 } },
-  ],
+  // mighty-chudan: now correctly expressed in the JSON (1pc Armor, 2pc Max Health + Armor/Major Resolve)
 };
 
 export const SET_CONDITIONAL_BONUSES: Record<string, Array<{ count: number; contrib: Partial<ComputedStats>; note: string }>> = {
   "twice-fanged-serpent": [
-    { count: 5, contrib: { physPen: 5440, spellPen: 5440 }, note: "10 stacks × +544 pen (5s)" },
+    { count: 5, contrib: { physPen: 6600, spellPen: 6600 }, note: "10 stacks × +660 pen (max stacks)" },
   ],
   "rallying-cry": [
     { count: 5, contrib: { weaponDmg: 300, spellDmg: 300, critResistance: 1650 }, note: "Healing crit proc (20s/15s)" },
@@ -467,23 +490,30 @@ export const MARKYN_QUALIFYING_MIN_PIECES = 3;
 
 // ── Weapon line passives ────────────────────────────────────────────────────
 // Source: The Hist /api/passives/grouped — Twin Blade and Blunt values corrected.
-// Note: Twin Blade and Blunt applies ONE sub-passive per bar 1 weapon type.
-export const WEAPON_LINE_PASSIVE: Record<string, { weaponType: string; contrib: Partial<ComputedStats> }> = {
+// Note: Twin Blade and Blunt applies ONE sub-passive per bar 1 MAIN-HAND weapon type,
+//       but ONLY when the bar type is dual_wield (it is a Dual Wield skill-line passive).
+// requiresBarType: if set, the passive is skipped unless deriveBarType() returns this value.
+export const WEAPON_LINE_PASSIVE: Record<string, {
+  weaponType:      string;
+  requiresBarType?: string;
+  contrib:         Partial<ComputedStats>;
+}> = {
   "accuracy":                    { weaponType: "bow",    contrib: { critRating: 1314 } },
-  "twin-blade-and-blunt-axe":    { weaponType: "axe",   contrib: { critDamage: 3 } },
-  "twin-blade-and-blunt-mace":   { weaponType: "mace",  contrib: { physPen: 743, spellPen: 743 } },
-  "twin-blade-and-blunt-sword":  { weaponType: "sword", contrib: { weaponDmg: 64, spellDmg: 64 } },
-  "twin-blade-and-blunt-dagger": { weaponType: "dagger",contrib: { critRating: 328 } },
+  "twin-blade-and-blunt-axe":    { weaponType: "axe",    requiresBarType: "dual_wield", contrib: { critDamage: 3 } },
+  "twin-blade-and-blunt-mace":   { weaponType: "mace",   requiresBarType: "dual_wield", contrib: { physPen: 743, spellPen: 743 } },
+  "twin-blade-and-blunt-sword":  { weaponType: "sword",  requiresBarType: "dual_wield", contrib: { weaponDmg: 64, spellDmg: 64 } },
+  "twin-blade-and-blunt-dagger": { weaponType: "dagger", requiresBarType: "dual_wield", contrib: { critRating: 328 } },
 };
 
 // ── Class passives ──────────────────────────────────────────────────────────
 // Source: The Hist /api/passives/grouped — U50.
 export const CLASS_PASSIVE_VALUES: Record<string, { classId: string; contrib: Partial<ComputedStats> }> = {
-  // DK: Heart of Stone (Earthen Heart) — Spell Resistance only, confirmed via The Hist.
-  // No Physical Resistance passive exists for DK in current patch.
+  // DK: Heart of Stone (Earthen Heart) — "Increases your Armor by 2974."
+  // In ESO, "Armor" = both Physical Resistance AND Spell Resistance.
+  // Source: ESO Hub — U50 value: 2974 to both physResist and spellResist.
   // Note: ~40k in-game resistance comes from active skill buffs (Major Resolve +5948)
   // which are combat buffs, not modelled in this static sheet.
-  "heart-of-stone":       { classId: "dragonknight", contrib: { spellResist: 3960 } },
+  "heart-of-stone":       { classId: "dragonknight", contrib: { physResist: 2974, spellResist: 2974 } },
   // DK: Elder Dragon (Draconic Power) — +700 Health Recovery.
   // Source: The Hist /api/passives/grouped — "Increases your Health Recovery by 700."
   "elder-dragon":         { classId: "dragonknight", contrib: { healthRecovery: 700 } },
@@ -507,111 +537,109 @@ export const CLASS_PASSIVE_POOL_PCT: Record<string, {
 };
 
 // ── CP passive (non-slottable) stars — always active at CP810+ ───────────────
-// Source: The Hist /api/cp-passives — auto-applied unconditionally (assumes CP810).
-// These are permanent constellation bonuses, not slottable — not stored in build.cp.
+// Source: ESO-Hub verified 2026-05-28. These are passive (Is slotable: No) CP stars
+// that auto-apply when enough CP is invested in the node (assumes max stages at CP810+).
+// NOT stored in build.cp — applied unconditionally.
+//
+// Verified values (ESO-Hub 2026-05-28):
+//   war-mage          Warfare/Extended Might — +100 WSD to Magical attacks (1 stage, 30 pts)
+//                     Applied as spellDmg only — conditional on magical damage type.
+//   eldritch-insight  Warfare — +260 Max Magicka/stage × 2 stages (jump pts 0,10,20)
+//   tireless-discipline Warfare — +260 Max Stamina/stage × 2 stages (jump pts 0,10,20)
+//   piercing          Warfare/Extended Might — +350 Offensive Penetration/stage × 2 (jump pts 0,10,20)
+//   precision         Warfare — +160 Critical Chance/stage × 2 (jump pts 0,10,20)
+//   fortification     REMOVED — Fitness, +2% block mitigation/stage, NOT a stat we model
+//   battle-mastery    REMOVED — Warfare/Extended Might, +30% Martial status effect chance/stage, NOT critDamage
 export const CP_PASSIVE_VALUES: Array<{ id: string; contrib: Partial<ComputedStats> }> = [
-  { id: "war-mage",              contrib: { weaponDmg: 60, spellDmg: 60 } },
-  { id: "eldritch-insight",      contrib: { maxMagicka: 520 } },
-  { id: "tireless-discipline",   contrib: { maxHealth: 560 } },
-  { id: "piercing",              contrib: { physPen: 700, spellPen: 700 } },
-  { id: "precision",             contrib: { critRating: 320 } },
-  { id: "fortification",         contrib: { maxHealth: 1200 } },
-  { id: "battle-mastery",        contrib: { critDamage: 10 } },
+  { id: "war-mage",            contrib: { spellDmg: 100 } },              // +100 WSD to Magical attacks (1 stage) — approx as spellDmg
+  { id: "mighty",              contrib: { weaponDmg: 100 } },             // +100 WSD to Martial attacks (1 stage) — Warfare/Extended Might
+  { id: "eldritch-insight",    contrib: { maxMagicka: 520 } },            // +260 Mag/stage × 2
+  { id: "tireless-discipline", contrib: { maxStamina: 520 } },            // +260 Stam/stage × 2
+  { id: "piercing",            contrib: { physPen: 700, spellPen: 700 } },// +350 OffPen/stage × 2
+  { id: "precision",           contrib: { critRating: 320 } },            // +160 Crit/stage × 2
+  // Fitness always-on path passives
+  { id: "heros-vigor",         contrib: { maxHealth: 560 } },             // +280 HP/stage × 2 — Fitness tree
 ];
 
-// ── Active buff definitions ────────────────────────────────────────────────
+// ── Active buff / debuff definitions ──────────────────────────────────────
 // Buffs toggled in the Buffs tab (build.bx[]). Each has a flat contribution
 // and/or a % multiplier on a stat pool. Values from ESO in-game tooltips U50.
-// Major/Minor buffs: flat additions to the stat sheet (not ×base in our model).
-// Brutality/Sorcery: multiplicative on the current WD/SD pool (×1.20/×1.10).
+//
+//  type "buff"   — self-buff; directly adds to your stat sheet.
+//  type "debuff" — enemy debuff; modelled as an equivalent stat bonus on your
+//                  sheet (e.g. Major Breach → physPen/spellPen, since reducing
+//                  enemy armor has the same effect as increasing your penetration).
+//
+//  group — sub-category used for grouping inside each type:
+//    offense  : damage / crit
+//    defense  : resistances
+//    resource : max pool scaling
+//
+// ── Crit rating values (U50, verified via UESP ESO_BUFF_DATA):
+//    Major Prophecy / Major Savagery  : +2191 critRating ≈ +10% crit
+//    Minor Prophecy / Minor Savagery  : +1096 critRating ≈ +5%  crit
+//    Note: Prophecy = Spell Crit, Savagery = Weapon Crit — unified as critRating here.
+//
+// ── Courage values (U50, same scaling as racial WD/SD = 258 / 129):
+//    Major Courage : +258 Weapon Damage + Spell Damage
+//    Minor Courage : +129 Weapon Damage + Spell Damage
+//
 export type BuffDef = {
-  id: string;
+  id:    string;
   label: string;
-  group: "defense" | "offense" | "resource";
+  group: "offense" | "defense" | "resource" | "recovery";
+  hintSuffix?: string;
   contrib?: Partial<ComputedStats>;                           // flat add
-  pct?: { keys: (keyof ComputedStats)[]; factor: number };   // multiply pool
+  pct?:    { keys: (keyof ComputedStats)[]; factor: number };// multiply pool
 };
 
 export const BUFF_DEFS: BuffDef[] = [
-  // ── Defense ───────────────────────────────────────────────────────────
-  {
-    id: "major-resolve",   label: "Major Resolve",
-    group: "defense",
-    contrib: { physResist: 5948, spellResist: 5948 },
-  },
-  {
-    id: "minor-resolve",   label: "Minor Resolve",
-    group: "defense",
-    contrib: { physResist: 2974, spellResist: 2974 },
-  },
-  {
-    id: "major-evasion",   label: "Major Evasion",
-    group: "defense",
-    contrib: { moveSpeed: 0 },   // dodge/evade roll bonus — no stat-sheet entry
-    // Note: +30% Dodge Roll invulnerability window — not a numeric stat, shown for reference.
-  },
+
   // ── Offense ───────────────────────────────────────────────────────────
-  {
-    id: "major-brutality", label: "Major Brutality",
-    group: "offense",
-    pct: { keys: ["weaponDmg"], factor: 1.20 },
-  },
-  {
-    id: "minor-brutality", label: "Minor Brutality",
-    group: "offense",
-    pct: { keys: ["weaponDmg"], factor: 1.10 },
-  },
-  {
-    id: "major-sorcery",   label: "Major Sorcery",
-    group: "offense",
-    pct: { keys: ["spellDmg"], factor: 1.20 },
-  },
-  {
-    id: "minor-sorcery",   label: "Minor Sorcery",
-    group: "offense",
-    pct: { keys: ["spellDmg"], factor: 1.10 },
-  },
-  {
-    id: "major-force",     label: "Major Force",
-    group: "offense",
-    contrib: { critDamage: 20 },
-  },
-  {
-    id: "minor-force",     label: "Minor Force",
-    group: "offense",
-    contrib: { critDamage: 10 },
-  },
-  // ── Resources ─────────────────────────────────────────────────────────
-  {
-    id: "major-fortitude", label: "Major Fortitude",
-    group: "resource",
-    pct: { keys: ["maxHealth"], factor: 1.30 },
-  },
-  {
-    id: "minor-fortitude", label: "Minor Fortitude",
-    group: "resource",
-    pct: { keys: ["maxHealth"], factor: 1.15 },
-  },
-  {
-    id: "major-endurance", label: "Major Endurance",
-    group: "resource",
-    pct: { keys: ["maxStamina"], factor: 1.30 },
-  },
-  {
-    id: "minor-endurance", label: "Minor Endurance",
-    group: "resource",
-    pct: { keys: ["maxStamina"], factor: 1.15 },
-  },
-  {
-    id: "major-intellect", label: "Major Intellect",
-    group: "resource",
-    pct: { keys: ["maxMagicka"], factor: 1.30 },
-  },
-  {
-    id: "minor-intellect", label: "Minor Intellect",
-    group: "resource",
-    pct: { keys: ["maxMagicka"], factor: 1.15 },
-  },
+  { id: "major-brutality",  label: "Major Brutality",  group: "offense",
+    pct: { keys: ["weaponDmg"], factor: 1.20 } },
+  { id: "minor-brutality",  label: "Minor Brutality",  group: "offense",
+    pct: { keys: ["weaponDmg"], factor: 1.10 } },
+  { id: "major-sorcery",    label: "Major Sorcery",    group: "offense",
+    pct: { keys: ["spellDmg"], factor: 1.20 } },
+  { id: "minor-sorcery",    label: "Minor Sorcery",    group: "offense",
+    pct: { keys: ["spellDmg"], factor: 1.10 } },
+  { id: "major-courage",    label: "Major Courage",    group: "offense",
+    contrib: { weaponDmg: 430, spellDmg: 430 } },
+  { id: "minor-courage",    label: "Minor Courage",    group: "offense",
+    contrib: { weaponDmg: 215, spellDmg: 215 } },
+  { id: "major-force",      label: "Major Force",      group: "offense",
+    contrib: { critDamage: 20 } },
+  { id: "minor-force",      label: "Minor Force",      group: "offense",
+    contrib: { critDamage: 10 } },
+  { id: "major-prophecy",   label: "Major Prophecy",   group: "offense",
+    contrib: { critRating: 2191 } },  // Spell Crit ≈ +10%
+  { id: "minor-prophecy",   label: "Minor Prophecy",   group: "offense",
+    contrib: { critRating: 1096 } },  // ≈ +5%
+  { id: "major-savagery",   label: "Major Savagery",   group: "offense",
+    contrib: { critRating: 2191 } },  // Weapon Crit ≈ +10%
+  { id: "minor-savagery",   label: "Minor Savagery",   group: "offense",
+    contrib: { critRating: 1096 } },  // ≈ +5%
+
+  // ── Defense ───────────────────────────────────────────────────────────
+  { id: "major-resolve",    label: "Major Resolve",    group: "defense",
+    contrib: { physResist: 5948, spellResist: 5948 } },
+  { id: "minor-resolve",    label: "Minor Resolve",    group: "defense",
+    contrib: { physResist: 2974, spellResist: 2974 } },
+
+  // ── Resources (recovery rate, not max pool) ───────────────────────────────
+  { id: "major-fortitude",  label: "Major Fortitude",  group: "resource",
+    pct: { keys: ["maxHealth"],   factor: 1.30 }, hintSuffix: "recovery" },
+  { id: "minor-fortitude",  label: "Minor Fortitude",  group: "resource",
+    pct: { keys: ["maxHealth"],   factor: 1.15 }, hintSuffix: "recovery" },
+  { id: "major-endurance",  label: "Major Endurance",  group: "resource",
+    pct: { keys: ["maxStamina"],  factor: 1.30 }, hintSuffix: "recovery" },
+  { id: "minor-endurance",  label: "Minor Endurance",  group: "resource",
+    pct: { keys: ["maxStamina"],  factor: 1.15 }, hintSuffix: "recovery" },
+  { id: "major-intellect",  label: "Major Intellect",  group: "resource",
+    pct: { keys: ["maxMagicka"],  factor: 1.30 }, hintSuffix: "recovery" },
+  { id: "minor-intellect",  label: "Minor Intellect",  group: "resource",
+    pct: { keys: ["maxMagicka"],  factor: 1.15 }, hintSuffix: "recovery" },
 ];
 
 export const BUFF_DEF_MAP: Record<string, BuffDef> = Object.fromEntries(

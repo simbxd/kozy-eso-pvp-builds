@@ -1,7 +1,7 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { useEditorStore } from "../state";
 import { T, F } from "../atoms";
-import { skillsIndex } from "@/lib/eso-data";
+import { skillsIndex, getSkillDesc } from "@/lib/eso-data";
 import skillLinesJson from "@/data/eso/skill-lines-index.json";
 
 // ── Static data ───────────────────────────────────────────────────────────────
@@ -89,75 +89,152 @@ for (const s of skillsIndex) {
   PASSIVE_BY_LINE.get(s.skill_line_id)!.push(s);
 }
 
-// ── PassiveRow ────────────────────────────────────────────────────────────────
+// ── PassiveTooltip ────────────────────────────────────────────────────────────
 
-function PassiveRow({ id, name, icon }: { id: string; name: string; icon?: string }) {
-  const checked       = useEditorStore((s) => !!s.setups[s.activeSetupIdx].passives[id]);
-  const togglePassive = useEditorStore((s) => s.togglePassive);
+function PassiveTooltip({ name, desc, skillLine, x, y }: {
+  name: string; desc: string; skillLine: string; x: number; y: number;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [pos, setPos] = useState({ x, y });
+
+  useEffect(() => {
+    if (!ref.current) return;
+    const { width, height } = ref.current.getBoundingClientRect();
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    let nx = x + 10;
+    let ny = y;
+    if (nx + width > vw - 8) nx = x - width - 10;
+    if (ny + height > vh - 8) ny = vh - height - 8;
+    setPos({ x: Math.max(8, nx), y: Math.max(8, ny) });
+  }, [x, y]);
+
+  // Strip "Current bonus: X" noise from descriptions
+  const clean = desc.replace(/\n\nCurrent bonus:[^\n]*/g, "").trim();
 
   return (
-    <button
-      type="button"
-      onClick={() => togglePassive(id)}
+    <div
+      ref={ref}
       style={{
-        width: "100%", display: "flex", alignItems: "center", gap: 14,
-        padding: "10px 16px", textAlign: "left",
-        background: checked ? "rgba(139,92,246,0.08)" : "transparent",
-        border: "none",
-        borderBottom: `1px solid ${T.edge}`,
-        cursor: "pointer",
-      }}
-      onMouseEnter={(e) => {
-        if (!checked) (e.currentTarget as HTMLButtonElement).style.background = "rgba(139,92,246,0.04)";
-      }}
-      onMouseLeave={(e) => {
-        if (!checked) (e.currentTarget as HTMLButtonElement).style.background = "transparent";
+        position: "fixed",
+        left: pos.x,
+        top: pos.y,
+        zIndex: 9999,
+        width: 260,
+        background: "rgba(10,6,22,0.97)",
+        border: `1px solid ${T.edgeStrong}`,
+        borderRadius: 6,
+        padding: "10px 12px",
+        boxShadow: "0 6px 24px rgba(0,0,0,0.6)",
+        pointerEvents: "none",
       }}
     >
-      {/* Icon */}
-      {icon ? (
-        <img
-          src={icon} alt=""
-          style={{
-            width: 44, height: 44, borderRadius: "50%", clipPath: "circle(50%)", flexShrink: 0,
-            border: `2px solid ${checked ? T.accent : T.edge}`,
-            opacity: checked ? 1 : 0.6,
-          }}
-          onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
-        />
-      ) : (
-        <div style={{
-          width: 44, height: 44, borderRadius: "50%", flexShrink: 0,
-          background: T.panelBgAlt, border: `2px solid ${checked ? T.accent : T.edge}`,
-          display: "flex", alignItems: "center", justifyContent: "center",
-          fontFamily: F.cinzel, fontSize: 16,
-          color: checked ? T.accentSoft : T.inkFaint,
-        }}>◇</div>
-      )}
-
-      {/* Name */}
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{
-          fontFamily: F.cinzel, fontWeight: 600, fontSize: 14,
-          color: checked ? T.ink : T.inkDim,
-          overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
-        }}>{name}</div>
-      </div>
-
-      {/* Checkbox */}
       <div style={{
-        width: 18, height: 18, flexShrink: 0,
-        border: `1.5px solid ${checked ? T.accent : T.edgeStrong}`,
-        background: checked ? T.accent : "transparent",
-        display: "flex", alignItems: "center", justifyContent: "center",
-      }}>
-        {checked && (
-          <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
-            <path d="M1 4L4 7L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+        fontFamily: F.cinzel, fontWeight: 600, fontSize: 13,
+        color: T.accentSoft, marginBottom: 4,
+      }}>{name}</div>
+      <div style={{
+        fontFamily: F.mono, fontSize: 8, letterSpacing: "0.22em",
+        color: T.inkMute, textTransform: "uppercase", marginBottom: 6,
+      }}>{skillLine}</div>
+      <div style={{
+        fontFamily: F.display, fontSize: 11,
+        color: T.inkDim, lineHeight: 1.55,
+        whiteSpace: "pre-line",
+      }}>{clean}</div>
+    </div>
+  );
+}
+
+// ── PassiveRow ────────────────────────────────────────────────────────────────
+
+function PassiveRow({ id, name, icon, skillLine }: {
+  id: string; name: string; icon?: string; skillLine: string;
+}) {
+  const checked       = useEditorStore((s) => !!s.setups[s.activeSetupIdx].passives[id]);
+  const togglePassive = useEditorStore((s) => s.togglePassive);
+  const desc          = getSkillDesc(id);
+
+  const [tooltip, setTooltip] = useState<{ x: number; y: number } | null>(null);
+
+  const handleMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (!checked) (e.currentTarget as HTMLButtonElement).style.background = "rgba(139,92,246,0.04)";
+    if (desc) {
+      const rect = e.currentTarget.getBoundingClientRect();
+      setTooltip({ x: rect.right, y: rect.top });
+    }
+  };
+  const handleMouseLeave = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (!checked) (e.currentTarget as HTMLButtonElement).style.background = "transparent";
+    setTooltip(null);
+  };
+
+  return (
+    <>
+      <button
+        type="button"
+        onClick={() => togglePassive(id)}
+        style={{
+          width: "100%", display: "flex", alignItems: "center", gap: 14,
+          padding: "10px 16px", textAlign: "left",
+          background: checked ? "rgba(139,92,246,0.08)" : "transparent",
+          border: "none",
+          borderBottom: `1px solid ${T.edge}`,
+          cursor: "pointer",
+        }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {/* Icon */}
+        {icon ? (
+          <img
+            src={icon} alt=""
+            style={{
+              width: 44, height: 44, borderRadius: "50%", clipPath: "circle(50%)", flexShrink: 0,
+              border: `2px solid ${checked ? T.accent : T.edge}`,
+              opacity: checked ? 1 : 0.6,
+            }}
+            onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
+          />
+        ) : (
+          <div style={{
+            width: 44, height: 44, borderRadius: "50%", flexShrink: 0,
+            background: T.panelBgAlt, border: `2px solid ${checked ? T.accent : T.edge}`,
+            display: "flex", alignItems: "center", justifyContent: "center",
+            fontFamily: F.cinzel, fontSize: 16,
+            color: checked ? T.accentSoft : T.inkFaint,
+          }}>◇</div>
         )}
-      </div>
-    </button>
+
+        {/* Name */}
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{
+            fontFamily: F.cinzel, fontWeight: 600, fontSize: 14,
+            color: checked ? T.ink : T.inkDim,
+            overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+          }}>{name}</div>
+        </div>
+
+        {/* Checkbox */}
+        <div style={{
+          width: 18, height: 18, flexShrink: 0,
+          border: `1.5px solid ${checked ? T.accent : T.edgeStrong}`,
+          background: checked ? T.accent : "transparent",
+          display: "flex", alignItems: "center", justifyContent: "center",
+        }}>
+          {checked && (
+            <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+              <path d="M1 4L4 7L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          )}
+        </div>
+      </button>
+
+      {/* Tooltip portal */}
+      {tooltip && desc && (
+        <PassiveTooltip name={name} desc={desc} skillLine={skillLine} x={tooltip.x} y={tooltip.y} />
+      )}
+    </>
   );
 }
 
@@ -228,7 +305,7 @@ function LinePanel({ lineId, lineName }: { lineId: string; lineName: string }) {
       </div>
       <div style={{ flex: 1, overflowY: "auto" }}>
         {passives.map((sk) => (
-          <PassiveRow key={sk.id} id={sk.id} name={sk.name} icon={sk.icon} />
+          <PassiveRow key={sk.id} id={sk.id} name={sk.name} icon={sk.icon} skillLine={sk.skill_line} />
         ))}
       </div>
     </div>

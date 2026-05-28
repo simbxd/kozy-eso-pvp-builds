@@ -47,14 +47,19 @@ function computeWeightDist(setup: Setup): { heavy: number; medium: number; light
 // ── Weapon bar summary ────────────────────────────────────────────────────────
 
 const WEAPON_LABEL: Record<string, string> = {
-  "two-handed":        "2H",
-  "one-hand-and-shield": "S+B",
-  "dual-wield":        "DW",
+  // 1H
+  "sword":   "Sword",   "axe":    "Axe",
+  "mace":    "Mace",    "dagger": "Dagger",
+  // 2H
+  "2h-sword": "2H Sword", "2h-axe": "2H Axe", "2h-mace": "2H Mace",
+  // Ranged / magical
   "bow":               "Bow",
   "inferno-staff":     "Inferno",
   "lightning-staff":   "Lightning",
   "ice-staff":         "Ice",
   "restoration-staff": "Resto",
+  // Off-hand
+  "shield": "Shield",
 };
 
 // ── Sub-components ────────────────────────────────────────────────────────────
@@ -386,10 +391,11 @@ function ComputedStatsSection({ setup, battleSpirit }: {
   battleSpirit: boolean;
 }) {
   const meta = useEditorStore((s) => s.meta);
+  const bx   = useEditorStore((s) => s.bx);
 
   const result = useMemo(
-    () => computeStatsFromEditor(meta, setup, battleSpirit),
-    [meta, setup, battleSpirit],
+    () => computeStatsFromEditor(meta, setup, battleSpirit, bx),
+    [meta, setup, battleSpirit, bx],
   );
 
   const s = result.stats;
@@ -528,11 +534,6 @@ export default function StatsPanel() {
           <WeightDist setup={setup} />
         </PanelSection>
 
-        {/* Weapons */}
-        <PanelSection title="Weapons">
-          <Weapons setup={setup} />
-        </PanelSection>
-
         {/* Attribute points */}
         <PanelSection title="Attributes">
           <Attributes setup={setup} />
@@ -543,32 +544,50 @@ export default function StatsPanel() {
           <ComputedStatsSection setup={setup} battleSpirit={battleSpirit} />
         </PanelSection>
 
+        {/* Weapons */}
+        <PanelSection title="Weapons">
+          <Weapons setup={setup} />
+        </PanelSection>
+
       </div>
 
       {/* Footer — Battle Spirit toggle */}
       <div style={{
         borderTop: `1px solid ${T.edge}`,
         padding: "8px 14px",
-        display: "flex", alignItems: "center", justifyContent: "space-between",
+        display: "flex", flexDirection: "column", gap: 6,
       }}>
-        <span style={{
-          fontFamily: F.mono, fontSize: 8,
-          letterSpacing: "0.22em", color: T.inkFaint,
-          textTransform: "uppercase",
-        }}>Battle Spirit</span>
-        <button
-          type="button"
-          onClick={() => setBattleSpirit((v) => !v)}
-          style={{
-            height: 18, padding: "0 8px",
-            fontFamily: F.mono, fontSize: 8, letterSpacing: "0.18em",
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <span style={{
+            fontFamily: F.mono, fontSize: 8,
+            letterSpacing: "0.22em", color: T.inkFaint,
             textTransform: "uppercase",
-            background: battleSpirit ? "rgba(139,92,246,0.15)" : "transparent",
-            border: `1px solid ${battleSpirit ? T.accent + "88" : T.edge}`,
-            color: battleSpirit ? T.accentSoft : T.inkFaint,
-            cursor: "pointer",
-          }}
-        >{battleSpirit ? "ON" : "OFF"}</button>
+          }}>Battle Spirit</span>
+          <button
+            type="button"
+            onClick={() => setBattleSpirit((v) => !v)}
+            style={{
+              height: 18, padding: "0 8px",
+              fontFamily: F.mono, fontSize: 8, letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              background: battleSpirit ? "rgba(139,92,246,0.15)" : "transparent",
+              border: `1px solid ${battleSpirit ? T.accent + "88" : T.edge}`,
+              color: battleSpirit ? T.accentSoft : T.inkFaint,
+              cursor: "pointer",
+            }}
+          >{battleSpirit ? "ON" : "OFF"}</button>
+        </div>
+        {battleSpirit && (
+          <div style={{
+            fontFamily: F.mono, fontSize: 8, lineHeight: 1.5,
+            color: T.inkFaint, letterSpacing: "0.06em",
+            borderLeft: `2px solid ${T.accent}33`,
+            paddingLeft: 6,
+          }}>
+            Stat sheet: HP Rec ×0.5<br />
+            PvP combat: −50% Dmg Taken · −55% Healing
+          </div>
+        )}
       </div>
     </div>
   );

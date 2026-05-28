@@ -124,6 +124,23 @@ export function getCpStar(tree: CpTree, id: string): CpStar | undefined {
   return cpStarMap.get(`${tree}:${id}`);
 }
 
+// ── Passive descriptions ──────────────────────────────────────────────────
+// Data JSONs in src/data/eso/skills/**/ carry a description field that the
+// leaner content JSONs omit. We glob them eagerly and expose a lookup by slug
+// (which matches the content JSON id field 1-to-1).
+type DataSkillEntry = { slug: string; description?: string };
+const dataSkillModules = import.meta.glob<DataSkillEntry>(
+  "/src/data/eso/skills/**/*.json",
+  { eager: true, import: "default" },
+);
+const skillDescMap = new Map<string, string>();
+for (const mod of Object.values(dataSkillModules)) {
+  if (mod?.slug && mod?.description) skillDescMap.set(mod.slug, mod.description);
+}
+export function getSkillDesc(id: string): string | undefined {
+  return skillDescMap.get(id);
+}
+
 // Passives slotted under a set of skill lines. Skill JSONs carry type:Passive
 // after the M4 data patch, so filtering on type is now reliable.
 export function passivesForLines(lineIds: string[]): EsoSkillIndex[] {

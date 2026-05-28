@@ -32,15 +32,17 @@ function buildFromEditor(
   meta:          BuildMeta,
   setup:         Setup,
   battleSpirit:  boolean,
+  bx:            string[],
 ): Build {
   const gear: GearPieceV1[] = [];
 
   // Armor pieces — slot IDs match directly (head, chest, …)
+  // Allow pieces without a set if they carry an enchant or trait (enchant-only glyph, Divines for mundus, etc.)
   for (const p of setup.armor) {
-    if (!p.set) continue;
+    if (!p.set && !p.enchant && !p.trait) continue;
     gear.push({
       s:  p.slot as GearSlotId,
-      id: p.set,
+      id: p.set ?? "",
       t:  p.trait   ?? "",
       e:  p.enchant  ?? "",
       q:  1,
@@ -49,8 +51,9 @@ function buildFromEditor(
   }
 
   // Jewelry — necklace → neck
+  // Allow pieces without a set if they carry an enchant or trait.
   for (const p of setup.jewelry) {
-    if (!p.set) continue;
+    if (!p.set && !p.enchant && !p.trait) continue;
     const s = JEWELRY_SLOT_MAP[p.slot];
     if (!s) continue;
     gear.push({ s, id: p.set, t: p.trait ?? "", e: p.enchant ?? "", q: 1 });
@@ -109,7 +112,7 @@ function buildFromEditor(
       attrPoints: [health, magicka, stamina],
     },
     bs: battleSpirit,
-    bx: [],
+    bx,
   };
 }
 
@@ -126,6 +129,7 @@ export function computeStatsFromEditor(
   meta:          BuildMeta,
   setup:         Setup,
   battleSpirit = true,
+  bx:            string[] = [],
 ): ComputeResult {
-  return computeStats(buildFromEditor(meta, setup, battleSpirit));
+  return computeStats(buildFromEditor(meta, setup, battleSpirit, bx));
 }

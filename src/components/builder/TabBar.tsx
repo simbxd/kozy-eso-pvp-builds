@@ -13,12 +13,13 @@ const GROUP_BUILD: TabDef[] = [
 ];
 
 const GROUP_SETUP: TabDef[] = [
+  { key: "attributes",  label: "Attributes"  },
   { key: "equipment",   label: "Equipment"   },
   { key: "skills",      label: "Skills"      },
+  { key: "buffs",       label: "Buffs"       },
   { key: "passives",    label: "Passives"    },
   { key: "masteries",   label: "Masteries"   },
   { key: "cp",          label: "CP"          },
-  { key: "attributes",  label: "Attributes"  },
   { key: "consumables", label: "Consumables" },
 ];
 

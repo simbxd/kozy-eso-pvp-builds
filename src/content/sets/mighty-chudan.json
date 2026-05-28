@@ -19,8 +19,13 @@
     },
     {
       "count": 2,
-      "stat": "Max Health + Major Resolve",
-      "value": "1206 HP / +5948 Physical & Spell Resistance"
+      "stat": "Max Health",
+      "value": 1206
+    },
+    {
+      "count": 2,
+      "stat": "Armor",
+      "value": 5948
     }
   ],
   "uesp_url": "https://en.uesp.net/wiki/Online:Mighty_Chudan",

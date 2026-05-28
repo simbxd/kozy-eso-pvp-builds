@@ -5,7 +5,7 @@ import { create } from "zustand";
 export type TabKey =
   | "general" | "guide" | "pros" | "share"
   | "equipment" | "skills" | "passives" | "masteries"
-  | "cp" | "attributes" | "consumables";
+  | "cp" | "attributes" | "consumables" | "buffs";
 
 export type ArmorWeight = "heavy" | "medium" | "light";
 
@@ -125,8 +125,10 @@ type EditorState = {
   setups: Setup[];
   activeSetupIdx: number;
   activeTab: TabKey;
+  bx: string[];
 
   setActiveTab: (tab: TabKey) => void;
+  toggleBuff: (id: string) => void;
   setActiveSetup: (idx: number) => void;
   addSetup: () => void;
   patchMeta: (patch: Partial<BuildMeta>) => void;
@@ -148,8 +150,12 @@ export const useEditorStore = create<EditorState>((set, get) => ({
   setups: [defaultSetup()],
   activeSetupIdx: 0,
   activeTab: "general",
+  bx: [],
 
   setActiveTab: (tab) => set({ activeTab: tab }),
+  toggleBuff: (id) => set((s) => ({
+    bx: s.bx.includes(id) ? s.bx.filter((x) => x !== id) : [...s.bx, id],
+  })),
   setActiveSetup: (idx) => set({ activeSetupIdx: idx }),
 
   addSetup: () => set((s) => {

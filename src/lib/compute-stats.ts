@@ -41,6 +41,8 @@ import {
   MUNDUS_SLUG_MAP,
   FOOD_VALUES,
   BATTLE_SPIRIT_RECOVERY_MULT,
+  LARGE_ARMOR_SLOTS,
+  SMALL_ARMOR_ENCHANT_FACTOR,
   resolveStatKey,
   type ArmorWeight,
 } from "@/lib/eso-bonuses";
@@ -183,7 +185,12 @@ function applyGear(
   const bar1Types = new Set<string>();
 
   for (const piece of gear) {
-    if (!piece.id) continue;
+    // Skip pieces that have absolutely nothing to contribute:
+    //   no set (id), no weapon type (wp), no enchant (e).
+    // - Armor/jewelry with only a set: id is truthy → not skipped ✅
+    // - Weapon with type but no set: wp is truthy → not skipped ✅ (weapon-type bonus fires)
+    // - Armor with enchant but no set: e is truthy → not skipped ✅ (enchant fires)
+    if (!piece.id && !piece.wp && !piece.e) continue;
 
     const shield    = piece.wp === "shield";
     const onWeapon  = isWeapon(piece.s) && !shield;
@@ -206,6 +213,11 @@ function applyGear(
       if (piece.t === "divines" && onArmor && !shield) {
         divinesPieces += 1;
       } else if (onWeapon) {
+        // Weapon traits from both bars are included in the "stat sheet" view.
+        // This matches the UESP build editor display where all equipped items
+        // contribute passively (defending on Bar 2 adds resistance even when
+        // viewing Bar 1 damage values). A future per-bar stat view would need
+        // to filter by active bar here.
         const contrib = WEAPON_TRAIT_VALUES[piece.t];
         if (contrib) {
           const setName = getSet(piece.id)?.name ?? piece.id;
@@ -221,8 +233,12 @@ function applyGear(
     if (piece.e && !onWeapon) {
       const base = ENCHANT_VALUES[piece.e];
       if (base) {
-        let mult = 1;
-        if (piece.t === "infused-armor"   && onArmor)   mult = 1 + INFUSED_ARMOR_GOLD;
+        // Large armor slots (head/chest/legs) and shields get full glyph potency;
+        // small slots (shoulders/hands/waist/feet) get ~40.5% potency.
+        const isLargeSlot = !onArmor || LARGE_ARMOR_SLOTS.has(piece.s ?? "") || shield;
+        const sizeFactor  = isLargeSlot ? 1 : SMALL_ARMOR_ENCHANT_FACTOR;
+        let mult = sizeFactor;
+        if (piece.t === "infused-armor"   && onArmor)   mult = sizeFactor * (1 + INFUSED_ARMOR_GOLD);
         if (piece.t === "infused-jewelry" && onJewelry) mult = 1 + INFUSED_JEWELRY_GOLD;
         const scaled = Object.fromEntries(
           Object.entries(base).map(([k, v]) => [k, Math.round((v as number) * mult)]),
@@ -276,7 +292,7 @@ export function computeStats(build: Build): ComputeResult {
 
   // ── 2. Attribute points — Health: 122/pt, Magicka/Stamina: 111/pt ──
   // Source: UESP g_EsoBuildRules.stats formulas.
-  const ap = build.a.attrPoints ?? [0, 0, 64];
+  const ap = build.a.attrPoints ?? [0, 0, 0];
   const attrContrib: Partial<ComputedStats> = {};
   if (ap[0]) attrContrib.maxHealth  = ap[0] * ATTR_PER_POINT_HEALTH;
   if (ap[1]) attrContrib.maxMagicka = ap[1] * ATTR_PER_POINT_MAGSAM;
@@ -438,8 +454,11 @@ export function computeStats(build: Build): ComputeResult {
   }
 
   // ── 11. Weapon line passives ──────────────────────────────────────────
+  // Fires based on bar 1 main-hand weapon type.
+  // requiresBarType: Twin Blade and Blunt passives are Dual Wield-only.
   for (const [passiveId, def] of Object.entries(WEAPON_LINE_PASSIVE)) {
-    if (!bar1Types.has(def.weaponType)) continue;
+    if (mh1Type !== def.weaponType) continue;
+    if (def.requiresBarType && barType !== def.requiresBarType) continue;
     acc.add(`Passive: ${passiveId}`, def.contrib);
   }
 

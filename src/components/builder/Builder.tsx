@@ -17,6 +17,7 @@ import MasteriesTab    from "./tabs/MasteriesTab";
 import CpTab           from "./tabs/CpTab";
 import AttributesTab   from "./tabs/AttributesTab";
 import ConsumablesTab  from "./tabs/ConsumablesTab";
+import BuffsTab        from "./buffs/BuffsTab";
 
 // ── MetaHeader ────────────────────────────────────────────────────────────────
 
@@ -129,6 +130,7 @@ function TabBody({ tab }: { tab: TabKey }) {
     case "cp":          return <CpTab />;
     case "attributes":  return <AttributesTab />;
     case "consumables": return <ConsumablesTab />;
+    case "buffs":       return <BuffsTab />;
   }
 }
 

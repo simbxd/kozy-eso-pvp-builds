@@ -131,15 +131,23 @@ const WEAPON_LABELS: Record<WeaponPiece["slot"], string> = {
 };
 
 const WEAPON_TYPES: SelectItem[] = [
-  { id: "one-hand-and-shield", label: "Sword & Shield" },
-  { id: "dual-wield",          label: "Dual Wield"     },
-  { id: "two-handed",          label: "Two Handed"     },
+  // ── One-Handed ────────────────────────────────────────────────────────
+  { id: "sword",   label: "Sword"   },
+  { id: "axe",     label: "Axe"     },
+  { id: "mace",    label: "Mace"    },
+  { id: "dagger",  label: "Dagger"  },
+  // ── Two-Handed ────────────────────────────────────────────────────────
+  { id: "2h-sword", label: "2H Sword" },
+  { id: "2h-axe",   label: "2H Axe"   },
+  { id: "2h-mace",  label: "2H Mace"  },
+  // ── Ranged / Magical ──────────────────────────────────────────────────
   { id: "bow",                 label: "Bow"            },
   { id: "inferno-staff",       label: "Inferno Staff"  },
   { id: "lightning-staff",     label: "Lightning Staff"},
   { id: "ice-staff",           label: "Ice Staff"      },
   { id: "restoration-staff",   label: "Resto Staff"    },
-  { id: "shield",              label: "Shield"         },
+  // ── Off-Hand ──────────────────────────────────────────────────────────
+  { id: "shield", label: "Shield" },
 ];
 
 function WeaponRow({ piece }: { piece: WeaponPiece }) {

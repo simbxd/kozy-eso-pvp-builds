@@ -16,7 +16,7 @@ export function emptyBuild(): Build {
     ],
     cp: [],
     a: {
-      attrPoints: [0, 0, 64],
+      attrPoints: [0, 0, 0],
     },
     bs: true,
   };
