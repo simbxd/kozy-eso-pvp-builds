@@ -4,6 +4,9 @@ import { T, F } from "./index";
 import { skillsIndex } from "@/lib/eso-data";
 import type { EsoSkillIndex } from "@/types/eso";
 import skillLinesJson from "@/data/eso/skill-lines-index.json";
+import { useEditorStore } from "../state";
+import { GRIMOIRE_MAP, AFFIX_MAP } from "@/lib/scribing-defs";
+import type { ScribingSlot } from "../state";
 
 // ── Static data ───────────────────────────────────────────────────────────────
 
@@ -177,13 +180,17 @@ function SearchBar({ value, onChange, placeholder = "Search…" }: {
 
 // ── GroupsView ────────────────────────────────────────────────────────────────
 
-function GroupsView({ groups, expanded, onToggle, onSelectLine, search, noClassLines }: {
+function GroupsView({
+  groups, expanded, onToggle, onSelectLine, onSelectDirect, search, noClassLines, scribingSlots,
+}: {
   groups: GroupDef[];
   expanded: Set<string>;
   onToggle: (id: string) => void;
   onSelectLine: (lineId: string, lineName: string) => void;
+  onSelectDirect: (id: string) => void;
   search: string;
   noClassLines: boolean;
+  scribingSlots: ScribingSlot[];
 }) {
   const q = search.trim().toLowerCase();
   const visible = groups.map((g) => ({
@@ -191,8 +198,90 @@ function GroupsView({ groups, expanded, onToggle, onSelectLine, search, noClassL
     lines: q ? g.lines.filter((l) => l.name.toLowerCase().includes(q)) : g.lines,
   })).filter((g) => g.lines.length > 0);
 
+  // Scribing slots that are configured (have a grimoire set)
+  const configuredScribing = scribingSlots
+    .map((slot, i) => ({ slot, i }))
+    .filter(({ slot }) => !!slot.grimoire);
+
+  // Filter scribing slots by search
+  const visibleScribing = q
+    ? configuredScribing.filter(({ slot }) => {
+        const g = GRIMOIRE_MAP.get(slot.grimoire);
+        return g?.name.toLowerCase().includes(q) || g?.skill_line.toLowerCase().includes(q);
+      })
+    : configuredScribing;
+
   return (
     <div style={{ overflowY: "auto", flex: 1 }}>
+
+      {/* ── Scribing slots section ── */}
+      {visibleScribing.length > 0 && (
+        <div>
+          <div style={{
+            padding: "8px 16px 6px",
+            background: "rgba(212,164,74,0.05)",
+            borderBottom: `1px solid ${T.edge}`,
+            display: "flex", alignItems: "center", gap: 8,
+          }}>
+            <span style={{
+              fontFamily: F.mono, fontSize: 9, letterSpacing: "0.28em",
+              color: "#d4a44a", textTransform: "uppercase",
+            }}>Scribing Skills</span>
+            <span style={{
+              fontFamily: F.mono, fontSize: 8, letterSpacing: "0.14em",
+              color: T.inkFaint,
+            }}>Gold Road</span>
+          </div>
+          {visibleScribing.map(({ slot, i }) => {
+            const g = GRIMOIRE_MAP.get(slot.grimoire);
+            const a = slot.affix ? AFFIX_MAP.get(slot.affix) : undefined;
+            return (
+              <button
+                key={i}
+                type="button"
+                onClick={() => onSelectDirect(`@scr:${i}`)}
+                style={{
+                  width: "100%", display: "flex", alignItems: "center", gap: 12,
+                  padding: "10px 16px", textAlign: "left",
+                  background: "transparent",
+                  border: "none", borderBottom: `1px solid ${T.edge}`, cursor: "pointer",
+                }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(212,164,74,0.07)"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "transparent"; }}
+              >
+                {g?.icon && (
+                  <img
+                    src={g.icon} alt=""
+                    style={{ width: 32, height: 32, borderRadius: "50%", flexShrink: 0, opacity: 0.9,
+                      border: "1px solid rgba(212,164,74,0.4)" }}
+                    onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
+                  />
+                )}
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{
+                    fontFamily: F.cinzel, fontWeight: 600, fontSize: 14,
+                    color: "#d4a44a",
+                  }}>
+                    {g?.name ?? "Scribing Skill"}{" "}
+                    <span style={{ fontFamily: F.mono, fontSize: 9, color: T.inkFaint, letterSpacing: "0.12em" }}>
+                      (Slot {i + 1})
+                    </span>
+                  </div>
+                  <div style={{
+                    fontFamily: F.mono, fontSize: 9, letterSpacing: "0.12em",
+                    color: T.inkMute, marginTop: 2,
+                  }}>
+                    {g?.skill_line ?? ""}
+                    {a ? ` · ${a.hint}` : ""}
+                  </div>
+                </div>
+                <span style={{ fontFamily: F.mono, fontSize: 12, color: T.inkFaint }}>›</span>
+              </button>
+            );
+          })}
+        </div>
+      )}
+
       {/* No class lines hint */}
       {noClassLines && !q && (
         <div style={{
@@ -266,7 +355,7 @@ function GroupsView({ groups, expanded, onToggle, onSelectLine, search, noClassL
         );
       })}
 
-      {visible.length === 0 && q && (
+      {visible.length === 0 && visibleScribing.length === 0 && q && (
         <div style={{
           padding: "24px 16px", textAlign: "center",
           fontFamily: F.mono, fontSize: 11, color: T.inkMute,
@@ -475,6 +564,9 @@ export function SkillLinePicker({
   const [search, setSearch]     = useState("");
   const [expanded, setExpanded] = useState<Set<string>>(() => new Set<string>());
 
+  // Read scribing slots from store (to surface them in groups view)
+  const scribing = useEditorStore((s) => s.setups[s.activeSetupIdx].scribing);
+
   const noClassLines = subclasses.filter(Boolean).length === 0;
   const groups = useMemo(() => buildGroups(subclasses), [subclasses]);
 
@@ -504,9 +596,10 @@ export function SkillLinePicker({
     setView("skills"); setSearch("");
   };
 
-  const handleSelect = (id: string) => {
+  const handleSelect = useCallback((id: string) => {
     onSelect(id); onClose(); reset();
-  };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [onSelect, onClose]);
 
   return (
     <Dialog.Root open={open} onOpenChange={handleOpenChange}>
@@ -539,8 +632,10 @@ export function SkillLinePicker({
               expanded={expanded}
               onToggle={handleToggle}
               onSelectLine={handleSelectLine}
+              onSelectDirect={handleSelect}
               search={search}
               noClassLines={noClassLines}
+              scribingSlots={scribing}
             />
           ) : (
             <SkillsView
