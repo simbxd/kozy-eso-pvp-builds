@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import * as Popover from "@radix-ui/react-popover";
 import { useEditorStore } from "../state";
 import { T, F, Diamond } from "../atoms";
 import { SkillLinePicker, ALL_CLASS_LINES } from "../atoms/SkillLinePicker";
@@ -6,7 +7,7 @@ import { SearchSelect, type SelectItem } from "../atoms/SearchSelect";
 import { skillsIndex } from "@/lib/eso-data";
 import {
   GRIMOIRES, FOCI, SIGNATURES, AFFIXES,
-  GRIMOIRE_MAP, AFFIX_MAP,
+  GRIMOIRE_MAP, FOCUS_MAP, SIGNATURE_MAP, AFFIX_MAP,
 } from "@/lib/scribing-defs";
 import type { ScribingSlot } from "../state";
 
@@ -48,7 +49,7 @@ const LINE_ITEMS: SelectItem[] = ALL_CLASS_LINES.map((l) => ({
   badge: l.class,
 }));
 
-// ── ClassLinePickers (top of tab) ─────────────────────────────────────────────
+// ── ClassLinePickers ──────────────────────────────────────────────────────────
 
 function ClassLinePickers() {
   const subclasses = useEditorStore((s) => s.meta.subclasses);
@@ -120,12 +121,10 @@ function SkillCell({
   const scribing = useEditorStore((s) => s.setups[s.activeSetupIdx].scribing);
   const [open, setOpen] = useState(false);
 
-  // Check if this slot holds a scribing skill reference
   const scrIdx  = id.startsWith("@scr:") ? parseInt(id.slice(5), 10) : -1;
   const scrSlot = scrIdx >= 0 ? (scribing[scrIdx] ?? null) : null;
   const grimoire = scrSlot?.grimoire ? GRIMOIRE_MAP.get(scrSlot.grimoire) : null;
 
-  // Regular skill lookup (only when not a scribing ref)
   const skill = useMemo(
     () => (scrIdx < 0 && id ? skillsIndex.find((s) => s.id === id) : null),
     [id, scrIdx],
@@ -134,22 +133,18 @@ function SkillCell({
   const kind    = ult ? "Ultimate" : "Active";
   const slotted = !!id;
 
-  // Display values
   const displayIcon = scrIdx >= 0 ? (grimoire?.icon ?? null) : (skill?.icon ?? null);
   const displayName = scrIdx >= 0
     ? (grimoire ? `${grimoire.name} (Scribe)` : `Scribe ${scrIdx + 1}`)
     : (skill?.name ?? null);
 
-  const titleText = displayName ?? (ult ? "Set ultimate" : `Set slot ${idx + 1}`);
-
   return (
     <>
       <div style={{ display: "flex", flexDirection: "column", gap: 6, alignItems: "center" }}>
-        {/* Clickable skill box */}
         <button
           type="button"
           onClick={() => setOpen(true)}
-          title={titleText}
+          title={displayName ?? (ult ? "Set ultimate" : `Set slot ${idx + 1}`)}
           style={{
             position: "relative", width: 64, height: 64,
             borderRadius: "50%",
@@ -161,36 +156,29 @@ function SkillCell({
               : "linear-gradient(135deg, #1a0e3d 0%, #0e0626 100%)",
             cursor: "pointer", padding: 0,
             display: "flex", alignItems: "center", justifyContent: "center",
-            overflow: "hidden",
-            outline: "none",
+            overflow: "hidden", outline: "none",
           }}
         >
           {displayIcon ? (
-            <img
-              src={displayIcon} alt={displayName ?? ""}
+            <img src={displayIcon} alt={displayName ?? ""}
               style={{ width: 64, height: 64, borderRadius: "50%" }}
-              onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
-            />
+              onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
           ) : (
             <span style={{
-              fontFamily: F.cinzel, fontSize: scrIdx >= 0 ? 14 : 22,
-              color: slotted
-                ? (scrIdx >= 0 ? "#d4a44a" : T.accentSoft)
-                : T.edgeStrong,
+              fontFamily: F.cinzel,
+              fontSize: scrIdx >= 0 ? 14 : 22,
+              color: slotted ? (scrIdx >= 0 ? "#d4a44a" : T.accentSoft) : T.edgeStrong,
             }}>
               {scrIdx >= 0 ? "✦" : "◇"}
             </span>
           )}
-          {/* Hover overlay */}
           <div className="skill-hover-overlay" style={{
             position: "absolute", inset: 0,
             background: "rgba(139,92,246,0.15)",
-            opacity: 0, transition: "opacity 0.1s",
-            zIndex: 2,
+            opacity: 0, transition: "opacity 0.1s", zIndex: 2,
           }} />
         </button>
 
-        {/* Slot label */}
         <div style={{
           fontFamily: F.mono, fontSize: 9, letterSpacing: "0.22em",
           color: ult ? T.accentSoft : T.inkMute, textTransform: "uppercase",
@@ -200,7 +188,6 @@ function SkillCell({
           {displayName ?? (ult ? "Ult." : `Slot ${idx + 1}`)}
         </div>
 
-        {/* Clear button (when slotted) */}
         {slotted && (
           <button
             type="button"
@@ -208,8 +195,7 @@ function SkillCell({
             style={{
               background: "transparent", border: "none", cursor: "pointer",
               fontFamily: F.mono, fontSize: 9, letterSpacing: "0.18em",
-              color: T.inkFaint, textTransform: "uppercase",
-              padding: 0, lineHeight: 1,
+              color: T.inkFaint, textTransform: "uppercase", padding: 0, lineHeight: 1,
             }}
             onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.color = "#ef4444"; }}
             onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.color = T.inkFaint; }}
@@ -231,10 +217,8 @@ function SkillCell({
 // ── BarRow ────────────────────────────────────────────────────────────────────
 
 function BarRow({ title, bar, skills, subclasses }: {
-  title: string;
-  bar: 0 | 1;
-  skills: string[];
-  subclasses: [string, string, string];
+  title: string; bar: 0 | 1;
+  skills: string[]; subclasses: [string, string, string];
 }) {
   return (
     <div>
@@ -260,220 +244,294 @@ function BarRow({ title, bar, skills, subclasses }: {
   );
 }
 
-// ── ScribingSlotRow ───────────────────────────────────────────────────────────
+// ── ScribingCell — circle + popover configurator ──────────────────────────────
 
-function ScribingSlotRow({ slot, idx }: { slot: ScribingSlot; idx: number }) {
+function ScribingCell({ slot, idx }: { slot: ScribingSlot; idx: number }) {
   const patchSlot  = useEditorStore((s) => s.patchScribingSlot);
   const removeSlot = useEditorStore((s) => s.removeScribingSlot);
+  const [open, setOpen] = useState(false);
 
-  const affix      = slot.affix ? AFFIX_MAP.get(slot.affix) : undefined;
-  const hasBufRef  = !!(affix?.buff_ids?.length);
+  const grimoire  = slot.grimoire  ? GRIMOIRE_MAP.get(slot.grimoire)   : undefined;
+  const focus     = slot.focus     ? FOCUS_MAP.get(slot.focus)         : undefined;
+  const signature = slot.signature ? SIGNATURE_MAP.get(slot.signature) : undefined;
+  const affix     = slot.affix     ? AFFIX_MAP.get(slot.affix)         : undefined;
+
+  const configured = !!grimoire;
 
   return (
-    <div style={{
-      display: "flex", alignItems: "center", gap: 8,
-      padding: "8px 0",
-      borderBottom: `1px solid ${T.edge}`,
-    }}>
-      {/* Slot index */}
-      <div style={{
-        width: 16, flexShrink: 0, textAlign: "center",
-        fontFamily: F.mono, fontSize: 9, color: T.inkFaint,
-      }}>{idx + 1}</div>
+    <Popover.Root open={open} onOpenChange={setOpen}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 6, alignItems: "center" }}>
 
-      {/* Grimoire */}
-      <div style={{ flex: "0 0 150px" }}>
-        <SearchSelect
-          value={slot.grimoire}
-          onChange={(v) => patchSlot(idx, { grimoire: v })}
-          items={GRIMOIRE_ITEMS}
-          placeholder="Grimoire"
-          searchPlaceholder="Search grimoire…"
-          height={32}
-          popoverWidth={220}
-        />
-      </div>
+        {/* Circle trigger */}
+        <Popover.Trigger asChild>
+          <button
+            type="button"
+            title={grimoire ? `${grimoire.name} (Scribing)` : `Configure Scribing Slot ${idx + 1}`}
+            style={{
+              position: "relative", width: 64, height: 64,
+              borderRadius: "50%",
+              border: `2px solid ${configured ? "#d4a44a" : "rgba(212,164,74,0.35)"}`,
+              background: configured
+                ? "linear-gradient(135deg, #3d2a0a 0%, #1a1006 100%)"
+                : "linear-gradient(135deg, #1a1006 0%, #0d0a04 100%)",
+              cursor: "pointer", padding: 0,
+              display: "flex", alignItems: "center", justifyContent: "center",
+              overflow: "hidden", outline: "none",
+              boxShadow: open ? `0 0 0 2px rgba(212,164,74,0.4)` : "none",
+            }}
+          >
+            {grimoire?.icon ? (
+              <img src={grimoire.icon} alt={grimoire.name}
+                style={{ width: 64, height: 64, borderRadius: "50%" }}
+                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
+            ) : (
+              <span style={{ fontFamily: F.cinzel, fontSize: 18, color: "rgba(212,164,74,0.45)" }}>✦</span>
+            )}
+            <div className="skill-hover-overlay" style={{
+              position: "absolute", inset: 0,
+              background: "rgba(212,164,74,0.12)",
+              opacity: 0, transition: "opacity 0.1s", zIndex: 2,
+            }} />
+          </button>
+        </Popover.Trigger>
 
-      {/* Focus */}
-      <div style={{ flex: "0 0 125px" }}>
-        <SearchSelect
-          value={slot.focus}
-          onChange={(v) => patchSlot(idx, { focus: v })}
-          items={FOCUS_ITEMS}
-          placeholder="Focus"
-          searchPlaceholder="Search focus…"
-          searchable={false}
-          height={32}
-          popoverWidth={180}
-        />
-      </div>
+        {/* Label */}
+        <div style={{
+          fontFamily: F.mono, fontSize: 9, letterSpacing: "0.18em",
+          color: configured ? "#d4a44a" : "rgba(212,164,74,0.4)",
+          textTransform: "uppercase", textAlign: "center",
+          maxWidth: 80, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+        }}>
+          {grimoire?.name ?? `Scribe ${idx + 1}`}
+        </div>
 
-      {/* Signature */}
-      <div style={{ flex: "0 0 130px" }}>
-        <SearchSelect
-          value={slot.signature}
-          onChange={(v) => patchSlot(idx, { signature: v })}
-          items={SIGNATURE_ITEMS}
-          placeholder="Signature"
-          searchPlaceholder="Search signature…"
-          searchable={false}
-          height={32}
-          popoverWidth={210}
-        />
-      </div>
-
-      {/* Affix */}
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <SearchSelect
-          value={slot.affix}
-          onChange={(v) => patchSlot(idx, { affix: v })}
-          items={AFFIX_ITEMS}
-          placeholder="Affix"
-          searchPlaceholder="Search affix…"
-          searchable={false}
-          height={32}
-          popoverWidth={240}
-        />
-      </div>
-
-      {/* Buff cross-reference badge */}
-      {hasBufRef && (
-        <div
-          title={`Provides: ${affix!.buff_ids!.join(", ")} — toggle in Buffs tab`}
+        {/* Remove */}
+        <button
+          type="button"
+          onClick={() => removeSlot(idx)}
           style={{
-            flexShrink: 0,
-            width: 7, height: 7, borderRadius: "50%",
-            background: T.accentSoft,
-            boxShadow: `0 0 6px ${T.accent}`,
-            cursor: "default",
+            background: "transparent", border: "none", cursor: "pointer",
+            fontFamily: F.mono, fontSize: 9, letterSpacing: "0.18em",
+            color: T.inkFaint, textTransform: "uppercase", padding: 0, lineHeight: 1,
           }}
-        />
-      )}
+          onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.color = "#ef4444"; }}
+          onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.color = T.inkFaint; }}
+        >remove</button>
+      </div>
 
-      {/* Remove */}
-      <button
-        type="button"
-        onClick={() => removeSlot(idx)}
-        style={{
-          flexShrink: 0, width: 22, height: 22,
-          background: "transparent", border: `1px solid ${T.edge}`,
-          cursor: "pointer",
-          display: "flex", alignItems: "center", justifyContent: "center",
-          fontFamily: F.mono, fontSize: 14, color: T.inkMute,
-          lineHeight: 1,
-        }}
-        onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.borderColor = "#ef4444"; (e.currentTarget as HTMLButtonElement).style.color = "#ef4444"; }}
-        onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.borderColor = T.edge; (e.currentTarget as HTMLButtonElement).style.color = T.inkMute; }}
-      >×</button>
-    </div>
+      {/* Config popover */}
+      <Popover.Portal>
+        <Popover.Content
+          sideOffset={10}
+          align="center"
+          style={{
+            width: 300, zIndex: 9999,
+            background: "#0e0b1a",
+            border: `1px solid rgba(212,164,74,0.35)`,
+            boxShadow: "0 12px 40px rgba(0,0,0,0.8)",
+            padding: "14px 14px 12px",
+          }}
+        >
+          {/* Header */}
+          <div style={{
+            display: "flex", alignItems: "center", gap: 8, marginBottom: 12,
+          }}>
+            <span style={{
+              fontFamily: F.mono, fontSize: 9, letterSpacing: "0.28em",
+              color: "#d4a44a", textTransform: "uppercase",
+            }}>Slot {idx + 1} · Scribing</span>
+            <div style={{ flex: 1, height: 1, background: "rgba(212,164,74,0.2)" }} />
+          </div>
+
+          {/* Pickers */}
+          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+            {/* Grimoire */}
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <div style={{
+                width: 60, flexShrink: 0,
+                fontFamily: F.mono, fontSize: 8, letterSpacing: "0.2em",
+                color: T.inkMute, textTransform: "uppercase",
+              }}>Grimoire</div>
+              <div style={{ flex: 1 }}>
+                <SearchSelect
+                  value={slot.grimoire}
+                  onChange={(v) => patchSlot(idx, { grimoire: v })}
+                  items={GRIMOIRE_ITEMS}
+                  placeholder="— select —"
+                  searchPlaceholder="Search grimoire…"
+                  height={30}
+                  popoverWidth={240}
+                />
+              </div>
+            </div>
+
+            {/* Focus */}
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <div style={{
+                width: 60, flexShrink: 0,
+                fontFamily: F.mono, fontSize: 8, letterSpacing: "0.2em",
+                color: T.inkMute, textTransform: "uppercase",
+              }}>Focus</div>
+              <div style={{ flex: 1 }}>
+                <SearchSelect
+                  value={slot.focus}
+                  onChange={(v) => patchSlot(idx, { focus: v })}
+                  items={FOCUS_ITEMS}
+                  placeholder="— select —"
+                  searchable={false}
+                  height={30}
+                  popoverWidth={210}
+                />
+              </div>
+            </div>
+
+            {/* Signature */}
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <div style={{
+                width: 60, flexShrink: 0,
+                fontFamily: F.mono, fontSize: 8, letterSpacing: "0.2em",
+                color: T.inkMute, textTransform: "uppercase",
+              }}>Signature</div>
+              <div style={{ flex: 1 }}>
+                <SearchSelect
+                  value={slot.signature}
+                  onChange={(v) => patchSlot(idx, { signature: v })}
+                  items={SIGNATURE_ITEMS}
+                  placeholder="— select —"
+                  searchable={false}
+                  height={30}
+                  popoverWidth={220}
+                />
+              </div>
+            </div>
+
+            {/* Affix */}
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <div style={{
+                width: 60, flexShrink: 0,
+                fontFamily: F.mono, fontSize: 8, letterSpacing: "0.2em",
+                color: T.inkMute, textTransform: "uppercase",
+              }}>Affix</div>
+              <div style={{ flex: 1 }}>
+                <SearchSelect
+                  value={slot.affix}
+                  onChange={(v) => patchSlot(idx, { affix: v })}
+                  items={AFFIX_ITEMS}
+                  placeholder="— select —"
+                  searchable={false}
+                  height={30}
+                  popoverWidth={240}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Summary line */}
+          {(focus || signature || affix) && (
+            <div style={{
+              marginTop: 10, padding: "7px 8px",
+              background: "rgba(212,164,74,0.05)",
+              border: "1px solid rgba(212,164,74,0.15)",
+              fontFamily: F.mono, fontSize: 8, letterSpacing: "0.12em",
+              color: "rgba(212,164,74,0.7)", lineHeight: 1.6,
+            }}>
+              {[
+                focus     ? `${focus.damage_type ?? focus.name}`   : null,
+                signature ? signature.hint                         : null,
+                affix     ? affix.hint                             : null,
+              ].filter(Boolean).join(" · ")}
+            </div>
+          )}
+
+          {/* Hint: slot on bar */}
+          {grimoire && (
+            <div style={{
+              marginTop: 8,
+              fontFamily: F.mono, fontSize: 8, letterSpacing: "0.12em",
+              color: T.inkFaint, lineHeight: 1.5,
+            }}>
+              ✦ Click a bar slot → select this skill from{" "}
+              <span style={{ color: "rgba(212,164,74,0.6)" }}>Scribing Skills</span> at top of picker
+            </div>
+          )}
+
+          <Popover.Arrow style={{ fill: "rgba(212,164,74,0.35)" }} />
+        </Popover.Content>
+      </Popover.Portal>
+    </Popover.Root>
   );
 }
 
-// ── ScribingSection ───────────────────────────────────────────────────────────
+// ── ScribingRow ───────────────────────────────────────────────────────────────
 
-function ScribingSection() {
+function ScribingRow() {
   const scribing = useEditorStore((s) => s.setups[s.activeSetupIdx].scribing);
   const addSlot  = useEditorStore((s) => s.addScribingSlot);
 
-  const buffRefs = useMemo(() => {
-    const ids: string[] = [];
-    for (const sl of scribing) {
-      const a = sl.affix ? AFFIX_MAP.get(sl.affix) : undefined;
-      if (a?.buff_ids) ids.push(...a.buff_ids);
-    }
-    return [...new Set(ids)];
-  }, [scribing]);
-
   return (
-    <div style={{ flexShrink: 0 }}>
-      {/* Header */}
-      <div style={{
-        display: "flex", alignItems: "center", justifyContent: "space-between",
-        marginBottom: 12, gap: 12,
-      }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <Diamond size={6} />
-          <div style={{
-            fontFamily: F.cinzel, fontWeight: 600, fontSize: 14,
-            letterSpacing: "0.32em", color: "#d4a44a", textTransform: "uppercase",
-          }}>Scribing</div>
-          <div style={{
-            fontFamily: F.mono, fontSize: 9, letterSpacing: "0.24em",
-            color: "#d4a44a", textTransform: "uppercase",
-            border: "1px solid rgba(212,164,74,0.3)", padding: "2px 6px",
-          }}>Gold Road</div>
-          <div style={{ flex: 1, height: 1, background: "linear-gradient(90deg, rgba(212,164,74,0.4), transparent)", width: 60 }} />
-          <div style={{
-            fontFamily: F.mono, fontSize: 10, letterSpacing: "0.28em",
-            color: T.inkMute, textTransform: "uppercase",
-          }}>up to 3</div>
-        </div>
+    <div>
+      {/* Header — matches BarRow style */}
+      <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 18 }}>
+        <Diamond size={6} color="#d4a44a" />
+        <div style={{
+          fontFamily: F.cinzel, fontWeight: 600, fontSize: 14,
+          letterSpacing: "0.32em", color: "#d4a44a", textTransform: "uppercase",
+        }}>Scribing</div>
+        <div style={{
+          fontFamily: F.mono, fontSize: 9, letterSpacing: "0.24em",
+          color: "#d4a44a", textTransform: "uppercase",
+          border: "1px solid rgba(212,164,74,0.3)", padding: "1px 5px",
+          lineHeight: "16px",
+        }}>Gold Road</div>
+        <div style={{ flex: 1, height: 1, background: "linear-gradient(90deg, rgba(212,164,74,0.4), transparent)" }} />
+        <div style={{
+          fontFamily: F.mono, fontSize: 10, letterSpacing: "0.28em",
+          color: T.inkMute, textTransform: "uppercase",
+        }}>up to 3</div>
+      </div>
 
+      {/* Cells row */}
+      <div style={{ display: "flex", gap: 18, alignItems: "flex-start" }}>
+        {scribing.map((slot, i) => (
+          <ScribingCell key={i} slot={slot} idx={i} />
+        ))}
+
+        {/* Add slot button — same size as skill circle */}
         {scribing.length < 3 && (
-          <button
-            type="button"
-            onClick={addSlot}
-            style={{
-              flexShrink: 0,
-              background: "transparent",
-              border: `1px solid ${T.edgeStrong}`,
-              cursor: "pointer",
-              padding: "4px 10px",
-              fontFamily: F.mono, fontSize: 9, letterSpacing: "0.22em",
-              color: T.inkMute, textTransform: "uppercase",
-            }}
-            onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.borderColor = "#d4a44a"; (e.currentTarget as HTMLButtonElement).style.color = "#d4a44a"; }}
-            onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.borderColor = T.edgeStrong; (e.currentTarget as HTMLButtonElement).style.color = T.inkMute; }}
-          >+ Add</button>
+          <div style={{ display: "flex", flexDirection: "column", gap: 6, alignItems: "center" }}>
+            <button
+              type="button"
+              onClick={addSlot}
+              title="Add scribing skill"
+              style={{
+                width: 64, height: 64, borderRadius: "50%",
+                border: `2px dashed rgba(212,164,74,0.3)`,
+                background: "transparent",
+                cursor: "pointer",
+                display: "flex", alignItems: "center", justifyContent: "center",
+                outline: "none",
+                color: "rgba(212,164,74,0.4)",
+                fontFamily: F.cinzel, fontSize: 24,
+                transition: "border-color 0.15s, color 0.15s",
+              }}
+              onMouseEnter={(e) => {
+                const el = e.currentTarget as HTMLButtonElement;
+                el.style.borderColor = "rgba(212,164,74,0.7)";
+                el.style.color = "rgba(212,164,74,0.8)";
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget as HTMLButtonElement;
+                el.style.borderColor = "rgba(212,164,74,0.3)";
+                el.style.color = "rgba(212,164,74,0.4)";
+              }}
+            >+</button>
+            <div style={{
+              fontFamily: F.mono, fontSize: 9, letterSpacing: "0.18em",
+              color: "rgba(212,164,74,0.35)", textTransform: "uppercase",
+            }}>Add</div>
+          </div>
         )}
       </div>
-
-      {/* Sub-header */}
-      <div style={{
-        fontFamily: F.mono, fontSize: 9, letterSpacing: "0.12em",
-        color: T.inkFaint, marginBottom: scribing.length > 0 ? 10 : 0,
-      }}>
-        Grimoire · Focus · Signature · Affix — configure here, then slot on a bar via the skill picker
-      </div>
-
-      {/* Empty state */}
-      {scribing.length === 0 && (
-        <div style={{
-          padding: "14px 0 4px",
-          fontFamily: F.mono, fontSize: 10, letterSpacing: "0.14em",
-          color: T.inkFaint,
-        }}>
-          No scribing skills — click Add to configure up to 3
-        </div>
-      )}
-
-      {/* Slot rows */}
-      {scribing.map((slot, i) => (
-        <ScribingSlotRow key={i} slot={slot} idx={i} />
-      ))}
-
-      {/* Buff cross-ref hint */}
-      {buffRefs.length > 0 && (
-        <div style={{
-          display: "flex", alignItems: "flex-start", gap: 8,
-          marginTop: 10, padding: "8px 10px",
-          background: "rgba(139,92,246,0.06)",
-          border: `1px solid rgba(139,92,246,0.15)`,
-        }}>
-          <div style={{
-            width: 6, height: 6, borderRadius: "50%", flexShrink: 0,
-            background: T.accentSoft, marginTop: 3,
-            boxShadow: `0 0 5px ${T.accent}`,
-          }} />
-          <div style={{
-            fontFamily: F.mono, fontSize: 9, letterSpacing: "0.14em",
-            color: T.inkMute, lineHeight: 1.6,
-          }}>
-            Affixes provide: {buffRefs.join(" · ")} — enable matching toggles in the{" "}
-            <span style={{ color: T.accentSoft }}>Buffs tab</span>.
-          </div>
-        </div>
-      )}
     </div>
   );
 }
@@ -493,12 +551,11 @@ export default function SkillsTab() {
         <BarRow title="Bar II · Back Bar"  bar={1} skills={bar2} subclasses={subclasses} />
 
         {/* Divider */}
-        <div style={{ height: 1, background: `linear-gradient(90deg, transparent, ${T.edge}, transparent)` }} />
+        <div style={{ height: 1, background: `linear-gradient(90deg, transparent, ${T.edge}, transparent)`, flexShrink: 0 }} />
 
-        <ScribingSection />
+        <ScribingRow />
       </div>
 
-      {/* Hover overlay style */}
       <style>{`
         button:hover .skill-hover-overlay { opacity: 1 !important; }
       `}</style>
