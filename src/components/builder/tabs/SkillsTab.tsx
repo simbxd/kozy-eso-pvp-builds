@@ -64,7 +64,7 @@ function ClassLineColumn() {
   return (
     <div style={{
       width: 300, flexShrink: 0,
-      display: "flex", flexDirection: "column", justifyContent: "space-between",
+      display: "flex", flexDirection: "column", gap: 20,
       paddingRight: 20,
       borderRight: `1px solid ${T.edge}`,
     }}>
@@ -541,7 +541,7 @@ export default function SkillsTab() {
 
   return (
     <>
-      <div style={{ display: "flex", gap: 24, height: "100%", alignItems: "stretch" }}>
+      <div style={{ display: "flex", gap: 24, height: "100%", alignItems: "flex-start" }}>
 
         {/* Left column — class lines */}
         <ClassLineColumn />
