@@ -339,7 +339,7 @@ function ScribingCell({ slot, idx }: { slot: ScribingSlot; idx: number }) {
             <span style={{
               fontFamily: F.mono, fontSize: 9, letterSpacing: "0.28em",
               color: "#d4a44a", textTransform: "uppercase",
-            }}>Slot {idx + 1} · Scribing</span>
+            }}>Scribing · Slot {idx + 1}</span>
             <div style={{ flex: 1, height: 1, background: "rgba(212,164,74,0.2)" }} />
           </div>
 
@@ -477,12 +477,6 @@ function ScribingRow() {
           fontFamily: F.cinzel, fontWeight: 600, fontSize: 14,
           letterSpacing: "0.32em", color: "#d4a44a", textTransform: "uppercase",
         }}>Scribing</div>
-        <div style={{
-          fontFamily: F.mono, fontSize: 9, letterSpacing: "0.24em",
-          color: "#d4a44a", textTransform: "uppercase",
-          border: "1px solid rgba(212,164,74,0.3)", padding: "1px 5px",
-          lineHeight: "16px",
-        }}>Gold Road</div>
         <div style={{ flex: 1, height: 1, background: "linear-gradient(90deg, rgba(212,164,74,0.4), transparent)" }} />
         <div style={{
           fontFamily: F.mono, fontSize: 10, letterSpacing: "0.28em",
