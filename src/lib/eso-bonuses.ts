@@ -94,7 +94,7 @@ export const TRAIT_VALUES: Record<string, Partial<ComputedStats>> = {
   // Armor
   "impenetrable":    { critResistance: 132 },
   "invigorating":    { healthRecovery: 16, magickaRecovery: 16, staminaRecovery: 16 },
-  "nirnhoned-armor": { physResist: 253, spellResist: 253 },
+  "nirnhoned-armor": { physResist: 301, spellResist: 301 },
   // Jewelry
   "healthy":         { maxHealth: 966 },
   "arcane":          { maxMagicka: 877 },
@@ -293,9 +293,10 @@ export const RACIAL: Record<string, Partial<ComputedStats>> = {
   // Excluded: -12% Sprint cost, +10% Sprint speed, heal-on-damage proc.
   orc:      { maxHealth: 1000, maxStamina: 1000, spellDmg: 258, weaponDmg: 258 },
 
-  // Redguard: +2000 Max Stamina (Wayfarer's Tenacity) + +1650 Max Stamina (Adrenaline Rush) = 3650 total.
-  // Excluded: +1550 Stam on ability use (every 5s), +1500 Stam Regen for 8s after dodge/block.
-  redguard: { maxStamina: 3650 },
+  // Redguard: +2000 Max Stamina (Conditioning passive).
+  // Excluded: Adrenaline Rush (restore 1005 Stam on hit/5s — proc, not flat stat),
+  //           stamina regen after dodge/block (combat mechanic).
+  redguard: { maxStamina: 2000 },
 };
 
 // ── CP slottable stars — flat contributions ─────────────────────────────────
@@ -408,26 +409,26 @@ export const UNDAUNTED_METTLE_PCT = 0.02;
 // UESP does not publish these in any accessible wiki page — they live in
 // esoitem.uesp.net (private item DB). Values below come from The Hist and
 // match community consensus across multiple patches. Kept as-is.
+// CP160 gold quality — source: ESO forums community data (VR16/CP160 DB patch)
+// Slot groups: chest (largest) · head/shoulders/legs/feet (equal) · hands · waist (smallest)
 export const ARMOR_BASE: Record<ArmorWeight, Record<string, number>> = {
   heavy: {
-    head: 1320, shoulders: 1320, chest: 3110,
-    hands: 1320, waist: 1320, legs: 2410, feet: 1320,
+    head: 2425, shoulders: 2425, chest: 2772,
+    hands: 1386, waist: 1039, legs: 2425, feet: 2425,
   },
   medium: {
-    head: 880, shoulders: 880, chest: 2073,
-    hands: 880, waist: 880, legs: 1607, feet: 880,
+    head: 1823, shoulders: 1823, chest: 2084,
+    hands: 1042, waist:  781, legs: 1823, feet: 1823,
   },
   light: {
-    head: 440, shoulders: 440, chest: 1037,
-    hands: 440, waist: 440, legs: 804, feet: 440,
+    head: 1221, shoulders: 1221, chest: 1396,
+    hands:  698, waist:  523, legs: 1221, feet: 1221,
   },
 };
 
-// Source: approximate value — verify in-game.
-// Analysis vs UESP 712953: with Minor Resolve buff active, physResist gap closes to -374.
-// Residual 374 could be SHIELD_BASE_ARMOR = 1985 → 2359 (+374), OR rounding/other.
-// Original estimate of ≈ 2797 was pre-Minor-Resolve analysis. True in-game value TBD.
-export const SHIELD_BASE_ARMOR = 1985;
+// Source: ESO forums community data (same thread as ARMOR_BASE, CP160 gold).
+// Non-reinforced gold shield = 1675. Reinforced = 1995 (~19% on shields vs 16% on armor).
+export const SHIELD_BASE_ARMOR = 1675;
 
 export function armorWeightFromSetType(setType: string): ArmorWeight | null {
   const t = setType.toLowerCase();
