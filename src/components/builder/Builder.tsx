@@ -4,6 +4,26 @@ import { decodeEditor } from "@/lib/editor-codec";
 import { T, F, Diamond, PillBtn } from "./atoms";
 import TabBar    from "./TabBar";
 import StatsPanel from "./StatsPanel";
+import skillLinesRaw from "@/data/eso/skill-lines-index.json";
+import racesRaw      from "@/data/eso/races-index.json";
+import mundusRaw     from "@/data/eso/mundus-index.json";
+
+// id→name lookups for MetaHeader display
+const SKILL_LINE_NAME = new Map(
+  (skillLinesRaw as { id: string; name: string }[]).map((sl) => [sl.id, sl.name])
+);
+const RACE_NAME = new Map(
+  (racesRaw as { id: string; name: string }[]).map((r) => [r.id, r.name])
+);
+const MUNDUS_NAME = new Map(
+  (mundusRaw as { id: string; name: string }[]).map((m) => [m.id, m.name])
+);
+const CLASS_NAME = new Map([
+  ["dragonknight", "Dragonknight"], ["sorcerer",    "Sorcerer"   ],
+  ["nightblade",   "Nightblade"  ], ["templar",     "Templar"    ],
+  ["warden",       "Warden"      ], ["necromancer", "Necromancer"],
+  ["arcanist",     "Arcanist"    ],
+]);
 
 // Tab panel imports
 import GeneralTab      from "./tabs/GeneralTab";
@@ -21,11 +41,10 @@ import BuffsTab        from "./buffs/BuffsTab";
 
 // ── MetaHeader ────────────────────────────────────────────────────────────────
 
-const MODES: Array<["cyro" | "bg" | "ic" | "duel", string]> = [
-  ["cyro", "Cyro"],
-  ["bg",   "BG"  ],
-  ["ic",   "IC"  ],
-  ["duel", "Duel"],
+const MODES: Array<[key: "cyro" | "bg" | "duel", label: string, extra?: string]> = [
+  ["cyro", "Cyro/IC"],
+  ["bg",   "BG"     ],
+  ["duel", "Duel"   ],
 ];
 
 function MetaHeader() {
@@ -48,12 +67,12 @@ function MetaHeader() {
         {meta.name || <span style={{ color: T.inkFaint, fontStyle: "italic", fontWeight: 400 }}>Untitled Build</span>}
       </div>
 
-      {/* Class · Race pills */}
+      {/* Class · Race · Mundus pills */}
       <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
         {[
-          ["Class",  meta.classId || "—"],
-          ["Race",   meta.race    || "—"],
-          ["Mundus", meta.mundus  || "—"],
+          ["Class",  meta.classId ? (CLASS_NAME.get(meta.classId)  ?? meta.classId)  : "—"],
+          ["Race",   meta.race    ? (RACE_NAME.get(meta.race)       ?? meta.race)     : "—"],
+          ["Mundus", meta.mundus  ? (MUNDUS_NAME.get(meta.mundus)   ?? meta.mundus)   : "—"],
         ].map(([label, val]) => (
           <div key={label} style={{ display: "flex", flexDirection: "column", gap: 2 }}>
             <div style={{
@@ -74,22 +93,25 @@ function MetaHeader() {
 
       {/* Subclasses */}
       <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
-        {meta.subclasses.map((sc, i) => (
-          <div key={i} style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-            <div style={{
-              fontFamily: F.mono, fontSize: 7, letterSpacing: "0.32em",
-              color: T.inkFaint, textTransform: "uppercase",
-            }}>Sub {["I", "II", "III"][i]}</div>
-            <div style={{
-              height: 24, padding: "0 8px",
-              display: "inline-flex", alignItems: "center",
-              border: `1px solid ${sc ? T.accentSoft + "66" : T.edge}`,
-              background: sc ? "rgba(139,92,246,0.10)" : "transparent",
-              fontFamily: F.display, fontStyle: sc ? "normal" : "italic",
-              fontSize: 12, color: sc ? T.accentSoft : T.inkFaint,
-            }}>{sc || "— none —"}</div>
-          </div>
-        ))}
+        {meta.subclasses.map((sc, i) => {
+          const name = sc ? (SKILL_LINE_NAME.get(sc) ?? sc) : null;
+          return (
+            <div key={i} style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+              <div style={{
+                fontFamily: F.mono, fontSize: 7, letterSpacing: "0.32em",
+                color: T.inkFaint, textTransform: "uppercase",
+              }}>Sub {["I", "II", "III"][i]}</div>
+              <div style={{
+                height: 24, padding: "0 8px",
+                display: "inline-flex", alignItems: "center",
+                border: `1px solid ${name ? T.accentSoft + "66" : T.edge}`,
+                background: name ? "rgba(139,92,246,0.10)" : "transparent",
+                fontFamily: F.display, fontStyle: name ? "normal" : "italic",
+                fontSize: 12, color: name ? T.accentSoft : T.inkFaint,
+              }}>{name || "— none —"}</div>
+            </div>
+          );
+        })}
       </div>
 
       {/* Spacer */}
@@ -106,7 +128,7 @@ function MetaHeader() {
         {MODES.map(([key, label]) => (
           <PillBtn
             key={key}
-            active={meta.mode === key}
+            active={key === "cyro" ? (meta.mode === "cyro" || meta.mode === "ic") : meta.mode === key}
             onClick={() => patchMeta({ mode: key })}
           >{label}</PillBtn>
         ))}

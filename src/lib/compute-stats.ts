@@ -221,7 +221,19 @@ function applyGear(
         const contrib = WEAPON_TRAIT_VALUES[piece.t];
         if (contrib) {
           const setName = getSet(piece.id)?.name ?? piece.id;
-          acc.add(`Trait: ${piece.t} (${setName})`, contrib);
+          // 2H weapons (2h melee, bow, staves) occupy both weapon slots in ESO
+          // and therefore give double the trait bonus of a 1H weapon.
+          const is2H = !!piece.wp && (
+            TWO_HANDED_TYPES.has(piece.wp) ||
+            STAFF_TYPES.has(piece.wp) ||
+            piece.wp === "bow"
+          );
+          const scaled = is2H
+            ? Object.fromEntries(
+                Object.entries(contrib).map(([k, v]) => [k, (v as number) * 2])
+              ) as Partial<ComputedStats>
+            : contrib;
+          acc.add(`Trait: ${piece.t} (${setName})`, scaled);
         }
       } else if (TRAIT_VALUES[piece.t]) {
         const setName = getSet(piece.id)?.name ?? piece.id;

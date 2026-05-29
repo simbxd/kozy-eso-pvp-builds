@@ -84,8 +84,8 @@ function buildFromEditor(
   // Attribute points — new store uses named keys; old system expects [H, M, S]
   const { health, magicka, stamina } = setup.attributes;
 
-  // Mundus: per-setup consumable overrides meta-level mundus
-  const mundus = setup.consumables.mundus || meta.mundus || undefined;
+  // Mundus: comes from meta (General tab selection)
+  const mundus = meta.mundus || undefined;
 
   return {
     v:  1,

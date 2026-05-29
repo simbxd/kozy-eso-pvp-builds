@@ -53,7 +53,6 @@ export type Setup = {
   };
   attributes: { health: number; magicka: number; stamina: number };
   consumables: {
-    mundus?: string;
     food?: string;
     potion?: string;
     poison?: string;
