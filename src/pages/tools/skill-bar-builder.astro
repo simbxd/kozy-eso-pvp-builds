@@ -297,6 +297,31 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
     margin: 0 0 12px;
   }
 
+  /* ESO-Hub description (async) */
+  #sbb-tip .sbb__tip-desc {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--color-text);
+    margin: 0 0 12px;
+  }
+  #sbb-tip .sbb__tip-desc--loading { display: none; }
+
+  /* ESO-Hub span colorization */
+  #sbb-tip span.buff          { color: #d4a44a; }
+  #sbb-tip span.debuff        { color: #a78bfa; }
+  #sbb-tip span.health        { color: #e07070; }
+  #sbb-tip span.stamina       { color: #86c47e; }
+  #sbb-tip span.magicka       { color: #7ab0e0; }
+  #sbb-tip span.magic-damage  { color: #a78bfa; }
+  #sbb-tip span.fire-damage,
+  #sbb-tip span.flame-damage  { color: #e07032; }
+  #sbb-tip span.frost-damage  { color: #7ab0e0; }
+  #sbb-tip span.shock-damage  { color: #d4d44a; }
+  #sbb-tip span.physical-damage,
+  #sbb-tip span.bleed-damage  { color: #c47e7e; }
+  #sbb-tip span.oblivion      { color: #9e5cf6; }
+
   /* ESO-Hub link */
   #sbb-tip .sbb__tip-link {
     display: flex;
@@ -337,7 +362,31 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
 
   const SHOW_RESOURCE = new Set(['Magicka', 'Stamina', 'Health']);
 
-  function buildTipHTML(meta: SkillMeta): string {
+  // ── ESO-Hub description fetch (async, cached) ──
+  // API returns { effect_1: string (HTML), effect_2: string|null, ... }
+  // CORS: Access-Control-Allow-Origin: * — direct browser fetch works.
+  let currentTipId: string | null = null;
+  const descCache = new Map<string, string | null>();
+
+  async function fetchDesc(id: string): Promise<string | null> {
+    if (descCache.has(id)) return descCache.get(id) ?? null;
+    try {
+      const res = await fetch(
+        `https://eso-hub.com/api/skills/tooltip/${id}?lang=en`,
+        { headers: { 'X-Requested-With': 'XMLHttpRequest' } },
+      );
+      if (!res.ok) { descCache.set(id, null); return null; }
+      const data = await res.json() as { effect_1?: string };
+      const desc = data.effect_1 ?? null;
+      descCache.set(id, desc);
+      return desc;
+    } catch {
+      descCache.set(id, null);
+      return null;
+    }
+  }
+
+  function buildTipHTML(id: string, meta: SkillMeta): string {
     const [, line] = meta.k.split(':');
     const showRes  = SHOW_RESOURCE.has(meta.r);
 
@@ -361,6 +410,15 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
       </div>`;
     }
 
+    // Inject description if already cached, else leave placeholder for async fill
+    const cached = descCache.get(id); // string = ok | null = failed | undefined = not fetched
+    if (typeof cached === 'string') {
+      h += `<p class="sbb__tip-desc eso-tip-body">${cached}</p>`;
+    } else if (cached === undefined) {
+      h += `<p class="sbb__tip-desc sbb__tip-desc--loading"></p>`;
+    }
+    // cached === null → fetch failed, show nothing
+
     if (meta.mr) {
       h += `<p class="sbb__tip-rationale">${esc(meta.mr)}</p>`;
     }
@@ -376,9 +434,8 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
   }
 
   function positionTip(x: number, y: number) {
-    // Tip width ≈ 300px, height varies — clamp so it stays in viewport
     const tw = 308;
-    const th = tip.offsetHeight || 140;
+    const th = tip.offsetHeight || 160;
     tip.style.left = `${Math.min(x + 14, window.innerWidth  - tw - 8)}px`;
     tip.style.top  = `${Math.min(y + 14, window.innerHeight - th - 8)}px`;
   }
@@ -387,12 +444,30 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
     if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
     const meta = lookup[id];
     if (!meta) return;
-    tip.innerHTML = buildTipHTML(meta);
-    // re-bind link mouseleave so moving into link cancels hide
+    currentTipId = id;
+    tip.innerHTML = buildTipHTML(id, meta);
     tip.querySelector('.sbb__tip-link')?.addEventListener('mouseleave', hideTip);
     positionTip(x, y);
     tip.classList.add('is-visible');
     tip.setAttribute('aria-hidden', 'false');
+
+    // Fetch description if not cached yet
+    if (!descCache.has(id)) {
+      fetchDesc(id).then((desc) => {
+        if (currentTipId !== id || !tip.classList.contains('is-visible')) return;
+        const el = tip.querySelector<HTMLElement>('.sbb__tip-desc--loading');
+        if (!el) return;
+        if (desc) {
+          el.innerHTML = desc;
+          el.classList.remove('sbb__tip-desc--loading');
+          el.classList.add('eso-tip-body');
+          // Re-position: tooltip may have grown
+          positionTip(parseFloat(tip.style.left) - 14, parseFloat(tip.style.top) - 14);
+        } else {
+          el.remove();
+        }
+      });
+    }
   }
 
   function hideTip() {
