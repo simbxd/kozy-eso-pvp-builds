@@ -6,6 +6,9 @@ import SetCard from '../components/SetCard.astro';
 import Playstyle from '../components/Playstyle.astro';
 import cpStarsIndex from '../data/eso/cp-stars-index.json';
 import classMasteriesIndex from '../data/eso/class-masteries-index.json';
+import mundusRaw from '../data/eso/mundus-index.json';
+import { encodeEditor } from '@/lib/editor-codec';
+import type { BuildMeta, Setup, ArmorPiece, JewelryPiece, WeaponPiece, ArmorWeight } from '@/components/builder/state';
 
 interface Bonus {
   count: number;
@@ -166,6 +169,134 @@ const resolvedMasteries: ClassMastery[] = !subclass && class_masteries?.length
   ? class_masteries.map(id => masteryById.get(id)).filter((m): m is ClassMastery => !!m)
   : [];
 
+// ── "Open in Builder" URL — encoded at build time ────────────────────────────
+
+const _mundusIdMap = new Map(
+  (mundusRaw as { id: string; name: string }[]).map((m) => [m.name, m.id]),
+);
+
+const _jewelrySlotMap: Record<string, JewelryPiece['slot']> = {
+  'ring i': 'ring1', 'ring 1': 'ring1',
+  'ring ii': 'ring2', 'ring 2': 'ring2',
+  'neck': 'necklace', 'necklace': 'necklace',
+};
+function _toJewelrySlot(display: string): JewelryPiece['slot'] {
+  return _jewelrySlotMap[display.trim().toLowerCase()] ?? 'necklace';
+}
+
+function _toWeaponSlot(barLabel = '', slotName = ''): WeaponPiece['slot'] {
+  const bar  = barLabel.toUpperCase().includes('II') ? 'bar2' : 'bar1';
+  const side = slotName.toLowerCase().includes('main') ? 'main' : 'off';
+  return `${bar}_${side}` as WeaponPiece['slot'];
+}
+
+const _weaponTypeMap: Record<string, string> = {
+  'Sword': 'sword', 'Axe': 'axe', 'Mace': 'mace', 'Dagger': 'dagger',
+  'Two Handed Sword': '2h-sword', 'Greatsword': '2h-sword',
+  'Two Handed Axe':  '2h-axe',   'Battle Axe': '2h-axe',
+  'Two Handed Mace': '2h-mace',  'Maul': '2h-mace',
+  'Bow': 'bow', 'Shield': 'shield',
+  'Restoration Staff': 'restoration-staff',
+  'Lightning Staff':   'lightning-staff',
+  'Ice Staff':         'frost-staff',
+  'Fire Staff':        'fire-staff',
+  'Destruction Staff': 'fire-staff',
+};
+
+function _toCpId(name: string): string {
+  return name.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function _toMode(modes: string[]): BuildMeta['mode'] {
+  const gm = (modes[0] ?? '').toLowerCase();
+  if (gm.includes('battleground') || gm === 'bg') return 'bg';
+  if (gm.includes('duel')) return 'duel';
+  return 'cyro';
+}
+
+function _toDifficulty(d: string): BuildMeta['difficulty'] {
+  const dl = d.toLowerCase();
+  if (dl === 'beginner' || dl === 'advanced' || dl === 'expert') return dl;
+  return 'intermediate';
+}
+
+let builderUrl: string | null = null;
+
+if (gear) {
+  try {
+    const _meta: BuildMeta = {
+      name:       title,
+      slug,
+      author,
+      patch,
+      classId:    esClass.toLowerCase(),
+      race:       race?.id ?? '',
+      mundus:     _mundusIdMap.get(consumables?.mundus?.stone ?? '') ?? '',
+      subclasses: ['', '', ''],
+      mode:       _toMode(gamemode),
+      difficulty: _toDifficulty(difficulty),
+      featured,
+      summary:    summary ?? '',
+      tags:       [],
+      guide:      '',
+      pros:       [],
+      cons:       [],
+    };
+
+    const _armor: ArmorPiece[] = gear.armor.map((p) => ({
+      slot:    p.slot.toLowerCase() as ArmorPiece['slot'],
+      set:     p.setId   || undefined,
+      trait:   p.trait   || undefined,
+      enchant: p.enchant || undefined,
+      weight:  (p.type === 'mythic' ? 'medium' : p.type) as ArmorWeight,
+    }));
+
+    const _jewelry: JewelryPiece[] = gear.jewelry.map((p) => ({
+      slot:    _toJewelrySlot(p.slot),
+      set:     p.setId   || undefined,
+      trait:   p.trait   || undefined,
+      enchant: p.enchant || undefined,
+    }));
+
+    const _weapons: WeaponPiece[] = gear.weapons.map((p) => ({
+      slot:    _toWeaponSlot(p.barLabel, p.slot),
+      set:     p.setId      || undefined,
+      trait:   p.trait      || undefined,
+      enchant: p.enchant    || undefined,
+      type:    p.weapon_type
+        ? (_weaponTypeMap[p.weapon_type] ?? p.weapon_type.toLowerCase().replace(/\s+/g, '-'))
+        : undefined,
+    }));
+
+    const _setup: Setup = {
+      name:     'Default',
+      armor:    _armor,
+      jewelry:  _jewelry,
+      weapons:  _weapons,
+      bar1:     bar1.map((s) => s.id),
+      bar2:     bar2.map((s) => s.id),
+      passives: {},
+      cp: {
+        warfare: (champion_points?.warfare ?? []).map((s) => [_toCpId(s.star), s.points] as [string, number]),
+        fitness: (champion_points?.fitness ?? []).map((s) => [_toCpId(s.star), s.points] as [string, number]),
+      },
+      attributes: { health: 0, magicka: 0, stamina: 0 },
+      consumables: {
+        food:   consumables?.food?.data?.id   || undefined,
+        potion: consumables?.potion?.data?.id || undefined,
+        poison: consumables?.poison?.data?.id || undefined,
+      },
+      scribing: [],
+    };
+
+    builderUrl = `/build-editor?b=${encodeEditor(_meta, [_setup])}`;
+  } catch {
+    builderUrl = null;
+  }
+}
+
+// ── End builder URL ───────────────────────────────────────────────────────────
+
 const gamemodeLabel = gamemode.length === 1 ? gamemode[0] : 'PvP';
 const subtitle = `${resource} ${esClass} ${gamemodeLabel} Build`;
 const h1Text   = `${title} — ${subtitle}`;
@@ -299,6 +430,7 @@ const raceLabel = race?.name;
     bar2={bar2}
     armorSplit={armorSplit}
     weaponTypes={weaponTypes}
+    builderUrl={builderUrl ?? undefined}
   />
 
   <!-- TWO-COLUMN LAYOUT -->

@@ -7,9 +7,15 @@ function buffHint(def: BuffDef): string {
   if (def.pct) {
     const pct  = `+${Math.round((def.pct.factor - 1) * 100)}%`;
     const keys = def.pct.keys.map((k) =>
-      k === "weaponDmg" ? "WD" : k === "spellDmg" ? "SD"
-      : k === "maxHealth" ? "HP" : k === "maxStamina" ? "Stam"
-      : k === "maxMagicka" ? "Mag" : k,
+      k === "weaponDmg"       ? "WD"
+      : k === "spellDmg"      ? "SD"
+      : k === "maxHealth"     ? "HP"
+      : k === "maxStamina"    ? "Stam"
+      : k === "maxMagicka"    ? "Mag"
+      : k === "healthRecovery"  ? "HP Rec"
+      : k === "staminaRecovery" ? "Stam Rec"
+      : k === "magickaRecovery" ? "Mag Rec"
+      : k,
     );
     const base = `${pct} ${keys.join("+")}`;
     return def.hintSuffix ? `${base} ${def.hintSuffix}` : base;
@@ -62,7 +68,6 @@ function BuffToggle({ def, active, onToggle }: {
 const GROUP_LABEL: Record<BuffDef["group"], string> = {
   offense:  "Offense",
   defense:  "Defense",
-  resource: "Resources",
   recovery: "Recovery",
 };
 
@@ -94,7 +99,7 @@ function BuffGroup({ groupId, activeBx, toggleBuff }: {
 
 // ── Main ─────────────────────────────────────────────────────────────────────
 
-const BUFF_GROUPS = (["offense", "defense", "resource", "recovery"] as const);
+const BUFF_GROUPS = (["offense", "defense", "recovery"] as const);
 
 export default function BuffsTab() {
   const activeBx   = useEditorStore((s) => s.bx);

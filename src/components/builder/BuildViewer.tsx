@@ -2,6 +2,8 @@ import { useEffect, useState, type ReactNode } from "react";
 import { decodeEditor, encodeEditor } from "@/lib/editor-codec";
 import type { BuildMeta, Setup, ArmorPiece, JewelryPiece, WeaponPiece } from "./state";
 import { getSet, getTrait, getEnchant, skillsIndex } from "@/lib/eso-data";
+import { computeStatsFromEditor }              from "@/lib/editor-compute";
+import { critPercent, resistPercent }          from "@/lib/compute-stats";
 import { ALL_CLASS_LINES } from "./atoms/SkillLinePicker";
 import { T, F, Diamond } from "./atoms";
 import {
@@ -206,7 +208,7 @@ function Header({ meta, rawParam }: { meta: BuildMeta; rawParam: string }) {
           </div>
         </div>
         <a
-          href={`/builder?b=${rawParam}`}
+          href={`/build-editor?b=${rawParam}`}
           style={{
             height: 36, padding: "0 18px",
             display: "inline-flex", alignItems: "center", gap: 8,
@@ -871,15 +873,16 @@ function ConsCard({ label, value, tip }: { label: string; value: string; tip?: s
   );
 }
 
-function Consumables({ setup }: { setup: Setup }) {
-  const c = setup.consumables;
-  if (!c.mundus && !c.food && !c.potion && !c.poison) return null;
+function Consumables({ meta, setup }: { meta: BuildMeta; setup: Setup }) {
+  const c      = setup.consumables;
+  const mundus = meta.mundus;  // mundus is stored on BuildMeta (General tab)
+  if (!mundus && !c.food && !c.potion && !c.poison) return null;
 
   return (
     <Section title="Consumables" count="mundus · food · potion">
       <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-        {c.mundus && (
-          <ConsCard label="Mundus" value={mundusMap.get(c.mundus) ?? prettyId(c.mundus)} />
+        {mundus && (
+          <ConsCard label="Mundus" value={mundusMap.get(mundus) ?? prettyId(mundus)} />
         )}
         {c.food && (
           <ConsCard label="Food / Drink" value={prettyId(c.food)} tip={consumableTipMap.get(c.food)} />
@@ -937,6 +940,125 @@ function ProsCons({ pros, cons }: { pros: string[]; cons: string[] }) {
   );
 }
 
+// ── Computed Stats ────────────────────────────────────────────────────────────
+
+function StatRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div style={{
+      display: "flex", justifyContent: "space-between", alignItems: "baseline",
+      padding: "5px 0",
+      borderBottom: "1px solid rgba(205,180,255,0.06)",
+    }}>
+      <span style={{
+        fontFamily: F.mono, fontSize: 9, letterSpacing: "0.2em",
+        color: T.inkMute, textTransform: "uppercase",
+      }}>{label}</span>
+      <span style={{
+        fontFamily: F.cinzel, fontWeight: 600, fontSize: 14, color: T.ink,
+      }}>{value}</span>
+    </div>
+  );
+}
+
+function ComputedStatsSection({ meta, setup, battleSpirit, onToggleBS }: {
+  meta: BuildMeta; setup: Setup; battleSpirit: boolean; onToggleBS: () => void;
+}) {
+  const { stats } = computeStatsFromEditor(meta, setup, battleSpirit);
+
+  const vitals = [
+    { label: "Max Health",  val: stats.maxHealth,  color: "#ef6f6f" },
+    { label: "Max Magicka", val: stats.maxMagicka, color: "#6f9bef" },
+    { label: "Max Stamina", val: stats.maxStamina, color: "#7fce8f" },
+  ];
+
+  return (
+    <Section title="Computed Stats" count="estimated totals">
+
+      {/* Battle Spirit toggle */}
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <button
+          type="button"
+          onClick={onToggleBS}
+          style={{
+            height: 26, padding: "0 12px",
+            display: "inline-flex", alignItems: "center",
+            border: `1px solid ${battleSpirit ? T.accent : T.edge}`,
+            background: battleSpirit ? "rgba(139,92,246,0.18)" : "transparent",
+            color: battleSpirit ? T.accentSoft : T.inkMute,
+            fontFamily: F.mono, fontSize: 9, letterSpacing: "0.2em",
+            textTransform: "uppercase", cursor: "pointer",
+            transition: "border-color 0.15s, background 0.15s, color 0.15s",
+          }}
+        >
+          Battle Spirit {battleSpirit ? "ON" : "OFF"}
+        </button>
+        <span style={{
+          fontFamily: F.mono, fontSize: 9, letterSpacing: "0.1em", color: T.inkFaint,
+        }}>
+          {battleSpirit ? "×0.5 to resistances" : "raw stats · no modifier"}
+        </span>
+      </div>
+
+      {/* Vitals */}
+      <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+        {vitals.map(({ label, val, color }) => (
+          <div key={label} style={{
+            flex: 1, minWidth: 130,
+            padding: "12px 16px",
+            border: `1px solid ${color}44`,
+            background: `${color}0a`,
+          }}>
+            <div style={{ ...monoLabel, color: `${color}99` }}>{label}</div>
+            <div style={{
+              marginTop: 6,
+              fontFamily: F.cinzel, fontWeight: 700, fontSize: 26,
+              color,
+            }}>{val.toLocaleString("en-US")}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Offense / Defense / Recovery columns */}
+      <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
+
+        {/* Offense */}
+        <div style={{ flex: 1, minWidth: 200 }}>
+          <div style={{ ...monoLabel, marginBottom: 8 }}>Offense</div>
+          <StatRow label="Weapon Damage" value={stats.weaponDmg.toLocaleString("en-US")} />
+          <StatRow label="Spell Damage"  value={stats.spellDmg.toLocaleString("en-US")} />
+          <StatRow label="Crit Chance"   value={`${critPercent(stats.critRating)}%`} />
+          <StatRow label="Crit Damage"   value={`${stats.critDamage}%`} />
+          <StatRow label="Phys Pen"      value={stats.physPen.toLocaleString("en-US")} />
+          <StatRow label="Spell Pen"     value={stats.spellPen.toLocaleString("en-US")} />
+        </div>
+
+        {/* Defense */}
+        <div style={{ flex: 1, minWidth: 200 }}>
+          <div style={{ ...monoLabel, marginBottom: 8 }}>Defense</div>
+          <StatRow
+            label="Phys Resist"
+            value={`${stats.physResist.toLocaleString("en-US")}  (${resistPercent(stats.physResist)}%)`}
+          />
+          <StatRow
+            label="Spell Resist"
+            value={`${stats.spellResist.toLocaleString("en-US")}  (${resistPercent(stats.spellResist)}%)`}
+          />
+          <StatRow label="Crit Resist" value={stats.critResistance.toLocaleString("en-US")} />
+        </div>
+
+        {/* Recovery */}
+        <div style={{ flex: 1, minWidth: 160 }}>
+          <div style={{ ...monoLabel, marginBottom: 8 }}>Recovery</div>
+          <StatRow label="Health Rec"  value={stats.healthRecovery.toLocaleString("en-US")} />
+          <StatRow label="Magicka Rec" value={stats.magickaRecovery.toLocaleString("en-US")} />
+          <StatRow label="Stamina Rec" value={stats.staminaRecovery.toLocaleString("en-US")} />
+        </div>
+
+      </div>
+    </Section>
+  );
+}
+
 // ── Empty / invalid state ─────────────────────────────────────────────────────
 
 function EmptyState({ message }: { message: string }) {
@@ -950,7 +1072,7 @@ function EmptyState({ message }: { message: string }) {
         fontFamily: F.cinzel, fontWeight: 700, fontSize: 16,
         letterSpacing: "0.06em", color: T.inkDim,
       }}>{message}</div>
-      <a href="/builder" style={{
+      <a href="/build-editor" style={{
         marginTop: 4, height: 36, padding: "0 18px",
         display: "inline-flex", alignItems: "center",
         border: `1px solid ${T.accent}`, background: "rgba(139,92,246,0.18)",
@@ -970,7 +1092,8 @@ type ViewState =
   | { kind: "ok"; meta: BuildMeta; setup: Setup; raw: string };
 
 export default function BuildViewer() {
-  const [state, setState] = useState<ViewState>({ kind: "loading" });
+  const [state, setState]       = useState<ViewState>({ kind: "loading" });
+  const [battleSpirit, setBattleSpirit] = useState(true);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -1036,8 +1159,14 @@ export default function BuildViewer() {
         display: "flex", flexDirection: "column", gap: 30,
       }}>
         <Header meta={meta} rawParam={raw} />
+        <ComputedStatsSection
+          meta={meta}
+          setup={setup}
+          battleSpirit={battleSpirit}
+          onToggleBS={() => setBattleSpirit((b) => !b)}
+        />
         <Attributes setup={setup} />
-        <Consumables setup={setup} />
+        <Consumables meta={meta} setup={setup} />
         <Equipment setup={setup} />
         <Skills setup={setup} />
         <Scribing setup={setup} />

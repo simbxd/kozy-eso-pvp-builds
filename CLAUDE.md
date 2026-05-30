@@ -112,19 +112,22 @@ src/
 ├── lib/
 │   ├── git-dates.ts              ← Dates dérivées du git log (publishedDate, updatedAt)
 │   ├── editor-codec.ts           ← encode/decode build → lz-string base64 (param ?b=)
-│   └── esohub-api.ts             ← Module ESO-Hub API : fetchSkillTip, fetchSetTip, types, caches
+│   ├── esohub-api.ts             ← Module ESO-Hub API : fetchSkillTip, fetchSetTip, types, caches
+│   ├── eso-bonuses.ts            ← Constantes de calcul UESP : RACIAL, MUNDUS_STONES, ARMOR_BASE, WEAPON_TYPE_BONUS, WEAPON_LINE_PASSIVE, CLASS_PASSIVE_VALUES, FOOD_VALUES, Battle Spirit
+│   ├── compute-stats.ts          ← Pipeline 14 étapes : base → attrs → food → sets → gear → weapon type → nirnhoned → mundus → CP → armor passifs → undaunted → weapon passifs → class passifs → buffs → Battle Spirit
+│   └── editor-compute.ts         ← Couche adapteur pure : BuildMeta+Setup → Build/GearPieceV1 → computeStats()
 ├── styles/
 │   └── global.css
 └── content.config.ts    ← Schémas Zod pour toutes les collections
 src/components/builder/          ← React island Build Editor
-├── BuildEditor.tsx               ← Composant racine (tabs + sidebar)
+├── BuildEditor.tsx               ← Composant racine (layout horizontal : TabBar + StatsPanel)
 ├── BuildViewer.tsx               ← Viewer en lecture seule (page share.astro)
 ├── atoms.tsx                     ← Design tokens (T, F) + composants atoms
-├── state.ts                      ← Store Zustand (useEditorStore)
+├── state.ts                      ← Store Zustand (useEditorStore) — BuildMeta + Setup[]
 ├── types.ts                      ← Types TypeScript du build
-├── compute-stats.ts              ← Moteur de calcul des stats
+├── StatsPanel.tsx                ← Panneau droit 240px : Active Sets, Armor Weights, Weapons, Attributes, Computed Stats (live), toggle Battle Spirit
 └── tabs/
-    ├── GearTab.tsx
+    ├── EquipmentTab.tsx          ← Armor / Jewelry / Weapons (types individuels sword/axe/mace/dagger/2h-*)
     ├── SkillsTab.tsx
     ├── PassivesTab.tsx
     ├── CpTab.tsx
@@ -409,8 +412,8 @@ Format d'une entrée :
 
 ## État du projet
 
-**Dernière session :** 2026-05-21
-**Milestone actuel :** Build Editor M10 — Share tab + Short URLs (KV) ✅
+**Dernière session :** 2026-05-27
+**Milestone actuel :** Build Editor M11 — Computed Stats live + types d'armes individuels ✅
 
 ### Milestones
 - ✅ M0 — Fondations (Astro, Tailwind, deploy Cloudflare)
@@ -497,8 +500,10 @@ Le Build Editor (`/builder`, `src/components/builder/`) est une React island (`c
 - ✅ M8b — Moteur de calcul complet : base stats, set bonuses, traits/enchants, armes/armure, CP slottables, passifs classe/race/guilde, DK passifs corrigés (`elder-dragon` +700 HR ajouté, `blessing-at-the-peak` supprimé), Battle Spirit ×0.5, bonuses conditionnels 5pc
 - ✅ M9 — BuffsTab (15 buffs en 3 groupes Defense/Offense/Resources, toggle avec hints, `build.bx`, `BUFF_DEFS`+`BUFF_DEF_MAP`, étape 13 dans `compute-stats.ts`)
 - ✅ M10 — Share tab : Short Link (Cloudflare KV, ID 8 chars, TTL 180j, `POST /api/builds`) + Full URL (lz-string `?b=`) + Import (short ou full) + Reset. `BuildViewer.tsx` supporte `?id=` en plus de `?b=`. Hover tooltips sets/skills via `esohub-api.ts` (icônes supprimées). Nav "Build Editor" cliquable + badge "beta". Module `src/lib/esohub-api.ts` créé pour réutilisation sur les pages de builds.
+- ✅ M11 — Computed Stats live dans le Build Editor : layout horizontal refactorisé (TabBar + StatsPanel 240px fixe) ; `src/lib/editor-compute.ts` couche adapteur pure qui mappe `BuildMeta+Setup → Build/GearPieceV1 → computeStats()` ; `StatsPanel.tsx` affiche HP/Mag/Stam pools, WD/SD, résistances+%, crit, pén, récupération + toggle Battle Spirit avec note contextuelle (−50% Dmg Taken, −55% Healing Received — combat uniquement) ; migration UESP source unique pour les constantes de calcul (11 valeurs corrigées : `ATTR_PER_POINT_HEALTH=122` vs `MAGSAM=111`, `BASE.critResistance=1320`, 5 mundus stones, Bosmer Hunter's Eye, Redguard maxStamina 2000→3650 ; `ARMOR_BASE` / `WEAPON_TYPE_BONUS` conservés depuis The Hist — non disponibles sur UESP wiki) ; Battle Spirit modélisé correctement — uniquement `healthRecovery ×0.5` sur le stat sheet (−50% Dmg Taken et −55% Healing sont des modificateurs de combat non affichés) ; types d'armes individuels dans EquipmentTab (sword/axe/mace/dagger, 2h-sword/axe/mace, staves, bow, shield) ; `WEAPON_LINE_PASSIVE` Twin Blade and Blunt câblé sur `mh1Type` (main hand uniquement — comportement ESO correct)
 
-**Prochain milestone :** M11 — Pages de builds enrichies (intégrer `esohub-api.ts` pour les hover tooltips sets/skills dans les composants Astro existants)
+**Prochain milestone :** M12 — GeneralTab : sélecteur race/classe/mundus fonctionnel avec preview effets + StatsPanel validation visuelle
 
 ### Prochaine étape
+- Valider le StatsPanel sur un build réel (ex: Solo Knight DK) en entrant tous les sets/armes/race/mundus
 - Intégrer les hover tooltips ESO-Hub sur les pages de builds statiques (SetCard, SkillBar) via `esohub-api.ts`

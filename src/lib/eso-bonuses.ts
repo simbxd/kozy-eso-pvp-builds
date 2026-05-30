@@ -500,33 +500,43 @@ export const WEAPON_LINE_PASSIVE: Record<string, {
   contrib:         Partial<ComputedStats>;
 }> = {
   "accuracy":                    { weaponType: "bow",    contrib: { critRating: 1314 } },
-  "twin-blade-and-blunt-axe":    { weaponType: "axe",    requiresBarType: "dual_wield", contrib: { critDamage: 3 } },
+  "twin-blade-and-blunt-axe":    { weaponType: "axe",    requiresBarType: "dual_wield", contrib: { critDamage: 6 } },
   "twin-blade-and-blunt-mace":   { weaponType: "mace",   requiresBarType: "dual_wield", contrib: { physPen: 743, spellPen: 743 } },
   "twin-blade-and-blunt-sword":  { weaponType: "sword",  requiresBarType: "dual_wield", contrib: { weaponDmg: 64, spellDmg: 64 } },
   "twin-blade-and-blunt-dagger": { weaponType: "dagger", requiresBarType: "dual_wield", contrib: { critRating: 328 } },
 };
 
 // ── Class passives ──────────────────────────────────────────────────────────
-// Source: The Hist /api/passives/grouped — U50.
+// Source: The Hist /api/passives/grouped + ESO Skillbook — U50.
+// Only unconditional flat stat passives are modelled here (no "while X is active").
 export const CLASS_PASSIVE_VALUES: Record<string, { classId: string; contrib: Partial<ComputedStats> }> = {
   // DK: Heart of Stone (Earthen Heart) — "Increases your Armor by 2974."
   // In ESO, "Armor" = both Physical Resistance AND Spell Resistance.
   // Source: ESO Hub — U50 value: 2974 to both physResist and spellResist.
   // Note: ~40k in-game resistance comes from active skill buffs (Major Resolve +5948)
   // which are combat buffs, not modelled in this static sheet.
-  "heart-of-stone":       { classId: "dragonknight", contrib: { physResist: 2974, spellResist: 2974 } },
+  "heart-of-stone":       { classId: "dragonknight",  contrib: { physResist: 2974, spellResist: 2974 } },
   // DK: Elder Dragon (Draconic Power) — +700 Health Recovery.
   // Source: The Hist /api/passives/grouped — "Increases your Health Recovery by 700."
-  "elder-dragon":         { classId: "dragonknight", contrib: { healthRecovery: 700 } },
+  "elder-dragon":         { classId: "dragonknight",  contrib: { healthRecovery: 700 } },
   // NOTE: blessing-at-the-peak removed — The Hist confirms it is Ultimate generation
   // (10 ulti/s when casting Earthen Heart abilities), NOT a stat-sheet entry.
   // Templar: Piercing Spear — 10% crit damage (was 12).
-  "piercing-spear":       { classId: "templar",       contrib: { critDamage: 10 } },
-  "hemorrhage":           { classId: "nightblade",    contrib: { critDamage: 10 } },
+  "piercing-spear":       { classId: "templar",        contrib: { critDamage: 10 } },
+  "hemorrhage":           { classId: "nightblade",     contrib: { critDamage: 10 } },
   // Warden: Flourish (Green Balance) — +51 Magicka and Stamina Recovery.
   // Source: The Hist /api/derive-stats stat_sources — "Class Passive: flourish: 51"
   // Applied unconditionally when class = warden (all 3 skill lines contribute).
-  "flourish":             { classId: "warden",        contrib: { magickaRecovery: 51, staminaRecovery: 51 } },
+  "flourish":             { classId: "warden",         contrib: { magickaRecovery: 51, staminaRecovery: 51 } },
+  // Necromancer: Last Gasp (Bone Tyrant) — "Increases your Max Health by 2412."
+  // Source: ESO Skillbook — R2 value: 2412. Unconditional.
+  // Skipped conditionals: Dismember (+1500 pen while Gravelord active),
+  //   Death Gleaning (restore on kill), Undead Confederate (while summon active).
+  "last-gasp":            { classId: "necromancer",    contrib: { maxHealth: 2412 } },
+  // Arcanist: no unconditional flat stat passives confirmed.
+  // Aegis of the Unseen (+3271 Armor) requires a Soldier of Apocrypha ability active.
+  // Fated Fortune (+12% crit dmg) is a 7s buff on Crux gen/consumption.
+  // Both conditional → not modelled here.
 };
 
 export const CLASS_PASSIVE_POOL_PCT: Record<string, {
@@ -574,21 +584,21 @@ export const CP_PASSIVE_VALUES: Array<{ id: string; contrib: Partial<ComputedSta
 //  group — sub-category used for grouping inside each type:
 //    offense  : damage / crit
 //    defense  : resistances
-//    resource : max pool scaling
+//    recovery : recovery rates (health/magicka/stamina)
 //
 // ── Crit rating values (U50, verified via UESP ESO_BUFF_DATA):
 //    Major Prophecy / Major Savagery  : +2191 critRating ≈ +10% crit
 //    Minor Prophecy / Minor Savagery  : +1096 critRating ≈ +5%  crit
 //    Note: Prophecy = Spell Crit, Savagery = Weapon Crit — unified as critRating here.
 //
-// ── Courage values (U50, same scaling as racial WD/SD = 258 / 129):
-//    Major Courage : +258 Weapon Damage + Spell Damage
-//    Minor Courage : +129 Weapon Damage + Spell Damage
+// ── Courage values (U50):
+//    Major Courage : +430 Weapon Damage + Spell Damage
+//    Minor Courage : +215 Weapon Damage + Spell Damage
 //
 export type BuffDef = {
   id:    string;
   label: string;
-  group: "offense" | "defense" | "resource" | "recovery";
+  group: "offense" | "defense" | "recovery";
   hintSuffix?: string;
   contrib?: Partial<ComputedStats>;                           // flat add
   pct?:    { keys: (keyof ComputedStats)[]; factor: number };// multiply pool
@@ -629,18 +639,18 @@ export const BUFF_DEFS: BuffDef[] = [
     contrib: { physResist: 2974, spellResist: 2974 } },
 
   // ── Resources (recovery rate, not max pool) ───────────────────────────────
-  { id: "major-fortitude",  label: "Major Fortitude",  group: "resource",
-    pct: { keys: ["maxHealth"],   factor: 1.30 }, hintSuffix: "recovery" },
-  { id: "minor-fortitude",  label: "Minor Fortitude",  group: "resource",
-    pct: { keys: ["maxHealth"],   factor: 1.15 }, hintSuffix: "recovery" },
-  { id: "major-endurance",  label: "Major Endurance",  group: "resource",
-    pct: { keys: ["maxStamina"],  factor: 1.30 }, hintSuffix: "recovery" },
-  { id: "minor-endurance",  label: "Minor Endurance",  group: "resource",
-    pct: { keys: ["maxStamina"],  factor: 1.15 }, hintSuffix: "recovery" },
-  { id: "major-intellect",  label: "Major Intellect",  group: "resource",
-    pct: { keys: ["maxMagicka"],  factor: 1.30 }, hintSuffix: "recovery" },
-  { id: "minor-intellect",  label: "Minor Intellect",  group: "resource",
-    pct: { keys: ["maxMagicka"],  factor: 1.15 }, hintSuffix: "recovery" },
+  { id: "major-fortitude",  label: "Major Fortitude",  group: "recovery",
+    pct: { keys: ["healthRecovery"],   factor: 1.30 } },
+  { id: "minor-fortitude",  label: "Minor Fortitude",  group: "recovery",
+    pct: { keys: ["healthRecovery"],   factor: 1.15 } },
+  { id: "major-endurance",  label: "Major Endurance",  group: "recovery",
+    pct: { keys: ["staminaRecovery"],  factor: 1.30 } },
+  { id: "minor-endurance",  label: "Minor Endurance",  group: "recovery",
+    pct: { keys: ["staminaRecovery"],  factor: 1.15 } },
+  { id: "major-intellect",  label: "Major Intellect",  group: "recovery",
+    pct: { keys: ["magickaRecovery"],  factor: 1.30 } },
+  { id: "minor-intellect",  label: "Minor Intellect",  group: "recovery",
+    pct: { keys: ["magickaRecovery"],  factor: 1.15 } },
 ];
 
 export const BUFF_DEF_MAP: Record<string, BuffDef> = Object.fromEntries(

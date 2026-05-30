@@ -466,12 +466,23 @@ export function computeStats(build: Build): ComputeResult {
   }
 
   // ── 11. Weapon line passives ──────────────────────────────────────────
-  // Fires based on bar 1 main-hand weapon type.
-  // requiresBarType: Twin Blade and Blunt passives are Dual Wield-only.
-  for (const [passiveId, def] of Object.entries(WEAPON_LINE_PASSIVE)) {
-    if (mh1Type !== def.weaponType) continue;
-    if (def.requiresBarType && barType !== def.requiresBarType) continue;
-    acc.add(`Passive: ${passiveId}`, def.contrib);
+  // Twin Blade and Blunt bonuses apply PER weapon of matching type in bar 1
+  // (main-hand + off-hand both count). Bow accuracy fires on mh1 only.
+  {
+    const bar1Weapons = [mh1Type, oh1Type].filter(Boolean) as string[];
+    for (const [passiveId, def] of Object.entries(WEAPON_LINE_PASSIVE)) {
+      if (def.requiresBarType && barType !== def.requiresBarType) continue;
+      const matchCount = bar1Weapons.filter((t) => t === def.weaponType).length;
+      if (matchCount === 0) continue;
+      if (matchCount === 1) {
+        acc.add(`Passive: ${passiveId}`, def.contrib);
+      } else {
+        const scaled = Object.fromEntries(
+          Object.entries(def.contrib).map(([k, v]) => [k, (v as number) * matchCount]),
+        ) as Partial<ComputedStats>;
+        acc.add(`Passive: ${passiveId} (×${matchCount})`, scaled);
+      }
+    }
   }
 
   // ── 12. Class passives ────────────────────────────────────────────────

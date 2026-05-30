@@ -57,12 +57,14 @@ interface Props {
   armorSplit?: string;
   /** Aggregated weapon types, ex: "Mace / Sword & Shield". */
   weaponTypes?: string;
+  /** Pre-encoded /builder?b=… URL for the "Open in Builder" link. */
+  builderUrl?: string;
 }
 
 const {
   slug, title, className, role, resource, gamemode, patch, difficulty,
   author, race, featured, summary, publishedDate, updatedAt,
-  stats, mundus, character, bar1, bar2, armorSplit, weaponTypes,
+  stats, mundus, character, bar1, bar2, armorSplit, weaponTypes, builderUrl,
 } = Astro.props;
 
 // Resolve character image: explicit frontmatter > convention by slug > null.
@@ -124,6 +126,13 @@ const bars = [
         <li class="bh__tag">{difficulty}</li>
         <li class="bh__tag">{resource}</li>
         <li class="bh__tag bh__tag--ghost">by {author}</li>
+        {builderUrl && (
+          <li>
+            <a href={builderUrl} class="bh__tag bh__tag--builder" title="Open this build in the Build Editor to customise it">
+              Open in Build Editor ↗
+            </a>
+          </li>
+        )}
       </ul>
 
       {datesLabel && <p class="bh__dates">{datesLabel}</p>}
@@ -402,6 +411,18 @@ const bars = [
     background: transparent;
     border-color: rgba(205,180,255,0.25);
     color: rgba(205,180,255,0.55);
+  }
+  .bh__tag--builder {
+    background: transparent;
+    border-color: rgba(139,92,246,0.45);
+    color: var(--color-accent, #8b5cf6);
+    text-decoration: none;
+    transition: background 160ms, border-color 160ms, color 160ms;
+  }
+  .bh__tag--builder:hover {
+    background: rgba(139,92,246,0.14);
+    border-color: var(--color-accent, #8b5cf6);
+    color: #e0d6ff;
   }
 
   .bh__dates {
