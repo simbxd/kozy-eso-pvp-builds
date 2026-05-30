@@ -101,7 +101,9 @@ type SkillGroup = { base: EsoSkillIndex; morphs: EsoSkillIndex[] };
 
 function getSkillGroups(lineId: string, kind: "Active" | "Ultimate"): SkillGroup[] {
   const lineSkills = skillsIndex.filter(
-    (s) => s.skill_line_id === lineId && s.type === kind && !SCRIBING_VARIANT_IDS.has(s.id),
+    (s) => s.skill_line_id === lineId && s.type === kind
+      && !SCRIBING_VARIANT_IDS.has(s.id)
+      && !s.id.startsWith("major-") && !s.id.startsWith("minor-"),
   );
   const bases  = lineSkills.filter((s) => !s.morph_of);
   const morphs = lineSkills.filter((s) => !!s.morph_of);
