@@ -80,8 +80,8 @@ export const AFFIXES: AffixDef[] = [
   { id: "courage",            name: "Major Courage",              icon: "/assets/scribing/affix-courage.png",            hint: "+430 WD+SD",          buff_ids: ["major-courage"]                           },
   { id: "savage-prophecy",    name: "Maj. Savagery & Prophecy",   icon: "/assets/scribing/affix-savage-prophecy.png",    hint: "+2191 Crit Rating",   buff_ids: ["major-savagery", "major-prophecy"]         },
   { id: "force",              name: "Minor Force",                icon: "/assets/scribing/affix-force.png",              hint: "+10% Crit Dmg",       buff_ids: ["minor-force"]                             },
-  { id: "berserk",            name: "Minor Berserk",              icon: "/assets/scribing/affix-berserk.png",            hint: "+8% Dmg Dealt"                                                              },
-  { id: "enervation",         name: "Minor Enervation",           icon: "/assets/scribing/affix-enervation.png",         hint: "+6% Crit Dmg"                                                               },
+  { id: "berserk",            name: "Minor Berserk",              icon: "/assets/scribing/affix-berserk.png",            hint: "+5% Dmg Dealt"                                                              },
+  { id: "enervation",         name: "Minor Enervation",           icon: "/assets/scribing/affix-enervation.png",         hint: "−10% Crit Dmg on target"                                                    },
   { id: "empower",            name: "Empower",                    icon: "/assets/scribing/affix-empower.png",            hint: "+40% Light/Heavy Atk"                                                       },
 
   // ── Defense buffs ──
@@ -90,9 +90,9 @@ export const AFFIXES: AffixDef[] = [
   { id: "evasion",            name: "Major Evasion",              icon: "/assets/scribing/affix-evasion.png",            hint: "-20% AoE Dmg Taken"                                                         },
 
   // ── Utility / mobility ──
-  { id: "heroism",            name: "Minor Heroism",              icon: "/assets/scribing/affix-heroism.png",            hint: "+3 Ult/1.5s"                                                                },
+  { id: "heroism",            name: "Minor Heroism",              icon: "/assets/scribing/affix-heroism.png",            hint: "+1 Ult/1.5s"                                                                },
   { id: "expedition",         name: "Major Expedition",           icon: "/assets/scribing/affix-expedition.png",         hint: "+30% Move Speed"                                                            },
-  { id: "vitality",           name: "Major Vitality",             icon: "/assets/scribing/affix-vitality.png",           hint: "+16% Healing Recv"                                                          },
+  { id: "vitality",           name: "Major Vitality",             icon: "/assets/scribing/affix-vitality.png",           hint: "+12% Healing Recv"                                                          },
   { id: "intellect-endurance",name: "Min. Intellect & Endurance", icon: "/assets/scribing/affix-intellect-endurance.png",hint: "+15% Mag/Stam Recov"                                                        },
   { id: "lifesteal",          name: "Life Steal",                 icon: "/assets/scribing/affix-lifesteal.png",          hint: "Restore HP on hit"                                                          },
   { id: "magicka-steal",      name: "Magicka Steal",              icon: "/assets/scribing/affix-magicka-steal.png",      hint: "Drain Mag from target"                                                      },
@@ -101,12 +101,12 @@ export const AFFIXES: AffixDef[] = [
 
   // ── Debuffs on target ──
   { id: "breach",             name: "Major Breach",               icon: "/assets/scribing/affix-breach.png",             hint: "−5948 Target Resist"                                                        },
-  { id: "defile",             name: "Major Defile",               icon: "/assets/scribing/affix-defile.png",             hint: "−16% Healing on target"                                                     },
+  { id: "defile",             name: "Major Defile",               icon: "/assets/scribing/affix-defile.png",             hint: "−12% Healing on target"                                                     },
   { id: "maim",               name: "Major Maim",                 icon: "/assets/scribing/affix-maim.png",               hint: "−10% Dmg on target"                                                         },
   { id: "vulnerability",      name: "Major Vulnerability",        icon: "/assets/scribing/affix-vulnerability.png",      hint: "+10% Dmg Taken on target"                                                   },
-  { id: "cowardice",          name: "Major Cowardice",            icon: "/assets/scribing/affix-cowardice.png",          hint: "−215 WD+SD on target"                                                       },
-  { id: "brittle",            name: "Minor Brittle",              icon: "/assets/scribing/affix-brittle.png",            hint: "+8% Crit Dmg on target"                                                     },
-  { id: "mangle",             name: "Minor Mangle",               icon: "/assets/scribing/affix-mangle.png",             hint: "−15% Max HP on target"                                                      },
+  { id: "cowardice",          name: "Major Cowardice",            icon: "/assets/scribing/affix-cowardice.png",          hint: "−430 WD+SD on target"                                                       },
+  { id: "brittle",            name: "Minor Brittle",              icon: "/assets/scribing/affix-brittle.png",            hint: "+10% Crit Dmg on target"                                                    },
+  { id: "mangle",             name: "Minor Mangle",               icon: "/assets/scribing/affix-mangle.png",             hint: "−10% Max HP on target"                                                      },
   { id: "uncertainty",        name: "Minor Uncertainty",          icon: "/assets/scribing/affix-uncertainty.png",        hint: "−6% Crit Rate on target"                                                    },
 ];
 
