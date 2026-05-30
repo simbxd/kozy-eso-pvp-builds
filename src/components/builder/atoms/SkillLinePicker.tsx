@@ -178,10 +178,30 @@ function SearchBar({ value, onChange, placeholder = "Search…" }: {
   );
 }
 
+// ── Flat skill search index ───────────────────────────────────────────────────
+
+type FlatSkill = { skill: EsoSkillIndex; lineName: string; isBase: boolean };
+
+function buildFlatSkills(groups: GroupDef[], kind: "Active" | "Ultimate"): FlatSkill[] {
+  const out: FlatSkill[] = [];
+  for (const group of groups) {
+    for (const line of group.lines) {
+      for (const sg of getSkillGroups(line.id, kind)) {
+        if (sg.morphs.length > 0) {
+          for (const m of sg.morphs) out.push({ skill: m, lineName: line.name, isBase: false });
+        } else {
+          out.push({ skill: sg.base, lineName: line.name, isBase: true });
+        }
+      }
+    }
+  }
+  return out;
+}
+
 // ── GroupsView ────────────────────────────────────────────────────────────────
 
 function GroupsView({
-  groups, expanded, onToggle, onSelectLine, onSelectDirect, search, noClassLines, scribingSlots,
+  groups, expanded, onToggle, onSelectLine, onSelectDirect, search, noClassLines, scribingSlots, kind,
 }: {
   groups: GroupDef[];
   expanded: Set<string>;
@@ -191,8 +211,17 @@ function GroupsView({
   search: string;
   noClassLines: boolean;
   scribingSlots: ScribingSlot[];
+  kind: "Active" | "Ultimate";
 }) {
   const q = search.trim().toLowerCase();
+
+  // Flat skill search — only when query is non-empty
+  const flatSkills = useMemo(() => buildFlatSkills(groups, kind), [groups, kind]);
+  const skillResults = useMemo(() => {
+    if (!q) return [];
+    return flatSkills.filter((f) => f.skill.name.toLowerCase().includes(q)).slice(0, 30);
+  }, [flatSkills, q]);
+
   const visible = groups.map((g) => ({
     ...g,
     lines: q ? g.lines.filter((l) => l.name.toLowerCase().includes(q)) : g.lines,
@@ -282,6 +311,56 @@ function GroupsView({
         </div>
       )}
 
+      {/* ── Direct skill results (when searching) ── */}
+      {skillResults.length > 0 && (
+        <div>
+          <div style={{
+            padding: "6px 16px",
+            background: "rgba(139,92,246,0.06)",
+            borderBottom: `1px solid ${T.edge}`,
+            fontFamily: F.mono, fontSize: 9, letterSpacing: "0.28em",
+            color: T.accentSoft, textTransform: "uppercase",
+          }}>Skills</div>
+          {skillResults.map(({ skill, lineName, isBase }) => (
+            <button
+              key={skill.id}
+              type="button"
+              onClick={() => onSelectDirect(skill.id)}
+              style={{
+                width: "100%", display: "flex", alignItems: "center", gap: 12,
+                padding: "9px 16px", textAlign: "left",
+                background: "transparent",
+                border: "none", borderBottom: `1px solid ${T.edge}`, cursor: "pointer",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(139,92,246,0.10)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "transparent"; }}
+            >
+              {skill.icon ? (
+                <img src={skill.icon} alt=""
+                  style={{ width: 36, height: 36, borderRadius: "50%", flexShrink: 0,
+                    border: `1px solid rgba(139,92,246,0.35)`, opacity: isBase ? 0.6 : 1 }}
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
+              ) : (
+                <div style={{ width: 36, height: 36, borderRadius: "50%", flexShrink: 0,
+                  background: "rgba(139,92,246,0.12)", border: `1px solid ${T.edge}` }} />
+              )}
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{
+                  fontFamily: F.cinzel, fontWeight: 600, fontSize: 13,
+                  color: isBase ? T.inkMute : T.ink,
+                  fontStyle: isBase ? "italic" : "normal",
+                }}>{skill.name}</div>
+                <div style={{
+                  fontFamily: F.mono, fontSize: 9, letterSpacing: "0.14em",
+                  color: T.inkFaint, marginTop: 2,
+                }}>{lineName}</div>
+              </div>
+              <span style={{ fontFamily: F.mono, fontSize: 12, color: T.inkFaint }}>›</span>
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* No class lines hint */}
       {noClassLines && !q && (
         <div style={{
@@ -355,12 +434,12 @@ function GroupsView({
         );
       })}
 
-      {visible.length === 0 && visibleScribing.length === 0 && q && (
+      {visible.length === 0 && visibleScribing.length === 0 && skillResults.length === 0 && q && (
         <div style={{
           padding: "24px 16px", textAlign: "center",
           fontFamily: F.mono, fontSize: 11, color: T.inkMute,
           letterSpacing: "0.18em", textTransform: "uppercase",
-        }}>No lines match "{search}"</div>
+        }}>No results for "{search}"</div>
       )}
     </div>
   );
@@ -636,6 +715,7 @@ export function SkillLinePicker({
               search={search}
               noClassLines={noClassLines}
               scribingSlots={scribing}
+              kind={kind}
             />
           ) : (
             <SkillsView
