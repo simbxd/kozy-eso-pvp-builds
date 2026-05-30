@@ -1,3 +1,4 @@
+import { useRef, useCallback } from "react";
 import { useEditorStore } from "../state";
 import { T, F, Diamond } from "../atoms";
 
@@ -9,14 +10,34 @@ function AttrBar({ label, value, tint, onChange }: {
   label: string; value: number; tint: string;
   onChange: (v: number) => void;
 }) {
-  const pct = (value / 64) * 100;
+  const pct      = (value / 64) * 100;
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  const valueFromX = useCallback((clientX: number) => {
+    if (!trackRef.current) return value;
+    const { left, width } = trackRef.current.getBoundingClientRect();
+    const ratio = Math.max(0, Math.min(1, (clientX - left) / width));
+    return Math.round(ratio * 64);
+  }, [value]);
+
+  const onPointerDown = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    e.currentTarget.setPointerCapture(e.pointerId);
+    onChange(valueFromX(e.clientX));
+  }, [valueFromX, onChange]);
+
+  const onPointerMove = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    if (e.buttons !== 1) return;
+    onChange(valueFromX(e.clientX));
+  }, [valueFromX, onChange]);
+
   return (
     <div style={{
       padding: "20px 22px",
       border: `1px solid ${T.edgeStrong}`,
       background: "rgba(10,6,18,0.55)",
     }}>
-      <div style={{ display: "flex", alignItems: "baseline", marginBottom: 14 }}>
+      {/* Label + value */}
+      <div style={{ display: "flex", alignItems: "baseline", marginBottom: 18 }}>
         <div style={{
           fontFamily: F.mono, fontSize: 11, letterSpacing: "0.32em",
           color: tint, textTransform: "uppercase",
@@ -30,13 +51,55 @@ function AttrBar({ label, value, tint, onChange }: {
           letterSpacing: "0.22em", marginLeft: 6,
         }}>/ 64</div>
       </div>
-      <div style={{ height: 6, background: T.edge, position: "relative" }}>
+
+      {/* ── Slider track ── */}
+      <div
+        ref={trackRef}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        style={{
+          position: "relative",
+          height: 6,
+          background: T.edge,
+          cursor: "ew-resize",
+          /* hit area plus large */
+          padding: "8px 0",
+          margin: "-8px 0",
+          boxSizing: "content-box",
+        }}
+      >
+        {/* Fond rail */}
         <div style={{
-          position: "absolute", inset: 0, width: `${pct}%`,
-          background: `linear-gradient(90deg, ${tint}, ${tint}88)`,
+          position: "absolute", left: 0, right: 0,
+          top: "50%", transform: "translateY(-50%)",
+          height: 6, background: T.edge, pointerEvents: "none",
+        }}>
+          {/* Fill */}
+          <div style={{
+            position: "absolute", inset: 0, width: `${pct}%`,
+            background: `linear-gradient(90deg, ${tint}cc, ${tint}66)`,
+            transition: "width 60ms linear",
+          }} />
+        </div>
+
+        {/* Thumb */}
+        <div style={{
+          position: "absolute",
+          left: `${pct}%`,
+          top: "50%",
+          transform: "translate(-50%, -50%)",
+          width: 14, height: 14,
+          background: tint,
+          border: `2px solid rgba(10,6,18,0.9)`,
+          borderRadius: "50%",
+          boxShadow: `0 0 6px ${tint}88`,
+          pointerEvents: "none",
+          transition: "left 60ms linear",
         }} />
       </div>
-      <div style={{ marginTop: 14, display: "flex", gap: 6, flexWrap: "wrap" }}>
+
+      {/* Presets */}
+      <div style={{ marginTop: 22, display: "flex", gap: 6, flexWrap: "wrap" }}>
         {PRESETS.map((v) => (
           <button
             key={v} type="button"
