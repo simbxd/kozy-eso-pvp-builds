@@ -84,13 +84,24 @@ function buildGroups(subclasses: [string, string, string]): GroupDef[] {
   return groups;
 }
 
+// ── Scribing variant exclusion ────────────────────────────────────────────────
+// Scribing permutations (e.g. "goading-throw", "healing-soul") are identified
+// by: same skill_line_id as the grimoire AND id ends with `-${grimoire.id}`.
+// They are excluded everywhere — users access them via the Scribing Skills section.
+
+const SCRIBING_VARIANT_IDS = new Set(
+  skillsIndex
+    .filter((s) => GRIMOIRES.some((g) => s.skill_line_id === g.skill_line_id && s.id.endsWith(`-${g.id}`)))
+    .map((s) => s.id)
+);
+
 // ── Skill grouping (base + morphs) ────────────────────────────────────────────
 
 type SkillGroup = { base: EsoSkillIndex; morphs: EsoSkillIndex[] };
 
 function getSkillGroups(lineId: string, kind: "Active" | "Ultimate"): SkillGroup[] {
   const lineSkills = skillsIndex.filter(
-    (s) => s.skill_line_id === lineId && s.type === kind,
+    (s) => s.skill_line_id === lineId && s.type === kind && !SCRIBING_VARIANT_IDS.has(s.id),
   );
   const bases  = lineSkills.filter((s) => !s.morph_of);
   const morphs = lineSkills.filter((s) => !!s.morph_of);
@@ -180,14 +191,6 @@ function SearchBar({ value, onChange, placeholder = "Search…" }: {
 
 // ── Flat skill search index ───────────────────────────────────────────────────
 
-// Pre-built set of scribing permutation IDs — excluded from flat skill search
-// (they appear under the Scribing Skills section instead).
-const SCRIBING_VARIANT_IDS = new Set(
-  skillsIndex.filter((s) =>
-    GRIMOIRES.some((g) => s.skill_line_id === g.skill_line_id && s.id.endsWith(`-${g.id}`))
-  ).map((s) => s.id)
-);
-
 type FlatSkill = { skill: EsoSkillIndex; lineName: string; isBase: boolean };
 
 function buildFlatSkills(groups: GroupDef[], kind: "Active" | "Ultimate"): FlatSkill[] {
@@ -195,8 +198,7 @@ function buildFlatSkills(groups: GroupDef[], kind: "Active" | "Ultimate"): FlatS
   for (const group of groups) {
     for (const line of group.lines) {
       for (const sg of getSkillGroups(line.id, kind)) {
-        // Skip scribing permutations — they surface via the Scribing Skills section
-        if (SCRIBING_VARIANT_IDS.has(sg.base.id)) continue;
+        // Scribing variants already excluded in getSkillGroups
         if (sg.morphs.length > 0) {
           for (const m of sg.morphs) out.push({ skill: m, lineName: line.name, isBase: false });
         } else {
