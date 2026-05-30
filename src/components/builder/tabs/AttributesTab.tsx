@@ -145,9 +145,9 @@ export default function AttributesTab() {
 
       <AttrBar label="Health"  value={attrs.health}  tint="#e88f8f"
         onChange={(v) => setAttr("health", v)} />
-      <AttrBar label="Magicka" value={attrs.magicka} tint={T.medium}
+      <AttrBar label="Magicka" value={attrs.magicka} tint={T.light}
         onChange={(v) => setAttr("magicka", v)} />
-      <AttrBar label="Stamina" value={attrs.stamina} tint={T.light}
+      <AttrBar label="Stamina" value={attrs.stamina} tint={T.medium}
         onChange={(v) => setAttr("stamina", v)} />
     </div>
   );
