@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import Base from '../../layouts/Base.astro';
@@ -76,10 +77,36 @@ for (const cls of CLASS_ORDER) {
   }
 }
 
+// ── Rich skill data for tooltips ──
+// Load the full content collection to get resource, morph chain, rationale,
+// and the exact ESO-Hub URL that's stored per-skill (class/line/skill-id path).
+const allSkillEntries = await getCollection('skills');
+const skillDataMap  = new Map(allSkillEntries.map((e) => [e.data.id, e.data]));
+const skillNameMap  = new Map(allSkillEntries.map((e) => [e.data.id, e.data.name]));
+
 // Compact lookup the client script reads back to rebuild slots from ?skills=.
-const lookup: Record<string, { n: string; i: string; k: string }> = {};
+const lookup: Record<string, {
+  n: string; i: string; k: string;   // name, icon, class:line
+  t: string; r: string;               // type, resource
+  bs: string | null;                  // base_skill name (null = this IS the base)
+  ms: string | null;                  // morph_sibling name
+  mr: string;                         // morph_rationale
+  url: string;                        // esohub_url
+}> = {};
 for (const s of slotable) {
-  lookup[s.id] = { n: s.name, i: s.icon, k: `${s.class}:${s.skill_line}` };
+  const d    = skillDataMap.get(s.id);
+  const sibId = d?.morph_sibling ?? null;
+  lookup[s.id] = {
+    n:   s.name,
+    i:   s.icon,
+    k:   `${s.class}:${s.skill_line}`,
+    t:   s.type,
+    r:   d?.resource ?? '',
+    bs:  d?.base_skill ?? null,
+    ms:  sibId ? (skillNameMap.get(sibId) ?? null) : null,
+    mr:  d?.morph_rationale ?? '',
+    url: d?.esohub_url ?? `https://eso-hub.com/en/skills/${s.id}`,
+  };
 }
 
 const SLOT_LAYOUT = [0, 1, 2, 3, 4]; // 5 actives; 6th (ultimate) rendered apart
@@ -180,39 +207,84 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
     set:html={JSON.stringify(lookup)}
   ></script>
 
-  <div id="sbb-tip" class="sbb__tip" role="tooltip" aria-hidden="true">
-    <span class="sbb__tip-name"></span>
-    <a class="sbb__tip-link" href="#" target="_blank" rel="noopener noreferrer">
-      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-        <path d="M6 1h5v5M5 7l6-6M2 3h3M2 3v7h7V7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      View on ESO-Hub
-    </a>
-  </div>
+  <div id="sbb-tip" class="sbb__tip" role="tooltip" aria-hidden="true"></div>
 </Base>
 
 <script>
-  type SkillMeta = { n: string; i: string; k: string };
+  type SkillMeta = {
+    n: string; i: string; k: string;
+    t: string; r: string;
+    bs: string | null; ms: string | null;
+    mr: string; url: string;
+  };
   const lookup: Record<string, SkillMeta> = JSON.parse(
     document.getElementById('sbb-data')?.textContent || '{}',
   );
 
   // ── Skill tooltip ──
-  const tip        = document.getElementById('sbb-tip') as HTMLElement;
-  const tipName    = tip.querySelector('.sbb__tip-name') as HTMLElement;
-  const tipLink    = tip.querySelector('.sbb__tip-link') as HTMLAnchorElement;
+  const tip = document.getElementById('sbb-tip') as HTMLElement;
   let hideTimer: ReturnType<typeof setTimeout> | null = null;
+
+  function esc(s: string) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  const SHOW_RESOURCE = new Set(['Magicka', 'Stamina', 'Health']);
+
+  function buildTipHTML(meta: SkillMeta): string {
+    const [, line] = meta.k.split(':');
+    const showRes  = SHOW_RESOURCE.has(meta.r);
+
+    let h = `<div class="sbb__tip-head">
+      <div class="sbb__tip-title">${esc(meta.n)}</div>
+      <div class="sbb__tip-meta">
+        <span class="sbb__tip-line">${esc(line.toUpperCase())}</span>
+        <div class="sbb__tip-tags">
+          <span class="sbb__tag sbb__tag--${meta.t.toLowerCase()}">${esc(meta.t)}</span>
+          ${showRes ? `<span class="sbb__tag sbb__tag--${meta.r.toLowerCase()}">${esc(meta.r)}</span>` : ''}
+        </div>
+      </div>
+    </div>`;
+
+    if (meta.bs) {
+      h += `<div class="sbb__tip-morph">
+        <span class="sbb__morph-base">${esc(meta.bs)}</span>
+        <span class="sbb__morph-arrow">→</span>
+        <span class="sbb__morph-chosen">${esc(meta.n)}</span>
+        ${meta.ms ? `<span class="sbb__morph-or">/</span><span class="sbb__morph-sib">${esc(meta.ms)}</span>` : ''}
+      </div>`;
+    }
+
+    if (meta.mr) {
+      h += `<p class="sbb__tip-rationale">${esc(meta.mr)}</p>`;
+    }
+
+    h += `<a class="sbb__tip-link" href="${esc(meta.url)}" target="_blank" rel="noopener noreferrer">
+      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+        <path d="M6 1h5v5M5 7l6-6M2 3h3M2 3v7h7V7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      View on ESO-Hub
+    </a>`;
+
+    return h;
+  }
+
+  function positionTip(x: number, y: number) {
+    // Tip width ≈ 300px, height varies — clamp so it stays in viewport
+    const tw = 308;
+    const th = tip.offsetHeight || 140;
+    tip.style.left = `${Math.min(x + 14, window.innerWidth  - tw - 8)}px`;
+    tip.style.top  = `${Math.min(y + 14, window.innerHeight - th - 8)}px`;
+  }
 
   function showTip(id: string, x: number, y: number) {
     if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
     const meta = lookup[id];
-    if (!meta || !tip) return;
-    tipName.textContent = meta.n;
-    tipLink.href = `https://eso-hub.com/en/skills/${id}`;
-    // Clamp to viewport so it never goes off-screen
-    const tw = 190, th = 64;
-    tip.style.left = `${Math.min(x + 14, window.innerWidth  - tw - 8)}px`;
-    tip.style.top  = `${Math.min(y + 14, window.innerHeight - th - 8)}px`;
+    if (!meta) return;
+    tip.innerHTML = buildTipHTML(meta);
+    // re-bind link mouseleave so moving into link cancels hide
+    tip.querySelector('.sbb__tip-link')?.addEventListener('mouseleave', hideTip);
+    positionTip(x, y);
     tip.classList.add('is-visible');
     tip.setAttribute('aria-hidden', 'false');
   }
@@ -230,7 +302,7 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
   });
   tip.addEventListener('mouseleave', hideTip);
 
-  // Hide on drag start so tooltip doesn't stick while dragging
+  // Hide immediately when a drag starts
   document.addEventListener('dragstart', () => {
     tip.classList.remove('is-visible');
     if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
@@ -240,9 +312,7 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
     img.addEventListener('mouseenter', (e) => showTip(id, e.clientX, e.clientY));
     img.addEventListener('mousemove',  (e) => {
       if (!tip.classList.contains('is-visible')) return;
-      const tw = 190, th = 64;
-      tip.style.left = `${Math.min(e.clientX + 14, window.innerWidth  - tw - 8)}px`;
-      tip.style.top  = `${Math.min(e.clientY + 14, window.innerHeight - th - 8)}px`;
+      positionTip(e.clientX, e.clientY);
     });
     img.addEventListener('mouseleave', hideTip);
   }
@@ -728,31 +798,111 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
     display: none;
     position: fixed;
     z-index: 900;
+    width: 300px;
     background: var(--color-surface-2);
     border: 1px solid var(--color-border-2);
     border-top: 2px solid var(--color-accent);
-    padding: 10px 14px 12px;
-    min-width: 170px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.55);
+    padding: 16px 16px 14px;
+    box-shadow: 0 20px 56px rgba(0,0,0,0.65), 0 0 20px rgba(139,92,246,0.12);
     pointer-events: none;
+    text-align: left;
   }
   .sbb__tip.is-visible {
     display: block;
     pointer-events: auto;
   }
-  .sbb__tip-name {
-    display: block;
+
+  /* Head */
+  .sbb__tip-head {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+  }
+  .sbb__tip-title {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 21px;
     font-weight: 500;
     color: var(--color-text);
-    margin-bottom: 8px;
-    white-space: nowrap;
+    line-height: 1.15;
+    margin-bottom: 7px;
   }
+  .sbb__tip-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .sbb__tip-line {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+  }
+  .sbb__tip-tags {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  /* Tags */
+  .sbb__tag {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border: 1px solid var(--color-border-2);
+    color: var(--color-text-muted);
+  }
+  .sbb__tag--active   { color: var(--color-mono);   border-color: rgba(196,181,253,0.25); }
+  .sbb__tag--ultimate { color: var(--color-mythic);  border-color: rgba(212,164,74,0.3); }
+  .sbb__tag--magicka  { color: #a78bfa; border-color: rgba(167,139,250,0.25); }
+  .sbb__tag--stamina  { color: #86efac; border-color: rgba(134,239,172,0.25); }
+  .sbb__tag--health   { color: #fca5a5; border-color: rgba(252,165,165,0.25); }
+
+  /* Morph chain */
+  .sbb__tip-morph {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 10px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    margin-bottom: 12px;
+  }
+  .sbb__morph-base   { color: var(--color-text-muted); }
+  .sbb__morph-arrow  { color: var(--color-accent); }
+  .sbb__morph-chosen {
+    color: var(--color-mono);
+    background: rgba(139,92,246,0.12);
+    padding: 1px 6px;
+  }
+  .sbb__morph-or  { color: var(--color-text-muted); opacity: 0.5; }
+  .sbb__morph-sib {
+    color: var(--color-text-muted);
+    text-decoration: line-through;
+    text-decoration-color: rgba(125,119,160,0.4);
+  }
+
+  /* Rationale */
+  .sbb__tip-rationale {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d8d2f0;
+    margin: 0 0 12px;
+  }
+
+  /* ESO-Hub link */
   .sbb__tip-link {
     display: flex;
     align-items: center;
     gap: 6px;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-border);
     font-family: var(--font-mono);
     font-size: 10px;
     letter-spacing: 0.16em;
