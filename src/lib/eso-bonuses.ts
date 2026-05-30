@@ -586,9 +586,9 @@ export const CP_PASSIVE_VALUES: Array<{ id: string; contrib: Partial<ComputedSta
 //    defense  : resistances
 //    recovery : recovery rates (health/magicka/stamina)
 //
-// ── Crit rating values (U50, verified via UESP ESO_BUFF_DATA):
-//    Major Prophecy / Major Savagery  : +2191 critRating ≈ +10% crit
-//    Minor Prophecy / Minor Savagery  : +1096 critRating ≈ +5%  crit
+// ── Crit rating values (U50, verified via ESO-Hub):
+//    Major Prophecy / Major Savagery  : +2629 critRating = +12% crit
+//    Minor Prophecy / Minor Savagery  : +1314 critRating = +6%  crit
 //    Note: Prophecy = Spell Crit, Savagery = Weapon Crit — unified as critRating here.
 //
 // ── Courage values (U50):
@@ -624,13 +624,13 @@ export const BUFF_DEFS: BuffDef[] = [
   { id: "minor-force",      label: "Minor Force",      group: "offense",
     contrib: { critDamage: 10 } },
   { id: "major-prophecy",   label: "Major Prophecy",   group: "offense",
-    contrib: { critRating: 2191 } },  // Spell Crit ≈ +10%
+    contrib: { critRating: 2629 } },  // Spell Crit +12% — ESO-Hub verified
   { id: "minor-prophecy",   label: "Minor Prophecy",   group: "offense",
-    contrib: { critRating: 1096 } },  // ≈ +5%
+    contrib: { critRating: 1314 } },  // +6%
   { id: "major-savagery",   label: "Major Savagery",   group: "offense",
-    contrib: { critRating: 2191 } },  // Weapon Crit ≈ +10%
+    contrib: { critRating: 2629 } },  // Weapon Crit +12% — ESO-Hub verified
   { id: "minor-savagery",   label: "Minor Savagery",   group: "offense",
-    contrib: { critRating: 1096 } },  // ≈ +5%
+    contrib: { critRating: 1314 } },  // +6%
 
   // ── Defense ───────────────────────────────────────────────────────────
   { id: "major-resolve",    label: "Major Resolve",    group: "defense",

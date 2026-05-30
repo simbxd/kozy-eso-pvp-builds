@@ -78,7 +78,7 @@ export const AFFIXES: AffixDef[] = [
   // ── Offense buffs ──
   { id: "brutality-sorcery",  name: "Major Brutality & Sorcery",  icon: "/assets/scribing/affix-brutality-sorcery.png",  hint: "+20% WD+SD",          buff_ids: ["major-brutality", "major-sorcery"]        },
   { id: "courage",            name: "Major Courage",              icon: "/assets/scribing/affix-courage.png",            hint: "+430 WD+SD",          buff_ids: ["major-courage"]                           },
-  { id: "savage-prophecy",    name: "Maj. Savagery & Prophecy",   icon: "/assets/scribing/affix-savage-prophecy.png",    hint: "+2191 Crit Rating",   buff_ids: ["major-savagery", "major-prophecy"]         },
+  { id: "savage-prophecy",    name: "Maj. Savagery & Prophecy",   icon: "/assets/scribing/affix-savage-prophecy.png",    hint: "+2629 Crit Rating",   buff_ids: ["major-savagery", "major-prophecy"]         },
   { id: "force",              name: "Minor Force",                icon: "/assets/scribing/affix-force.png",              hint: "+10% Crit Dmg",       buff_ids: ["minor-force"]                             },
   { id: "berserk",            name: "Minor Berserk",              icon: "/assets/scribing/affix-berserk.png",            hint: "+5% Dmg Dealt"                                                              },
   { id: "enervation",         name: "Minor Enervation",           icon: "/assets/scribing/affix-enervation.png",         hint: "−10% Crit Dmg on target"                                                    },
