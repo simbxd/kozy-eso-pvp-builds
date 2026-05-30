@@ -87,12 +87,12 @@ export const AFFIXES: AffixDef[] = [
   // ── Defense buffs ──
   { id: "resolve",            name: "Major Resolve",              icon: "/assets/scribing/affix-resolve.png",            hint: "+5948 Resist",        buff_ids: ["major-resolve"]                           },
   { id: "protection",         name: "Major Protection",           icon: "/assets/scribing/affix-protection.png",         hint: "-10% Dmg Taken"                                                             },
-  { id: "evasion",            name: "Major Evasion",              icon: "/assets/scribing/affix-evasion.png",            hint: "+20% Dodge Chance"                                                          },
+  { id: "evasion",            name: "Major Evasion",              icon: "/assets/scribing/affix-evasion.png",            hint: "-20% AoE Dmg Taken"                                                         },
 
   // ── Utility / mobility ──
-  { id: "heroism",            name: "Minor Heroism",              icon: "/assets/scribing/affix-heroism.png",            hint: "+1 Ult/1.5s"                                                                },
+  { id: "heroism",            name: "Minor Heroism",              icon: "/assets/scribing/affix-heroism.png",            hint: "+3 Ult/1.5s"                                                                },
   { id: "expedition",         name: "Major Expedition",           icon: "/assets/scribing/affix-expedition.png",         hint: "+30% Move Speed"                                                            },
-  { id: "vitality",           name: "Major Vitality",             icon: "/assets/scribing/affix-vitality.png",           hint: "+20% Healing Recv"                                                          },
+  { id: "vitality",           name: "Major Vitality",             icon: "/assets/scribing/affix-vitality.png",           hint: "+16% Healing Recv"                                                          },
   { id: "intellect-endurance",name: "Min. Intellect & Endurance", icon: "/assets/scribing/affix-intellect-endurance.png",hint: "+15% Mag/Stam Recov"                                                        },
   { id: "lifesteal",          name: "Life Steal",                 icon: "/assets/scribing/affix-lifesteal.png",          hint: "Restore HP on hit"                                                          },
   { id: "magicka-steal",      name: "Magicka Steal",              icon: "/assets/scribing/affix-magicka-steal.png",      hint: "Drain Mag from target"                                                      },
@@ -101,9 +101,9 @@ export const AFFIXES: AffixDef[] = [
 
   // ── Debuffs on target ──
   { id: "breach",             name: "Major Breach",               icon: "/assets/scribing/affix-breach.png",             hint: "−5948 Target Resist"                                                        },
-  { id: "defile",             name: "Major Defile",               icon: "/assets/scribing/affix-defile.png",             hint: "−30% Healing on target"                                                     },
-  { id: "maim",               name: "Major Maim",                 icon: "/assets/scribing/affix-maim.png",               hint: "−15% Dmg on target"                                                         },
-  { id: "vulnerability",      name: "Major Vulnerability",        icon: "/assets/scribing/affix-vulnerability.png",      hint: "+20% Dmg Taken on target"                                                   },
+  { id: "defile",             name: "Major Defile",               icon: "/assets/scribing/affix-defile.png",             hint: "−16% Healing on target"                                                     },
+  { id: "maim",               name: "Major Maim",                 icon: "/assets/scribing/affix-maim.png",               hint: "−10% Dmg on target"                                                         },
+  { id: "vulnerability",      name: "Major Vulnerability",        icon: "/assets/scribing/affix-vulnerability.png",      hint: "+10% Dmg Taken on target"                                                   },
   { id: "cowardice",          name: "Major Cowardice",            icon: "/assets/scribing/affix-cowardice.png",          hint: "−215 WD+SD on target"                                                       },
   { id: "brittle",            name: "Minor Brittle",              icon: "/assets/scribing/affix-brittle.png",            hint: "+8% Crit Dmg on target"                                                     },
   { id: "mangle",             name: "Minor Mangle",               icon: "/assets/scribing/affix-mangle.png",             hint: "−15% Max HP on target"                                                      },
