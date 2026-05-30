@@ -5,7 +5,7 @@ import { skillsIndex } from "@/lib/eso-data";
 import type { EsoSkillIndex } from "@/types/eso";
 import skillLinesJson from "@/data/eso/skill-lines-index.json";
 import { useEditorStore } from "../state";
-import { GRIMOIRE_MAP, AFFIX_MAP } from "@/lib/scribing-defs";
+import { GRIMOIRE_MAP, AFFIX_MAP, GRIMOIRES } from "@/lib/scribing-defs";
 import type { ScribingSlot } from "../state";
 
 // ── Static data ───────────────────────────────────────────────────────────────
@@ -180,6 +180,14 @@ function SearchBar({ value, onChange, placeholder = "Search…" }: {
 
 // ── Flat skill search index ───────────────────────────────────────────────────
 
+// Pre-built set of scribing permutation IDs — excluded from flat skill search
+// (they appear under the Scribing Skills section instead).
+const SCRIBING_VARIANT_IDS = new Set(
+  skillsIndex.filter((s) =>
+    GRIMOIRES.some((g) => s.skill_line_id === g.skill_line_id && s.id.endsWith(`-${g.id}`))
+  ).map((s) => s.id)
+);
+
 type FlatSkill = { skill: EsoSkillIndex; lineName: string; isBase: boolean };
 
 function buildFlatSkills(groups: GroupDef[], kind: "Active" | "Ultimate"): FlatSkill[] {
@@ -187,6 +195,8 @@ function buildFlatSkills(groups: GroupDef[], kind: "Active" | "Ultimate"): FlatS
   for (const group of groups) {
     for (const line of group.lines) {
       for (const sg of getSkillGroups(line.id, kind)) {
+        // Skip scribing permutations — they surface via the Scribing Skills section
+        if (SCRIBING_VARIANT_IDS.has(sg.base.id)) continue;
         if (sg.morphs.length > 0) {
           for (const m of sg.morphs) out.push({ skill: m, lineName: line.name, isBase: false });
         } else {
