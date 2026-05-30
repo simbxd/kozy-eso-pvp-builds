@@ -74,68 +74,58 @@ function slotIndex(i: number) {
             <div class="slot__name">{skill.name}</div>
             <div class="slot__line">{skill.skill_line.toUpperCase()}</div>
 
-            <div class="tooltip" role="tooltip">
-              <div class="tooltip__head">
-                <div class="tooltip__title">{skill.name}</div>
-                <div class="tooltip__meta">
-                  <span class="tooltip__line">{skill.skill_line.toUpperCase()}</span>
-                  <div class="tooltip__tags">
-                    {hasScribing && <span class="tag tag--scribing">Scribed</span>}
-                    <span class:list={['tag', `tag--${skill.type.toLowerCase()}`]}>{skill.type}</span>
-                    {skill.resource && skill.resource !== 'None' && (
-                      <span class:list={['tag', `tag--${skill.resource.toLowerCase()}`]}>{skill.resource}</span>
+            {(hasMorph || hasScribing) && (
+              <div class="tooltip" role="tooltip">
+                <div class="tooltip__head">
+                  <div class="tooltip__title">{skill.name}</div>
+                  <div class="tooltip__meta">
+                    <span class="tooltip__line">{skill.skill_line.toUpperCase()}</span>
+                    <div class="tooltip__tags">
+                      {hasScribing && <span class="tag tag--scribing">Scribed</span>}
+                      <span class:list={['tag', `tag--${skill.type.toLowerCase()}`]}>{skill.type}</span>
+                      {skill.resource && skill.resource !== 'None' && (
+                        <span class:list={['tag', `tag--${skill.resource.toLowerCase()}`]}>{skill.resource}</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {hasMorph && (
+                  <div class="morph">
+                    <span class="morph__base">{skill.base_skill}</span>
+                    <span class="morph__arrow">→</span>
+                    <span class="morph__chosen">{skill.name}</span>
+                    {skill.morph_sibling_name && (
+                      <>
+                        <span class="morph__or">/</span>
+                        <span class="morph__sibling">{skill.morph_sibling_name}</span>
+                      </>
                     )}
                   </div>
-                </div>
+                )}
+
+                {hasScribing && skill.scribing && (
+                  <div class="scripts">
+                    <div class="scripts__row">
+                      <span class="scripts__k">Focus</span>
+                      <span class="scripts__v">{skill.scribing.focus}</span>
+                    </div>
+                    <div class="scripts__row">
+                      <span class="scripts__k">Signature</span>
+                      <span class="scripts__v">{skill.scribing.signature}</span>
+                    </div>
+                    <div class="scripts__row">
+                      <span class="scripts__k">Affix</span>
+                      <span class="scripts__v">{skill.scribing.affix}</span>
+                    </div>
+                  </div>
+                )}
+
+                {skill.morph_rationale && (
+                  <p class="tooltip__rationale">{skill.morph_rationale}</p>
+                )}
               </div>
-
-              {hasMorph && (
-                <div class="morph">
-                  <span class="morph__base">{skill.base_skill}</span>
-                  <span class="morph__arrow">→</span>
-                  <span class="morph__chosen">{skill.name}</span>
-                  {skill.morph_sibling_name && (
-                    <>
-                      <span class="morph__or">/</span>
-                      <span class="morph__sibling">{skill.morph_sibling_name}</span>
-                    </>
-                  )}
-                </div>
-              )}
-
-              {hasScribing && skill.scribing && (
-                <div class="scripts">
-                  <div class="scripts__row">
-                    <span class="scripts__k">Focus</span>
-                    <span class="scripts__v">{skill.scribing.focus}</span>
-                  </div>
-                  <div class="scripts__row">
-                    <span class="scripts__k">Signature</span>
-                    <span class="scripts__v">{skill.scribing.signature}</span>
-                  </div>
-                  <div class="scripts__row">
-                    <span class="scripts__k">Affix</span>
-                    <span class="scripts__v">{skill.scribing.affix}</span>
-                  </div>
-                </div>
-              )}
-
-              {skill.morph_rationale && (
-                <p class="tooltip__rationale">{skill.morph_rationale}</p>
-              )}
-
-              <a
-                href={`https://eso-hub.com/en/skills/${skill.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="tooltip__esohub"
-              >
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="flex-shrink:0">
-                  <path d="M6 1h5v5M5 7l6-6M2 3h3M2 3v7h7V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                View on ESO-Hub
-              </a>
-            </div>
+            )}
           </div>
         );
       })}
@@ -391,7 +381,7 @@ function slotIndex(i: number) {
     padding: 18px 18px 16px;
     z-index: 50;
     box-shadow: 0 24px 60px rgba(0,0,0,0.6), 0 0 24px var(--color-accent-glow);
-    pointer-events: auto;
+    pointer-events: none;
     text-align: left;
     animation: kz-tooltip-in 180ms cubic-bezier(.2,.7,.2,1);
   }
@@ -415,8 +405,7 @@ function slotIndex(i: number) {
   }
 
   .slot:hover .tooltip,
-  .slot:focus-within .tooltip,
-  .slot .tooltip:hover { display: block; }
+  .slot:focus-within .tooltip { display: block; }
 
   /* Flip last slots to avoid overflow */
   .slot:nth-child(5) .tooltip,
@@ -594,26 +583,6 @@ function slotIndex(i: number) {
     color: #d8d2f0;
     margin: 0;
   }
-
-  /* ESO-Hub link */
-  .tooltip__esohub {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 12px;
-    padding-top: 10px;
-    border-top: 1px solid var(--color-border);
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--color-accent);
-    text-decoration: none;
-    opacity: 0.65;
-    transition: opacity 150ms;
-  }
-
-  .tooltip__esohub:hover { opacity: 1; }
 
   /* Mobile: 3-column layout */
   @media (max-width: 640px) {
