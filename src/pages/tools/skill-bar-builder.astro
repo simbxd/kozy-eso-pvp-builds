@@ -210,6 +210,112 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
   <div id="sbb-tip" class="sbb__tip" role="tooltip" aria-hidden="true"></div>
 </Base>
 
+<!-- Tooltip inner styles: content is injected via innerHTML so Astro's
+     scoped CSS can't reach it — needs is:global to apply. -->
+<style is:global>
+  /* Head */
+  #sbb-tip .sbb__tip-head {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+  }
+  #sbb-tip .sbb__tip-title {
+    font-family: var(--font-display);
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--color-text);
+    line-height: 1.15;
+    margin-bottom: 7px;
+  }
+  #sbb-tip .sbb__tip-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  #sbb-tip .sbb__tip-line {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+  }
+  #sbb-tip .sbb__tip-tags {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  /* Tags */
+  #sbb-tip .sbb__tag {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border: 1px solid var(--color-border-2);
+    color: var(--color-text-muted);
+  }
+  #sbb-tip .sbb__tag--active   { color: var(--color-mono);  border-color: rgba(196,181,253,0.25); }
+  #sbb-tip .sbb__tag--ultimate { color: var(--color-mythic); border-color: rgba(212,164,74,0.3); }
+  #sbb-tip .sbb__tag--magicka  { color: #a78bfa; border-color: rgba(167,139,250,0.25); }
+  #sbb-tip .sbb__tag--stamina  { color: #86efac; border-color: rgba(134,239,172,0.25); }
+  #sbb-tip .sbb__tag--health   { color: #fca5a5; border-color: rgba(252,165,165,0.25); }
+
+  /* Morph chain */
+  #sbb-tip .sbb__tip-morph {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 10px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    margin-bottom: 12px;
+  }
+  #sbb-tip .sbb__morph-base   { color: var(--color-text-muted); }
+  #sbb-tip .sbb__morph-arrow  { color: var(--color-accent); }
+  #sbb-tip .sbb__morph-chosen {
+    color: var(--color-mono);
+    background: rgba(139,92,246,0.12);
+    padding: 1px 6px;
+  }
+  #sbb-tip .sbb__morph-or  { color: var(--color-text-muted); opacity: 0.5; }
+  #sbb-tip .sbb__morph-sib {
+    color: var(--color-text-muted);
+    text-decoration: line-through;
+    text-decoration-color: rgba(125,119,160,0.4);
+  }
+
+  /* Rationale */
+  #sbb-tip .sbb__tip-rationale {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d8d2f0;
+    margin: 0 0 12px;
+  }
+
+  /* ESO-Hub link */
+  #sbb-tip .sbb__tip-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-border);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 120ms;
+  }
+  #sbb-tip .sbb__tip-link:hover { opacity: 1; }
+</style>
+
 <script>
   type SkillMeta = {
     n: string; i: string; k: string;
@@ -793,7 +899,7 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
     transform: translateY(-2px);
   }
 
-  /* ── Skill tooltip ── */
+  /* ── Skill tooltip container (static element → scoped CSS works) ── */
   .sbb__tip {
     display: none;
     position: fixed;
@@ -811,108 +917,6 @@ const lineIdOf = (skill: IndexSkill) => skill.skill_line_id;
     display: block;
     pointer-events: auto;
   }
-
-  /* Head */
-  .sbb__tip-head {
-    border-bottom: 1px solid var(--color-border);
-    padding-bottom: 10px;
-    margin-bottom: 12px;
-  }
-  .sbb__tip-title {
-    font-family: var(--font-display);
-    font-size: 21px;
-    font-weight: 500;
-    color: var(--color-text);
-    line-height: 1.15;
-    margin-bottom: 7px;
-  }
-  .sbb__tip-meta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-  }
-  .sbb__tip-line {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    color: var(--color-text-muted);
-  }
-  .sbb__tip-tags {
-    display: flex;
-    gap: 4px;
-    flex-shrink: 0;
-  }
-
-  /* Tags */
-  .sbb__tag {
-    font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 2px 6px;
-    border: 1px solid var(--color-border-2);
-    color: var(--color-text-muted);
-  }
-  .sbb__tag--active   { color: var(--color-mono);   border-color: rgba(196,181,253,0.25); }
-  .sbb__tag--ultimate { color: var(--color-mythic);  border-color: rgba(212,164,74,0.3); }
-  .sbb__tag--magicka  { color: #a78bfa; border-color: rgba(167,139,250,0.25); }
-  .sbb__tag--stamina  { color: #86efac; border-color: rgba(134,239,172,0.25); }
-  .sbb__tag--health   { color: #fca5a5; border-color: rgba(252,165,165,0.25); }
-
-  /* Morph chain */
-  .sbb__tip-morph {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px;
-    padding: 8px 10px;
-    background: var(--color-bg);
-    border: 1px solid var(--color-border);
-    margin-bottom: 12px;
-  }
-  .sbb__morph-base   { color: var(--color-text-muted); }
-  .sbb__morph-arrow  { color: var(--color-accent); }
-  .sbb__morph-chosen {
-    color: var(--color-mono);
-    background: rgba(139,92,246,0.12);
-    padding: 1px 6px;
-  }
-  .sbb__morph-or  { color: var(--color-text-muted); opacity: 0.5; }
-  .sbb__morph-sib {
-    color: var(--color-text-muted);
-    text-decoration: line-through;
-    text-decoration-color: rgba(125,119,160,0.4);
-  }
-
-  /* Rationale */
-  .sbb__tip-rationale {
-    font-family: var(--font-body);
-    font-size: 14px;
-    line-height: 1.5;
-    color: #d8d2f0;
-    margin: 0 0 12px;
-  }
-
-  /* ESO-Hub link */
-  .sbb__tip-link {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding-top: 10px;
-    border-top: 1px solid var(--color-border);
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--color-accent);
-    text-decoration: none;
-    opacity: 0.7;
-    transition: opacity 120ms;
-  }
-  .sbb__tip-link:hover { opacity: 1; }
 
   .sbb__note {
     font-family: var(--font-mono);
