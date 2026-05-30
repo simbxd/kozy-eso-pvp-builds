@@ -152,6 +152,10 @@ const WEAPON_TYPES: SelectItem[] = [
 
 function WeaponRow({ piece }: { piece: WeaponPiece }) {
   const patch = useEditorStore((s) => s.patchWeaponPiece);
+  // Shields use armor traits + armor enchants (not weapon ones).
+  const isShield = piece.type === "shield";
+  const traitItems   = isShield ? TRAIT_ARMOR   : TRAIT_WEAPON;
+  const enchantItems = isShield ? ENCHANT_ARMOR  : ENCHANT_WEAPON;
   return (
     <div style={{
       display: "grid", gridTemplateColumns: COLS, gap: 6,
@@ -164,9 +168,9 @@ function WeaponRow({ piece }: { piece: WeaponPiece }) {
       <SearchSelect value={piece.set}    onChange={(id) => patch(piece.slot, { set: id })}
         items={SET_ITEMS}     placeholder="Set"    height={28} popoverWidth={320} />
       <SearchSelect value={piece.trait}  onChange={(id) => patch(piece.slot, { trait: id })}
-        items={TRAIT_WEAPON}  placeholder="Trait"  searchable={false} height={28} popoverWidth={180} />
+        items={traitItems}    placeholder="Trait"  searchable={false} height={28} popoverWidth={180} />
       <SearchSelect value={piece.enchant} onChange={(id) => patch(piece.slot, { enchant: id })}
-        items={ENCHANT_WEAPON} placeholder="Enchant" searchable={false} height={28} popoverWidth={260} />
+        items={enchantItems}  placeholder="Enchant" searchable={false} height={28} popoverWidth={260} />
       <SearchSelect value={piece.type}   onChange={(id) => patch(piece.slot, { type: id })}
         items={WEAPON_TYPES}  placeholder="Type"  searchable={false} height={28} popoverWidth={200} />
     </div>
