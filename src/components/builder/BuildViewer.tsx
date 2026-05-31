@@ -437,8 +437,9 @@ function SkillIcon({ id, ult, scribing = [] }: { id: string; ult?: boolean; scri
   const slotted = !!id;
   const isScribe = scrIdx >= 0;
 
-  const [show,    setShow]    = useState(false);
-  const [tipData, setTipData] = useState<EsoHubSkillTip | "loading" | null>(null);
+  const [show,       setShow]       = useState(false);
+  const [tipData,    setTipData]    = useState<EsoHubSkillTip | "loading" | null>(null);
+  const [iconFailed, setIconFailed] = useState(false);
 
   const handleMouseEnter = () => {
     if (!id || isScribe) return;  // no ESO-Hub tip for scribing
@@ -475,10 +476,10 @@ function SkillIcon({ id, ult, scribing = [] }: { id: string; ult?: boolean; scri
         display: "flex", alignItems: "center", justifyContent: "center",
         overflow: "hidden",
       }}>
-        {displayIcon ? (
+        {displayIcon && !iconFailed ? (
           <img src={displayIcon} alt={displayName}
             style={{ width: 58, height: 58, borderRadius: "50%" }}
-            onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
+            onError={() => setIconFailed(true)} />
         ) : (
           <span style={{
             fontFamily: F.cinzel, fontSize: isScribe ? 16 : 20,
