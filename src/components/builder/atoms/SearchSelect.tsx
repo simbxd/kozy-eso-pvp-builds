@@ -46,7 +46,15 @@ export function SearchSelect({
   const matches = useMemo(() => {
     if (!searchable) return items;
     const n = q.trim().toLowerCase();
-    return n ? items.filter((i) => i.label.toLowerCase().includes(n)) : items;
+    if (!n) return items;
+    const hits = items.filter((i) => i.label.toLowerCase().includes(n));
+    // Sort: exact startsWith first, then the rest (stable within each group)
+    hits.sort((a, b) => {
+      const aStarts = a.label.toLowerCase().startsWith(n) ? 0 : 1;
+      const bStarts = b.label.toLowerCase().startsWith(n) ? 0 : 1;
+      return aStarts - bStarts;
+    });
+    return hits;
   }, [q, items, searchable]);
 
   const shown    = matches.slice(0, CAP);

@@ -144,9 +144,21 @@ function CpTree({ title, tint, tree }: {
 
 export default function CpTab() {
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, height: "100%", overflow: "hidden" }}>
-      <CpTree title="Warfare" tint={T.heavy}  tree="warfare" />
-      <CpTree title="Fitness" tint={T.medium} tree="fitness" />
+    <div style={{ display: "flex", flexDirection: "column", gap: 16, height: "100%", overflow: "hidden" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, flex: 1, overflow: "hidden" }}>
+        <CpTree title="Warfare" tint={T.heavy}  tree="warfare" />
+        <CpTree title="Fitness" tint={T.medium} tree="fitness" />
+      </div>
+
+      {/* Passive note */}
+      <div style={{
+        fontFamily: F.mono, fontSize: 9, letterSpacing: "0.08em",
+        color: T.inkFaint, textTransform: "uppercase",
+        borderTop: `1px solid ${T.edge}`, paddingTop: 8,
+        flexShrink: 0,
+      }}>
+        ◆ Passive nodes (Hardy, Piercing, Mighty…) are always active at max rank — no slot required
+      </div>
     </div>
   );
 }

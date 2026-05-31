@@ -19,7 +19,8 @@ export type BuildSchemaV1 = {
   };
   bs?: boolean;                       // Battle Spirit toggle (default true)
   bx?: string[];                      // active buff IDs (Major Resolve, Brutality…)
-  pa?: string[];                      // disabled passive IDs
+  pa?: string[];                      // disabled passive IDs (legacy v1 — not used by editor)
+  pe?: string[];                      // enabled passive skill IDs (opt-in gate for armor/weapon-line/class passives)
   meta?: {
     name?: string;
     mode?: "cyro" | "bg" | "ic" | "duel";

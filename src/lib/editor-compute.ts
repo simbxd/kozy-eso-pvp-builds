@@ -87,6 +87,12 @@ function buildFromEditor(
   // Mundus: comes from meta (General tab selection)
   const mundus = meta.mundus || undefined;
 
+  // Enabled passive skill IDs — opt-in gate for armor/weapon-line/class passives.
+  // Empty array = nothing applied (strict opt-in, no legacy fallback).
+  const pe = Object.entries(setup.passives ?? {})
+    .filter(([, on]) => on)
+    .map(([id]) => id);
+
   return {
     v:  1,
     c:  meta.classId,
@@ -113,6 +119,7 @@ function buildFromEditor(
     },
     bs: battleSpirit,
     bx,
+    pe,
   };
 }
 

@@ -292,10 +292,26 @@ function armorCountsByWeight(gear: GearPieceV1[]): Record<ArmorWeight, number> {
   return counts;
 }
 
+// ── Passive gating ───────────────────────────────────────────────────────────
+// build.pe lists skill IDs the user has explicitly enabled in PassivesTab.
+// Strict opt-in: if a passive's skill ID is not in pe, its stat contribution
+// is skipped. Race base stats, Undaunted Mettle and CP passives are not gated
+// (always-on by product decision).
+//
+// Twin Blade and Blunt is modelled as 4 weapon-specific entries
+// (twin-blade-and-blunt-{axe,mace,sword,dagger}) but is a single in-game
+// passive — all 4 entries map to the same skill ID.
+function passiveSkillId(constantKey: string): string {
+  if (constantKey.startsWith("twin-blade-and-blunt-")) return "twin-blade-and-blunt";
+  return constantKey;
+}
+
 // ── Main compute function ────────────────────────────────────────────────────
 
 export function computeStats(build: Build): ComputeResult {
   const acc = new StatAccumulator();
+  const pe  = new Set(build.pe ?? []);
+  const isPassiveOn = (constantKey: string) => pe.has(passiveSkillId(constantKey));
 
   // ── 1. Race ──────────────────────────────────────────────────────────
   const raceKey = build.r.toLowerCase();
@@ -421,6 +437,7 @@ export function computeStats(build: Build): ComputeResult {
 
   // Flat passives (prodigy, spell-warding, concentration, resolve)
   for (const [passiveId, contrib] of Object.entries(ARMOR_PASSIVE_PER_PIECE)) {
+    if (!isPassiveOn(passiveId)) continue;
     const weight = ARMOR_PASSIVE_WEIGHT[passiveId];
     const pieces = armorCounts[weight] ?? 0;
     if (!pieces) continue;
@@ -432,6 +449,7 @@ export function computeStats(build: Build): ComputeResult {
 
   // % passives (constitution, juggernaut, agility, athletics)
   for (const [passiveId, def] of Object.entries(ARMOR_PASSIVE_PCT_PER_PIECE)) {
+    if (!isPassiveOn(passiveId)) continue;
     const weight = ARMOR_PASSIVE_WEIGHT[passiveId];
     const pieces = armorCounts[weight] ?? 0;
     if (!pieces) continue;
@@ -444,7 +462,7 @@ export function computeStats(build: Build): ComputeResult {
   }
 
   // Dexterity (medium): +1% Critical Damage per DEXTERITY_CRIT_PER_N_PIECES pieces
-  {
+  if (isPassiveOn("dexterity")) {
     const medPieces = armorCounts.medium ?? 0;
     const dexStages = Math.floor(medPieces / DEXTERITY_CRIT_PER_N_PIECES);
     if (dexStages > 0) {
@@ -471,6 +489,7 @@ export function computeStats(build: Build): ComputeResult {
   {
     const bar1Weapons = [mh1Type, oh1Type].filter(Boolean) as string[];
     for (const [passiveId, def] of Object.entries(WEAPON_LINE_PASSIVE)) {
+      if (!isPassiveOn(passiveId)) continue;
       if (def.requiresBarType && barType !== def.requiresBarType) continue;
       const matchCount = bar1Weapons.filter((t) => t === def.weaponType).length;
       if (matchCount === 0) continue;
@@ -490,10 +509,12 @@ export function computeStats(build: Build): ComputeResult {
 
   for (const [passiveId, def] of Object.entries(CLASS_PASSIVE_VALUES)) {
     if (def.classId !== classId) continue;
+    if (!isPassiveOn(passiveId)) continue;
     acc.add(`Passive: ${passiveId}`, def.contrib);
   }
   for (const [passiveId, def] of Object.entries(CLASS_PASSIVE_POOL_PCT)) {
     if (def.classId !== classId) continue;
+    if (!isPassiveOn(passiveId)) continue;
     for (const [k, pct] of Object.entries(def.pools)) {
       acc.multiply(`Passive: ${passiveId}`, [k as keyof ComputedStats], 1 + (pct as number));
     }

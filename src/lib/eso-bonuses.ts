@@ -547,29 +547,46 @@ export const CLASS_PASSIVE_POOL_PCT: Record<string, {
   "expert-summoner": { classId: "sorcerer",   pools: { maxMagicka: 0.05, maxStamina: 0.05 } },
 };
 
-// ── CP passive (non-slottable) stars — always active at CP810+ ───────────────
-// Source: ESO-Hub verified 2026-05-28. These are passive (Is slotable: No) CP stars
-// that auto-apply when enough CP is invested in the node (assumes max stages at CP810+).
-// NOT stored in build.cp — applied unconditionally.
+// ── CP passive (non-slottable) stars — always active at max CP ───────────────
+// Source: ESO-Hub verified 2026-05-31 (Is slotable: No). These passive stars
+// auto-apply when CP is invested in their cluster. Assumes max stages (CP810+).
+// NOT stored in build.cp — applied unconditionally in step 8c.
 //
-// Verified values (ESO-Hub 2026-05-28):
-//   war-mage          Warfare/Extended Might — +100 WSD to Magical attacks (1 stage, 30 pts)
-//                     Applied as spellDmg only — conditional on magical damage type.
-//   eldritch-insight  Warfare — +260 Max Magicka/stage × 2 stages (jump pts 0,10,20)
-//   tireless-discipline Warfare — +260 Max Stamina/stage × 2 stages (jump pts 0,10,20)
-//   piercing          Warfare/Extended Might — +350 Offensive Penetration/stage × 2 (jump pts 0,10,20)
-//   precision         Warfare — +160 Critical Chance/stage × 2 (jump pts 0,10,20)
-//   fortification     REMOVED — Fitness, +2% block mitigation/stage, NOT a stat we model
-//   battle-mastery    REMOVED — Warfare/Extended Might, +30% Martial status effect chance/stage, NOT critDamage
+// Stage count from ESO-Hub jump points:
+//   jump pts 0, 10, 20       → 3 stages max  (most nodes)
+//   jump pts 0, 30           → 2 stages max  (mighty, war-mage)
+//   jump pts 0, 8, 16        → 3 stages max  (hasty)
+//   jump pts 0, 3, 6         → 3 stages max  (nimble-protector)
+//   jump pts 0, 15, 30       → 3 stages max  (fortification, savage-defense, tumbling)
+//   jump pts 0, 25, 50       → 3 stages max  (tempered-soul)
+//   jump pts 0, 10, 20, 30   → 4 stages max  (piercing-gaze)
+//   jump pts 0, 10, 20, 30, 40, 50 → 6 stages max (mystic-tenacity)
+//
+// Only passives whose effect maps to a ComputedStats field are included.
+// Omitted (no matching stat field): hardy, elemental-aegis, battle-mastery,
+//   flawless-ritual, blessed, preparation, quick-recovery, bashing-brutality,
+//   defiance, fortification, hasty, nimble-protector, piercing-gaze,
+//   savage-defense, sprinter, tempered-soul, tireless-guardian, tumbling,
+//   mystic-tenacity.
 export const CP_PASSIVE_VALUES: Array<{ id: string; contrib: Partial<ComputedStats> }> = [
-  { id: "war-mage",            contrib: { spellDmg: 100 } },              // +100 WSD to Magical attacks (1 stage) — approx as spellDmg
-  { id: "mighty",              contrib: { weaponDmg: 100 } },             // +100 WSD to Martial attacks (1 stage) — Warfare/Extended Might
-  { id: "eldritch-insight",    contrib: { maxMagicka: 520 } },            // +260 Mag/stage × 2
-  { id: "tireless-discipline", contrib: { maxStamina: 520 } },            // +260 Stam/stage × 2
-  { id: "piercing",            contrib: { physPen: 700, spellPen: 700 } },// +350 OffPen/stage × 2
-  { id: "precision",           contrib: { critRating: 320 } },            // +160 Crit/stage × 2
-  // Fitness always-on path passives
-  { id: "heros-vigor",         contrib: { maxHealth: 560 } },             // +280 HP/stage × 2 — Fitness tree
+  // ── Warfare passives ──────────────────────────────────────────────────
+  // war-mage: +100 WSD to Magical attacks × 2 stages (jump pts 0, 30)
+  //   Applied as spellDmg only — strictly Magical builds only, close enough.
+  { id: "war-mage",            contrib: { spellDmg: 200 } },
+  // mighty: +100 WSD to Martial attacks × 2 stages (jump pts 0, 30)
+  //   Applied as weaponDmg only — strictly Martial builds only, close enough.
+  { id: "mighty",              contrib: { weaponDmg: 200 } },
+  // eldritch-insight: +260 Max Magicka × 3 stages (jump pts 0, 10, 20)
+  { id: "eldritch-insight",    contrib: { maxMagicka: 780 } },
+  // tireless-discipline: +260 Max Stamina × 3 stages (jump pts 0, 10, 20)
+  { id: "tireless-discipline", contrib: { maxStamina: 780 } },
+  // piercing: +350 Offensive Penetration × 3 stages (jump pts 0, 10, 20)
+  { id: "piercing",            contrib: { physPen: 1050, spellPen: 1050 } },
+  // precision: +160 Critical Chance × 3 stages (jump pts 0, 10, 20)
+  { id: "precision",           contrib: { critRating: 480 } },
+  // ── Fitness passives ──────────────────────────────────────────────────
+  // heros-vigor: +280 Max Health × 3 stages (jump pts 0, 10, 20)
+  { id: "heros-vigor",         contrib: { maxHealth: 840 } },
 ];
 
 // ── Active buff / debuff definitions ──────────────────────────────────────
