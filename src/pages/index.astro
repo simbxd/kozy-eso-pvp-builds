@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import BuildCard from '../components/BuildCard.astro';
+import TwitchEmbed from '../components/TwitchEmbed.astro';
 import { getFileDates } from '../lib/git-dates';
 
 const allBuilds = await getCollection('builds');
@@ -72,6 +73,9 @@ const websiteSchema = {
       </div>
     </div>
   </section>
+
+  <!-- Twitch live embed — placeholder Twitch natif quand offline (pas d'API check) -->
+  <TwitchEmbed variant="landing" />
 
   <!-- Featured builds -->
   {featuredBuilds.length > 0 && (

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import TwitchEmbed from '../../components/TwitchEmbed.astro';
 import { getFileDates } from '../../lib/git-dates';
 
 const allGuides = await getCollection('guides');
@@ -54,6 +55,8 @@ const sorted = allGuides
         );
       })}
     </ol>
+
+    <TwitchEmbed variant="landing" />
 
   </div>
 </Base>

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import BuildCard from '../../components/BuildCard.astro';
+import TwitchEmbed from '../../components/TwitchEmbed.astro';
 
 const allBuilds = await getCollection('builds');
 const sorted = allBuilds.sort((a, b) => {
@@ -71,6 +72,8 @@ const countByClass = Object.fromEntries(
         />
       ))}
     </div>
+
+    <TwitchEmbed variant="landing" />
 
   </div>
 </Base>

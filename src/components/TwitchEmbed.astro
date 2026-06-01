@@ -1,0 +1,148 @@
+---
+/**
+ * TwitchEmbed — iframe player Twitch réutilisable.
+ *
+ * Comportement offline : on laisse le placeholder natif Twitch (pas d'API call).
+ * → si la chaîne n'est pas en live, l'iframe affiche "Offline" + lien vers la chaîne.
+ *
+ * `parent=` doit lister tous les domaines qui chargeront ce player.
+ * Sans ça → "Player Error" côté Twitch (sécurité embed).
+ */
+interface Props {
+  channel?: string;
+  /** "landing" = hero 16:9 pleine largeur · "compact" = sticky sidebar build · "inline" = bas d'article guide */
+  variant?: 'landing' | 'compact' | 'inline';
+  /** Désactive l'autoplay (par défaut autoplay muted) */
+  noAutoplay?: boolean;
+}
+
+const {
+  channel = 'kozyeso',
+  variant = 'landing',
+  noAutoplay = false,
+} = Astro.props;
+
+// Domaines autorisés à embed le player. Ajouter ici toute nouvelle preview URL.
+const PARENTS = [
+  'kozy-eso.com',
+  'www.kozy-eso.com',
+  'kozy-eso-pvp-builds.simbad14100.workers.dev',
+  'localhost',
+];
+
+const params = new URLSearchParams();
+params.set('channel', channel);
+PARENTS.forEach(p => params.append('parent', p));
+params.set('muted', 'true');                          // autoplay impose muted dans tous les navigateurs
+params.set('autoplay', noAutoplay ? 'false' : 'true');
+
+const playerSrc = `https://player.twitch.tv/?${params.toString()}`;
+const channelUrl = `https://www.twitch.tv/${channel}`;
+---
+
+<section class:list={['twe', `twe--${variant}`]} aria-label={`Twitch stream: ${channel}`}>
+  <div class="twe__head">
+    <span class="twe__dot" aria-hidden="true"></span>
+    <span class="twe__label">LIVE ON TWITCH</span>
+    <a href={channelUrl} target="_blank" rel="noopener noreferrer" class="twe__handle">@{channel}</a>
+  </div>
+
+  <div class="twe__frame">
+    <iframe
+      src={playerSrc}
+      title={`${channel} on Twitch`}
+      allowfullscreen
+      allow="autoplay; fullscreen"
+      loading="lazy"
+      referrerpolicy="origin"
+    ></iframe>
+  </div>
+</section>
+
+<style>
+  .twe {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+    border-top: 2px solid #a970ff; /* purple Twitch */
+  }
+
+  .twe__head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--color-border);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .twe__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ef4444;                  /* red dot — purement décoratif (pas d'API check) */
+    box-shadow: 0 0 6px rgba(239,68,68,0.5);
+    flex-shrink: 0;
+    animation: twe-pulse 2.4s ease-in-out infinite;
+  }
+
+  @keyframes twe-pulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.4; }
+  }
+
+  .twe__label { color: var(--color-text); }
+
+  .twe__handle {
+    margin-left: auto;
+    color: #a970ff;
+    text-decoration: none;
+    font-size: 11px;
+  }
+  .twe__handle:hover { color: var(--color-text); }
+
+  /* Iframe 16:9 — aspect-ratio évite le décalage layout au chargement */
+  .twe__frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+  }
+
+  .twe__frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* Landing — pleine largeur sous le hero */
+  .twe--landing {
+    max-width: 960px;
+    margin: 56px auto 0;
+  }
+
+  /* Compact — sticky sidebar build (220px de colonne TOC) */
+  .twe--compact {
+    margin-top: 24px;
+  }
+  .twe--compact .twe__head {
+    padding: 8px 10px;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+  }
+  .twe--compact .twe__handle { font-size: 10px; }
+
+  /* Inline — bas d'article guide (single column 720px) */
+  .twe--inline {
+    margin: 48px 0 16px;
+  }
+
+  @media (max-width: 760px) {
+    .twe--landing { margin-top: 32px; }
+  }
+</style>

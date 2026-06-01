@@ -1,5 +1,6 @@
 ---
 import Base from './Base.astro';
+import TwitchEmbed from '../components/TwitchEmbed.astro';
 
 interface GuideEntry {
   id: string;
@@ -116,6 +117,8 @@ const breadcrumbSchema = {
         <span class="art__end-label">── END ──</span>
         <div class="art__end-line"></div>
       </div>
+
+      <TwitchEmbed variant="inline" />
 
       {readNextGuides.length > 0 && (
         <div class="art__rn">

@@ -4,6 +4,7 @@ import Base from './Base.astro';
 import BuildHero from '../components/BuildHero.astro';
 import SetCard from '../components/SetCard.astro';
 import Playstyle from '../components/Playstyle.astro';
+import TwitchEmbed from '../components/TwitchEmbed.astro';
 import cpStarsIndex from '../data/eso/cp-stars-index.json';
 import classMasteriesIndex from '../data/eso/class-masteries-index.json';
 import mundusRaw from '../data/eso/mundus-index.json';
@@ -870,6 +871,7 @@ const raceLabel = race?.name;
       {resolvedMasteries.length > 0 && <a href="#class-masteries" class="toc__link">Class Masteries</a>}
       <a href="#champion-points" class="toc__link">Champion Points</a>
 </nav>
+    <TwitchEmbed variant="compact" />
   </aside>
 
   </div><!-- /.build-layout -->
