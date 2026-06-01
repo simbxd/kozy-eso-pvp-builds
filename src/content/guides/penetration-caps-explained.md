@@ -11,19 +11,19 @@ Armor penetration in ESO reduces the effective resistance of your target. The ca
 
 ## How Resistance Works
 
-Damage mitigation follows this formula:
+Damage mitigation in ESO is **linear**, not logarithmic:
 
 ```
-mitigation = resistance / (resistance + 660)
+mitigation % = resistance / 660       (capped at 50%)
 ```
 
-At 33,000 resistance (a typical tanked player), mitigation is roughly **98%** — you deal almost nothing. At 0 resistance, mitigation is 0% — full damage.
+Every 660 points of resistance reduces incoming damage by 1%, up to a hard cap of **50% at 33,000 resistance**. Stacking resistance beyond 33k does nothing — it's the maximum mitigation a player can reach from armor alone.
 
-Penetration subtracts directly from that resistance value before the formula applies.
+Penetration subtracts directly from the target's resistance before that formula applies. So 5,000 penetration against a 33,000-resist target leaves them at 28,000 → ~42.4% mitigation instead of 50% — a ~7.6 percentage point damage gain.
 
 ## The Common Mistake
 
-Most guides say "cap your penetration at 18,200." That number comes from NPC resistances in PvE content. **In PvP, player resistance values vary wildly.** A lightly-armored Sorcerer might have 12,000 resistance — you would overcap penetration and waste stat budget if you build to 18,200.
+Most guides say "cap your penetration at 18,200." That number comes from the **standard PvE trial boss** resistance value. **In PvP, player resistance varies wildly.** A lightly-armored Sorcerer might sit at 12,000 resistance — building to 18,200 means you overshoot and waste stat budget. A fully resist-capped tank sits at 33,000 — and there, every point of penetration up to 33k is real damage.
 
 ## Practical Implications
 
