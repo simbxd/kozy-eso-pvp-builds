@@ -13,8 +13,8 @@ import type { ScribingSlot } from "../state";
 type RawLine = { id: string; name: string; class: string; class_id: string; icon?: string };
 export const ALL_CLASS_LINES = skillLinesJson as RawLine[];
 
-type LineInfo = { id: string; name: string; icon?: string };
-type GroupDef = { id: string; label: string; lines: LineInfo[] };
+export type LineInfo = { id: string; name: string; icon?: string };
+export type GroupDef = { id: string; label: string; lines: LineInfo[] };
 
 const WEAPON_GROUP: GroupDef = {
   id: "weapon", label: "Weapon",
@@ -64,7 +64,7 @@ const PVP_GROUP: GroupDef = {
 const FIXED_GROUPS = [WEAPON_GROUP, ARMOR_GROUP, WORLD_GROUP, GUILD_GROUP, PVP_GROUP];
 
 /** Build groups from the 3 selected subclass lines + fixed groups */
-function buildGroups(subclasses: [string, string, string]): GroupDef[] {
+export function buildGroups(subclasses: [string, string, string]): GroupDef[] {
   const groups: GroupDef[] = [];
 
   const selectedLines = subclasses
@@ -97,9 +97,9 @@ const SCRIBING_VARIANT_IDS = new Set(
 
 // ── Skill grouping (base + morphs) ────────────────────────────────────────────
 
-type SkillGroup = { base: EsoSkillIndex; morphs: EsoSkillIndex[] };
+export type SkillGroup = { base: EsoSkillIndex; morphs: EsoSkillIndex[] };
 
-function getSkillGroups(lineId: string, kind: "Active" | "Ultimate"): SkillGroup[] {
+export function getSkillGroups(lineId: string, kind: "Active" | "Ultimate"): SkillGroup[] {
   const lineSkills = skillsIndex.filter(
     (s) => s.skill_line_id === lineId && s.type === kind
       && !SCRIBING_VARIANT_IDS.has(s.id)
