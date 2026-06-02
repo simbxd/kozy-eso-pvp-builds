@@ -26,6 +26,15 @@ const countByClass = Object.fromEntries(
   classes.map(c => [c, allBuilds.filter(b => b.data.class === c).length])
 );
 
+const CLASS_COLOR: Record<string, string> = {
+  Dragonknight: '#e05c3a', Sorcerer: '#5b8fd6', Nightblade: '#9b59b6',
+  Templar: '#d4a44a', Warden: '#5ebd6a', Necromancer: '#7ecac0',
+  Arcanist: '#3cb371', Werewolf: '#c0792b',
+};
+
+const [mainBuild, ...rest] = featuredBuilds;
+const stackedBuilds = rest.slice(0, 2);
+
 const siteUrl = 'https://kozy-eso-pvp-builds.simbad14100.workers.dev';
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -44,105 +53,133 @@ const websiteSchema = {
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
   </Fragment>
 
-  <!-- Hero -->
+  <!-- ── HERO : editorial 2-col, gauche-aligné ── -->
   <section class="hero">
-    <div class="hero__glow" aria-hidden="true"></div>
     <div class="hero__inner">
-      <svg class="hero__sigil" width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
-        <path d="M36 4 L66 36 L36 68 L6 36 Z" stroke="url(#hsg)" stroke-width="1.2" fill="none"/>
-        <path d="M36 16 L56 36 L36 56 L16 36 Z" stroke="#6d28d9" stroke-width="1" fill="none" opacity="0.5"/>
-        <path d="M36 26 L46 36 L36 46 L26 36 Z" stroke="#8b5cf6" stroke-width="1" fill="none" opacity="0.4"/>
-        <circle cx="36" cy="36" r="3.5" fill="#8b5cf6"/>
-        <defs>
-          <linearGradient id="hsg" x1="0" y1="0" x2="0" y2="72" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ede8ff"/>
-            <stop offset="1" stop-color="#6d28d9"/>
-          </linearGradient>
-        </defs>
-      </svg>
-
-      <div class="hero__eyebrow">ELDER SCROLLS ONLINE · PvP</div>
-      <h1 class="hero__title">Builds that keep up with the meta.</h1>
-      <p class="hero__dek">
-        Curated builds and breakdowns for players who want to understand
-        <em>why</em> a setup works — not just copy it.
-      </p>
-      <div class="hero__cta">
-        <a href="/builds" class="hero__btn hero__btn--primary">Browse Builds</a>
-        <a href="/guides" class="hero__btn hero__btn--secondary">Read Guides</a>
+      <div class="hero__left">
+        <p class="hero__eyebrow">
+          <span>Elder Scrolls Online</span>
+          <span class="hero__sep" aria-hidden="true">·</span>
+          <span>PvP</span>
+          <span class="hero__sep" aria-hidden="true">·</span>
+          <span>Update 50</span>
+        </p>
+        <h1 class="hero__title">Builds that<br/>keep up with<br/>the meta.</h1>
+        <div class="hero__accent" aria-hidden="true"></div>
+      </div>
+      <div class="hero__right">
+        <p class="hero__dek">
+          Curated builds and breakdowns for players who want to understand
+          <em>why</em> a setup works — not just copy it.
+        </p>
+        <div class="hero__cta">
+          <a href="/builds" class="hero__btn hero__btn--primary">Browse Builds</a>
+          <a href="/guides" class="hero__btn hero__btn--secondary">Read Guides</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Twitch live embed — placeholder Twitch natif quand offline (pas d'API check) -->
+  <!-- ── TWITCH ── -->
   <TwitchEmbed variant="landing" />
 
-  <!-- Featured builds -->
-  {featuredBuilds.length > 0 && (
+  <!-- ── 01 · FEATURED BUILDS ── -->
+  {mainBuild && (
     <section class="hp-sec">
       <div class="hp-sec__inner">
-        <div class="hp-rule">
-          <div class="hp-rule__l"></div>
-          <span class="hp-rule__lbl">FEATURED BUILDS</span>
-          <div class="hp-rule__l"></div>
+        <div class="hp-sh">
+          <span class="hp-sh__num">01</span>
+          <h2 class="hp-sh__title">Featured Builds</h2>
+          <div class="hp-sh__rule" aria-hidden="true"></div>
+          <a href="/builds" class="hp-sh__link">All builds →</a>
         </div>
-        <div class="hp-cards">
-          {featuredBuilds.map((build, i) => (
-            <BuildCard
-              title={build.data.title}
-              slug={build.id}
-              class={build.data.class}
-              role={build.data.role}
-              resource={build.data.resource}
-              gamemode={build.data.gamemode}
-              patch={build.data.patch}
-              difficulty={build.data.difficulty}
-              summary={build.data.summary}
-              featured={build.data.featured}
-              index={i + 1}
-            />
-          ))}
-        </div>
-        <div class="hp-more">
-          <a href="/builds" class="hp-more__link">All builds →</a>
+
+        <div class:list={['hp-feature', stackedBuilds.length === 0 && 'hp-feature--single']}>
+          <!-- Carte principale large -->
+          <a
+            href={`/builds/${mainBuild.id}/`}
+            class="hp-feat"
+            style={`--cls: ${CLASS_COLOR[mainBuild.data.class] ?? 'var(--color-accent)'};`}
+          >
+            <div class="hp-feat__top">
+              <span class="hp-feat__label">Featured</span>
+              <span class="hp-feat__meta">
+                {mainBuild.data.resource} {mainBuild.data.class}
+                <span aria-hidden="true"> · </span>
+                {mainBuild.data.gamemode[0]}
+              </span>
+            </div>
+            <strong class="hp-feat__name">{mainBuild.data.title}</strong>
+            <p class="hp-feat__sum">{mainBuild.data.summary}</p>
+            <div class="hp-feat__foot">
+              <span>{mainBuild.data.difficulty}</span>
+              <span aria-hidden="true"> · </span>
+              <span>{mainBuild.data.patch}</span>
+            </div>
+          </a>
+
+          <!-- Cartes secondaires empilées -->
+          {stackedBuilds.length > 0 && (
+            <div class="hp-feat-stack">
+              {stackedBuilds.map((build, i) => (
+                <BuildCard
+                  title={build.data.title}
+                  slug={build.id}
+                  class={build.data.class}
+                  role={build.data.role}
+                  resource={build.data.resource}
+                  gamemode={build.data.gamemode}
+                  patch={build.data.patch}
+                  difficulty={build.data.difficulty}
+                  summary={build.data.summary}
+                  featured={build.data.featured}
+                  index={i + 2}
+                  playstyle_tag={build.data.playstyle_tag}
+                  subclass={build.data.subclass}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </section>
   )}
 
-  <!-- Class grid -->
-  <section class="hp-sec hp-sec--dark">
+  <!-- ── 02 · BROWSE BY CLASS ── -->
+  <section class="hp-sec hp-sec--dim">
     <div class="hp-sec__inner">
-      <div class="hp-rule">
-        <div class="hp-rule__l"></div>
-        <span class="hp-rule__lbl">BROWSE BY CLASS</span>
-        <div class="hp-rule__l"></div>
+      <div class="hp-sh">
+        <span class="hp-sh__num">02</span>
+        <h2 class="hp-sh__title">Browse by Class</h2>
+        <div class="hp-sh__rule" aria-hidden="true"></div>
       </div>
-      <div class="hp-cls">
+      <nav class="hp-cls" aria-label="Browse builds by class">
         {classes.map(c => (
-          <a href={`/builds/class/${c.toLowerCase()}`} class="hp-cls__item">
+          <a href={`/builds/class/${c.toLowerCase()}/`} class="hp-cls__item">
             <span class="hp-cls__name">{c}</span>
             <span class="hp-cls__ct">{countByClass[c]}</span>
           </a>
         ))}
-      </div>
+      </nav>
     </div>
   </section>
 
-  <!-- Latest guides -->
+  <!-- ── 03 · LATEST GUIDES ── -->
   {latestGuides.length > 0 && (
     <section class="hp-sec">
       <div class="hp-sec__inner">
-        <div class="hp-rule">
-          <div class="hp-rule__l"></div>
-          <span class="hp-rule__lbl">LATEST GUIDES</span>
-          <div class="hp-rule__l"></div>
+        <div class="hp-sh">
+          <span class="hp-sh__num">03</span>
+          <h2 class="hp-sh__title">Latest Guides</h2>
+          <div class="hp-sh__rule" aria-hidden="true"></div>
+          <a href="/guides" class="hp-sh__link">All guides →</a>
         </div>
         <ol class="hp-guides">
-          {latestGuides.map(({ guide, publishedDate }) => (
-            <li class="hp-guide">
-              <a href={`/guides/${guide.id}`} class="hp-guide__link">
+          {latestGuides.map(({ guide, publishedDate }, i) => (
+            <li>
+              <a href={`/guides/${guide.id}/`} class="hp-guide">
                 <div class="hp-guide__meta">
+                  <span class="hp-guide__idx">{String(i + 1).padStart(2, '0')}</span>
                   <span class="hp-guide__cat">{guide.data.category.toUpperCase()}</span>
                   {publishedDate && (
                     <time datetime={publishedDate} class="hp-guide__date">
@@ -156,292 +193,383 @@ const websiteSchema = {
             </li>
           ))}
         </ol>
-        <div class="hp-more">
-          <a href="/guides" class="hp-more__link">All guides →</a>
-        </div>
       </div>
     </section>
   )}
-
 </Base>
 
 <style>
-  /* ── Hero ── */
+  /* ─────────────────────────────────────────────
+     HERO — 2 colonnes, gauche-aligné, sans sigil
+     ───────────────────────────────────────────── */
   .hero {
-    position: relative;
-    overflow: hidden;
-    padding: 96px 24px 80px;
+    padding: 88px 0 80px;
     border-bottom: 1px solid var(--color-border);
-    text-align: center;
-  }
-
-  .hero__glow {
-    position: absolute;
-    top: -120px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 600px;
-    height: 480px;
-    background: radial-gradient(ellipse at center, rgba(139,92,246,0.14), transparent 70%);
-    pointer-events: none;
+    position: relative;
   }
 
   .hero__inner {
-    position: relative;
-    z-index: 1;
-    max-width: 640px;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 72px;
+    align-items: center;
+    max-width: 1240px;
     margin: 0 auto;
+    padding: 0 64px;
   }
 
-  .hero__sigil {
-    display: block;
-    margin: 0 auto 24px;
-    opacity: 0.85;
-  }
-
+  /* Eyebrow sobre — accent color, peu d'espacement */
   .hero__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: var(--font-mono);
-    font-size: 13px;
-    letter-spacing: 0.3em;
-    color: var(--color-text-muted);
-    margin-bottom: 16px;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    margin: 0 0 24px;
   }
+  .hero__sep { color: var(--color-border-2); }
 
+  /* Titre solid — pas de gradient (le tell AI le plus visible) */
   .hero__title {
     font-family: var(--font-display);
-    font-size: clamp(64px, 12vw, 120px);
+    font-size: clamp(54px, 7.5vw, 104px);
     font-style: italic;
     font-weight: 600;
-    line-height: 0.9;
-    background: linear-gradient(160deg, #ede8ff 0%, #a78bfa 55%, #6d28d9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin: 0 0 28px;
+    line-height: 0.92;
     letter-spacing: -0.01em;
+    color: var(--color-text);
+    margin: 0 0 28px;
+  }
+
+  /* Petite ligne accent — signature visuelle sobre */
+  .hero__accent {
+    width: 36px;
+    height: 2px;
+    background: var(--color-accent);
   }
 
   .hero__dek {
     font-family: var(--font-body);
     font-size: 20px;
-    line-height: 1.65;
+    line-height: 1.7;
     color: var(--color-text-muted);
-    max-width: 44ch;
-    margin: 0 auto 36px;
+    margin: 0 0 36px;
   }
+  .hero__dek em { font-style: italic; color: var(--color-text); }
 
-  .hero__dek em {
-    color: var(--color-text);
-    font-style: italic;
-  }
-
-  .hero__cta {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  .hero__cta { display: flex; gap: 12px; flex-wrap: wrap; }
 
   .hero__btn {
     font-family: var(--font-mono);
-    font-size: 13px;
-    letter-spacing: 0.22em;
+    font-size: 12px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 13px 28px;
-    transition: transform 160ms, opacity 160ms;
+    padding: 13px 26px;
+    transition: background 150ms, color 150ms, transform 150ms;
+    display: inline-block;
   }
+  .hero__btn:hover { transform: translateY(-1px); }
 
-  .hero__btn:hover { transform: translateY(-2px); }
-
-  .hero__btn--primary {
-    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dim));
-    color: #fff;
-    box-shadow: 0 0 28px var(--color-accent-glow);
-  }
-
-  .hero__btn--primary:hover { opacity: 0.9; }
+  .hero__btn--primary { background: var(--color-accent); color: #fff; }
+  .hero__btn--primary:hover { background: #7c3aed; }
 
   .hero__btn--secondary {
+    background: transparent;
     border: 1px solid var(--color-border-2);
     color: var(--color-text-muted);
-    background: var(--color-surface);
   }
-
   .hero__btn--secondary:hover {
-    border-color: rgba(139,92,246,0.4);
+    border-color: rgba(139,92,246,0.45);
     color: var(--color-text);
   }
 
-  /* ── Sections ── */
+  /* ─────────────────────────────────────────────
+     SECTIONS
+     ───────────────────────────────────────────── */
   .hp-sec {
-    padding: 64px 24px;
+    padding: 72px 0;
     border-bottom: 1px solid var(--color-border);
   }
-
-  .hp-sec--dark { background: var(--color-surface); }
+  .hp-sec--dim { background: var(--color-surface); }
 
   .hp-sec__inner {
-    max-width: 1120px;
+    max-width: 1240px;
     margin: 0 auto;
+    padding: 0 64px;
   }
 
-  /* ── Section rule ── */
-  .hp-rule {
+  /* Section header éditorial : [01]  Titre  ────  lien → */
+  .hp-sh {
     display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 32px;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 36px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-border-2);
   }
 
-  .hp-rule__l {
+  .hp-sh__num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-accent);
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+  }
+
+  /* Titre section — Cormorant italic, solide, pas de gradient */
+  .hp-sh__title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--color-text);
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .hp-sh__rule {
     flex: 1;
     height: 1px;
-    background: var(--color-border-2);
+    background: var(--color-border);
   }
 
-  .hp-rule__lbl {
+  .hp-sh__link {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.09em;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: color 150ms;
+  }
+  .hp-sh__link:hover { color: var(--color-accent); }
+
+  /* ─────────────────────────────────────────────
+     FEATURED : large card + colonne empilée
+     ───────────────────────────────────────────── */
+  .hp-feature {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .hp-feature--single { grid-template-columns: 1fr; }
+
+  .hp-feat {
+    --cls: var(--color-accent);
+    display: flex;
+    flex-direction: column;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-2);
+    border-top: 2px solid var(--cls);
+    padding: 36px 40px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 200ms;
+  }
+  .hp-feat:hover { background: var(--color-surface-2); }
+
+  .hp-feat__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+
+  .hp-feat__label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--cls);
+    text-transform: uppercase;
+  }
+
+  .hp-feat__meta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.09em;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+  }
+
+  /* Titre build principal — solid, grand, pas de gradient */
+  .hp-feat__name {
+    display: block;
+    font-family: var(--font-display);
+    font-size: clamp(40px, 4.8vw, 62px);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 0.96;
+    color: var(--color-text);
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  .hp-feat__sum {
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .hp-feat__foot {
+    display: flex;
+    gap: 8px;
     font-family: var(--font-mono);
     font-size: 12px;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.09em;
     color: var(--color-text-muted);
-    white-space: nowrap;
+    text-transform: uppercase;
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid var(--color-border);
   }
 
-  /* ── Build cards ── */
-  .hp-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  .hp-feat-stack {
+    display: flex;
+    flex-direction: column;
     gap: 12px;
-    margin-bottom: 24px;
   }
 
-  /* ── More link ── */
-  .hp-more { text-align: right; }
-
-  .hp-more__link {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    letter-spacing: 0.18em;
-    color: var(--color-accent);
-    text-decoration: none;
-  }
-
-  .hp-more__link:hover { text-decoration: underline; }
-
-  /* ── Class grid ── */
+  /* ─────────────────────────────────────────────
+     CLASSES — pills horizontaux
+     ───────────────────────────────────────────── */
   .hp-cls {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 8px;
   }
 
   .hp-cls__item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 8px;
-    padding: 20px 10px;
+    gap: 10px;
+    padding: 10px 20px;
     background: var(--color-bg);
     border: 1px solid var(--color-border-2);
     text-decoration: none;
-    text-align: center;
-    transition: background 160ms, border-color 160ms, transform 160ms;
+    transition: background 140ms, border-color 140ms;
   }
-
   .hp-cls__item:hover {
     background: var(--color-surface-2);
-    border-color: rgba(139,92,246,0.4);
-    transform: translateY(-2px);
+    border-color: #3a3358;
   }
 
   .hp-cls__name {
-    font-family: var(--font-display);
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 500;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 0.06em; /* réduit vs l'original 0.12em */
     color: var(--color-text);
-    line-height: 1.2;
+    text-transform: uppercase;
   }
 
   .hp-cls__ct {
     font-family: var(--font-mono);
     font-size: 12px;
-    color: var(--color-text-muted);
+    color: var(--color-bg);
+    background: var(--color-text-muted);
+    padding: 1px 5px;
+    min-width: 16px;
+    text-align: center;
+    line-height: 1.6;
   }
 
-  /* ── Guides list ── */
+  /* ─────────────────────────────────────────────
+     GUIDES — liste éditoriale
+     ───────────────────────────────────────────── */
   .hp-guides {
     list-style: none;
     padding: 0;
-    margin: 0 0 24px;
+    margin: 0;
   }
+
+  .hp-guides li { border-bottom: 1px solid var(--color-border); }
+  .hp-guides li:first-child { border-top: 1px solid var(--color-border-2); }
 
   .hp-guide {
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .hp-guide:first-child {
-    border-top: 1px solid var(--color-border-2);
-  }
-
-  .hp-guide__link {
     display: block;
-    padding: 22px 0;
+    padding: 26px 0;
     text-decoration: none;
+    color: inherit;
     transition: padding-left 180ms;
   }
-
-  .hp-guide__link:hover { padding-left: 8px; }
+  .hp-guide:hover { padding-left: 10px; }
 
   .hp-guide__meta {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .hp-guide__idx {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--color-border-2);
   }
 
   .hp-guide__cat {
     font-family: var(--font-mono);
-    font-size: 12px;
-    letter-spacing: 0.2em;
+    font-size: 11px;
+    letter-spacing: 0.14em;
     color: var(--color-accent);
+    text-transform: uppercase;
   }
 
   .hp-guide__date {
     font-family: var(--font-mono);
-    font-size: 12px;
-    letter-spacing: 0.1em;
+    font-size: 11px;
+    letter-spacing: 0.08em;
     color: var(--color-text-muted);
     text-transform: uppercase;
   }
 
   .hp-guide__title {
     font-family: var(--font-display);
-    font-size: 22px;
+    font-size: clamp(19px, 2.5vw, 26px);
     font-style: italic;
     font-weight: 500;
     color: var(--color-text);
-    line-height: 1.2;
-    margin: 0 0 6px;
+    line-height: 1.15;
+    margin: 0 0 8px;
   }
 
   .hp-guide__sum {
     font-family: var(--font-body);
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.6;
     color: var(--color-text-muted);
-    line-height: 1.55;
     margin: 0;
   }
 
-  /* ── Mobile ── */
-  @media (max-width: 900px) {
-    .hp-cls { grid-template-columns: repeat(4, 1fr); }
+  /* ─────────────────────────────────────────────
+     RESPONSIVE
+     ───────────────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .hero__inner,
+    .hp-sec__inner { padding: 0 40px; }
+    .hero__inner { gap: 48px; }
+  }
+
+  @media (max-width: 860px) {
+    .hero__inner { grid-template-columns: 1fr; gap: 32px; }
+    .hp-feature  { grid-template-columns: 1fr; }
+    .hp-feat-stack { flex-direction: row; }
   }
 
   @media (max-width: 640px) {
-    .hero { padding: 64px 16px 56px; }
-    .hp-sec { padding: 48px 16px; }
-    .hp-cls { grid-template-columns: repeat(2, 1fr); }
+    .hero { padding: 56px 0 48px; }
+    .hero__inner,
+    .hp-sec__inner { padding: 0 20px; }
+    .hp-sec { padding: 48px 0; }
+    .hp-feat { padding: 24px 20px; }
+    .hp-feat-stack { flex-direction: column; }
+    .hero__btn { padding: 12px 20px; font-size: 11px; }
   }
 </style>

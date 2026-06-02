@@ -125,7 +125,7 @@ const breadcrumbSchema = {
           <div class="art__rn-head">READ NEXT</div>
           <div class="art__rn-list">
             {readNextGuides.map(g => (
-              <a href={`/guides/${g.id}`} class="art__rn-item">
+              <a href={`/guides/${g.id}/`} class="art__rn-item">
                 <div class="art__rn-meta">
                   <span class="art__rn-cat">{g.data.category.toUpperCase()}</span>
                   {g.publishedDate && (

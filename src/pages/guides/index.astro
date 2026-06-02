@@ -36,7 +36,7 @@ const sorted = allGuides
           : null;
         return (
           <li class="gi__item">
-            <a href={`/guides/${guide.id}`} class="gi__link">
+            <a href={`/guides/${guide.id}/`} class="gi__link">
               <div class="gi__meta">
                 <span class="gi__idx">{String(i + 1).padStart(2, '0')}</span>
                 <span class="gi__cat">{guide.data.category.toUpperCase()}</span>

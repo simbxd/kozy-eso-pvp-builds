@@ -111,7 +111,7 @@ hr { border-color: var(--color-border); }
 }
 .kz-rule__label {
   font-family: var(--font-mono);
-  font-size: 14px; letter-spacing: 0.32em;
+  font-size: 13px; letter-spacing: 0.16em;
   color: var(--color-text-muted); text-transform: uppercase;
 }
 
