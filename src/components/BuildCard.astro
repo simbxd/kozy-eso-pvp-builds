@@ -48,7 +48,7 @@ const clsColor = CLASS_COLOR[esClass] ?? 'var(--color-accent)';
 ---
 
 <a
-  href={`/builds/${slug}/`}
+  href={`/builds/${slug}`}
   class:list={['bcard', { 'bcard--featured': featured }]}
   aria-label={`Open build: ${title}`}
   style={`--cls-clr: ${clsColor};`}
@@ -144,14 +144,18 @@ const clsColor = CLASS_COLOR[esClass] ?? 'var(--color-accent)';
   .bcard__name {
     font-family: var(--font-display);
     font-size: 34px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.0;
     padding-bottom: 6px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 700;
     font-style: italic;
-    color: var(--color-text);
+    background: linear-gradient(180deg, #ffffff 0%, #c4b5fd 110%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     margin-bottom: 10px;
   }
 

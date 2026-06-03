@@ -42,7 +42,7 @@ const countByClass = Object.fromEntries(
       </a>
       {classes.map(c => (
         <a
-          href={`/builds/class/${c.toLowerCase()}/`}
+          href={`/builds/class/${c.toLowerCase()}`}
           class="bi__cls-pill"
           aria-label={`${c} builds (${countByClass[c]})`}
         >
