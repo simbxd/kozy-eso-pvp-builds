@@ -91,7 +91,9 @@ const clsColor = CLASS_COLOR[esClass] ?? 'var(--color-accent)';
     border-top: 2px solid var(--cls-clr);
     padding: 20px 26px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden retiré — il clippait le box-shadow de ::before
+       et le translateY(-2px) hover sur mobile. La barre ::before utilise
+       maintenant scaleX qui ne déborde jamais hors de la carte. */
     text-decoration: none;
     color: var(--color-text);
     transition: background 200ms, transform 200ms, border-color 200ms;
@@ -104,7 +106,10 @@ const clsColor = CLASS_COLOR[esClass] ?? 'var(--color-accent)';
     width: 3px;
     background: var(--cls-clr);
     box-shadow: 0 0 14px color-mix(in srgb, var(--cls-clr) 40%, transparent);
-    transform: translateX(-3px);
+    /* scaleX(0 → 1) : la barre part de 0 largeur, pas de débordement
+       → plus besoin d'overflow: hidden sur la carte parente */
+    transform-origin: left center;
+    transform: scaleX(0);
     transition: transform 220ms;
   }
 
@@ -113,7 +118,7 @@ const clsColor = CLASS_COLOR[esClass] ?? 'var(--color-accent)';
     border-color: var(--cls-clr);
     transform: translateY(-2px);
   }
-  .bcard:hover::before { transform: translateX(0); }
+  .bcard:hover::before { transform: scaleX(1); }
 
   .bcard--featured {
     background: color-mix(in srgb, var(--cls-clr) 5%, var(--color-surface));
