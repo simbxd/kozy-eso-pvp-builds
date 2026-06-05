@@ -818,8 +818,8 @@ function ChampionPoints({ setup }: { setup: Setup }) {
   return (
     <Section title="Champion Points" count="slottable stars">
       <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
-        <CpColumn title="Warfare" tint={T.heavy}  tree="warfare" stars={warfare} />
-        <CpColumn title="Fitness" tint={T.medium} tree="fitness" stars={fitness} />
+        <CpColumn title="Warfare" tint={T.light} tree="warfare" stars={warfare} />
+        <CpColumn title="Fitness" tint={T.heavy} tree="fitness" stars={fitness} />
       </div>
     </Section>
   );

@@ -162,7 +162,7 @@ export const FOOD_VALUES: Record<string, Partial<ComputedStats>> = {
   "ghastly-eye-bowl":            { maxMagicka: 4592, magickaRecovery: 459 },
   "bewitched-sugar-skulls-v2":   { maxHealth: 4620, maxMagicka: 4250, maxStamina: 4250, healthRecovery: 462 },
   "dubious-camoran-throne":      { maxStamina: 3192, healthRecovery: 319, staminaRecovery: 319 },
-  "jewels-of-misrule":           { maxHealth: 3927, maxStamina: 2856, healthRecovery: 315, magickaRecovery: 357, staminaRecovery: 357 },
+  "jewels-of-misrule":           { maxHealth: 3927, healthRecovery: 357, magickaRecovery: 357, staminaRecovery: 357 },
   "orzorgas-smoked-bear-haunch": { maxHealth: 4312, healthRecovery: 406, magickaRecovery: 369, staminaRecovery: 369 },
   "orzorgas-red-frothgar":       { maxHealth: 3094, healthRecovery: 315, staminaRecovery: 315 },
   "witchmothers-potent-brew":    { maxHealth: 3094, maxMagicka: 2856, magickaRecovery: 315 },

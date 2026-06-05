@@ -146,8 +146,8 @@ export default function CpTab() {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 16, height: "100%", overflow: "hidden" }}>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, flex: 1, overflow: "hidden" }}>
-        <CpTree title="Warfare" tint={T.heavy}  tree="warfare" />
-        <CpTree title="Fitness" tint={T.medium} tree="fitness" />
+        <CpTree title="Warfare" tint={T.light} tree="warfare" />
+        <CpTree title="Fitness" tint={T.heavy} tree="fitness" />
       </div>
 
       {/* Passive note */}
