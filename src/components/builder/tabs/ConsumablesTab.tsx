@@ -6,7 +6,7 @@ import { SearchSelect, type SelectItem } from "../atoms/SearchSelect";
 
 const FOOD_ITEMS: SelectItem[] = [
   // ── Tri-stat ──────────────────────────────────────────────────────────────────
-  { id: "bewitched-sugar-skulls",               label: "Bewitched Sugar Skulls",               badge: "Food",  sub: "+Max Health · +Max Stamina · Health Rec"            },
+  { id: "bewitched-sugar-skulls",               label: "Bewitched Sugar Skulls",               badge: "Food",  sub: "+Max HP/Mag/Stam · Health Rec"                      },
   { id: "longfin-pasty-with-melon-sauce",        label: "Longfin Pasty with Melon Sauce",        badge: "Food",  sub: "+Max Health · +Max Magicka · +Max Stamina"          },
   // ── Health + Stamina ──────────────────────────────────────────────────────────
   { id: "braised-rabbit-with-spring-vegetables", label: "Braised Rabbit with Spring Vegetables", badge: "Food",  sub: "+Max Health · +Max Stamina"                         },

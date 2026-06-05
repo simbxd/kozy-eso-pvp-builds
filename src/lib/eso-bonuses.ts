@@ -150,9 +150,9 @@ export const ENCHANT_VALUES: Record<string, Partial<ComputedStats>> = {
 // only flat stat values are recorded here.
 // XP-only items (Aetherial/Psijic Ambrosia) are omitted.
 export const FOOD_VALUES: Record<string, Partial<ComputedStats>> = {
-  "bewitched-sugar-skulls":      { maxHealth: 4620, maxStamina: 4250, healthRecovery: 462 },
+  "bewitched-sugar-skulls":      { maxHealth: 4620, maxMagicka: 4250, maxStamina: 4250, healthRecovery: 462 },
   "artaeum-takeaway-broth":      { maxHealth: 3326, maxStamina: 3080 },
-  "clockwork-citrus-filet":      { maxHealth: 3080, maxMagicka: 3326 },
+  "clockwork-citrus-filet":      { maxHealth: 3326, maxMagicka: 3080, healthRecovery: 406, magickaRecovery: 338 },
   "garlic-cod-potato":           { maxHealth: 5395, maxStamina: 4936 },
   "melon-baked-parmesan-pork":   { maxHealth: 5395, maxMagicka: 4936 },
   "mistral-banana-bunny-hash":   { maxHealth: 5395, maxMagicka: 4936 },
@@ -161,17 +161,21 @@ export const FOOD_VALUES: Record<string, Partial<ComputedStats>> = {
   "lava-foot-soup-and-saltrice": { maxStamina: 4936, staminaRecovery: 493 },
   "ghastly-eye-bowl":            { maxMagicka: 4592, magickaRecovery: 459 },
   "bewitched-sugar-skulls-v2":   { maxHealth: 4620, maxMagicka: 4250, maxStamina: 4250, healthRecovery: 462 },
-  "dubious-camoran-throne":      { maxStamina: 3192, healthRecovery: 319, staminaRecovery: 319 },
-  "jewels-of-misrule":           { maxHealth: 3927, healthRecovery: 357, magickaRecovery: 357, staminaRecovery: 357 },
+  "dubious-camoran-throne":      { maxHealth: 3094, maxStamina: 2856, staminaRecovery: 315 },
+  "jewels-of-misrule":           { maxHealth: 3927, magickaRecovery: 357, staminaRecovery: 357 },
   "orzorgas-smoked-bear-haunch": { maxHealth: 4312, healthRecovery: 406, magickaRecovery: 369, staminaRecovery: 369 },
   "orzorgas-red-frothgar":       { maxHealth: 3094, healthRecovery: 315, staminaRecovery: 315 },
   "witchmothers-potent-brew":    { maxHealth: 3094, maxMagicka: 2856, magickaRecovery: 315 },
   "spring-loaded-infusion":      { maxMagicka: 2856, maxStamina: 2856, magickaRecovery: 315 },
   "crown-fortifying-meal":       { maxHealth: 2745, maxMagicka: 2503, maxStamina: 2503 },
-  "longfin-pasty-with-melon-sauce": { maxHealth: 2745, maxMagicka: 2503, maxStamina: 2503 },
+  "longfin-pasty-with-melon-sauce": { maxHealth: 4462, maxMagicka: 4105, maxStamina: 4105 },
   "tri-stat-food":               { maxHealth: 2745, maxMagicka: 2503, maxStamina: 2503 },
-  // Solitude Salmon-Millet Soup (same values as tri-stat tier)
-  "solitude-salmon-millet-soup": { maxHealth: 2745, maxMagicka: 2503, maxStamina: 2503 },
+  // Health + Magicka 2-stat (Superior) — ESO-Hub verified
+  "solitude-salmon-millet-soup": { maxHealth: 5395, maxMagicka: 4936 },
+  // Health + Stamina 2-stat (Superior) — ESO-Hub verified
+  "braised-rabbit-with-spring-vegetables": { maxHealth: 5395, maxStamina: 4936 },
+  // Health + Magicka unique (Epic) — ESO-Hub verified (fishing bonus ignored)
+  "artaeum-pickled-fish-bowl":   { maxHealth: 5414, maxMagicka: 4938 },
 };
 
 // ── Battle Spirit ───────────────────────────────────────────────────────────
