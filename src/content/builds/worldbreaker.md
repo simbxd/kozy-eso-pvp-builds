@@ -16,7 +16,7 @@ playstyle_tag: Melee
 race: dunmer
 summary: Dragonknight built to hold the line in solo and small-scale PvP.
   Extremely durable while maintaining constant pressure through Molten Whip
-  procs, with strong AoE damage from Incinerate and Heart of Flame.
+  procs with strong AoE damage from Incinerate and Heart of Flame.
 video_id: _paQrQeRtzg
 sets:
   - mighty-chudan
